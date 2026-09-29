@@ -1,0 +1,9 @@
+m_pairs,n_vars,grouped_robdd_nodes,interleaved_robdd_nodes,grouped_midcut_residual_classes,expected_grouped_residual_classes,grouped_to_interleaved_node_ratio
+2,4,9,6,4,4,1.5
+3,6,21,9,8,8,2.3333333333333335
+4,8,45,12,16,16,3.75
+5,10,93,15,32,32,6.2
+6,12,189,18,64,64,10.5
+7,14,381,21,128,128,18.142857142857142
+8,16,765,24,256,256,31.875
+9,18,1533,27,512,512,56.77777777777778

@@ -1,0 +1,744 @@
+{
+  "edicion": "0.1.0-editorial",
+  "fecha": "2026-09-29",
+  "alcance": "79 adjuntos de esta conversación; no equivale al archivo completo histórico del programa",
+  "originales": [
+    {
+      "nombre": "ACCREDITABLE_CLOSURE_ES.md",
+      "ruta": "fuentes/originales/ACCREDITABLE_CLOSURE_ES.md",
+      "bytes": 967,
+      "sha256": "7bb59e0042b672f8795a953b20fa2e14f97053f5c6398352a57d25bb2a039d9f",
+      "titulo": "Cierre acreditable",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_73.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_73.md",
+      "bytes": 811,
+      "sha256": "2eb14a19373652c96912d5ec73b8d3805da3061a295195db96a3a3c6f4881753",
+      "titulo": "Auditoría adversarial v0.73",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_74.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_74.md",
+      "bytes": 1268,
+      "sha256": "ded600ad3827c2cef6c5be3226520f4d62b1e60b6c1e2ea1281bebc358a800af",
+      "titulo": "Auditoría adversarial v0.74",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_75.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_75.md",
+      "bytes": 1078,
+      "sha256": "3863ad4f582516ba7de1f0f9fc2dc70df100ce28859661fffd6b21f6ffe1e4b8",
+      "titulo": "Auditoría adversarial v0.75",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_76.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_76.md",
+      "bytes": 708,
+      "sha256": "ea9bea7788cbeaed81e0007514ba26540f1ad12174b67ce2778d854955172efc",
+      "titulo": "Auditoría adversarial v0.76",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_77.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_77.md",
+      "bytes": 871,
+      "sha256": "69f83748a9a08f38cc3b9b668a1d1c946e61939675f89ec839aed9eb1cde054a",
+      "titulo": "Auditoría adversarial v0.77",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_79.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_79.md",
+      "bytes": 1369,
+      "sha256": "5608bca542b9e17374f34c3c0675a9fa2d1cc3d900da12cedbb9a10e8c4f54af",
+      "titulo": "Auditoría adversarial v0.79",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "ADVERSARIAL_AUDIT_v0_80.md",
+      "ruta": "fuentes/originales/ADVERSARIAL_AUDIT_v0_80.md",
+      "bytes": 1124,
+      "sha256": "0be14153cf182d3ac102ff4edf85198215b00ae5d82905eb65be6f9183043b28",
+      "titulo": "Auditoría adversarial — v0.80",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_ADVERSARIAL_v0_82.md",
+      "ruta": "fuentes/originales/AUDITORIA_ADVERSARIAL_v0_82.md",
+      "bytes": 1701,
+      "sha256": "9f21982c3c2e978498390bfbc41892436710c452d53797996be1ed0abe0008cf",
+      "titulo": "Auditoría adversarial v0.82",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_ADVERSARIAL_v0_84.md",
+      "ruta": "fuentes/originales/AUDITORIA_ADVERSARIAL_v0_84.md",
+      "bytes": 2468,
+      "sha256": "3601d92a2eed2133b7723a9436bfa020467c1f25bc1d16e8f7c2e4fb56700d2f",
+      "titulo": "Auditoría adversarial v0.84",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_81.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_81.md",
+      "bytes": 718,
+      "sha256": "2bf9f58523966ba665f6dd7e112741e4b80bee969381c1c184bf1e843a6baa14",
+      "titulo": "Auditoría v0.81",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_83.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_83.md",
+      "bytes": 1473,
+      "sha256": "0f05a05726547918dbe19941d720df13eff18b5e21b0afde0d320e7fd98666fc",
+      "titulo": "Auditoría adversarial v0.83",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_85.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_85.md",
+      "bytes": 2446,
+      "sha256": "f429bb653a01b767e9520a8beeacb2e1fa51e73a5e74dd792aedd5643008012a",
+      "titulo": "Auditoría adversarial v0.85",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_86.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_86.md",
+      "bytes": 2358,
+      "sha256": "2306e19857486bbfc693135186487a66950ea9d1307116b263aba11d351e2f7e",
+      "titulo": "Auditoría adversarial v0.86",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_87.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_87.md",
+      "bytes": 1862,
+      "sha256": "f3a6234859f2516b7894d5b81fc9530639f068b1ac5ac468fa682e685a3b1a8b",
+      "titulo": "Auditoría adversarial v0.87",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_89.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_89.md",
+      "bytes": 1530,
+      "sha256": "fa22cc8f352fb538286a160bd9dc3aa40ce77bb8f71b0d15fd9982acc0d711b7",
+      "titulo": "Auditoría adversarial v0.89",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_90.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_90.md",
+      "bytes": 1611,
+      "sha256": "fb3d1331c1daa2ce590316c5fd108c99e5c9d5ae5ec0eed2996f64408d84c2e9",
+      "titulo": "Auditoría adversarial v0.90",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUDITORIA_v0_91.md",
+      "ruta": "fuentes/originales/AUDITORIA_v0_91.md",
+      "bytes": 1699,
+      "sha256": "5c9d85d2cdfcf5128ff065802f1c83bbd0fb46a7b17ac34de7c3fedeceb948dd",
+      "titulo": "Auditoría adversarial v0.91",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "AUTORRECURRENCIA_CAPAS_HERENCIA_v0_87.md",
+      "ruta": "fuentes/originales/AUTORRECURRENCIA_CAPAS_HERENCIA_v0_87.md",
+      "bytes": 11133,
+      "sha256": "a827f5a896ce41603486ab3c906ee9db70f9d8990e92ef19dede533b0396435a",
+      "titulo": "Autorrecurencia por capas y herencia sin pérdida",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "CAPSULE_SAT_EXPERIMENT_v0_79.md",
+      "ruta": "fuentes/originales/CAPSULE_SAT_EXPERIMENT_v0_79.md",
+      "bytes": 8992,
+      "sha256": "d026a44f6628e2368b7d0ab03fd3742bcd4a596d9e9f46a0312e8af74ddee456",
+      "titulo": "Cápsulas exactas y localización de la explosión combinatoria",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "CHANGE_MAP_v0_72.md",
+      "ruta": "fuentes/originales/CHANGE_MAP_v0_72.md",
+      "bytes": 1431,
+      "sha256": "b593b4d8533870284f763580b22e9fb6a590f73d96c04b5bd46fc86498ee0757",
+      "titulo": "Mapa de cambios — v0.72",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "CIERRE_ALGEBRAICO_MINIMO_v0_84.md",
+      "ruta": "fuentes/originales/CIERRE_ALGEBRAICO_MINIMO_v0_84.md",
+      "bytes": 16055,
+      "sha256": "cbc812bc9f7ed844d6056167c165fd55982d15d46f35234d0de0086d3f6febf4",
+      "titulo": "Cierre algebraico mínimo, módulos de novedad y herencia de octava",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "CIERRE_TRANSVERSAL_RADIO_RECURSION_v0_82.md",
+      "ruta": "fuentes/originales/CIERRE_TRANSVERSAL_RADIO_RECURSION_v0_82.md",
+      "bytes": 11338,
+      "sha256": "ea9185c704361927f2552cb9f4c46a2ac1f30eab9c89e52330614c0d66dbbf3a",
+      "titulo": "Cierre transversal, radio de resolución y recursión de escala",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "COMPOSICION_RECURSIVA_CAPSULAS_v0_91.md",
+      "ruta": "fuentes/originales/COMPOSICION_RECURSIVA_CAPSULAS_v0_91.md",
+      "bytes": 13863,
+      "sha256": "d75329133439cc3abe65d2e2f6bd9383b0ac46652fb6202816340d09c28b4be1",
+      "titulo": "Composición recursiva de cápsulas cerradas",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "COORDINATION_AS_COMPLEXITY_ES.md",
+      "ruta": "fuentes/originales/COORDINATION_AS_COMPLEXITY_ES.md",
+      "bytes": 1163,
+      "sha256": "2e14dbdf2149c661f33722e94207d6fb15627b91d345d20c9d896e7f90e36f7e",
+      "titulo": "Coordinación como origen de complejidad",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "CORE_v0_72_TOTALIDAD_DIFERENCIA_TIEMPO.md",
+      "ruta": "fuentes/originales/CORE_v0_72_TOTALIDAD_DIFERENCIA_TIEMPO.md",
+      "bytes": 10936,
+      "sha256": "5e8cc84aa01dd20f24f2fa06198d63dc01417b5c80701e4fdd4d7aab31f4c0da",
+      "titulo": "Totalidad, diferencia y tiempo relacional",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "COST_OF_RESOLVING_A_DIFFERENCE_ES.md",
+      "ruta": "fuentes/originales/COST_OF_RESOLVING_A_DIFFERENCE_ES.md",
+      "bytes": 790,
+      "sha256": "606b1d3625b42a08cca2a662fa02c82ea2d1d6bd37eb37ebc241ee10b0174140",
+      "titulo": "El costo de resolver una diferencia",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "DERIVED_OPERATOR_HODGE_HARMONICS_v0_77.md",
+      "ruta": "fuentes/originales/DERIVED_OPERATOR_HODGE_HARMONICS_v0_77.md",
+      "bytes": 5814,
+      "sha256": "a47fafbd664065b9de73cfc60222fd28e7a7be4801153f56aa1a8d462f8cd74d",
+      "titulo": "Operador derivado, Hodge y armónicos cerrados — v0.77",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "DIFFICULTY_BETWEEN_CLOSURES_ES.md",
+      "ruta": "fuentes/originales/DIFFICULTY_BETWEEN_CLOSURES_ES.md",
+      "bytes": 820,
+      "sha256": "10c81abeb219b6910f3aa04354cd450a7367e5c61968bb2fa33e2bf63d147ba7",
+      "titulo": "La dificultad puede vivir entre cierres",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "ECONOMY_IDENTITY_LOCAL_REDUCTION_v0_74.md",
+      "ruta": "fuentes/originales/ECONOMY_IDENTITY_LOCAL_REDUCTION_v0_74.md",
+      "bytes": 10161,
+      "sha256": "883cd558168dd79451d24f6c5b862a37ee06a741fdbd98ba5d41c1270efa9de9",
+      "titulo": "Economía, identidad y reducción local",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "FROM_DIFFERENCE_TO_TRANSITION_ES.md",
+      "ruta": "fuentes/originales/FROM_DIFFERENCE_TO_TRANSITION_ES.md",
+      "bytes": 2382,
+      "sha256": "2ebe3ddce8cc55220cfb9127d3414f8d6c26e5baa4daa0e39d74016f7c5e0f42",
+      "titulo": "De la diferencia a la transición — inserción ontológica",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "GAMMA_DESDE_ARQUITECTURA_v0_89.md",
+      "ruta": "fuentes/originales/GAMMA_DESDE_ARQUITECTURA_v0_89.md",
+      "bytes": 12636,
+      "sha256": "b054fc94ef851647fb9e7fba29c2b34b89912e1da2bb692b781eb3d666a662bb",
+      "titulo": "De la arquitectura relacional al operador dinámico",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "GAMMA_REFERENCE_OPERATOR_v0_80.md",
+      "ruta": "fuentes/originales/GAMMA_REFERENCE_OPERATOR_v0_80.md",
+      "bytes": 8479,
+      "sha256": "c8510f1e874371038f0b68dd0d477624a62d9a0fd6794bd136082b538fc9cb29",
+      "titulo": "Γ: selección endógena de referencia desde la frontera relacional",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "INDEPENDENT_DIFFERENCE_AND_DIMENSION_ES.md",
+      "ruta": "fuentes/originales/INDEPENDENT_DIFFERENCE_AND_DIMENSION_ES.md",
+      "bytes": 1360,
+      "sha256": "d52006b6c64c8c563d07c60627cb51ae3022e742066446f713147b1f98ca62c1",
+      "titulo": "Diferencia independiente y dimensión — inserción ontológica MF-58",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "LANGUAGE_AS_REFLECTION_LOCAL_INFORMATION_ES.md",
+      "ruta": "fuentes/originales/LANGUAGE_AS_REFLECTION_LOCAL_INFORMATION_ES.md",
+      "bytes": 3136,
+      "sha256": "2c9bbaec1d93c5fb5863dbbf0019ffbc6fe2dba4519b05599213e23063e1f8f2",
+      "titulo": "Lenguaje como reflexión — inserción ontológica canónica",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MEDIDA_INVARIANTE_PESO_BINARIO_v0_86.md",
+      "ruta": "fuentes/originales/MEDIDA_INVARIANTE_PESO_BINARIO_v0_86.md",
+      "bytes": 12264,
+      "sha256": "6b42f602dfaf74cdb5bd83f610915103c1900cc9699d0c6ca3076aa733fe119f",
+      "titulo": "De la incertidumbre máxima al peso \\(2^{-n}\\)",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF54_LOCAL_INFORMATION_REFLECTION_AND_BOUNDARY_STATE.md",
+      "ruta": "fuentes/originales/MF54_LOCAL_INFORMATION_REFLECTION_AND_BOUNDARY_STATE.md",
+      "bytes": 11754,
+      "sha256": "2649d57216a28a6c296a15440c53cdba28b03f201ed2317ed166928e383495ce",
+      "titulo": "MF-54 — Información local: reflexión, comparación y estado suficiente de frontera",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF55_ONTOLOGICAL_TRANSITION_RULE.md",
+      "ruta": "fuentes/originales/MF55_ONTOLOGICAL_TRANSITION_RULE.md",
+      "bytes": 8110,
+      "sha256": "5e27b7b7e09ebc8122223a69e515a47d2e1de4586e1d91a33ee357b625c4ca15",
+      "titulo": "MF-55 — Regla de transición ontológica: novedad, resolución y cierre local",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF56_RELATIONAL_DEPENDENCE_AND_CHANNELS.md",
+      "ruta": "fuentes/originales/MF56_RELATIONAL_DEPENDENCE_AND_CHANNELS.md",
+      "bytes": 6046,
+      "sha256": "a51bb6b54d26bc7219d2fc5eccb145dae215acf480cc34dbc56ea352b9be913c",
+      "titulo": "MF-56 — Naturaleza manifiesta, canales y dependencia relacional",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF57_GENERATOR_AUDIT_AND_NEW_REFERENCE_RULE.md",
+      "ruta": "fuentes/originales/MF57_GENERATOR_AUDIT_AND_NEW_REFERENCE_RULE.md",
+      "bytes": 10002,
+      "sha256": "6aec74ef19339702e7a548bfb3fce176501e94abe71d0460b0953a9921cc2863",
+      "titulo": "MF-57 — Auditoría del generador y regla de nueva referencia",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "MF58_RELATIONAL_INDEPENDENCE_AND_RANK.md",
+      "ruta": "fuentes/originales/MF58_RELATIONAL_INDEPENDENCE_AND_RANK.md",
+      "bytes": 9732,
+      "sha256": "c8ea2f774517c7bb95a31bd3ef92f355bcd9b7757dfe170825e53f4f8f4893a6",
+      "titulo": "MF-58 — Independencia relacional, rango de distinguibilidad y límite del rango semántico",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF59B_3SAT_ACCREDITATION_BARRIER.md",
+      "ruta": "fuentes/originales/MF59B_3SAT_ACCREDITATION_BARRIER.md",
+      "bytes": 4992,
+      "sha256": "17c4dcac1dabaee81a0ea2511bd23dad2b7cc2b4f8d185770bcd396b52c4c8f3",
+      "titulo": "MF-59B — Barrera de acreditación exacta en 3-SAT",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF60B_COMPOSABLE_LOCAL_CERTIFICATES.md",
+      "ruta": "fuentes/originales/MF60B_COMPOSABLE_LOCAL_CERTIFICATES.md",
+      "bytes": 7191,
+      "sha256": "f17f296ccf7dd804f36bdf4eb6113bac78d639ad8cc19585c96c82104e091bcb",
+      "titulo": "MF-60B — Certificados locales composables: existencia, verificación y generación",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF61B_COORDINATION_AND_SHARED_BOUNDARY.md",
+      "ruta": "fuentes/originales/MF61B_COORDINATION_AND_SHARED_BOUNDARY.md",
+      "bytes": 7333,
+      "sha256": "24cdfa58cc9a6a6541c1605860ce1dbb310627b450d7a75b8c204e1c0bab9aee",
+      "titulo": "MF-61B — Coordinación entre cierres y frontera compartida",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "MF62B_HYBRID_FRONTIER_HORN_DUAL_HORN_NO_GO.md",
+      "ruta": "fuentes/originales/MF62B_HYBRID_FRONTIER_HORN_DUAL_HORN_NO_GO.md",
+      "bytes": 4029,
+      "sha256": "8bdf16cd8ef8f88ba740d65b9d94f826ada40522e0bed95051342a38eaebb9da",
+      "titulo": "MF-62B — Frontera híbrida: no-go de residuo cero y coordinación Horn/dual-Horn",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "NATURE_AND_INTERACTION_ES.md",
+      "ruta": "fuentes/originales/NATURE_AND_INTERACTION_ES.md",
+      "bytes": 1143,
+      "sha256": "48207658be1d57b99241d20ca12be6da1f74497d7fb2109df208011bce085435",
+      "titulo": "Naturaleza e interacción — inserción ontológica MF-56",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "NEW_DIFFERENCE_NEW_REFERENCE_ES.md",
+      "ruta": "fuentes/originales/NEW_DIFFERENCE_NEW_REFERENCE_ES.md",
+      "bytes": 1697,
+      "sha256": "8b63234c0573b3c0c02a60a69d56a037b9542474d3867e90c62ee4c41d31d963",
+      "titulo": "Corrección ontológica — una diferencia no genera otra dimensión por repetición",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "NUCLEO_INTEGRADO_v0_78.md",
+      "ruta": "fuentes/originales/NUCLEO_INTEGRADO_v0_78.md",
+      "bytes": 23634,
+      "sha256": "dbf8b281aa2e41ce6c07b5ed3aab5188fee1d6e64ac7d905ea6329d9f0f5e188",
+      "titulo": "Núcleo Integrado de Totalidad, Incertidumbre, Cierre y Dimensión Relacional",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "OPEN_PROBLEMS_v0_72.md",
+      "ruta": "fuentes/originales/OPEN_PROBLEMS_v0_72.md",
+      "bytes": 1634,
+      "sha256": "2b66a5cffae0509ca4d444ad14355c47609319502b1259030453a7a03cf348bc",
+      "titulo": "Problemas abiertos prioritarios — v0.72",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "PHASE_SYNCHRONIZATION_DYNAMICS_v0_75.md",
+      "ruta": "fuentes/originales/PHASE_SYNCHRONIZATION_DYNAMICS_v0_75.md",
+      "bytes": 10526,
+      "sha256": "6f4880e19f0de0f8c67922a1187e67ef686878fca5bee05685378a8e72beff17",
+      "titulo": "Dinámica de desfase y sincronización",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "PROGRAMA_PRUEBA_LIMITE_CUATRO_v0_78.md",
+      "ruta": "fuentes/originales/PROGRAMA_PRUEBA_LIMITE_CUATRO_v0_78.md",
+      "bytes": 2427,
+      "sha256": "587bd8dc9268aa27e52450bd1251310b8f954e65161707062d8147f640fc7ea5",
+      "titulo": "Programa de prueba — Teorema del límite informacional de cuatro",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "PUENTE_BOOLEANO_C2_C4_v0_85.md",
+      "ruta": "fuentes/originales/PUENTE_BOOLEANO_C2_C4_v0_85.md",
+      "bytes": 11198,
+      "sha256": "78bc997910d8531fde0e059fd16a56b942884ac3020a8a56811d678cf1d47f80",
+      "titulo": "Del cierre de fase al cierre binario",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "ruta": "fuentes/originales/Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "bytes": 7365,
+      "sha256": "d8d204fc7afe913258745ba7d44446ffedc090fa06f690ebafea08a991216964",
+      "titulo": "Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "paquete"
+    },
+    {
+      "nombre": "REDUCTION_CONFLUENCE_v0_73.md",
+      "ruta": "fuentes/originales/REDUCTION_CONFLUENCE_v0_73.md",
+      "bytes": 8043,
+      "sha256": "7ae6f5f9b6bbe89280784be6810aec0e3c21a4363af7be0d4b30bacd8ef9b1ed",
+      "titulo": "Regla de reducción, confluencia y retorno a la unidad",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "REFLEXION_CIERRE_CUATRO_v0_90.md",
+      "ruta": "fuentes/originales/REFLEXION_CIERRE_CUATRO_v0_90.md",
+      "bytes": 13483,
+      "sha256": "291ef7ed794adff34c1db3560b0b7bbc894e951749fa52c41644f91a762b77aa",
+      "titulo": "La reflexión como generador de la arquitectura",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "REFLEXION_ESCALA_BIT_v0_81.md",
+      "ruta": "fuentes/originales/REFLEXION_ESCALA_BIT_v0_81.md",
+      "bytes": 4719,
+      "sha256": "c53b959e3cae074c716eedbab831f11e41c38c1a3c390b6a735ec1ff4666cc6d",
+      "titulo": "Reflexión, escala y almacenamiento de información",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "RESONANT_MODULES_STABLE_CLOSURE_v0_76.md",
+      "ruta": "fuentes/originales/RESONANT_MODULES_STABLE_CLOSURE_v0_76.md",
+      "bytes": 8439,
+      "sha256": "3d97ac60afcb62f688e4efd49bc9adc7f8dd47c78416ce56b5bfe6658c54c81a",
+      "titulo": "Módulos resonantes y criterio de cierre estable",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "STATUS_AUDIT_v0_78.md",
+      "ruta": "fuentes/originales/STATUS_AUDIT_v0_78.md",
+      "bytes": 1948,
+      "sha256": "1f93c1b21a54006273e74f9e27215efea3b0b4f9e472879d122ee7c5d109708c",
+      "titulo": "Auditoría de estatus — v0.78",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "auditoria"
+    },
+    {
+      "nombre": "TEOREMA_ORBITAS_4_8_v0_83.md",
+      "ruta": "fuentes/originales/TEOREMA_ORBITAS_4_8_v0_83.md",
+      "bytes": 10158,
+      "sha256": "930a24a2e7a8877a4ea32578c6e78520518e0b12933ed394986d791cb79e3eec",
+      "titulo": "Del cierre de cuatro a la duplicación 4→8",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "desarrollo"
+    },
+    {
+      "nombre": "VALIDATION_v0_62_1.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_62_1.md",
+      "bytes": 2687,
+      "sha256": "bc8351a5496f6d2bbba165be118c8c668bf77e35db15f3b3c50a312ca16c3060",
+      "titulo": "VALIDATION v0.62 — información local y reflexión",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_63.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_63.md",
+      "bytes": 2991,
+      "sha256": "e919e91ddc1433424c81e372d9a0a4eca52e1413b6545dddd830da28fe9058c2",
+      "titulo": "VALIDATION v0.63 — regla de transición ontológica",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_64.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_64.md",
+      "bytes": 1755,
+      "sha256": "4ab08304434fa4811597f3be181b0e0092cb83d0c2b2eaf33d71d5797d489167",
+      "titulo": "VALIDATION v0.64 — dependencia relacional y canales",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_65.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_65.md",
+      "bytes": 4838,
+      "sha256": "8d3270988bd1eacae2451237e419f34e17c50be4fadafe917bf5c02a57060cdf",
+      "titulo": "VALIDATION v0.65 — auditoría del generador",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_66.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_66.md",
+      "bytes": 1628,
+      "sha256": "697cf002ee2a44e9906ccd1192c1a096c51682e3d9d55af8464f4899e4e90ec6",
+      "titulo": "VALIDATION v0.66 — independencia relacional y rango",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_67.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_67.md",
+      "bytes": 259,
+      "sha256": "92a54f2e4416e0fead11455d40e5c86a31231d29fb3e21b370c5097407dfcb62",
+      "titulo": "VALIDATION v0.67 — MF-59B",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_68.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_68.md",
+      "bytes": 687,
+      "sha256": "fb7000871fc850da585d17bcfd5c6db679351634ea3c89a6d6f25df95a2e1d0d",
+      "titulo": "VALIDATION v0.68 — MF-60B",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_69.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_69.md",
+      "bytes": 415,
+      "sha256": "5548370fe240cb944764c43a472b1034fc1157149f9003cd3c7ca1a0ea7aa5d7",
+      "titulo": "VALIDATION v0.69 — MF-61B",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_70.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_70.md",
+      "bytes": 421,
+      "sha256": "acd42e31cff98b831d33e61a0f660970bbf0d5afdaf5d1be51ded8d4005d2f4d",
+      "titulo": "VALIDATION v0.70 — MF-62B",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_73.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_73.md",
+      "bytes": 423,
+      "sha256": "1a2a2eeb14b5c746f22669f1cd1aeea266a934f93e971e0fbe7cec7aafbdb063",
+      "titulo": "VALIDATION v0.73",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_74.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_74.md",
+      "bytes": 687,
+      "sha256": "bd85853d6c89064fdb658eda45b9bfc1a2fa72940835de195ccd63410a10e856",
+      "titulo": "VALIDATION v0.74",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_75.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_75.md",
+      "bytes": 688,
+      "sha256": "d3de4d8daaa202298daee00bc69987621c403f0be85d581f47694432b3efb605",
+      "titulo": "VALIDATION v0.75",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_76.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_76.md",
+      "bytes": 685,
+      "sha256": "d5ffe366256386754c39536caae21febf38b8c8c0ba83bebf413948a6430b323",
+      "titulo": "VALIDATION v0.76",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "VALIDATION_v0_77.md",
+      "ruta": "fuentes/originales/VALIDATION_v0_77.md",
+      "bytes": 824,
+      "sha256": "06b048e78dcee084d7586ce86ae2092ca0407cbe44842d7c662188c08f8157c9",
+      "titulo": "VALIDATION v0.77",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "validacion_reportada"
+    },
+    {
+      "nombre": "capsule_width_results_v0_79.json",
+      "ruta": "fuentes/originales/capsule_width_results_v0_79.json",
+      "bytes": 19142,
+      "sha256": "479f44faae6e7bb0ffc1cc2e5d90591eae427ee7d35b608513631d24142b75d3",
+      "titulo": "capsule_width_results_v0_79.json",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    },
+    {
+      "nombre": "gamma_reference_results_v0_80.json",
+      "ruta": "fuentes/originales/gamma_reference_results_v0_80.json",
+      "bytes": 16386,
+      "sha256": "50e4874503163986ea8fdc1bed6f7396432aad9abe667036a7f8b1e2c832940b",
+      "titulo": "gamma_reference_results_v0_80.json",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    },
+    {
+      "nombre": "mf53_equality_order.csv",
+      "ruta": "fuentes/originales/mf53_equality_order.csv",
+      "bytes": 386,
+      "sha256": "860b0f6cef7dc3401fa3c615c4317e58db28253cb6a85454416415da942a1dc7",
+      "titulo": "mf53_equality_order.csv",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    },
+    {
+      "nombre": "mf53_obdd_normalization_summary.json",
+      "ruta": "fuentes/originales/mf53_obdd_normalization_summary.json",
+      "bytes": 7693,
+      "sha256": "845b232d9e2376c939ccf9e035b4c987164ec684c2e63067fc8e6da3803383c5",
+      "titulo": "mf53_obdd_normalization_summary.json",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    },
+    {
+      "nombre": "mf54_local_information_summary.json",
+      "ruta": "fuentes/originales/mf54_local_information_summary.json",
+      "bytes": 2767,
+      "sha256": "7399081731f8d3a166fcec6948b99d591f918a5ac19e5a891e63186e1cb16660",
+      "titulo": "mf54_local_information_summary.json",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    },
+    {
+      "nombre": "mf55_transition_rule_summary.json",
+      "ruta": "fuentes/originales/mf55_transition_rule_summary.json",
+      "bytes": 3122,
+      "sha256": "fc32f4483a20fc47576a00f210263281f1c47aa2d640ba36394d16ca80af1306",
+      "titulo": "mf55_transition_rule_summary.json",
+      "procedencia": "Adjunto suministrado por el usuario en esta conversación",
+      "tipo": "datos_reportados"
+    }
+  ],
+  "extraidos": [
+    {
+      "paquete": "Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "miembro": "Programa_geometria_relacional_v0_91_composicion_capsulas/MANIFEST.json",
+      "ruta": "fuentes/paquetes_extraidos/Programa_geometria_relacional_v0_91_composicion_capsulas/MANIFEST.json",
+      "bytes": 891,
+      "sha256": "d02e93062ce2f16124e3227923e725b340fa9f27df956b16d55ec849d79fbe5d",
+      "duplicado_exacto_de": null
+    },
+    {
+      "paquete": "Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "miembro": "Programa_geometria_relacional_v0_91_composicion_capsulas/docs/audit/AUDITORIA_v0_91.md",
+      "ruta": "fuentes/paquetes_extraidos/Programa_geometria_relacional_v0_91_composicion_capsulas/docs/audit/AUDITORIA_v0_91.md",
+      "bytes": 1699,
+      "sha256": "5c9d85d2cdfcf5128ff065802f1c83bbd0fb46a7b17ac34de7c3fedeceb948dd",
+      "duplicado_exacto_de": "fuentes/originales/AUDITORIA_v0_91.md"
+    },
+    {
+      "paquete": "Programa_geometria_relacional_v0_91_composicion_capsulas.zip",
+      "miembro": "Programa_geometria_relacional_v0_91_composicion_capsulas/docs/canonical/COMPOSICION_RECURSIVA_CAPSULAS_v0_91.md",
+      "ruta": "fuentes/paquetes_extraidos/Programa_geometria_relacional_v0_91_composicion_capsulas/docs/canonical/COMPOSICION_RECURSIVA_CAPSULAS_v0_91.md",
+      "bytes": 13863,
+      "sha256": "d75329133439cc3abe65d2e2f6bd9383b0ac46652fb6202816340d09c28b4be1",
+      "duplicado_exacto_de": "fuentes/originales/COMPOSICION_RECURSIVA_CAPSULAS_v0_91.md"
+    }
+  ]
+}

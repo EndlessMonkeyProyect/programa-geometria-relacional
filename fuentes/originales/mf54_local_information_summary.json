@@ -1,0 +1,148 @@
+{
+  "language_locality": [
+    {
+      "language": "none",
+      "contexts": 0,
+      "classes": 1,
+      "I_rel_bits": 0.0,
+      "class_sizes": [
+        16
+      ]
+    },
+    {
+      "language": "first_bit",
+      "contexts": 1,
+      "classes": 2,
+      "I_rel_bits": 1.0,
+      "class_sizes": [
+        8,
+        8
+      ]
+    },
+    {
+      "language": "parity_only",
+      "contexts": 1,
+      "classes": 2,
+      "I_rel_bits": 1.0,
+      "class_sizes": [
+        8,
+        8
+      ]
+    },
+    {
+      "language": "two_bits",
+      "contexts": 2,
+      "classes": 4,
+      "I_rel_bits": 2.0,
+      "class_sizes": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "language": "all_bits",
+      "contexts": 4,
+      "classes": 16,
+      "I_rel_bits": 4.0,
+      "class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "language": "thresholds",
+      "contexts": 5,
+      "classes": 5,
+      "I_rel_bits": 2.321928094887362,
+      "class_sizes": [
+        6,
+        4,
+        4,
+        1,
+        1
+      ]
+    }
+  ],
+  "context_monotonicity": {
+    "pair_tests": 128000,
+    "failures": 0
+  },
+  "threshold_emergence": {
+    "rows": 45,
+    "failures": 0,
+    "exact_state": "theta_t(p)=clip(k-|p|,-1,n-t)"
+  },
+  "parity_emergence": {
+    "rows": 88,
+    "failures": 0
+  },
+  "nested_contexts": {
+    "rows": [
+      {
+        "stage": 0,
+        "contexts": 0,
+        "classes": 1,
+        "I_rel_bits": 0.0
+      },
+      {
+        "stage": 1,
+        "contexts": 1,
+        "classes": 2,
+        "I_rel_bits": 1.0
+      },
+      {
+        "stage": 2,
+        "contexts": 2,
+        "classes": 4,
+        "I_rel_bits": 2.0
+      },
+      {
+        "stage": 3,
+        "contexts": 3,
+        "classes": 8,
+        "I_rel_bits": 3.0
+      },
+      {
+        "stage": 4,
+        "contexts": 4,
+        "classes": 16,
+        "I_rel_bits": 4.0
+      }
+    ],
+    "monotonicity_failures": 0
+  },
+  "novelty_vs_resolution": {
+    "novelty_same_X": {
+      "no_context_classes": 1,
+      "one_bit_classes": 2,
+      "all_bits_classes": 16
+    },
+    "resolution_same_context": {
+      "full_X_classes": 16,
+      "even_parity_X_classes": 8,
+      "weight_le1_X_classes": 5
+    }
+  },
+  "methodological_correction": {
+    "previous_naive_state": "min(k+1,|p|)",
+    "issue": "not minimal when the remaining comparison horizon is finite",
+    "corrected_state": "remaining capacity k-|p| clipped by what the remaining future can still distinguish",
+    "interpretation": "the sufficient state is local to the admissible future context, not intrinsic to the prefix alone"
+  }
+}

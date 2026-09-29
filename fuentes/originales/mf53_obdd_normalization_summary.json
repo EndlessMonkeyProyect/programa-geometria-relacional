@@ -1,0 +1,301 @@
+{
+  "robdd_controls": [
+    {
+      "family": "threshold",
+      "n": 4,
+      "parameter_k": 2,
+      "order": "natural",
+      "robdd_nodes": 6,
+      "residual_classes_midcut": 3,
+      "log2_residual_classes_midcut": 1.584962500721156
+    },
+    {
+      "family": "parity",
+      "n": 4,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 7,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 4,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 8,
+      "residual_classes_midcut": 4,
+      "log2_residual_classes_midcut": 2.0
+    },
+    {
+      "family": "threshold",
+      "n": 6,
+      "parameter_k": 3,
+      "order": "natural",
+      "robdd_nodes": 12,
+      "residual_classes_midcut": 4,
+      "log2_residual_classes_midcut": 2.0
+    },
+    {
+      "family": "parity",
+      "n": 6,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 11,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 6,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 23,
+      "residual_classes_midcut": 8,
+      "log2_residual_classes_midcut": 3.0
+    },
+    {
+      "family": "threshold",
+      "n": 8,
+      "parameter_k": 4,
+      "order": "natural",
+      "robdd_nodes": 20,
+      "residual_classes_midcut": 5,
+      "log2_residual_classes_midcut": 2.321928094887362
+    },
+    {
+      "family": "parity",
+      "n": 8,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 15,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 8,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 55,
+      "residual_classes_midcut": 15,
+      "log2_residual_classes_midcut": 3.9068905956085187
+    },
+    {
+      "family": "threshold",
+      "n": 10,
+      "parameter_k": 5,
+      "order": "natural",
+      "robdd_nodes": 30,
+      "residual_classes_midcut": 6,
+      "log2_residual_classes_midcut": 2.584962500721156
+    },
+    {
+      "family": "parity",
+      "n": 10,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 19,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 10,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 119,
+      "residual_classes_midcut": 27,
+      "log2_residual_classes_midcut": 4.754887502163468
+    },
+    {
+      "family": "threshold",
+      "n": 12,
+      "parameter_k": 6,
+      "order": "natural",
+      "robdd_nodes": 42,
+      "residual_classes_midcut": 7,
+      "log2_residual_classes_midcut": 2.807354922057604
+    },
+    {
+      "family": "parity",
+      "n": 12,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 23,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 12,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 238,
+      "residual_classes_midcut": 47,
+      "log2_residual_classes_midcut": 5.554588851677638
+    },
+    {
+      "family": "threshold",
+      "n": 14,
+      "parameter_k": 7,
+      "order": "natural",
+      "robdd_nodes": 56,
+      "residual_classes_midcut": 8,
+      "log2_residual_classes_midcut": 3.0
+    },
+    {
+      "family": "parity",
+      "n": 14,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 27,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 14,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 457,
+      "residual_classes_midcut": 80,
+      "log2_residual_classes_midcut": 6.321928094887363
+    },
+    {
+      "family": "threshold",
+      "n": 16,
+      "parameter_k": 8,
+      "order": "natural",
+      "robdd_nodes": 72,
+      "residual_classes_midcut": 9,
+      "log2_residual_classes_midcut": 3.169925001442312
+    },
+    {
+      "family": "parity",
+      "n": 16,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 31,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 16,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 854,
+      "residual_classes_midcut": 134,
+      "log2_residual_classes_midcut": 7.066089190457772
+    },
+    {
+      "family": "threshold",
+      "n": 18,
+      "parameter_k": 9,
+      "order": "natural",
+      "robdd_nodes": 90,
+      "residual_classes_midcut": 10,
+      "log2_residual_classes_midcut": 3.321928094887362
+    },
+    {
+      "family": "parity",
+      "n": 18,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 35,
+      "residual_classes_midcut": 2,
+      "log2_residual_classes_midcut": 1.0
+    },
+    {
+      "family": "hwb",
+      "n": 18,
+      "parameter_k": "",
+      "order": "natural",
+      "robdd_nodes": 1562,
+      "residual_classes_midcut": 222,
+      "log2_residual_classes_midcut": 7.794415866350106
+    }
+  ],
+  "equality_order_experiment": [
+    {
+      "m_pairs": 2,
+      "n_vars": 4,
+      "grouped_robdd_nodes": 9,
+      "interleaved_robdd_nodes": 6,
+      "grouped_midcut_residual_classes": 4,
+      "expected_grouped_residual_classes": 4,
+      "grouped_to_interleaved_node_ratio": 1.5
+    },
+    {
+      "m_pairs": 3,
+      "n_vars": 6,
+      "grouped_robdd_nodes": 21,
+      "interleaved_robdd_nodes": 9,
+      "grouped_midcut_residual_classes": 8,
+      "expected_grouped_residual_classes": 8,
+      "grouped_to_interleaved_node_ratio": 2.3333333333333335
+    },
+    {
+      "m_pairs": 4,
+      "n_vars": 8,
+      "grouped_robdd_nodes": 45,
+      "interleaved_robdd_nodes": 12,
+      "grouped_midcut_residual_classes": 16,
+      "expected_grouped_residual_classes": 16,
+      "grouped_to_interleaved_node_ratio": 3.75
+    },
+    {
+      "m_pairs": 5,
+      "n_vars": 10,
+      "grouped_robdd_nodes": 93,
+      "interleaved_robdd_nodes": 15,
+      "grouped_midcut_residual_classes": 32,
+      "expected_grouped_residual_classes": 32,
+      "grouped_to_interleaved_node_ratio": 6.2
+    },
+    {
+      "m_pairs": 6,
+      "n_vars": 12,
+      "grouped_robdd_nodes": 189,
+      "interleaved_robdd_nodes": 18,
+      "grouped_midcut_residual_classes": 64,
+      "expected_grouped_residual_classes": 64,
+      "grouped_to_interleaved_node_ratio": 10.5
+    },
+    {
+      "m_pairs": 7,
+      "n_vars": 14,
+      "grouped_robdd_nodes": 381,
+      "interleaved_robdd_nodes": 21,
+      "grouped_midcut_residual_classes": 128,
+      "expected_grouped_residual_classes": 128,
+      "grouped_to_interleaved_node_ratio": 18.142857142857142
+    },
+    {
+      "m_pairs": 8,
+      "n_vars": 16,
+      "grouped_robdd_nodes": 765,
+      "interleaved_robdd_nodes": 24,
+      "grouped_midcut_residual_classes": 256,
+      "expected_grouped_residual_classes": 256,
+      "grouped_to_interleaved_node_ratio": 31.875
+    },
+    {
+      "m_pairs": 9,
+      "n_vars": 18,
+      "grouped_robdd_nodes": 1533,
+      "interleaved_robdd_nodes": 27,
+      "grouped_midcut_residual_classes": 512,
+      "expected_grouped_residual_classes": 512,
+      "grouped_to_interleaved_node_ratio": 56.77777777777778
+    }
+  ],
+  "equality_midcut_failures": 0,
+  "threshold_cut_tests": 60,
+  "threshold_bound_failures": 0,
+  "external_classification": {
+    "bryant_1986": "Reduced OBDDs are canonical for a fixed variable order.",
+    "itsykson_ovcharov_2024": "Exponential lower bounds are known for OBDD(and, exists, reordering) SAT algorithms."
+  }
+}
