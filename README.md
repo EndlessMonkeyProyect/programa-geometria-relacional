@@ -1,5 +1,7 @@
 # Programa de Geometría Relacional
 
+[Read this repository in English](README.en.md).
+
 **Edición conceptual 0.1.0 · 29 de septiembre de 2026**  
 **Autor del programa en las fuentes:** Le Matt Ansatz Di Ego  
 **Organización y revisión editorial:** elaboradas con asistencia de IA a partir de los archivos aportados.
@@ -37,17 +39,17 @@ El alcance son los archivos adjuntos disponibles en esta conversación. No se ha
 
 ## Dos formas de usar la entrega
 
-- Abrir README.md y seguir los enlaces con un visor Markdown.
-- Restaurar el repositorio Git desde el archivo hermano historial.git.bundle:
+- Abrir README.md en [el repositorio público](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional) y seguir los enlaces con un visor Markdown.
+- Clonar el repositorio público y ejecutar las comprobaciones:
 
 ~~~bash
-git clone historial.git.bundle programa-geometria-relacional
+git clone https://github.com/EndlessMonkeyProyect/programa-geometria-relacional.git
 cd programa-geometria-relacional
 python3 herramientas/verificar.py
 python3 ejemplos/comprobaciones.py
 ~~~
 
-El bundle conserva el commit inicial de esta edición. No contiene el historial histórico del autor. La carpeta distribuida permite leer el contenido sin Git.
+El archivo historial.git.bundle forma parte del ZIP original de esta entrega, no del repositorio publicado. Conserva el commit inicial de esta edición y no contiene el historial histórico del autor. El contenido también puede leerse sin Git.
 
 ## Estado central
 

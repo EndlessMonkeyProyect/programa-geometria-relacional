@@ -5,6 +5,7 @@ import hashlib
 import json
 import csv
 import re
+import sys
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     errors = []
-    manifest = json.loads((ROOT / "fuentes/MANIFIESTO.json").read_text())
+    manifest = json.loads((ROOT / "fuentes/MANIFIESTO.json").read_text(encoding="utf-8"))
     for item in manifest["originales"] + manifest["extraidos"]:
         p = ROOT / item["ruta"]
         if not p.is_file():
@@ -35,7 +36,7 @@ def main():
     json_count = 0
     for p in (ROOT / "fuentes").rglob("*.json"):
         try:
-            json.loads(p.read_text())
+            json.loads(p.read_text(encoding="utf-8"))
             json_count += 1
         except Exception as exc:
             errors.append(f"JSON {p.name}: {exc}")
@@ -43,9 +44,11 @@ def main():
     editorial = list((ROOT / "docs").rglob("*.md"))
     editorial += list(ROOT.glob("*.md"))
     editorial += list((ROOT / "verificacion").glob("*.md"))
-    editorial += [ROOT / "fuentes/CATALOGO.md", ROOT / "datos/README.md", ROOT / "ejemplos/README.md"]
+    editorial += list((ROOT / "fuentes").glob("CATALOGO*.md"))
+    editorial += list((ROOT / "datos").glob("*.md"))
+    editorial += list((ROOT / "ejemplos").glob("*.md"))
     for p in editorial:
-        for target in re.findall(r"\[[^\]\n]*\]\(([^)\n]+)\)", p.read_text()):
+        for target in re.findall(r"\[[^\]\n]*\]\(([^)\n]+)\)", p.read_text(encoding="utf-8")):
             if "://" in target or target.startswith("#"):
                 continue
             target = target.split("#", 1)[0]
@@ -55,9 +58,9 @@ def main():
             dest = (p.parent / target).resolve()
             if not dest.is_relative_to(ROOT) or not dest.exists():
                 errors.append(f"Enlace roto en {p.relative_to(ROOT)}: {target}")
-    with (ROOT / "fuentes/originales/mf53_equality_order.csv").open(newline="") as f:
+    with (ROOT / "fuentes/originales/mf53_equality_order.csv").open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    data53 = json.loads((ROOT / "fuentes/originales/mf53_obdd_normalization_summary.json").read_text())
+    data53 = json.loads((ROOT / "fuentes/originales/mf53_obdd_normalization_summary.json").read_text(encoding="utf-8"))
     reported = data53["equality_order_experiment"]
     if len(rows) != len(reported):
         errors.append("Filas MF53 distintas")
@@ -65,7 +68,7 @@ def main():
         for key, value in row.items():
             if key not in ref or abs(float(value) - float(ref[key])) > 1e-10:
                 errors.append(f"MF53 CSV/JSON: {key}")
-    data80 = json.loads((ROOT / "fuentes/originales/gamma_reference_results_v0_80.json").read_text())
+    data80 = json.loads((ROOT / "fuentes/originales/gamma_reference_results_v0_80.json").read_text(encoding="utf-8"))
     stress = data80["stress"]
     hits = sum(r["gamma_width"] == r["optimal_width"] for r in stress)
     for r in stress:
@@ -89,6 +92,8 @@ def main():
         "alcance": "Integridad y consistencia documental; no reproduce los experimentos históricos completos.",
         "errores": errors,
     }
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if not errors else 1
 

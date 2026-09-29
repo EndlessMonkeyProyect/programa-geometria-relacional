@@ -9,5 +9,7 @@
 - Catálogo completo y manifiesto de integridad.
 - Ejemplos nuevos y verificaciones identificados como editoriales.
 - Repositorio Git inicial y bundle portable.
+- Traducción inglesa de los 25 documentos editoriales; las fuentes originales permanecen intactas.
+- Publicación en GitHub y protección de los bytes originales en las clonaciones de Windows.
 
 Esta numeración describe el trabajo editorial. No sustituye las versiones v0.xx ni los identificadores MF del programa.

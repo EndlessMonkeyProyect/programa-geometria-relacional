@@ -32,4 +32,4 @@ Los comandos usan la biblioteca estándar de Python. Sus informes van a la salid
 
 ## Publicación
 
-Esta entrega es un repositorio portable, sin remoto configurado. Elegir cuenta, nombre, visibilidad y licencia antes de publicarlo. La edición no atribuye una licencia abierta por defecto. El primer commit es de organización editorial, no acredita la fecha original de descubrimiento de los resultados.
+El repositorio de esta edición se publica en [EndlessMonkeyProyect/programa-geometria-relacional](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional). La edición no atribuye una licencia abierta por defecto. El primer commit es de organización editorial, no acredita la fecha original de descubrimiento de los resultados.

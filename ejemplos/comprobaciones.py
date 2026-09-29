@@ -3,6 +3,7 @@
 from fractions import Fraction as F
 from itertools import product
 import json
+import sys
 
 
 def dot(a, b):
@@ -77,6 +78,8 @@ def main():
     delta = [phases[0]-phases[1],phases[1]-phases[2],phases[2]-phases[0]]
     assert sum(delta) == 0
     checks.append("Diferencias exactas cancelan sobre un ciclo")
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     print(json.dumps({"estado":"PASS","grupos_de_comprobaciones":len(checks),"resultados":checks,
                       "alcance":"Ejemplos editoriales finitos; no validación física ni reproducción histórica."},
                      ensure_ascii=False,indent=2))
