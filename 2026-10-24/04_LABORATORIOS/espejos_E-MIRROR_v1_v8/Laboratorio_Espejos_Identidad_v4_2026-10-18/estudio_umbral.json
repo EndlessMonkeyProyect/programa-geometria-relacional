@@ -1,0 +1,65 @@
+{
+  "estudio": "repeticiones con 10 semillas de ruido, sin incertidumbre geométrica",
+  "ensayos": [
+    {
+      "desplazamiento_m": 0.0,
+      "separacion_sensor_px": 0.0,
+      "dos_detectadas_en_10_ensayos": 0
+    },
+    {
+      "desplazamiento_m": 0.01,
+      "separacion_sensor_px": 0.10599032206357606,
+      "dos_detectadas_en_10_ensayos": 0
+    },
+    {
+      "desplazamiento_m": 0.02,
+      "separacion_sensor_px": 0.21198064412709527,
+      "dos_detectadas_en_10_ensayos": 0
+    },
+    {
+      "desplazamiento_m": 0.025,
+      "separacion_sensor_px": 0.2649758051588833,
+      "dos_detectadas_en_10_ensayos": 0
+    },
+    {
+      "desplazamiento_m": 0.03,
+      "separacion_sensor_px": 0.31797096619067133,
+      "dos_detectadas_en_10_ensayos": 0
+    },
+    {
+      "desplazamiento_m": 0.035,
+      "separacion_sensor_px": 0.37096612722245936,
+      "dos_detectadas_en_10_ensayos": 2
+    },
+    {
+      "desplazamiento_m": 0.04,
+      "separacion_sensor_px": 0.42396128825419055,
+      "dos_detectadas_en_10_ensayos": 5
+    },
+    {
+      "desplazamiento_m": 0.05,
+      "separacion_sensor_px": 0.5299516103177666,
+      "dos_detectadas_en_10_ensayos": 7
+    },
+    {
+      "desplazamiento_m": 0.06,
+      "separacion_sensor_px": 0.6359419323813427,
+      "dos_detectadas_en_10_ensayos": 9
+    },
+    {
+      "desplazamiento_m": 0.08,
+      "separacion_sensor_px": 0.8479225765084948,
+      "dos_detectadas_en_10_ensayos": 10
+    },
+    {
+      "desplazamiento_m": 0.1,
+      "separacion_sensor_px": 1.05990322063559,
+      "dos_detectadas_en_10_ensayos": 10
+    },
+    {
+      "desplazamiento_m": 0.15,
+      "separacion_sensor_px": 1.5898548309533567,
+      "dos_detectadas_en_10_ensayos": 10
+    }
+  ]
+}

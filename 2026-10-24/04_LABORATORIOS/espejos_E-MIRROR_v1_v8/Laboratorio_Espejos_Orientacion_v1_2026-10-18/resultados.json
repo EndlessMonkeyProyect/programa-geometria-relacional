@@ -1,0 +1,227 @@
+{
+  "A_puntos_de_fuente_en_esquina_de_tres_planos": {
+    "en_una_arista_0_0_3": {
+      "multiplicidad_maxima_de_una_posicion": 4,
+      "origen_hipotetico": [
+        0,
+        0,
+        3
+      ],
+      "posiciones_virtuales_distintas": 2,
+      "transformaciones": 8,
+      "transformaciones_por_paridad": {
+        "directa_par": 4,
+        "invertida_impar": 4
+      }
+    },
+    "en_una_cara_0_2_3": {
+      "multiplicidad_maxima_de_una_posicion": 2,
+      "origen_hipotetico": [
+        0,
+        2,
+        3
+      ],
+      "posiciones_virtuales_distintas": 4,
+      "transformaciones": 8,
+      "transformaciones_por_paridad": {
+        "directa_par": 4,
+        "invertida_impar": 4
+      }
+    },
+    "en_vertice_0_0_0": {
+      "multiplicidad_maxima_de_una_posicion": 8,
+      "origen_hipotetico": [
+        0,
+        0,
+        0
+      ],
+      "posiciones_virtuales_distintas": 1,
+      "transformaciones": 8,
+      "transformaciones_por_paridad": {
+        "directa_par": 4,
+        "invertida_impar": 4
+      }
+    },
+    "general_1_2_3": {
+      "multiplicidad_maxima_de_una_posicion": 1,
+      "origen_hipotetico": [
+        1,
+        2,
+        3
+      ],
+      "posiciones_virtuales_distintas": 8,
+      "transformaciones": 8,
+      "transformaciones_por_paridad": {
+        "directa_par": 4,
+        "invertida_impar": 4
+      }
+    },
+    "simetria_del_centro_1_1_1_con_diagonales": {
+      "multiplicidad_maxima_de_una_posicion": 6,
+      "origen_hipotetico": [
+        1,
+        1,
+        1
+      ],
+      "posiciones_virtuales_distintas": 8,
+      "transformaciones": 48,
+      "transformaciones_por_paridad": {
+        "directa_par": 24,
+        "invertida_impar": 24
+      }
+    }
+  },
+  "B_diagonales_fuente_asimetrica": {
+    "mas_diagonal_xy": {
+      "multiplicidad_maxima_de_una_posicion": 1,
+      "origen_hipotetico": [
+        1,
+        2,
+        3
+      ],
+      "posiciones_virtuales_distintas": 16,
+      "transformaciones": 16,
+      "transformaciones_por_paridad": {
+        "directa_par": 8,
+        "invertida_impar": 8
+      }
+    },
+    "mas_diagonal_yz": {
+      "multiplicidad_maxima_de_una_posicion": 1,
+      "origen_hipotetico": [
+        1,
+        2,
+        3
+      ],
+      "posiciones_virtuales_distintas": 48,
+      "transformaciones": 48,
+      "transformaciones_por_paridad": {
+        "directa_par": 24,
+        "invertida_impar": 24
+      }
+    },
+    "tres_perpendiculares": {
+      "multiplicidad_maxima_de_una_posicion": 1,
+      "origen_hipotetico": [
+        1,
+        2,
+        3
+      ],
+      "posiciones_virtuales_distintas": 8,
+      "transformaciones": 8,
+      "transformaciones_por_paridad": {
+        "directa_par": 4,
+        "invertida_impar": 4
+      }
+    }
+  },
+  "C_cubo_cerrado_centro_celdas_virtuales": {
+    "celdas_virtuales": 125,
+    "firmas_de_orientacion": 8,
+    "frecuencias_por_firma": {
+      "000": 27,
+      "001": 18,
+      "010": 18,
+      "011": 12,
+      "100": 18,
+      "101": 12,
+      "110": 12,
+      "111": 8
+    },
+    "paridades_totales": {
+      "impar": 62,
+      "par": 63
+    },
+    "posiciones_de_imagen_distintas": 125,
+    "radio_en_celdas": 2
+  },
+  "D_acceso_por_observacion_y_filtros": {
+    "accesibilidad_con_ruido": "Una diferencia z=1, atenuada a 0.01, queda por debajo del umbral 0.02; el rango exacto 3 no garantiza distinguirla.",
+    "desplazamiento_z_1_medicion_1_100": "0.01",
+    "filtros_que_solo_dejan_y_rango": 1,
+    "misma_direccion_con_reflejo_en_x_rango": 2,
+    "opacidad_exacta_z_cero_rango": 2,
+    "segunda_vista_calibrada_con_intercambio_xz_rango": 3,
+    "transmision_z_1_100_rango": 3,
+    "umbral_de_ruido_ejemplo": "0.02",
+    "una_vista_xy_rango": 2
+  },
+  "E_angulos_dos_espejos_infinitos": [
+    {
+      "angulo_grados": "90",
+      "orden_de_la_rotacion_doble": 2,
+      "transformaciones_del_grupo_abstracto": 4
+    },
+    {
+      "angulo_grados": "60",
+      "orden_de_la_rotacion_doble": 3,
+      "transformaciones_del_grupo_abstracto": 6
+    },
+    {
+      "angulo_grados": "45",
+      "orden_de_la_rotacion_doble": 4,
+      "transformaciones_del_grupo_abstracto": 8
+    },
+    {
+      "angulo_grados": "61",
+      "orden_de_la_rotacion_doble": 180,
+      "transformaciones_del_grupo_abstracto": 360
+    },
+    {
+      "angulo_grados": "60.1",
+      "orden_de_la_rotacion_doble": 1800,
+      "transformaciones_del_grupo_abstracto": 3600
+    }
+  ],
+  "F_capas_de_reflexion_con_atenuacion_ideal": [
+    {
+      "celdas_virtuales_en_bola_L1": null,
+      "nota": "sin límite por atenuación, solamente en este modelo ideal",
+      "rebotes_maximos_detectables": null,
+      "reflectividad": "1",
+      "umbral": "0.05"
+    },
+    {
+      "celdas_virtuales_en_bola_L1": 30913,
+      "intensidad_en_k": "0.05233476",
+      "intensidad_en_k_mas_1": "0.04710129",
+      "rebotes_maximos_detectables": 28,
+      "reflectividad": "0.9",
+      "umbral": "0.05"
+    },
+    {
+      "celdas_virtuales_en_bola_L1": 3303,
+      "intensidad_en_k": "0.05497558",
+      "intensidad_en_k_mas_1": "0.04398047",
+      "rebotes_maximos_detectables": 13,
+      "reflectividad": "0.8",
+      "umbral": "0.05"
+    },
+    {
+      "celdas_virtuales_en_bola_L1": 129,
+      "intensidad_en_k": "0.0625",
+      "intensidad_en_k_mas_1": "0.03125",
+      "rebotes_maximos_detectables": 4,
+      "reflectividad": "0.5",
+      "umbral": "0.05"
+    }
+  ],
+  "G_control_de_forma_esfera_frente_a_marcadores": {
+    "cuatro_puntos_etiquetados_imagenes_completas_distintas": 48,
+    "esfera_homogenea_orientaciones_detectables_a_partir_de_su_forma": 1,
+    "esfera_homogenea_posiciones_de_centro_distintas": 8,
+    "nota": "Control de simetría de objeto, no un experimento realizado con esferas materiales.",
+    "transformaciones": 48
+  },
+  "H_proposiciones_comprobables": {
+    "cada_generador_reflejo_cuadra_a_identidad": true,
+    "en_la_fuente_central_simetrica_48_operaciones_producen_8_posiciones": true,
+    "grupo_48_con_24_directas_y_24_invertidas": true
+  },
+  "metadatos": {
+    "base": "Programa v3.4.1, 18-10-2026",
+    "no_es": "simulacion fotometrica ni prueba de singularidad ontologica",
+    "nombre": "Continuacion E-MIRROR",
+    "tipo": "modelos exactos de reflexion plana y observaciones lineales"
+  }
+}

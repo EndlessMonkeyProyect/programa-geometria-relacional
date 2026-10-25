@@ -1,0 +1,24 @@
+{
+  "amplitudes": {
+    "A": 4.0,
+    "B": 4.0,
+    "viscosidad": 1.0,
+    "delta": 0.01125
+  },
+  "certificado_calor_cota_inferior": 0.5334617552274619,
+  "certificado_calor_cota_inferior_racional": 0.5303308212211294,
+  "certificado_picard_cota_superior_racional": 0.466671323271578,
+  "certificado_calor_cota_superior_simple": 1.9239415033981173,
+  "certificado_picard_cota_superior": 0.46657446787605583,
+  "picard_cota_B_integrada": 0.021953280741297952,
+  "picard_cota_exposicion_G": 3.056501045930384,
+  "umbral": 0.5,
+  "Bcalor_integrado_global": 1.92,
+  "R_inicial_sin_modo": 2.0,
+  "S_W": 21.466252583997985,
+  "R_W": 9.600000000000001,
+  "modos_W": 4,
+  "chequeos_de_simetria_y_divergencia": 1776,
+  "comparacion_rigurosa": "calor M>0.5303>0.5; Picard M<0.4667<0.5 por cotas racionales",
+  "estado": "Análisis local exacto, control espectral numérico; no prueba NS 3D general ni iteración global"
+}

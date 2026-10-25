@@ -1,0 +1,112 @@
+{
+  "max_div_error": 5.691719096034831e-09,
+  "analytic": {
+    "R": 1.4,
+    "a": 0.6,
+    "d": 0.3,
+    "c": 1.0,
+    "eps": 0.04,
+    "nu": 0.025,
+    "q": 0.25,
+    "chi": 0.7165313105737893,
+    "chi_r": -2.1230557350334496,
+    "b": -4.938271604938271,
+    "r0": 1.7,
+    "theta_dot": -4.162854382418528,
+    "phi_dot": [
+      -2.031472938620242,
+      -2.1313814437982868,
+      -2.031472938620242,
+      -2.1313814437982868
+    ],
+    "psi_dot": [
+      -0.0999085051780444,
+      0.09990850517804528,
+      -0.0999085051780444,
+      0.09990850517804528
+    ],
+    "psi_dot_unperturbed": 8.881784197001252e-16,
+    "neighbour_slip_rate": -0.19981701035608967
+  },
+  "numerical_O69_reuse": [
+    {
+      "N": 32,
+      "eps": 0,
+      "T": 0.08,
+      "coherence_start": 1.0,
+      "coherence_end": 1.0,
+      "relative_spread_end": 7.771561172376096e-15,
+      "delta_psi_end": [
+        -0.7710345387693414,
+        -0.7710345387693414,
+        -0.7710345387693487,
+        -0.7710345387693491
+      ],
+      "position_distances_min": 1.5642490543065188
+    },
+    {
+      "N": 32,
+      "eps": 0.14,
+      "T": 0.08,
+      "coherence_start": 1.0,
+      "coherence_end": 0.9789579608722203,
+      "relative_spread_end": 0.5214162963998356,
+      "delta_psi_end": [
+        -0.9819791783622999,
+        -0.7426388484545042,
+        -1.1912514849796254,
+        -0.6698351885797899
+      ],
+      "position_distances_min": 1.5346960244359393
+    },
+    {
+      "N": 40,
+      "eps": 0,
+      "T": 0.08,
+      "coherence_start": 1.0,
+      "coherence_end": 1.0,
+      "relative_spread_end": 4.218847493575595e-15,
+      "delta_psi_end": [
+        -0.7873309272354131,
+        -0.7873309272354131,
+        -0.7873309272354169,
+        -0.7873309272354173
+      ],
+      "position_distances_min": 1.5628442107118097
+    },
+    {
+      "N": 40,
+      "eps": 0.14,
+      "T": 0.08,
+      "coherence_start": 1.0,
+      "coherence_end": 0.973435874351705,
+      "relative_spread_end": 0.5896402365880166,
+      "delta_psi_end": [
+        -0.9914656385712582,
+        -0.7380665176401973,
+        -1.249467315673065,
+        -0.6598270790850483
+      ],
+      "position_distances_min": 1.5300332625380777
+    }
+  ],
+  "checks": {
+    "b_relacion_dos_a_uno_sin_perturbacion": true,
+    "signos_alternos_defecto": true,
+    "pares_opuestos_identicos": true,
+    "parejas_vecinas_no_compatibles": true,
+    "campo_soporte_toroidal_separado_eje_y_frontera": true,
+    "vorticidad_no_trivial": true,
+    "divergencia_simbolica_cancelada": true,
+    "divergencia_diferencias_finitas_36_puntos": true,
+    "simetria_baseline_N32": true,
+    "simetria_baseline_N40": true,
+    "desfase_perturbado_N32": true,
+    "desfase_perturbado_N40": true,
+    "nodos_separados_N32_N40": true,
+    "no_invariancia_de_bloqueo_de_cuatro_nodos": true
+  },
+  "passed": 14.0,
+  "total": 14,
+  "source": "O69 reused operators; initial field O53; N32,40 Galerkin RK4, dt .004,T .08; no continuum convergence proof."
+}

@@ -1,0 +1,116 @@
+{
+  "ensayo": "O56",
+  "modelo": "cizallas exactas NS 3D + lectura separada de O55",
+  "parametros": {
+    "nu": 0.025,
+    "k": 0.7853981633974483,
+    "R": 1.6,
+    "r": 0.48,
+    "theta": 0.7853981633974483,
+    "z0": 0.3394112549695428,
+    "amplitud": 0.22,
+    "espejo_L_ref": "exp(0.23 t)",
+    "tiempo_final": 1.26
+  },
+  "casos": {
+    "sin_cizalla": {
+      "A": 0.0,
+      "direccion": "y",
+      "cos_final": 0.0,
+      "angulo_final_deg": 90.0,
+      "E_inicial": 0.0,
+      "Z_inicial": 0.0,
+      "q_inicial": 0.3,
+      "M_antes": 10,
+      "M_despues": 20,
+      "novedad_aritmetica": 2,
+      "K0": 0.0,
+      "pendiente_inicial": 0.0
+    },
+    "cizalla_en_y": {
+      "A": 0.22,
+      "direccion": "y",
+      "cos_final": 0.14550956302264745,
+      "angulo_final_deg": 81.63321203848393,
+      "E_inicial": 0.0121,
+      "Z_inicial": 0.007463888328323827,
+      "q_inicial": 0.3,
+      "M_antes": 10,
+      "M_despues": 20,
+      "novedad_aritmetica": 2,
+      "K0": 0.0589319133731747,
+      "pendiente_inicial": 0.1178638267463494
+    },
+    "cizalla_en_x": {
+      "A": 0.22,
+      "direccion": "x",
+      "cos_final": 0.0,
+      "angulo_final_deg": 90.0,
+      "E_inicial": 0.0121,
+      "Z_inicial": 0.007463888328323827,
+      "q_inicial": 0.3,
+      "M_antes": 10,
+      "M_despues": 20,
+      "novedad_aritmetica": 2,
+      "K0": 0.0,
+      "pendiente_inicial": 0.0
+    },
+    "cizalla_y_inversa": {
+      "A": -0.22,
+      "direccion": "y",
+      "cos_final": -0.14550956302264745,
+      "angulo_final_deg": 98.36678796151607,
+      "E_inicial": 0.0121,
+      "Z_inicial": 0.007463888328323827,
+      "q_inicial": 0.3,
+      "M_antes": 10,
+      "M_despues": 20,
+      "novedad_aritmetica": 2,
+      "K0": -0.0589319133731747,
+      "pendiente_inicial": -0.1178638267463494
+    }
+  },
+  "controles": {
+    "geometria_q_0_3": true,
+    "normalizador_minimo_10": true,
+    "refinamiento_M_10_a_20": true,
+    "novedad_aritmetica_indice_2": true,
+    "misma_normalizacion_escenarios": true,
+    "mismo_E_inicial_dos_ejes": true,
+    "misma_Z_inicial_dos_ejes": true,
+    "mismo_E_inicial_signos": true,
+    "cizalla_x_conserva_ortogonalidad": true,
+    "cizalla_y_rompe_ortogonalidad": true,
+    "cizallas_signo_opuesto": true,
+    "sin_cizalla_conserva_ortogonalidad": true,
+    "deformacion_cruzada_x_nula": true,
+    "deformacion_cruzada_y_no_nula": true,
+    "pendiente_inicial_sin_cizalla": true,
+    "pendiente_inicial_cizalla_en_y": true,
+    "pendiente_inicial_cizalla_en_x": true,
+    "pendiente_inicial_cizalla_y_inversa": true,
+    "O55_misma_q_inicial": true,
+    "O55_mismo_angulo_inicial": true,
+    "O55_futuros_distintos": true
+  },
+  "controles_aprobados": 21,
+  "datos_o55": {
+    "simetrico": {
+      "q0": 0.3,
+      "cos_final": -0.010678689892354374,
+      "angulo_final_deg": 90.61185549070078
+    },
+    "perturbado": {
+      "q0": 0.3,
+      "cos_final": 0.16336745793487317,
+      "angulo_final_deg": 80.59759010393566
+    }
+  },
+  "advertencias": [
+    "El flujo exacto de cizalla es un contraejemplo dinámico, no un anillo vorticial exacto aislado.",
+    "Los radios R,r indicados son de la superficie inicial: no son necesariamente radios efectivos de superficie deformada.",
+    "M=10 es codificacion de 3/10; m=4 es malla declarada, no seleccion fisica derivada.",
+    "La novedad relacional de K requiere información de gradiente de velocidad; no deriva de M.",
+    "Perpendicularidad no garantiza persistencia del toro fisico ni regularidad global 3D."
+  ]
+}

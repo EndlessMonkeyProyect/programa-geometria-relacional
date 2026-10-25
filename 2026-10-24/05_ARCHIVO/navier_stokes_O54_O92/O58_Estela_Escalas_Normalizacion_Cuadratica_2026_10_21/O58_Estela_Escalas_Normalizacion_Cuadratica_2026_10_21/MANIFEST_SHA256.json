@@ -1,0 +1,17 @@
+{
+  "package": "O58",
+  "date": "2026-10-21",
+  "method": "SHA256",
+  "files": {
+    "LEER_PRIMERO.md": "e4a53ddfc36304c0fac93647cdc32d4398a87ef37ea72952b2f839fa237cd5a0",
+    "O58_FORMALIZACION.es.md": "97be3c27ffc1a7bed21bca3104d60ac285de6a29f4003305081cafc82d19c4cd",
+    "REGISTRO_AFIRMACIONES.csv": "faad5641e6de26301ad0373be178738e7fd3a4bf54669cc87523f25370c11b74",
+    "codigo/o58_verificar.py": "cfe9613524e798911f3dd6fc75355193617d40b06bba1323dc068d05904c108f",
+    "resultados/estela_anidada.csv": "7ef959e581c49816a1925f02c6408415fc1e65c9d3848b32149860b7037262c5",
+    "resultados/estela_pell.csv": "630a5190802fa083267c846001245b5442d48c5845e13fb02e2c1d2b1817c34c",
+    "resultados/ramas_compatibles_hasta_200.csv": "db180b622195e6deab9fda7884747bb415d2ab6b40650f0efc371161032649a1",
+    "resultados/soluciones_hasta_200.csv": "4c585eb04fc502e9c7332436f043cdf917df1a409a9f366fb240dcaa37fc8ba8",
+    "resultados/verificacion.json": "d9b613e0ab1ceb4aa85c5532151e7875b2704394dfb1ad86d4dcff747ecb5a3c",
+    "verificar_integridad.py": "28727d86545dbe07d733d2844649d6e281741fb31f5d1481080a732f670e4a0f"
+  }
+}

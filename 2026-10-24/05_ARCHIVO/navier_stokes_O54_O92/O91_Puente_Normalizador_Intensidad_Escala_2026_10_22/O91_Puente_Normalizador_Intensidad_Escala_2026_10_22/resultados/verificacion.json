@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "exact_shear_pde": "u_t=nu Delta u, (u.grad)u=0, div u=0",
+  "initial_shared": {
+    "m0": "4",
+    "m2": "30",
+    "mm2": "205/144",
+    "U2": "205/288",
+    "A": "2",
+    "B": "15",
+    "ell2": "2/15",
+    "Re2": "41/432"
+  },
+  "N_arithmetic": 12,
+  "different": {
+    "m4_A": "1896/5",
+    "m4_B": "1644/5",
+    "dlogK_A_per_nu": "4777/2050",
+    "dlogK_B_per_nu": "1333/2050",
+    "dlogK_difference_per_nu": "42/25"
+  },
+  "opposite_drift_pair": {
+    "weights_C": [
+      "7/12",
+      "539/150",
+      "1/20",
+      "817/300"
+    ],
+    "weights_D": [
+      "203/300",
+      "427/150",
+      "113/100",
+      "689/300"
+    ],
+    "shared_moment_minus2": "23867/14400",
+    "shared_moment_0": "139/20",
+    "shared_moment_2": "2949/50",
+    "dlogK_C": "3167962897/16305576395",
+    "dlogK_D": "-6121073503/16305576395"
+  },
+  "local_scaling_falsifier": {
+    "beta": "6/5",
+    "energy_exponent": "3/5",
+    "global_K_exponent": "13/10",
+    "local_K_exponent": "-1/5",
+    "status": "kinematic divergence-free profiles, NOT a single NS trajectory"
+  },
+  "positive_growth_example": {
+    "wave_numbers": [
+      1,
+      3
+    ],
+    "weights": [
+      1,
+      1
+    ],
+    "K_initial_nu_1": "1/3",
+    "dlogK_per_nu": "7/5"
+  },
+  "checks": 44,
+  "notes": "No claim of global NS regularity; special exact global shears."
+}

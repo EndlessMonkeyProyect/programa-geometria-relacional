@@ -1,0 +1,72 @@
+{
+  "programa": "Geometría Relacional — O57",
+  "fecha": "2026-10-21",
+  "base": "O56 / Imagen Total 3.8.1, sin modificaciones",
+  "archivos": [
+    {
+      "path": "LEER_PRIMERO.md",
+      "bytes": 1992,
+      "sha256": "af564f9569018e7caf08bfc881dad4e471718aa733d4643232f77d08bba9193f"
+    },
+    {
+      "path": "O57_FORMALIZACION.es.md",
+      "bytes": 18207,
+      "sha256": "465f7a7754227d438fd57103e1cdffc0570e8a2a0eee34553d9c5252b8d6aa58"
+    },
+    {
+      "path": "REGISTRO_ESTADOS.csv",
+      "bytes": 1026,
+      "sha256": "26e3d8f7d9c3d411fcde9c79a36792351eb8edd6dad05515d5051e40511ee943"
+    },
+    {
+      "path": "codigo/o57_superficie.py",
+      "bytes": 13384,
+      "sha256": "1409a9086c0bc85f3b4f8d63ddf6c799e5a5b2e878c3eaa79d60a695addabefa"
+    },
+    {
+      "path": "fuentes/o56_solver.py",
+      "bytes": 6851,
+      "sha256": "5da223b21d52e78377347d0a32d1cd0ece5e61c56e275c0e16cbd38c7ca31b97"
+    },
+    {
+      "path": "graficos/o57_anisotropia_global.png",
+      "bytes": 97141,
+      "sha256": "79872890a4850853b49c6f85bea4dec0c1fda4514afda37b8552eb1c1c0d3485"
+    },
+    {
+      "path": "graficos/o57_mapa_superficie.png",
+      "bytes": 52772,
+      "sha256": "81731ad467475a07c6ddf6b12d83c375b799542c690bba9d39b77d481f5b935f"
+    },
+    {
+      "path": "graficos/o57_prediccion_corto_plazo.png",
+      "bytes": 134588,
+      "sha256": "5fa723e5abdab851aa268b67ea17277b4d015471b18cc8dd2384d6588d9f1aaf"
+    },
+    {
+      "path": "resultados/ejecucion.log",
+      "bytes": 2379,
+      "sha256": "00d50d78fbf53b013579589cd264c7926937a94f77618526cd6c18a5307d12b1"
+    },
+    {
+      "path": "resultados/mapas_superficie_o57.npz",
+      "bytes": 56655,
+      "sha256": "0d50d820f2fcb84a0aace292fee2f1ac44d46a78159343fd3b56e14326e0204b"
+    },
+    {
+      "path": "resultados/resumen_o57.json",
+      "bytes": 4606,
+      "sha256": "05d6358eb7f8f5ee2a95830c3880b611840838bb18dadd9aaead8087ea2d3681"
+    },
+    {
+      "path": "resultados/series_o57.csv",
+      "bytes": 8431,
+      "sha256": "ed1f0e37bb4877a50c0cdaa36fed9b066cd97cc9d895b89fb8ff796481c97330"
+    },
+    {
+      "path": "verificar_integridad.py",
+      "bytes": 389,
+      "sha256": "51727956a521cb322bb158457ef91c3dfebff9033cfca19bd0d77b30e035fa7e"
+    }
+  ]
+}

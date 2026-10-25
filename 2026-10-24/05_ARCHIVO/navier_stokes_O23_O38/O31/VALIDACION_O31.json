@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": 9704,
+  "disclaimer": "Algebraic inequalities, Gaussian single-vortex check, and finite examples; NOT a DNS or proof of physical vortex identity.",
+  "example": {
+    "nu": 0.005,
+    "time": 0.25,
+    "initial_separation": 8,
+    "circulation_each": 1,
+    "max_vorticity_upper_bound": 15.915494309189533,
+    "U0_upper_bound": 4.501581580785531,
+    "radius_each_upper_bound": 1.337527429552347,
+    "sum_disk_radii": 5.350109718209388,
+    "separation_lower_bound": 5.749209209607235,
+    "positive_margin": 0.3990994913978474,
+    "guaranteed_fraction_each": 0.75
+  }
+}

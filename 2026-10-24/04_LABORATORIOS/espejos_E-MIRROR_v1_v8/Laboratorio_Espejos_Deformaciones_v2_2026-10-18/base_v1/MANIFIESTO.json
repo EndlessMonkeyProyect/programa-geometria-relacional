@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "fecha": "2026-10-18",
+  "base_original": "Programa_Geometria_Relacional_v3_4_1_IMAGEN_INTEGRAL_CANDIDATA_2026-10-18.zip",
+  "base_sha256": "4256a2e890c62def294bafb0a3ee6f4c95d9740b83f2d0745b0054d379b05f33",
+  "archivos": {
+    "PENDIENTE_LABORATORIO_ESFERAS.es.md": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+    "README.es.md": "487109260d27577dd66208a43e636f1d0245686df54e2dff1be458ea4d1e49da",
+    "laboratorio.py": "811ceada3b34f802f5545e27146f9e86834156c1bc99a0435b9b6bb752741b20",
+    "resultados.json": "ca921fec65794c273320c76dcb3818143d6a209bdc15f41a5cb3302ededf08ec",
+    "test_laboratorio.py": "271e444e38566a2c453cdca126491340f5b5658ddb8ad580815ceeccf970c73c"
+  }
+}

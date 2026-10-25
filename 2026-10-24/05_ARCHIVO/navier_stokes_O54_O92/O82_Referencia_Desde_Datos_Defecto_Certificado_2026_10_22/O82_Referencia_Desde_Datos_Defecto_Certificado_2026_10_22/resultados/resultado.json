@@ -1,0 +1,53 @@
+{
+  "amplitudes": [
+    2.0,
+    5e-05,
+    5e-05
+  ],
+  "nu": 1.0,
+  "delta": 0.5,
+  "mode_count_of_defect": 12,
+  "tests_passed": 826,
+  "references": [
+    {
+      "reference": "zero",
+      "R_total": 2.0000999999999998,
+      "R0": 2.0000999999999998,
+      "S_U0": 0.0,
+      "D0": 0.0,
+      "G_inf": 0.0,
+      "D_integral": 0.0,
+      "loose_bound": 2.0000999999999998,
+      "weighted_bound": 2.0000999999999998,
+      "delta": 0.5,
+      "certified": false
+    },
+    {
+      "reference": "shear",
+      "R_total": 2.0000999999999998,
+      "R0": 0.0001,
+      "S_U0": 2.0,
+      "D0": 0.0,
+      "G_inf": 8.0,
+      "D_integral": 0.0,
+      "loose_bound": 0.29809579870417285,
+      "weighted_bound": 0.29809579870417285,
+      "delta": 0.5,
+      "certified": true
+    },
+    {
+      "reference": "heat-all",
+      "R_total": 2.0000999999999998,
+      "R0": 0.0,
+      "S_U0": 2.0000999999999998,
+      "D0": 0.0001414231240042625,
+      "G_inf": 8.000800019999998,
+      "D_integral": 7.071156200213126e-05,
+      "loose_bound": 0.21095689777222162,
+      "weighted_bound": 0.026358137396642434,
+      "delta": 0.5,
+      "certified": true
+    }
+  ],
+  "status": "Verification of explicit finite-mode algebra; global theorem proved separately."
+}

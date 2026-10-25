@@ -1,0 +1,118 @@
+{
+  "1_tetraedro": {
+    "estados": 4,
+    "comparaciones": 3,
+    "vertices": {
+      "00": [
+        1,
+        1,
+        1
+      ],
+      "01": [
+        1,
+        -1,
+        -1
+      ],
+      "10": [
+        -1,
+        1,
+        -1
+      ],
+      "11": [
+        -1,
+        -1,
+        1
+      ]
+    },
+    "distancia2_comun": 8,
+    "comparaciones_que_separan_cada_par": 2,
+    "ejes_de_aristas_opuestas_son_las_comparaciones_y_perpendiculares": true
+  },
+  "2_intercambios": {
+    "intercambios": 6,
+    "disjuntos": {
+      "orden": 2,
+      "angulo": "π/2",
+      "casos": 3
+    },
+    "comparten_una_referencia": {
+      "orden": 3,
+      "angulo": "π/3",
+      "casos": 12
+    },
+    "orientaciones_generadas": 24,
+    "recinto_CME002": "(2, 3, 3)"
+  },
+  "3_camaras": {
+    "camaras": 24,
+    "ordenes_entre_paredes": [
+      3,
+      3,
+      2
+    ],
+    "lectura": "en las 24 cámaras las paredes forman el mismo recinto (2, 3, 3)"
+  },
+  "4_bit": {
+    "tetraedro_y_complementario_son_el_cubo": true,
+    "ordenes_bit_con_intercambio": [
+      2,
+      4
+    ],
+    "angulos_en_pi": [
+      0.25,
+      0.5
+    ],
+    "orientaciones_con_el_bit": 48,
+    "recinto_CME002": "(2, 3, 4)",
+    "generadores_de_la_nota_r1_r2_r3": {
+      "ordenes": [
+        4,
+        3,
+        2
+      ],
+      "grupo": 48
+    }
+  },
+  "5_otras_escalas": {
+    "dos_referencias": {
+      "espejos": 1,
+      "orientaciones": 2,
+      "lectura": "solo la mitad"
+    },
+    "ocho_referencias": {
+      "intercambios": 28,
+      "ordenes_entre_intercambios": [
+        2,
+        3
+      ]
+    },
+    "aparece_el_5": false
+  },
+  "6_una_distinguible": {
+    "orientaciones": 6,
+    "los_tres_espejos_contienen_la_recta_de_la_referencia_fija": true,
+    "direcciones_de_las_normales": 2,
+    "direcciones_con_las_cuatro_indistinguibles": 3
+  },
+  "7_espejo_de_cara": {
+    "crea_referencia_nueva": true,
+    "radio_de_la_nueva_sobre_el_radio": "5/3",
+    "las_cuatro_nuevas_forman_tetraedro_invertido": true
+  },
+  "8_ordenes_de_elementos_compuestos": {
+    "en_las_24": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "en_las_48": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "lectura": "los ángulos los fija el orden del producto de dos espejos, no el orden de cualquier elemento"
+  }
+}

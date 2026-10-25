@@ -1,0 +1,122 @@
+{
+  "nu": 1.0,
+  "A": 2.0,
+  "base_R": 2.0,
+  "residual_R0": 9.999999999999999e-05,
+  "full_R0": 2.0000999999999998,
+  "critical_threshold_nu": 1.0,
+  "shear_exposure_G_inf": 8.0,
+  "residual_condition_Rv_less_than": 0.00016773131395125593,
+  "residual_bound_M": 0.2980957987041728,
+  "Qv_time_integral_bound": 1.1923831948166912,
+  "integral_grad_u_inf_bound": 3.192383194816691,
+  "absolute_nonlinear_residual_budget": 2.0417289064758397,
+  "new_modes_count": 12,
+  "new_modes_first_10": [
+    {
+      "k": [
+        -1,
+        -1,
+        -1
+      ],
+      "N_k_abs": 2.8867513459481293e-05
+    },
+    {
+      "k": [
+        -1,
+        1,
+        -1
+      ],
+      "N_k_abs": 2.8867513459481293e-05
+    },
+    {
+      "k": [
+        1,
+        -1,
+        1
+      ],
+      "N_k_abs": 2.8867513459481293e-05
+    },
+    {
+      "k": [
+        1,
+        1,
+        1
+      ],
+      "N_k_abs": 2.8867513459481293e-05
+    },
+    {
+      "k": [
+        -1,
+        -1,
+        0
+      ],
+      "N_k_abs": 2.5e-05
+    },
+    {
+      "k": [
+        -1,
+        1,
+        0
+      ],
+      "N_k_abs": 2.5e-05
+    },
+    {
+      "k": [
+        1,
+        -1,
+        0
+      ],
+      "N_k_abs": 2.5e-05
+    },
+    {
+      "k": [
+        1,
+        1,
+        0
+      ],
+      "N_k_abs": 2.5e-05
+    },
+    {
+      "k": [
+        -2,
+        0,
+        -1
+      ],
+      "N_k_abs": 8.838834764831845e-10
+    },
+    {
+      "k": [
+        0,
+        0,
+        -1
+      ],
+      "N_k_abs": 8.838834764831845e-10
+    }
+  ],
+  "nonlinearity_R_initial": 0.00013737990312168944,
+  "cross_interaction_upper_bound": 0.0004828572835424309,
+  "test_categories": {
+    "large shear norm exactly A": 1,
+    "two 3D modes residual norm": 1,
+    "disjoint support large total norm": 1,
+    "global perturbation criterion and large total datum": 1,
+    "U shear has zero projected nonlinearity": 1,
+    "divergence-free shear Fourier": 2,
+    "divergence-free perturbation Fourier": 4,
+    "nonlinear projection divergence free": 18,
+    "nonlinear real field conjugate symmetry": 18,
+    "genuine new relations generated": 1,
+    "full Fourier nonlinear bound": 1,
+    "coherent plus rest interaction bound": 1,
+    "critical R is invariant under true NS scaling": 64,
+    "S scales linearly": 64,
+    "Q scales quadratically": 64,
+    "uniform bootstrap barrier": 121,
+    "finite shear exposure": 121,
+    "positive exposure": 121,
+    "reference refinement preserves physical weight": 28
+  },
+  "total_tests": 633,
+  "warning": "Checks test initial Fourier algebra and analytic bounds; they do not integrate the full Navier-Stokes evolution."
+}

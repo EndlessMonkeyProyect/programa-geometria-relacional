@@ -1,0 +1,56 @@
+{
+  "nombre": "E-MIRROR v3 cámara finita",
+  "fecha": "2026-10-18",
+  "archivos": [
+    {
+      "file": "PENDIENTE_LABORATORIO_ESFERAS.es.md",
+      "sha256": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+      "bytes": 1543
+    },
+    {
+      "file": "PRUEBAS.txt",
+      "sha256": "7e15356cbab9f0b0b76f5350377c9f4c8b3dd79d5ab2b850af141ebe4947cd1b",
+      "bytes": 1538
+    },
+    {
+      "file": "README.es.md",
+      "sha256": "25c55d79286a155ae177c25f912028d3984e9f9a923d317467cab846117f18db",
+      "bytes": 9906
+    },
+    {
+      "file": "camara_90grados_cambios.png",
+      "sha256": "a5ac1fd468446e81e30eb6d18d8f7349331b8aaab8d1239a557b19da3e0007f8",
+      "bytes": 188359
+    },
+    {
+      "file": "camara_virtual_paneles_finitos.png",
+      "sha256": "f072035f59204950622bb67076667fec2614f2b5a196fd1319f6b0b06e63e544",
+      "bytes": 275997
+    },
+    {
+      "file": "comparacion_trayectorias.png",
+      "sha256": "d1350f0caf2ea868586acf4d56bb5cedfe099010ee6170efc484ecbfbb17c6db",
+      "bytes": 62210
+    },
+    {
+      "file": "raytrace_cubo.py",
+      "sha256": "0879afa824a1e3b4214a7f9bd76771824aa95d5291b152de71207326963fd2fe",
+      "bytes": 15440
+    },
+    {
+      "file": "resultados_camara_90grados.json",
+      "sha256": "c2afa3dc85a0f41fc6023d110911cd110eef962cb719be2f3fa879ea60ae755c",
+      "bytes": 25203
+    },
+    {
+      "file": "resultados_v3.json",
+      "sha256": "f38b1de11f3b748ea85856c9292f49cd2cf1ef37c5f23db4bfd853eee4c8a221",
+      "bytes": 27363
+    },
+    {
+      "file": "test_cubo.py",
+      "sha256": "ee2d4a545d290e6ac42a7a61d7fd496ccf0df3c66c6c44ed8190d36fe5118999",
+      "bytes": 4144
+    }
+  ]
+}

@@ -1,5 +1,11 @@
 # History of this edition
 
+## Organized edition — 2026-10-24
+
+- Browsable addition of the dated package: 1,047 files checked against its SHA-256 manifest.
+- Public manuscript, rhythm and gravity supplement, integrated thread, realizations, research branches, laboratories, and historical archive.
+- English guide and principal texts; the 0.1.0 conceptual edition remains available.
+
 ## 0.1.0-editorial — 2026-09-29
 
 - Preservation of 79 received files and navigable extraction of three ZIP members.

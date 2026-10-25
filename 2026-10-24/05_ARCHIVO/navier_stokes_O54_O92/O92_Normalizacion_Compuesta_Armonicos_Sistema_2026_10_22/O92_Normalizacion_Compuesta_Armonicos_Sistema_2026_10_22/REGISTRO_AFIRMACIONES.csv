@@ -1,0 +1,9 @@
+ID,Clase,Afirmacion,Alcance
+O92-T1,T,"Composicion de refinamientos O40, coordenadas unimodulares O68, H=1 en C4 telescopico O74, y etiqueta de rama O88",Contratos matematicos separados
+O92-T2,T,"El reparto normalizado por armonico y el total reconstruyen los momentos de O91",Familia lineal exacta de cuatro modos
+O92-T3,T,"Normalizacion A,z y generador (92.5)",Navier-Stokes 3D suave periodicidad y media cero
+O92-T4,T,"Balance de dispersion (92.6), terminos viscoso y triadico",Navier-Stokes 3D suave periodicidad y media cero
+O92-F1,F,"Interfaz escalar de pesos sin fase ni polarizacion no predice triadas",Clase O61
+O92-F2,F,"Cambiar signo de una fase invierte transferencia con mismos pesos",Triada O79 con onda extra rango tres
+O92-A1,A,"Extraer cota universal de transferencia desde interfaz dinamica comprimida",Navier-Stokes 3D general sin fuerza
+O92-A2,A,"Morfismo fisico canonico entre cuatro nodos y normalizador completo Fourier",Navier-Stokes 3D general

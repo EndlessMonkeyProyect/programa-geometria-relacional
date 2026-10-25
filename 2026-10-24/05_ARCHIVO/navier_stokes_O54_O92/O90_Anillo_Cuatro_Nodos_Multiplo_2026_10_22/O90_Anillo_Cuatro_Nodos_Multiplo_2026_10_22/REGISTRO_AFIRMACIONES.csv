@@ -1,0 +1,7 @@
+id,estatus,afirmacion,soporte,limite
+O90-T1,T,"Datos exactos toroidales suaves con dos giros y divergencia nula",Seccion 2 Ec 90.3-90.6,No es solucion explicita global de NS
+O90-T2,T,"Perturbaciones arbitrariamente pequeñas destruyen bloqueo entero comun en cuatro nodos",Seccion 2 Ec 90.7-90.9,Compara diferentes datos iniciales
+O90-T3,T,"Solucion NS local suave y toro material difeomorfo",Seccion 2 Ec 90.10,No controla tiempo arbitrario ni tubo de vorticidad
+O90-E1,E,"Dispersion de nodos observada en Galerkin N32 y N40",Seccion 3 CSV y script,No certifica convergencia PDE
+O90-T4,T,"Ley de Kelvin viscosa para curvas materiales",Seccion 4 Ec 90.11,No garantiza cierre entero
+O90-A1,A,"Normalizador colectivo canonico con cota de regularidad",Seccion 5,Abierto

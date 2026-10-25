@@ -1,0 +1,141 @@
+{
+  "nombre": "O54 prueba geométrica/cinemática exacta",
+  "fecha": "2026-10-21",
+  "estatus": "identidades y contraejemplos, no regularidad NS",
+  "pruebas": [
+    {
+      "prueba": "Toroide: perpendicularidad y coeficientes de métrica",
+      "resultado": "PASS",
+      "detalle": {
+        "max_error": 3.552713678800501e-15
+      }
+    },
+    {
+      "prueba": "Espejo: conserva r/R",
+      "resultado": "PASS",
+      "detalle": [
+        {
+          "t": 0,
+          "L": 2.0,
+          "R_externo": 1.5,
+          "r_externo": 0.35,
+          "ratio": 0.2333333333333333
+        },
+        {
+          "t": 0.5,
+          "L": 2.145016362508433,
+          "R_externo": 1.3985907298589222,
+          "r_externo": 0.32633783696708185,
+          "ratio": 0.23333333333333334
+        },
+        {
+          "t": 2.0,
+          "L": 2.6462596246748737,
+          "R_externo": 1.1336756121835883,
+          "r_externo": 0.2645243095095039,
+          "ratio": 0.2333333333333333
+        },
+        {
+          "t": 7.0,
+          "L": 5.328912483858835,
+          "R_externo": 0.5629666482770993,
+          "r_externo": 0.13135888459798983,
+          "ratio": 0.23333333333333334
+        }
+      ]
+    },
+    {
+      "prueba": "Volumen: homotecia no trivial cambia V si q fija",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "Volumen: V fija + q fija obliga R y r iguales",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "MCM: refinamiento 6 y 4 -> 12",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "MCM: transporte 1/6 -> 2/12",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "MCM: representa elementos nuevos",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "Cizalla: fórmula exacta del producto material",
+      "resultado": "PASS",
+      "detalle": {
+        "producto": -0.7939661743699489,
+        "formula": -0.7939661743699489
+      }
+    },
+    {
+      "prueba": "Cizalla: perpendicularidad material perdida",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "Cizalla: residual NS exacto",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "Transporte: identidad diferencial 2a·Sb",
+      "resultado": "PASS",
+      "detalle": null
+    },
+    {
+      "prueba": "Campo constante: geometría puede existir sin vorticidad",
+      "resultado": "PASS",
+      "detalle": "u=const, omega=0; geometría no demuestra vórtice"
+    }
+  ],
+  "total": 12,
+  "aprobadas": 12,
+  "cizalla": {
+    "A": 0.8,
+    "nu": 0.05,
+    "k": 2.0,
+    "t": 0.8,
+    "producto_material": -0.7939661743699489,
+    "tasa_transporte": -0.9151774408502907
+  },
+  "referencia_externa": [
+    {
+      "t": 0,
+      "L": 2.0,
+      "R_externo": 1.5,
+      "r_externo": 0.35,
+      "ratio": 0.2333333333333333
+    },
+    {
+      "t": 0.5,
+      "L": 2.145016362508433,
+      "R_externo": 1.3985907298589222,
+      "r_externo": 0.32633783696708185,
+      "ratio": 0.23333333333333334
+    },
+    {
+      "t": 2.0,
+      "L": 2.6462596246748737,
+      "R_externo": 1.1336756121835883,
+      "r_externo": 0.2645243095095039,
+      "ratio": 0.2333333333333333
+    },
+    {
+      "t": 7.0,
+      "L": 5.328912483858835,
+      "R_externo": 0.5629666482770993,
+      "r_externo": 0.13135888459798983,
+      "ratio": 0.23333333333333334
+    }
+  ]
+}

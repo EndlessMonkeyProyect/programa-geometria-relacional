@@ -1,0 +1,12 @@
+etiqueta,afirmacion,estado,ubicacion,alcance
+D,Grafo bipartito conectado tiene un grado de libertad de giro con enlaces exteriores ideales,Demostrado,O72 §2,No es ley de NS
+D,"C4 núcleo uno, K4 núcleo cero, añadir una diagonal mata modo",Demostrado,O72 §2,Modelo de enlaces abstracto
+D,El tetraedro proyectado mantiene todos los pares si no se seleccionan enlaces,Demostrado,"O72 §1,4",Proyección no borra enlaces
+D,Tetra K4 3d rígido y C4 articulado plano tiene una flexión,Demostrado,O72 §3,"Genérico, no equivalencia rígida de ambos"
+D,Proyección plana pierde signo del volumen orientado de tetraedro,Demostrado,O72 §4,Etiquetas fijas
+D,Sector alternado invisible a promedio rotaciones; observable orientado recobra signo,Demostrado,O72 §5,Signo necesita fijar orientación de referencia
+D,Descomposición a y w exacta para soluciones suaves con T²u=u,Derivado,O72 §5.1,Los sectores son campos infinitodimensionales
+E,Euler Galerkin NS N32 8 pasos u- = T u+ en redondeo,Computado,O72 §5.1,Sin certificado PDE
+D,Enlace compatible permite área cuatro-barras arbitrariamente pequeña,Demostrado,O72 §7,"Contraejemplo cinemático, no flujo"
+H,Momento ontológico equiparable a impulso vorticial del anillo,"Hipótesis, no derivada",O72 §6,Faltan circulación y puente físico
+A,No colapso o regularidad global NS para todo dato inicial,No demostrado,O72 §8,Problema abierto en rama sin forzamiento

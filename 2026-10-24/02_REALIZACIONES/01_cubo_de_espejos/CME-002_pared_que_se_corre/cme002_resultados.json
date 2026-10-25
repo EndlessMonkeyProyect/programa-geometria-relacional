@@ -1,0 +1,759 @@
+{
+  "LMAX": 16,
+  "familias": {
+    "2_3_k": [
+      {
+        "k": 2,
+        "factores": [
+          [
+            2,
+            1
+          ]
+        ],
+        "suma": "4/3",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 12
+      },
+      {
+        "k": 3,
+        "factores": [
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "7/6",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          6,
+          5,
+          3,
+          1
+        ],
+        "orden_identidades": 24
+      },
+      {
+        "k": 4,
+        "factores": [
+          [
+            2,
+            2
+          ]
+        ],
+        "suma": "13/12",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          8,
+          8,
+          7,
+          5,
+          3,
+          1
+        ],
+        "orden_identidades": 48
+      },
+      {
+        "k": 5,
+        "factores": [
+          [
+            5,
+            1
+          ]
+        ],
+        "suma": "31/30",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          12,
+          12,
+          12,
+          12,
+          11,
+          9,
+          7,
+          5,
+          3,
+          1
+        ],
+        "orden_identidades": 120
+      },
+      {
+        "k": 6,
+        "factores": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "1",
+        "regimen": "se repite",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          15,
+          17,
+          19,
+          21,
+          24,
+          27,
+          29,
+          31,
+          33,
+          36,
+          39
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          15,
+          17,
+          19,
+          21,
+          24,
+          27,
+          29,
+          31,
+          33,
+          36,
+          39
+        ],
+        "tasa_de_crecimiento": 1.0,
+        "incrementos": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "periodo": 5,
+        "incremento_medio_por_paso": "12/5"
+      },
+      {
+        "k": 7,
+        "factores": [
+          [
+            7,
+            1
+          ]
+        ],
+        "suma": "41/42",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          20,
+          24,
+          28,
+          33,
+          40,
+          48,
+          57,
+          67,
+          78,
+          92
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          20,
+          24,
+          28,
+          33,
+          40,
+          48,
+          57,
+          67,
+          78,
+          92
+        ],
+        "tasa_de_crecimiento": 1.1762808182599176
+      },
+      {
+        "k": 8,
+        "factores": [
+          [
+            2,
+            3
+          ]
+        ],
+        "suma": "23/24",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          27,
+          33,
+          40,
+          49,
+          61,
+          76,
+          94,
+          116,
+          142
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          27,
+          33,
+          40,
+          49,
+          61,
+          76,
+          94,
+          116,
+          142
+        ],
+        "tasa_de_crecimiento": 1.2303914344072246
+      },
+      {
+        "k": 9,
+        "factores": [
+          [
+            3,
+            2
+          ]
+        ],
+        "suma": "17/18",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          36,
+          45,
+          56,
+          70,
+          89,
+          113,
+          143,
+          181
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          36,
+          45,
+          56,
+          70,
+          89,
+          113,
+          143,
+          181
+        ],
+        "tasa_de_crecimiento": 1.2612309611371388
+      },
+      {
+        "k": 10,
+        "factores": [
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "suma": "14/15",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          48,
+          61,
+          77,
+          98,
+          126,
+          162,
+          208
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          48,
+          61,
+          77,
+          98,
+          126,
+          162,
+          208
+        ],
+        "tasa_de_crecimiento": 1.2806381562677576
+      },
+      {
+        "k": 11,
+        "factores": [
+          [
+            11,
+            1
+          ]
+        ],
+        "suma": "61/66",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          49,
+          64,
+          82,
+          105,
+          135,
+          175,
+          227
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          49,
+          64,
+          82,
+          105,
+          135,
+          175,
+          227
+        ],
+        "tasa_de_crecimiento": 1.2934859531254541
+      },
+      {
+        "k": 12,
+        "factores": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "11/12",
+        "regimen": "se abre",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          49,
+          65,
+          85,
+          110,
+          142,
+          184,
+          240
+        ],
+        "orden_identidades": null,
+        "conteo_por_longitud_identidades": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          12,
+          16,
+          21,
+          28,
+          37,
+          49,
+          65,
+          85,
+          110,
+          142,
+          184,
+          240
+        ],
+        "tasa_de_crecimiento": 1.3022688050943345
+      }
+    ],
+    "2_2_k_control": [
+      {
+        "k": 2,
+        "factores": [
+          [
+            2,
+            1
+          ]
+        ],
+        "suma": "3/2",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          3,
+          1
+        ],
+        "orden_identidades": 8
+      },
+      {
+        "k": 3,
+        "factores": [
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "4/3",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 12
+      },
+      {
+        "k": 4,
+        "factores": [
+          [
+            2,
+            2
+          ]
+        ],
+        "suma": "5/4",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 16
+      },
+      {
+        "k": 5,
+        "factores": [
+          [
+            5,
+            1
+          ]
+        ],
+        "suma": "6/5",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 20
+      },
+      {
+        "k": 6,
+        "factores": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "7/6",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 24
+      },
+      {
+        "k": 7,
+        "factores": [
+          [
+            7,
+            1
+          ]
+        ],
+        "suma": "8/7",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 28
+      },
+      {
+        "k": 8,
+        "factores": [
+          [
+            2,
+            3
+          ]
+        ],
+        "suma": "9/8",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 32
+      },
+      {
+        "k": 9,
+        "factores": [
+          [
+            3,
+            2
+          ]
+        ],
+        "suma": "10/9",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 36
+      },
+      {
+        "k": 10,
+        "factores": [
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "suma": "11/10",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 40
+      },
+      {
+        "k": 11,
+        "factores": [
+          [
+            11,
+            1
+          ]
+        ],
+        "suma": "12/11",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 44
+      },
+      {
+        "k": 12,
+        "factores": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "suma": "13/12",
+        "regimen": "cierra",
+        "conteo_por_longitud_angulos": [
+          1,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "orden_identidades": 48
+      }
+    ]
+  },
+  "tasa_2_3_7": 1.1762808182599176,
+  "numero_de_Lehmer": 1.1762808182599176,
+  "resumen": "(2,3,k): cierra para k=2..5 (12, 24, 48, 120), se repite en k=6, se abre desde k=7. (2,2,k): cierra para todo k en 4k. Ángulos e identidades coinciden en todos los casos."
+}

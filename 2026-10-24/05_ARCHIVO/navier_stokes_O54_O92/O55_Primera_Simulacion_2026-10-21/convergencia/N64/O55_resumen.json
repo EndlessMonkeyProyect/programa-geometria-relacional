@@ -1,0 +1,91 @@
+{
+  "modelo": "Navier–Stokes incompresible 3D periodico, proyeccion espectral, pseudoespectral, RK2",
+  "parametros": {
+    "N": 64,
+    "periodo_caja": 8.0,
+    "nu": 0.025,
+    "dt": 0.014,
+    "pasos": 90,
+    "R_inicial": 1.6,
+    "r_inicial": 0.48,
+    "perturbacion_cizalla_amplitud": 0.22,
+    "espejo_Lref(t)": "exp(0.23 t)"
+  },
+  "sin_perturbacion": {
+    "inicial": {
+      "t": 0.0,
+      "E": 0.003276724776686851,
+      "Z": 0.011511906573422787,
+      "divergence_max": 1.1508493595506067e-17,
+      "R_eff": 1.6000000000000003,
+      "r_eff": 0.48000000000000004,
+      "q": 0.3,
+      "R_observed": 1.6000000000000003,
+      "r_observed": 0.48000000000000004,
+      "L_ref": 1.0,
+      "angle_cos": 0.0,
+      "local_angle_deg": 90.0,
+      "z_surface_mean": 2.044934454884455e-19,
+      "max_u": 0.4834947393190038,
+      "condition": "simetrico"
+    },
+    "final": {
+      "t": 1.26,
+      "E": 0.0027039791150650053,
+      "Z": 0.007286660003155648,
+      "divergence_max": 8.002893940572446e-18,
+      "R_eff": 1.6008722550980774,
+      "r_eff": 0.48357170545291445,
+      "q": 0.3020676408832436,
+      "R_observed": 1.1981139836732828,
+      "r_observed": 0.36191146455741363,
+      "L_ref": 1.3361602292546348,
+      "angle_cos": -0.00822417489380993,
+      "local_angle_deg": 90.47121582343614,
+      "z_surface_mean": 0.1891968101749756,
+      "max_u": 0.4209002345667611,
+      "condition": "simetrico"
+    }
+  },
+  "con_perturbacion": {
+    "inicial": {
+      "t": 0.0,
+      "E": 0.015376724776685325,
+      "Z": 0.018975794901745675,
+      "divergence_max": 1.1508493595506067e-17,
+      "R_eff": 1.6000000000000003,
+      "r_eff": 0.48000000000000004,
+      "q": 0.3,
+      "R_observed": 1.6000000000000003,
+      "r_observed": 0.48000000000000004,
+      "L_ref": 1.0,
+      "angle_cos": 0.0,
+      "local_angle_deg": 90.0,
+      "z_surface_mean": 2.044934454884455e-19,
+      "max_u": 0.4834947393190038,
+      "condition": "perturbado"
+    },
+    "final": {
+      "t": 1.26,
+      "E": 0.014341123999910884,
+      "Z": 0.01453419320472396,
+      "divergence_max": 7.840672757319001e-18,
+      "R_eff": 1.6016383214135201,
+      "r_eff": 0.48611630113036663,
+      "q": 0.3035119069212495,
+      "R_observed": 1.1986873178428457,
+      "r_observed": 0.36381587364080004,
+      "L_ref": 1.3361602292546348,
+      "angle_cos": 0.15918159170700588,
+      "local_angle_deg": 80.84060391841389,
+      "z_surface_mean": 0.18908621575606901,
+      "max_u": 0.4227617618997448,
+      "condition": "perturbado"
+    }
+  },
+  "advertencias": [
+    "R y r efectivos estimados con superficie material trazada; no implican toro geometrico exacto tras deformaciones.",
+    "El espejo es cambio de unidad de comparacion, no expansion del fluido.",
+    "Simulacion de baja resolucion: no constituye prueba de regularidad ni cierre dinamico del normalizador."
+  ]
+}

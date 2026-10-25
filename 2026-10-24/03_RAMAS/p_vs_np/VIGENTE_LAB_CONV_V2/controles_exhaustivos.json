@@ -1,0 +1,30 @@
+{
+  "exhaustive": {
+    "4": {
+      "graphs": 64,
+      "total_reductions_and_contradictions": 7,
+      "local_unsat_witnesses": 1,
+      "all_ok": true
+    },
+    "5": {
+      "graphs": 1024,
+      "total_reductions_and_contradictions": 421,
+      "local_unsat_witnesses": 66,
+      "all_ok": true
+    }
+  },
+  "random_6": {
+    "graphs": 250,
+    "seed": 20261022,
+    "total_reductions_and_contradictions": 239,
+    "local_unsat_witnesses": 40,
+    "all_ok": true
+  },
+  "symmetry_counterexample_with_fixed_color": true,
+  "forced_equality_trivalent": {
+    "anchors_5_leaves": "forced",
+    "C5_0_2": "not_forced",
+    "K4_plus_isolates": "unsatisfiable_not_forced",
+    "all_ok": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "O17-F",
+  "fecha_utc_registro": "2026-10-19T16:05Z",
+  "registrado_antes_de_correr": true,
+  "pregunta": "¿Qué diagnósticos del presupuesto de vorticidad material son contenido del plano (estables al refinar la resolución con el flujo físico fijo) y cuáles dependen de la descripción numérica?",
+  "flujo": {"corrida": "A del autor", "nu": 0.008, "eps_in": 0.1, "kf": 2.0, "semilla": 20261004,
+            "spinup": "N=64 hasta t=10 (float64); refinamiento espectral a N=128 y evolución hasta t=15 (float64, CFL 0.4)"},
+  "escalera": {"estado_comun": "N=128 en t=15", "niveles_N": [64, 128, 192, 256],
+               "kmax_eta_aprox": [1.0, 2.0, 2.9, 3.9],
+               "evolucion": "0.6 unidades de tiempo (≈2.2 tau_eta) con dt=4e-3, RK4 con factor integrante, float64 en todos los niveles",
+               "N64": "truncamiento espectral del estado común (modos |k|<64/3)",
+               "N192_N256": "interpolación espectral exacta del estado común; las escalas nuevas se desarrollan durante 0.6",
+               "referencia": "N=256"},
+  "puntos": {"puntual": "malla común 64^3 (índices N/64·m), mismos puntos físicos en los cuatro niveles",
+             "estadistico": "modo alto del autor: todos los puntos con q>2 q_rms más 2 % uniforme del resto, pesos de volumen"},
+  "observables": {
+    "puntuales": ["om", "tau", "b", "r_nu", "P", "Vc", "Y"],
+    "clasificacion_individual": "pertenencia a rho<0.05 en q>3 q_rms y a>0, comparada con N=256 (índice de Jaccard)",
+    "medianas_por_clase": {"rho": ["all_a>0", "q>2qrms", "q>3qrms", "q>4qrms"],
+                           "Lam": ["q>3qrms"], "Dperp": ["q>3qrms"], "cosphi": ["q>3qrms"],
+                           "sP": ["q>3qrms"], "sV": ["q>3qrms"], "dlogb_dG": ["q>3qrms"]},
+    "fracciones": ["frac sP>0 (q>3)", "frac sV<0 (q>3)", "frac dlogb_dG>0 (q>3)",
+                   "P(rho<0.05 | q/q_rms en [0,1),[1,2),[2,3),[3,4),[4,5))"],
+    "diagnostico_truncamiento": "mediana |e_perp|/|b| en q>3"
+  },
+  "criterios": {
+    "puntual_acreditado_en_N": "mediana de |x_N − x_256|/|x_256| ≤ 0.05 en q>3 q_rms, a>0",
+    "estadistico_acreditado_en_N": "el IC 95 % por bootstrap espacial pareado (512 bloques, 400 réplicas) de (valor_N − valor_256) contiene 0, o |diferencia| ≤ 2 % del valor de referencia (≤ 0.01 absoluto en fracciones)",
+    "convergencia": "|Δ_64| ≥ |Δ_128| ≥ |Δ_192| respecto de N=256",
+    "contenido_del_plano": "acreditado en N=192 y convergente; si además está acreditado en N=128, robusto"
+  },
+  "limites_declarados": [
+    "un solo estado común (un instante); la incertidumbre es espacial, no de ensamble temporal",
+    "N=256 es la referencia: no se prueba su propia convergencia",
+    "un Reynolds (Re_lambda≈49) y un forzamiento"
+  ]
+}

@@ -1,0 +1,1 @@
+PASS: 21/27 filas admisibles; tres proyecciones binarias universales; testigo ternario exacto.

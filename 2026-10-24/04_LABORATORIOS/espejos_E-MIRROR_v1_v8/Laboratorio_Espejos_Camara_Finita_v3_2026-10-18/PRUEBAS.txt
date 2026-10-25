@@ -1,0 +1,18 @@
+test_angulo_pequeno_preserva_fuente (test_cubo.OpticaFinitaTests.test_angulo_pequeno_preserva_fuente) ... ok
+test_camara_cambia_perspectiva_revela_fuente (test_cubo.OpticaFinitaTests.test_camara_cambia_perspectiva_revela_fuente) ... ok
+test_camara_frontal_con_panel_opaco_no_ve_fuente (test_cubo.OpticaFinitaTests.test_camara_frontal_con_panel_opaco_no_ve_fuente) ... ok
+test_camara_frontal_no_ve_fuente_directa (test_cubo.OpticaFinitaTests.test_camara_frontal_no_ve_fuente_directa) ... ok
+test_directo_centro_fuente (test_cubo.OpticaFinitaTests.test_directo_centro_fuente) ... ok
+test_distancia_a_paredes_cubo (test_cubo.OpticaFinitaTests.test_distancia_a_paredes_cubo) ... ok
+test_esfera_rayo_se_aleja_no_detecta (test_cubo.OpticaFinitaTests.test_esfera_rayo_se_aleja_no_detecta) ... ok
+test_filtro_ademas_no_cambia_geometria_directa (test_cubo.OpticaFinitaTests.test_filtro_ademas_no_cambia_geometria_directa) ... ok
+test_mirror_vertical_un_rebote_al_centro (test_cubo.OpticaFinitaTests.test_mirror_vertical_un_rebote_al_centro) ... ok
+test_pane_cuadratico_vs_plano_k0 (test_cubo.OpticaFinitaTests.test_pane_cuadratico_vs_plano_k0) ... ok
+test_plano_fuera_apertura_rechazado (test_cubo.OpticaFinitaTests.test_plano_fuera_apertura_rechazado) ... ok
+test_rayos_camara_normados (test_cubo.OpticaFinitaTests.test_rayos_camara_normados) ... ok
+test_reflexion_conserva_norma (test_cubo.OpticaFinitaTests.test_reflexion_conserva_norma) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.041s
+
+OK

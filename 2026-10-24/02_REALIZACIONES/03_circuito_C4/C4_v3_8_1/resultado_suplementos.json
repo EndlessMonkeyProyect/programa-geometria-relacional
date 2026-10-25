@@ -1,0 +1,36 @@
+{
+  "estado": "PASS",
+  "c4_estados": 16,
+  "c4_estados_por_caras": {
+    "0": 1,
+    "1": 4,
+    "2": 6,
+    "3": 4,
+    "4": 1
+  },
+  "c4_foco_conservado": [
+    "ninguna",
+    "cuatro"
+  ],
+  "c4_nueva_escala": "5/3",
+  "alcanzabilidad_positiva": {
+    "resultado": "CAMINO",
+    "camino": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "alcanzabilidad_negativa": {
+    "resultado": "SIN_CAMINO",
+    "certificado_R": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  "xor_sin_vinculo_forzado_satisface": 4,
+  "xor_con_vinculo_satisface": 2,
+  "xor_contradiccion_satisface": 0,
+  "alcance": "pruebas exactas finitas; las cotas BFS provienen de demostracion, no de benchmark"
+}

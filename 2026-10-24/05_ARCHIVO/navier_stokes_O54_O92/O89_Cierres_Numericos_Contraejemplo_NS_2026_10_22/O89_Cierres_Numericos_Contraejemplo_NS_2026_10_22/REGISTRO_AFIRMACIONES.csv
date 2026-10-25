@@ -1,0 +1,7 @@
+clave,tipo,afirmacion,alcance
+O89-T1,TEOREMA,El campo de cizalla dado es una solución global exacta de Navier-Stokes sin fuerza,Periodo espacial tres dimensiones con dependencia efectiva de y y z
+O89-T2,TEOREMA,La razón de amplitudes de vorticidad pasa de 1 a sqrt(2) en ln(2)/6,Cambio de proporción entera a irracional
+O89-T3,TEOREMA,Cuatro trazadores pierden la sincronización 2 a 1,No son cuatro nodos de un vórtice toroidal
+O89-T4,TEOREMA,La norma de gradiente tiene integral temporal a lo sumo 5/2,Caso explícito de cizalla
+O89-F1,FALSADOR,Sincronía entera fija no es condición universal necesaria para regularidad,No descarta reconstrucción relacional general
+O89-A1,ABIERTO,Definir un cierre propio observable para un tubo vorticial material y probar su enlace con normas críticas,No demostrado

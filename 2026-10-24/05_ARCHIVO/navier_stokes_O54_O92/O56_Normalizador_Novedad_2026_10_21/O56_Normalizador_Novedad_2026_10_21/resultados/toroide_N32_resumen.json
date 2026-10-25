@@ -1,0 +1,39 @@
+{
+  "preparaciones": {
+    "ninguna": {
+      "E_inicial": 0.0032767097486668577,
+      "Z_inicial": 0.011510664719586821,
+      "q_inicial": 0.3,
+      "angulo_inicial": 90.0,
+      "angulo_final": 90.95499101467647,
+      "q_final": 0.30218099563097445,
+      "E_final": 0.0027039824840791133,
+      "div_max": 9.805777420208607e-18
+    },
+    "x": {
+      "E_inicial": 0.015376709748663805,
+      "Z_inicial": 0.018974553047908765,
+      "q_inicial": 0.3,
+      "angulo_inicial": 90.0,
+      "angulo_final": 91.1055503800072,
+      "q_final": 0.3036175766729303,
+      "E_final": 0.014341127409135556,
+      "div_max": 1.3051631674490763e-17
+    },
+    "y": {
+      "E_inicial": 0.015376709748663807,
+      "Z_inicial": 0.018974553047908765,
+      "q_inicial": 0.3,
+      "angulo_inicial": 90.0,
+      "angulo_final": 81.79592058104599,
+      "q_final": 0.3036175766729303,
+      "E_final": 0.014341127409135554,
+      "div_max": 1.0559932294159041e-17
+    }
+  },
+  "N": 32,
+  "dt": 0.014,
+  "nsteps": 90,
+  "nu": 0.025,
+  "limites": "ensayo NS Galerkin a baja resolucion, no flujo analitico exacto ni prueba global"
+}

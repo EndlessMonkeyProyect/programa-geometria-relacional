@@ -1,0 +1,55 @@
+{
+  "edition": "3.8.1-candidata",
+  "date": "2026-10-21",
+  "base_sha256": "0250f182aa81da18dfecbeefe88afb565f13ae10bf9253c0986e2d0940ef1aab",
+  "files": {
+    "01_geometria/ENSAYO_C4_Y_REFERENCIA.md": {
+      "size": 3965,
+      "sha256": "b1dc6b45ceec8bfe4b751ea143571c2fedf2faa0dd25f3b9390685661fc97048"
+    },
+    "02_computacion/P_VINCULOS_Y_CERTIFICADOS.md": {
+      "size": 5180,
+      "sha256": "11a8f71216efdf0415886da13ddeb1e5cdf43edcaa8a42eb8b179fa87e7c0b2c"
+    },
+    "03_integracion/IMAGEN_TOTAL_INCREMENTO.md": {
+      "size": 3046,
+      "sha256": "1e8c6f0455bd356c5f945523af4621d891897453591706c29d58fce0c257bd2f"
+    },
+    "04_auditoria/INFORME_REVISION.md": {
+      "size": 4221,
+      "sha256": "442c4b88ad658cf1cb87750bf444986f71f6b8b0531291fd4eba3caaf7f42f1c"
+    },
+    "04_auditoria/resultado_completo.json": {
+      "size": 20562,
+      "sha256": "d5e242a0335272dbced5f6fc39060a241bd55b5fd0b0b949dafaf6941920236d"
+    },
+    "04_auditoria/resultado_rapido.json": {
+      "size": 2430,
+      "sha256": "cf9cdba377e04601c141510a42828aee64a56de02a068572e939236680687621"
+    },
+    "04_auditoria/resultado_suplementos.json": {
+      "size": 677,
+      "sha256": "e345e8a53b7d20b16e55e5af552154fe9693197aa607fd895750410df35d88b7"
+    },
+    "README.md": {
+      "size": 2608,
+      "sha256": "449aeaebb0d3b41851fe3bb6cb361681bef9eb0239e86af0bdf60fc147fadc07"
+    },
+    "archivo/BASE_V3_8_0_INTACTA.zip": {
+      "size": 37418017,
+      "sha256": "0250f182aa81da18dfecbeefe88afb565f13ae10bf9253c0986e2d0940ef1aab"
+    },
+    "archivo/ENSAYO_C4_FUENTE_2026_10_21.md": {
+      "size": 8189,
+      "sha256": "31a5dc6f523af67b279d534bd0848b9e9611013780ba07ad8c9d30291e690ceb"
+    },
+    "tests/verificar_addenda.py": {
+      "size": 3487,
+      "sha256": "70c815f2fc9063b3cd0dece9408015cc9b795ee10209c4a14b3b76bc4aaf96a5"
+    },
+    "verificar_integridad.py": {
+      "size": 638,
+      "sha256": "64ba19a2eadb700fdc3e0dfe11f7139bddd53bdc01e768d30e5b6ef9805d845d"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "checks": 268,
+  "casos_espectrales": 16,
+  "triple_test": "(k,l,m)=(n,0,0)+(0,n,n)=(n,n,n)",
+  "a_b": 1.0,
+  "c": 0.25,
+  "nu": 0.01,
+  "analytic_E_m": 0.09375,
+  "analytic_nonlinear_transfer_n1_plus": 0.125,
+  "analytic_nonlinear_transfer_n1_minus": -0.125,
+  "analytic_dissipation_n1": -0.005625,
+  "status": "Derivadas instantaneas exactas de NS para datos suaves, no evolucion temporal ni teorema de regularidad general"
+}

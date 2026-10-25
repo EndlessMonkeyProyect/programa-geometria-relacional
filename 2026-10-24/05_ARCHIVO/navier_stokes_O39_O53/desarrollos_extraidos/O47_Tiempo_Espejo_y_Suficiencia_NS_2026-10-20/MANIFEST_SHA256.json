@@ -1,0 +1,14 @@
+{
+  "name": "O47 tiempo espejo suficiencia Navier Stokes",
+  "date": "2026-10-20",
+  "files": {
+    "O47_CONTROL_ENERGIA.json": "b2bf2c3bfbe362fa3468fafa82bc2794bcb19b0e0812e81c0b4585306fd4014b",
+    "O47_INFORME.es.md": "df4c80b2d60cdd728cc1f97cb6c14968ce94a53dca0256c7735dac576b14f4be",
+    "O47_RESULTADOS_N24_N32_N48.json": "3a0b03b85f79c8a2fad64420c3c5ee12f3b59866858a317e1fc76d44a192bcb6",
+    "O47_RESULTADOS_N32_dtmitad.json": "ad9fa6d6735b63b98f27f81007ae10796d7878729ccbfbfe2d0319c8ec3ee33b",
+    "README.md": "51b98e5ea919ab0cc1e8b7a3cdb6112392f0c227e23a78989c6c8d5b6030d00f",
+    "REGRESION_ANTECEDENTES.md": "f4bf65f12c5e70130dc951438072a145356e450c04befbd364ebe3102c270c14",
+    "verificar_O47.py": "1118016a437beb43649f86f153e46c7c55acb79d5b223bc5c906a6bbff436b77",
+    "verificar_O47_control_energia.py": "507ae779ee2886c5b99fdd5271b788decb59f27db79b797e988638a8787afa13"
+  }
+}

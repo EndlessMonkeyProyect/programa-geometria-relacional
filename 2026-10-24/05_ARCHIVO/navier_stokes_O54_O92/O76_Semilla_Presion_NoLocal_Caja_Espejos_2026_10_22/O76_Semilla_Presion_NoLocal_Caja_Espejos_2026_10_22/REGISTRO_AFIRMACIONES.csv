@@ -1,0 +1,11 @@
+id,estado,afirmacion,alcance
+O76.1,D,Poisson de presión es no local,NS incompresible sobre toro periódico
+O76.2,D,Cuatro nodos poseen jets iguales hasta orden 2 para reposo y campo trigonométrico,Datos iniciales particulares de familia suave
+O76.3,D,Gradiente de presión diferencial exacto 6912/5525 multiplicado por c²,Sin demostración de singularidad futura
+O76.4,D,Proyección D4 inicial idéntica a cero,Grupo cuadrado sobre campos vectoriales periódicos
+O76.5,E,Proyección temporal difiere con norma RMS 0.4743416490 para c=1,Resoluciones 64 y 96 en flujo 2D embebido
+O76.6,D,Identidad residual del común mediante tensor de segundo orden,Válida para soluciones suficientemente suaves y acción ortogonal
+O76.7,D,Familia ABC/Beltrami es solución exacta NS con decaimiento exponencial,Toro 3D y subfamilia restringida
+O76.8,F,Cuatro muestras locales de orden 2 no determinan aceleración relativa,No descarta toda semilla finita imaginable
+O76.9,H,Buscar semilla cerrada de radios frecuencias fases y tensor residual para anillos,No derivado ni demostrado
+O76.10,F,No es regularidad global general de NS 3D,El testigo es 2D embebido y ABC es familia especial

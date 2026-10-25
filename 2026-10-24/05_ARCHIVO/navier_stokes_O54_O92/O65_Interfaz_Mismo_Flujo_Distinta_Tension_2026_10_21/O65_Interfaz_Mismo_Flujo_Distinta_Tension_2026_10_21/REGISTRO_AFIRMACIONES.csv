@@ -1,0 +1,10 @@
+identificador,estado,afirmacion,alcance
+O65-T1,T,"Traslación uniforme de esfera bifásica soluciona NS con salto Laplace para cualquier sigma",campo u constante y superficie suave
+O65-T2,T,"dH(sigma2)/dH(sigma1)=(sigma2/sigma1)^(3/5)",al mantener rho eps CH fijos en modelo de Hinze
+O65-T3,T,"We/Wecrit=(d/dH)^(5/3)",convención de fluctuaciones declarada
+O65-T4,T,"DeltaE= sigma pi d² (2^(1/3)-1)",una esfera fragmentada en dos iguales volumen constante
+O65-M1,M,"Hinze aproxima umbral de fragmentación turbulenta",turbulencia rango inercial con coeficiente empírico
+O65-E1,E,"Tres casos a sigma 0.036 0.072 0.144 producen diferentes umbrales",evaluación computada del modelo; no simulación bifásica
+O65-F1,F,"N aritmético y geometría sin sigma son insuficientes para umbral Hinze",comparador omitía sigma y se pide predecir dH
+O65-A1,A,"No hay A0 o N universal derivado de propiedades capilares",pendiente puente físico
+O65-A2,A,"No hay pronóstico de ruptura individual ni regularidad global de Navier-Stokes",requeriría dinámica bifásica y controles

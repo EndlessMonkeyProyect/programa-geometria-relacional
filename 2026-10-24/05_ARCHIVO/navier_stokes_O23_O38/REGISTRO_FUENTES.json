@@ -1,0 +1,128 @@
+[
+  {
+    "id": "O18",
+    "origin": "O18_Canal_Relacional_Octavas_Auditoria_2026-10-19",
+    "items": 1,
+    "relative_target": "21_suplementos_2026_10_19_20/O18"
+  },
+  {
+    "id": "O19",
+    "origin": "O19_Tetraedro_Reflexion_Cubo_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O19"
+  },
+  {
+    "id": "O20",
+    "origin": "O20_Tetraedro_Quinta_Referencia_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O20"
+  },
+  {
+    "id": "O21",
+    "origin": "O21_Tetraedro_Reflexion_Desde_Relaciones_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O21"
+  },
+  {
+    "id": "O22",
+    "origin": "O22_Tetra_Octa_Continuidad_Espacial_2026-10-19",
+    "items": 4,
+    "relative_target": "21_suplementos_2026_10_19_20/O22"
+  },
+  {
+    "id": "O23",
+    "origin": "Programa_Geometria_Relacional_O23_Interfaz_Reflexion_2026-10-19",
+    "items": 3,
+    "relative_target": "21_suplementos_2026_10_19_20/O23"
+  },
+  {
+    "id": "O24",
+    "origin": "O24_Relojes_Relacionales_NS_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O24"
+  },
+  {
+    "id": "O25",
+    "origin": "O25_Espejo_Dinamico_NS_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O25"
+  },
+  {
+    "id": "O26",
+    "origin": "O26_Interfaz_Espectral_NS_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O26"
+  },
+  {
+    "id": "O27",
+    "origin": "O27_Perp_Vorticidad_NS_2026-10-19",
+    "items": 2,
+    "relative_target": "21_suplementos_2026_10_19_20/O27"
+  },
+  {
+    "id": "O28",
+    "origin": "O28_Modulo_Comun_Remolinos_2026-10-19",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O28"
+  },
+  {
+    "id": "O29",
+    "origin": "O29_Acoplamiento_Forma_NS_2026-10-19",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O29"
+  },
+  {
+    "id": "O30",
+    "origin": "O30_Balance_Modular_Vortices_NS_2026-10-19",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O30"
+  },
+  {
+    "id": "O31",
+    "origin": "O31_Certificado_Persistencia_Vorticial_2026-10-19",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O31"
+  },
+  {
+    "id": "O32",
+    "origin": "O32_Forma_Propia_Persistencia_NS_2026-10-20",
+    "items": 4,
+    "relative_target": "21_suplementos_2026_10_19_20/O32"
+  },
+  {
+    "id": "O33",
+    "origin": "O33_Relacion_Comun_Simetria_Vorticial_2026-10-20",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O33"
+  },
+  {
+    "id": "O34",
+    "origin": "O34_Atractor_Forma_Comun_NS_2026-10-20",
+    "items": 6,
+    "relative_target": "21_suplementos_2026_10_19_20/O34"
+  },
+  {
+    "id": "O35",
+    "origin": "O35_Emergencia_Local_Relacion_Vorticial_NS_2026-10-20",
+    "items": 6,
+    "relative_target": "21_suplementos_2026_10_19_20/O35"
+  },
+  {
+    "id": "O36",
+    "origin": "O36_Cierre_Modular_Unilateral_NS_2026-10-20",
+    "items": 6,
+    "relative_target": "21_suplementos_2026_10_19_20/O36"
+  },
+  {
+    "id": "O37",
+    "origin": "O37_Emergencia_Modular_Mezcla_y_Forma_NS_2026-10-20",
+    "items": 6,
+    "relative_target": "21_suplementos_2026_10_19_20/O37"
+  },
+  {
+    "id": "O38",
+    "origin": "O38_Bifurcacion_Intrinseca_Vorticidad_NS_2026-10-20",
+    "items": 5,
+    "relative_target": "21_suplementos_2026_10_19_20/O38"
+  }
+]

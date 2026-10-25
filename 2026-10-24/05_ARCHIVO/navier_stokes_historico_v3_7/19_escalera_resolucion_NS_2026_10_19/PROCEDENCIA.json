@@ -1,0 +1,20 @@
+{
+  "revision": "3.5.4-candidata",
+  "fecha": "2026-10-19",
+  "base_filename": "Programa_Geometria_Relacional_Imagen_Total_v3_5_3_CANDIDATA_O17E_Contencion_y_Costo_SAT_2026-10-19.zip",
+  "base_sha256": "ea0d0eed9560047b009b24645982953edb397e2fc5bec05fddba417db80a6d0b",
+  "base_archivos": 1073,
+  "base_intacta": true,
+  "conservacion": "El ZIP base se copia byte a byte y los archivos nuevos se agregan sin sobrescribir ningún nombre existente. Los scripts de 03_navier_stokes se usan sin modificar.",
+  "prerregistro_sha256": "0d9d50e8ca68826ec1a7fa411b8b5f212d0dbd53ddbf0635e77f6890f5c47a07",
+  "prerregistro_registrado_utc": "Archivo escrito a las 16:03:13Z (marca de tiempo del sistema de archivos); la DNS empezó a las 16:04:10Z (primera línea de PROGRESO_CORRIDA.log, hora local 10:04:10). El campo interno 'fecha_utc_registro' dice 16:05Z por una estimación al redactarlo; no se corrigió para no tocar el archivo prerregistrado después de los resultados.",
+  "pruebas": {
+    "O17F": "12 pruebas, todas pasan (results/PRUEBAS_O17F.txt)",
+    "regresion": "O14: 22, O15: 26, O16: 28, O17: 32, O17-E: 11, suite general: 311 y 953 subpruebas; todas pasan"
+  },
+  "computo": "2 núcleos; arranque ≈ 18 min; evolución N=64/128/192/256: 19 s / 262 s / 1024 s / ≈ 40 min; pico de memoria ≈ 5 GB en N=256",
+  "python": "3.13.16",
+  "estados_dns": "no incluidos (≈ 0.5 GB); regenerables de forma determinista con el protocolo del README",
+  "estado_cientifico": "Medición prerregistrada en un instante y un Reynolds; reproducción independiente de la auditoría 128↔192 de la rama. No afirma nada sobre regularidad global.",
+  "cambios_posteriores_a_los_resultados": "analisis_o17f.py recibió después de la primera corrida del análisis: (1) IC95 por nivel para comparar con las tablas del autor, (2) la columna descriptiva 'posterior_acreditada_desde_N', (3) la ruta de la rama para la comparación. Las tolerancias, el bootstrap y la clasificación prerregistrada no cambiaron; la primera salida y la final coinciden en todas las clasificaciones."
+}

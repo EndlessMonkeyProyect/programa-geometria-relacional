@@ -1,0 +1,27 @@
+COMANDO: python -B -m unittest discover -s extensions/GR3/tests
+Ran 22 tests in 0.213s
+
+OK
+
+COMANDO: python -B -m unittest discover -s 15_revision_total_2026_10_19/tests
+Ran 26 tests in 0.006s
+
+OK
+
+COMANDO: python -B -m unittest discover -s 16_contenicion_informacional_y_puente_proton_2026_10_19/tests
+Ran 28 tests in 0.006s
+
+OK
+
+COMANDO: python -B -m unittest discover -s 17_discriminante_contencion_y_segundo_observable_2026_10_19/tests
+Ran 32 tests in 1.737s
+
+OK
+
+COMANDO: python -B -m unittest discover -s 18_contencion_y_costo_en_SAT_2026_10_19/tests
+Ran 11 tests in 1.625s
+
+OK
+
+COMANDO: python -B -m pytest -q -p no:cacheprovider
+311 passed, 953 subtests passed in 20.16s

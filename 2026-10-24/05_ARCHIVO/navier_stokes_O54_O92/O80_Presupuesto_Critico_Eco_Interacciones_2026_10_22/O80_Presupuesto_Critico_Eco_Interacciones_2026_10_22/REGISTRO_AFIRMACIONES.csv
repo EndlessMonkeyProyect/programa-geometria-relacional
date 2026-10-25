@@ -1,0 +1,8 @@
+identificador,afirmacion,estatus,limite
+O80-T1,"D+R + (nu-R) A1 <= 0 para soluciones suaves periódicas",DEMOSTRADO,"Criterio Wiener crítico; método clásico; no implica R pequeño"
+O80-T2,"Si R0<nu entonces integral A1 y continuidad global suave",DEMOSTRADO_CONDICIONAL,"Subclase de datos iniciales; relación con Lei-Lin 2011"
+O80-T3,"Inyección absoluta no lineal integral <= R0²/(nu-R0)",DEMOSTRADO_CONDICIONAL,"No identifica novedad ontológica ni tamaño mínimo de estructura"
+O80-E1,"Dos fases con mismo R y derivadas instantáneas diferentes",VERIFICACION_FINITA,"No simulación temporal"
+O80-E2,"Dos triadas producen modos de acoplamiento de dos escalas",VERIFICACION_FINITA,"18 modos, para los datos definidos"
+O80-F1,"Dilución de amplitudes no implica control de enstrofía infinita",DEMOSTRADO_EN_MODELO,"Una onda por octava"
+O80-A1,"Toda solucion suave NS posee tal presupuesto aun con R0>=nu",ABIERTO,"No afirmar como demostrado"

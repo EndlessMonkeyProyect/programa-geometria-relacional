@@ -1,0 +1,76 @@
+Completed ninguna elapsed 1.4 s eta final 0.11956636018561387
+Completed x elapsed 2.9 s eta final 0.17351555943641941
+Completed y elapsed 4.4 s eta final 0.17351555943641955
+RESULTADOS {
+  "finales": {
+    "ninguna": {
+      "eta_mean": 0.11956636018561387,
+      "cos_rms": 0.002693095369528249,
+      "area_ratio": 1.0016602175100906
+    },
+    "x": {
+      "eta_mean": 0.17351555943641941,
+      "cos_rms": 0.10370618208712644,
+      "area_ratio": 1.0057158669267037
+    },
+    "y": {
+      "eta_mean": 0.17351555943641955,
+      "cos_rms": 0.10370618208712641,
+      "area_ratio": 1.0057158669267037
+    }
+  },
+  "predictores": {
+    "ninguna": {
+      "normal_balance_error": 1.942890293094024e-16,
+      "area_rate_mean": 1.0842021724855044e-17,
+      "area_rate_rms": 0.08282155566670746,
+      "eta_rate": 0.11335693425064901,
+      "eta_rate_rms": 0.14220375419600342,
+      "cosine_rate_rms": 0.002041860484186872
+    },
+    "x": {
+      "normal_balance_error": 2.220446049250313e-16,
+      "area_rate_mean": 5.637851296924623e-18,
+      "area_rate_rms": 0.09264333309484123,
+      "eta_rate": 0.15602182459989233,
+      "eta_rate_rms": 0.17061117692092811,
+      "cosine_rate_rms": 0.0846584791575874
+    },
+    "y": {
+      "normal_balance_error": 1.942890293094024e-16,
+      "area_rate_mean": 5.637851296924623e-18,
+      "area_rate_rms": 0.09264333309484123,
+      "eta_rate": 0.1560218245998923,
+      "eta_rate_rms": 0.1706111769209281,
+      "cosine_rate_rms": 0.08465847915758737
+    }
+  },
+  "diferencias_rotacion": {
+    "energia": 1.734723475976807e-18,
+    "enstrofia": 3.469446951953614e-18,
+    "eta_mean": 1.3877787807814457e-16,
+    "eta_max": 1.7486012637846216e-15,
+    "eta_p95": 4.246603069191224e-15,
+    "cos_rms": 6.245004513516506e-17,
+    "area_ratio": 0.0,
+    "scale_mean": 2.220446049250313e-16
+  },
+  "tasa_corta": {
+    "ninguna": 0.11120962212319639,
+    "x": 0.15539863731114803,
+    "y": 0.15539863731114673
+  },
+  "comprobaciones": {
+    "initial_eta_zero": true,
+    "mirror_invariance": true,
+    "positive_metric": true,
+    "x_y_equal_global": true,
+    "x_y_pointwise_label_differs": true,
+    "initial_rate_nonzero_for_perturbed": true,
+    "short_time_rate_predicts": true,
+    "nonzero_anisotropy_base": true,
+    "normal_perpendicular_balance": true,
+    "short_time_area_rate_predicts": true,
+    "energy_decay": true
+  }
+}

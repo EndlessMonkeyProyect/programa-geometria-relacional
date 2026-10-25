@@ -1,0 +1,342 @@
+[
+  {
+    "name": "Incompresibilidad exacta de cizallas cruzadas",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Poisson espectral de presión",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Gradiente de presión calculado analíticamente",
+    "passed": true,
+    "detail": "0.6255203619909475"
+  },
+  {
+    "name": "Aceleración en esquina",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Aceleración opuesta en esquina superior",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Aceleración relativa objetiva",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: velocidad nula",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 0 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 1: jet componente 1 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: velocidad nula",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 0 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 2: jet componente 1 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: velocidad nula",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 0 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 3: jet componente 1 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: velocidad nula",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 0 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (0,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (0,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (0,2)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (1,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (1,1)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Esquina 4: jet componente 1 orden (2,0)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Caja D4 proyectiva",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Caja D4: campo inicial no contiene componente vectorial común",
+    "passed": true,
+    "detail": "4.7852512947616616e-18"
+  },
+  {
+    "name": "Caja D4: sector omitido modifica la derivada colectiva",
+    "passed": true,
+    "detail": "0.4743416490252567"
+  },
+  {
+    "name": "La derivada colectiva se cuadruplica al duplicar amplitud",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Cierre residual exacto del promedio D4",
+    "passed": true,
+    "detail": "1.6093451251535572e-15"
+  },
+  {
+    "name": "Tensor residual no es cero",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "El gradiente de presión escala cuadráticamente",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Campo ABC tiene rotacional igual al campo",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Campo ABC con ν decae exactamente con e^{-ν t}",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No linealidad Beltrami es gradiente puro",
+    "passed": true,
+    "detail": ""
+  }
+]

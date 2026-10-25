@@ -1,0 +1,11 @@
+item,estado,descripcion,limite
+O81.1,T,Invariancia de norma crítica bajo escala física entera NS,No significa invariancia temporal
+O81.2,T,Ecuación de perturbación exacta u=U+v,Exige U solución PDE para no tener defecto
+O81.3,T,Desigualdad crítica D+R+nu Q <= R Q + 2 S_U sqrt(R Q),Soluciones suaves y media cero en toro
+O81.4,T,Criterio de continuación por resto pequeño y exposición finita de la referencia,No aplica a todos los datos
+O81.5,T,Familia de grandes datos alrededor de cizalla exacta,La ventana de restos es muy estrecha para A grande
+O81.6,T,Presupuesto finito de interacciones relativas al cierre,Depende del criterio de perturbación
+O81.7,T,Mayorante con defecto si referencia U es aproximada,Requiere medir todo F_U
+O81.8,E,Chequeos Fourier iniciales y parámetros en ejemplo 3D,No integración temporal de NS
+O81.9,F,Reindexar múltiplos no reduce la norma física crítica,No excluye selección dinámica de referencia distinta
+O81.10,A,Extracción universal desde datos arbitrarios de una referencia dinámica suficiente,Sigue sin demostrar

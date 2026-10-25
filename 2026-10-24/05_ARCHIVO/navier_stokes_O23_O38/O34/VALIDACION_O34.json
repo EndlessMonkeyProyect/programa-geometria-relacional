@@ -1,0 +1,70 @@
+{
+  "passed_checks": 306,
+  "max_entropy_identity_residual": 0.0,
+  "gaussian_profiles": [
+    {
+      "beta0": 0.45,
+      "H0": 0.24850769621777158,
+      "H_tau1": 0.0237312375502014
+    },
+    {
+      "beta0": 0.55,
+      "H0": 0.14783700075562045,
+      "H_tau1": 0.015431610338353968
+    },
+    {
+      "beta0": 0.7,
+      "H0": 0.0566749439387324,
+      "H_tau1": 0.006578867881048042
+    },
+    {
+      "beta0": 1.6,
+      "H0": 0.12999637075426446,
+      "H_tau1": 0.021280537283445422
+    },
+    {
+      "beta0": 1.8,
+      "H0": 0.21221333509788098,
+      "H_tau1": 0.03633079941003359
+    },
+    {
+      "beta0": 2.3,
+      "H0": 0.46709087706489594,
+      "H_tau1": 0.08738886811182095
+    }
+  ],
+  "two_radial_populations": {
+    "beta_A_initial": 0.55,
+    "beta_B_initial": 1.8,
+    "times_tau": [
+      0.0,
+      0.05,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      10.0,
+      100.0
+    ],
+    "L1_distances": [
+      0.8243415389624881,
+      0.7862153032532209,
+      0.6511299030135344,
+      0.514642573028862,
+      0.32039134653026846,
+      0.12172673667641909,
+      0.04540079688374543,
+      0.006189600305152809,
+      4.1753920246967446e-05,
+      0.0
+    ]
+  },
+  "nonradial_initial_configuration": {
+    "third_central_x_moment": -0.9555000000000002,
+    "initial_relative_entropy_estimate": 0.4844982448216941,
+    "gauss_hermite_order": 40
+  },
+  "limitations": "Exact radial Navier-Stokes and entropy estimates; no numerical Navier-Stokes DNS or independent derivation of phase synchronization."
+}

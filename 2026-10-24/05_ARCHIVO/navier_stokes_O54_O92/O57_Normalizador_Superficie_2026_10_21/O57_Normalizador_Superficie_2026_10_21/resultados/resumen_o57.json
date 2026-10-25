@@ -1,0 +1,143 @@
+{
+  "parametros": {
+    "N": 32,
+    "dt": 0.014,
+    "pasos": 90,
+    "t_final": 1.26,
+    "viscosidad": 0.025,
+    "R_inicial": 1.6,
+    "r_inicial": 0.48,
+    "trazadores_superficie": 384,
+    "cuadricula_superficie": [
+      24,
+      16
+    ]
+  },
+  "predictores_iniciales": {
+    "ninguna": {
+      "normal_balance_error": 1.942890293094024e-16,
+      "area_rate_mean": 1.0842021724855044e-17,
+      "area_rate_rms": 0.08282155566670746,
+      "eta_rate": 0.11335693425064901,
+      "eta_rate_rms": 0.14220375419600342,
+      "cosine_rate_rms": 0.002041860484186872
+    },
+    "x": {
+      "normal_balance_error": 2.220446049250313e-16,
+      "area_rate_mean": 5.637851296924623e-18,
+      "area_rate_rms": 0.09264333309484123,
+      "eta_rate": 0.15602182459989233,
+      "eta_rate_rms": 0.17061117692092811,
+      "cosine_rate_rms": 0.0846584791575874
+    },
+    "y": {
+      "normal_balance_error": 1.942890293094024e-16,
+      "area_rate_mean": 5.637851296924623e-18,
+      "area_rate_rms": 0.09264333309484123,
+      "eta_rate": 0.1560218245998923,
+      "eta_rate_rms": 0.1706111769209281,
+      "cosine_rate_rms": 0.08465847915758737
+    }
+  },
+  "estado_final": {
+    "ninguna": {
+      "eta_mean": 0.11956636018561387,
+      "eta_max": 0.2855211802701185,
+      "eta_p95": 0.28348872750532766,
+      "cos_rms": 0.002693095369528249,
+      "cos_mean": -1.4929555410167571e-18,
+      "area_ratio": 1.0016602175100906,
+      "scale_mean": 0.9996710111634177,
+      "mirror_ratio_check": 5.551115123125783e-17,
+      "min_metric_eigen": 0.7266670017141763,
+      "caso": "ninguna",
+      "paso": 90,
+      "t": 1.26,
+      "energia": 0.0027039824840791133,
+      "enstrofia": 0.0072866789916560554,
+      "eta_pred_lineal": 0.14282973715581776,
+      "cos_rms_pred_lineal": 0.002572744210075459
+    },
+    "x": {
+      "eta_mean": 0.17351555943641941,
+      "eta_max": 0.36445264875782934,
+      "eta_p95": 0.31865892372847965,
+      "cos_rms": 0.10370618208712644,
+      "cos_mean": -1.6162896068070355e-17,
+      "area_ratio": 1.0057158669267037,
+      "scale_mean": 1.001332505297204,
+      "mirror_ratio_check": 5.551115123125783e-17,
+      "min_metric_eigen": 0.6227060817622785,
+      "caso": "x",
+      "paso": 90,
+      "t": 1.26,
+      "energia": 0.014341127409135556,
+      "enstrofia": 0.014534210418563192,
+      "eta_pred_lineal": 0.19658749899586433,
+      "cos_rms_pred_lineal": 0.10666968373856012
+    },
+    "y": {
+      "eta_mean": 0.17351555943641955,
+      "eta_max": 0.3644526487578276,
+      "eta_p95": 0.3186589237284768,
+      "cos_rms": 0.10370618208712641,
+      "cos_mean": 4.8827435299844794e-17,
+      "area_ratio": 1.0057158669267037,
+      "scale_mean": 1.001332505297204,
+      "mirror_ratio_check": 5.551115123125783e-17,
+      "min_metric_eigen": 0.6227060817622834,
+      "caso": "y",
+      "paso": 90,
+      "t": 1.26,
+      "energia": 0.014341127409135554,
+      "enstrofia": 0.014534210418563192,
+      "eta_pred_lineal": 0.1965874989958643,
+      "cos_rms_pred_lineal": 0.10666968373856009
+    }
+  },
+  "errores_globales_x_vs_y": {
+    "energia": 1.734723475976807e-18,
+    "enstrofia": 3.469446951953614e-18,
+    "eta_mean": 1.3877787807814457e-16,
+    "eta_max": 1.7486012637846216e-15,
+    "eta_p95": 4.246603069191224e-15,
+    "cos_rms": 6.245004513516506e-17,
+    "area_ratio": 0.0,
+    "scale_mean": 2.220446049250313e-16
+  },
+  "comparacion_marca": {
+    "ninguna": 0.04701218087496564,
+    "x": 0.09964587672273857,
+    "y": 0.16706859105089092
+  },
+  "error_max_rotacion_mapa": 1.8418599978531347e-13,
+  "tasa_t_corto": {
+    "ninguna": 0.11120962212319639,
+    "x": 0.15539863731114803,
+    "y": 0.15539863731114673
+  },
+  "errores_corto_plazo_area": {
+    "ninguna": 0.01192832910545708,
+    "x": 0.011719147205454205,
+    "y": 0.011719147205415278
+  },
+  "comprobaciones": {
+    "initial_eta_zero": true,
+    "mirror_invariance": true,
+    "positive_metric": true,
+    "x_y_equal_global": true,
+    "x_y_pointwise_label_differs": true,
+    "initial_rate_nonzero_for_perturbed": true,
+    "short_time_rate_predicts": true,
+    "nonzero_anisotropy_base": true,
+    "normal_perpendicular_balance": true,
+    "short_time_area_rate_predicts": true,
+    "energy_decay": true
+  },
+  "advertencias": [
+    "simulacion Galerkin con malla 32³, no una solucion exacta del sistema continuo",
+    "la superficie es material advectada pero no necesariamente una superficie de vorticidad",
+    "conservar topologia es distinto de conservar metricas o estabilidad",
+    "factor de escala geometrica no es un MCM ni un operador de normalizacion dinamica"
+  ]
+}

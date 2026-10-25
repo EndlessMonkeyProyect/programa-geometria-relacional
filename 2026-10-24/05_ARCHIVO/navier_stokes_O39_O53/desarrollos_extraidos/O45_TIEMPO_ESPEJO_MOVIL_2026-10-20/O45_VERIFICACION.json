@@ -1,0 +1,10 @@
+{
+  "program": "Programa de Geometría Relacional",
+  "module": "O45",
+  "date": "2026-10-20",
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "scope": "Identidades cinemáticas, gauge, NS exacto en cizalla, conservación bajo marco, MCM. No prueba regularidad global ni singularidad física."
+}

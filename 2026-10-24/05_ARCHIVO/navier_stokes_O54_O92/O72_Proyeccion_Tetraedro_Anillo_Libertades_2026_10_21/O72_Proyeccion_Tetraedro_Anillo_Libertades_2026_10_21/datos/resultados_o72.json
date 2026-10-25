@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-21",
+  "chapter": "O72",
+  "tests_passed": 1424,
+  "gear_graph": {
+    "K4_rank": 4,
+    "K4_nullity": 0,
+    "C4_rank": 3,
+    "C4_nullity": 1,
+    "C3_rank": 3,
+    "C3_nullity": 0,
+    "one_diagonal_rank": 4
+  },
+  "projection": {
+    "signed_tetra_volume": -2.6666666666666665,
+    "signed_mirror_volume": 2.6666666666666665,
+    "tetra_edge_squared": 8,
+    "tetra_rigidity_rank": 6,
+    "planar_ring_rigidity_rank": 4,
+    "planar_full_projection_rank": 5
+  },
+  "dynamics": {
+    "mode_initial": 3.0,
+    "diag_coupling_eigenvalue_per_unit_alpha": 2,
+    "formula": "s(t)=s0 exp(-2 alpha t)",
+    "interpretation": "artificial relaxation law, not Navier-Stokes"
+  },
+  "meaning": "Demonstrates freedom introduced by relaxing graph constraints. Does not derive vortex ring creation, stability, non-merger or NS regularity."
+}

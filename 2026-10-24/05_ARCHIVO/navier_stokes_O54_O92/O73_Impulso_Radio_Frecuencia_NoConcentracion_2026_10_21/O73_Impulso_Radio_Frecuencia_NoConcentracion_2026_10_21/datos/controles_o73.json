@@ -1,0 +1,420 @@
+[
+  {
+    "name": "momento radial positivo",
+    "ok": true,
+    "detail": 0.13065560171027932
+  },
+  {
+    "name": "normalizacion del bump",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "identidad simbolica operador 5D",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "cancelacion de estiramiento radial",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.35",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.35",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.35",
+    "ok": true,
+    "detail": [
+      18.84955592153876,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.35",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.35",
+    "ok": true,
+    "detail": [
+      38.93687716790478,
+      40.20883898057679,
+      60.16530183870761
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.35",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.22",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.22",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.22",
+    "ok": true,
+    "detail": [
+      18.84955592153876,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.22",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.22",
+    "ok": true,
+    "detail": [
+      98.0676486171049,
+      99.28414524733088,
+      125.84051532915956
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.22",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.14",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.14",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.14",
+    "ok": true,
+    "detail": [
+      18.84955592153876,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.14",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.14",
+    "ok": true,
+    "detail": [
+      241.70982632043047,
+      242.90607721338134,
+      281.1166466735398
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.14",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.09",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.09",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.09",
+    "ok": true,
+    "detail": [
+      18.849555921538755,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.09",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.09",
+    "ok": true,
+    "detail": [
+      584.4380660133406,
+      585.6264232342483,
+      642.2732724331556
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.09",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.06",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.06",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.06",
+    "ok": true,
+    "detail": [
+      18.84955592153876,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.06",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.06",
+    "ok": true,
+    "detail": [
+      1314.5988366816553,
+      1315.7841338632657,
+      1398.530402165807
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.06",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.035",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.035",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.035",
+    "ok": true,
+    "detail": [
+      18.84955592153876,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.035",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.035",
+    "ok": true,
+    "detail": [
+      3862.7113182014823,
+      3863.895006817477,
+      4002.8212758212894
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.035",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "toroide separado del eje a=0.02",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "circulacion inicial fija a=0.02",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "impulso inicial fijo a=0.02",
+    "ok": true,
+    "detail": [
+      18.849555921538762,
+      18.84955592153876
+    ]
+  },
+  {
+    "name": "radio efectivo fijo a=0.02",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "maximo eta entre cotas a=0.02",
+    "ok": true,
+    "detail": [
+      11828.915802551219,
+      11830.098933441084,
+      12070.32868471706
+    ]
+  },
+  {
+    "name": "escala pico de vorticidad a=0.02",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "cuadratura independiente masa",
+    "ok": true,
+    "detail": 0.9999999999999936
+  },
+  {
+    "name": "cuadratura independiente primer momento",
+    "ok": true,
+    "detail": -1.6499874272615957e-15
+  },
+  {
+    "name": "cuadratura independiente segundo momento",
+    "ok": true,
+    "detail": [
+      0.130655601710278,
+      0.13065560171027932
+    ]
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.35",
+    "ok": true,
+    "detail": 18.849555921538617
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.22",
+    "ok": true,
+    "detail": 18.849555921538624
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.14",
+    "ok": true,
+    "detail": 18.849555921538627
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.09",
+    "ok": true,
+    "detail": 18.849555921538627
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.06",
+    "ok": true,
+    "detail": 18.849555921538634
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.035",
+    "ok": true,
+    "detail": 18.849555921538634
+  },
+  {
+    "name": "impulso por cuadratura independiente a=0.02",
+    "ok": true,
+    "detail": 18.849555921538638
+  },
+  {
+    "name": "cota area para tubo a=0.35",
+    "ok": true,
+    "detail": [
+      20.765801793885203,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.22",
+    "ok": true,
+    "detail": [
+      18.369873153875833,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.14",
+    "ok": true,
+    "detail": [
+      17.031809774741305,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.09",
+    "ok": true,
+    "detail": [
+      16.23570351969916,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.06",
+    "ok": true,
+    "detail": [
+      15.770537879234995,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.035",
+    "ok": true,
+    "detail": [
+      15.389270933215434,
+      6.0
+    ]
+  },
+  {
+    "name": "cota area para tubo a=0.02",
+    "ok": true,
+    "detail": [
+      15.163075101430973,
+      6.0
+    ]
+  },
+  {
+    "name": "razon cuadratica picos 0.35/0.22",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "razon cuadratica picos 0.22/0.14",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "razon cuadratica picos 0.14/0.09",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "razon cuadratica picos 0.09/0.06",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "razon cuadratica picos 0.06/0.035",
+    "ok": true,
+    "detail": null
+  },
+  {
+    "name": "razon cuadratica picos 0.035/0.02",
+    "ok": true,
+    "detail": null
+  }
+]

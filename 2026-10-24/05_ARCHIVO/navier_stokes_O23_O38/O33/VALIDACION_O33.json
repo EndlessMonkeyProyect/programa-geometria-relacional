@@ -1,0 +1,8 @@
+{
+  "version": "O33-2026-10-20",
+  "testsRun": 19,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Identidades por simetría, momentos gaussianos, controles instantaneos cuadratura Biot Savart; no DNS."
+}

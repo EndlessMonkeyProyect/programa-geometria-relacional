@@ -1,0 +1,13 @@
+ID,afirmacion,etiqueta,estatus,limitacion
+O75-01,El gradiente del flujo material obedece dot F = (grad u) F,D,demostrado,Requiere solución suave
+O75-02,det F = 1 para flujo incompresible,D,demostrado,No acota por sí solo el estiramiento
+O75-03,Derivada logarítmica de H_F igual al balance de diferencias de deformación,D,demostrado,Depende de seleccionar nodos y direcciones
+O75-04,Para deformación espacial homogénea H_F es telescópicamente uno,D,demostrado,Es identidad cinemática no ley nueva
+O75-05,Taylor-Green periódico da dlogH/dt inicial -2U,D-NS,demostrado,Campo bidimensional embebido en 3D
+O75-06,ABC tridimensional da dlogH/dt inicial distinto de cero,D-NS,demostrado,Vórtice helicoidal periódico no anillo aislado
+O75-07,Incompresibilidad no impone conservación universal de H_F,F,refutado,Refuta únicamente este candidato a referencia
+O75-08,Cuatro muestras de u y grad u no determinan su futuro para todas las soluciones,D-NS,demostrado,No refuta todos los posibles datos reducidos
+O75-09,La referencia de enlaces constituye el múltiplo entero del programa,H,no demostrado,No se ha derivado cuantización de NS
+O75-10,La semilla resuelve la regularidad global NS 3D,H,no demostrado,No existe tal demostración aquí
+O75-11,La vorticidad material normalizada obedece D_t(F^{-1}ω)=νF^{-1}∆ω,D-NS,demostrado,Requiere datos espaciales para el laplaciano
+O75-12,El gradiente cumple D_t A=-A²-Hess(p/rho)+ν∆A,D-NS,demostrado,No es un sistema cerrado sobre cuatro puntos

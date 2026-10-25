@@ -1,0 +1,41 @@
+{
+  "checks_passed": 2717,
+  "model": "3D incompressible periodic no forcing; Fourier at initial instant, not time integration",
+  "theorem": "D+R+nu A1 <= A0^2 <= R A1",
+  "nu": 0.1,
+  "two_phase_cases": [
+    {
+      "csign": 1.0,
+      "nu": 0.1,
+      "R": 0.09242640687119286,
+      "A0": 0.11449489742783178,
+      "A1": 0.14899494936611665,
+      "Ymean": 0.00335,
+      "Dini_R": -0.01370196209698902,
+      "residual_budget": -0.01257353497224283,
+      "nl_energy": 0.0,
+      "generated": 14
+    },
+    {
+      "csign": -1.0,
+      "nu": 0.1,
+      "R": 0.09242640687119286,
+      "A0": 0.11449489742783178,
+      "A1": 0.14899494936611665,
+      "Ymean": 0.00335,
+      "Dini_R": -0.013773366617780055,
+      "residual_budget": -0.012644939493033865,
+      "nl_energy": 0.0,
+      "generated": 14
+    }
+  ],
+  "random_4wave_cases": 96,
+  "dilution_rows": 32,
+  "triads": 8,
+  "cross_scale": {
+    "initial_R": 0.06062342167691146,
+    "cross_critical_norm": 0.00043584324957461536,
+    "new_cross_modes": 18,
+    "initial_Dini_R": -0.014127733535476316
+  }
+}

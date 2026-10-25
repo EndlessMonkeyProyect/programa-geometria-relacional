@@ -1,0 +1,10 @@
+ID,Estado,Afirmacion,Alcance
+O68-01,DEMOSTRADO,"Un par de conteos de vueltas enteros tiene forma L(q,p) con par coprimo",aritmetica
+O68-02,DEMOSTRADO,"Existen a,b enteros con aq+bp=1 y aLq+bLp=L",identidad de Bezout
+O68-03,DEMOSTRADO,"La transformacion de fases Phi/Psi tiene determinante -1",fase topologica
+O68-04,CONDICIONAL,"Si los dos giros satisfacen bloqueo instantaneo entonces Psi es constante",modelo cinemático
+O68-05,DEMOSTRADO,"Un cambio de radio no preserva por si solo el bloqueo",ejemplo cinemático
+O68-06,DEMOSTRADO,"La sincronizacion sola no acota ritmos ni radios",contraejemplo cinemático
+O68-07,HIPOTESIS,"El anillo fisico mantiene una semilla de fase interna bajo NS",no demostrado
+O68-08,ABIERTO,"La semilla deriva una cota a priori de regularidad general",Navier-Stokes 3D
+O68-09,PRECAUCION,"El multiplo L depende del intervalo de conteo; no es invariante fisico universal",interpretacion

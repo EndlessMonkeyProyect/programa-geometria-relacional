@@ -1,0 +1,29 @@
+{
+  "proyecto": "O54 — formalización toroidal espejo móvil",
+  "fecha": "2026-10-21",
+  "tipo": "suplemento aditivo, NO Imagen Total nueva",
+  "base_nombre": "Programa_Geometria_Relacional_Imagen_Total_v3_8_1_C4_VINCULOS_2026-10-21.zip",
+  "base_sha256": "681204b73e7f8450493967f128e8209c8c474c9c88f653b43c51e4d870a7cc75",
+  "archivos": [
+    {
+      "ruta": "LEER_PRIMERO.md",
+      "tamano": 1646,
+      "sha256": "3c228cce08cf2e2eaf4f29fe2a6a8458d68d0444d9da436dadafc5580c6c74a4"
+    },
+    {
+      "ruta": "O54_FORMALIZACION.es.md",
+      "tamano": 18751,
+      "sha256": "2485a22357f98c8941e439ed78913264eb8d0e97f4120958d19d10b152219129"
+    },
+    {
+      "ruta": "codigo/verificar_o54.py",
+      "tamano": 4040,
+      "sha256": "cfff4a7a7c7d79710b39983a6fa2cd2f06c9b67e6c1163b520d85da6e2bc103e"
+    },
+    {
+      "ruta": "resultados/verificacion_o54.json",
+      "tamano": 3433,
+      "sha256": "52530de39f172f44a89d91eae709c6c83e563e7baf3fc377297db6af10cde4e6"
+    }
+  ]
+}

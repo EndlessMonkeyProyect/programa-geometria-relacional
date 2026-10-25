@@ -1,0 +1,602 @@
+{
+  "resumen": {
+    "programa": "O67 — cota crítica y barrera de cierre del presupuesto",
+    "fecha": "2026-10-21",
+    "numero_controles": 135,
+    "aprobados": 135,
+    "datos_fase_A": {
+      "energy": 0.575375,
+      "enstrophy": 0.59425,
+      "Z": 1.2639999999999998,
+      "solenoidal": 0.0,
+      "budget_pos": 0.0,
+      "signed_budget": -0.052081249999999996,
+      "exact_cs_upper": 0.6733081256601614,
+      "total_transfer": -8.782037597132586e-18,
+      "tail_K1_1": -0.05208124999999997,
+      "positive_budget_below_bound": true,
+      "nonlinearity_L2": 0.598880701809634
+    },
+    "datos_fase_B": {
+      "energy": 0.575375,
+      "enstrophy": 0.59425,
+      "Z": 1.2639999999999998,
+      "solenoidal": 0.0,
+      "budget_pos": 0.0009587500000000095,
+      "signed_budget": 0.0009587500000000063,
+      "exact_cs_upper": 0.6737834461803484,
+      "total_transfer": -3.5236570605778894e-18,
+      "tail_K1_1": 0.0009587500000000117,
+      "positive_budget_below_bound": true,
+      "nonlinearity_L2": 0.5993034804393067
+    },
+    "contraejemplo_funcional": {
+      "L1": 0.5,
+      "L2_n64": 24.0,
+      "L3_n64": 1280.0
+    },
+    "limite": "Las pruebas numéricas respaldan identidades y desigualdades para estados finitos. NO se ha derivado una cota global universal ni resuelto NS sin forzamiento."
+  },
+  "controles": [
+    {
+      "control": "cizalla_energia_m1_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m1_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m1_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m1_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m1_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m1_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m1_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m1_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m1_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m1_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m1_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m1_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m2_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m2_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m2_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m2_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m2_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m2_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m2_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m2_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m2_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m2_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m2_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m2_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m3_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m3_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m3_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m3_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m3_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m3_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m3_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m3_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m3_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m3_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m3_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m3_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m5_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m5_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m5_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m5_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m5_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m5_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m5_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m5_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m5_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m5_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m5_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m5_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m8_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m8_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m8_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m8_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m8_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m8_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m8_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m8_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m8_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m8_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m8_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m8_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m16_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m16_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m16_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m16_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m16_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m16_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m16_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m16_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m16_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m16_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m16_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m16_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m32_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m32_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m32_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m32_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m32_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m32_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m32_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m32_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m32_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m32_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m32_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m32_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m64_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m64_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m64_t0.0",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m64_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m64_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m64_t0.02",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m64_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m64_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m64_t0.1",
+      "ok": true
+    },
+    {
+      "control": "cizalla_energia_m64_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_relacion_escala_m64_t0.5",
+      "ok": true
+    },
+    {
+      "control": "cizalla_disipacion_W_m64_t0.5",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n2",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n2",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n2",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n4",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n4",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n4",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n8",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n8",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n8",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n16",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n16",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n16",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n32",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n32",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n32",
+      "ok": true
+    },
+    {
+      "control": "pico_L1_constante_n64",
+      "ok": true
+    },
+    {
+      "control": "pico_L2_creciente_n64",
+      "ok": true
+    },
+    {
+      "control": "pico_L3_creciente_n64",
+      "ok": true
+    },
+    {
+      "control": "campo_A_solenoidal",
+      "ok": true
+    },
+    {
+      "control": "campo_B_solenoidal",
+      "ok": true
+    },
+    {
+      "control": "energias_modales_identicas",
+      "ok": true
+    },
+    {
+      "control": "energia_total_identica",
+      "ok": true
+    },
+    {
+      "control": "enstrofia_total_identica",
+      "ok": true
+    },
+    {
+      "control": "transferencia_suma_cero_A",
+      "ok": true
+    },
+    {
+      "control": "transferencia_suma_cero_B",
+      "ok": true
+    },
+    {
+      "control": "transferencia_cola_signos_opuestos",
+      "ok": true,
+      "detalle": [
+        -0.05208124999999997,
+        0.0009587500000000117
+      ]
+    },
+    {
+      "control": "presupuesto_positivo_no_negativo_A",
+      "ok": true
+    },
+    {
+      "control": "presupuesto_positivo_no_negativo_B",
+      "ok": true
+    },
+    {
+      "control": "presupuesto_cota_Cauchy_A",
+      "ok": true,
+      "detalle": [
+        0.0,
+        0.6733081256601614
+      ]
+    },
+    {
+      "control": "presupuesto_cota_Cauchy_B",
+      "ok": true,
+      "detalle": [
+        0.0009587500000000095,
+        0.6737834461803484
+      ]
+    },
+    {
+      "control": "Cauchy_frecuencias_A",
+      "ok": true,
+      "detalle": [
+        1.4125322499999997,
+        1.4545479999999997
+      ]
+    },
+    {
+      "control": "Cauchy_frecuencias_B",
+      "ok": true,
+      "detalle": [
+        1.4125322499999997,
+        1.4545479999999997
+      ]
+    },
+    {
+      "control": "indice_critico_escala_0.125",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_0.25",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_0.5",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_1.0",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_2.0",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_4.0",
+      "ok": true
+    },
+    {
+      "control": "indice_critico_escala_8.0",
+      "ok": true
+    }
+  ]
+}

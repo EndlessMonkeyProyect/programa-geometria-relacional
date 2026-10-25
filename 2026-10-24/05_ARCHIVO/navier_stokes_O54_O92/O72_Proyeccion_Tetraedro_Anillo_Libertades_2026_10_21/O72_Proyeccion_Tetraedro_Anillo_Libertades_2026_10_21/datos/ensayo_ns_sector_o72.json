@@ -1,0 +1,77 @@
+{
+  "name": "O72 ns C4 parity sector",
+  "n": 32,
+  "dt": 0.004,
+  "steps": 8,
+  "odd_mode_norm_initial": 0.027538943665050726,
+  "tests_passed": 37,
+  "max_rotated_equals_minus_error": 1.3021857867729841e-16,
+  "max_same_common_error": 8.133104876782238e-17,
+  "max_two_sector_remainder": 6.345090934635895e-17,
+  "records": [
+    {
+      "t": 0.0,
+      "rotated_equals_minus_error": 1.2445163208670944e-16,
+      "same_common_error": 7.661850752572902e-17,
+      "two_sector_remainder": 6.176209946499013e-17,
+      "parity_error": 2.8939523689130122e-18
+    },
+    {
+      "t": 0.004,
+      "rotated_equals_minus_error": 1.2924187253740763e-16,
+      "same_common_error": 8.133104876782238e-17,
+      "two_sector_remainder": 6.231324779908362e-17,
+      "parity_error": 3.1610885731515034e-18
+    },
+    {
+      "t": 0.008,
+      "rotated_equals_minus_error": 1.2720242773879777e-16,
+      "same_common_error": 7.631875103451688e-17,
+      "two_sector_remainder": 6.27195806794335e-17,
+      "parity_error": 3.1970594422079147e-18
+    },
+    {
+      "t": 0.012,
+      "rotated_equals_minus_error": 1.3001669933194973e-16,
+      "same_common_error": 7.934106878366999e-17,
+      "two_sector_remainder": 6.18031045937177e-17,
+      "parity_error": 3.2358972168663876e-18
+    },
+    {
+      "t": 0.016,
+      "rotated_equals_minus_error": 1.2899887085308854e-16,
+      "same_common_error": 8.045649185676497e-17,
+      "two_sector_remainder": 6.217977194302778e-17,
+      "parity_error": 2.9388560389841125e-18
+    },
+    {
+      "t": 0.02,
+      "rotated_equals_minus_error": 1.2575475795376244e-16,
+      "same_common_error": 7.606025064775611e-17,
+      "two_sector_remainder": 6.226046775367764e-17,
+      "parity_error": 3.1556121429430893e-18
+    },
+    {
+      "t": 0.024,
+      "rotated_equals_minus_error": 1.2839626952149335e-16,
+      "same_common_error": 7.597395143684312e-17,
+      "two_sector_remainder": 6.263723906184736e-17,
+      "parity_error": 2.9177505254001424e-18
+    },
+    {
+      "t": 0.028,
+      "rotated_equals_minus_error": 1.2951556090827676e-16,
+      "same_common_error": 7.863163607535059e-17,
+      "two_sector_remainder": 6.345090934635895e-17,
+      "parity_error": 3.0007795126040877e-18
+    },
+    {
+      "t": 0.032,
+      "rotated_equals_minus_error": 1.3021857867729841e-16,
+      "same_common_error": 8.038100080440433e-17,
+      "two_sector_remainder": 6.190228067028546e-17,
+      "parity_error": 3.1332816469262733e-18
+    }
+  ],
+  "limitation": "Short-time finite Fourier Galerkin computation; no proof of global 3D NS regularity or of gear coupling to NS."
+}

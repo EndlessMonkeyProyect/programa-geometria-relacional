@@ -1,0 +1,11 @@
+test_claim_registry (test_integracion_3_6_0.PruebasImagenIntegral.test_claim_registry) ... ok
+test_estado_tres_problemas_abiertos (test_integracion_3_6_0.PruebasImagenIntegral.test_estado_tres_problemas_abiertos) ... ok
+test_lenguaje_canonico (test_integracion_3_6_0.PruebasImagenIntegral.test_lenguaje_canonico) ... ok
+test_literatura_heredada (test_integracion_3_6_0.PruebasImagenIntegral.test_literatura_heredada) ... ok
+test_no_singularidad_blowup (test_integracion_3_6_0.PruebasImagenIntegral.test_no_singularidad_blowup) ... ok
+test_suplementos_18_a_38 (test_integracion_3_6_0.PruebasImagenIntegral.test_suplementos_18_a_38) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

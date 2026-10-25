@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Edición ordenada — 2026-10-24
+
+- Incorporación navegable del paquete fechado: 1.047 archivos cotejados con su manifiesto SHA-256.
+- Manuscrito público, suplemento de ritmo y gravedad, hilo integrado, realizaciones, ramas, laboratorios y archivo histórico.
+- Guía y textos principales en inglés; la edición conceptual 0.1.0 continúa disponible.
+
 ## 0.1.0-editorial — 2026-09-29
 
 - Preservación de 79 archivos recibidos y extracción navegable de tres miembros del ZIP.

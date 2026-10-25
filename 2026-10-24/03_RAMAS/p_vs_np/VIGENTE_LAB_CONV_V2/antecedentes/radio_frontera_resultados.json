@@ -1,0 +1,14 @@
+{
+  "interfaces": {
+    "casos_base": 18,
+    "A_y_contexto": 18,
+    "D_y_contexto": 12
+  },
+  "radio_hamming": {
+    "antes": 1,
+    "al_preguntar_x0": "1/2",
+    "al_repetir_x0": "1/2",
+    "al_preguntar_y0": 0,
+    "al_preguntar_xor0": 1
+  }
+}

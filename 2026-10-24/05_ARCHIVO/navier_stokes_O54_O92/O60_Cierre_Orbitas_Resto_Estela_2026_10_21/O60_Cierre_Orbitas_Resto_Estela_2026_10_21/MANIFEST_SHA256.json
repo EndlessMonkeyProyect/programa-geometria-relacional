@@ -1,0 +1,14 @@
+{
+  "programa": "Geometría Relacional",
+  "suplemento": "O60",
+  "archivos": {
+    "LEER_PRIMERO.md": "6d7928f97394f668b9ee1c2e9e437f6f45c65d86904e772ac797310fb2c31541",
+    "O60_FORMALIZACION.es.md": "6d1ded4b2835fade2b6c94615db07c4f16667f17ecea5a46885170347cd806a8",
+    "codigo/verificar_o60.py": "261ecad82e69aa4b01eb290f888e09e65de967ce317c4c5d95f1a11b84748b9f",
+    "resultados/configuraciones_revisadas.csv": "f81a11e5c57135b663f7bc1f0e8e126c1c965026dcd81fb6046a21ffa7f647d5",
+    "resultados/patron_3x3.txt": "22106c7d8637b9fd1c5b91360dedbdce4b69f7b1d9cdfab8db88761df106cc54",
+    "resultados/registro_verificacion_stdout.json": "390ab801e923149b1a19e0202b1aca4787a36c5a3538e129993d928a88b44b16",
+    "resultados/resumen_o60.json": "390ab801e923149b1a19e0202b1aca4787a36c5a3538e129993d928a88b44b16",
+    "verificar_integridad.py": "bcc18c7315513395de13d2c168388a4dbb436e69b7aeca5455fa97267738567f"
+  }
+}

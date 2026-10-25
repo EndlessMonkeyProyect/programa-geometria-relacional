@@ -1,0 +1,7 @@
+ID,tipo,afirmacion,soporte,limite
+O91-T1,DERIVADO,"Campo de cuatro senos resuelve NS sin fuerza globalmente",O91.3 y comprobación analítica,Clase cizalla especial
+O91-F1,FALSADOR,"Igual N intensidad escala y enstrofía puede dar signo contrario de derivada de K",O91.8-O91.12,No descarta interfaces más ricas
+O91-T2,DERIVADO,"Cuatro momentos recuperan cuatro pesos y cierran su dinámica",O91.14-O91.15,Frecuencias conocidas y no linealidad cero
+O91-F2,FALSADOR,"K puede crecer momentáneamente sin blow-up",O91.16,No implica comportamiento universal
+O91-A1,ABIERTO,"La interfaz relacional controla concentración en NS 3D no lineal",O91 sección 6,No demostrado
+O91-F3,FALSADOR,"K_global puede tender a cero mientras L3 y K_local divergen para campos solenoidales suaves concentrados",O91.17-O91.20,Familia cinemática no trayectoria de NS

@@ -1,0 +1,461 @@
+{
+  "checks": {
+    "N32_base_symmetrical": true,
+    "N32_zero_common_v": true,
+    "N32_equal_common": true,
+    "N32_equal_tau_tensor": true,
+    "N32_equal_common_derivative": true,
+    "N32_same_radii_full_field": true,
+    "N32_same_collective_frequencies": true,
+    "N32_nonzero_tauprime_difference": true,
+    "N32_nonzero_second_derivative_difference": true,
+    "N32_second_derivative_resolved_by_tauprime": true,
+    "N32_cubic_amplitude_scaling": true,
+    "N32_different_future_reference": true,
+    "N32_short_time_taylor_valid": true,
+    "N40_base_symmetrical": true,
+    "N40_zero_common_v": true,
+    "N40_equal_common": true,
+    "N40_equal_tau_tensor": true,
+    "N40_equal_common_derivative": true,
+    "N40_same_radii_full_field": true,
+    "N40_same_collective_frequencies": true,
+    "N40_nonzero_tauprime_difference": true,
+    "N40_nonzero_second_derivative_difference": true,
+    "N40_second_derivative_resolved_by_tauprime": true,
+    "N40_cubic_amplitude_scaling": true,
+    "N40_different_future_reference": true,
+    "N40_short_time_taylor_valid": true,
+    "N48_base_symmetrical": true,
+    "N48_zero_common_v": true,
+    "N48_equal_common": true,
+    "N48_equal_tau_tensor": true,
+    "N48_equal_common_derivative": true,
+    "N48_same_radii_full_field": true,
+    "N48_same_collective_frequencies": true,
+    "N48_nonzero_tauprime_difference": true,
+    "N48_nonzero_second_derivative_difference": true,
+    "N48_second_derivative_resolved_by_tauprime": true,
+    "N48_cubic_amplitude_scaling": true,
+    "N48_different_future_reference": true,
+    "N48_short_time_taylor_valid": true
+  },
+  "checks_passed": 39,
+  "checks_total": 39,
+  "experiments": [
+    {
+      "N": 32,
+      "v_rms": 0.044558062443837136,
+      "a0_rms": 0.3946552466071306,
+      "same_initial_geometry": {
+        "R_vorticidad": 1.0539095793917101,
+        "Z_vorticidad": -2.3454196917848272e-05,
+        "r_rms_vorticidad": 0.25007598175418105,
+        "ratio_r_R": 0.23728409594542121,
+        "enstrofia_proxy": 1.2596644583365366
+      },
+      "phase_rates_common": [
+        {
+          "index": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "amplitud": 0.035720020596434365,
+          "fase": -3.141592653589793,
+          "frecuencia_instantanea": -0.16851555971546645
+        },
+        {
+          "index": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "amplitud": 0.016292243767142174,
+          "fase": -3.605203914522491e-19,
+          "frecuencia_instantanea": -0.34216514827410494
+        }
+      ],
+      "same_tau_initial_norm": 0.01266291062710081,
+      "tau_prime_difference": 0.015599195586827272,
+      "second_derivative_difference": 0.01940043237595831,
+      "stress_identity_error": 3.44985432748054e-15,
+      "first_derivative_difference": 3.0455408481214554e-16,
+      "cubic": [
+        {
+          "c": 0.5,
+          "second_derivative_distance": 0.0024250540469949833,
+          "ratio_to_cubed": 0.019400432375959866
+        },
+        {
+          "c": 1.0,
+          "second_derivative_distance": 0.01940043237595831,
+          "ratio_to_cubed": 0.01940043237595831
+        },
+        {
+          "c": 2.0,
+          "second_derivative_distance": 0.15520345900766971,
+          "ratio_to_cubed": 0.019400432375958714
+        }
+      ],
+      "checks": {
+        "base_symmetrical": true,
+        "zero_common_v": true,
+        "equal_common": true,
+        "equal_tau_tensor": true,
+        "equal_common_derivative": true,
+        "same_radii_full_field": true,
+        "same_collective_frequencies": true,
+        "nonzero_tauprime_difference": true,
+        "nonzero_second_derivative_difference": true,
+        "second_derivative_resolved_by_tauprime": true,
+        "cubic_amplitude_scaling": true,
+        "different_future_reference": true,
+        "short_time_taylor_valid": true
+      },
+      "future": [
+        {
+          "N": 32,
+          "t": 0.0,
+          "distancia_comun": 6.788410459472395e-17,
+          "prediccion_orden2": 0.0,
+          "razon_taylor": null
+        },
+        {
+          "N": 32,
+          "t": 0.004,
+          "distancia_comun": 1.535139749211676e-07,
+          "prediccion_orden2": 1.5520345900766646e-07,
+          "razon_taylor": 0.9891143915393316
+        },
+        {
+          "N": 32,
+          "t": 0.008,
+          "distancia_comun": 6.075084851542777e-07,
+          "prediccion_orden2": 6.208138360306658e-07,
+          "razon_taylor": 0.978567889270221
+        },
+        {
+          "N": 32,
+          "t": 0.012,
+          "distancia_comun": 1.3526172800898126e-06,
+          "prediccion_orden2": 1.3968311310689983e-06,
+          "razon_taylor": 0.968347032081574
+        },
+        {
+          "N": 32,
+          "t": 0.016,
+          "distancia_comun": 2.3800525491896024e-06,
+          "prediccion_orden2": 2.4832553441226633e-06,
+          "razon_taylor": 0.9584405223662078
+        },
+        {
+          "N": 32,
+          "t": 0.02,
+          "distancia_comun": 3.6815687407464416e-06,
+          "prediccion_orden2": 3.880086475191662e-06,
+          "razon_taylor": 0.9488367757485574
+        },
+        {
+          "N": 32,
+          "t": 0.024,
+          "distancia_comun": 5.2494262553434585e-06,
+          "prediccion_orden2": 5.587324524275993e-06,
+          "razon_taylor": 0.9395241376325246
+        },
+        {
+          "N": 32,
+          "t": 0.028,
+          "distancia_comun": 7.07635524390047e-06,
+          "prediccion_orden2": 7.604969491375658e-06,
+          "razon_taylor": 0.9304909443654366
+        },
+        {
+          "N": 32,
+          "t": 0.032,
+          "distancia_comun": 9.155519735847338e-06,
+          "prediccion_orden2": 9.933021376490653e-06,
+          "razon_taylor": 0.9217255645413694
+        }
+      ]
+    },
+    {
+      "N": 40,
+      "v_rms": 0.044582514928072865,
+      "a0_rms": 0.3946683823607393,
+      "same_initial_geometry": {
+        "R_vorticidad": 1.0530814546499907,
+        "Z_vorticidad": -3.467356545148785e-07,
+        "r_rms_vorticidad": 0.24271420296024526,
+        "ratio_r_R": 0.23047998983223517,
+        "enstrofia_proxy": 1.2643159452216945
+      },
+      "phase_rates_common": [
+        {
+          "index": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "amplitud": 0.03572003925065891,
+          "fase": -3.141592653589793,
+          "frecuencia_instantanea": -0.16854040142905669
+        },
+        {
+          "index": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "amplitud": 0.016292252275495887,
+          "fase": -4.0321226432114816e-17,
+          "frecuencia_instantanea": -0.34220986266289344
+        }
+      ],
+      "same_tau_initial_norm": 0.013215406531454879,
+      "tau_prime_difference": 0.019571816129744554,
+      "second_derivative_difference": 0.027838189399198722,
+      "stress_identity_error": 6.5071579136354026e-15,
+      "first_derivative_difference": 4.168008335253329e-16,
+      "cubic": [
+        {
+          "c": 0.5,
+          "second_derivative_distance": 0.0034797736748998177,
+          "ratio_to_cubed": 0.02783818939919854
+        },
+        {
+          "c": 1.0,
+          "second_derivative_distance": 0.027838189399198722,
+          "ratio_to_cubed": 0.027838189399198722
+        },
+        {
+          "c": 2.0,
+          "second_derivative_distance": 0.222705515193588,
+          "ratio_to_cubed": 0.0278381893991985
+        }
+      ],
+      "checks": {
+        "base_symmetrical": true,
+        "zero_common_v": true,
+        "equal_common": true,
+        "equal_tau_tensor": true,
+        "equal_common_derivative": true,
+        "same_radii_full_field": true,
+        "same_collective_frequencies": true,
+        "nonzero_tauprime_difference": true,
+        "nonzero_second_derivative_difference": true,
+        "second_derivative_resolved_by_tauprime": true,
+        "cubic_amplitude_scaling": true,
+        "different_future_reference": true,
+        "short_time_taylor_valid": true
+      },
+      "future": [
+        {
+          "N": 40,
+          "t": 0.0,
+          "distancia_comun": 6.592025321256e-17,
+          "prediccion_orden2": 0.0,
+          "razon_taylor": null
+        },
+        {
+          "N": 40,
+          "t": 0.004,
+          "distancia_comun": 2.1956219103187255e-07,
+          "prediccion_orden2": 2.2270551519358977e-07,
+          "razon_taylor": 0.9858857372302394
+        },
+        {
+          "N": 40,
+          "t": 0.008,
+          "distancia_comun": 8.660852255745048e-07,
+          "prediccion_orden2": 8.908220607743591e-07,
+          "razon_taylor": 0.9722314519486064
+        },
+        {
+          "N": 40,
+          "t": 0.012,
+          "distancia_comun": 1.9222030059785054e-06,
+          "prediccion_orden2": 2.004349636742308e-06,
+          "razon_taylor": 0.959015817770538
+        },
+        {
+          "N": 40,
+          "t": 0.016,
+          "distancia_comun": 3.3716591373382585e-06,
+          "prediccion_orden2": 3.5632882430974364e-06,
+          "razon_taylor": 0.946221272968756
+        },
+        {
+          "N": 40,
+          "t": 0.02,
+          "distancia_comun": 5.199227100832059e-06,
+          "prediccion_orden2": 5.567637879839745e-06,
+          "razon_taylor": 0.9338299675807418
+        },
+        {
+          "N": 40,
+          "t": 0.024,
+          "distancia_comun": 7.390631476253119e-06,
+          "prediccion_orden2": 8.017398546969232e-06,
+          "razon_taylor": 0.9218241344690236
+        },
+        {
+          "N": 40,
+          "t": 0.028,
+          "distancia_comun": 9.932470813476351e-06,
+          "prediccion_orden2": 1.09125702444859e-05,
+          "razon_taylor": 0.9101861972888751
+        },
+        {
+          "N": 40,
+          "t": 0.032,
+          "distancia_comun": 1.2812142702703075e-05,
+          "prediccion_orden2": 1.4253152972389746e-05,
+          "razon_taylor": 0.8988988420682709
+        }
+      ]
+    },
+    {
+      "N": 48,
+      "v_rms": 0.04458181105864648,
+      "a0_rms": 0.3946686676627061,
+      "same_initial_geometry": {
+        "R_vorticidad": 1.0531379905382845,
+        "Z_vorticidad": -1.1349216352032892e-08,
+        "r_rms_vorticidad": 0.24226905062956297,
+        "ratio_r_R": 0.23004492555219033,
+        "enstrofia_proxy": 1.2646740499485685
+      },
+      "phase_rates_common": [
+        {
+          "index": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "amplitud": 0.035720039306354805,
+          "fase": 3.141592653589793,
+          "frecuencia_instantanea": -0.16854110551519833
+        },
+        {
+          "index": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "amplitud": 0.016292252300899323,
+          "fase": 3.1971498324654846e-17,
+          "frecuencia_instantanea": -0.3422112438718848
+        }
+      ],
+      "same_tau_initial_norm": 0.013291983662568927,
+      "tau_prime_difference": 0.020365591086245357,
+      "second_derivative_difference": 0.031080911418316343,
+      "stress_identity_error": 9.955249243275582e-15,
+      "first_derivative_difference": 4.850139909727661e-16,
+      "cubic": [
+        {
+          "c": 0.5,
+          "second_derivative_distance": 0.0038851139272896903,
+          "ratio_to_cubed": 0.031080911418317522
+        },
+        {
+          "c": 1.0,
+          "second_derivative_distance": 0.031080911418316343,
+          "ratio_to_cubed": 0.031080911418316343
+        },
+        {
+          "c": 2.0,
+          "second_derivative_distance": 0.2486472913465326,
+          "ratio_to_cubed": 0.031080911418316575
+        }
+      ],
+      "checks": {
+        "base_symmetrical": true,
+        "zero_common_v": true,
+        "equal_common": true,
+        "equal_tau_tensor": true,
+        "equal_common_derivative": true,
+        "same_radii_full_field": true,
+        "same_collective_frequencies": true,
+        "nonzero_tauprime_difference": true,
+        "nonzero_second_derivative_difference": true,
+        "second_derivative_resolved_by_tauprime": true,
+        "cubic_amplitude_scaling": true,
+        "different_future_reference": true,
+        "short_time_taylor_valid": true
+      },
+      "future": [
+        {
+          "N": 48,
+          "t": 0.0,
+          "distancia_comun": 6.621966143521727e-17,
+          "prediccion_orden2": 0.0,
+          "razon_taylor": null
+        },
+        {
+          "N": 48,
+          "t": 0.004,
+          "distancia_comun": 2.447848361281925e-07,
+          "prediccion_orden2": 2.486472913465307e-07,
+          "razon_taylor": 0.9844661279138761
+        },
+        {
+          "N": 48,
+          "t": 0.008,
+          "distancia_comun": 9.64180285783786e-07,
+          "prediccion_orden2": 9.945891653861229e-07,
+          "razon_taylor": 0.9694256878511929
+        },
+        {
+          "N": 48,
+          "t": 0.012,
+          "distancia_comun": 2.1368016666709944e-06,
+          "prediccion_orden2": 2.237825622118777e-06,
+          "razon_taylor": 0.9548561986022249
+        },
+        {
+          "N": 48,
+          "t": 0.016,
+          "distancia_comun": 3.742597043532933e-06,
+          "prediccion_orden2": 3.9783566615444915e-06,
+          "razon_taylor": 0.9407394464426849
+        },
+        {
+          "N": 48,
+          "t": 0.02,
+          "distancia_comun": 5.762755103030702e-06,
+          "prediccion_orden2": 6.216182283663269e-06,
+          "razon_taylor": 0.9270569684186678
+        },
+        {
+          "N": 48,
+          "t": 0.024,
+          "distancia_comun": 8.17961473049682e-06,
+          "prediccion_orden2": 8.951302488475107e-06,
+          "razon_taylor": 0.9137904501638903
+        },
+        {
+          "N": 48,
+          "t": 0.028,
+          "distancia_comun": 1.0976576858417531e-05,
+          "prediccion_orden2": 1.2183717275980007e-05,
+          "razon_taylor": 0.9009218295025334
+        },
+        {
+          "N": 48,
+          "t": 0.032,
+          "distancia_comun": 1.4138019102923739e-05,
+          "prediccion_orden2": 1.5913426646177966e-05,
+          "razon_taylor": 0.8884333599086506
+        }
+      ]
+    }
+  ]
+}

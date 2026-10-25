@@ -1,0 +1,241 @@
+prueba,estado
+NS onda de cizalla exacta (componente x),PASS
+divergencia cero por independencia de x,PASS
+fase arrastrada exacta,PASS
+identidad bilateral N=2,PASS
+identidad bilateral N=3,PASS
+identidad bilateral N=4,PASS
+identidad bilateral N=5,PASS
+identidad bilateral N=6,PASS
+identidad bilateral N=7,PASS
+identidad bilateral N=8,PASS
+identidad bilateral N=9,PASS
+identidad bilateral N=10,PASS
+identidad bilateral N=11,PASS
+identidad bilateral N=12,PASS
+identidad bilateral N=13,PASS
+identidad bilateral N=14,PASS
+identidad bilateral N=15,PASS
+identidad bilateral N=16,PASS
+identidad bilateral N=17,PASS
+identidad bilateral N=18,PASS
+identidad bilateral N=19,PASS
+identidad bilateral N=20,PASS
+identidad bilateral N=21,PASS
+identidad bilateral N=22,PASS
+identidad bilateral N=23,PASS
+identidad bilateral N=24,PASS
+identidad bilateral N=25,PASS
+identidad bilateral N=26,PASS
+identidad bilateral N=27,PASS
+identidad bilateral N=28,PASS
+identidad bilateral N=29,PASS
+identidad bilateral N=30,PASS
+identidad bilateral N=31,PASS
+identidad bilateral N=32,PASS
+identidad bilateral N=33,PASS
+identidad bilateral N=34,PASS
+identidad bilateral N=35,PASS
+identidad bilateral N=36,PASS
+identidad bilateral N=37,PASS
+identidad bilateral N=38,PASS
+identidad bilateral N=39,PASS
+identidad bilateral N=40,PASS
+identidad bilateral N=41,PASS
+identidad bilateral N=42,PASS
+identidad bilateral N=43,PASS
+identidad bilateral N=44,PASS
+identidad bilateral N=45,PASS
+identidad bilateral N=46,PASS
+identidad bilateral N=47,PASS
+identidad bilateral N=48,PASS
+identidad bilateral N=49,PASS
+identidad bilateral N=50,PASS
+identidad bilateral N=51,PASS
+identidad bilateral N=52,PASS
+identidad bilateral N=53,PASS
+identidad bilateral N=54,PASS
+identidad bilateral N=55,PASS
+identidad bilateral N=56,PASS
+identidad bilateral N=57,PASS
+identidad bilateral N=58,PASS
+identidad bilateral N=59,PASS
+identidad bilateral N=60,PASS
+identidad bilateral N=61,PASS
+identidad bilateral N=62,PASS
+identidad bilateral N=63,PASS
+identidad bilateral N=64,PASS
+identidad bilateral N=65,PASS
+identidad bilateral N=66,PASS
+identidad bilateral N=67,PASS
+identidad bilateral N=68,PASS
+identidad bilateral N=69,PASS
+identidad bilateral N=70,PASS
+identidad bilateral N=71,PASS
+identidad bilateral N=72,PASS
+identidad bilateral N=73,PASS
+identidad bilateral N=74,PASS
+identidad bilateral N=75,PASS
+identidad bilateral N=76,PASS
+identidad bilateral N=77,PASS
+identidad bilateral N=78,PASS
+identidad bilateral N=79,PASS
+identidad bilateral N=80,PASS
+identidad bilateral N=81,PASS
+identidad bilateral N=82,PASS
+identidad bilateral N=83,PASS
+identidad bilateral N=84,PASS
+identidad bilateral N=85,PASS
+identidad bilateral N=86,PASS
+identidad bilateral N=87,PASS
+identidad bilateral N=88,PASS
+identidad bilateral N=89,PASS
+identidad bilateral N=90,PASS
+identidad bilateral N=91,PASS
+identidad bilateral N=92,PASS
+identidad bilateral N=93,PASS
+identidad bilateral N=94,PASS
+identidad bilateral N=95,PASS
+identidad bilateral N=96,PASS
+identidad bilateral N=97,PASS
+identidad bilateral N=98,PASS
+identidad bilateral N=99,PASS
+identidad bilateral N=100,PASS
+inclusion anidada 1,PASS
+resto referenciado 1,PASS
+inclusion anidada 2,PASS
+resto referenciado 2,PASS
+inclusion anidada 3,PASS
+resto referenciado 3,PASS
+inclusion anidada 4,PASS
+resto referenciado 4,PASS
+inclusion anidada 5,PASS
+resto referenciado 5,PASS
+inclusion anidada 6,PASS
+resto referenciado 6,PASS
+inclusion anidada 7,PASS
+resto referenciado 7,PASS
+inclusion anidada 8,PASS
+resto referenciado 8,PASS
+inclusion anidada 9,PASS
+resto referenciado 9,PASS
+inclusion anidada 10,PASS
+resto referenciado 10,PASS
+inclusion anidada 11,PASS
+resto referenciado 11,PASS
+inclusion anidada 12,PASS
+resto referenciado 12,PASS
+inclusion anidada 13,PASS
+resto referenciado 13,PASS
+inclusion anidada 14,PASS
+resto referenciado 14,PASS
+Pell cuadratico paso 0,PASS
+Pell anidamiento 0,PASS
+Pell cuadratico paso 1,PASS
+Pell anidamiento 1,PASS
+Pell cuadratico paso 2,PASS
+Pell anidamiento 2,PASS
+Pell cuadratico paso 3,PASS
+Pell anidamiento 3,PASS
+"escala positiva alpha=1.0,J=4",PASS
+"difusion disminuye vorticidad alpha=1.0,J=4",PASS
+"escala positiva alpha=1.0,J=8",PASS
+"difusion disminuye vorticidad alpha=1.0,J=8",PASS
+"escala positiva alpha=1.0,J=12",PASS
+"difusion disminuye vorticidad alpha=1.0,J=12",PASS
+"escala positiva alpha=1.0,J=16",PASS
+"difusion disminuye vorticidad alpha=1.0,J=16",PASS
+"escala positiva alpha=1.5,J=4",PASS
+"difusion disminuye vorticidad alpha=1.5,J=4",PASS
+"escala positiva alpha=1.5,J=8",PASS
+"difusion disminuye vorticidad alpha=1.5,J=8",PASS
+"escala positiva alpha=1.5,J=12",PASS
+"difusion disminuye vorticidad alpha=1.5,J=12",PASS
+"escala positiva alpha=1.5,J=16",PASS
+"difusion disminuye vorticidad alpha=1.5,J=16",PASS
+"escala positiva alpha=2.0,J=4",PASS
+"difusion disminuye vorticidad alpha=2.0,J=4",PASS
+"escala positiva alpha=2.0,J=8",PASS
+"difusion disminuye vorticidad alpha=2.0,J=8",PASS
+"escala positiva alpha=2.0,J=12",PASS
+"difusion disminuye vorticidad alpha=2.0,J=12",PASS
+"escala positiva alpha=2.0,J=16",PASS
+"difusion disminuye vorticidad alpha=2.0,J=16",PASS
+"escala positiva alpha=3.0,J=4",PASS
+"difusion disminuye vorticidad alpha=3.0,J=4",PASS
+"escala positiva alpha=3.0,J=8",PASS
+"difusion disminuye vorticidad alpha=3.0,J=8",PASS
+"escala positiva alpha=3.0,J=12",PASS
+"difusion disminuye vorticidad alpha=3.0,J=12",PASS
+"escala positiva alpha=3.0,J=16",PASS
+"difusion disminuye vorticidad alpha=3.0,J=16",PASS
+"variancia y monotonia alpha=1.0,J=3,t=0.0",PASS
+derivada escala diferencia finita alpha=1.0,PASS
+"variancia y monotonia alpha=1.0,J=3,t=0.03",PASS
+"variancia y monotonia alpha=1.0,J=3,t=0.3",PASS
+"variancia y monotonia alpha=1.0,J=8,t=0.0",PASS
+"variancia y monotonia alpha=1.0,J=8,t=0.03",PASS
+"variancia y monotonia alpha=1.0,J=8,t=0.3",PASS
+"variancia y monotonia alpha=1.0,J=12,t=0.0",PASS
+"variancia y monotonia alpha=1.0,J=12,t=0.03",PASS
+"variancia y monotonia alpha=1.0,J=12,t=0.3",PASS
+"variancia y monotonia alpha=1.5,J=3,t=0.0",PASS
+derivada escala diferencia finita alpha=1.5,PASS
+"variancia y monotonia alpha=1.5,J=3,t=0.03",PASS
+"variancia y monotonia alpha=1.5,J=3,t=0.3",PASS
+"variancia y monotonia alpha=1.5,J=8,t=0.0",PASS
+"variancia y monotonia alpha=1.5,J=8,t=0.03",PASS
+"variancia y monotonia alpha=1.5,J=8,t=0.3",PASS
+"variancia y monotonia alpha=1.5,J=12,t=0.0",PASS
+"variancia y monotonia alpha=1.5,J=12,t=0.03",PASS
+"variancia y monotonia alpha=1.5,J=12,t=0.3",PASS
+"variancia y monotonia alpha=2.0,J=3,t=0.0",PASS
+derivada escala diferencia finita alpha=2.0,PASS
+"variancia y monotonia alpha=2.0,J=3,t=0.03",PASS
+"variancia y monotonia alpha=2.0,J=3,t=0.3",PASS
+"variancia y monotonia alpha=2.0,J=8,t=0.0",PASS
+"variancia y monotonia alpha=2.0,J=8,t=0.03",PASS
+"variancia y monotonia alpha=2.0,J=8,t=0.3",PASS
+"variancia y monotonia alpha=2.0,J=12,t=0.0",PASS
+"variancia y monotonia alpha=2.0,J=12,t=0.03",PASS
+"variancia y monotonia alpha=2.0,J=12,t=0.3",PASS
+crecimiento alfa 1 J=1,PASS
+control alfa 2 J=1,PASS
+crecimiento alfa 1 J=4,PASS
+control alfa 2 J=4,PASS
+crecimiento alfa 1 J=8,PASS
+control alfa 2 J=8,PASS
+crecimiento alfa 1 J=12,PASS
+control alfa 2 J=12,PASS
+crecimiento alfa 1 J=32,PASS
+control alfa 2 J=32,PASS
+Parseval vorticidad alpha=1.0 t=0.0,PASS
+Parseval energia alpha=1.0 t=0.0,PASS
+Parseval vorticidad alpha=1.0 t=0.03,PASS
+Parseval energia alpha=1.0 t=0.03,PASS
+Parseval vorticidad alpha=1.0 t=0.1,PASS
+Parseval energia alpha=1.0 t=0.1,PASS
+Parseval vorticidad alpha=2.0 t=0.0,PASS
+Parseval energia alpha=2.0 t=0.0,PASS
+Parseval vorticidad alpha=2.0 t=0.03,PASS
+Parseval energia alpha=2.0 t=0.03,PASS
+Parseval vorticidad alpha=2.0 t=0.1,PASS
+Parseval energia alpha=2.0 t=0.1,PASS
+normalizacion completa reloj Zeno j=1,PASS
+normalizacion completa reloj Zeno j=2,PASS
+normalizacion completa reloj Zeno j=3,PASS
+normalizacion completa reloj Zeno j=4,PASS
+normalizacion completa reloj Zeno j=5,PASS
+normalizacion completa reloj Zeno j=6,PASS
+normalizacion completa reloj Zeno j=7,PASS
+normalizacion completa reloj Zeno j=8,PASS
+normalizacion completa reloj Zeno j=9,PASS
+normalizacion completa reloj Zeno j=10,PASS
+normalizacion completa reloj Zeno j=11,PASS
+normalizacion completa reloj Zeno j=12,PASS
+normalizacion completa reloj Zeno j=13,PASS
+normalizacion completa reloj Zeno j=14,PASS
+normalizacion completa reloj Zeno j=15,PASS
+normalizacion completa reloj Zeno j=16,PASS
+normalizacion completa reloj Zeno j=17,PASS
+normalizacion completa reloj Zeno j=18,PASS

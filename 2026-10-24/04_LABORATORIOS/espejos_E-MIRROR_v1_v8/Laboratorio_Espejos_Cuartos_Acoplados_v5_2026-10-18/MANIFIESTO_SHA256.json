@@ -1,0 +1,66 @@
+{
+  "01_barrido_completo.png": {
+    "sha256": "8fa416593d539a41a927951d1ea0d65952100cdf5cf140396ba5edcc5adc025d",
+    "bytes": 61361
+  },
+  "02_entorno_mitad.png": {
+    "sha256": "1175d79aa723fbede43371e242b8e15ab6e64b8efde3c44738c37bf5a0e24864",
+    "bytes": 61879
+  },
+  "03_eco_y_paridad.png": {
+    "sha256": "f0b43f697aa4315b2f41d570ddd89f9f9d44e945d21045b627c2b705bf024844",
+    "bytes": 114727
+  },
+  "04_efecto_vidrio.png": {
+    "sha256": "91ca0e8dd9a4dcc4955d42fca4bdfa1f8cc3f65852962c84738d29870b20c8c3",
+    "bytes": 87300
+  },
+  "05_rutas_coupled.png": {
+    "sha256": "68dde2eda4984d4354ed4a0aadd53ba78c6a6a3f18e01e4089f716fccf75765d",
+    "bytes": 78960
+  },
+  "NOTA_DE_CONTINUIDAD.es.md": {
+    "sha256": "1c490c9808f521fc990ce683039d532184a69351c8a2f720e650887b0dbe7521",
+    "bytes": 1589
+  },
+  "PENDIENTE_LABORATORIO_ESFERAS.es.md": {
+    "sha256": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+    "bytes": 1543
+  },
+  "README.es.md": {
+    "sha256": "7f18da29993d03b81fc57721b94c854c361f5a018d72c5236030ef412f921367",
+    "bytes": 8671
+  },
+  "analisis_rutas.py": {
+    "sha256": "4e812c1b5d5106b46e9664e58383110ef60c91732123e3b269a62005f283f787",
+    "bytes": 2282
+  },
+  "auditoria_rutas_v5.json": {
+    "sha256": "5d0a7e3ec80cce3ddc6326aa05395a96882b4096a8fe62792efaea864ec43f98",
+    "bytes": 15196
+  },
+  "barrido_v5.csv": {
+    "sha256": "0014d949ee973865616f9cb90f8aed5647dab49b03d1c5fdae3e20df081b8e5f",
+    "bytes": 88176
+  },
+  "cuartos_acoplados.py": {
+    "sha256": "c6c354dd5ab56d2ce7a3256f67fae03a2dfc2ab83b2d65c6baac23be81f425d3",
+    "bytes": 10311
+  },
+  "resultados_v5.json": {
+    "sha256": "811d86c77af599829729e3d1ae924585f9a2b0eb90f353e91a10ea8da4ae7227",
+    "bytes": 109614
+  },
+  "robustez.py": {
+    "sha256": "2290b6927e3f9f0b8677985988c3744442526b99a08e55122268ae4a90a23934",
+    "bytes": 1231
+  },
+  "robustez_v5.json": {
+    "sha256": "dbc3dd0ef670c8206ede301786c36d895c3aea35a12ac807e8d4fa64ae90a54e",
+    "bytes": 10680
+  },
+  "test_cuartos_acoplados.py": {
+    "sha256": "1649b82aebdb3ced3f6fb45b97c37b39327775a7b976abc9624bfbe4cccaccab",
+    "bytes": 3366
+  }
+}

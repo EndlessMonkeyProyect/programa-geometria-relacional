@@ -1,0 +1,8 @@
+t=  0.00 E=0.12500 eps=0.00188 qmax=2.000 alpha=0.000 kappa=0.000 elapsed=2s
+t=  0.90 E=0.12328 eps=0.00201 qmax=1.641 alpha=-0.409 kappa=-107.364 elapsed=279s
+t=  1.80 E=0.12127 eps=0.00253 qmax=1.606 alpha=0.558 kappa=18.856 elapsed=568s
+t=  2.70 E=0.11857 eps=0.00355 qmax=2.703 alpha=0.676 kappa=11.167 elapsed=802s
+t=  3.60 E=0.11472 eps=0.00510 qmax=5.336 alpha=1.135 kappa=4.491 elapsed=1034s
+t=  4.50 E=0.10912 eps=0.00753 qmax=12.674 alpha=1.149 kappa=2.508 elapsed=1267s
+t=  5.40 E=0.10106 eps=0.01013 qmax=12.664 alpha=-0.191 kappa=-0.477 elapsed=1496s
+done {'N': 128, 'Re': 400.0, 'nu': 0.0025, 'dt': 0.015, 'Tend': 6.0, 'dealias': '2/3 cubic', 'scheme': 'RK4 pseudo-spectral, rotational form', 'init': 'Taylor-Green', 'forcing': 'none', 'wallclock_s': 1652.3218443393707}

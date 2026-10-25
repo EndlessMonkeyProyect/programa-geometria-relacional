@@ -1,0 +1,110 @@
+{
+  "o73_version": "1.0",
+  "fecha": "2026-10-21",
+  "marco": "R3, 3D, axialsimetrico sin giro azimutal, nu>0, datos suaves",
+  "parametros": {
+    "rho": 1.0,
+    "Gamma_inicial": 6.0,
+    "R_efectivo": 1.0,
+    "I_z_inicial": 18.84955592153876,
+    "kappa": 0.13065560171027932,
+    "normalizacion_bump": 0.46651239317833,
+    "phi0": 0.7885737797126774
+  },
+  "familia": [
+    {
+      "a": 0.35,
+      "R_centro": 0.9919650642993889,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.84955592153876,
+      "vorticidad_maxima_inicial": 38.62402186347808,
+      "eta_maxima_inicial": 40.20883898057679,
+      "estimacion_inferior_eta": 38.93687716790478,
+      "estimacion_superior_eta": 60.16530183870761,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.22,
+      "R_centro": 0.9968331198737442,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.84955592153876,
+      "vorticidad_maxima_inicial": 97.75708012967075,
+      "eta_maxima_inicial": 99.28414524733088,
+      "estimacion_inferior_eta": 98.0676486171049,
+      "estimacion_superior_eta": 125.84051532915956,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.14,
+      "R_centro": 0.9987187543079776,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.84955592153876,
+      "vorticidad_maxima_inicial": 241.40013664673793,
+      "eta_maxima_inicial": 242.90607721338134,
+      "estimacion_inferior_eta": 241.70982632043047,
+      "estimacion_superior_eta": 281.1166466735398,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.09,
+      "R_centro": 0.9994707047363353,
+      "R_efectivo": 0.9999999999999999,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.849555921538755,
+      "vorticidad_maxima_inicial": 584.1287257130944,
+      "eta_maxima_inicial": 585.6264232342483,
+      "estimacion_inferior_eta": 584.4380660133406,
+      "estimacion_superior_eta": 642.2732724331556,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.06,
+      "R_centro": 0.99976479225558,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.84955592153876,
+      "vorticidad_maxima_inicial": 1314.2896328544623,
+      "eta_maxima_inicial": 1315.7841338632657,
+      "estimacion_inferior_eta": 1314.5988366816553,
+      "estimacion_superior_eta": 1398.530402165807,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.035,
+      "R_centro": 0.9999199702415713,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.84955592153876,
+      "vorticidad_maxima_inicial": 3862.402186347807,
+      "eta_maxima_inicial": 3863.895006817477,
+      "estimacion_inferior_eta": 3862.7113182014823,
+      "estimacion_superior_eta": 4002.8212758212894,
+      "radio_del_centro_positivo": true
+    },
+    {
+      "a": 0.02,
+      "R_centro": 0.9999738685382313,
+      "R_efectivo": 1.0,
+      "Gamma_inicial": 6.0,
+      "I_z_inicial": 18.849555921538762,
+      "vorticidad_maxima_inicial": 11828.60669569016,
+      "eta_maxima_inicial": 11830.098933441084,
+      "estimacion_inferior_eta": 11828.915802551219,
+      "estimacion_superior_eta": 12070.32868471706,
+      "radio_del_centro_positivo": true
+    }
+  ],
+  "verificaciones": {
+    "aprobadas": 69,
+    "total": 69,
+    "fallidas": 0
+  },
+  "cuadratura": {
+    "masa": 0.9999999999999936,
+    "primer_momento": -1.6499874272615957e-15,
+    "segundo_momento": 0.130655601710278
+  }
+}

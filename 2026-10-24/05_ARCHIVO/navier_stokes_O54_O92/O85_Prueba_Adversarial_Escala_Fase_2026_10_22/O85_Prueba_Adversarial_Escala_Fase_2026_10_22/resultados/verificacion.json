@@ -1,0 +1,173 @@
+{
+  "description": "O85: pruebas de covariancia de escala, fases y limite de conteo entre cierres; NO construye blowup",
+  "nu": 1.0,
+  "delta_base": 0.018,
+  "M0_heat": 0.5194887128361981,
+  "M1_updated_upper": 0.2717247465613107,
+  "abc_R_a1": 4.242640687119286,
+  "abc_G_inf_a1": 36.0,
+  "abc_integral_Q_a1": 4.242640687119286,
+  "lambda_records": [
+    {
+      "lambda_multiplier": 1,
+      "physical_interval": 0.018,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 2,
+      "physical_interval": 0.0045,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 4,
+      "physical_interval": 0.001125,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 8,
+      "physical_interval": 0.00028125,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 16,
+      "physical_interval": 7.03125e-05,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 32,
+      "physical_interval": 1.7578125e-05,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    },
+    {
+      "lambda_multiplier": 64,
+      "physical_interval": 4.39453125e-06,
+      "R_initial": 6.0,
+      "M0_heat": 0.5194887128361981,
+      "M1_updated_upper": 0.2717247465613107,
+      "lower_bound_integral_Q_reference": 0.1050207069396584
+    }
+  ],
+  "phase_records": [
+    {
+      "lambda_multiplier": 1,
+      "sign": -1,
+      "nonlinear_transfer": -0.125,
+      "viscous_transfer": -0.005625,
+      "net": -0.130625
+    },
+    {
+      "lambda_multiplier": 1,
+      "sign": 1,
+      "nonlinear_transfer": 0.125,
+      "viscous_transfer": -0.005625,
+      "net": 0.119375
+    },
+    {
+      "lambda_multiplier": 2,
+      "sign": -1,
+      "nonlinear_transfer": -2.0,
+      "viscous_transfer": -0.09,
+      "net": -2.09
+    },
+    {
+      "lambda_multiplier": 2,
+      "sign": 1,
+      "nonlinear_transfer": 2.0,
+      "viscous_transfer": -0.09,
+      "net": 1.91
+    },
+    {
+      "lambda_multiplier": 4,
+      "sign": -1,
+      "nonlinear_transfer": -32.0,
+      "viscous_transfer": -1.44,
+      "net": -33.44
+    },
+    {
+      "lambda_multiplier": 4,
+      "sign": 1,
+      "nonlinear_transfer": 32.0,
+      "viscous_transfer": -1.44,
+      "net": 30.56
+    },
+    {
+      "lambda_multiplier": 8,
+      "sign": -1,
+      "nonlinear_transfer": -512.0,
+      "viscous_transfer": -23.04,
+      "net": -535.04
+    },
+    {
+      "lambda_multiplier": 8,
+      "sign": 1,
+      "nonlinear_transfer": 512.0,
+      "viscous_transfer": -23.04,
+      "net": 488.96
+    },
+    {
+      "lambda_multiplier": 16,
+      "sign": -1,
+      "nonlinear_transfer": -8192.0,
+      "viscous_transfer": -368.64,
+      "net": -8560.64
+    },
+    {
+      "lambda_multiplier": 16,
+      "sign": 1,
+      "nonlinear_transfer": 8192.0,
+      "viscous_transfer": -368.64,
+      "net": 7823.36
+    }
+  ],
+  "abstract_stack": [
+    {
+      "number_of_blocks": 1,
+      "combined_physical_time": 0.018,
+      "lower_grad_cost": 0.1050207069396584
+    },
+    {
+      "number_of_blocks": 2,
+      "combined_physical_time": 0.0225,
+      "lower_grad_cost": 0.2100414138793168
+    },
+    {
+      "number_of_blocks": 4,
+      "combined_physical_time": 0.023906249999999997,
+      "lower_grad_cost": 0.4200828277586336
+    },
+    {
+      "number_of_blocks": 8,
+      "combined_physical_time": 0.0239996337890625,
+      "lower_grad_cost": 0.8401656555172672
+    },
+    {
+      "number_of_blocks": 16,
+      "combined_physical_time": 0.023999999994412064,
+      "lower_grad_cost": 1.6803313110345344
+    },
+    {
+      "number_of_blocks": 32,
+      "combined_physical_time": 0.023999999999999997,
+      "lower_grad_cost": 3.3606626220690687
+    }
+  ],
+  "checks_passed": 160
+}

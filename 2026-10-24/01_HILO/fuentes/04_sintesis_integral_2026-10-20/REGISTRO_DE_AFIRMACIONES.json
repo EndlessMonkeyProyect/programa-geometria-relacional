@@ -1,0 +1,184 @@
+[
+  {
+    "id": "ON1",
+    "afirmacion": "Narrativa de unidad/reflexión como origen",
+    "estado": "POSTULADO",
+    "evidencia_base": "01_foundations/generative_core.es.md",
+    "limitacion": "No demostración cosmológica"
+  },
+  {
+    "id": "INF1",
+    "afirmacion": "novedad de firma por no factorización",
+    "estado": "T",
+    "evidencia_base": "02_formal_core/contextual_reclosure_and_resource_cost.es.md",
+    "limitacion": "Solo firmas y preguntas declaradas"
+  },
+  {
+    "id": "INF2",
+    "afirmacion": "cociente suficiente para continuaciones",
+    "estado": "T",
+    "evidencia_base": "02_formal_core/contextual_reclosure_and_resource_cost.es.md",
+    "limitacion": "Semántica no equivale a costo polinómico"
+  },
+  {
+    "id": "GR3",
+    "afirmacion": "estructura C4/C4² y focos en modelos finitos",
+    "estado": "CONDICIONAL",
+    "evidencia_base": "extensions/GR3/",
+    "limitacion": "Hipótesis geométricas, no dimensión física universal"
+  },
+  {
+    "id": "NP1",
+    "afirmacion": "SAT contextual y costos contados",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "05_computation/contextual_sat_and_representation_cost.es.md",
+    "limitacion": "P=NP permanece abierto"
+  },
+  {
+    "id": "NP2",
+    "afirmacion": "programa resuelve P=NP",
+    "estado": "ABIERTO",
+    "evidencia_base": "05_computation/README.md",
+    "limitacion": "No existe demostración universal"
+  },
+  {
+    "id": "NS1",
+    "afirmacion": "identidades 3D de estiramiento/dirección",
+    "estado": "T",
+    "evidencia_base": "03_navier_stokes/STATUS.md",
+    "limitacion": "No regularidad global"
+  },
+  {
+    "id": "O26",
+    "afirmacion": "contraejemplo a firma H,A,B suficiente",
+    "estado": "NO_GO",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O26/",
+    "limitacion": "Fija los observables elegidos"
+  },
+  {
+    "id": "O30",
+    "afirmacion": "balance segundo momento vorticidad etiquetada 2D",
+    "estado": "T",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O30/",
+    "limitacion": "Localización, positividad, 2D"
+  },
+  {
+    "id": "O31",
+    "afirmacion": "concentraciones etiquetadas separadas temporalmente",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O31/",
+    "limitacion": "No identidad física única"
+  },
+  {
+    "id": "O32",
+    "afirmacion": "persistencia Q anisotropía finita",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O32/",
+    "limitacion": "Q=0 fase indefinida"
+  },
+  {
+    "id": "O33",
+    "afirmacion": "simetrías preservadas por evolución 2D",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O33/",
+    "limitacion": "No emergencia desde incompatibilidad"
+  },
+  {
+    "id": "O34",
+    "afirmacion": "reorganización gaussiana y resto entre escalas",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O34/",
+    "limitacion": "Atractor clásico, no pares eternos"
+  },
+  {
+    "id": "O36",
+    "afirmacion": "acercamiento unilateral de fase elíptica",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O36/",
+    "limitacion": "Sin atractor global"
+  },
+  {
+    "id": "O37",
+    "afirmacion": "mezcla monótona de etiquetas 2D",
+    "estado": "T",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O37/",
+    "limitacion": "No observable solo de omega"
+  },
+  {
+    "id": "O38",
+    "afirmacion": "transición silla→máximo con NS 2D amplitud pequeña",
+    "estado": "T_CONDICIONAL",
+    "evidencia_base": "21_suplementos_2026_10_19_20/O38/",
+    "limitacion": "También en calor lineal"
+  },
+  {
+    "id": "NS3D",
+    "afirmacion": "regularidad global NS 3D",
+    "estado": "ABIERTO",
+    "evidencia_base": "03_navier_stokes/STATUS.md",
+    "limitacion": "No derivada"
+  },
+  {
+    "id": "YM1",
+    "afirmacion": "observable de no conmutatividad ν en SU(2)",
+    "estado": "T",
+    "evidencia_base": "06_yang_mills/README.md",
+    "limitacion": "Se anula en Cartan"
+  },
+  {
+    "id": "YMG",
+    "afirmacion": "observable ν suavizado estable en tres espaciados",
+    "estado": "E",
+    "evidencia_base": "20_nu_en_el_continuo_YM_2026_10_19/",
+    "limitacion": "No teorema continuo"
+  },
+  {
+    "id": "YMCO",
+    "afirmacion": "forma coerciva gauge-invariante uniforme",
+    "estado": "ABIERTO",
+    "evidencia_base": "06_yang_mills/README.md",
+    "limitacion": "Falta T1 y T2"
+  },
+  {
+    "id": "YMGAP",
+    "afirmacion": "existencia y mass gap YM 4D",
+    "estado": "ABIERTO",
+    "evidencia_base": "06_yang_mills/README.md",
+    "limitacion": "No solución Clay"
+  },
+  {
+    "id": "CROSS",
+    "afirmacion": "cambio geométrico implica gap",
+    "estado": "NO_GO",
+    "evidencia_base": "22_sintesis_integral_2026_10_20/08_PUENTES_FALSADORES_Y_MAPA_DE_PENDIENTES.es.md",
+    "limitacion": "Laplaciano en R² no tiene gap"
+  },
+  {
+    "id": "PROT",
+    "afirmacion": "radio modelo asociado con RMS de carga",
+    "estado": "HIPOTESIS",
+    "evidencia_base": "publication/",
+    "limitacion": "Falta form factor dinámico"
+  },
+  {
+    "id": "GRAV",
+    "afirmacion": "masa/gravedad por foco y ritmo",
+    "estado": "HIPOTESIS",
+    "evidencia_base": "publication/",
+    "limitacion": "Falta ley independiente y tests"
+  },
+  {
+    "id": "ROSI",
+    "afirmacion": "ROSI transferencia y evaluaciones",
+    "estado": "E",
+    "evidencia_base": "05_computation/",
+    "limitacion": "AUC limitado a dataset/tarea"
+  },
+  {
+    "id": "LANG",
+    "afirmacion": "cristal semántico completo",
+    "estado": "ABIERTO",
+    "evidencia_base": "08_language/",
+    "limitacion": "Propuesta y partes formalizadas"
+  }
+]

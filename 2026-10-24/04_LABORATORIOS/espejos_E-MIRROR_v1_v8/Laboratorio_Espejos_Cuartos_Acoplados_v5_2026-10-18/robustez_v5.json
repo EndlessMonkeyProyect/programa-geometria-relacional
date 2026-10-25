@@ -1,0 +1,434 @@
+[
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866558488195998,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646739920667,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646740525986,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866558488195998,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646739920667,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646740525986,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866558488195998,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646739920667,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.02,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.12866646740525986,
+    "glass_transmission": 0.98
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.2459933961865371,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610138138362148,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610142878653135,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.2459933961865371,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610138138362148,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610142878653135,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.2459933961865371,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610138138362148,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.08,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.24610142878653135,
+    "glass_transmission": 0.92
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4345430328621428,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4811138244621652,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.48610490351817387,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4345430328621428,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4811138244621652,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.48610490351817387,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4345430328621428,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.4811138244621652,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.5,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.48610490351817387,
+    "glass_transmission": 0.5
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.3210414326915928,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.43716374918466727,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.47916578074385074,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.3210414326915928,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.43716374918466727,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.47916578074385074,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.3210414326915928,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.43716374918466727,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.75,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.47916578074385074,
+    "glass_transmission": 0.25
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.08381404687500008,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.14542507305327623,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.1907148387700116,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.08381404687500008,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.14542507305327623,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.1907148387700116,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.08381404687500008,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.14542507305327623,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 0.95,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": 1.0000000000000004,
+    "highest_score": 0.1907148387700116,
+    "glass_transmission": 0.050000000000000044
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.05,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.12,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 5,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 8,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  },
+  {
+    "R": 1.0,
+    "sigma_temporal_ns": 0.3,
+    "max_returns": 12,
+    "best_nontrivial_depth_m": null,
+    "highest_score": 0.0,
+    "glass_transmission": 0.0
+  }
+]

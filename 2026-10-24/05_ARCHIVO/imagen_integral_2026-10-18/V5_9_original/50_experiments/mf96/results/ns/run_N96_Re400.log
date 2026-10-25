@@ -1,0 +1,14 @@
+t=  0.00 E=0.12500 eps=0.00187 qmax=2.000 alpha=-0.000 kappa=-0.000 elapsed=1s
+t=  0.80 E=0.12348 eps=0.00198 qmax=1.707 alpha=-0.370 kappa=-81.483 elapsed=48s
+t=  1.60 E=0.12176 eps=0.00238 qmax=1.445 alpha=0.538 kappa=21.428 elapsed=95s
+t=  2.40 E=0.11957 eps=0.00315 qmax=2.259 alpha=0.642 kappa=14.426 elapsed=151s
+t=  3.20 E=0.11660 eps=0.00434 qmax=3.786 alpha=0.793 kappa=8.416 elapsed=205s
+t=  4.00 E=0.11250 eps=0.00604 qmax=7.864 alpha=1.287 kappa=3.133 elapsed=262s
+t=  4.80 E=0.10671 eps=0.00853 qmax=14.977 alpha=0.558 kappa=1.079 elapsed=316s
+t=  5.60 E=0.09900 eps=0.01046 qmax=11.688 alpha=0.093 kappa=0.245 elapsed=379s
+t=  6.40 E=0.09039 eps=0.01093 qmax=10.502 alpha=0.341 kappa=0.543 elapsed=476s
+t=  7.20 E=0.08165 eps=0.01087 qmax=9.723 alpha=1.054 kappa=2.549 elapsed=572s
+t=  8.00 E=0.07303 eps=0.01071 qmax=13.855 alpha=0.961 kappa=1.388 elapsed=629s
+t=  8.80 E=0.06432 eps=0.01100 qmax=12.926 alpha=-0.984 kappa=-3.170 elapsed=681s
+t=  9.60 E=0.05585 eps=0.01001 qmax=10.008 alpha=0.272 kappa=0.370 elapsed=739s
+done {'N': 96, 'Re': 400.0, 'nu': 0.0025, 'dt': 0.02, 'Tend': 10.0, 'dealias': '2/3 cubic', 'scheme': 'RK4 pseudo-spectral, rotational form', 'init': 'Taylor-Green', 'forcing': 'none', 'wallclock_s': 768.4225382804871}

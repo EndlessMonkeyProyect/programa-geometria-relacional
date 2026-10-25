@@ -1,0 +1,23 @@
+test_R_cero_sin_rebotes_en_vidrio (test_espejos_v6.TestMirrorV6.test_R_cero_sin_rebotes_en_vidrio) ... ok
+test_R_uno_sin_cruces_desde_A (test_espejos_v6.TestMirrorV6.test_R_uno_sin_cruces_desde_A) ... ok
+test_camara_finita (test_espejos_v6.TestMirrorV6.test_camara_finita) ... ok
+test_consistencia_intensidad (test_espejos_v6.TestMirrorV6.test_consistencia_intensidad) ... ok
+test_cota_de_interferencia (test_espejos_v6.TestMirrorV6.test_cota_de_interferencia) ... ok
+test_diferencia_fase (test_espejos_v6.TestMirrorV6.test_diferencia_fase) ... ok
+test_historias_cuantificadas (test_espejos_v6.TestMirrorV6.test_historias_cuantificadas) ... ok
+test_no_coincidencia_irracional (test_espejos_v6.TestMirrorV6.test_no_coincidencia_irracional) ... ok
+test_opacidad_tap_cero (test_espejos_v6.TestMirrorV6.test_opacidad_tap_cero) ... ok
+test_paridad_condicional_semilla_A (test_espejos_v6.TestMirrorV6.test_paridad_condicional_semilla_A) ... ok
+test_paridad_no_esta_fijada_por_lado_con_dos_semillas (test_espejos_v6.TestMirrorV6.test_paridad_no_esta_fijada_por_lado_con_dos_semillas) ... ok
+test_promedio_fase_entre_canales (test_espejos_v6.TestMirrorV6.test_promedio_fase_entre_canales) ... ok
+test_rayo_directo_y_desplazamiento (test_espejos_v6.TestMirrorV6.test_rayo_directo_y_desplazamiento) ... ok
+test_rayos_centro_dentro_apertura (test_espejos_v6.TestMirrorV6.test_rayos_centro_dentro_apertura) ... ok
+test_rayos_fuera_apertura (test_espejos_v6.TestMirrorV6.test_rayos_fuera_apertura) ... ok
+test_retorno_A_y_B_a_13ns (test_espejos_v6.TestMirrorV6.test_retorno_A_y_B_a_13ns) ... ok
+test_retorno_de_mitad (test_espejos_v6.TestMirrorV6.test_retorno_de_mitad) ... ok
+test_validacion (test_espejos_v6.TestMirrorV6.test_validacion) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 5.764s
+
+OK

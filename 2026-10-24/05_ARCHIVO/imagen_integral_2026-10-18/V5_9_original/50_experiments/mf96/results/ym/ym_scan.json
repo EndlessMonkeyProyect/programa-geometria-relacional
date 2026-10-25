@@ -1,0 +1,338 @@
+[
+ {
+  "group": "U1",
+  "beta": 0.7,
+  "start": "frio",
+  "plaquette": 0.34802443961733565,
+  "plaq_err": 0.0011133037566051103
+ },
+ {
+  "group": "U1",
+  "beta": 0.75,
+  "start": "frio",
+  "plaquette": 0.3751505308570584,
+  "plaq_err": 0.0011167888616290026
+ },
+ {
+  "group": "U1",
+  "beta": 0.8,
+  "start": "frio",
+  "plaquette": 0.40303649770096944,
+  "plaq_err": 0.0013485982280171491
+ },
+ {
+  "group": "U1",
+  "beta": 0.85,
+  "start": "frio",
+  "plaquette": 0.4351268950112272,
+  "plaq_err": 0.001168829776939313
+ },
+ {
+  "group": "U1",
+  "beta": 0.9,
+  "start": "frio",
+  "plaquette": 0.4701028847072665,
+  "plaq_err": 0.0010438300680540163
+ },
+ {
+  "group": "U1",
+  "beta": 0.95,
+  "start": "frio",
+  "plaquette": 0.5110129327992239,
+  "plaq_err": 0.0013516804273724253
+ },
+ {
+  "group": "U1",
+  "beta": 1.0,
+  "start": "frio",
+  "plaquette": 0.6445700498082262,
+  "plaq_err": 0.0011499864312952126
+ },
+ {
+  "group": "U1",
+  "beta": 1.05,
+  "start": "frio",
+  "plaquette": 0.6933186166179819,
+  "plaq_err": 0.0009749662535743421
+ },
+ {
+  "group": "U1",
+  "beta": 1.1,
+  "start": "frio",
+  "plaquette": 0.7190950353860864,
+  "plaq_err": 0.0009951580002256443
+ },
+ {
+  "group": "U1",
+  "beta": 1.15,
+  "start": "frio",
+  "plaquette": 0.7366882353552238,
+  "plaq_err": 0.0008455244684182721
+ },
+ {
+  "group": "U1",
+  "beta": 1.2,
+  "start": "frio",
+  "plaquette": 0.7520312474613218,
+  "plaq_err": 0.0007852905447071416
+ },
+ {
+  "group": "U1",
+  "beta": 1.25,
+  "start": "frio",
+  "plaquette": 0.7666622649351602,
+  "plaq_err": 0.0008849452179249754
+ },
+ {
+  "group": "U1",
+  "beta": 1.3,
+  "start": "frio",
+  "plaquette": 0.7773465553573478,
+  "plaq_err": 0.0007564624608645829
+ },
+ {
+  "group": "U1",
+  "beta": 0.7,
+  "start": "caliente",
+  "plaquette": 0.34640336022579343,
+  "plaq_err": 0.0009288063758366045
+ },
+ {
+  "group": "U1",
+  "beta": 0.75,
+  "start": "caliente",
+  "plaquette": 0.3735456367884647,
+  "plaq_err": 0.0010458199494063482
+ },
+ {
+  "group": "U1",
+  "beta": 0.8,
+  "start": "caliente",
+  "plaquette": 0.4037459195403172,
+  "plaq_err": 0.0010337776993030938
+ },
+ {
+  "group": "U1",
+  "beta": 0.85,
+  "start": "caliente",
+  "plaquette": 0.43288320369528693,
+  "plaq_err": 0.0010706634448744898
+ },
+ {
+  "group": "U1",
+  "beta": 0.9,
+  "start": "caliente",
+  "plaquette": 0.4721090858247773,
+  "plaq_err": 0.0012517006707595184
+ },
+ {
+  "group": "U1",
+  "beta": 0.95,
+  "start": "caliente",
+  "plaquette": 0.5159762848123294,
+  "plaq_err": 0.0014146387326718622
+ },
+ {
+  "group": "U1",
+  "beta": 1.0,
+  "start": "caliente",
+  "plaquette": 0.6105166832863113,
+  "plaq_err": 0.003288772791505092
+ },
+ {
+  "group": "U1",
+  "beta": 1.05,
+  "start": "caliente",
+  "plaquette": 0.6857966827472411,
+  "plaq_err": 0.0012179866388393756
+ },
+ {
+  "group": "U1",
+  "beta": 1.1,
+  "start": "caliente",
+  "plaquette": 0.7176883152290726,
+  "plaq_err": 0.0008691948545094158
+ },
+ {
+  "group": "U1",
+  "beta": 1.15,
+  "start": "caliente",
+  "plaquette": 0.7377321459024825,
+  "plaq_err": 0.0008972469941649691
+ },
+ {
+  "group": "U1",
+  "beta": 1.2,
+  "start": "caliente",
+  "plaquette": 0.7519976829009635,
+  "plaq_err": 0.0007570023565857209
+ },
+ {
+  "group": "U1",
+  "beta": 1.25,
+  "start": "caliente",
+  "plaquette": 0.7622707534003001,
+  "plaq_err": 0.000666309347890952
+ },
+ {
+  "group": "U1",
+  "beta": 1.3,
+  "start": "caliente",
+  "plaquette": 0.776315144285085,
+  "plaq_err": 0.0008798977137360073
+ },
+ {
+  "group": "SU2",
+  "beta": 1.0,
+  "start": "frio",
+  "plaquette": 0.2429563617754749,
+  "plaq_err": 0.0006747158838542009
+ },
+ {
+  "group": "SU2",
+  "beta": 1.2,
+  "start": "frio",
+  "plaquette": 0.29055765655781696,
+  "plaq_err": 0.0007396577578200073
+ },
+ {
+  "group": "SU2",
+  "beta": 1.4,
+  "start": "frio",
+  "plaquette": 0.33714510195513103,
+  "plaq_err": 0.0006358739707305841
+ },
+ {
+  "group": "SU2",
+  "beta": 1.6,
+  "start": "frio",
+  "plaquette": 0.3869591510661464,
+  "plaq_err": 0.0007130704568105868
+ },
+ {
+  "group": "SU2",
+  "beta": 1.8,
+  "start": "frio",
+  "plaquette": 0.4421948564033537,
+  "plaq_err": 0.0006587294257913609
+ },
+ {
+  "group": "SU2",
+  "beta": 2.0,
+  "start": "frio",
+  "plaquette": 0.5005078144114762,
+  "plaq_err": 0.0009528044791922226
+ },
+ {
+  "group": "SU2",
+  "beta": 2.2,
+  "start": "frio",
+  "plaquette": 0.5692090401505739,
+  "plaq_err": 0.000866783248266871
+ },
+ {
+  "group": "SU2",
+  "beta": 2.4,
+  "start": "frio",
+  "plaquette": 0.6310514481250837,
+  "plaq_err": 0.000618610317281436
+ },
+ {
+  "group": "SU2",
+  "beta": 2.6,
+  "start": "frio",
+  "plaquette": 0.6702564598050054,
+  "plaq_err": 0.0006481627583781295
+ },
+ {
+  "group": "SU2",
+  "beta": 2.8,
+  "start": "frio",
+  "plaquette": 0.6985469526301333,
+  "plaq_err": 0.0005121970779817898
+ },
+ {
+  "group": "SU2",
+  "beta": 3.0,
+  "start": "frio",
+  "plaquette": 0.7230756025855636,
+  "plaq_err": 0.000441531165704553
+ },
+ {
+  "group": "SU2",
+  "beta": 1.0,
+  "start": "caliente",
+  "plaquette": 0.24474260342804385,
+  "plaq_err": 0.0007269262061325206
+ },
+ {
+  "group": "SU2",
+  "beta": 1.2,
+  "start": "caliente",
+  "plaquette": 0.2904386639128048,
+  "plaq_err": 0.0007091120354590311
+ },
+ {
+  "group": "SU2",
+  "beta": 1.4,
+  "start": "caliente",
+  "plaquette": 0.3381391487991976,
+  "plaq_err": 0.0007092041006908756
+ },
+ {
+  "group": "SU2",
+  "beta": 1.6,
+  "start": "caliente",
+  "plaquette": 0.38746240577791585,
+  "plaq_err": 0.0007615108656017958
+ },
+ {
+  "group": "SU2",
+  "beta": 1.8,
+  "start": "caliente",
+  "plaquette": 0.4397291730785807,
+  "plaq_err": 0.0008620321519133643
+ },
+ {
+  "group": "SU2",
+  "beta": 2.0,
+  "start": "caliente",
+  "plaquette": 0.4989634642026355,
+  "plaq_err": 0.0008220013295463514
+ },
+ {
+  "group": "SU2",
+  "beta": 2.2,
+  "start": "caliente",
+  "plaquette": 0.5698991796716305,
+  "plaq_err": 0.0007461673649331952
+ },
+ {
+  "group": "SU2",
+  "beta": 2.4,
+  "start": "caliente",
+  "plaquette": 0.6306743231266272,
+  "plaq_err": 0.0006880733789310171
+ },
+ {
+  "group": "SU2",
+  "beta": 2.6,
+  "start": "caliente",
+  "plaquette": 0.6696851518076439,
+  "plaq_err": 0.0005493888180624746
+ },
+ {
+  "group": "SU2",
+  "beta": 2.8,
+  "start": "caliente",
+  "plaquette": 0.6989840651466745,
+  "plaq_err": 0.0005128053612726369
+ },
+ {
+  "group": "SU2",
+  "beta": 3.0,
+  "start": "caliente",
+  "plaquette": 0.7231625211636862,
+  "plaq_err": 0.00045295444263807456
+ }
+]

@@ -1,0 +1,13 @@
+grafo,vertices,aristas,diamantes,ciclos_vecindad_impares,fusiones,contradiccion_local,decision_minfill,eval_minfill_raw,eval_minfill_S3,eval_reverse_raw,eval_reverse_S3,reverse_capped
+C5,5,5,0,False,0,False,True,31,8,31,8,False
+K4,4,6,6,True,0,True,False,39,8,39,8,False
+W5,6,10,5,True,1,True,False,93,18,363,63,False
+W7,8,14,7,True,3,True,False,147,28,3279,550,False
+Grotzsch_M_C5,11,20,0,False,0,False,False,495,87,6438,1078,False
+Mycielski_C7,15,28,0,False,0,False,False,1035,179,97320,16227,False
+Mycielski_C9,19,36,0,False,0,False,False,1575,271,130001,130001,True
+ladder_2x5,10,13,0,False,0,False,True,76,18,724,126,False
+ladder_2x8,16,22,0,False,0,False,True,130,30,19678,3288,False
+grid_4x4,16,24,0,False,0,False,True,508,93,886,156,False
+grid_5x5,25,40,0,False,0,False,True,1507,264,4369,741,False
+anchors_9,11,19,36,False,8,False,True,85,20,85,20,False

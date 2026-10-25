@@ -1,0 +1,13 @@
+id,afirmacion,estado,soporte,limite
+O88-T1,"La condición pθdot-qφdot=0 equivale a velocidades en la recta (q,p)",DERIVADO,"Sección 3, álgebra de fases",No imponible sin dinámica
+O88-T2,"Bézout produce matriz unimodular e inversa informativa",DERIVADO,"Sección 4, O68",No es invariante físico automático
+O88-T3,"Cuatro nodos con fases gamma escalonadas conservan desfase y dos pares para q=2",DERIVADO,"Sección 5, O87",Modelo toroidal superficial prescrito
+O88-T4,"C4 engranaje admite giro no nulo ssi H=1",DERIVADO,"Sección 6, O74",Requiere contacto ideal
+O88-T5,"Perturbar el giro poloidal produce deriva de fase en flujo superficial suave",DERIVADO,"Sección 7, O87",No es 3D NS
+O88-T6,"Razón continua racional es constante en un intervalo",DERIVADO,"Sección 7, O69",Denominador debe ser no nulo
+O88-T7,"Multiplicar dos fases por N tiene N² preimágenes: reconstrucción precisa etiqueta",DERIVADO,"Sección 8, cubierta del toro",Rama es dato de representación
+O88-T8,"Diferencia de desfases entre nodos es invariante a origen angular común",DERIVADO,"Sección 9",Sólo cambios de origen común
+O88-F1,"Pérdida de fase no significa necesariamente ruptura física",REFUTACION,"Sección 7, contraejemplo suave",No resuelve dinámica de vórtice
+O88-F2,"Cierre geométrico no limita por sí mismo estiramiento del vórtice",LIMITE,"Secciones 10–12, O74/O75/O86",No concluir regularidad NS
+O88-A1,"Todo vórtice 3D admite nodos físicos y normalizador coherente",ABIERTO,"Sección 11",Falta cobertura y ley de extracción
+O88-A2,"Normalizador transportable implica compensación dinámica universal",ABIERTO,"Secciones 12–13",Falta cota a priori PDE

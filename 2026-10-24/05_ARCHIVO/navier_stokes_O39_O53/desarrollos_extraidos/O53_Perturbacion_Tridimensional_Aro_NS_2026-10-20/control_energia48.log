@@ -1,0 +1,2 @@
+BEGIN energy-matched N48 epsilon=.14
+END energy-matched N48 53.6106812953949 {"axial_displacement": 2.2589955996907656, "outer_phase_diff_final": 0.16509710991035953, "ell_change": 0.12254117449755572, "kinetic_change_fraction": -0.5059018910926988, "enstrophy_change_fraction": -0.7682512833877468, "initial_swirl_rms": 0.034797120982375855, "initial_P": 6.579099405186112e-17, "initial_D": 0.953429116360508, "max_abs_divergence": 1.205105813339371e-15, "energy_balance_rel": 1.9082200122053248e-05, "enstrophy_balance_rel": 0.00012248055218833423, "elapsed": 53.53997874259949}

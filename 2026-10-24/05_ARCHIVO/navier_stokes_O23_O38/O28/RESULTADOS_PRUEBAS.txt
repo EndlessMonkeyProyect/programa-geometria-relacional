@@ -1,0 +1,2 @@
+O28 / PASS / 540 aserciones internas
+Importante: las pruebas auditan el modelo de fases; NO una simulacion de Navier-Stokes.

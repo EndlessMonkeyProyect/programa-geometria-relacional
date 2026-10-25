@@ -1,0 +1,86 @@
+{
+  "unit": "u, length units arbitrary",
+  "radial_periods_u": [
+    4,
+    6
+  ],
+  "radial_generated_spacing_u": 2,
+  "angular_periods_degrees": [
+    60,
+    90
+  ],
+  "angular_generated_spacing_degrees": 30,
+  "radial_counts": {
+    "total": 144,
+    "A": 36,
+    "B": 16,
+    "intersection_AB": 4,
+    "projection_AB": 48,
+    "silence_AB": 96,
+    "C": 36,
+    "new_projection_C": 32,
+    "projection_ABC": 80,
+    "silence_ABC": 64
+  },
+  "three_sphere_centers": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      2.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.7320508075688772,
+      0.0
+    ]
+  ],
+  "candidate_centers_fourth_sphere": [
+    [
+      1.0,
+      0.5773502691896257,
+      1.632993161855452
+    ],
+    [
+      1.0,
+      0.5773502691896257,
+      -1.632993161855452
+    ]
+  ],
+  "fourth_coplanar_anchor": [
+    1.0,
+    -1.7320508075688772,
+    0.0
+  ],
+  "fourth_noncoplanar_anchor": [
+    0.0,
+    0.0,
+    2.0
+  ],
+  "ranks": {
+    "3_anchors": 2,
+    "4_coplanar_anchors": 2,
+    "4_noncoplanar_anchors": 3
+  },
+  "mirror_solutions_identical_distances_to_four_coplanar_anchors": true,
+  "off_plane_anchor_distances": {
+    "plus": 1.211621786110745,
+    "minus": 3.8120824554856902
+  },
+  "unique_reconstruction_error": 3.1401849173675503e-16,
+  "oriented_tetra_volumes": {
+    "plus": 0.9428090415820631,
+    "minus": -0.9428090415820631
+  },
+  "epistemic_limits": [
+    "A blank radial cell is a silence of the given projection rules, not evidence of a hidden sphere.",
+    "Adding an angular channel requires an independent angular relation, not an independent radial ruler.",
+    "Coplanar distances determine mirror alternatives, not absolute spatial handedness.",
+    "Adding a non-coplanar reference resolves the ambiguity relative to that oriented reference, without introducing a new primitive unit of length.",
+    "The optical v1-v8 results and Maxwell dynamics are not deduced from this combinatorial/Euclidean model."
+  ]
+}

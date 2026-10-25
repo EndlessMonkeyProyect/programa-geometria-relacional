@@ -1,0 +1,10 @@
+id,afirmacion,estado,soporte,limite
+O56-T1,Derivada de producto y coseno de dos tangentes materiales,T,Demostracion en O56 seccion 2,Requiere campo suave
+O56-T2,Cizallas periodicas x/y son soluciones exactas de NS sin forzamiento,T,Demostracion en O56 seccion 3,No es solucion exacta de anillo vorticial aislado
+O56-T3,Los dos flujos x/y tienen igual energia y enstrofia inicial,T,Identidades y controles analiticos,La comparacion local depende de marca
+O56-T4,Flujo shear preserva volumen y topologia toroidal,T,Mapeo material global de determinante 1,No conserva necesariamente ortogonalidad metrica
+O56-F1,Normalizador aritmetico y radios solos no deciden cambio angular,F,Contraejemplo x/y exacto,No descarta un normalizador dinamico mas rico
+O56-E1,Simulacion de anillo de N32 con tres preparaciones,E,CSV y codigo Galerkin RK2,No prueba regularidad y baja resolucion
+O56-A1,Ley de actualizacion fisica del multiplo,A,No disponible,No derivada de la PDE
+O56-A2,Interfaz dinamica autonoma general NS3D,A,No disponible,Puede requerir mas datos direccionales
+O56-A3,Vinculo con coercividad de Yang Mills,A,Analogía metodologica,No gap demostrado

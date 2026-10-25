@@ -1,0 +1,155 @@
+{
+  "montaje": {
+    "pared_cubo_m": 2.0,
+    "plano_espejo_m": 0.9,
+    "semiancho_panel_m": 0.9,
+    "rebotes_maximos": 1,
+    "fuentes": "puntuales, transparentes entre sí, espectro y brillo no etiquetados",
+    "camara1": [
+      0.12,
+      -0.22,
+      0.19
+    ],
+    "camara2": [
+      0.12,
+      0.46,
+      0.19
+    ],
+    "fov_horizontal_grados": 125.0,
+    "psf_sigma_px": 2.4,
+    "ruido_desviacion": 0.004,
+    "resolucion": [
+      640,
+      360
+    ]
+  },
+  "A_una_vs_dos_misma_camara": {
+    "max_diferencia_ideal_con_mismo_ruido": 0.0,
+    "diferencia_rms": 0.0,
+    "fuentes_reales_separacion_m": 0.31674161393792216,
+    "estimacion_desde_una_imagen": {
+      "n_spots": 1,
+      "spots": [
+        {
+          "x": 279.37095,
+          "y": 186.50103,
+          "amplitude": 1.99879
+        }
+      ],
+      "bic_1": 3044.5759756748353,
+      "bic_2": 3062.5365976890344,
+      "rss_1": 0.04832716603494627,
+      "rss_2": 0.04822848641132237,
+      "window": [
+        249,
+        162,
+        310,
+        213
+      ]
+    }
+  },
+  "B_mover_camara": {
+    "estimacion": {
+      "n_spots": 2,
+      "spots": [
+        {
+          "x": 327.42564,
+          "y": 186.50516,
+          "amplitude": 1.0008
+        },
+        {
+          "x": 334.63057,
+          "y": 186.49922,
+          "amplitude": 0.99875
+        }
+      ],
+      "bic_1": 1006683.1584069536,
+      "bic_2": 3107.067973334053,
+      "rss_1": 16.106544484935405,
+      "rss_2": 0.04894098842164267,
+      "window": [
+        305,
+        161,
+        366,
+        212
+      ]
+    },
+    "triangulacion_inferencia_a_posteriori": [
+      {
+        "posicion_m": [
+          -0.6772174024544679,
+          0.3549232394040725,
+          0.09797770019962664
+        ],
+        "residuo_optico_m": 5.839724458338439e-05,
+        "error_contra_verdad_m": 0.00029368493819794
+      },
+      {
+        "posicion_m": [
+          -0.3698765890639575,
+          0.2799627376035679,
+          0.1100123809160716
+        ],
+        "residuo_optico_m": 2.2256109853797505e-05,
+        "error_contra_verdad_m": 0.00012950688169177505
+      }
+    ]
+  },
+  "C_abrir_otro_espejo": {
+    "estimacion_y": {
+      "n_spots": 2,
+      "spots": [
+        {
+          "x": 105.56233,
+          "y": 193.5275,
+          "amplitude": 0.99859
+        },
+        {
+          "x": 168.46177,
+          "y": 189.96362,
+          "amplitude": 0.99961
+        }
+      ],
+      "bic_1": 1133553.92325655,
+      "bic_2": 5788.09559159526,
+      "rss_1": 18.136447987024763,
+      "rss_2": 0.09177995930545663,
+      "window": [
+        88,
+        165,
+        199,
+        216
+      ]
+    }
+  },
+  "D_misma_fuente_dos_espejos": {
+    "n_caminos_de_primera_reflexion": 2,
+    "maximos_sensor": 2,
+    "deteccion": [
+      {
+        "x": 22.818044753845285,
+        "y": 195.07543199030334,
+        "amplitude": 0.9986042372256346
+      },
+      {
+        "x": 421.25484175043226,
+        "y": 187.38892270976586,
+        "amplitude": 1.0015377921830901
+      }
+    ],
+    "reconstruccion": {
+      "canales_observados": [
+        "Y+",
+        "X+"
+      ],
+      "fuentes_minimas_compatibles": 1,
+      "posicion_fuente_estimada_m": [
+        -0.3700003408169924,
+        0.28000557539991505,
+        0.1100150301799418
+      ],
+      "desacuerdo_rayos_m": 1.0224368760158725e-05,
+      "error_contra_verdad_m": 1.6034573568310708e-05
+    }
+  }
+}

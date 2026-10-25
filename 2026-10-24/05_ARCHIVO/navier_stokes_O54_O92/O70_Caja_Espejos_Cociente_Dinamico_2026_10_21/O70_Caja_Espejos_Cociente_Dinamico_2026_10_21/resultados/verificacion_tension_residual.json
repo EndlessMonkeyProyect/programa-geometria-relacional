@@ -1,0 +1,18 @@
+[
+  {
+    "N": 32,
+    "absolute_residual": 4.584636295902183e-16,
+    "relative_residual": 3.277153580154384e-14,
+    "reynolds_stress_rms": 0.01266291062710081,
+    "dynamic_defect_norm": 0.01398969008857438,
+    "projected_initial_difference": 2.3671041968361594e-17
+  },
+  {
+    "N": 40,
+    "absolute_residual": 6.096173427753084e-16,
+    "relative_residual": 4.1567199261460266e-14,
+    "reynolds_stress_rms": 0.013215406531454874,
+    "dynamic_defect_norm": 0.014665826748171736,
+    "projected_initial_difference": 2.690778385615189e-17
+  }
+]

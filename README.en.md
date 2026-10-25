@@ -2,6 +2,14 @@
 
 [Leer este repositorio en español](README.md).
 
+## Current edition: October 24, 2026
+
+The [English reading guide](2026-10-24/00_READ_FIRST.en.md) introduces the organized edition: its integrated thread, realizations, three research branches, laboratories, and historical archive. The package also includes an [English public manuscript](2026-10-24/00_PUBLICACION/Programa_Geometria_Relacional_Manuscrito_Publico_2026-10-24.en.md) and an [English supplement on rhythm, time, and gravity](2026-10-24/01_HILO/SUPLEMENTOS/Suplemento_Ritmo_Ciclo_Base_Tiempo_y_Gravedad_2026-10-24.en.md).
+
+The [Spanish index](2026-10-24/00_LEER_PRIMERO.md) is authoritative. The edition's manifest verifies 1,047 files; the original ZIP is retained as a distribution archive.
+
+## Earlier conceptual edition: 0.1.0
+
 **Conceptual edition 0.1.0 · September 29, 2026**
 
 **Program author in the source materials:** Le Matt Ansatz Di Ego

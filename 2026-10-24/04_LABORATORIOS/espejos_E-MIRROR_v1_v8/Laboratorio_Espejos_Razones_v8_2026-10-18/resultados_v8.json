@@ -1,0 +1,58 @@
+{
+  "v": "8.0",
+  "regime": "1D scalar normal-incidence wave in ideal cavities; finite loss via Im(k)",
+  "key_ratio": "cot(k A)+cot(k B)=-g/k provided sin(k A)*sin(k B)!=0",
+  "alternative_tangent_ratio": "tan(k A)+tan(k B)+(g/k)*tan(k A)*tan(k B)=0 provided cos(k A)*cos(k B)!=0",
+  "homogeneous_matrix": "[[sin(k A),-sin(k B)],[k cos(k A)+g sin(k A),k cos(k B)]]",
+  "node_k0": "k0=2 pi, A=1, B=1/2",
+  "node_amplitude_B_over_A": 1.0,
+  "node_eigenvalues_det_by_R": {
+    "0": 2.3084048324661477e-15,
+    "0.5": 2.3084048324661473e-15,
+    "0.9": 2.3084048324661465e-15,
+    "0.99": 2.3084048324661438e-15
+  },
+  "node_energy_fraction_A": 0.6666666666666666,
+  "node_energy_fraction_B": 0.3333333333333333,
+  "node_slope_from_left": 1.0,
+  "node_slope_from_right": 1.0,
+  "reference_cross_transfer_at_q1_eta0003": {
+    "0": 5.583914826964417,
+    "0.5": 5.58326361456711,
+    "0.9": 5.579321529430428,
+    "0.99": 5.538732429804991
+  },
+  "independent_cross_transfer": 0,
+  "source_x": 0.23,
+  "measurement_in_A_x": 0.37,
+  "observation_in_B_fraction": 0.5,
+  "wall_scan_R90": [
+    {
+      "q": 0.96,
+      "B_of_max_in_0_4_to_0_6": 0.45566666666666666,
+      "max_amplitude": 4.551346502876033,
+      "amplitude_at_half": 0.9322488601790926
+    },
+    {
+      "q": 1,
+      "B_of_max_in_0_4_to_0_6": 0.4996666666666667,
+      "max_amplitude": 5.596260341982363,
+      "amplitude_at_half": 5.579321529430428
+    },
+    {
+      "q": 1.04,
+      "B_of_max_in_0_4_to_0_6": 0.465,
+      "max_amplitude": 4.981895559572475,
+      "amplitude_at_half": 0.27712431659942266
+    }
+  ],
+  "sheet_transmission_energy_q1": {
+    "0": 1.0,
+    "0.5": 0.5000000000000001,
+    "0.9": 0.09999999999999994,
+    "0.99": 0.010000000000000009
+  },
+  "loss_ratio_eta": 0.003,
+  "frequency_samples": 1201,
+  "wall_samples": 601
+}

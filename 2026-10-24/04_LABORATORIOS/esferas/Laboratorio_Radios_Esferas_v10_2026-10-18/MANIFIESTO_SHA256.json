@@ -1,0 +1,21 @@
+{
+  "version": "10",
+  "fecha": "2026-10-18",
+  "algoritmo": "sha256",
+  "files": {
+    "01_trama_radial.png": "dae5203f0c4227ce7a409ed9be3a5c5c7a7adb7c871e22a0b3ba410b6c1a0b0b",
+    "02_radios_polares.png": "606ac8d338e5eeaee707fb632b9ccf868f6be392dc411947c280b1650ef104e6",
+    "03_esferas_reflejo.png": "184cb2678029af0e745681bbd548e4d04d205397bb1024681e3dde70e10bedf2",
+    "04_distancias_orientacion.png": "4fd1742abc2c480656e5051c5464625fe87236a2fba389444c279d3493718cfb",
+    "CONTINUIDAD.es.md": "7d0bbed4277aaa7a24b57209ecdb8801b3f08e3ce5ff09f24040f2b68f347e28",
+    "HALLAZGO.es.md": "b6828d5010816df48be7500d7685323285b2be5eb256c80c3e36dd2a5349a9b2",
+    "PROCEDENCIA.json": "8530b8dd76a39b7218c1c20c8b994a1d3fb20ed9c3f8c27f9259b2a5e7d0403f",
+    "README.es.md": "ce53e1b1a54b4e2a9f52ee45eb950b99b31ec1898441f3e58c7acbf2328c6549",
+    "distancias_anclajes.csv": "64b9762e079898cc2d9d61130f9943ace3c6e3c99357b791d3d702a17883b4e5",
+    "pruebas_v10.log": "cf6e81a24c370e083af0af162ee3176beb528a2aa97eec345bba9b1afb7a67a6",
+    "radios_esferas_v10.py": "ae32daee445d10855df7a5c2bd560d20df39bdfb34d09f515b6e59db80ace8de",
+    "resultados_v10.json": "9057de031c9b3a9444f56566e2087cdb76d74b6a25a012ef6d61cb25d988c922",
+    "reticula_radial.csv": "8800632d9b69fa951f96beccccbe7d51feda981834093854dfa9d99c4cfe6a03",
+    "test_radios_esferas_v10.py": "e17ff015f49c28c61da3c15c1dffe6b4d19234950c9170b66cd882f53e340b9b"
+  }
+}

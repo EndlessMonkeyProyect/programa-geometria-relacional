@@ -1,0 +1,27 @@
+id,afirmacion,estado,evidencia_base,limitacion
+ON1,Narrativa de unidad/reflexión como origen,POSTULADO,01_foundations/generative_core.es.md,No demostración cosmológica
+INF1,novedad de firma por no factorización,T,02_formal_core/contextual_reclosure_and_resource_cost.es.md,Solo firmas y preguntas declaradas
+INF2,cociente suficiente para continuaciones,T,02_formal_core/contextual_reclosure_and_resource_cost.es.md,Semántica no equivale a costo polinómico
+GR3,estructura C4/C4² y focos en modelos finitos,CONDICIONAL,extensions/GR3/,"Hipótesis geométricas, no dimensión física universal"
+NP1,SAT contextual y costos contados,T_CONDICIONAL,05_computation/contextual_sat_and_representation_cost.es.md,P=NP permanece abierto
+NP2,programa resuelve P=NP,ABIERTO,05_computation/README.md,No existe demostración universal
+NS1,identidades 3D de estiramiento/dirección,T,03_navier_stokes/STATUS.md,No regularidad global
+O26,"contraejemplo a firma H,A,B suficiente",NO_GO,21_suplementos_2026_10_19_20/O26/,Fija los observables elegidos
+O30,balance segundo momento vorticidad etiquetada 2D,T,21_suplementos_2026_10_19_20/O30/,"Localización, positividad, 2D"
+O31,concentraciones etiquetadas separadas temporalmente,T_CONDICIONAL,21_suplementos_2026_10_19_20/O31/,No identidad física única
+O32,persistencia Q anisotropía finita,T_CONDICIONAL,21_suplementos_2026_10_19_20/O32/,Q=0 fase indefinida
+O33,simetrías preservadas por evolución 2D,T_CONDICIONAL,21_suplementos_2026_10_19_20/O33/,No emergencia desde incompatibilidad
+O34,reorganización gaussiana y resto entre escalas,T_CONDICIONAL,21_suplementos_2026_10_19_20/O34/,"Atractor clásico, no pares eternos"
+O36,acercamiento unilateral de fase elíptica,T_CONDICIONAL,21_suplementos_2026_10_19_20/O36/,Sin atractor global
+O37,mezcla monótona de etiquetas 2D,T,21_suplementos_2026_10_19_20/O37/,No observable solo de omega
+O38,transición silla→máximo con NS 2D amplitud pequeña,T_CONDICIONAL,21_suplementos_2026_10_19_20/O38/,También en calor lineal
+NS3D,regularidad global NS 3D,ABIERTO,03_navier_stokes/STATUS.md,No derivada
+YM1,observable de no conmutatividad ν en SU(2),T,06_yang_mills/README.md,Se anula en Cartan
+YMG,observable ν suavizado estable en tres espaciados,E,20_nu_en_el_continuo_YM_2026_10_19/,No teorema continuo
+YMCO,forma coerciva gauge-invariante uniforme,ABIERTO,06_yang_mills/README.md,Falta T1 y T2
+YMGAP,existencia y mass gap YM 4D,ABIERTO,06_yang_mills/README.md,No solución Clay
+CROSS,cambio geométrico implica gap,NO_GO,22_sintesis_integral_2026_10_20/08_PUENTES_FALSADORES_Y_MAPA_DE_PENDIENTES.es.md,Laplaciano en R² no tiene gap
+PROT,radio modelo asociado con RMS de carga,HIPOTESIS,publication/,Falta form factor dinámico
+GRAV,masa/gravedad por foco y ritmo,HIPOTESIS,publication/,Falta ley independiente y tests
+ROSI,ROSI transferencia y evaluaciones,E,05_computation/,AUC limitado a dataset/tarea
+LANG,cristal semántico completo,ABIERTO,08_language/,Propuesta y partes formalizadas

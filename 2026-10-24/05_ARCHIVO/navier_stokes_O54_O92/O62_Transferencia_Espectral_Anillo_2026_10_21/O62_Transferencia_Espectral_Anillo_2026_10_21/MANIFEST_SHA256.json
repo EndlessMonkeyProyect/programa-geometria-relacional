@@ -1,0 +1,62 @@
+{
+  "archivo": "O62",
+  "autor": "Le Matt Ansatz Di Ego",
+  "origen": "O53 original sin modificar",
+  "archivos": [
+    {
+      "ruta": "LEER_PRIMERO.md",
+      "bytes": 1630,
+      "sha256": "a00a7deba154595189392223566fbc53d19d7b66713ea26be70ee5d85e7ac337"
+    },
+    {
+      "ruta": "O62_FORMALIZACION.es.md",
+      "bytes": 12960,
+      "sha256": "c32c4353db565c53f664e0cb00de902a3575a5367b25b9960e868db38626f955"
+    },
+    {
+      "ruta": "codigo/ejecutar_o62.py",
+      "bytes": 8233,
+      "sha256": "f28f68de9355fc171f6efbe6fba059c4aef09abefa93fff412166ea91aee1450"
+    },
+    {
+      "ruta": "codigo/graficar_o62.py",
+      "bytes": 1173,
+      "sha256": "060cd77130fa666d983348e8ab1338088c992d58f32708e43acd11557454fbb0"
+    },
+    {
+      "ruta": "codigo/verificar_o62.py",
+      "bytes": 1569,
+      "sha256": "4fc2751a119cae6732be5ce42b53dae4728162165e5b85f1cdbaa2c67eaf9adb"
+    },
+    {
+      "ruta": "fuentes/O53_ORIGINAL_SIN_MODIFICAR.zip",
+      "bytes": 697913,
+      "sha256": "4288f6a6de2b7a29a8b4fec54bf7eaa6f107c8ced90462e472ee7e56de1d00c9"
+    },
+    {
+      "ruta": "fuentes/o53_perturbed_ring.py",
+      "bytes": 7342,
+      "sha256": "a046941091c432ad4a1210a1ec6634be1442affa5369f9430e2a69960204bc0c"
+    },
+    {
+      "ruta": "graficos/o62_prediccion_banda_2_4.png",
+      "bytes": 61211,
+      "sha256": "3a9b1f9c4a68868f7ca82d0499cd3cbd894273a94d2111f6595cf68fa6c68f07"
+    },
+    {
+      "ruta": "resultados/ejecucion.log",
+      "bytes": 2646,
+      "sha256": "a8cfc670a861bf6d62b2099f245e1c1de995e8e90a2c9d5f2fd3830914ba1f2b"
+    },
+    {
+      "ruta": "resultados/resumen.json",
+      "bytes": 1935,
+      "sha256": "8c6bdfe9be56c6ecc45e89e1e9c440e66e8826aa4dfd295b04ba8d96a171f30d"
+    },
+    {
+      "ruta": "resultados/transferencias_y_predicciones.csv",
+      "bytes": 34021,
+      "sha256": "e06fb0bd9439c1ed4d8d956f05421ccba77469a9fd58549f3313605be077101d"
+    }
+  ]
+}

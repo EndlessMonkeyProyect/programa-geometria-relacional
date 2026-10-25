@@ -1,0 +1,63 @@
+{
+  "version": "v4.0",
+  "fecha": "2026-10-18",
+  "estado": "laboratorio independiente; no cambia 3.4.1",
+  "archivos": {
+    "HALLAZGO.es.md": {
+      "bytes": 1432,
+      "sha256": "cf47d3a6021f87b008310ac713a2a3d061fe299bb08b4f049b3d9efba97165ca"
+    },
+    "PENDIENTE_LABORATORIO_ESFERAS.es.md": {
+      "bytes": 1543,
+      "sha256": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81"
+    },
+    "PRUEBAS_V4.txt": {
+      "bytes": 2230,
+      "sha256": "76154bd2d92673662ca5a232a1ac9cee33202c37ec183f706f24ace213c41def"
+    },
+    "README.es.md": {
+      "bytes": 7221,
+      "sha256": "31440b4cb0078d2ddb2f0ff9e0e2c0d9d85fab6a170890beb466b30225f8eeef"
+    },
+    "estudio_umbral.json": {
+      "bytes": 1717,
+      "sha256": "75530ae07077743d85e30514c834b34c20c72d008c58295e73518dc7814dc40c"
+    },
+    "estudio_umbral.py": {
+      "bytes": 1611,
+      "sha256": "65504bf883918f351d55a44239be56ffc9d592cb9fc1c6ac1726f57138b820ab"
+    },
+    "figura_cambio_marco.png": {
+      "bytes": 294880,
+      "sha256": "bdccc6997d8bc1af5786aa1db633b980a6c2a66600a5c346832d0c505f237be6"
+    },
+    "figura_geometria.png": {
+      "bytes": 72914,
+      "sha256": "d61cdf29457e45e7d14e0fac5306d0b39f690b14a8c64f6fc0e28e12bf247ffd"
+    },
+    "figura_indistinguibilidad.png": {
+      "bytes": 66967,
+      "sha256": "0e466bee514e48cab935772851ecb08cfcd5c94dad4664ba32ae273dc872c75d"
+    },
+    "figura_umbral.png": {
+      "bytes": 53267,
+      "sha256": "9edd9182082a3c1d10d4c225d6eddc5c0d0c421a59cb99c271191ef6ab8ceabb"
+    },
+    "figura_zoom.png": {
+      "bytes": 45625,
+      "sha256": "7b80ce4dd6bf6b351749830c72444ea245b7de34ca11a068f94a9008dbb0bc6a"
+    },
+    "identidad_mirrors.py": {
+      "bytes": 15378,
+      "sha256": "e9241944e4b664a4361d2055a6d0db56151eab403c6a97fb3fdbad204afbb08b"
+    },
+    "resultados_v4.json": {
+      "bytes": 3403,
+      "sha256": "eec5145d6f282a2853b7707d13e213d6af69133cda9e484ce52d63b021408b19"
+    },
+    "test_identidad_mirrors.py": {
+      "bytes": 4145,
+      "sha256": "e9189539aa0aad872b92fbe4d894f5d49f883904b0d4552b34d7fc452a83830d"
+    }
+  }
+}

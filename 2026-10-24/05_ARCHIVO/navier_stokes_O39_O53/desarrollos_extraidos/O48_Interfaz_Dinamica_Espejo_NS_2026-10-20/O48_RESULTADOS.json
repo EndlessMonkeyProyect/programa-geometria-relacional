@@ -1,0 +1,131 @@
+{
+  "program": "O48",
+  "date": "2026-10-20",
+  "nu": 0.03,
+  "passed_checks": 181,
+  "no_go_family": [
+    {
+      "R": 1,
+      "number_of_modes": 4,
+      "mcm_wavenumber": 12,
+      "epsilon": 2.5925925925925926,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1"
+      ],
+      "first_unmatched_moment": "m_2",
+      "exact_mismatch": "140/27",
+      "E_t01_diff": 8.790511444101146e-05
+    },
+    {
+      "R": 2,
+      "number_of_modes": 5,
+      "mcm_wavenumber": 60,
+      "epsilon": 33.18518518518518,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1",
+        "m_2"
+      ],
+      "first_unmatched_moment": "m_3",
+      "exact_mismatch": "1792/27",
+      "E_t01_diff": -2.2005653418366578e-06
+    },
+    {
+      "R": 3,
+      "number_of_modes": 6,
+      "mcm_wavenumber": 60,
+      "epsilon": 746.6666666666666,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1",
+        "m_2",
+        "m_3"
+      ],
+      "first_unmatched_moment": "m_4",
+      "exact_mismatch": "4480/3",
+      "E_t01_diff": 7.232464660500426e-08
+    },
+    {
+      "R": 4,
+      "number_of_modes": 7,
+      "mcm_wavenumber": 420,
+      "epsilon": 22275.0,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1",
+        "m_2",
+        "m_3",
+        "m_4"
+      ],
+      "first_unmatched_moment": "m_5",
+      "exact_mismatch": "44550",
+      "E_t01_diff": -2.5112091295298455e-09
+    },
+    {
+      "R": 5,
+      "number_of_modes": 8,
+      "mcm_wavenumber": 840,
+      "epsilon": 935550.0,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1",
+        "m_2",
+        "m_3",
+        "m_4",
+        "m_5"
+      ],
+      "first_unmatched_moment": "m_6",
+      "exact_mismatch": "1871100",
+      "E_t01_diff": 1.0188849763892449e-10
+    },
+    {
+      "R": 6,
+      "number_of_modes": 9,
+      "mcm_wavenumber": 2520,
+      "epsilon": 54054000.0,
+      "matched_moments": [
+        "kinetic energy m_-1",
+        "m_0",
+        "m_1",
+        "m_2",
+        "m_3",
+        "m_4",
+        "m_5",
+        "m_6"
+      ],
+      "first_unmatched_moment": "m_7",
+      "exact_mismatch": "108108000",
+      "E_t01_diff": -4.8552273312907346e-12
+    }
+  ],
+  "r1_equal_initial": {
+    "E": 1.0,
+    "J": 7.5,
+    "kinetic_energy": 0.3559027777777778,
+    "ell": 0.3651483716701107
+  },
+  "r1_distinguishing": {
+    "m2_plus": 91.0925925925926,
+    "m2_minus": 85.9074074074074,
+    "ell_dot_log_plus": 0.13937037037037037,
+    "ell_dot_log_minus": 0.1186296296296296,
+    "ell_t01_plus": 0.37030170539173596,
+    "ell_t01_minus": 0.3695326081807112,
+    "E_t01_plus": 0.9565939016528078,
+    "E_t01_minus": 0.9565059965383668
+  },
+  "tracers": {
+    "y0": 0.31,
+    "t": 0.2,
+    "dx_plus": 0.2140758272551721,
+    "dx_minus": 0.21415159546510623,
+    "dx_plus_phase_changed": 0.34127064491624476
+  },
+  "explanation": "exact NS shear u=(U(y,t),0,0), all frequencies present, all phases equal; finite moments m_-1,m_0,...,m_R insufficient with unbounded finite spectral support; for fixed K, K moments exactly sufficient for mirror/E by Vandermonde. Tracer requires phases as well. Does not imply NS3D general regularity."
+}

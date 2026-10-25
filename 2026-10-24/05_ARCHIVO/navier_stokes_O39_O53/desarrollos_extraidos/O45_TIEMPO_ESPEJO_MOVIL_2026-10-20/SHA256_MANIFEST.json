@@ -1,0 +1,18 @@
+{
+  "O45_TIEMPO_ESPEJO_MOVIL_RITMOS_NS_2026-10-20.md": {
+    "sha256": "b4fa6fca90daff75fcaf46c5e0dcf631e00fdac26cdc058ae3c7e20c71cfaf32",
+    "bytes": 23484
+  },
+  "O45_VERIFICACION.json": {
+    "sha256": "7234694074b7d79699e77d2a0632078b4cc5a2479c0a08fc5fbda4a563dc1981",
+    "bytes": 318
+  },
+  "README.md": {
+    "sha256": "320ea90a02ab920ce10509e2988109244e8930d7d542869245417686c2c36fc3",
+    "bytes": 1221
+  },
+  "verificar_O45_espejo_ritmos_NS.py": {
+    "sha256": "804658fa234e81b1c00919caac441ee527e524fa01f114b060490d221cf13f4e",
+    "bytes": 5924
+  }
+}

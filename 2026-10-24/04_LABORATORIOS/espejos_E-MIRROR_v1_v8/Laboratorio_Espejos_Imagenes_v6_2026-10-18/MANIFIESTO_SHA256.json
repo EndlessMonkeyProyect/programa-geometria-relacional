@@ -1,0 +1,19 @@
+{
+  "proyecto": "E-MIRROR v6",
+  "sha256": {
+    "01_camara_temporal_2D.png": "682db367f89010a69c639cd8068ba44e64d38b195603c2bf8c897f2b175108f0",
+    "02_interferencia_en_mitad.png": "67b50d1d027267108793cf49f29a024a28180561086bd5a12ae4cfa346e45630",
+    "03_fase_y_observabilidad.png": "0787730103f840b14317183470df023e42dfd924ee38a716d961fddc7b96f7b7",
+    "04_paridad_y_robustez.png": "864c7878ea96823b3b9811bb6ed504ecac38ed4734700e50ea5335ec5ba26173",
+    "05_franjas_subescala.png": "5666425bd549f24ff94f90f9ea943e5af374cc5f9fdcc879f4cbb237312c3dc6",
+    "HALLAZGO.es.md": "fa60b7a17c75afa705a7d60c16a93013b76c1f897749c28b4558df3fd1898cfc",
+    "PENDIENTE_LABORATORIO_ESFERAS.es.md": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+    "PRUEBAS.txt": "3e9f5b4673d305f09dbdfca6044fadbe8e1f1c7b7f920d0b3c134cb034b31287",
+    "README.es.md": "70893864d1f46362d4740e14dba820b7ca46fb65f47f9459abb2e1737bd61457",
+    "controles_v6.json": "e5782b3bfd2ceefeda792da4dc20a20e726d2544ecdabbe995cdbab2af004ab7",
+    "controles_v6.py": "e13659d906bbf5814d93784b53d15c4868431eb904d6eeef13acf6f327262028",
+    "espejos_v6.py": "3ae4c839944132177eed715dac33d1944343c6732c0a930243907f9ad84a51b5",
+    "resultados_v6.json": "7447d445442030f3aedd9ac3c23f9a724e7ab9a4119fba1c2fc2cfb676418331",
+    "test_espejos_v6.py": "bba7ee180c15fdd1bb200887cbed1eb6059cbfab8d122edf39109f230f33348e"
+  }
+}

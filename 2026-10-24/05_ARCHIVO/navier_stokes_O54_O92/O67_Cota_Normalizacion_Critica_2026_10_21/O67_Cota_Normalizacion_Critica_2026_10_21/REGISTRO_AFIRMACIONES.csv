@@ -1,0 +1,10 @@
+ID,Estado,Afirmacion,Limite
+O67-O1,POSTULADO,La referencia normalizadora transporta continuidad relacional entre configuraciones,No es ley derivada de NS
+O67-T1,TEOREMA_CLASICO,Cota instantanea del presupuesto positivo ponderado por transferencia modal,Para soluciones suaves con normas bien definidas
+O67-T2,TEOREMA_CLASICO,Barrera F <= C Y^(3/4) Z^(3/4) y Young,No da cota a priori global
+O67-T3,TEOREMA_CONDICIONAL,Y en L2 temporal garantiza continuacion,No demuestra integrabilidad universal
+O67-T4,TEOREMA_CLASICO,Datos pequenos en indice critico chi implican regularidad global en toro sin media,No cubre datos generales
+O67-F1,CONTRAEJEMPLO,Igual energia no implica control universal de enstrofia,Familia exacta de cizallas sin blowup
+O67-F2,OBSTRUCCION_FUNCIONAL,Norma L1 temporal no acota L2 ni L3 temporales,Funciones ejemplo no resuelven NS
+O67-F3,CONTROL_ESPECTRAL,Mismas energias modales pero distinto presupuesto positivo,Estados iniciales no prueba evolutiva global
+O67-A1,ABIERTO,Probar cota integrable universal desde relaciones de fase y normalizador,sin forzamiento 3D

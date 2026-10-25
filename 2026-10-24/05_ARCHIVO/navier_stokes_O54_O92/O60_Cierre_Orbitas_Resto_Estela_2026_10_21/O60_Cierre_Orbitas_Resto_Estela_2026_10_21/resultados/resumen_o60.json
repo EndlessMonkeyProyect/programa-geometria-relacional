@@ -1,0 +1,45 @@
+{
+  "checks": 186,
+  "modelo_D4": "Red finita N x N, reflexión por signos y permutación de coordenadas",
+  "N3": {
+    "B": 4,
+    "A": 4,
+    ".": 1
+  },
+  "contrato_nuevo": "a²+b²+1=N² provisional; no es la única identidad cuadrática del programa",
+  "orbits_3": {
+    "4": 2,
+    "1": 1
+  },
+  "orbits_51": {
+    "8": 300,
+    "4": 50,
+    "1": 1
+  },
+  "orbits_99": {
+    "8": 1176,
+    "4": 98,
+    "1": 1
+  },
+  "3_a_9": {
+    "admisible": false,
+    "k": 3,
+    "deltaA": -20,
+    "deltaB": 28
+  },
+  "3_a_51": {
+    "admisible": true,
+    "k": 17,
+    "deltaA": 0,
+    "deltaB": 288
+  },
+  "3_a_99": {
+    "admisible": true,
+    "k": 33,
+    "deltaA": 544,
+    "deltaB": 544
+  },
+  "ejemplos_examinados": 6,
+  "contraejemplo_optico": "1/3 y 2/3 son órbitas diferentes en dos espejos pero tienen denominador 3",
+  "limites": "No es Navier–Stokes; un canal puede reunir varias órbitas; no demuestra ley dinámica ni a²+b²+1=N² ontológico"
+}

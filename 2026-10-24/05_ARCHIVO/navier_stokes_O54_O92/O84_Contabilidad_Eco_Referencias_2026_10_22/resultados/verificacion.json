@@ -1,0 +1,29 @@
+{
+  "certificados": {
+    "delta": 0.018,
+    "M0_exacto": 0.519488712836196,
+    "M0_cota_inferior_racional": 0.5191089261780351,
+    "M1_cota_superior_analitica": 0.2717247465613107,
+    "M1_cota_superior_racional": 0.282455424,
+    "umbral": 0.5
+  },
+  "campo_3d": {
+    "modos_iniciales": 6,
+    "modos_nuevos": 12,
+    "S_defecto_inicial": 9.0,
+    "R_defecto_inicial": 6.363961030678926
+  },
+  "sobreconteo": {
+    "8": 3.2090876014295135,
+    "32": 10.274675115446392,
+    "128": 38.52781619755021,
+    "512": 151.5403805254173
+  },
+  "cuenta_unica": {
+    "C_estrella": 0.2,
+    "G_estrella": 0,
+    "int_Q": 0.12642411176571153,
+    "umbral": 0.5
+  },
+  "checks": 75
+}

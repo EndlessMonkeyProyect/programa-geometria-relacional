@@ -1,0 +1,5 @@
+O29 | VERIFICACIONES SUPERADAS: 373
+Flujos exactos (t=0): misma circulación/centro/radio; distintas orientaciones:
+  Ω_long=1/(3π)= 0.1061032953945969  Ω_trans=1/(5π)= 0.06366197723675814
+Acoplamiento sin K ajustado: integral transversal de Biot-Savart.
+Importante: validaciones algebraicas y controles de forma; no DNS, no 3D.

@@ -1,0 +1,78 @@
+{
+  "titulo": "O61 — Relaciones disponibles y ocupacion efectiva en NS 3D",
+  "solucion": "u=(0, A sin(theta)exp(-nu t)cos x, A cos(theta)exp(-nu t)cos x + Re(exp(iy) sum c_m(t)exp(imx)))",
+  "nu": 0.025,
+  "A": 1.0,
+  "B": 1.0,
+  "tiempo_final": 1.26,
+  "checks": 104,
+  "M_reporte": 24,
+  "valor_inicial_E": 0.5,
+  "valor_inicial_H": 0.5,
+  "resultados": {
+    "0": {
+      "angulo_grados": 0.0,
+      "modo_nuevo_amplitud_tfinal": 0.0,
+      "energia_tfinal": 0.46947173684456667,
+      "enstrofia_tfinal": 0.46947173684456667,
+      "acoplamiento_inicial": 0.0,
+      "residuo_energia": 3.469446951953614e-18
+    },
+    "0.523598775598": {
+      "angulo_grados": 29.999999999999996,
+      "modo_nuevo_amplitud_tfinal": 0.28191506080571155,
+      "energia_tfinal": 0.4685412807172349,
+      "enstrofia_tfinal": 0.5120269667135942,
+      "acoplamiento_inicial": 0.49999999999999994,
+      "residuo_energia": 2.0816681711721685e-17
+    },
+    "1.57079632679": {
+      "angulo_grados": 90.0,
+      "modo_nuevo_amplitud_tfinal": 0.48586684068557556,
+      "energia_tfinal": 0.46578223304971345,
+      "enstrofia_tfinal": 0.6367219921708981,
+      "acoplamiento_inicial": 1.0,
+      "residuo_energia": 5.551115123125783e-17
+    }
+  },
+  "convergencia_M": {
+    "0": {
+      "M6_a_M12": {
+        "E": 0.0,
+        "H": 0.0,
+        "sideband": 0.0
+      },
+      "M12_a_M24": {
+        "E": 5.551115123125783e-17,
+        "H": 5.551115123125783e-17,
+        "sideband": 0.0
+      }
+    },
+    "0.523598775598": {
+      "M6_a_M12": {
+        "E": 1.3322676295501878e-15,
+        "H": 4.218847493575595e-15,
+        "sideband": 1.3322676295501878e-15
+      },
+      "M12_a_M24": {
+        "E": 2.220446049250313e-15,
+        "H": 2.55351295663786e-15,
+        "sideband": 2.1649348980190553e-15
+      }
+    },
+    "1.57079632679": {
+      "M6_a_M12": {
+        "E": 1.9884094371036554e-13,
+        "H": 4.3556935835908916e-11,
+        "sideband": 1.8746115770795768e-13
+      },
+      "M12_a_M24": {
+        "E": 3.4416913763379853e-15,
+        "H": 3.3306690738754696e-16,
+        "sideband": 3.0531133177191805e-15
+      }
+    }
+  },
+  "acoplamiento_objetivo_rotaciones": true,
+  "alcance": "Subclase invariante exacta de NS 3D en el toro periodico; evolucion modal mediante truncacion convergente, no es el anillo O53, y no demuestra ley cuadratica O60."
+}

@@ -2,6 +2,14 @@
 
 [Read this repository in English](README.en.md).
 
+## Edición actual: 24 de octubre de 2026
+
+La [edición ordenada](2026-10-24/00_LEER_PRIMERO.md) reúne el hilo integrado, las realizaciones, las tres ramas de investigación, laboratorios y archivo histórico. El [manuscrito público](2026-10-24/00_PUBLICACION/Programa_Geometria_Relacional_Manuscrito_Publico_2026-10-24.md) y el [suplemento sobre ritmo, tiempo y gravedad](2026-10-24/01_HILO/SUPLEMENTOS/Suplemento_Ritmo_Ciclo_Base_Tiempo_y_Gravedad_2026-10-24.md) forman parte del paquete.
+
+La [guía en inglés](2026-10-24/00_READ_FIRST.en.md) enlaza las traducciones principales. El manifiesto de esta edición verifica 1.047 archivos; el ZIP original se conserva como archivo de distribución.
+
+## Edición conceptual anterior: 0.1.0
+
 **Edición conceptual 0.1.0 · 29 de septiembre de 2026**  
 **Autor del programa en las fuentes:** Le Matt Ansatz Di Ego  
 **Organización y revisión editorial:** elaboradas con asistencia de IA a partir de los archivos aportados.

@@ -1,0 +1,29 @@
+{
+  "archivos": {
+    "README.es.md": "e982390a0c40d5f2677d8420d3c81b3ca2ac9b28193ace9c2f7d720ac978920e",
+    "base_v1/MANIFIESTO.json": "1f5738ee8f9e0c621cb6dd6686c373e72563c5174ee6d5da98f2f571f83e289b",
+    "base_v1/PENDIENTE_LABORATORIO_ESFERAS.es.md": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+    "base_v1/README.es.md": "487109260d27577dd66208a43e636f1d0245686df54e2dff1be458ea4d1e49da",
+    "base_v1/laboratorio.py": "811ceada3b34f802f5545e27146f9e86834156c1bc99a0435b9b6bb752741b20",
+    "base_v1/resultados.json": "ca921fec65794c273320c76dcb3818143d6a209bdc15f41a5cb3302ededf08ec",
+    "base_v1/test_laboratorio.py": "271e444e38566a2c453cdca126491340f5b5658ddb8ad580815ceeccf970c73c",
+    "figura_enfoque.png": "7dba3216f670826a84aff9b06342ff1b91bb3c58424571387914fc6d39a842cf",
+    "figura_observabilidad.png": "ca8dd9fd51f802e433ba7234118ab42cd6ddaa92954de090b48f85872004f5e3",
+    "laboratorio_deformaciones.py": "26af8f0664f1542ae527bb60d2027995a70cac0a0197dc31c483c85310e5d60a",
+    "resultados_v2.json": "72b2591b4524d7a5ab8426d4d54f2dd74bdbb7e4d18eee26e516464b24ee3492",
+    "test_deformaciones.py": "a95d7d56cd460b484ccb07093b115160ceeb0992147d30a92c136037439cb7b8"
+  },
+  "fecha": "2026-10-18",
+  "fuentes_externas_sin_modificar": {
+    "Laboratorio_Espejos_Orientacion_v1_2026-10-18.zip": "4839ffe45f53e67b770c2c16616cb66e1a4575406e7b4d4b59910f9ab8d11fca",
+    "Programa_Geometria_Relacional_v3_4_1_FUENTES_ORIGINALES_2026-10-18.zip": "a165abc36a45cfd52f3d337d45c6e4e34633dca972c38f32332b37512197946a",
+    "Programa_Geometria_Relacional_v3_4_1_IMAGEN_INTEGRAL_CANDIDATA_2026-10-18.zip": "4256a2e890c62def294bafb0a3ee6f4c95d9740b83f2d0745b0054d379b05f33"
+  },
+  "pruebas": {
+    "total": 24,
+    "v1": 8,
+    "v2": 16
+  },
+  "tipo": "extension independiente y reproducible",
+  "version": "E-MIRROR-deformaciones-v2"
+}

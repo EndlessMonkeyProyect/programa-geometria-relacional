@@ -1,0 +1,9 @@
+id,tipo,afirmacion,limite
+O77.1,D,"La clase NS axisimétrica sin giro azimutal es invariante y eta=omega_theta/r obedece transporte-difusión 5D","Resultado clásico; no NS general"
+O77.2,D,"Psi=r² A exp(-Q) construye un campo liso solenoidal localizado","El perfil toroidal contiene lóbulos secundarios"
+O77.3,D,"El término de transporte es A² exp(-2Q) N y el coeficiente de z³ de N vale 16 beta³","Sólo para la familia escrita"
+O77.4,D,"Ninguna evolución diferenciable de sus cinco parámetros reproduce exactamente NS para A≠0 beta>0","No excluye toda familia finita alternativa"
+O77.5,E,"Residuo relativo de transporte ~0.798923 en dos cuadraturas; residuo de RHS ~0.322374 para nu=.025","Proyección instantánea; depende de familia y dominio"
+O77.6,D,"El vórtice plano Lamb–Oseen posee semilla exacta de ancho y circulación","Columna no anillo; energía no finita en R³"
+O77.7,D,"La simetría D4 preserva exactamente los campos toroidales axisimétricos","No reduce un perfil meridiano a cinco parámetros"
+O77.8,H,"Jerarquía adicional de perfiles podría aproximar o controlar el defecto de cierre","Sin derivación del múltiplo ontológico ni prueba universal"

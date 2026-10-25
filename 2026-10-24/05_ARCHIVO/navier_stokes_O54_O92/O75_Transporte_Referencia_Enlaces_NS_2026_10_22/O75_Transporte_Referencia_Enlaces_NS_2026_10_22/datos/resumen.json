@@ -1,0 +1,48 @@
+{
+  "titulo": "O75 — Transporte material y cierre de enlaces",
+  "fecha": "2026-10-22",
+  "NU": 0.05,
+  "U": 1.0,
+  "condicion": "Ciclo de estiramientos direccionales F(X_i,t) entrantes/salientes",
+  "TG_dlogH_0": -1.9999999999999998,
+  "TG_partes": [
+    -2.0,
+    1.2246467991473532e-16,
+    -7.498798913309288e-33,
+    1.2246467991473532e-16
+  ],
+  "ABC_dlogH_0": -0.6718085063988544,
+  "ABC_partes": [
+    -0.9727262529467133,
+    0.09462915624159753,
+    0.11387850221987382,
+    0.09241008808638762
+  ],
+  "resumen_casos": {
+    "TG": {
+      "H0": 1.0,
+      "H_final": 0.17881986965807267,
+      "area_rel_final": 1.0,
+      "dlogH_0": -1.9999999999999996,
+      "max_detF_error": 1.4314549545701993e-11
+    },
+    "ABC": {
+      "H0": 1.0,
+      "H_final": 0.4237641183155323,
+      "area_rel_final": 0.8041382871225973,
+      "dlogH_0": -0.6718085063988544,
+      "max_detF_error": 4.064859560060086e-12
+    }
+  },
+  "pruebas_aprobadas": 1238,
+  "grupos": [
+    "NS exacta TG",
+    "NS exacta ABC",
+    "H transportada por F",
+    "volumen local",
+    "vorticidad transportada con difusion",
+    "telescopía uniforme",
+    "contraejemplo cizalla invisible a primer orden"
+  ],
+  "interpretacion": "No es demostracion de regularidad ni invariancia universal de holonomia."
+}

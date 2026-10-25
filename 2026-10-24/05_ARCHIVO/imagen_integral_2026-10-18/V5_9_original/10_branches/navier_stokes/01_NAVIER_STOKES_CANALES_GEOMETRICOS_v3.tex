@@ -1,0 +1,611 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.25cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newpxtext,newpxmath}
+\usepackage{microtype}
+\usepackage{amsmath,mathtools}
+\usepackage{booktabs,tabularx,array,longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{mdframed}
+\usepackage{bm}
+
+\definecolor{ink}{HTML}{1F2933}
+\definecolor{muted}{HTML}{5B6770}
+\definecolor{rule}{HTML}{B8C2CC}
+\definecolor{linkc}{HTML}{315C7A}
+\definecolor{boxbg}{HTML}{F5F7F9}
+\hypersetup{colorlinks=true,linkcolor=linkc,urlcolor=linkc,citecolor=linkc,
+  pdfauthor={Le Matt Ansatz Di Ego},
+  pdftitle={Canales geometricos de amplificacion de vorticidad}}
+\color{ink}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.58em}
+\setstretch{1.035}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily Canales geométricos de amplificación de vorticidad}
+\fancyhead[R]{\small\sffamily Septiembre 2026}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\Large\bfseries\sffamily}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\sffamily}{\thesubsection.}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\sffamily}{\thesubsubsection.}{0.6em}{}
+
+\newcommand{\Dt}{D_t}
+\newcommand{\Pperp}{P_{\xi}^{\perp}}
+\newcommand{\rhoT}{\rho_{\perp}}
+\newcommand{\Scal}{\mathcal S}
+\newcommand{\Dcal}{\mathcal D_{\perp}}
+\newcommand{\Lcal}{\Lambda_{\perp}}
+
+\newenvironment{statusbox}{\begin{mdframed}[backgroundcolor=boxbg,linecolor=rule,linewidth=0.6pt,roundcorner=2pt,innerleftmargin=10pt,innerrightmargin=10pt,innertopmargin=8pt,innerbottommargin=8pt]}{\end{mdframed}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries\sffamily Canales geométricos de amplificación de vorticidad}\par
+\vspace{0.35em}
+{\Large\sffamily Descomposición material exacta, presupuestos tipo BKM y benchmarks singulares generados por IA}\par
+\vspace{0.65em}
+{\normalsize\sffamily Estatus técnico y puentes del programa relacional en Navier--Stokes y Euler}\par
+\vspace{1em}
+{\large Le Matt Ansatz Di Ego}\par
+{\small Septiembre de 2026}\par
+\end{center}
+
+\vspace{0.55em}\hrule\vspace{0.8em}
+
+\textbf{Resumen.} Este trabajo organiza la dinámica material de la vorticidad tridimensional en un sistema de coordenadas que separa amplificación de magnitud y cambio de dirección, distingue escasez transversal de cancelación transversal y propone una partición euleriana del presupuesto de crecimiento extremo por canales geométricos. El punto de partida es exacto: para $\omega=q\xi$,
+\[
+\frac{\Dt\omega}{q}=a\xi+b,\qquad a=\Dt\log q,\qquad b=\Dt\xi\perp\xi.
+\]
+La coordenada de crecimiento $dG=a\,dt$ convierte el problema en una pregunta sobre cuánto cambio transversal puede sostenerse por unidad de amplificación. Introduciendo $\Scal=\Dt^2\omega/q$ se obtiene la ley exacta
+\[
+\boxed{\Pperp\frac{db}{dG}=\frac{\Scal_\perp}{a}-2b},
+\]
+que separa la cinemática universal de la fuente dinámica transversal. En Euler, $\Scal=-P\xi$ por la relación de Ohkitani, conectando directamente el marco con la formulación de Gibbon--Holm--Kerr--Roulstone. En Navier--Stokes, viscosidad, forzamiento y Hessiano de presión completan el presupuesto.
+
+La contribución central no se presenta como una nueva ecuación de fluidos ni como una prueba de regularidad. Se presenta como un marco diagnóstico integrado con cuatro salidas concretas: (i) una descripción exacta en coordenadas de crecimiento; (ii) una factorización que separa escasez transversal de cancelación; (iii) una partición de tipo BKM que pregunta qué canal geométrico transporta el presupuesto de singularidad; y (iv) una escalera de benchmarks que va de Burgers y Restricted Euler a DNS y a las construcciones explícitas de blowup publicadas por OpenAI para Euler y Navier--Stokes. El objetivo técnico que emerge es preciso: determinar si el crecimiento extremo se concentra sistemáticamente en un canal geométrico y, si lo hace, qué término dinámico lo crea, lo conserva o lo destruye. El registro computacional se mantiene explícito: una pantalla de $100{,}000$ puntos, auditorías FD4 de los estados 961 y 995, presupuestos de crecimiento $G=0.06853$ y $0.05136$, y un control de Restricted Euler con $200/200$ trayectorias alcanzando el evento numérico permiten distinguir resultados reproducidos, sensibilidad metodológica y mecanismos todavía pendientes.
+
+\section{Qué establece este trabajo}
+
+\begin{statusbox}
+\textbf{Estatus alcanzado.} El trabajo establece un sistema de coordenadas materiales exacto y una partición operacional de mecanismos. También propone una cantidad euleriana compatible con el criterio de Beale--Kato--Majda en Euler. Lo que todavía no existe es una desigualdad nueva que imponga regularidad o blowup. La apuesta matemática es que los benchmarks singulares explícitos permitan decidir si la partición contiene una restricción no trivial o si sólo constituye una buena descripción.
+\end{statusbox}
+
+La pregunta no es ya ``¿el bajo giro regulariza?''. Esa formulación es demasiado pobre: Burgers y Restricted Euler muestran que una vorticidad casi perfectamente alineada puede coexistir con dinámicas radicalmente distintas. La pregunta que sobrevive es más fina:
+
+\begin{quote}
+\textbf{¿En qué canal geométrico se concentra el crecimiento extremo de la vorticidad, y qué términos firmados sostienen ese canal?}
+\end{quote}
+
+Esta reformulación produce un puente directo entre geometría de la dirección de vorticidad, dinámica del Hessiano de presión, criterios de continuación tipo BKM, DNS y construcciones singulares explícitas.
+
+\section{Descomposición material exacta}
+
+Consideremos Navier--Stokes incompresible forzado,
+\[
+\partial_tu+(u\cdot\nabla)u+\nabla p=\nu\Delta u+f,
+\qquad \nabla\cdot u=0,
+\]
+y la vorticidad $\omega=\nabla\times u$. Con $S=(\nabla u+\nabla u^T)/2$,
+\[
+\Dt\omega=S\omega+\nu\Delta\omega+\nabla\times f.
+\]
+En $q=|\omega|>0$, escribimos
+\[
+\omega=q\xi,\qquad |\xi|=1.
+\]
+Entonces
+\[
+\Dt\omega=(\Dt q)\xi+q\Dt\xi.
+\]
+Definimos
+\[
+a:=\Dt\log q,\qquad b:=\Dt\xi.
+\]
+Como $\xi\cdot b=0$,
+\[
+\boxed{\frac{\Dt\omega}{q}=a\xi+b},
+\qquad
+\boxed{\frac{|\Dt\omega|^2}{q^2}=a^2+|b|^2}.
+\]
+
+$a$ mide amplificación logarítmica a lo largo de la referencia direccional actual; $b$ mide giro material transversal. Para $a>0$ introducimos
+\[
+\rhoT:=\frac{|b|^2}{a^2+|b|^2},
+\qquad
+\mathscr R:=\frac{|b|^2}{a^2}.
+\]
+$\rhoT$ no es un criterio de regularidad. Es una coordenada de reparto entre amplificación y cambio de dirección.
+
+\section{La coordenada de crecimiento}
+
+Definimos
+\[
+\Omega:=\frac{|\Dt\omega|}{q}=\sqrt{a^2+|b|^2},
+\]
+y, cuando $a>0$,
+\[
+a=\Omega\cos\theta,\qquad |b|=\Omega\sin\theta,
+\qquad \rhoT=\sin^2\theta.
+\]
+Si $dN=\Omega\,dt$ cuenta cambio material normalizado, entonces
+\[
+dG=d\log q=a\,dt=\cos\theta\,dN.
+\]
+Por tanto, en un intervalo $I=[t_1,t_2]$,
+\[
+\boxed{G(I)=\log\frac{q(t_2)}{q(t_1)}=\int_I a\,dt.}
+\]
+Y dentro de un canal $\rhoT<\eta$,
+\[
+\sqrt{1-\eta}\,\Delta N<G\le \Delta N.
+\]
+
+La utilidad de $G$ es que elimina parte del ruido cronológico: mide cuántos e-folds de vorticidad se acumulan mientras el sistema mantiene una determinada geometría material.
+
+\section{La fuente dinámica transversal: de $\mathcal Y$ a $\Scal$}
+
+La variable natural para separar cinemática y dinámica es
+\[
+\Scal:=\frac{\Dt^2\omega}{q}.
+\]
+Sea
+\[
+\mathcal V:=\frac{\Dt\omega}{q}=a\xi+b.
+\]
+Como
+\[
+\Dt\mathcal V=\Scal-a\mathcal V,
+\]
+y también
+\[
+\Dt\mathcal V=(\Dt a)\xi+a b+\Dt b,
+\]
+al proyectar ortogonalmente a $\xi$ se obtiene
+\[
+\boxed{\Pperp\Dt b=\Scal_\perp-2ab.}
+\]
+En coordenadas de crecimiento,
+\[
+\boxed{\Pperp\frac{db}{dG}=\frac{\Scal_\perp}{a}-2b.}
+\]
+
+Ésta es la identidad dinámica central del trabajo. El coeficiente $2$ no se interpreta como un umbral físico universal; es la contribución cinemática inducida por la normalización y por el uso de $G$. La información física reside en la proyección firmada de $\Scal_\perp$ sobre la dirección transversal que ya existe.
+
+Para $b\neq0$,
+\[
+\boxed{
+\frac{d\log|b|}{dG}
+=\frac{\widehat b\cdot\Scal_\perp}{a|b|}-2.
+}
+\]
+El signo de esta derivada dice si el cambio transversal gana o pierde amplitud por unidad de crecimiento de vorticidad. Esta forma evita asignar significado físico a un umbral que depende de la variable auxiliar escogida.
+
+\subsection{Expansión de $\Scal$ en Navier--Stokes}
+
+Definamos
+\[
+r:=\frac{\nu\Delta\omega+\nabla\times f}{q},
+\qquad
+\frac{\Dt\omega}{q}=S\xi+r.
+\]
+Usando la ecuación del gradiente de velocidad y $W\xi=0$ para la parte antisimétrica $W$ de $\nabla u$, se obtiene
+\[
+\boxed{
+\Scal
+=-P\xi+\nu(\Delta S)\xi+Sr+
+\frac{\Dt(qr)}{q}+(\operatorname{sym}\nabla f)\xi,
+}
+\]
+donde $P=\nabla\nabla p$ es el Hessiano de presión. Esta identidad localiza con precisión qué objetos pueden crear o destruir giro transversal. También muestra por qué medir $\Scal$ completa en DNS grueso es numéricamente exigente: $\Dt(qr)$ contiene, al expandirse, derivadas espaciales muy altas.
+
+\section{Puente exacto con Euler: Ohkitani y la dinámica del Hessiano de presión}
+
+En Euler no forzado, $\nu=0$ y $r=0$, de modo que la relación de Ohkitani da
+\[
+\boxed{\Dt^2\omega=-P\omega},
+\qquad
+\boxed{\Scal=-P\xi}.
+\]
+Entonces
+\[
+\boxed{
+\Pperp\frac{db}{dG}
+=-\frac{\Pperp P\xi}{a}-2b.
+}
+\]
+Este resultado no se presenta como una nueva identidad de Euler: es una reorganización de la dinámica lagrangiana clásica estudiada por Ohkitani y por Gibbon, Holm, Kerr y Roulstone. El aporte aquí es integrarla al mismo sistema de coordenadas usado después en Navier--Stokes y al presupuesto de canales definido más adelante.
+
+Con
+\[
+\alpha=a,\qquad \tau=b,\qquad
+\beta:=\frac{\tau}{\alpha},
+\qquad
+\alpha_p:=\xi\cdot P\xi,
+\qquad
+\Pi_\perp:=\frac{\Pperp P\xi}{\alpha^2},
+\]
+se obtiene, para $\alpha>0$ y $\beta\neq0$,
+\[
+\boxed{
+\frac{d|\beta|}{dG}
+=-|\beta|\left(1+|\beta|^2-\frac{\alpha_p}{\alpha^2}\right)
+-\widehat\beta\cdot\Pi_\perp.
+}
+\]
+La proyección \emph{firmada} del Hessiano anisótropo importa. Una cota basada sólo en $|\Pi_\perp|$ pierde la información necesaria para distinguir entrada y salida del canal.
+
+\section{Restricted Euler como calibración exacta}
+
+Restricted Euler reemplaza el Hessiano de presión anisótropo por su parte isotrópica. En esa reducción,
+\[
+\Pi_\perp\equiv0,
+\]
+y la ecuación de $|\beta|$ se cierra localmente.
+
+En la cola autosimilar de Vieillefosse, bajo la asíntota
+\[
+\frac{\alpha_p}{\alpha^2}\to-2,
+\qquad |\beta|\to0,
+\]
+la ecuación anterior da
+\[
+\frac{d|\beta|}{dG}\sim-3|\beta|.
+\]
+Por tanto,
+\[
+|\beta|\sim e^{-3G}.
+\]
+En el perfil con $\alpha\sim(T-t)^{-1}$,
+\[
+G\sim-\log(T-t),
+\]
+y entonces
+\[
+\boxed{\rhoT\sim |\beta|^2\propto(T-t)^6.}
+\]
+
+Esta calibración es importante porque convierte la tendencia hacia el canal casi paralelo en una tasa analítica dentro de un modelo singular. También identifica lo que Restricted Euler elimina: la proyección transversal no local del Hessiano de presión.
+
+\section{Escasez transversal y cancelación transversal}
+
+Proyectando la ecuación de vorticidad de Navier--Stokes,
+\[
+b=\tau+r_\perp,
+\qquad
+\tau:=\Pperp S\xi,
+\qquad
+r_\perp:=\Pperp r.
+\]
+Sea
+\[
+T:=|\tau|,\qquad R:=|r_\perp|.
+\]
+Definimos
+\[
+\Dcal:=\frac{|b|}{T+R},
+\qquad
+\Lcal:=\frac{T+R}{a},
+\]
+para $a>0$ y $T+R>0$. Entonces, por construcción,
+\[
+\boxed{\frac{|b|}{a}=\Dcal\Lcal},
+\qquad
+\boxed{\rhoT=\frac{(\Dcal\Lcal)^2}{1+(\Dcal\Lcal)^2}}.
+\]
+
+La factorización separa dos geometrías que producen el mismo $\rhoT$ pequeño:
+\begin{itemize}[leftmargin=1.5em]
+\item \textbf{escasez transversal}: $\Lcal\ll1$;
+\item \textbf{cancelación transversal}: $\Dcal\ll1$ con $T+R$ no pequeño.
+\end{itemize}
+
+En Euler, $r=0$ y, siempre que $\tau\neq0$,
+\[
+\Dcal=1.
+\]
+Por tanto, Euler elimina exactamente el canal de cancelación viscosidad/forzamiento--strain. Esto convierte a Euler en un control natural: cualquier estado casi paralelo allí debe ser de escasez/alineamiento, no de cancelación de dos contribuciones transversales distintas.
+
+\section{El canal que falta: una partición euleriana compatible con BKM}
+
+La descomposición lagrangiana permite diagnosticar trayectorias, pero una singularidad puede formarse porque el supremo migra entre trayectorias y escalas. Por eso proponemos una cantidad euleriana.
+
+Para un umbral fijo $0<\eta<1$, definimos
+\[
+E_\eta^{<}(t)=\{x:q(x,t)>0,\ \rhoT(x,t)<\eta\},
+\]
+\[
+E_\eta^{\ge}(t)=\{x:q(x,t)>0,\ \rhoT(x,t)\ge\eta\}.
+\]
+Con la convención $\sup\varnothing=0$,
+\[
+M_\eta^{<}(t):=\sup_{E_\eta^{<}(t)}|\omega(x,t)|,
+\qquad
+M_\eta^{\ge}(t):=\sup_{E_\eta^{\ge}(t)}|\omega(x,t)|.
+\]
+
+\begin{statusbox}
+\textbf{Proposición - Partición exacta del supremo.} Para todo tiempo en que las cantidades estén definidas,
+\[
+\boxed{\|\omega(t)\|_\infty
+=\max\{M_\eta^{<}(t),M_\eta^{\ge}(t)\}.}
+\]
+Si
+\[
+\mathfrak B_\eta^{<}(T):=\int_0^T M_\eta^{<}(t)\,dt,
+\qquad
+\mathfrak B_\eta^{\ge}(T):=\int_0^T M_\eta^{\ge}(t)\,dt,
+\]
+entonces
+\[
+\int_0^T\|\omega(t)\|_\infty dt
+\le
+\mathfrak B_\eta^{<}(T)+\mathfrak B_\eta^{\ge}(T)
+\le
+2\int_0^T\|\omega(t)\|_\infty dt.
+\]
+\end{statusbox}
+
+En Euler, donde el criterio de Beale--Kato--Majda liga continuación suave con la integrabilidad temporal de $\|\omega\|_\infty$, esta partición tiene una lectura inmediata: si el presupuesto BKM diverge, al menos uno de los dos canales debe divergir. La pregunta deja de ser filosófica y se vuelve medible:
+
+\begin{quote}
+\textbf{¿El presupuesto de singularidad vive predominantemente en el canal casi paralelo $\rhoT<\eta$ o fuera de él?}
+\end{quote}
+
+El umbral $\eta$ es convencional. La información no reside en un valor privilegiado, sino en la estabilidad del diagnóstico al variar $\eta$ y la resolución.
+
+\section{Benchmarks exactos: lo que ya sabemos que el canal debe soportar}
+
+\subsection{Burgers: bajo giro no implica bajo crecimiento}
+
+El vórtice clásico de Burgers tiene dirección axial constante, de modo que
+\[
+b=0,\qquad \rhoT=0,
+\]
+y sin embargo puede acumular crecimiento positivo de vorticidad a lo largo de trayectorias. Para el perfil estándar,
+\[
+G=\frac{\gamma(r_1^2-r_2^2)}{4\nu}.
+\]
+Esto excluye cualquier afirmación universal que identifique bajo giro con una cota puntual positiva sobre el crecimiento. La salvedad clásica es que el Burgers estándar en $\mathbb R^3$ no tiene energía total finita.
+
+\subsection{Restricted Euler: alineamiento extremo y singularidad}
+
+La tasa $\rhoT\propto(T-t)^6$ derivada arriba muestra que un modelo singular puede entrar profundamente en el canal casi paralelo. Por tanto, el canal no es un sinónimo de regularidad. Su valor está en discriminar mecanismos, no en etiquetar por sí solo el destino de la solución.
+
+\section{JHTDB: registro de los cómputos y de los puntos encontrados}
+
+La rama computacional no se limita a una observación cualitativa. Existe un registro concreto de búsqueda, puntos seleccionados, auditorías cruzadas y presupuestos de crecimiento. Es importante conservar esos números porque son los que motivaron la separación posterior entre geometría observada, mecanismo reconstruido y cantidad PDE todavía pendiente.
+
+\subsection{Pantalla de 100.000 puntos en vorticidad extrema}
+
+La exploración inicial usó \texttt{isotropic1024coarse} de JHTDB, turbulencia homogénea e isotrópica forzada. En una pantalla de $100{,}000$ puntos a $t=1$ se obtuvieron
+\[
+q_{99}=71.6406,\qquad
+q_{99.5}=84.4035,\qquad
+q_{99.9}=122.6584,
+\]
+con máximo muestreado
+\[
+q_{\max}=277.9013.
+\]
+La cola de bajo giro material no desapareció dentro del estrato de mayor vorticidad inspeccionado. Después de la etapa de selección/estabilidad quedaron $437$ estados de crecimiento positivo en la tabla extrema. Para el umbral descriptivo $\rhoT<0.05$, los conteos por estrato fueron
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Estrato de $q$ & casos $\rhoT<0.05$ & total & IC Wilson 95\% \\
+\midrule
+99--99.5 percentil & 1 & 205 & 0.086--2.711\% \\
+99.5--99.9 percentil & 0 & 185 & 0--2.034\% \\
+99.9--100 percentil & 2 & 47 & 1.175--14.249\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Estos conteos son descriptivos de la muestra retenida, no estimadores poblacionales. Para $\rhoT<0.10$, la comparación Fisher entre el $0.1\%$ superior y el resto dio $p=0.3351518$: no hay evidencia estadística, con estos conteos, de una depleción monotónica de estados casi paralelos en la cola extrema.
+
+\subsection{Dos puntos auditados: 961 y 995}
+
+Los estados 961 y 995 fueron sometidos a reconstrucciones independientes de vorticidad mediante diferencias finitas de cuarto orden a partir del campo de velocidad. El registro que debe acompañar cualquier lectura del mecanismo es
+
+\begin{center}
+\begin{tabular}{rrrrrr}
+\toprule
+ID & $q$ m2q8 & $q$ FD4 & $\rhoT$ m2q8 & $\rhoT$ FD4 7pt & $\rhoT$ FD4 5pt \\
+\midrule
+995 & 226.526 & 223.441 & 0.0168 & 0.0715 & 0.0465 \\
+961 & 146.673 & 146.364 & 0.0423 & 0.0404 & 0.0411 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+El punto 961 es estable entre las reconstrucciones mostradas en $t=1$. El punto 995 confirma gran vorticidad y giro pequeño/moderado, pero su clasificación respecto de $\rhoT<0.05$ es sensible al método. Incluso dentro de los ajustes temporales almacenados, 961 en $t=1.002$ cambia de $\rho_7=0.0102$ a $\rho_5=0.0506$. Por eso el trabajo no usa ya un episodio $\rhoT<0.05$ como bandera de robustez entre métodos.
+
+\subsection{Crecimiento acumulado observado}
+
+Los dos intervalos ilustrativos más claros tienen presupuestos exactos de extremo a extremo
+\[
+\boxed{G_{961,[1.000,1.004]}=0.06853},
+\qquad
+\boxed{G_{995,[0.998,1.004]}=0.05136}.
+\]
+Esto corresponde a incrementos de $q$ de aproximadamente $7.1\%$ y $5.3\%$, respectivamente. En estos intervalos, las integrales trapezoidales del $a$ reconstruido difieren del logaritmo exacto de extremos en aproximadamente $-8\%$ y $+4\%$. En otros intervalos auditados el error relativo llegó a $44.5\%$. Por tanto,
+\[
+G=\log(q_2/q_1)
+\]
+se conserva como presupuesto primario; la integral temporal reconstruida funciona sólo como auditoría.
+
+\subsection{Qué mostró realmente el punto 995 sobre cancelación}
+
+En $t=1.000$ para ID 995, la reconstrucción usada en la auditoría dio
+\[
+a=9.645011,\qquad |b|=1.259761,\qquad \Lcal=1.798163,
+\]
+por lo que
+\[
+T+R\simeq a\Lcal\simeq17.3433,
+\qquad
+\Dcal=\frac{|b|}{T+R}\simeq0.073.
+\]
+En el episodio reconstruido, la mediana previa era aproximadamente
+\[
+\operatorname{median}\Dcal\simeq0.10,\qquad
+\operatorname{median}\Lcal\simeq1.82,\qquad
+\operatorname{median}\phi\simeq176^\circ.
+\]
+Numéricamente esto describe un neto transversal pequeño frente a contribuciones transversales reconstruidas mucho mayores y casi opuestas. Sin embargo, aquí está una distinción epistemológica decisiva: en el pipeline actual $r_\perp$ se obtiene a partir de la misma tasa material reconstruida, de modo que $r_\perp=b-\tau$ por construcción. La oposición angular y el pequeño $\Dcal$ no son todavía una medición independiente de cancelación viscosa/forzante.
+
+\begin{statusbox}
+\textbf{Contenido independiente que sí sobrevive.} En estados seleccionados de gran vorticidad, el giro material medido $|b|$ puede ser mucho menor que la actividad transversal asociada al strain reconstruido. Esto es compatible con compensación transversal. Para establecerla como mecanismo físico se debe calcular directamente
+\[
+r_\perp^{\rm PDE}=\Pperp\frac{\nu\Delta\omega+\nabla\times f}{q}
+\]
+y cerrar el presupuesto de la ecuación de vorticidad con incertidumbre reportada.
+\end{statusbox}
+
+\subsection{Restricted Euler como cómputo de control}
+
+El benchmark de Restricted Euler también fue ejecutado, no sólo invocado conceptualmente. Con $200$ matrices iniciales gaussianas de traza cero, las $200/200$ trayectorias alcanzaron el evento numérico $\|A\|=10^6$ dentro del horizonte de integración. Cerca del evento, en $t=T(1-10^{-4})$, la mediana observada fue
+\[
+\boxed{\operatorname{median}\rhoT=4.7416692\times10^{-23}}.
+\]
+La ley exacta para $|\beta|$ fue comparada con una derivada numérica en dos puntos de una trayectoria de control y coincidió a seis decimales:
+\[
+\begin{array}{c|cc}
+ t/T & \text{derivada numérica} & \text{lado derecho exacto}\\
+\hline
+0.7 & -12.851267 & -12.851267\\
+0.9 & -3.023353 & -3.023353
+\end{array}
+\]
+Este resultado no se extrapola a Navier--Stokes. Su función es más concreta: demuestra, dentro de un modelo singular cerrado, que la aproximación extrema al canal casi paralelo puede cuantificarse y que la ecuación de $|\beta|$ reproduce exactamente la dinámica del modelo.
+
+\subsection{Qué aprendimos de los cómputos}
+
+Los números anteriores sostienen cuatro conclusiones limitadas pero no triviales:
+\begin{enumerate}[leftmargin=1.7em]
+\item gran $q$ no excluye estados con $\rhoT$ pequeño en la muestra inspeccionada;
+\item el umbral numérico específico $\rhoT<0.05$ no es robusto entre todos los métodos disponibles y no debe cargar la interpretación;
+\item existen intervalos cortos con crecimiento positivo de $q$ mientras el cambio material permanece predominantemente paralelo;
+\item la descomposición reconstruida sugiere compensación transversal, pero su confirmación física exige un residual PDE calculado independientemente.
+\end{enumerate}
+
+Estas observaciones son precisamente las que llevaron a abandonar una conjetura basada en un umbral puntual y a formular la partición euleriana del presupuesto extremo. Los cómputos no son un apéndice del marco: son el filtro que determinó qué afirmaciones sobrevivieron.
+
+\section{Los resultados de IA como benchmark adversarial independiente}
+
+En septiembre de 2026 OpenAI publicó dos construcciones que cambian el paisaje de pruebas disponible. Para Euler, el manuscrito exhibe blowup en tiempo finito para datos iniciales suaves, compactamente soportados y sin forzamiento, y demuestra la divergencia del presupuesto BKM. La construcción itera amplificación a través de escalas y tiempos anidados. Para Navier--Stokes, OpenAI publicó una construcción con viscosidad positiva, velocidad inicial cero, energía cinética uniformemente acotada y fuerza suave compactamente soportada; el perfil contiene un núcleo auto-similar que se concentra y una jerarquía de pulsos oscilatorios que corrigen el residual en escalas sucesivamente más finas. OpenAI publicó además formalizaciones en Lean; Clay Mathematics Institute describió el anuncio como uno que ``apparently been settled'', manteniendo un proceso de evaluación deliberadamente pausado.
+
+La importancia para este trabajo no es que la IA ``confirme'' el programa. Es precisamente lo contrario: estas construcciones fueron generadas con otra genealogía matemática y sirven como adversarios externos.
+
+\subsection{Euler es el benchmark natural}
+
+En el resultado de Euler,
+\[
+\Scal=-P\xi
+\]
+es exacto y no hay viscosidad ni forzamiento. Además, la divergencia del presupuesto BKM está incorporada al teorema publicado. Por ello, la prueba más limpia de la propuesta de canales es calcular
+\[
+\mathfrak B_\eta^{<}(T),\qquad \mathfrak B_\eta^{\ge}(T)
+\]
+sobre la construcción explícita y determinar cuál transporta la divergencia, cómo depende de $\eta$ y cómo se relaciona con $-\Pperp P\xi$.
+
+\subsection{Navier--Stokes obliga a separar trayectoria, supremo y escala}
+
+La construcción viscosa muestra por qué un presupuesto puramente lagrangiano puede ser insuficiente. El núcleo se concentra, el supremo migra hacia escalas menores y la dinámica combina transporte, viscosidad y cancelaciones del residual. El objeto correcto debe seguir al supremo euleriano, no a una sola partícula.
+
+La simetría axial del campo líder y la anulación de la velocidad azimutal sobre el eje sugieren un test inmediato: verificar directamente, a partir de los perfiles explícitos, si existe una trayectoria relevante con $b\equiv0$ y crecimiento no acotado. Si se confirma, sería un NO-GO de energía finita para cualquier criterio que pretenda controlar crecimiento sólo por giro material. No se asume aquí; se formula como cálculo concreto.
+
+\section{Qué es nuevo en la propuesta actual}
+
+Ninguna de las piezas clásicas se reclama como descubierta aquí de forma aislada. La ecuación de dirección de vorticidad, la relación de Ohkitani, la dinámica $\alpha$--$\chi$, Restricted Euler y BKM tienen literatura establecida. La contribución propuesta es la arquitectura conjunta y sus blancos de prueba:
+
+\begin{enumerate}[leftmargin=1.7em]
+\item \textbf{Coordenadas de crecimiento para la geometría material.} $G$ organiza la dinámica por amplificación acumulada y no sólo por tiempo.
+\item \textbf{Separación exacta de fuente y cinemática transversal.} La ley con $\Scal$ identifica el término firmado que crea o destruye $|b|$ por e-fold de crecimiento.
+\item \textbf{Factorización de mecanismo.} $\Dcal\Lcal$ separa escasez transversal de cancelación, dos geometrías que el observable $\rhoT$ mezcla.
+\item \textbf{Partición euleriana del presupuesto extremo.} $\mathfrak B_\eta^{<}$ y $\mathfrak B_\eta^{\ge}$ convierten ``el canal'' en una pregunta compatible con BKM y con migración entre trayectorias.
+\item \textbf{Escalera de falsación explícita.} Burgers $\rightarrow$ Restricted Euler $\rightarrow$ DNS $\rightarrow$ Euler singular explícito $\rightarrow$ Navier--Stokes singular explícito.
+\item \textbf{Puente con el programa relacional.} La distinción entre referencia, diferencia transversal, persistencia y reorganización se aplica después de la matemática, como interpretación que debe ganar contenido sólo si predice una separación cuantitativa nueva.
+\end{enumerate}
+
+\section{La perspectiva relacional: puente, no sustituto}
+
+La lectura relacional puede formularse sin alterar las ecuaciones:
+\[
+\xi\quad\text{como referencia direccional local},
+\]
+\[
+a\xi\quad\text{como cambio que conserva esa referencia},
+\]
+\[
+b\quad\text{como diferencia transversal acreditada},
+\]
+\[
+\Scal_\perp\quad\text{como contenido dinámico que puede crear, sostener o destruir esa diferencia}.
+\]
+
+En este lenguaje, ``cierre'' no significa $b=0$ ni alineamiento perfecto. La lección de Burgers y Restricted Euler es precisamente que una geometría muy alineada puede acompañar tanto estados regulares como estados singulares. El posible contenido nuevo está en la organización de los mecanismos y en la distribución del presupuesto extremo entre canales.
+
+El puente con la ontología relacional queda entonces mejor definido: una diferencia sólo merece convertirse en categoría física si separa dinámicas que las ecuaciones realmente distinguen. El trabajo de NS es el laboratorio donde esa exigencia puede ponerse a prueba.
+
+\section{Programa de pruebas que puede convertir el marco en resultado}
+
+La secuencia de trabajo queda reducida a cuatro pruebas fuertes:
+
+\begin{enumerate}[leftmargin=1.7em]
+\item \textbf{Euler singular explícito.} Evaluar $\rhoT$, $M_\eta^{<}$, $M_\eta^{\ge}$ y la proyección $-\widehat b\cdot\Pperp P\xi$ en la construcción publicada de blowup. Este test decide si el presupuesto BKM se concentra en el canal casi paralelo.
+\item \textbf{Navier--Stokes singular explícito.} Calcular las mismas variables en el núcleo y el anillo de la construcción viscosa, separando regiones de escasez y cancelación.
+\item \textbf{DNS no condicionado.} Abandonar selección por $q$ extremo y medir la distribución conjunta de $(q,\rhoT,\Dcal,\Lcal)$ junto con el Hessiano de presión en trayectorias y snapshots no condicionados.
+\item \textbf{Resultado analítico limitado.} Buscar una desigualdad firmada para $\Scal_\perp$, o una condición de sumabilidad de uno de los presupuestos $\mathfrak B_\eta^{<},\mathfrak B_\eta^{\ge}$, en una clase definida con precisión.
+\end{enumerate}
+
+Si las construcciones singulares muestran que ambos canales pueden transportar indistintamente el presupuesto extremo, la propuesta pierde fuerza como mecanismo. Si, por el contrario, la divergencia se concentra de manera robusta en un canal y la transición entre canales está controlada por un término dinámico identificable, entonces el marco habrá producido una distinción matemática nueva y potencialmente útil.
+
+\section{Conclusión}
+
+El trabajo ya no se reduce a observar que la vorticidad gira poco durante ciertos episodios. El estatus alcanzado es más estructurado. Existe una descomposición exacta de amplificación y giro, una coordenada natural de crecimiento acumulado, una ley exacta para la evolución transversal, una factorización que separa escasez de cancelación y una partición euleriana que conecta directamente esa geometría con el presupuesto de vorticidad máxima.
+
+El registro numérico forma parte del argumento y no sólo de su motivación: el barrido de $100{,}000$ puntos localizó estados casi paralelos dentro de la cola extrema, las auditorías 961/995 cuantificaron tanto la señal como su sensibilidad, los presupuestos de crecimiento de extremos fijaron la escala real de los episodios y Restricted Euler proporcionó un control singular reproducible con tasa extrema de alineamiento. Los puentes con la literatura clásica también quedan claros. Euler identifica al Hessiano de presión como la fuente transversal exacta; Restricted Euler muestra qué ocurre cuando se elimina su parte anisótropa; Burgers excluye criterios ingenuos basados sólo en alineamiento; JHTDB aporta evidencia de que los estados casi paralelos sobreviven en vorticidad alta y sugiere cancelación como mecanismo; las construcciones de Euler y Navier--Stokes publicadas por OpenAI ofrecen, por primera vez en este programa, benchmarks singulares explícitos sobre los cuales la propuesta puede ser evaluada sin ajustar las definiciones al resultado.
+
+La afirmación fuerte que este artículo propone no es que el problema de Navier--Stokes haya sido resuelto de nuevo. Es que ahora existe una pregunta cuantitativa y falsable que antes estaba difusa dentro del programa:
+
+\begin{quote}
+\textbf{¿Qué canal geométrico transporta el presupuesto de crecimiento extremo, y qué dinámica firmada permite que ese canal persista o cambie a través de escalas?}
+\end{quote}
+
+Responderla sobre las construcciones explícitas de Euler y Navier--Stokes es el siguiente paso. Si la respuesta exhibe una separación robusta, el marco dejará de ser sólo diagnóstico y comenzará a imponer estructura sobre la dinámica extrema.
+
+\section*{Referencias}
+\small
+\begin{enumerate}[leftmargin=1.6em,label={[\arabic*]}]
+\item J. T. Beale, T. Kato and A. Majda, ``Remarks on the breakdown of smooth solutions for the 3-D Euler equations,'' \emph{Communications in Mathematical Physics} 94 (1984), 61--66. DOI: 10.1007/BF01212349.
+\item P. Constantin and C. Fefferman, ``Direction of Vorticity and the Problem of Global Regularity for the Navier--Stokes Equations,'' \emph{Indiana University Mathematics Journal} 42 (1993), 775--789.
+\item H. Beirão da Veiga and L. C. Berselli, ``On the regularizing effect of the vorticity direction in incompressible viscous flows,'' \emph{Differential and Integral Equations} 15 (2002), 345--356.
+\item K. Ohkitani, ``Eigenvalue problems in three-dimensional Euler flows,'' \emph{Physics of Fluids A} 5 (1993), 2570--2572. DOI: 10.1063/1.858772.
+\item J. D. Gibbon, D. D. Holm, R. M. Kerr and I. Roulstone, ``Quaternions and particle dynamics in the Euler fluid equations,'' \emph{Nonlinearity} 19 (2006), 1969--1983. DOI: 10.1088/0951-7715/19/8/011.
+\item P. Vieillefosse, ``Local interaction between vorticity and shear in a perfect incompressible fluid,'' \emph{Journal de Physique} 43 (1982), 837--842. DOI: 10.1051/jphys:01982004306083700.
+\item B. J. Cantwell, ``Exact solution of a restricted Euler equation for the velocity gradient tensor,'' \emph{Physics of Fluids A} 4 (1992), 782--793. DOI: 10.1063/1.858295.
+\item A. Tsinober, L. Shtilman and H. Vaisburd, ``A study of properties of vortex stretching and enstrophy generation in numerical and laboratory turbulence,'' \emph{Fluid Dynamics Research} 21 (1997), 477--494. DOI: 10.1016/S0169-5983(97)00022-1.
+\item Johns Hopkins Turbulence Databases, ``Forced Isotropic Turbulence,'' \href{https://turbulence.pha.jhu.edu/Forced_isotropic_turbulence.aspx}{JHTDB}.
+\item OpenAI, ``Finite Time Blowup for the Euler Equation,'' September 2026, \href{https://cdn.openai.com/pdf/315b36cd-ec98-4023-8342-93345194ece1/euler.pdf}{public manuscript}.
+\item OpenAI, ``Finite Time Blowup for Navier--Stokes,'' September 2026, \href{https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf}{public manuscript}.
+\item OpenAI, ``On the Navier--Stokes Millennium Prize Problem,'' September 8, 2026, \href{https://openai.com/index/navier-stokes-solution/}{research announcement}.
+\item Clay Mathematics Institute, ``Navier--Stokes Announcement,'' September 11, 2026, \href{https://www.claymath.org/news/navier-stokes-announcement/}{CMI statement}.
+\end{enumerate}
+
+\vfill
+\begin{center}
+\small\color{muted}
+Documento técnico de síntesis. Las identidades exactas, la evidencia computacional, las propuestas de partición y la interpretación relacional se mantienen separadas por construcción.
+\end{center}
+
+\end{document}

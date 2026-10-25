@@ -1,0 +1,64 @@
+[
+  {
+    "nombre": "C5",
+    "vertices": 5,
+    "aristas": 5,
+    "triangulos": 0,
+    "testigos_diamante": 0,
+    "3_coloreable": true,
+    "borrando_un_vertice_todos_coloreables": true,
+    "borrado_por_vertice": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    },
+    "certificado_3col_si_existe": {
+      "0": 0,
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 2
+    }
+  },
+  {
+    "nombre": "M(C5) o grafo de Grotzsch",
+    "vertices": 11,
+    "aristas": 20,
+    "triangulos": 0,
+    "testigos_diamante": 0,
+    "3_coloreable": false,
+    "borrando_un_vertice_todos_coloreables": true,
+    "borrado_por_vertice": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": true
+    },
+    "certificado_3col_si_existe": null
+  },
+  {
+    "nombre": "K4",
+    "vertices": 4,
+    "aristas": 6,
+    "triangulos": 4,
+    "testigos_diamante": 6,
+    "3_coloreable": false,
+    "borrando_un_vertice_todos_coloreables": true,
+    "borrado_por_vertice": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "certificado_3col_si_existe": null
+  }
+]

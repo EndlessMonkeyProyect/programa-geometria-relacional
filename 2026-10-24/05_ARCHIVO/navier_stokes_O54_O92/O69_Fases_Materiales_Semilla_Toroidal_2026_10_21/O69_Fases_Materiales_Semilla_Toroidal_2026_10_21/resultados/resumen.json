@@ -1,0 +1,334 @@
+{
+  "checks": {
+    "fuentes_O53_dos_resoluciones_dos_preparaciones": true,
+    "inicial_meridiano_no_nulo": true,
+    "control_azimut_sin_perturbacion_casi_cero": true,
+    "perturbacion_activa_ciclo_azimutal_45deg": true,
+    "simetria_plano_azimut_cero": true,
+    "tasa_azimut_depende_del_azimut": true,
+    "candidato_3_4_tiene_deriva_no_nula": true,
+    "razon_tasas_cambia_serie_larga": true,
+    "trazadores_no_son_sincronizacion_toda_la_serie": true,
+    "modelo_no_produce_giro_azimutal_espontaneo_sin_swirl_en_inicial": true,
+    "control_diferencias_finitas_theta": true,
+    "control_diferencias_finitas_phi": true
+  },
+  "count_passed": 12,
+  "count_total": 12,
+  "resultados_serie_larga": [
+    {
+      "N": 40,
+      "epsilon": 0,
+      "T": 2.4,
+      "initial_ratio": 1.3151987579822295,
+      "final_ratio": 2.0126408257252777,
+      "final_seed_slip_turns": 0.5569722245338355,
+      "max_seed_slip_turns": 0.6023649171193669,
+      "initial_delta": 0.4591520855524749,
+      "final_delta": -2.555424166674584,
+      "max_abs_azimuth_d12": 0.0,
+      "axial_displacement": 2.326748654965736,
+      "outer_diff_original": 0.2251477866580749
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "T": 2.4,
+      "initial_ratio": 1.405986165532452,
+      "final_ratio": 3.951825085429231,
+      "final_seed_slip_turns": 0.4067714617041278,
+      "max_seed_slip_turns": 0.8517664810251613,
+      "initial_delta": -2.6223741388361574,
+      "final_delta": -8.70976898297738,
+      "max_abs_azimuth_d12": 0.0,
+      "axial_displacement": 2.3845921322798542,
+      "outer_diff_original": 0.2905006564752295
+    },
+    {
+      "N": 48,
+      "epsilon": 0,
+      "T": 2.4,
+      "initial_ratio": 1.3658342433682364,
+      "final_ratio": 2.0629439368595346,
+      "final_seed_slip_turns": 0.5606674010146678,
+      "max_seed_slip_turns": 0.611542199946793,
+      "initial_delta": -0.7950357408362265,
+      "final_delta": -2.6734482529896013,
+      "max_abs_azimuth_d12": 0.0,
+      "axial_displacement": 2.3266851574814185,
+      "outer_diff_original": 0.2257541703142567
+    },
+    {
+      "N": 48,
+      "epsilon": 0.14,
+      "T": 2.4,
+      "initial_ratio": 1.4836859164344258,
+      "final_ratio": 3.713728325748646,
+      "final_seed_slip_turns": 0.41157521339083414,
+      "max_seed_slip_turns": 0.9015960390574782,
+      "initial_delta": -5.178293450502437,
+      "final_delta": -8.41976786301393,
+      "max_abs_azimuth_d12": 0.0,
+      "axial_displacement": 2.3846083415262918,
+      "outer_diff_original": 0.2926576337628517
+    }
+  ],
+  "initial_angular_samples": [
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 0,
+      "depth": 0.12,
+      "meridional_rate": -10.893726724180096,
+      "azimuthal_rate": -5.15699017890665e-18,
+      "meridional_increment_T": -0.04346159995254496,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 0,
+      "depth": 0.26,
+      "meridional_rate": -7.61403788696884,
+      "azimuthal_rate": -1.35356970108356e-18,
+      "meridional_increment_T": -0.03039607590754304,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 45,
+      "depth": 0.12,
+      "meridional_rate": -11.47719306069649,
+      "azimuthal_rate": -1.5178596256129046e-18,
+      "meridional_increment_T": -0.045783862621964586,
+      "azimuthal_increment_T": -2.220446049250313e-16
+    },
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 45,
+      "depth": 0.26,
+      "meridional_rate": -7.757316177944548,
+      "azimuthal_rate": 5.974480159811217e-18,
+      "meridional_increment_T": -0.03096546003810677,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 90,
+      "depth": 0.12,
+      "meridional_rate": -10.893726724180096,
+      "azimuthal_rate": 1.3037879564114111e-17,
+      "meridional_increment_T": -0.04346159995254496,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0,
+      "azimuth_degrees": 90,
+      "depth": 0.26,
+      "meridional_rate": -7.61403788696884,
+      "azimuthal_rate": 1.1124388135805162e-17,
+      "meridional_increment_T": -0.03039607590754304,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 0,
+      "depth": 0.12,
+      "meridional_rate": -16.99363085384919,
+      "azimuthal_rate": 1.8965251710446316e-17,
+      "meridional_increment_T": -0.0670962264301884,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 0,
+      "depth": 0.26,
+      "meridional_rate": -10.426545593841851,
+      "azimuthal_rate": 1.8145461535946116e-17,
+      "meridional_increment_T": -0.04149257260612384,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 45,
+      "depth": 0.12,
+      "meridional_rate": -14.313662923673997,
+      "azimuthal_rate": 0.20532013543989608,
+      "meridional_increment_T": -0.056569404219539016,
+      "azimuthal_increment_T": 0.0008073179174217238
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 45,
+      "depth": 0.26,
+      "meridional_rate": -9.100680454166998,
+      "azimuthal_rate": 0.29610662822206746,
+      "meridional_increment_T": -0.036258432971447395,
+      "azimuthal_increment_T": 0.001174818501310293
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 90,
+      "depth": 0.12,
+      "meridional_rate": -9.691134466875056,
+      "azimuthal_rate": 0.2429657792688296,
+      "meridional_increment_T": -0.038665986021566005,
+      "azimuthal_increment_T": 0.0009685918634254609
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "azimuth_degrees": 90,
+      "depth": 0.26,
+      "meridional_rate": -7.337069893080875,
+      "azimuthal_rate": 0.4050347377847324,
+      "meridional_increment_T": -0.029297438591103786,
+      "azimuthal_increment_T": 0.0016148702222527067
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 0,
+      "depth": 0.12,
+      "meridional_rate": -11.007212294585564,
+      "azimuthal_rate": 9.234424194750537e-18,
+      "meridional_increment_T": -0.043920551030939586,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 0,
+      "depth": 0.26,
+      "meridional_rate": -8.391269055720425,
+      "azimuthal_rate": 1.0975563897386814e-17,
+      "meridional_increment_T": -0.03348777915254475,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 45,
+      "depth": 0.12,
+      "meridional_rate": -11.316533565347175,
+      "azimuthal_rate": -3.2576522704624844e-17,
+      "meridional_increment_T": -0.04515129979704485,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 45,
+      "depth": 0.26,
+      "meridional_rate": -8.065338775125971,
+      "azimuthal_rate": -1.5619120361455725e-17,
+      "meridional_increment_T": -0.03219116292805444,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 90,
+      "depth": 0.12,
+      "meridional_rate": -11.007212294585566,
+      "azimuthal_rate": 1.2642330920336112e-18,
+      "meridional_increment_T": -0.043920551030939586,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0,
+      "azimuth_degrees": 90,
+      "depth": 0.26,
+      "meridional_rate": -8.391269055720425,
+      "azimuthal_rate": 8.551870078725449e-18,
+      "meridional_increment_T": -0.03348777915254475,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 0,
+      "depth": 0.12,
+      "meridional_rate": -16.92780136509203,
+      "azimuthal_rate": 5.577098172054641e-17,
+      "meridional_increment_T": -0.06675291389040494,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 0,
+      "depth": 0.26,
+      "meridional_rate": -11.952326067070306,
+      "azimuthal_rate": 3.207012985075651e-17,
+      "meridional_increment_T": -0.047524345045833694,
+      "azimuthal_increment_T": 0.0
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 45,
+      "depth": 0.12,
+      "meridional_rate": -13.600461896750694,
+      "azimuthal_rate": 0.18967425591948117,
+      "meridional_increment_T": -0.05380918662845348,
+      "azimuthal_increment_T": 0.0007436197427239666
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 45,
+      "depth": 0.26,
+      "meridional_rate": -9.529665382745796,
+      "azimuthal_rate": 0.33672594698700425,
+      "meridional_increment_T": -0.03796622094274236,
+      "azimuthal_increment_T": 0.0013354919808478138
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 90,
+      "depth": 0.12,
+      "meridional_rate": -9.32047266486726,
+      "azimuthal_rate": 0.2517368262707895,
+      "meridional_increment_T": -0.03721908633055416,
+      "azimuthal_increment_T": 0.001003967838877795
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "azimuth_degrees": 90,
+      "depth": 0.26,
+      "meridional_rate": -8.108938275465949,
+      "azimuthal_rate": 0.5294833576522937,
+      "meridional_increment_T": -0.032371020008914286,
+      "azimuthal_increment_T": 0.0021088201579237964
+    }
+  ],
+  "numerical_method": {
+    "off_axis_simulations": "O53 2/3 Fourier Galerkin RK4, O63 frame derivatives and tracer interpolation",
+    "original_O53": "archived trajectories through 2.4, N40 and N48",
+    "short_T": 0.08,
+    "short_dt": 0.004
+  },
+  "limitations": [
+    "toroidal cycle angles not guaranteed material periods",
+    "meridional angle uses moving enstrophy center",
+    "spectral underresolution of core radius .35",
+    "no continuum PDE convergence certification",
+    "none of the data imply regularity theorem",
+    "phi=0 tracer plane can be invariant by reflection symmetry",
+    "reflected azimuth phi and second poloidal tracer constitute distinct observables",
+    "failure of one rational lock does not rule out all possible relational normalizers"
+  ]
+}

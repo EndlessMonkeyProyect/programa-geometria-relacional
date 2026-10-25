@@ -1,0 +1,11 @@
+ID,Tipo,Afirmacion,Estado
+O70-01,O,"Una semilla puede representarse por una relacion comun reconstruible entre reflejos",Hipotesis ontologica
+O70-02,T,"El promedio de grupo D4 es una proyeccion ortogonal sobre el subespacio invariante",Demostrado matematicamente
+O70-03,T,"El operador proyectado de NS incorpora tension residual tau",Identidad exacta para soluciones suaves
+O70-04,T,"La proyeccion por si sola no determina la derivada colectiva general",Obstruccion general con testigo numérico
+O70-05,E,"Los tres campos preparados tienen exactamente la misma referencia inicial",Verificado N32 N40
+O70-06,E,"El defecto inicial de c=2 es cuatro veces el de c=1",Verificado N32 N40
+O70-07,E,"La identidad de tau presenta residual numerico inferior a 1e-15",Verificado N32 N40
+O70-08,A,"El grupo de espejos D4 coincide con el cubo optico O59",No demostrado
+O70-09,A,"El numero de espejos 8 es el normalizador ontologico",No demostrado
+O70-10,A,"La referencia colectiva y tau resuelven la regularidad global de NS",No demostrado

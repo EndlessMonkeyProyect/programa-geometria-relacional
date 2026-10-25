@@ -1,0 +1,673 @@
+{
+  "edition": "3.8.0-candidata",
+  "profile": "completo",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "campaigns_rerun": false,
+  "selected_suite": null,
+  "dependencies": {
+    "pytest": "9.0.2",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "networkx": "3.6.1"
+  },
+  "archive": {
+    "sha256": "cc3bf8af408600ea1a8beb82740cc52525d60cc73189ab99edc58a19a4c9af91",
+    "files": 1476,
+    "crc": "PASS"
+  },
+  "editorial": {
+    "manifest": {
+      "status": "PASS",
+      "files": 36,
+      "failures": [],
+      "unregistered": []
+    },
+    "source_map": {
+      "status": "PASS",
+      "files": 1476,
+      "mismatches": []
+    },
+    "registry": {
+      "status": "PASS",
+      "claims": 37,
+      "missing": []
+    },
+    "links": {
+      "status": "PASS",
+      "broken": []
+    },
+    "generated_tables": {
+      "status": "PASS",
+      "detail": "Vistas coherentes\n"
+    }
+  },
+  "exact": {
+    "status": "PASS",
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.024s\n\nOK\n",
+    "witnesses": {
+      "coding_vs_questions": {
+        "classes": 4,
+        "fixed_code_bits": 2,
+        "admissible_worst_depth": 3
+      },
+      "unequal_fibers": {
+        "sizes": [
+          1,
+          3,
+          2,
+          2
+        ],
+        "S": [
+          0,
+          1
+        ],
+        "ratio_before": "2",
+        "ratio_after": "2"
+      },
+      "finite_memory": {
+        "q": [
+          "1/2",
+          "1/16",
+          "1/512"
+        ],
+        "coefficients_ascending": [
+          "-1/16384",
+          "265/8192",
+          "-289/512",
+          "1"
+        ],
+        "residuals": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "parity_vs_contextuality": {
+        "even_global_states": 4,
+        "odd_global_states": 4,
+        "same_pair_projections": true,
+        "inconsistent_triangle_global_states": 0
+      },
+      "haar_nu": {
+        "conditional_mean_for_u_3_5": "16/25",
+        "conditional_formula": "16/25",
+        "double_design_mean": "3/4",
+        "independent_identity_V": "0"
+      },
+      "o48_wavevector_rank": 2
+    }
+  },
+  "archived_suites": {
+    "results": [
+      {
+        "collected": 311,
+        "tests": {
+          "passed": 311,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 953,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 24.678,
+        "log": "........................ [  7%]\n........................................................................ [ 30%]\n................................................................ [ 51%]\n........................................................................ [ 74%]\n....................................... [ 87%]\n........................................                                 [100%]\n311 passed, 953 subtests passed in 24.17s\n",
+        "id": "base",
+        "cwd": ".",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Suite principal, incluido el hilo del dos importado por su adaptador. Incluye simulaciones pequeñas de presupuesto."
+      },
+      {
+        "collected": 26,
+        "tests": {
+          "passed": 26,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.465,
+        "log": "..........................                                               [100%]\n26 passed in 0.04s\n",
+        "id": "15",
+        "cwd": "15_revision_total_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 28,
+        "tests": {
+          "passed": 28,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.367,
+        "log": "............................                                             [100%]\n28 passed in 0.04s\n",
+        "id": "16",
+        "cwd": "16_contenicion_informacional_y_puente_proton_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 32,
+        "tests": {
+          "passed": 32,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.654,
+        "log": "................................                                         [100%]\n32 passed in 1.31s\n",
+        "id": "17",
+        "cwd": "17_discriminante_contencion_y_segundo_observable_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 11,
+        "tests": {
+          "passed": 11,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.949,
+        "log": "...........                                                              [100%]\n11 passed in 1.62s\n",
+        "id": "18",
+        "cwd": "18_contencion_y_costo_en_SAT_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 12,
+        "tests": {
+          "passed": 12,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.599,
+        "log": "............                                                             [100%]\n12 passed in 1.25s\n",
+        "id": "19",
+        "cwd": "19_escalera_resolucion_NS_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 13,
+        "tests": {
+          "passed": 13,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 2.43,
+        "log": ".............                                                            [100%]\n13 passed in 1.93s\n",
+        "id": "20",
+        "cwd": "20_nu_en_el_continuo_YM_2026_10_19",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 6,
+        "tests": {
+          "passed": 6,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.468,
+        "log": "......                                                                   [100%]\n6 passed in 0.02s\n",
+        "id": "23",
+        "cwd": "23_auditoria_2026_10_20",
+        "targets": [
+          "tests"
+        ],
+        "scope": "Pruebas de la rama; los resultados guardados no equivalen a reejecutar campañas."
+      },
+      {
+        "collected": 23,
+        "tests": {
+          "passed": 23,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.558,
+        "log": ".......................                                                  [100%]\n=============================== warnings summary ===============================\nextensions/GR3/tests/test_o14.py::test_examples\n  /opt/pyvenv/lib/python3.13/site-packages/_pytest/python.py:170: PytestReturnNotNoneWarning: Test functions should return None, but extensions/GR3/tests/test_o14.py::test_examples returned <class 'dict'>.\n  Did you mean to use `assert` instead of `return`?\n  See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.\n    warnings.warn(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n23 passed, 1 warning in 0.19s\n",
+        "id": "GR3-O14",
+        "cwd": "extensions/GR3",
+        "targets": [
+          "tests/test_o14.py"
+        ],
+        "scope": "Composicion y contratos GR3."
+      },
+      {
+        "collected": 13,
+        "tests": {
+          "passed": 13,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.451,
+        "log": ".............                                                            [100%]\n13 passed in 0.10s\n",
+        "id": "LAB-Laboratorio_Espejos_Camara_Finita_v3_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Camara_Finita_v3_2026-10-18",
+        "targets": [
+          "test_cubo.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 12,
+        "tests": {
+          "passed": 12,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 4.322,
+        "log": "............                                                             [100%]\n12 passed in 3.80s\n",
+        "id": "LAB-Laboratorio_Espejos_Cuartos_Acoplados_v5_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Cuartos_Acoplados_v5_2026-10-18",
+        "targets": [
+          "test_cuartos_acoplados.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 16,
+        "tests": {
+          "passed": 16,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.408,
+        "log": "................                                                         [100%]\n16 passed in 0.07s\n",
+        "id": "LAB-Laboratorio_Espejos_Deformaciones_v2_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Deformaciones_v2_2026-10-18",
+        "targets": [
+          "test_deformaciones.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 19,
+        "tests": {
+          "passed": 19,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.801,
+        "log": "...................                                                      [100%]\n19 passed in 1.30s\n",
+        "id": "LAB-Laboratorio_Espejos_Identidad_v4_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Identidad_v4_2026-10-18",
+        "targets": [
+          "test_identidad_mirrors.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 18,
+        "tests": {
+          "passed": 18,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 8.794,
+        "log": "..................                                                       [100%]\n18 passed in 8.33s\n",
+        "id": "LAB-Laboratorio_Espejos_Imagenes_v6_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Imagenes_v6_2026-10-18",
+        "targets": [
+          "test_espejos_v6.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 21,
+        "tests": {
+          "passed": 21,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 40,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.325,
+        "log": ".....................            [100%]\n21 passed, 40 subtests passed in 0.77s\n",
+        "id": "LAB-Laboratorio_Espejos_Onda_Cavidades_v7_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Onda_Cavidades_v7_2026-10-18",
+        "targets": [
+          "test_onda_cavidades_v7.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 8,
+        "tests": {
+          "passed": 8,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.407,
+        "log": "........                                                                 [100%]\n8 passed in 0.05s\n",
+        "id": "LAB-Laboratorio_Espejos_Orientacion_v1_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Orientacion_v1_2026-10-18",
+        "targets": [
+          "test_laboratorio.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 23,
+        "tests": {
+          "passed": 23,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 9.909,
+        "log": ".......................                                                  [100%]\n23 passed in 2.80s\n",
+        "id": "LAB-Laboratorio_Espejos_Razones_v8_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Espejos_Razones_v8_2026-10-18",
+        "targets": [
+          "test_razones_cavidades_v8.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 21,
+        "tests": {
+          "passed": 21,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.442,
+        "log": ".....................                                                    [100%]\n21 passed in 0.07s\n",
+        "id": "LAB-Laboratorio_Radios_Esferas_v10_2026-10-18",
+        "cwd": "24_laboratorios_esferas_y_espejos_2026_10_20/fuentes_originales/Laboratorio_Radios_Esferas_v10_2026-10-18",
+        "targets": [
+          "test_radios_esferas_v10.py"
+        ],
+        "scope": "Laboratorio original; base_v1 duplicada no se cuenta otra vez."
+      },
+      {
+        "collected": 26,
+        "tests": {
+          "passed": 26,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 3.57,
+        "log": "..........................                                               [100%]\n26 passed in 3.24s\n",
+        "id": "O22",
+        "cwd": "21_suplementos_2026_10_19_20/O22",
+        "targets": [
+          "laboratorio_o22.py"
+        ],
+        "scope": "Clases unittest del modulo, sin ejecutar su main."
+      },
+      {
+        "collected": 27,
+        "tests": {
+          "passed": 27,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.526,
+        "log": "...........................                                              [100%]\n27 passed in 0.17s\n",
+        "id": "O23",
+        "cwd": "21_suplementos_2026_10_19_20/O23",
+        "targets": [
+          "laboratorio_o23.py"
+        ],
+        "scope": "Clases unittest del modulo, sin ejecutar su main."
+      },
+      {
+        "collected": 19,
+        "tests": {
+          "passed": 19,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 1.718,
+        "log": "...................                                                      [100%]\n19 passed in 1.27s\n",
+        "id": "O33",
+        "cwd": "21_suplementos_2026_10_19_20/O33",
+        "targets": [
+          "verificar_o33.py"
+        ],
+        "scope": "Clases unittest del modulo, sin ejecutar su main."
+      },
+      {
+        "collected": 8,
+        "tests": {
+          "passed": 8,
+          "failed": 0,
+          "skipped": 0
+        },
+        "subtests": {
+          "passed": 0,
+          "failed": 0,
+          "skipped": 0
+        },
+        "errors": [],
+        "exit_code": 0,
+        "status": "PASS",
+        "pytest_version": "9.0.2",
+        "seconds": 0.54,
+        "log": "........                                                                 [100%]\n8 passed in 0.10s\n",
+        "id": "GRAFOS-28",
+        "cwd": "28_grafos_y_laboratorios_P_vs_NP_2026_10_20/codigo",
+        "targets": [
+          "verificar_integracion_grafos.py"
+        ],
+        "scope": "Controles exactos e integracion de resultados guardados."
+      }
+    ],
+    "exclusions": [
+      "Copias historicas repetidas en 13/14 y base_v1 del laboratorio v2.",
+      "Campañas pesadas, scripts sin suite y pruebas que sólo existen dentro de otros ZIP.",
+      "El hilo del dos se ejecuta mediante la suite base; no se duplica su conteo."
+    ]
+  },
+  "status": "PASS",
+  "seconds": 94.065
+}

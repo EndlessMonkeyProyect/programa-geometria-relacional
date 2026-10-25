@@ -1,0 +1,86 @@
+{
+  "checks": {
+    "sum_transfer_zero": true,
+    "equal_base_energy_across_matched": true,
+    "all_finite": true,
+    "total_nonzero_dissipation": true,
+    "initial_band_nonlinear_transfer_vanishes": true,
+    "energy_derivative_sum_is_dissipation": true,
+    "signo_40_banda_2_4": true
+  },
+  "totals": [
+    {
+      "N": 32,
+      "epsilon": 0.0,
+      "match_energy": false,
+      "E": 0.07787638183726751,
+      "T": 4.078884921796022e-21,
+      "D": 0.029585580194217743
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "match_energy": false,
+      "E": 0.0875270475829365,
+      "T": -1.951521168190109e-18,
+      "D": 0.04026986447657304
+    },
+    {
+      "N": 32,
+      "epsilon": 0.14,
+      "match_energy": true,
+      "E": 0.07787638183726711,
+      "T": 1.6314903586761764e-19,
+      "D": 0.035829739824606854
+    },
+    {
+      "N": 40,
+      "epsilon": 0.0,
+      "match_energy": false,
+      "E": 0.07788156601762133,
+      "T": 1.4456265714373269e-18,
+      "D": 0.029623669511738428
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "match_energy": false,
+      "E": 0.08749412175821777,
+      "T": 1.1066127015397587e-18,
+      "D": 0.04044861517703338
+    },
+    {
+      "N": 40,
+      "epsilon": 0.14,
+      "match_energy": true,
+      "E": 0.07788156601762114,
+      "T": 3.2595873895810474e-18,
+      "D": 0.03600472157360217
+    },
+    {
+      "N": 48,
+      "epsilon": 0.0,
+      "match_energy": false,
+      "E": 0.07788169093160463,
+      "T": 2.4292009856555852e-18,
+      "D": 0.029625169816722335
+    },
+    {
+      "N": 48,
+      "epsilon": 0.14,
+      "match_energy": false,
+      "E": 0.08749141496359596,
+      "T": 2.195395851984125e-18,
+      "D": 0.04046463958484442
+    },
+    {
+      "N": 48,
+      "epsilon": 0.14,
+      "match_energy": true,
+      "E": 0.07788169093160356,
+      "T": 2.624368335298933e-18,
+      "D": 0.03602015757908204
+    }
+  ],
+  "number_records": 108
+}

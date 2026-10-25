@@ -1,0 +1,18 @@
+{
+  "version": "3.6.0-candidata",
+  "date": "2026-10-20",
+  "executed": true,
+  "integrity": "pass",
+  "historical_base_immutable": true,
+  "integrated_additions_tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "complete_repository_pytest": {
+    "tests_passed": 311,
+    "subtests_passed": 953,
+    "failed": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -m pytest -q -p no:cacheprovider"
+  },
+  "not_claimed": "The tests do not prove P=NP, Yang-Mills mass gap, or global 3D Navier-Stokes regularity."
+}

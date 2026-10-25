@@ -1,0 +1,7 @@
+3sat n 10 0.0 s [43, 47, 54, 49, 46] ['SAT', 'UNSAT', 'SAT', 'SAT', 'SAT']
+3sat n 15 0.0 s [102, 116, 84, 97, 97] ['UNSAT', 'SAT', 'SAT', 'SAT', 'SAT']
+3sat n 20 0.2 s [326, 184, 290, 341, 199] ['SAT', 'SAT', 'UNSAT', 'SAT', 'SAT']
+3sat n 25 2.3 s [662, 690, 563, 911, 1417] ['SAT', 'SAT', 'SAT', 'UNSAT', 'SAT']
+3sat n 30 13.3 s [1915, 1473, 1676, 2392, 1060] ['UNSAT', 'SAT', 'UNSAT', 'SAT', 'SAT']
+3sat n 35 348.2 s [4765, 4739, 4720, 12636, 3922] ['SAT', 'SAT', 'UNSAT', 'UNSAT', 'UNSAT']
+Terminated

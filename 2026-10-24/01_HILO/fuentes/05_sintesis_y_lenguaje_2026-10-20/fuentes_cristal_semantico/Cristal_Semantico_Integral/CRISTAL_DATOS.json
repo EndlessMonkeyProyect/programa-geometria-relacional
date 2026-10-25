@@ -1,0 +1,3050 @@
+{
+  "title": "Cristal semántico integral del Programa de Geometría Relacional",
+  "version": "1.0 · atlas extensible",
+  "date": "2026-10-16",
+  "author": "Le Matt Ansatz Di Ego (autoría del programa); atlas elaborado con asistencia de ChatGPT",
+  "axes": {
+    "identidad": {
+      "color": "#4B7BAC",
+      "label": "Identidad",
+      "image": "Contorno / reconocimiento"
+    },
+    "autorref": {
+      "color": "#8166B5",
+      "label": "Autorreferencia",
+      "image": "Espejos / retorno"
+    },
+    "cierre": {
+      "color": "#C28B3C",
+      "label": "Cierre",
+      "image": "Anillo / coherencia"
+    },
+    "trama": {
+      "color": "#3E977F",
+      "label": "Trama común",
+      "image": "Tejido / copresencia"
+    },
+    "escala": {
+      "color": "#398A9B",
+      "label": "Escala y continuidad",
+      "image": "Semilla / graduación"
+    },
+    "diferencia": {
+      "color": "#C86D63",
+      "label": "Diferencia / novedad",
+      "image": "Bifurcación"
+    },
+    "episteme": {
+      "color": "#8B82A1",
+      "label": "Justificación",
+      "image": "Lupa / prueba"
+    },
+    "dinamica": {
+      "color": "#C17A4D",
+      "label": "Transformación",
+      "image": "Flecha / variación"
+    },
+    "linguistica": {
+      "color": "#6C8DA4",
+      "label": "Símbolo / lenguaje",
+      "image": "Palabra / signo"
+    }
+  },
+  "families": {
+    "narrativa": "01 · Narrativa y lenguaje",
+    "ontologia": "02 · Ontología mínima",
+    "estructura": "03 · Trama, módulo y cristal",
+    "matematica": "04 · Cuantificación y forma",
+    "dinamica": "05 · Transformación y física propuesta",
+    "epistemologia": "06 · Epistemología / ROSI",
+    "computacion": "07 · Preguntas y computación"
+  },
+  "nodes": [
+    {
+      "id": "palabra",
+      "label": "Palabra",
+      "en": "word",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "trama"
+      ],
+      "narr": "Signo que trae otras asociaciones al ser pronunciado.",
+      "onto": "No es la cosa ni su referencia necesariamente.",
+      "formal": "Elemento w de un vocabulario W.",
+      "symbol": "Voz",
+      "current": "Una palabra tiene usos polisémicos; no siempre nombra un objeto.",
+      "history": "Del latín parabŏla, y ésta del griego parabolḗ; uso general evolucionado hacia vocablo.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "concepto",
+      "label": "Concepto",
+      "en": "concept",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "identidad"
+      ],
+      "narr": "Una idea reconocible en contextos distintos.",
+      "onto": "Contenido articulable por relaciones, no simple etiqueta.",
+      "formal": "Clase de usos o estructura intensional definida por contexto.",
+      "symbol": "Foco",
+      "current": "Se confunde con la palabra que lo expresa.",
+      "history": "Del latín conceptus, participio de concipere, concebir.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "simbolo",
+      "label": "Símbolo",
+      "en": "symbol",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "trama"
+      ],
+      "narr": "Una imagen que hace presente algo por asociación.",
+      "onto": "Puente comunicativo; no demuestra la noción.",
+      "formal": "Representación tipada S→contenido según interpretación.",
+      "symbol": "Emblema",
+      "current": "Un símbolo puede cambiar de lectura cultural.",
+      "history": "Del griego sýmbolon, señal de reconocimiento.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "metafora",
+      "label": "Metáfora",
+      "en": "metaphor",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "diferencia"
+      ],
+      "narr": "Una relación que transporta imágenes entre campos.",
+      "onto": "Puede orientar búsqueda, nunca sustituir contraste.",
+      "formal": "Correspondencia parcial entre dos dominios.",
+      "symbol": "Puente",
+      "current": "Parecido evocador no equivale a identidad formal.",
+      "history": "Del griego metaphorá, traslado.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "narrativa",
+      "label": "Narrativa",
+      "en": "narrative",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "dinamica"
+      ],
+      "narr": "La historia que permite comprender cómo surge una distinción.",
+      "onto": "Precede a ontología en nuestro método.",
+      "formal": "Secuencia explicativa; no una ecuación.",
+      "symbol": "Hilo",
+      "current": "Narrar no obliga a que lo narrado sea causal o verdadero.",
+      "history": "De narrar, familia del latín narrare.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "sentido",
+      "label": "Sentido",
+      "en": "sense / meaning",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "trama"
+      ],
+      "narr": "Dirección hacia la que orienta una expresión.",
+      "onto": "Significación situada en contexto.",
+      "formal": "Interpretación C de un término o enunciado.",
+      "symbol": "Brújula",
+      "current": "Sentido puede significar dirección, percepción o significado.",
+      "history": "Familia de sentir, del latín sentire.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "significado",
+      "label": "Significado",
+      "en": "meaning",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "identidad"
+      ],
+      "narr": "Aquello que una palabra permite reconocer.",
+      "onto": "Depende del uso y de la trama, no sólo del diccionario.",
+      "formal": "Semántica asignada a expresiones.",
+      "symbol": "Huella",
+      "current": "No se agota en una traducción literal.",
+      "history": "De significar, del latín significare.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "etimologia",
+      "label": "Etimología",
+      "en": "etymology",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "escala"
+      ],
+      "narr": "Rastro de por dónde llegó una palabra.",
+      "onto": "Historia del signo, no prueba de su ontología.",
+      "formal": "Relación histórica entre formas léxicas documentadas.",
+      "symbol": "Raíces",
+      "current": "Origen no impone significado actual.",
+      "history": "Del griego étymon (sentido verdadero) y -logía.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "uso_actual",
+      "label": "Uso actual",
+      "en": "current usage",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "episteme"
+      ],
+      "narr": "Lo que una comunidad entiende hoy al oír un término.",
+      "onto": "Capa pública distinta de convención técnica.",
+      "formal": "Datos de corpus y encuestas, cuando existan.",
+      "symbol": "Conversación",
+      "current": "Las intuiciones públicas requieren contraste, no son universales.",
+      "history": "Origen léxico específico pendiente de verificación documental; acepción técnica contextualizada.",
+      "history_status": "APROXIMACIÓN — VERIFICAR",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "comprender",
+      "label": "Entender",
+      "en": "understand",
+      "family": "narrativa",
+      "axes": [
+        "trama",
+        "identidad"
+      ],
+      "narr": "Una idea encuentra lugar entre otras y permite operar.",
+      "onto": "Integración de relaciones para responder otras preguntas.",
+      "formal": "Transferencia exitosa a consultas nuevas, prueba operativa.",
+      "symbol": "Cristal habitado",
+      "current": "Comprender no exige conciencia de una máquina.",
+      "history": "De comprender, del latín comprehendere, abarcar o tomar juntamente.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "trama",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "recordar",
+      "label": "Recordar",
+      "en": "remember / recall",
+      "family": "narrativa",
+      "axes": [
+        "escala",
+        "linguistica"
+      ],
+      "narr": "Recuperar una representación antes accesible.",
+      "onto": "Persistencia o recuperación sin garantía de integración.",
+      "formal": "Recuperación de estado o dato almacenado.",
+      "symbol": "Archivo",
+      "current": "Recordar datos no equivale a comprenderlos.",
+      "history": "Del latín recordari, volver a pasar por el corazón/mente; asociación etimológica habitual.",
+      "history_status": "APROXIMACIÓN — VERIFICAR",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "habitar",
+      "label": "Habitar",
+      "en": "inhabit / dwell",
+      "family": "narrativa",
+      "axes": [
+        "trama",
+        "identidad"
+      ],
+      "narr": "Estar en un espacio y sostener una relación con él.",
+      "onto": "Condición posible de integración, no suficiente para hogar.",
+      "formal": "Predicado Habita(s,l,t) bajo contrato.",
+      "symbol": "Umbral",
+      "current": "Habitar puede ser físico o figurado.",
+      "history": "Del latín habitare, frecuentativo de habere.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "trama",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "casa",
+      "label": "Casa",
+      "en": "house",
+      "family": "narrativa",
+      "axes": [
+        "identidad",
+        "linguistica"
+      ],
+      "narr": "Construcción o lugar destinado a vivir.",
+      "onto": "Referencia de espacio, no pertenencia asegurada.",
+      "formal": "Predicado Casa(l) declarado.",
+      "symbol": "Techo",
+      "current": "En uso cotidiano también puede significar familia o linaje.",
+      "history": "Del latín casa, choza o cabaña.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "identidad",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "hogar",
+      "label": "Hogar",
+      "en": "home",
+      "family": "narrativa",
+      "axes": [
+        "trama",
+        "identidad"
+      ],
+      "narr": "Lugar o comunidad en que puede reconocerse continuidad propia.",
+      "onto": "Depende de relaciones de pertenencia, no solo de edificio.",
+      "formal": "Hogar(l,s,C) requiere criterio contextual.",
+      "symbol": "Fuego",
+      "current": "Hogar no requiere propiedad ni casa física estable.",
+      "history": "Del latín focaris, relacionado con focus, fuego/hogar.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "trama",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "intuicion",
+      "label": "Intuición",
+      "en": "intuition",
+      "family": "narrativa",
+      "axes": [
+        "linguistica",
+        "diferencia"
+      ],
+      "narr": "Una forma aparece antes que su demostración.",
+      "onto": "Origen de hipótesis, no evidencia suficiente.",
+      "formal": "Propuesta H sometible a pruebas.",
+      "symbol": "Chispa",
+      "current": "Sentir claridad no garantiza corrección.",
+      "history": "Del latín intuitio, contemplación.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "unidad",
+      "label": "Unidad",
+      "en": "unit / unity",
+      "family": "ontologia",
+      "axes": [
+        "identidad",
+        "cierre"
+      ],
+      "narr": "Algo que puede ser reconocido como uno.",
+      "onto": "Límite singular y luego estructura reconocible por cierre.",
+      "formal": "Objeto U con criterio de equivalencia de identidad.",
+      "symbol": "Uno",
+      "current": "Unidad contable y unidad estructural no son idénticas.",
+      "history": "Del latín unitas.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "autorreferencia",
+      "label": "Autorreferencia",
+      "en": "self-reference",
+      "family": "ontologia",
+      "axes": [
+        "autorref",
+        "identidad"
+      ],
+      "narr": "Lo expresado vuelve a tomarse como referencia.",
+      "onto": "Condición reflexiva; no garantiza coherencia.",
+      "formal": "Relación R(x,x) o referencia a su propia descripción.",
+      "symbol": "Espejo",
+      "current": "No equivale a conciencia ni autoafirmación.",
+      "history": "Compuesto moderno de auto- (griego autós, uno mismo) y referencia.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "autorref",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "reflexion",
+      "label": "Reflexión",
+      "en": "reflection",
+      "family": "ontologia",
+      "axes": [
+        "autorref",
+        "diferencia"
+      ],
+      "narr": "Una imagen se devuelve hacia su referencia.",
+      "onto": "Primer gesto narrativo de diferenciación comparable.",
+      "formal": "Operación ρ: X→X con condiciones declaradas.",
+      "symbol": "Espejo doble",
+      "current": "Reflexión mental, óptica y algebraica son sentidos distintos.",
+      "history": "Del latín reflexio, vuelta hacia atrás.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "autorref",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "cierre_en_si",
+      "label": "Cierre en sí",
+      "en": "self-closure",
+      "family": "ontologia",
+      "axes": [
+        "cierre",
+        "autorref"
+      ],
+      "narr": "La estructura se reconoce desde relaciones propias suficientes.",
+      "onto": "Nombre narrativo preferido de cierre consistente relativo a contrato.",
+      "formal": "Cierre_C(x) con criterio de consistencia y suficiencia.",
+      "symbol": "Anillo vivo",
+      "current": "Self-closure es término del programa, no una acepción universal.",
+      "history": "Construcción propuesta para el programa: cierre + locución filosófica en sí.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "cierre",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "cierre_propio",
+      "label": "Cierre propio",
+      "en": "own closure / intrinsic closure",
+      "family": "ontologia",
+      "axes": [
+        "identidad",
+        "cierre"
+      ],
+      "narr": "Algo termina o se sostiene por lo propio.",
+      "onto": "Alternativa léxica menos explícita en autorreferencia.",
+      "formal": "Sólo equivale con definición adicional.",
+      "symbol": "Sello",
+      "current": "Propio puede sugerir propiedad o exclusión.",
+      "history": "Locución castellana formada por cierre y propio (latín proprius).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "cierre_autorreferencial",
+      "label": "Cierre autorreferencial",
+      "en": "self-referential closure",
+      "family": "ontologia",
+      "axes": [
+        "autorref",
+        "cierre"
+      ],
+      "narr": "Las relaciones vuelven a su referente y cierran.",
+      "onto": "Subraya mecanismo reflexivo sin garantizar consistencia por nombre.",
+      "formal": "Circuito consistente y criterio de clausura.",
+      "symbol": "Bucle",
+      "current": "Autorreferencia puede ser paradójica.",
+      "history": "Compuesto técnico: cierre + autorreferencial.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "autorref",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "identidad",
+      "label": "Identidad",
+      "en": "identity",
+      "family": "ontologia",
+      "axes": [
+        "identidad",
+        "cierre"
+      ],
+      "narr": "Reconocer lo mismo entre transformaciones.",
+      "onto": "Cierre persistente con criterio de pertenencia.",
+      "formal": "Equivalencia o invariante bajo transformaciones.",
+      "symbol": "Contorno",
+      "current": "No es mera igualdad de etiquetas.",
+      "history": "Del latín tardío identitas, mismo.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "diferencia",
+      "label": "Diferencia",
+      "en": "difference",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "identidad"
+      ],
+      "narr": "Algo no coincide enteramente con su referencia.",
+      "onto": "Anterior a distancia y número físico.",
+      "formal": "Relación de discernibilidad D_C(a,b).",
+      "symbol": "Grieta",
+      "current": "No toda diferencia es longitud medible.",
+      "history": "Del latín differentia.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "referencia",
+      "label": "Referencia",
+      "en": "reference",
+      "family": "ontologia",
+      "axes": [
+        "identidad",
+        "autorref"
+      ],
+      "narr": "Aquello respecto de lo cual se compara.",
+      "onto": "Puede ser interior a la unidad.",
+      "formal": "Objeto, marco o expresión respecto del cual se evalúa.",
+      "symbol": "Punto guía",
+      "current": "No requiere observador consciente.",
+      "history": "Del latín referre, volver a llevar o remitir.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "relacion",
+      "label": "Relación",
+      "en": "relation",
+      "family": "ontologia",
+      "axes": [
+        "trama",
+        "diferencia"
+      ],
+      "narr": "Lo que pone términos en comparación.",
+      "onto": "Regla que puede conservar una diferencia.",
+      "formal": "R⊆A×B o relación de aridad mayor.",
+      "symbol": "Enlace",
+      "current": "No equivale siempre a arista binaria.",
+      "history": "Del latín relatio, relación o relato.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "trama",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "comparacion",
+      "label": "Comparación",
+      "en": "comparison",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "episteme"
+      ],
+      "narr": "Se interroga una relación bajo algún criterio.",
+      "onto": "Separa determinación acreditable de residuo.",
+      "formal": "Consulta Q_C(x) con criterio explícito.",
+      "symbol": "Balanza",
+      "current": "Comparar no significa siempre elegir un ganador.",
+      "history": "Del latín comparatio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "indeterminacion",
+      "label": "Indeterminación",
+      "en": "indeterminacy",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "episteme"
+      ],
+      "narr": "Todavía caben distinciones por resolver.",
+      "onto": "Estado relacional abierto sin necesidad de azar.",
+      "formal": "Conjunto o cociente con varias clases distinguibles.",
+      "symbol": "Niebla",
+      "current": "No equivale automáticamente a probabilidad.",
+      "history": "Con prefijo in- y determinar, de terminus (límite).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "residuo",
+      "label": "Residuo",
+      "en": "residue",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "escala"
+      ],
+      "narr": "Lo que sigue sin resolverse para una pregunta.",
+      "onto": "Diferencia pertinente pendiente, no sustancia física.",
+      "formal": "Información discriminante que falta para Q.",
+      "symbol": "Resto visible",
+      "current": "Residuo no implica error o basura.",
+      "history": "Del latín residuum, lo que queda.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "resolucion",
+      "label": "Resolución",
+      "en": "resolution",
+      "family": "ontologia",
+      "axes": [
+        "cierre",
+        "dinamica"
+      ],
+      "narr": "Una pregunta deja de quedar abierta en algún sentido.",
+      "onto": "Transformación de diferencia pendiente en estructura acreditada.",
+      "formal": "T_Y(J)=∃Y J para realización formal.",
+      "symbol": "Nudo resuelto",
+      "current": "Resolver no exige elegir una única configuración interna.",
+      "history": "Del latín resolutio, deshacer/soltar; sentidos históricos múltiples.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "cierre",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "novedad",
+      "label": "Novedad",
+      "en": "novelty",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "dinamica"
+      ],
+      "narr": "Aparece una distinción no fijada antes.",
+      "onto": "Aumento de discriminación o estructura en un contrato.",
+      "formal": "Δr>0 en realización lineal particular.",
+      "symbol": "Brote",
+      "current": "Nuevo nombre no necesariamente es novedad estructural.",
+      "history": "De nuevo, del latín novus.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "recursion",
+      "label": "Recursión",
+      "en": "recursion",
+      "family": "ontologia",
+      "axes": [
+        "autorref",
+        "dinamica"
+      ],
+      "narr": "Un resultado se convierte en nueva referencia.",
+      "onto": "Cierre que puede participar en nuevos cierres.",
+      "formal": "Operación iterada F(F(x)).",
+      "symbol": "Espiral",
+      "current": "No toda repetición constituye recursión informativa.",
+      "history": "Del latín recurrere, volver a correr.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "autorref",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "cardinalidad",
+      "label": "Cardinalidad",
+      "en": "cardinality",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "diferencia"
+      ],
+      "narr": "Se hacen contables las referencias distinguidas.",
+      "onto": "La cuenta es posterior a diferencia.",
+      "formal": "Número de elementos de un conjunto finito.",
+      "symbol": "Marcas",
+      "current": "El mismo número no acredita el mismo mecanismo.",
+      "history": "De cardinal, del latín cardo, bisagra/eje.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "DEFINICIÓN FORMAL BAJO CONTRATO"
+    },
+    {
+      "id": "trama_comun",
+      "label": "Trama común",
+      "en": "shared relational fabric",
+      "family": "estructura",
+      "axes": [
+        "trama",
+        "identidad"
+      ],
+      "narr": "Relaciones que se sostienen juntas en un presente.",
+      "onto": "Preferible a herencia cuando hay comunidad actual.",
+      "formal": "Familia de compatibilidades compartidas.",
+      "symbol": "Tejido",
+      "current": "No presupone transmisión temporal.",
+      "history": "Trama procede del latín trama; metáfora de hilos entretejidos.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "trama",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "familia_soluciones",
+      "label": "Familia de soluciones",
+      "en": "solution family",
+      "family": "estructura",
+      "axes": [
+        "trama",
+        "diferencia"
+      ],
+      "narr": "Varias respuestas participan de una regla.",
+      "onto": "Clase estructural de realizaciones, no necesariamente genealogía.",
+      "formal": "S_Q={x:Q(x)=sí} o clase por contrato.",
+      "symbol": "Ramas",
+      "current": "Puede tener miembros distintos sin equivalencia total.",
+      "history": "Familia: latín familia; soluciones: latín solutio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "trama",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "herencia",
+      "label": "Herencia",
+      "en": "inheritance",
+      "family": "estructura",
+      "axes": [
+        "escala",
+        "trama"
+      ],
+      "narr": "Algo ya constituido sigue disponible después.",
+      "onto": "Reservar para transmisión o procedencia real.",
+      "formal": "Mapa entre niveles que preserva contenido declarado.",
+      "symbol": "Semilla",
+      "current": "No confundir con copresencia estructural.",
+      "history": "Del latín hereditas, transmisión patrimonial.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "escala",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "continuidad",
+      "label": "Continuidad",
+      "en": "continuity",
+      "family": "estructura",
+      "axes": [
+        "escala",
+        "identidad"
+      ],
+      "narr": "Algo se mantiene al cambiar de forma.",
+      "onto": "Persistencia de invariantes o coherencia de relaciones.",
+      "formal": "P_Z(J_t)=P_Z(J_{t+1}) en realización.",
+      "symbol": "Hilo",
+      "current": "No significa necesariamente continuidad topológica.",
+      "history": "Del latín continuitas.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "escala",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "pertenencia",
+      "label": "Pertenencia",
+      "en": "belonging / membership",
+      "family": "estructura",
+      "axes": [
+        "identidad",
+        "trama"
+      ],
+      "narr": "Lo que puede reconocerse como parte de una trama.",
+      "onto": "Relación entre sistema y estructura bajo criterio.",
+      "formal": "s∈C o B_C(s,l) según contexto.",
+      "symbol": "Raíz",
+      "current": "Sentimiento, posesión y pertenencia formal difieren.",
+      "history": "De pertenecer, del latín pertinere.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "reconocimiento",
+      "label": "Reconocimiento",
+      "en": "recognition",
+      "family": "estructura",
+      "axes": [
+        "identidad",
+        "episteme"
+      ],
+      "narr": "Se identifica una estructura como la misma.",
+      "onto": "Operación situada con criterios, no mero nombrar.",
+      "formal": "Predicado Reconoce_C(s,x).",
+      "symbol": "Espejo compartido",
+      "current": "No implica consciencia en todos los usos técnicos.",
+      "history": "De reconocer, latín recognoscere.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "capsula",
+      "label": "Cápsula",
+      "en": "capsule",
+      "family": "estructura",
+      "axes": [
+        "cierre",
+        "identidad"
+      ],
+      "narr": "Una unidad guarda una organización interna.",
+      "onto": "Estructura con interior, relaciones e interfaz.",
+      "formal": "C=(Ω,R,D) en formalización previa.",
+      "symbol": "Vaina",
+      "current": "No es objeto material por definición.",
+      "history": "Del latín capsula, cajita; metáfora técnica en el programa.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "cierre",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "interior",
+      "label": "Interior",
+      "en": "interior",
+      "family": "estructura",
+      "axes": [
+        "identidad",
+        "cierre"
+      ],
+      "narr": "Lo que sostiene la unidad desde dentro.",
+      "onto": "Suprimir lo irrelevante depende de la frontera.",
+      "formal": "Conjunto I de variables internas.",
+      "symbol": "Núcleo",
+      "current": "Interior ontológico no es necesariamente espacial.",
+      "history": "Del latín interior, más adentro.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "frontera",
+      "label": "Frontera",
+      "en": "boundary",
+      "family": "estructura",
+      "axes": [
+        "cierre",
+        "diferencia"
+      ],
+      "narr": "Donde una unidad puede relacionarse con otra.",
+      "onto": "Delimitación funcional de preguntas futuras.",
+      "formal": "Corte I⊔Z con interfaz Z.",
+      "symbol": "Membrana",
+      "current": "No requiere pared física.",
+      "history": "De frente, latín frons, con evolución romance.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "cierre",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "interfaz",
+      "label": "Interfaz",
+      "en": "interface",
+      "family": "estructura",
+      "axes": [
+        "trama",
+        "episteme"
+      ],
+      "narr": "La cara por donde una estructura se deja consultar.",
+      "onto": "Contenido suficiente para ciertas preguntas.",
+      "formal": "K_Z=π_Z(J).",
+      "symbol": "Puerta",
+      "current": "Una interfaz suficiente para Q no lo es para toda Q.",
+      "history": "Calco técnico del inglés interface; término informático contemporáneo.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "trama",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "proyeccion",
+      "label": "Proyección",
+      "en": "projection",
+      "family": "estructura",
+      "axes": [
+        "escala",
+        "episteme"
+      ],
+      "narr": "Se muestra un aspecto conservando alguna relación.",
+      "onto": "La pérdida de detalle requiere contrato.",
+      "formal": "π_Z(J)=∃I J.",
+      "symbol": "Sombra",
+      "current": "Proyección no garantiza reversibilidad.",
+      "history": "Del latín proiectio, acción de lanzar hacia delante.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "escala",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "cristal_relacional",
+      "label": "Cristal relacional",
+      "en": "relational crystal",
+      "family": "estructura",
+      "axes": [
+        "trama",
+        "cierre"
+      ],
+      "narr": "Estructura presente de compatibilidades conjuntas.",
+      "onto": "Formalización distinta del atlas de las palabras.",
+      "formal": "J=S_C ⋈ S_E ⋈ B.",
+      "symbol": "Cristal facetado",
+      "current": "No es cristal mineral ni catálogo de sinónimos.",
+      "history": "Cristal remite a griego krýstallos vía latín; aquí metáfora formal propuesta.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "trama",
+      "epistemic": "DEFINICIÓN FORMAL BAJO CONTRATO"
+    },
+    {
+      "id": "cristal_semantico",
+      "label": "Cristal semántico",
+      "en": "semantic crystal",
+      "family": "estructura",
+      "axes": [
+        "linguistica",
+        "trama"
+      ],
+      "narr": "Mapa facetado de palabras, diferencias y símbolos.",
+      "onto": "Atlas editorial y epistemológico apoyado en el programa.",
+      "formal": "Red de conceptos y discriminantes tipados.",
+      "symbol": "Prisma",
+      "current": "No confundir con el cristal relacional matemático.",
+      "history": "Compuesto técnico propuesto; cristal + semántico (griego sēmantikós).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "linguistica",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "nucleo_suficiente",
+      "label": "Núcleo suficiente",
+      "en": "sufficient core",
+      "family": "estructura",
+      "axes": [
+        "cierre",
+        "episteme"
+      ],
+      "narr": "Lo mínimo que todavía responde una pregunta.",
+      "onto": "Minimalidad siempre relativa a pregunta y contexto.",
+      "formal": "C_q* minimiza cardinalidad con respuesta preservada, si existe.",
+      "symbol": "Piedra angular",
+      "current": "Mínimo en tamaño no equivale a mínimo en cómputo.",
+      "history": "Núcleo (latín nucleus) y suficiente (sufficere).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "cierre",
+      "epistemic": "DEFINICIÓN FORMAL BAJO CONTRATO"
+    },
+    {
+      "id": "raices_latentes",
+      "label": "Raíces latentes",
+      "en": "latent roots",
+      "family": "estructura",
+      "axes": [
+        "diferencia",
+        "episteme"
+      ],
+      "narr": "Varias tramas siguen siendo compatibles.",
+      "onto": "No cerrar antes de obtener discriminantes.",
+      "formal": "Core_L(R) de raíces máximas compatibles.",
+      "symbol": "Semillas",
+      "current": "No equivale a múltiples verdades actuales.",
+      "history": "Raíz (latín radix), latente (latín latens).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "sector",
+      "label": "Sector",
+      "en": "sector",
+      "family": "estructura",
+      "axes": [
+        "identidad",
+        "dinamica"
+      ],
+      "narr": "Región donde una identidad admite transformaciones.",
+      "onto": "Clase conectada por transformaciones admisibles.",
+      "formal": "Componente por preservación de invariantes.",
+      "symbol": "Territorio",
+      "current": "Sector físico exige definición independiente.",
+      "history": "Del latín sector, el que corta.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "identidad",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "imagen",
+      "label": "Imagen",
+      "en": "image / representation",
+      "family": "estructura",
+      "axes": [
+        "autorref",
+        "identidad"
+      ],
+      "narr": "Algo se presenta en referencia a otra cosa.",
+      "onto": "Reflejo o representación no necesariamente visual.",
+      "formal": "I(x), representación formal situada.",
+      "symbol": "Reflejo",
+      "current": "Imagen puede ser mental, matemática o visual.",
+      "history": "Del latín imago.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "autorref",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "invariante",
+      "label": "Invariante",
+      "en": "invariant",
+      "family": "matematica",
+      "axes": [
+        "identidad",
+        "episteme"
+      ],
+      "narr": "Algo permanece al transformarse.",
+      "onto": "Criterio posible de identidad.",
+      "formal": "f(Tx)=f(x).",
+      "symbol": "Ancla",
+      "current": "Invariante no selecciona dinámica por sí solo.",
+      "history": "Formación moderna: prefijo in- + variante.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "identidad",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "normalizacion",
+      "label": "Normalización",
+      "en": "normalization",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "cierre"
+      ],
+      "narr": "Una estructura puede tratarse como una unidad.",
+      "onto": "Conserva información pertinente bajo contrato.",
+      "formal": "Norm(J) con preservación de semántica declarada.",
+      "symbol": "Regla / uno",
+      "current": "Normalizar no borra procedencia ni certifica costo bajo.",
+      "history": "De norma (latín norma, escuadra/regla).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "complemento",
+      "label": "Complemento",
+      "en": "complement",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "cierre"
+      ],
+      "narr": "Lo que queda del universo declarado.",
+      "onto": "Relativo al universo y operación elegidos.",
+      "formal": "U\\A.",
+      "symbol": "Pieza faltante",
+      "current": "Complemento no significa automáticamente solución compatible.",
+      "history": "Del latín complementum, lo que completa.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "DEFINICIÓN FORMAL BAJO CONTRATO"
+    },
+    {
+      "id": "resto",
+      "label": "Resto",
+      "en": "remainder",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "escala"
+      ],
+      "narr": "Lo que falta o queda luego de operación.",
+      "onto": "Puede reingresar como relación relevante.",
+      "formal": "U\\A u operación de residuo declarada.",
+      "symbol": "Fragmento",
+      "current": "Resto aritmético y residuo relacional no son sinónimos.",
+      "history": "De restar; familia latina restare.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "escala",
+      "label": "Escala",
+      "en": "scale",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "identidad"
+      ],
+      "narr": "Grado de referencia de una magnitud.",
+      "onto": "Solo luego de declarar comparabilidad.",
+      "formal": "Factor o unidad a.",
+      "symbol": "Regla",
+      "current": "No existe escala física primitiva en ontología.",
+      "history": "Del latín scala, escalera.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "radio",
+      "label": "Radio",
+      "en": "radius / relational reach",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "trama"
+      ],
+      "narr": "Extensión relacional desde una referencia.",
+      "onto": "Antes de puente físico no presupone longitud métrica.",
+      "formal": "r_C o radio euclidiano bajo modelo.",
+      "symbol": "Rayo",
+      "current": "Radio conceptual no equivale a radio físico.",
+      "history": "Del latín radius, rayo o varilla.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "distancia",
+      "label": "Distancia",
+      "en": "distance",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "escala"
+      ],
+      "narr": "Cuánto separa referencias bajo una medida.",
+      "onto": "Requiere criterio y dominio para cuantificar.",
+      "formal": "d:X×X→ℝ≥0 con axiomas de métrica cuando aplique.",
+      "symbol": "Segmento",
+      "current": "Diferencia no siempre es distancia.",
+      "history": "Del latín distantia, estar separado.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "longitud",
+      "label": "Longitud",
+      "en": "length",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "episteme"
+      ],
+      "narr": "Medida de un enlace o recorrido.",
+      "onto": "No queda determinada por mera adyacencia.",
+      "formal": "ℓ_ij, unidades declaradas.",
+      "symbol": "Cinta métrica",
+      "current": "Una arista de grafo carece de longitud si no se asigna.",
+      "history": "Del latín longitudo.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "orientacion",
+      "label": "Orientación",
+      "en": "orientation",
+      "family": "matematica",
+      "axes": [
+        "identidad",
+        "dinamica"
+      ],
+      "narr": "Dirección relativa de una estructura.",
+      "onto": "Dato distinto de escala y posición.",
+      "formal": "R∈SO(3) en modelo geométrico.",
+      "symbol": "Brújula",
+      "current": "No confundir orientación espacial con significado.",
+      "history": "De oriente, latín oriens, lo que nace o surge.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "identidad",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "dimension",
+      "label": "Dimensión",
+      "en": "dimension",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "escala"
+      ],
+      "narr": "Dirección independiente de variación.",
+      "onto": "No igual a cantidad de nodos o enlaces.",
+      "formal": "rank G en una realización euclidiana completa.",
+      "symbol": "Eje",
+      "current": "Una quinta cápsula no obliga 4D salvo restricciones específicas.",
+      "history": "Del latín dimensio, medida.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "ortogonalidad",
+      "label": "Ortogonalidad",
+      "en": "orthogonality",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "episteme"
+      ],
+      "narr": "Variaciones independientes según producto interno.",
+      "onto": "No es noción ontológica primitiva.",
+      "formal": "⟨u,v⟩=0 bajo estructura declarada.",
+      "symbol": "Ángulo recto",
+      "current": "Independencia informativa no siempre es perpendicularidad.",
+      "history": "Del griego orthós (recto) y gōnía (ángulo).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "siete_mas_uno",
+      "label": "Siete más uno",
+      "en": "seven plus one",
+      "family": "matematica",
+      "axes": [
+        "escala",
+        "cierre"
+      ],
+      "narr": "Una totalidad se recompone desde siete y complemento.",
+      "onto": "La lectura depende del tipo de unidad y reflexión.",
+      "formal": "7+1=8; identidades aritméticas no prueban unicidad ontológica.",
+      "symbol": "Octágono incompleto",
+      "current": "No igualar ocho booleano, octeto físico y octava aritmética.",
+      "history": "Expresión aritmética corriente; la lectura relacional pertenece al programa.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "escala",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "bit_relacional",
+      "label": "Bit relacional",
+      "en": "relational bit",
+      "family": "matematica",
+      "axes": [
+        "diferencia",
+        "escala"
+      ],
+      "narr": "Primer contraste binario acreditable.",
+      "onto": "No prueba que la ontología sea digital.",
+      "formal": "log₂2=1 en partición binaria.",
+      "symbol": "Interruptor",
+      "current": "No toda distinción equivale a bit independiente de Shannon.",
+      "history": "Bit, contracción inglesa de binary digit; relacional precisa el contexto.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "CONCEPT_MAP.md",
+      "primary": "diferencia",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "trama_metricas",
+      "label": "Compatibilidad métrica",
+      "en": "metric compatibility",
+      "family": "matematica",
+      "axes": [
+        "trama",
+        "escala"
+      ],
+      "narr": "Las longitudes de un módulo pueden coexistir.",
+      "onto": "Condiciones geométricas declaradas para representar relaciones.",
+      "formal": "G=−1/2 JD²J semidefinida positiva, datos completos.",
+      "symbol": "Tetraedro",
+      "current": "No toda lista de longitudes es embebible.",
+      "history": "Origen léxico específico pendiente de verificación documental; acepción técnica contextualizada.",
+      "history_status": "APROXIMACIÓN — VERIFICAR",
+      "source": "CONCEPT_MAP.md",
+      "primary": "trama",
+      "epistemic": "DEFINICIÓN FORMAL BAJO CONTRATO"
+    },
+    {
+      "id": "configuracion",
+      "label": "Configuración",
+      "en": "configuration",
+      "family": "computacion",
+      "axes": [
+        "trama",
+        "diferencia"
+      ],
+      "narr": "Una forma posible del sistema.",
+      "onto": "Admisible no implica efectivamente realizada.",
+      "formal": "ω∈Ω.",
+      "symbol": "Patrón",
+      "current": "No confundir posible con real.",
+      "history": "Del latín configuratio, forma conjunta.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "trama",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "solucion",
+      "label": "Solución",
+      "en": "solution",
+      "family": "computacion",
+      "axes": [
+        "cierre",
+        "episteme"
+      ],
+      "narr": "Una respuesta satisface la pregunta formulada.",
+      "onto": "Relativa a regla y contexto; puede cambiar otra consulta.",
+      "formal": "x∈S_Q.",
+      "symbol": "Llave",
+      "current": "Solución única no significa vía única.",
+      "history": "Del latín solutio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "cierre",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "respuesta",
+      "label": "Respuesta",
+      "en": "answer",
+      "family": "computacion",
+      "axes": [
+        "cierre",
+        "linguistica"
+      ],
+      "narr": "Aquello que contesta una pregunta.",
+      "onto": "Debe venir con discriminantes suficientes.",
+      "formal": "Q(ω).",
+      "symbol": "Punto final",
+      "current": "Responder no implica acreditar.",
+      "history": "De responder, del latín respondere.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "cierre",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "pregunta",
+      "label": "Pregunta",
+      "en": "question",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "Se hace visible qué aún necesitamos distinguir.",
+      "onto": "Define relevancia del núcleo suficiente.",
+      "formal": "Consulta Q:Ω→Y.",
+      "symbol": "Signo de interrogación",
+      "current": "Cambiar pregunta cambia suficiencia.",
+      "history": "De preguntar, familia latina percontari (etimología a contrastar).",
+      "history_status": "APROXIMACIÓN — VERIFICAR",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "discriminante",
+      "label": "Discriminante",
+      "en": "discriminant",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "La relación capaz de separar alternativas.",
+      "onto": "Debe ser necesaria o suficiente bajo contrato claro.",
+      "formal": "D_q(A,B;C), predicado que separa respuestas.",
+      "symbol": "Prisma",
+      "current": "El discriminante no siempre es una palabra única.",
+      "history": "De discriminar, latín discriminare, separar.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "determinante",
+      "label": "Determinante semántico",
+      "en": "semantic determinant",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "trama"
+      ],
+      "narr": "Relación mínima candidata que explica una distinción.",
+      "onto": "Puede convertirse en nodo, si conserva trazabilidad.",
+      "formal": "D*_q; minimizar conjunto de discriminantes con respuesta estable.",
+      "symbol": "Bisagra",
+      "current": "No confundir con determinante de una matriz.",
+      "history": "De determinar, latín determinare; aquí uso relacional, no matricial.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "evidencia",
+      "label": "Evidencia",
+      "en": "evidence",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "identidad"
+      ],
+      "narr": "Lo que sostiene una afirmación.",
+      "onto": "Distinta de intuición o ilustración.",
+      "formal": "Dato, prueba o resultado según dominio.",
+      "symbol": "Huella comprobable",
+      "current": "Una metáfora nunca basta como evidencia.",
+      "history": "Del latín evidentia, claridad patente.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "justificacion",
+      "label": "Justificación",
+      "en": "justification",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "cierre"
+      ],
+      "narr": "Explicar por qué una conclusión se sostiene.",
+      "onto": "Obliga a nombrar inferencias y límites.",
+      "formal": "Demostración / argumento / fuente comprobable.",
+      "symbol": "Lupa",
+      "current": "Una explicación persuasiva puede ser inválida.",
+      "history": "De justificar, latín iustificare.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "falsador",
+      "label": "Falsador",
+      "en": "falsifier",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "Un resultado que pondría en aprietos la afirmación.",
+      "onto": "Obligación de contrastabilidad para hipótesis.",
+      "formal": "Condición F cuya observación contradice H.",
+      "symbol": "Prueba adversa",
+      "current": "No todo resultado negativo refuta la ontología entera.",
+      "history": "Formación moderna desde falso, latín falsus.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "hipotesis",
+      "label": "Hipótesis",
+      "en": "hypothesis",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "Propuesta que orienta prueba.",
+      "onto": "No equivale a hallazgo validado.",
+      "formal": "H bajo condiciones y falsadores.",
+      "symbol": "Borrador",
+      "current": "No elevar a teorema por repetición.",
+      "history": "Del griego hypóthesis, supuesto.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "teorema",
+      "label": "Teorema",
+      "en": "theorem",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "cierre"
+      ],
+      "narr": "Resultado deducido bajo premisas explícitas.",
+      "onto": "Verdad condicional al sistema formal usado.",
+      "formal": "Premisas ⊢ T.",
+      "symbol": "Demostración",
+      "current": "No acredita por sí mismo un observable físico.",
+      "history": "Del griego theṓrēma, objeto de contemplación.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "rosi",
+      "label": "ROSI / RC-1",
+      "en": "ROSI relational evaluator",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "trama"
+      ],
+      "narr": "Audita rutas, discriminantes y residuos.",
+      "onto": "Clasificador metodológico, no validador físico.",
+      "formal": "Estados RESOLVED / OPEN / SUPERPOSED / COLLAPSED.",
+      "symbol": "Lupa de rutas",
+      "current": "No convertir puntuaciones de ROSI en prueba ontológica.",
+      "history": "Sigla técnica del sistema de evaluación del programa.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "economia_minima",
+      "label": "Economía mínima",
+      "en": "minimum relational economy",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "trama"
+      ],
+      "narr": "Solo la estructura necesaria, sin perder diferencias relevantes.",
+      "onto": "Principio de suficiencia, no oráculo de minimización global.",
+      "formal": "Economía evaluada frente a Q y contrato.",
+      "symbol": "Tejido exacto",
+      "current": "Brevedad no significa economía.",
+      "history": "Economía: griego oikonomía, administración de la casa; metáfora de suficiencia.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "suficiencia",
+      "label": "Suficiencia",
+      "en": "sufficiency",
+      "family": "epistemologia",
+      "axes": [
+        "cierre",
+        "episteme"
+      ],
+      "narr": "La información alcanza para una pregunta.",
+      "onto": "Siempre relativa a preguntas y futuros admitidos.",
+      "formal": "P_Z(J), Q, G.",
+      "symbol": "Llave justa",
+      "current": "No debe universalizarse una interfaz contextual.",
+      "history": "Del latín sufficientia.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "cierre",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "acreditacion",
+      "label": "Acreditación",
+      "en": "warrant / verification",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "cierre"
+      ],
+      "narr": "Una solución cuenta como justificada.",
+      "onto": "Diferente de poseerla o adivinarla.",
+      "formal": "Certificado o procedimiento aceptado.",
+      "symbol": "Sello de prueba",
+      "current": "Determinado no implica acreditado.",
+      "history": "De acreditar, crédito desde latín creditum.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "representacion",
+      "label": "Representación",
+      "en": "representation",
+      "family": "computacion",
+      "axes": [
+        "linguistica",
+        "escala"
+      ],
+      "narr": "Forma codificada de una trama.",
+      "onto": "Su tamaño y acceso importan en cómputo.",
+      "formal": "Enc(R) con semántica preservada.",
+      "symbol": "Mapa",
+      "current": "La forma compacta no asegura elaboración eficiente.",
+      "history": "Del latín repraesentatio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "linguistica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "algoritmo",
+      "label": "Algoritmo",
+      "en": "algorithm",
+      "family": "computacion",
+      "axes": [
+        "dinamica",
+        "episteme"
+      ],
+      "narr": "Regla ejecutable de transformación.",
+      "onto": "Capa posterior a la ontología.",
+      "formal": "Procedimiento finito bien especificado.",
+      "symbol": "Engranaje",
+      "current": "Una descripción breve no implica ejecución barata.",
+      "history": "Nombre derivado históricamente del matemático al-Juarismi (al-Khwārizmī).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "dinamica",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "costo_computo",
+      "label": "Costo computacional",
+      "en": "computational cost",
+      "family": "computacion",
+      "axes": [
+        "episteme",
+        "dinamica"
+      ],
+      "narr": "Recursos para realizar una operación.",
+      "onto": "No es el trabajo físico originario.",
+      "formal": "T(n), espacio S(n), modelo de cálculo.",
+      "symbol": "Reloj discreto",
+      "current": "Costo depende de codificación y máquina abstracta.",
+      "history": "Costo del comercio; cómputo del latín computare.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "episteme",
+      "epistemic": "PROPUESTA LÉXICA"
+    },
+    {
+      "id": "p_clase",
+      "label": "P (clase)",
+      "en": "P (complexity class)",
+      "family": "computacion",
+      "axes": [
+        "episteme",
+        "dinamica"
+      ],
+      "narr": "Problemas de decisión resolubles eficientemente en modelo estándar.",
+      "onto": "Noción de complejidad, no atributo ontológico de la unidad.",
+      "formal": "Tiempo polinómico determinista.",
+      "symbol": "Ruta corta",
+      "current": "No se redefine cambiando una metáfora de unidad.",
+      "history": "Letra P: denominación formal de complejidad polinómica.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "episteme",
+      "epistemic": "DEFINICIÓN ESTÁNDAR / PROBLEMA ABIERTO"
+    },
+    {
+      "id": "np_clase",
+      "label": "NP (clase)",
+      "en": "NP (complexity class)",
+      "family": "computacion",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "Problemas cuyo certificado puede verificarse eficientemente.",
+      "onto": "No significa necesariamente difícil.",
+      "formal": "Certificado de longitud polinómica verificable.",
+      "symbol": "Sello verificable",
+      "current": "NP no quiere decir no-polinómico.",
+      "history": "NP: sigla de nondeterministic polynomial time.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "episteme",
+      "epistemic": "DEFINICIÓN ESTÁNDAR / PROBLEMA ABIERTO"
+    },
+    {
+      "id": "p_vs_np",
+      "label": "P frente a NP",
+      "en": "P versus NP",
+      "family": "computacion",
+      "axes": [
+        "episteme",
+        "diferencia"
+      ],
+      "narr": "Pregunta si resolver siempre puede ser tan eficiente como verificar.",
+      "onto": "Problema abierto; no se infiere del cierre semántico.",
+      "formal": "¿P=NP? en codificación estándar.",
+      "symbol": "Dos caminos",
+      "current": "Pruebas en familias restringidas no deciden igualdad general.",
+      "history": "Composición de las denominaciones técnicas P y NP.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "cristal_relacional_v0_1.pdf (29-09-2026)",
+      "primary": "episteme",
+      "epistemic": "DEFINICIÓN ESTÁNDAR / PROBLEMA ABIERTO"
+    },
+    {
+      "id": "transformacion",
+      "label": "Transformación",
+      "en": "transformation",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "identidad"
+      ],
+      "narr": "La trama cambia de estado.",
+      "onto": "Debe respetar o alterar invariantes declarados.",
+      "formal": "T:X→X o relación de evolución.",
+      "symbol": "Flecha",
+      "current": "Cambio no equivale a movimiento físico.",
+      "history": "Del latín transformare, cambiar de forma.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "dinamica",
+      "label": "Dinámica",
+      "en": "dynamics",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Regla que selecciona continuaciones posibles.",
+      "onto": "No determinada únicamente por economía.",
+      "formal": "x_{t+1}=F(x_t) cuando haya regla.",
+      "symbol": "Flujo",
+      "current": "Conservar invariantes no selecciona trayectoria.",
+      "history": "Del griego dynamikós, fuerza/capacidad.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "tiempo",
+      "label": "Tiempo",
+      "en": "time",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Se comparan órdenes y ritmos de cambios.",
+      "onto": "No se presume como contenedor primordial.",
+      "formal": "Orden t o tiempo físico con puente.",
+      "symbol": "Reloj",
+      "current": "Actualización no equivale a segundos.",
+      "history": "Del latín tempus.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "ritmo",
+      "label": "Ritmo",
+      "en": "rhythm / rate",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Repetición que permite comparar transformaciones.",
+      "onto": "Un reloj emerge cuando una recurrencia sirve de referencia.",
+      "formal": "ω según contrato espectral.",
+      "symbol": "Pulso",
+      "current": "Frecuencia relacional no es automáticamente Hz.",
+      "history": "Del griego rhythmós.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "velocidad",
+      "label": "Velocidad",
+      "en": "velocity",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Cambio comparado con un ritmo o tiempo.",
+      "onto": "Exige especificar cantidad y referencia temporal.",
+      "formal": "v=dx/dt bajo modelo físico.",
+      "symbol": "Flecha larga",
+      "current": "Un salto por enlace no determina metros por segundo.",
+      "history": "Del latín velocitas.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "aceleracion",
+      "label": "Aceleración",
+      "en": "acceleration",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "diferencia"
+      ],
+      "narr": "Variación de la velocidad.",
+      "onto": "Su lectura relacional precede a F=ma.",
+      "formal": "a=dv/dt o segunda diferencia, según contrato.",
+      "symbol": "Flecha curva",
+      "current": "Segunda diferencia de amplitud no prueba fuerza física.",
+      "history": "Del latín acceleratio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "modo_a",
+      "label": "Modo A",
+      "en": "mode A",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "autorref"
+      ],
+      "narr": "Capacidad de reajuste entre proyecciones.",
+      "onto": "Separar potencial de respuesta efectiva.",
+      "formal": "A=V×R en rama propuesta; puente pendiente.",
+      "symbol": "Rotor",
+      "current": "No basta su magnitud para fijar orientación futura.",
+      "history": "Nombre técnico propuesto para esta rama del programa.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "conservacion",
+      "label": "Conservación",
+      "en": "conservation",
+      "family": "dinamica",
+      "axes": [
+        "identidad",
+        "escala"
+      ],
+      "narr": "La estructura reconoce algo que permanece.",
+      "onto": "No equivale a inmovilidad.",
+      "formal": "I(Tx)=I(x) bajo hipótesis.",
+      "symbol": "Ancla cambiante",
+      "current": "Conservación informativa no es siempre energía física.",
+      "history": "Del latín conservatio.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "identidad",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "redistribucion",
+      "label": "Redistribución",
+      "en": "redistribution",
+      "family": "dinamica",
+      "axes": [
+        "trama",
+        "dinamica"
+      ],
+      "narr": "La diferencia cambia dónde se expresa.",
+      "onto": "No se destruye necesariamente la información.",
+      "formal": "Mapas de transferencia con invariantes.",
+      "symbol": "Corriente",
+      "current": "Mover información no significa preservar toda distinción.",
+      "history": "Compuesto: re- + distribución, familia latina distribuere.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "trama",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "sintonia",
+      "label": "Sintonía",
+      "en": "attunement",
+      "family": "dinamica",
+      "axes": [
+        "trama",
+        "dinamica"
+      ],
+      "narr": "Las diferencias admisibles se reducen al compararse.",
+      "onto": "Propuesta para gravedad relacional.",
+      "formal": "Minimizar D bajo restricciones explícitas.",
+      "symbol": "Diapasón",
+      "current": "No toda minimización es ley física.",
+      "history": "De sintonizar, griego sýn (junto) + tónos (tono/tensión).",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "trama",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "gravedad",
+      "label": "Gravedad relacional (propuesta)",
+      "en": "relational gravity proposal",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "trama"
+      ],
+      "narr": "Una convergencia de relaciones modifica lo distinguible.",
+      "onto": "Hipótesis física, no resultado derivado universal.",
+      "formal": "q̇^a=−M^{ab}∂_bD+J^a (candidata).",
+      "symbol": "Órbita",
+      "current": "No afirmar recuperación de gravedad observada sin pruebas.",
+      "history": "Del latín gravitas, peso o gravedad.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "fuerza",
+      "label": "Fuerza física",
+      "en": "physical force",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "episteme"
+      ],
+      "narr": "Generador de cambio medible en física.",
+      "onto": "No debe anteceder a ontología mínima.",
+      "formal": "F=ma en dominio newtoniano.",
+      "symbol": "Empuje",
+      "current": "No equivale a vínculo abstracto.",
+      "history": "Del latín fortia, fortaleza.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "trabajo_fisico",
+      "label": "Trabajo físico",
+      "en": "physical work",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Magnitud asociada a fuerza y desplazamiento.",
+      "onto": "Capa posterior a diferencia y cierre.",
+      "formal": "W=∫F·dr bajo modelo físico.",
+      "symbol": "Polea",
+      "current": "No es sinónimo de costo computacional.",
+      "history": "Trabajo (etimología tradicional relacionada con tripalium, discutida en detalle); aquí físico.",
+      "history_status": "APROXIMACIÓN — VERIFICAR",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "energia",
+      "label": "Energía física",
+      "en": "physical energy",
+      "family": "dinamica",
+      "axes": [
+        "dinamica",
+        "escala"
+      ],
+      "narr": "Cantidad física de los modelos dinámicos.",
+      "onto": "No primitiva del núcleo ontológico.",
+      "formal": "E con unidades y observables.",
+      "symbol": "Reserva",
+      "current": "No igualar información con energía por analogía.",
+      "history": "Del griego enérgeia, actividad o acto.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "SOURCE_AUDIT_v0_53.md",
+      "primary": "dinamica",
+      "epistemic": "MODELO / HIPÓTESIS FÍSICA SI APLICA"
+    },
+    {
+      "id": "informacion",
+      "label": "Información",
+      "en": "information",
+      "family": "ontologia",
+      "axes": [
+        "diferencia",
+        "trama"
+      ],
+      "narr": "Diferencia pertinente sostenida por relaciones.",
+      "onto": "No implica magnitud física de Shannon sin contrato.",
+      "formal": "Conjunto de distinciones que cambia Q.",
+      "symbol": "Marca",
+      "current": "Información no equivale a datos ni energía.",
+      "history": "Del latín informatio, dar forma.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+      "primary": "diferencia",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    },
+    {
+      "id": "dato",
+      "label": "Dato",
+      "en": "datum / data",
+      "family": "epistemologia",
+      "axes": [
+        "episteme",
+        "linguistica"
+      ],
+      "narr": "Registro o valor recibido.",
+      "onto": "No siempre es una diferencia relevante.",
+      "formal": "d∈D bajo codificación.",
+      "symbol": "Ficha",
+      "current": "Acumular datos no garantiza información pertinente.",
+      "history": "Del latín datum, lo dado.",
+      "history_status": "SÍNTESIS ETIMOLÓGICA — VERIFICAR FUENTE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+      "primary": "episteme",
+      "epistemic": "CONVENCIÓN ONTOLÓGICA / FORMAL SEGÚN CONTRATO"
+    }
+  ],
+  "links": [
+    {
+      "a": "narrativa",
+      "b": "reflexion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "reflexion",
+      "b": "diferencia",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "diferencia",
+      "b": "indeterminacion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "indeterminacion",
+      "b": "relacion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "relacion",
+      "b": "comparacion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "comparacion",
+      "b": "resolucion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "resolucion",
+      "b": "recursion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "recursion",
+      "b": "cardinalidad",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "cardinalidad",
+      "b": "cierre_en_si",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "cierre_en_si",
+      "b": "identidad",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "identidad",
+      "b": "sector",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "palabra",
+      "b": "concepto",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "concepto",
+      "b": "significado",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "significado",
+      "b": "sentido",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "sentido",
+      "b": "comprender",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "comprender",
+      "b": "cristal_semantico",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "casa",
+      "b": "habitar",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "habitar",
+      "b": "pertenencia",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "pertenencia",
+      "b": "hogar",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "capsula",
+      "b": "interior",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "interior",
+      "b": "frontera",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "frontera",
+      "b": "interfaz",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "interfaz",
+      "b": "proyeccion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "proyeccion",
+      "b": "nucleo_suficiente",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "nucleo_suficiente",
+      "b": "cristal_relacional",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "imagen",
+      "b": "reflexion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "reflexion",
+      "b": "autorreferencia",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "autorreferencia",
+      "b": "cierre_autorreferencial",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "cierre_autorreferencial",
+      "b": "cierre_en_si",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "diferencia",
+      "b": "radio",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "radio",
+      "b": "distancia",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "distancia",
+      "b": "longitud",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "longitud",
+      "b": "trama_metricas",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "solucion",
+      "b": "acreditacion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "acreditacion",
+      "b": "respuesta",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "pregunta",
+      "b": "discriminante",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "discriminante",
+      "b": "determinante",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "determinante",
+      "b": "rosi",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "transformacion",
+      "b": "dinamica",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "dinamica",
+      "b": "ritmo",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "ritmo",
+      "b": "tiempo",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "tiempo",
+      "b": "velocidad",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "velocidad",
+      "b": "aceleracion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "conservacion",
+      "b": "redistribucion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "redistribucion",
+      "b": "sintonia",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "sintonia",
+      "b": "gravedad",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "representacion",
+      "b": "algoritmo",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "algoritmo",
+      "b": "costo_computo",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "costo_computo",
+      "b": "p_clase",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "p_clase",
+      "b": "np_clase",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "np_clase",
+      "b": "p_vs_np",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "trama_comun",
+      "b": "familia_soluciones",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "familia_soluciones",
+      "b": "raices_latentes",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "raices_latentes",
+      "b": "novedad",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "novedad",
+      "b": "residuo",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "escala",
+      "b": "normalizacion",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "normalizacion",
+      "b": "complemento",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "complemento",
+      "b": "siete_mas_uno",
+      "type": "ruta_conceptual",
+      "why": "Vecindad de una lectura; no es implicación lógica ni equivalencia."
+    },
+    {
+      "a": "cierre_en_si",
+      "b": "trama_comun",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "cierre_en_si",
+      "b": "cristal_relacional",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "comparacion",
+      "b": "pregunta",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "pregunta",
+      "b": "suficiencia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "suficiencia",
+      "b": "interfaz",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "suficiencia",
+      "b": "acreditacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "unidad",
+      "b": "normalizacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "unidad",
+      "b": "cierre_en_si",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "cierre_en_si",
+      "b": "invariante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "nucleo_suficiente",
+      "b": "determinante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "rosi",
+      "b": "falsador",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "rosi",
+      "b": "hipotesis",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "continuidad",
+      "b": "conservacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "continuidad",
+      "b": "trama_comun",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "raices_latentes",
+      "b": "discriminante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "residuo",
+      "b": "discriminante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "siete_mas_uno",
+      "b": "complemento",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "cierre_en_si",
+      "b": "novedad",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "reflexion",
+      "b": "normalizacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "herencia",
+      "b": "trama_comun",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "cardinalidad",
+      "b": "bit_relacional",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "palabra",
+      "b": "etimologia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "palabra",
+      "b": "uso_actual",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "palabra",
+      "b": "simbolo",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "simbolo",
+      "b": "metafora",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "concepto",
+      "b": "evidencia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "teorema",
+      "b": "justificacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "cristal_semantico",
+      "b": "determinante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "narrativa",
+      "b": "unidad",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "representacion",
+      "b": "proyeccion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "representacion",
+      "b": "cristal_relacional",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "trabajo_fisico",
+      "b": "fuerza",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "fuerza",
+      "b": "energia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "trabajo_fisico",
+      "b": "costo_computo",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "modo_a",
+      "b": "aceleracion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "modo_a",
+      "b": "sintonia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "interfaz",
+      "b": "herencia",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "diferencia",
+      "b": "informacion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "informacion",
+      "b": "dato",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "pregunta",
+      "b": "respuesta",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "respuesta",
+      "b": "resolucion",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "identidad",
+      "b": "invariante",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    },
+    {
+      "a": "imagen",
+      "b": "simbolo",
+      "type": "converge_o_contrasta",
+      "why": "Ver determinante y contrato antes de tratar como equivalencia."
+    }
+  ],
+  "discriminants": [
+    {
+      "id": "d01",
+      "a": "casa",
+      "b": "hogar",
+      "label": "Pertenencia relacional",
+      "question": "¿Cuándo un lugar se reconoce como hogar?",
+      "contrast": "La casa puede ser edificio sin continuidad reconocida; el hogar puede ser comunidad sin casa física.",
+      "scope": "Bajo la acepción de hogar como trama de pertenencia.",
+      "falsifier": "Un caso de hogar sin criterio de pertenencia bajo esta definición exigiría revisarla.",
+      "status": "CANDIDATO",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d02",
+      "a": "recordar",
+      "b": "comprender",
+      "label": "Integración operativa",
+      "question": "¿Cuándo recuperar una idea se convierte en entenderla?",
+      "contrast": "Recordar la recupera; entenderla permite usarla y relacionarla con nuevas preguntas.",
+      "scope": "Comprensión operacional, no teoría general de conciencia.",
+      "falsifier": "Si una tarea nueva puede resolverse sin integración observable, la prueba propuesta no discrimina.",
+      "status": "CANDIDATO",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d03",
+      "a": "cierre_propio",
+      "b": "cierre_en_si",
+      "label": "Autorreferencia suficiente",
+      "question": "¿Qué hace explícito «en sí»?",
+      "contrast": "Propio evoca pertenencia; en sí exige reconocimiento desde relaciones suficientes.",
+      "scope": "Convención léxica del programa.",
+      "falsifier": "Que la expresión «propio» implique siempre autorreferencia fuerte invalidaría esta divergencia.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d04",
+      "a": "reflexion",
+      "b": "cierre_en_si",
+      "label": "Consistencia de cierre",
+      "question": "¿Por qué reflexionar no basta para cerrar?",
+      "contrast": "Una reflexión puede volver sobre sí sin sostener una unidad consistente.",
+      "scope": "Dada regla de consistencia.",
+      "falsifier": "Contraejemplo a la supuesta consistencia o autorreferencia.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d05",
+      "a": "herencia",
+      "b": "trama_comun",
+      "label": "Copresencia estructural",
+      "question": "¿Cuándo «herencia» sugiere demasiado tiempo?",
+      "contrast": "Herencia apunta a transmisión; trama indica relaciones sostenidas simultáneamente.",
+      "scope": "Usos presentes vs transmisión genealogía.",
+      "falsifier": "Si la tarea exige procedencia temporal, trama sola deja información fuera.",
+      "status": "CANDIDATO",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d06",
+      "a": "familia_soluciones",
+      "b": "trama_comun",
+      "label": "Tipo de comunidad",
+      "question": "¿Qué comparten familia y trama?",
+      "contrast": "Familia es clase de realizaciones; trama es organización de relaciones.",
+      "scope": "Una misma trama puede admitir múltiples familias.",
+      "falsifier": "Una relación uno-a-uno universal requeriría pruebas que no tenemos.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d07",
+      "a": "unidad",
+      "b": "identidad",
+      "label": "Persistencia reconocible",
+      "question": "¿Qué convierte el uno en identidad?",
+      "contrast": "Unidad reconoce entidad, identidad exige criterio bajo cambio.",
+      "scope": "Transformaciones declaradas.",
+      "falsifier": "Una unidad sin invariantes bajo los cambios relevantes rompe identidad persistente.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d08",
+      "a": "novedad",
+      "b": "cierre_en_si",
+      "label": "Dependencia acreditada",
+      "question": "¿Cuándo nueva diferencia pasa a cierre?",
+      "contrast": "Novedad añade discriminación; cierre puede resultar de relaciones ya sustentadas.",
+      "scope": "Modelo específico de clausura.",
+      "falsifier": "Si el dato novedoso fuera automáticamente cierre siempre, el criterio no distingue.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d09",
+      "a": "relacion",
+      "b": "comparacion",
+      "label": "Pregunta operativa",
+      "question": "¿Qué hace una comparación respecto de una relación?",
+      "contrast": "Relación conecta; comparación pide una respuesta concreta a partir de ella.",
+      "scope": "Una relación puede no haber sido consultada.",
+      "falsifier": "Respuesta sin pregunta definida invalida su acreditación.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d10",
+      "a": "diferencia",
+      "b": "distancia",
+      "label": "Medición declarada",
+      "question": "¿Cuándo una diferencia se vuelve distancia?",
+      "contrast": "Diferencia precede a escala; distancia requiere regla métrica.",
+      "scope": "Dominio con función de distancia.",
+      "falsifier": "Diferencias no metrizadas prueban la no equivalencia.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d11",
+      "a": "distancia",
+      "b": "longitud",
+      "label": "Objeto medido",
+      "question": "¿Cuándo distancia entre puntos es longitud de vínculo?",
+      "contrast": "La distancia mide separación; longitud se aplica a un enlace o recorrido definido.",
+      "scope": "Geometría etiquetada.",
+      "falsifier": "Enlaces abstractos sin medida distinguen ambos.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d12",
+      "a": "proyeccion",
+      "b": "interfaz",
+      "label": "Suficiencia de consulta",
+      "question": "¿Cuándo una proyección sirve como interfaz?",
+      "contrast": "Una proyección puede perder información; una interfaz suficiente preserva respuestas permitidas.",
+      "scope": "Q y futuros G declarados.",
+      "falsifier": "Encontrar Q donde la proyección responde distinto.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d13",
+      "a": "normalizacion",
+      "b": "resolucion",
+      "label": "Semántica preservada",
+      "question": "¿Una normalización resuelve automáticamente?",
+      "contrast": "Normalizar expresa forma; resolver cambia qué preguntas quedan abiertas.",
+      "scope": "Se exige preservación del contenido exterior declarado.",
+      "falsifier": "Una forma normal que cambia respuestas no es normalización fiel.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d14",
+      "a": "complemento",
+      "b": "resto",
+      "label": "Universo de referencia",
+      "question": "¿Por qué la parte que falta no es cualquier residuo?",
+      "contrast": "Complemento es U\\A; resto puede referir otra operación.",
+      "scope": "Con universo U fijado.",
+      "falsifier": "Cambiar U cambia complemento aunque la palabra resto permanezca.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d15",
+      "a": "indeterminacion",
+      "b": "residuo",
+      "label": "Relevancia de la pregunta",
+      "question": "¿Qué queda pendiente?",
+      "contrast": "Indeterminación son alternativas abiertas; residuo es aquello que la consulta necesita distinguir.",
+      "scope": "Pregunta Q explícita.",
+      "falsifier": "Alternativa abierta irrelevante para Q no constituye residuo pertinente.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d16",
+      "a": "pregunta",
+      "b": "discriminante",
+      "label": "Testigo separador",
+      "question": "¿Qué información decide entre alternativas?",
+      "contrast": "Pregunta fija el objetivo; discriminante separa respuestas diferentes.",
+      "scope": "Relativo a Q y C.",
+      "falsifier": "Un supuesto testigo que no cambia respuesta no discrimina.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d17",
+      "a": "hipotesis",
+      "b": "teorema",
+      "label": "Prueba deductiva",
+      "question": "¿Cuándo una hipótesis alcanza estado de teorema?",
+      "contrast": "Hipótesis propone; teorema se deduce bajo premisas explícitas.",
+      "scope": "Marco formal y prueba revisable.",
+      "falsifier": "Un paso inválido de inferencia cancela el estatus de teorema.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d18",
+      "a": "evidencia",
+      "b": "metafora",
+      "label": "Prueba independiente",
+      "question": "¿Qué permite justificar y qué solo ilustrar?",
+      "contrast": "Evidencia contrasta; metáfora orienta.",
+      "scope": "Dominio de afirmación declarado.",
+      "falsifier": "Una analogía atractiva sin observables no constituye prueba.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d19",
+      "a": "costo_computo",
+      "b": "trabajo_fisico",
+      "label": "Magnitud y unidades",
+      "question": "¿Por qué «trabajo» no es el costo computacional?",
+      "contrast": "Costo cuenta recursos del algoritmo; trabajo físico integra fuerza y desplazamiento.",
+      "scope": "Modelos de cómputo vs leyes físicas.",
+      "falsifier": "Una equivalencia exigiría puente físico explícito.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d20",
+      "a": "p_clase",
+      "b": "np_clase",
+      "label": "Tipo de verificación",
+      "question": "¿Qué distingue las clases P y NP?",
+      "contrast": "En P se decide en tiempo polinómico; en NP hay certificado polinómico verificable.",
+      "scope": "Complejidad estándar; P⊆NP.",
+      "falsifier": "No sabemos si se separan estrictamente.",
+      "status": "FORMAL",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d21",
+      "a": "siete_mas_uno",
+      "b": "normalizacion",
+      "label": "Unidad de referencia",
+      "question": "¿Qué convierte una cuenta en normalización estructural?",
+      "contrast": "7+1=8 es igualdad aritmética; normalización requiere contrato que preserve información.",
+      "scope": "No igualar distintos «ochos».",
+      "falsifier": "Otro objeto con mismo cardinal demuestra que el número no basta.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d22",
+      "a": "rosi",
+      "b": "determinante",
+      "label": "Discriminante auditado",
+      "question": "¿Qué aporta ROSI al determinante?",
+      "contrast": "ROSI exige pregunta, raíces, residuo y falsador; no impone una sola palabra.",
+      "scope": "Protocolo de auditoría, no verdad semántica automática.",
+      "falsifier": "Cierre sin nombrar discriminante es COLLAPSED.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d23",
+      "a": "autorreferencia",
+      "b": "cierre_autorreferencial",
+      "label": "Consistencia comprobable",
+      "question": "¿Basta con referirse a uno mismo?",
+      "contrast": "Autorreferencia puede paradojar; cierre requiere consistencia bajo criterio.",
+      "scope": "Dominio y reglas declaradas.",
+      "falsifier": "Ejemplo de paradoja autorreferente.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d24",
+      "a": "imagen",
+      "b": "representacion",
+      "label": "Medio de codificación",
+      "question": "¿Todo lo representado es imagen?",
+      "contrast": "Imagen evoca percepción o reflexión; representación es más general.",
+      "scope": "Uso ontológico y matemático separado.",
+      "falsifier": "Una codificación sin forma visual rompe sinonimia.",
+      "status": "INTERPRETACIÓN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d25",
+      "a": "conservacion",
+      "b": "redistribucion",
+      "label": "Lugar de la información",
+      "question": "¿Puede conservarse algo aunque cambie de soporte?",
+      "contrast": "Conservar es preservar invariante; redistribuir cambia dónde reside.",
+      "scope": "Invariante declarado.",
+      "falsifier": "Si todas las distinciones relevantes se pierden, no hay conservación.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d26",
+      "a": "sintonia",
+      "b": "gravedad",
+      "label": "Puente observable",
+      "question": "¿La sintonía ya demuestra gravedad?",
+      "contrast": "Sintonía es mecanismo propuesto; gravedad física requiere predicción contrastable.",
+      "scope": "Puente campo dinámico- observable.",
+      "falsifier": "Falta de predicción independiente mantiene hipótesis.",
+      "status": "OPEN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d27",
+      "a": "velocidad",
+      "b": "aceleracion",
+      "label": "Cambio del cambio",
+      "question": "¿Cómo se distingue la aceleración de velocidad?",
+      "contrast": "Velocidad compara variación de posición; aceleración compara variación de velocidad.",
+      "scope": "Tiempo/ritmo cuantificados.",
+      "falsifier": "Sin magnitudes y referencia no hay valor físico.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d28",
+      "a": "cierre_en_si",
+      "b": "cristal_relacional",
+      "label": "Contrato y contenido persistente",
+      "question": "¿Cómo se realiza el cierre narrativo en un cristal formal?",
+      "contrast": "Cierre es condición de reconocimiento; cristal es relación conjunta de compatibilidad.",
+      "scope": "Preguntas Q y futuros G declarados.",
+      "falsifier": "Un contexto futuro que distingue dos supuestos equivalentes.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d29",
+      "a": "cristal_semantico",
+      "b": "cristal_relacional",
+      "label": "Nivel de formalización",
+      "question": "¿Es lo mismo el atlas que el cristal formal?",
+      "contrast": "Uno organiza términos y asociaciones; otro formaliza compatibilidades de configuraciones.",
+      "scope": "Herramienta editorial versus objeto formal.",
+      "falsifier": "Que el atlas visual sea interpretable no prueba el objeto formal.",
+      "status": "DERIVABLE",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    },
+    {
+      "id": "d30",
+      "a": "informacion",
+      "b": "dato",
+      "label": "Interpretación de diferencia",
+      "question": "¿Cuándo un dato constituye información?",
+      "contrast": "Dato codificado no implica distinción pertinente para una pregunta.",
+      "scope": "Depende del contrato Q.",
+      "falsifier": "Dato que cambia código pero no respuesta.",
+      "status": "OPEN",
+      "source": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md"
+    }
+  ],
+  "sources": {
+    "ONTOLOGY": "ONTOLOGY_CANONICAL_V1_0_CANDIDATE_ES.md (27-09-2026)",
+    "CRYSTAL": "cristal_relacional_v0_1.pdf (29-09-2026)",
+    "ATLAS": "CRISTAL_SEMANTICO_v0_1.md (16-10-2026)",
+    "ROSI": "RC1_EVALUATION_STATES.md; paper_1_method_formal_residue.md",
+    "CONT": "SOURCE_AUDIT_v0_53.md",
+    "CONCEPT": "CONCEPT_MAP.md",
+    "INTERFACE": "ONTOLOGY_INTERFACE_AS_CAPSULE_ES.md"
+  },
+  "epistemology": {
+    "no_equivalence": "Un vínculo no es sinónimo ni implicación salvo demostración",
+    "no_metric": "Los valores de orientación de facetas son marcadores editoriales, no distancias semánticas validadas",
+    "rosi": "Reglas del protocolo aplicadas manualmente; evaluador/plugin ROS-1 no ejecutado",
+    "coverage": "Corpus recuperable al 16-10-2026; no exhaustivo de todo el historial ni de todos los idiomas",
+    "history": "Las notas etimológicas son pistas de investigación; verificar con diccionarios y corpus antes de publicarlas como hechos documentados."
+  }
+}

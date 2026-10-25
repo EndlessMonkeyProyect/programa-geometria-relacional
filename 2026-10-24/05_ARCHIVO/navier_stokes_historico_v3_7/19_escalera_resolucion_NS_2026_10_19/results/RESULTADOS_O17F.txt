@@ -1,0 +1,58 @@
+O17-F · escalera de resolución, corrida A (ν=0.008), estado común t=15, evolución 0.6, float64
+
+Niveles:
+  N=64   kmax·η=0.98  Re_λ=48.2  ε=0.1144  CFL=0.09  puntos modo alto=15714
+  N=128  kmax·η=1.96  Re_λ=48.2  ε=0.1142  CFL=0.19  puntos modo alto=129025
+  N=192  kmax·η=2.94  Re_λ=48.2  ε=0.1142  CFL=0.28  puntos modo alto=435587
+  N=256  kmax·η=3.93  Re_λ=48.2  ε=0.1142  CFL=0.38  puntos modo alto=1032319
+
+Puntual en malla común (q>3 q_rms, a>0): mediana |x_N − x_256|/|x_256|  [acreditado si ≤ 0.05]
+  cantidad    N=64       N=128      N=192   
+  om          0.077      0.006*     0.000*  
+  tau         0.368      0.026*     0.002*  
+  b           0.508      0.097      0.013*  
+  r_nu        0.763      0.248      0.039*  
+  P           0.641      0.138      0.021*  
+  Vc          0.904      0.422      0.089   
+  Y           0.700      0.266      0.059   
+  (* acreditado)
+Clasificación individual de bajo giro (ρ<0.05, q>3 q_rms) frente a N=256 — Jaccard:
+  N=64: 1 en ambos, 21 en N, 12 en N=256 → Jaccard 0.03
+  N=128: 9 en ambos, 16 en N, 11 en N=256 → Jaccard 0.50
+  N=192: 10 en ambos, 11 en N, 12 en N=256 → Jaccard 0.77
+
+Estadísticas (valor N=256 [IC95]; Δ por nivel; A = acreditado; C = convergente; P = contenido del plano; R = robusto):
+  mediana rho | all_a>0                  +0.6929 [+0.6799,+0.7054]  N64: Δ=+0.0670·  N128: Δ=+0.0070A  N192: Δ=+0.0002A  CPR  desde N=128
+  mediana rho | q>2qrms                  +0.8086 [+0.7798,+0.8349]  N64: Δ=-0.0467·  N128: Δ=-0.0043A  N192: Δ=+0.0009A  CPR  desde N=128
+  mediana rho | q>3qrms                  +0.7856 [+0.7186,+0.8454]  N64: Δ=-0.0023A  N128: Δ=-0.0055A  N192: Δ=+0.0022A  ···  desde N=64
+  mediana rho | q>4qrms                  +0.6484 [+0.5416,+0.8052]  N64: Δ=-0.0633A  N128: Δ=+0.0398A  N192: Δ=+0.0060A  CPR  desde N=64
+  mediana Lam | q>3qrms                  +2.7341 [+2.3298,+3.2392]  N64: Δ=-0.2189A  N128: Δ=+0.0205A  N192: Δ=-0.0050A  CPR  desde N=64
+  mediana Dperp | q>3qrms                +0.7703 [+0.7271,+0.8051]  N64: Δ=+0.0532·  N128: Δ=-0.0040A  N192: Δ=-0.0020A  CPR  desde N=128
+  mediana cosphi | q>3qrms               -0.3852 [-0.5198,-0.2772]  N64: Δ=+0.0087A  N128: Δ=+0.0243A  N192: Δ=-0.0030A  ···  desde N=64
+  mediana sP | q>3qrms                   +9.9584 [+8.5637,+11.6379]  N64: Δ=-2.4048·  N128: Δ=-0.0633A  N192: Δ=-0.0889A  ···  desde N=128
+  mediana sV | q>3qrms                   -8.6312 [-10.2940,-7.1502]  N64: Δ=+2.1865·  N128: Δ=+0.0646A  N192: Δ=+0.0209A  CPR  desde N=128
+  mediana dlogb_dG | q>3qrms             -0.2897 [-1.1630,+0.5225]  N64: Δ=-0.0373A  N128: Δ=+0.2543·  N192: Δ=+0.0444A  ···  desde N=192
+  mediana |e_perp|/|b| | q>3qrms         +0.0015 [+0.0013,+0.0018]  N64: Δ=+0.5844·  N128: Δ=+0.1171·  N192: Δ=+0.0142·  C··  desde N=—
+  frac sP>0 | q>3qrms                    +0.8603 [+0.8196,+0.8941]  N64: Δ=-0.0232A  N128: Δ=-0.0037A  N192: Δ=-0.0011A  CPR  desde N=64
+  frac sV<0 | q>3qrms                    +0.9042 [+0.8749,+0.9299]  N64: Δ=+0.0129A  N128: Δ=-0.0262·  N192: Δ=-0.0046A  ···  desde N=192
+  frac dlogb_dG>0 | q>3qrms              +0.4836 [+0.4379,+0.5328]  N64: Δ=-0.0103A  N128: Δ=+0.0140·  N192: Δ=+0.0022A  ···  desde N=192
+  P(rho<0.05) | q/qrms en [0,1)          +0.0452 [+0.0417,+0.0486]  N64: Δ=-0.0215·  N128: Δ=-0.0045A  N192: Δ=-0.0012A  CPR  desde N=128
+  P(rho<0.05) | q/qrms en [1,2)          +0.0344 [+0.0297,+0.0393]  N64: Δ=+0.0018A  N128: Δ=-0.0017A  N192: Δ=-0.0014A  CPR  desde N=64
+  P(rho<0.05) | q/qrms en [2,3)          +0.0207 [+0.0142,+0.0278]  N64: Δ=+0.0071A  N128: Δ=+0.0009A  N192: Δ=-0.0003A  CPR  desde N=64
+  P(rho<0.05) | q/qrms en [3,4)          +0.0241 [+0.0130,+0.0395]  N64: Δ=-0.0039A  N128: Δ=+0.0011A  N192: Δ=-0.0009A  CPR  desde N=64
+  P(rho<0.05) | q/qrms en [4,5)          +0.0091 [+0.0039,+0.0140]  N64: Δ=+0.0207A  N128: Δ=+0.0016A  N192: Δ=+0.0021A  ···  desde N=64
+
+Reproducción estadística frente a las tablas del autor (corrida A):
+  mediana rho | q>3qrms                  N128: autor 0.8430 / O17F 0.7801 [0.7134,0.8363] fuera   N192: autor 0.8049 / O17F 0.7878 [0.7175,0.8452] dentro
+  mediana Lam | q>3qrms                  N128: autor 3.2054 / O17F 2.7545 [2.3457,3.2098] dentro   N192: autor 2.8313 / O17F 2.7290 [2.3292,3.2213] dentro
+  mediana Dperp | q>3qrms                N128: autor 0.7863 / O17F 0.7663 [0.7251,0.8022] dentro   N192: autor 0.7788 / O17F 0.7683 [0.7270,0.8054] dentro
+  mediana cosphi | q>3qrms               N128: autor -0.3979 / O17F -0.3609 [-0.4939,-0.2466] dentro   N192: autor -0.3605 / O17F -0.3882 [-0.5211,-0.2787] dentro
+  mediana sP | q>3qrms                   N128: autor 9.7341 / O17F 9.8952 [8.7058,11.4890] dentro   N192: autor 9.0571 / O17F 9.8695 [8.4975,11.5658] dentro
+  mediana sV | q>3qrms                   N128: autor -8.7926 / O17F -8.5665 [-10.1918,-7.0285] dentro   N192: autor -7.9202 / O17F -8.6102 [-10.3090,-7.1403] dentro
+  mediana dlogb_dG | q>3qrms             N128: autor -0.5352 / O17F -0.0354 [-0.9177,0.7733] dentro   N192: autor -0.6790 / O17F -0.2453 [-1.1617,0.6149] dentro
+  mediana rho | all_a>0                  N128: autor 0.7070 / O17F 0.6999 [0.6858,0.7133] dentro   N192: autor 0.7052 / O17F 0.6931 [0.6781,0.7055] dentro
+  P(rho<0.05) | q/qrms en [0,1)          N128: autor 0.0378 / O17F 0.0408 [0.0369,0.0452] dentro   N192: autor 0.0398 / O17F 0.0440 [0.0405,0.0472] fuera
+  P(rho<0.05) | q/qrms en [1,2)          N128: autor 0.0292 / O17F 0.0327 [0.0269,0.0395] dentro   N192: autor 0.0308 / O17F 0.0330 [0.0282,0.0380] dentro
+  P(rho<0.05) | q/qrms en [2,3)          N128: autor 0.0187 / O17F 0.0216 [0.0159,0.0276] dentro   N192: autor 0.0236 / O17F 0.0204 [0.0142,0.0275] dentro
+  P(rho<0.05) | q/qrms en [3,4)          N128: autor 0.0170 / O17F 0.0252 [0.0125,0.0416] dentro   N192: autor 0.0165 / O17F 0.0232 [0.0118,0.0392] dentro
+  P(rho<0.05) | q/qrms en [4,5)          N128: autor 0.0127 / O17F 0.0108 [0.0021,0.0173] dentro   N192: autor 0.0092 / O17F 0.0112 [0.0053,0.0177] dentro

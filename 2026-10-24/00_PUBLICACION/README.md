@@ -1,0 +1,5 @@
+# 00_PUBLICACION
+
+**Español.** El manuscrito público del 24 de octubre de 2026, tal como llegó (`.md` y `.pdf`), y su traducción al inglés (`.en.md`). El texto en español es el de autoridad. El manuscrito remite a una fe de erratas de CME‑003 que no está en este paquete; la precisión que trata, sobre órdenes de elementos compuestos frente a órdenes del producto de dos espejos, ya está escrita y comprobada en CME‑003. La versión en inglés indica dónde está cada fuente dentro de este paquete y cuáles faltan.
+
+**English.** The public manuscript of October 24, 2026, as received (`.md` and `.pdf`), and its English translation (`.en.md`, with a PDF). The Spanish text is the authoritative version. The manuscript refers to a CME‑003 erratum that is not in this package; the point it concerns, the orders of composite elements versus the orders of products of two mirrors, is now stated and checked in CME‑003 itself. The English version gives the location of each source in this package and lists the ones that are missing.

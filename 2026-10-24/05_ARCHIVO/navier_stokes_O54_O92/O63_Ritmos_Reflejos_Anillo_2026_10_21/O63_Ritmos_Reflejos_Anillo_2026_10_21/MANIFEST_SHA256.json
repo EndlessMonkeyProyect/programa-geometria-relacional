@@ -1,0 +1,29 @@
+{
+  "name": "O63_Ritmos_Reflejos_Anillo_2026_10_21",
+  "files": {
+    "LEER_PRIMERO.md": "376df37685aa9e8a47cf5938e74641ed0dfb96b57fa37e20b73f4e379d70a836",
+    "O63_FORMALIZACION.es.md": "5f2dab3460c69b73b5acdf68cc878faaaa3d03fa53d33ff3d664b01af76428ef",
+    "codigo/ejecutar_o63.py": "41df98ee04b2fb0d3759ada7655162791391298b3486b5d5f66cb4a919fa98d0",
+    "codigo/graficar_o63.py": "6f741229eb9cb48783fff01a1eb665912c518c5455dab5486c62089f3dc090e2",
+    "codigo/verificar_o63.py": "da6b602a6f0b8d13d676143827edae05ef890d3abeb515e49967ca9b4b835e81",
+    "fuentes/O53_ORIGINAL_SIN_MODIFICAR.zip": "4288f6a6de2b7a29a8b4fec54bf7eaa6f107c8ced90462e472ee7e56de1d00c9",
+    "fuentes/datos_O53_originales/NS_N40_eps00.json": "a1abaf35669c60d9c9910303d98bfd0aa3d3bdf1d24969edb89bebf876731166",
+    "fuentes/datos_O53_originales/NS_N40_eps07.json": "c160f00a17841e1a86ce5ee3b346e719387d805e6e8f6d25c7213b482c4bb465",
+    "fuentes/datos_O53_originales/NS_N40_eps14.json": "e0f9b9f3662b412e7d9bbfef63b28f2a2891c61a70568b6a62d9a6b288a37327",
+    "fuentes/datos_O53_originales/NS_N40_eps14_equienergia.json": "4ac78e05d9beabb7a0cba43d2c54c3c87bee2f1e02bb247a2366952be1d1bfb4",
+    "fuentes/datos_O53_originales/NS_N48_eps00.json": "22823b36fca37024b9a9799ca1006b93a6fe044b17c4dcd0615187dce32dd18e",
+    "fuentes/datos_O53_originales/NS_N48_eps14.json": "31e78d3519c0d0848248e8171d5fe7b1a770ea885f9d7498e93db615a064af83",
+    "fuentes/datos_O53_originales/NS_N48_eps14_equienergia.json": "4aaf21431d56dab21bc2f3bd22926d0a423814102033995192ccec2470be239b",
+    "fuentes/ejecutar_o62_ORIGINAL.py": "f28f68de9355fc171f6efbe6fba059c4aef09abefa93fff412166ea91aee1450",
+    "fuentes/o53_perturbed_ring_ORIGINAL.py": "a046941091c432ad4a1210a1ec6634be1442affa5369f9430e2a69960204bc0c",
+    "graficos/o63_prediccion_corta_vs_evolucion.png": "a8a7ca4212e24d06b514aa6fd0212870783afa6d5117594f146f5888ea431cbb",
+    "graficos/o63_ritmos_alrededor_del_anillo.png": "7ff01a9cc8acdcf6cbf6f599ca1a69c637eedd487b1a3ccd502ad2da51e6595f",
+    "resultados/controles_rotacion.csv": "310ba3f72390874367c16b67611d7d216ad55733365cfc4ebab30da45b95f35e",
+    "resultados/desfases_predichos_y_calculados.csv": "d14fe641809aaa7a49586060a9776c8377ce4f473275e00762b2b0a0532e4523",
+    "resultados/distribucion_azimutal.csv": "276998fe6a9db26ad84a85e806f5fea17dd255349e236854cef9883631c413bf",
+    "resultados/ejecucion.log": "802faa157669da2c01db641300ff4f654f20aec7447258a89861887b31491b90",
+    "resultados/reproduccion_o53.csv": "398d496be445d9e123d9caa6d4cfa860f94dc4a3b34a39a416ce1b78e5ac3e59",
+    "resultados/resumen.json": "0b133883d56c336c4770b0288d7b3d1a5899bce52a06b62297df8b17a8e92ae1",
+    "resultados/resumen_distribucion.csv": "4da1d04f35ffe41d53bf716a30ee913d19e33fa691d7045ed9d4c65e423befad"
+  }
+}

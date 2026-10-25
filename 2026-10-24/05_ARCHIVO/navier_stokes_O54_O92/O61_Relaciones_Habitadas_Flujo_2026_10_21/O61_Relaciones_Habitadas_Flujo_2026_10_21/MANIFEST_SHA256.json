@@ -1,0 +1,16 @@
+{
+  "programa": "Geometría Relacional",
+  "suplemento": "O61",
+  "fecha": "2026-10-21",
+  "autor": "Le Matt Ansatz Di Ego",
+  "estado": "No edita versiones anteriores",
+  "archivos": {
+    "LEER_PRIMERO.md": "4b27e4ac4ff67660c5b5921b21f42fa6590e238425666220ff1bcb14ea54473a",
+    "O61_FORMALIZACION.es.md": "18c5499440779e48508d9060cffc8dbdaa74770901371c55bbe143583235f33a",
+    "codigo/verificar_o61.py": "3a5b24314060f292dab768a37ea9cfb6a28ca485ef3d4f2bd10b0aeb5645e84c",
+    "graficos/o61_modo_nuevo_y_energia.png": "208d0ab3ef52e52a04f73581803a57fabac45a17bc124690e6acb9900fce76e2",
+    "resultados/resumen_o61.json": "5cc34071ada3fd8f99d315ad39a80abc26af5cdd6da28499f37bf2be5d3c7992",
+    "resultados/series_o61.csv": "9285999c6c6bc1ce7b52d69690c8c28cb7b3dcce19e091ff4dba87625da50c07",
+    "verificar_integridad.py": "333794aa446f2ee7a4fe93320bb5c092163d72439c41b48f3cc181961409e70b"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "claims": [
+    "Axisymmetric viscous vorticity ratio PDE is algebraically exact under no-swirl assumptions",
+    "Moving-frame streamfunction constant along example meridional closed streamline",
+    "Core radial weighted flux cancellation in translating frame",
+    "Boundary-difference expression recovers axial speed",
+    "Galilean invariance requires ambient-relative velocity",
+    "Core profile affects classical thin-core axial velocity",
+    "Axial-to-poloidal tangential speed ratio depends on slenderness and tends to zero"
+  ],
+  "thin_core_benchmark": [
+    {
+      "a_over_R": 0.02,
+      "U_solid": 0.45689123162955275,
+      "U_hollow": 0.43699686374306584,
+      "U_over_a_Omega_solid": 0.057414645471079814
+    },
+    {
+      "a_over_R": 0.05,
+      "U_solid": 0.3839751319860216,
+      "U_hollow": 0.3640807640995347,
+      "U_over_a_Omega_solid": 0.12062934538084566
+    },
+    {
+      "a_over_R": 0.1,
+      "U_solid": 0.3288162319478587,
+      "U_hollow": 0.3089218640613718,
+      "U_over_a_Omega_solid": 0.20660133173369405
+    },
+    {
+      "a_over_R": 0.15,
+      "U_solid": 0.2965503438445067,
+      "U_hollow": 0.2766559759580198,
+      "U_over_a_Omega_solid": 0.27949211449242883
+    },
+    {
+      "a_over_R": 0.2,
+      "U_solid": 0.2736573319096958,
+      "U_hollow": 0.2537629640232089,
+      "U_over_a_Omega_solid": 0.3438879454113936
+    }
+  ],
+  "flux_checks": [
+    {
+      "points": 17,
+      "signed_flux_residual": 2.168404344971009e-19,
+      "inner_uz_minus_U": -0.015555555555555545,
+      "outer_uz_minus_U": 0.012727272727272754
+    },
+    {
+      "points": 257,
+      "signed_flux_residual": 1.951563910473908e-18,
+      "inner_uz_minus_U": -0.015555555555555545,
+      "outer_uz_minus_U": 0.012727272727272754
+    },
+    {
+      "points": 8193,
+      "signed_flux_residual": 1.5178830414797062e-18,
+      "inner_uz_minus_U": -0.015555555555555545,
+      "outer_uz_minus_U": 0.012727272727272754
+    }
+  ],
+  "limitations": [
+    "Streamfunction test case is kinematic, NOT asserted to solve NS/Euler momentum equation",
+    "Thin-core speed is asymptotic and model-dependent",
+    "No interior/exterior Lagrangian phase difference was inferred from radius or speed",
+    "No regularity theorem for general 3D Navier-Stokes"
+  ]
+}

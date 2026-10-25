@@ -1,0 +1,11 @@
+id,afirmacion,estado,alcance
+O57-T1,Evolucion temporal de metrica lagrangiana por 2 T^T S T,DERIVADO,Flujo suave y superficie material
+O57-T2,C=σ²D y det D=1,DERIVADO,Metrica inicial y actual positiva
+O57-T3,Invariancia de D ante escala uniforme exterior,DERIVADO,Espejo como cambio de coordenadas
+O57-T4,Derivada derecha de anisotropia inicial por brecha espectral de S_T,DERIVADO,Campo suficientemente regular
+O57-F1,Perpendicularidad no basta para conformalidad,FALSADOR,Contraejemplo C=diag(4;1)
+O57-T5,Compensacion de area material y estiramiento normal,DERIVADO,Campo incompresible suave y superficie transportada
+O57-E1,Superficie completa N32 y marcas materiales,EXPERIMENTO,Estimacion Galerkin limitada
+O57-E2,Rotaciones X Y equivalentes en metricas globales,EXPERIMENTO,Ensayo con simetria axial y etiquetas rotadas
+O57-A1,Identificar σ con múltiplo entero normalizador,ABIERTO,No se ha derivado tal puente
+O57-A2,Interfaz autonoma suficiente y cota dinamica para NS general,ABIERTO,No es teorema de regularidad

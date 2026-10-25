@@ -1,0 +1,10 @@
+{
+  "cases_euler_point_vortex_advection": 500,
+  "point_pair_control": true,
+  "heat_shear_phase_vs_amplitude_control": true,
+  "circular_quadrupole_undefined_control": true,
+  "max_center_motion_error": 1.04372128693154e-15,
+  "max_global_second_moment_drift_error": 8.278100427361323e-15,
+  "all_passed": true,
+  "scope": "Discrete Euler advection identities; viscosity contributions and smooth NS results are proven analytically in the note, not numerically DNS."
+}

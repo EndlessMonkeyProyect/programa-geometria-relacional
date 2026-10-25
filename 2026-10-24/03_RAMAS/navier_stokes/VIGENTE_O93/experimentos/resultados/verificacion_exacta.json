@@ -1,0 +1,86 @@
+{
+  "titulo": "O93 — auditoria reproducible de resultados O72/O74/O78/O84/O86/O92",
+  "contrato": "T^3, ν>0, fuerza 0, campos solenoidales suaves; experimentos auxiliares bajo contratos particulares",
+  "E1_circuitos": {
+    "C3": {
+      "vertices": 3,
+      "aristas": 3,
+      "rango": 3,
+      "dimension_nucleo": 0,
+      "generadores": []
+    },
+    "C4": {
+      "vertices": 4,
+      "aristas": 4,
+      "rango": 3,
+      "dimension_nucleo": 1,
+      "generadores": [
+        [
+          "-1",
+          "1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    "K4": {
+      "vertices": 4,
+      "aristas": 6,
+      "rango": 4,
+      "dimension_nucleo": 0,
+      "generadores": []
+    }
+  },
+  "E2_holonomia": {
+    "H_radii_variables": "1",
+    "H_reescalado": "1",
+    "H_asimetrico": "11/10",
+    "nota": "Compatibilidad instantanea ideal; no se prueba ley NS."
+  },
+  "E3_polarizacion_de_fase": {
+    "mas": {
+      "M2": "73/18",
+      "W": "95/9",
+      "B": "266/9",
+      "P": "3/4",
+      "D": "190/73",
+      "D2": "532/73",
+      "T": "81*sqrt(146)/10658",
+      "Gamma_nu": "675/266",
+      "W_derivada_inicial": "409/450"
+    },
+    "menos": {
+      "M2": "73/18",
+      "W": "95/9",
+      "B": "266/9",
+      "P": "-3/4",
+      "D": "190/73",
+      "D2": "532/73",
+      "T": "-81*sqrt(146)/10658",
+      "Gamma_nu": "-675/266",
+      "W_derivada_inicial": "-941/450"
+    }
+  },
+  "E4_ondas_exactas": {
+    "n_tiempos": 51,
+    "D_inicial": 1.5588848358520062,
+    "D_final": 1.1955541827304486,
+    "Q_inicial": 3.577302356677252,
+    "Q_final": 1.7828502487123656,
+    "comprobacion": "onda de cizalla exacta, sin transferencia ni integracion aproximada de PDE"
+  },
+  "E5_presupuesto_O84": {
+    "nu": 1,
+    "A": 4,
+    "B": 1,
+    "C": 1,
+    "delta": "9/500",
+    "M0": "0.5194887128361981029402",
+    "cota_M1": "0.2717247465613107383585",
+    "certificado_inicial": false,
+    "certificado_actualizado": true,
+    "alcance": "Verifica las formulas y comparaciones analiticas de O84 en un intervalo: NO una regularidad general."
+  },
+  "total": 5,
+  "estado": "PASA, comprobaciones independientes algebraicas y cuantitativas de las formulas seleccionadas"
+}

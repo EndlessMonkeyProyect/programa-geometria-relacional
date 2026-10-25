@@ -1,0 +1,8 @@
+clave,afirmacion,estatus,alcance
+O85-T1,"Covariancia exacta R,S,Q,B,G,C bajo escala NS para enteros lambda",TEOREMA,"Campos periodicos suaves y referencias reescaladas"
+O85-T2,"ABC helicoidal es solucion exacta suave global de amplitud arbitraria",TEOREMA,"Familia particular 3D periodica sin fuerza"
+O85-T3,"M0=0.5194887 y M1<=0.2717247 invariantes bajo reescala",TEOREMA,"Campo ciclico 3D de O84, intervalos delta/lambda^2"
+O85-T4,"Inversion de fase cambia transferencia triadica a escala lambda por lambda^4",TEOREMA,"Derivada inicial de triada O79"
+O85-F1,"Plantillas reescaladas con margen fijo y costo formal creciente",FALSADOR_LOGICO,"No es una solucion NS pegada ni blow-up"
+O85-A1,"Certificado O84 a priori universal para todo dato suave 3D",ABIERTO,"No demostrado"
+O85-A2,"Identificacion directa del entero normalizador O58 con escala NS",ABIERTO,"No demostrada"

@@ -1,0 +1,1173 @@
+{
+  "panel_frontal_0": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 0.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        0,
+        0
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 3060,
+    "pixel_porcentaje": 2.6020408163265305,
+    "rayos_por_numero_rebotes": [
+      0,
+      448,
+      704,
+      654,
+      654,
+      291,
+      309
+    ],
+    "trayectorias_distintas_con_fuente": 35,
+    "trayectorias_robustas_8pix": 33,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 18,
+        "n_pixeles": 536
+      },
+      {
+        "codigo_base_7": 2,
+        "n_pixeles": 448
+      },
+      {
+        "codigo_base_7": 876,
+        "n_pixeles": 215
+      },
+      {
+        "codigo_base_7": 1009,
+        "n_pixeles": 213
+      },
+      {
+        "codigo_base_7": 120,
+        "n_pixeles": 196
+      },
+      {
+        "codigo_base_7": 127,
+        "n_pixeles": 193
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 191
+      },
+      {
+        "codigo_base_7": 15,
+        "n_pixeles": 168
+      },
+      {
+        "codigo_base_7": 6246,
+        "n_pixeles": 68
+      },
+      {
+        "codigo_base_7": 43829,
+        "n_pixeles": 59
+      },
+      {
+        "codigo_base_7": 765,
+        "n_pixeles": 57
+      },
+      {
+        "codigo_base_7": 842,
+        "n_pixeles": 55
+      },
+      {
+        "codigo_base_7": 107,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 5420,
+        "n_pixeles": 50
+      },
+      {
+        "codigo_base_7": 5917,
+        "n_pixeles": 50
+      },
+      {
+        "codigo_base_7": 772,
+        "n_pixeles": 49
+      },
+      {
+        "codigo_base_7": 41287,
+        "n_pixeles": 41
+      },
+      {
+        "codigo_base_7": 48497,
+        "n_pixeles": 41
+      },
+      {
+        "codigo_base_7": 46103,
+        "n_pixeles": 40
+      },
+      {
+        "codigo_base_7": 5405,
+        "n_pixeles": 39
+      }
+    ],
+    "rayos_bloqueados_paneles": 65421,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 49119,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 3060,
+        "rango": 3,
+        "valor_singular_min_matriz": 742.2587838840577,
+        "condicion": 3.8973017336921605,
+        "fuente_estimada_m": [
+          -0.37406725617864106,
+          0.2809979759479491,
+          0.1058394964027594
+        ],
+        "error_posicion_m": 0.005903246479525549,
+        "rms_distancia_a_rectas_m": 0.0810823688727681,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 3060,
+        "rango": 3,
+        "valor_singular_min_matriz": 742.2587838840577,
+        "condicion": 3.8973017336921605,
+        "fuente_estimada_m": [
+          -0.37406725617864106,
+          0.2809979759479491,
+          0.1058394964027594
+        ],
+        "error_posicion_m": 0.005903246479525549,
+        "rms_distancia_a_rectas_m": 0.0810823688727681,
+        "identificable": true
+      }
+    }
+  },
+  "panel_frontal_3": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 3.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        0,
+        0
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 3391,
+    "pixel_porcentaje": 2.883503401360544,
+    "rayos_por_numero_rebotes": [
+      0,
+      438,
+      638,
+      678,
+      769,
+      353,
+      515
+    ],
+    "trayectorias_distintas_con_fuente": 40,
+    "trayectorias_robustas_8pix": 38,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 18,
+        "n_pixeles": 473
+      },
+      {
+        "codigo_base_7": 2,
+        "n_pixeles": 438
+      },
+      {
+        "codigo_base_7": 876,
+        "n_pixeles": 274
+      },
+      {
+        "codigo_base_7": 120,
+        "n_pixeles": 246
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 185
+      },
+      {
+        "codigo_base_7": 1009,
+        "n_pixeles": 184
+      },
+      {
+        "codigo_base_7": 127,
+        "n_pixeles": 168
+      },
+      {
+        "codigo_base_7": 15,
+        "n_pixeles": 165
+      },
+      {
+        "codigo_base_7": 960,
+        "n_pixeles": 111
+      },
+      {
+        "codigo_base_7": 41423,
+        "n_pixeles": 75
+      },
+      {
+        "codigo_base_7": 5898,
+        "n_pixeles": 67
+      },
+      {
+        "codigo_base_7": 5917,
+        "n_pixeles": 61
+      },
+      {
+        "codigo_base_7": 772,
+        "n_pixeles": 56
+      },
+      {
+        "codigo_base_7": 842,
+        "n_pixeles": 56
+      },
+      {
+        "codigo_base_7": 48596,
+        "n_pixeles": 56
+      },
+      {
+        "codigo_base_7": 107,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 765,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 5420,
+        "n_pixeles": 51
+      },
+      {
+        "codigo_base_7": 41287,
+        "n_pixeles": 47
+      },
+      {
+        "codigo_base_7": 46103,
+        "n_pixeles": 42
+      }
+    ],
+    "rayos_bloqueados_paneles": 63816,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 50393,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 3391,
+        "rango": 3,
+        "valor_singular_min_matriz": 856.9660453134273,
+        "condicion": 3.7107467483287637,
+        "fuente_estimada_m": [
+          -0.36267958092494573,
+          0.28153508090862506,
+          0.10687724032809888
+        ],
+        "error_posicion_m": 0.00810534618624617,
+        "rms_distancia_a_rectas_m": 0.08089260259771347,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 3391,
+        "rango": 3,
+        "valor_singular_min_matriz": 856.9660453134273,
+        "condicion": 3.7107467483287637,
+        "fuente_estimada_m": [
+          -0.36267958092494573,
+          0.28153508090862506,
+          0.10687724032809888
+        ],
+        "error_posicion_m": 0.00810534618624617,
+        "rms_distancia_a_rectas_m": 0.08089260259771347,
+        "identificable": true
+      }
+    }
+  },
+  "panel_frontal_5": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 5.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        0,
+        0
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 3757,
+    "pixel_porcentaje": 3.1947278911564627,
+    "rayos_por_numero_rebotes": [
+      0,
+      430,
+      588,
+      710,
+      924,
+      540,
+      565
+    ],
+    "trayectorias_distintas_con_fuente": 47,
+    "trayectorias_robustas_8pix": 43,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 2,
+        "n_pixeles": 430
+      },
+      {
+        "codigo_base_7": 18,
+        "n_pixeles": 422
+      },
+      {
+        "codigo_base_7": 876,
+        "n_pixeles": 318
+      },
+      {
+        "codigo_base_7": 120,
+        "n_pixeles": 290
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 187
+      },
+      {
+        "codigo_base_7": 1009,
+        "n_pixeles": 169
+      },
+      {
+        "codigo_base_7": 15,
+        "n_pixeles": 166
+      },
+      {
+        "codigo_base_7": 127,
+        "n_pixeles": 154
+      },
+      {
+        "codigo_base_7": 960,
+        "n_pixeles": 152
+      },
+      {
+        "codigo_base_7": 6441,
+        "n_pixeles": 98
+      },
+      {
+        "codigo_base_7": 41435,
+        "n_pixeles": 97
+      },
+      {
+        "codigo_base_7": 904,
+        "n_pixeles": 91
+      },
+      {
+        "codigo_base_7": 6490,
+        "n_pixeles": 91
+      },
+      {
+        "codigo_base_7": 41423,
+        "n_pixeles": 82
+      },
+      {
+        "codigo_base_7": 5898,
+        "n_pixeles": 77
+      },
+      {
+        "codigo_base_7": 48596,
+        "n_pixeles": 59
+      },
+      {
+        "codigo_base_7": 772,
+        "n_pixeles": 55
+      },
+      {
+        "codigo_base_7": 107,
+        "n_pixeles": 54
+      },
+      {
+        "codigo_base_7": 5917,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 765,
+        "n_pixeles": 51
+      }
+    ],
+    "rayos_bloqueados_paneles": 62998,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 50845,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 3757,
+        "rango": 3,
+        "valor_singular_min_matriz": 1033.028219900522,
+        "condicion": 3.3917099711335412,
+        "fuente_estimada_m": [
+          -0.3594321047076291,
+          0.27914860169007527,
+          0.10820356941146803
+        ],
+        "error_posicion_m": 0.01075325312880112,
+        "rms_distancia_a_rectas_m": 0.0811294642645587,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 3757,
+        "rango": 3,
+        "valor_singular_min_matriz": 1033.028219900522,
+        "condicion": 3.3917099711335412,
+        "fuente_estimada_m": [
+          -0.3594321047076291,
+          0.27914860169007527,
+          0.10820356941146803
+        ],
+        "error_posicion_m": 0.01075325312880112,
+        "rms_distancia_a_rectas_m": 0.0811294642645587,
+        "identificable": true
+      }
+    }
+  },
+  "panel_curvo_006": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 0.0,
+      "curvatura_m_inv": 0.06,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        0,
+        0
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 3362,
+    "pixel_porcentaje": 2.858843537414966,
+    "rayos_por_numero_rebotes": [
+      0,
+      581,
+      229,
+      896,
+      490,
+      780,
+      386
+    ],
+    "trayectorias_distintas_con_fuente": 20,
+    "trayectorias_robustas_8pix": 18,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 2,
+        "n_pixeles": 581
+      },
+      {
+        "codigo_base_7": 120,
+        "n_pixeles": 395
+      },
+      {
+        "codigo_base_7": 36765,
+        "n_pixeles": 353
+      },
+      {
+        "codigo_base_7": 5252,
+        "n_pixeles": 350
+      },
+      {
+        "codigo_base_7": 127,
+        "n_pixeles": 314
+      },
+      {
+        "codigo_base_7": 15,
+        "n_pixeles": 229
+      },
+      {
+        "codigo_base_7": 5917,
+        "n_pixeles": 212
+      },
+      {
+        "codigo_base_7": 842,
+        "n_pixeles": 178
+      },
+      {
+        "codigo_base_7": 772,
+        "n_pixeles": 157
+      },
+      {
+        "codigo_base_7": 107,
+        "n_pixeles": 133
+      },
+      {
+        "codigo_base_7": 5307,
+        "n_pixeles": 116
+      },
+      {
+        "codigo_base_7": 750,
+        "n_pixeles": 77
+      },
+      {
+        "codigo_base_7": 5924,
+        "n_pixeles": 60
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 54
+      },
+      {
+        "codigo_base_7": 779,
+        "n_pixeles": 42
+      },
+      {
+        "codigo_base_7": 765,
+        "n_pixeles": 36
+      },
+      {
+        "codigo_base_7": 41287,
+        "n_pixeles": 33
+      },
+      {
+        "codigo_base_7": 5420,
+        "n_pixeles": 32
+      }
+    ],
+    "rayos_bloqueados_paneles": 65225,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 49013,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 3362,
+        "rango": 3,
+        "valor_singular_min_matriz": 414.6800814684499,
+        "condicion": 7.820839329358234,
+        "fuente_estimada_m": [
+          -0.3677605487812347,
+          0.27676294879245117,
+          0.10637302200782899
+        ],
+        "error_posicion_m": 0.005352439783614173,
+        "rms_distancia_a_rectas_m": 0.0830875862010084,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 3362,
+        "rango": 3,
+        "valor_singular_min_matriz": 414.6800814684499,
+        "condicion": 7.820839329358234,
+        "fuente_estimada_m": [
+          -0.3677605487812347,
+          0.27676294879245117,
+          0.10637302200782899
+        ],
+        "error_posicion_m": 0.005352439783614173,
+        "rms_distancia_a_rectas_m": 0.0830875862010084,
+        "identificable": true
+      }
+    }
+  },
+  "panel_opaco": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 0.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 0.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        0,
+        0
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 0,
+    "pixel_porcentaje": 0.0,
+    "rayos_por_numero_rebotes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "trayectorias_distintas_con_fuente": 0,
+    "trayectorias_robustas_8pix": 0,
+    "trayectorias_robustas_principales": [],
+    "rayos_bloqueados_paneles": 7560,
+    "rayos_filtrados_sensor": 110040,
+    "rayos_fin_horizonte": 0,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 0,
+        "identificable": false
+      },
+      "reflected_only": {
+        "n_rayos": 0,
+        "identificable": false
+      }
+    }
+  },
+  "mirando_vertice_0": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 0.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        1,
+        1
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 2735,
+    "pixel_porcentaje": 2.3256802721088436,
+    "rayos_por_numero_rebotes": [
+      0,
+      0,
+      1024,
+      538,
+      371,
+      479,
+      323
+    ],
+    "trayectorias_distintas_con_fuente": 30,
+    "trayectorias_robustas_8pix": 25,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 46,
+        "n_pixeles": 685
+      },
+      {
+        "codigo_base_7": 20,
+        "n_pixeles": 339
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 213
+      },
+      {
+        "codigo_base_7": 144,
+        "n_pixeles": 169
+      },
+      {
+        "codigo_base_7": 313,
+        "n_pixeles": 156
+      },
+      {
+        "codigo_base_7": 1009,
+        "n_pixeles": 120
+      },
+      {
+        "codigo_base_7": 1515,
+        "n_pixeles": 89
+      },
+      {
+        "codigo_base_7": 5454,
+        "n_pixeles": 88
+      },
+      {
+        "codigo_base_7": 2189,
+        "n_pixeles": 86
+      },
+      {
+        "codigo_base_7": 16050,
+        "n_pixeles": 77
+      },
+      {
+        "codigo_base_7": 2192,
+        "n_pixeles": 74
+      },
+      {
+        "codigo_base_7": 6490,
+        "n_pixeles": 63
+      },
+      {
+        "codigo_base_7": 6946,
+        "n_pixeles": 63
+      },
+      {
+        "codigo_base_7": 15371,
+        "n_pixeles": 63
+      },
+      {
+        "codigo_base_7": 48497,
+        "n_pixeles": 55
+      },
+      {
+        "codigo_base_7": 112354,
+        "n_pixeles": 54
+      },
+      {
+        "codigo_base_7": 82897,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 15324,
+        "n_pixeles": 43
+      },
+      {
+        "codigo_base_7": 10609,
+        "n_pixeles": 41
+      },
+      {
+        "codigo_base_7": 48596,
+        "n_pixeles": 41
+      }
+    ],
+    "rayos_bloqueados_paneles": 63347,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 51518,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 2735,
+        "rango": 3,
+        "valor_singular_min_matriz": 1429.3696506336446,
+        "condicion": 1.506151992701303,
+        "fuente_estimada_m": [
+          -0.3656674737489132,
+          0.2811582670452178,
+          0.10982962884776579
+        ],
+        "error_posicion_m": 0.004487916286419293,
+        "rms_distancia_a_rectas_m": 0.08022505000405876,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 2735,
+        "rango": 3,
+        "valor_singular_min_matriz": 1429.3696506336446,
+        "condicion": 1.506151992701303,
+        "fuente_estimada_m": [
+          -0.3656674737489132,
+          0.2811582670452178,
+          0.10982962884776579
+        ],
+        "error_posicion_m": 0.004487916286419293,
+        "rms_distancia_a_rectas_m": 0.08022505000405876,
+        "identificable": true
+      }
+    }
+  },
+  "mirando_vertice_3": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 3.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        1,
+        1,
+        1
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 2688,
+    "pixel_porcentaje": 2.2857142857142856,
+    "rayos_por_numero_rebotes": [
+      0,
+      0,
+      1050,
+      571,
+      274,
+      352,
+      441
+    ],
+    "trayectorias_distintas_con_fuente": 28,
+    "trayectorias_robustas_8pix": 25,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 46,
+        "n_pixeles": 685
+      },
+      {
+        "codigo_base_7": 20,
+        "n_pixeles": 365
+      },
+      {
+        "codigo_base_7": 141,
+        "n_pixeles": 240
+      },
+      {
+        "codigo_base_7": 144,
+        "n_pixeles": 166
+      },
+      {
+        "codigo_base_7": 313,
+        "n_pixeles": 165
+      },
+      {
+        "codigo_base_7": 1009,
+        "n_pixeles": 123
+      },
+      {
+        "codigo_base_7": 16050,
+        "n_pixeles": 77
+      },
+      {
+        "codigo_base_7": 2189,
+        "n_pixeles": 75
+      },
+      {
+        "codigo_base_7": 6946,
+        "n_pixeles": 75
+      },
+      {
+        "codigo_base_7": 38200,
+        "n_pixeles": 71
+      },
+      {
+        "codigo_base_7": 15371,
+        "n_pixeles": 66
+      },
+      {
+        "codigo_base_7": 6490,
+        "n_pixeles": 63
+      },
+      {
+        "codigo_base_7": 48497,
+        "n_pixeles": 63
+      },
+      {
+        "codigo_base_7": 38284,
+        "n_pixeles": 59
+      },
+      {
+        "codigo_base_7": 2192,
+        "n_pixeles": 57
+      },
+      {
+        "codigo_base_7": 112354,
+        "n_pixeles": 54
+      },
+      {
+        "codigo_base_7": 82897,
+        "n_pixeles": 52
+      },
+      {
+        "codigo_base_7": 15350,
+        "n_pixeles": 46
+      },
+      {
+        "codigo_base_7": 48596,
+        "n_pixeles": 44
+      },
+      {
+        "codigo_base_7": 111404,
+        "n_pixeles": 41
+      }
+    ],
+    "rayos_bloqueados_paneles": 62474,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 52438,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 2688,
+        "rango": 3,
+        "valor_singular_min_matriz": 1406.9636657213307,
+        "condicion": 1.5592367566759848,
+        "fuente_estimada_m": [
+          -0.3667977537150947,
+          0.2808858531063137,
+          0.11045291729663202
+        ],
+        "error_posicion_m": 0.003353244857260463,
+        "rms_distancia_a_rectas_m": 0.08041372494039646,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 2688,
+        "rango": 3,
+        "valor_singular_min_matriz": 1406.9636657213307,
+        "condicion": 1.5592367566759848,
+        "fuente_estimada_m": [
+          -0.3667977537150947,
+          0.2808858531063137,
+          0.11045291729663202
+        ],
+        "error_posicion_m": 0.003353244857260463,
+        "rms_distancia_a_rectas_m": 0.08041372494039646,
+        "identificable": true
+      }
+    }
+  },
+  "mirando_fuente": {
+    "configuracion": {
+      "ancho": 420,
+      "alto": 280,
+      "max_rebotes": 6,
+      "inclinacion_grados": 0.0,
+      "curvatura_m_inv": 0.0,
+      "reflectividad": 0.91,
+      "transmision_panel_x_plus": 1.0,
+      "umbral_sensor": 0.07,
+      "apertura_semiancho_m": 0.9,
+      "camara_m": [
+        0.12,
+        -0.22,
+        0.19
+      ],
+      "fuente_m": [
+        -0.37,
+        0.28,
+        0.11
+      ],
+      "radio_fuente_m": 0.115,
+      "tipo_camara": "pinhole",
+      "orientacion": [
+        -0.49,
+        0.5,
+        -0.08
+      ],
+      "campo_horizontal_grados": 90.0
+    },
+    "rayos_camara": 117600,
+    "pixeles_con_fuente": 8550,
+    "pixel_porcentaje": 7.270408163265306,
+    "rayos_por_numero_rebotes": [
+      3796,
+      1568,
+      393,
+      1076,
+      730,
+      471,
+      516
+    ],
+    "trayectorias_distintas_con_fuente": 58,
+    "trayectorias_robustas_8pix": 50,
+    "trayectorias_robustas_principales": [
+      {
+        "codigo_base_7": 0,
+        "n_pixeles": 3796
+      },
+      {
+        "codigo_base_7": 1,
+        "n_pixeles": 852
+      },
+      {
+        "codigo_base_7": 4,
+        "n_pixeles": 716
+      },
+      {
+        "codigo_base_7": 241,
+        "n_pixeles": 237
+      },
+      {
+        "codigo_base_7": 9,
+        "n_pixeles": 208
+      },
+      {
+        "codigo_base_7": 86,
+        "n_pixeles": 192
+      },
+      {
+        "codigo_base_7": 31,
+        "n_pixeles": 185
+      },
+      {
+        "codigo_base_7": 234,
+        "n_pixeles": 169
+      },
+      {
+        "codigo_base_7": 93,
+        "n_pixeles": 167
+      },
+      {
+        "codigo_base_7": 652,
+        "n_pixeles": 108
+      },
+      {
+        "codigo_base_7": 667,
+        "n_pixeles": 101
+      },
+      {
+        "codigo_base_7": 1676,
+        "n_pixeles": 91
+      },
+      {
+        "codigo_base_7": 1691,
+        "n_pixeles": 85
+      },
+      {
+        "codigo_base_7": 79,
+        "n_pixeles": 83
+      },
+      {
+        "codigo_base_7": 64,
+        "n_pixeles": 81
+      },
+      {
+        "codigo_base_7": 618,
+        "n_pixeles": 80
+      },
+      {
+        "codigo_base_7": 3390,
+        "n_pixeles": 80
+      },
+      {
+        "codigo_base_7": 221,
+        "n_pixeles": 74
+      },
+      {
+        "codigo_base_7": 206,
+        "n_pixeles": 73
+      },
+      {
+        "codigo_base_7": 29737,
+        "n_pixeles": 70
+      }
+    ],
+    "rayos_bloqueados_paneles": 62260,
+    "rayos_filtrados_sensor": 0,
+    "rayos_fin_horizonte": 46790,
+    "reconstruccion_calibrada": {
+      "all": {
+        "n_rayos": 8550,
+        "rango": 3,
+        "valor_singular_min_matriz": 2987.0472398402558,
+        "condicion": 2.7434399421448004,
+        "fuente_estimada_m": [
+          -0.3575930713665935,
+          0.2672677895714153,
+          0.11125336699578767
+        ],
+        "error_posicion_m": 0.017821671900759856,
+        "rms_distancia_a_rectas_m": 0.08078740504575903,
+        "identificable": true
+      },
+      "reflected_only": {
+        "n_rayos": 4754,
+        "rango": 3,
+        "valor_singular_min_matriz": 2139.1085755862077,
+        "condicion": 2.0859438113594004,
+        "fuente_estimada_m": [
+          -0.36621006452673405,
+          0.2753942208957131,
+          0.11001200232135448
+        ],
+        "error_posicion_m": 0.005964642160660079,
+        "rms_distancia_a_rectas_m": 0.08112811895596472,
+        "identificable": true
+      }
+    }
+  }
+}

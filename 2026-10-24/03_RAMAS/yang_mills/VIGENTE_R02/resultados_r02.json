@@ -1,0 +1,23 @@
+{
+  "semilla": 20261023,
+  "controles_matriciales_aleatorios": 1200,
+  "error_maximo": 1.4432899320127035e-15,
+  "caso_bloqueo": {
+    "traza_bloque_ambas": 0.0,
+    "nu_composicion_noabeliana": 2.0,
+    "nu_composicion_conmutante": 0.0,
+    "misma_matriz_bloqueada": true
+  },
+  "refinamiento_modular": {
+    "N": 6,
+    "p": 5,
+    "L": 30,
+    "subdivisiones_por_clase": 5
+  },
+  "continuidad_espectral_auxiliar": {
+    "gap_primero": 0.5,
+    "gap_ultimo": 0.000244140625,
+    "q_ultimo": 0.9997558891748972
+  },
+  "resultado": "Todos los controles finitos y simbólicos pasaron; NO es prueba del gap Yang–Mills."
+}

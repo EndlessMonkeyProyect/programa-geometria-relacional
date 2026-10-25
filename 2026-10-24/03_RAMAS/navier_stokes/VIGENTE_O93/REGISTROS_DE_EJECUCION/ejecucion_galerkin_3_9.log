@@ -1,0 +1,16 @@
+N16_dt0.004_fase+1 W(T)= 10.66190602071917
+N16_dt0.004_fase-1 W(T)= 10.423743782495416
+N24_dt0.004_fase+1 W(T)= 10.661906020719623
+N24_dt0.004_fase-1 W(T)= 10.423743782495931
+N24_dt0.002_fase+1 W(T)= 10.661906020725826
+N24_dt0.002_fase-1 W(T)= 10.423743782501349
+fase 1 dif_N 4.5297099404706387e-13 dif_dt 6.203038083185675e-12
+fase -1 dif_N 5.151434834260726e-13 dif_dt 5.417888360170764e-12
+Traceback (most recent call last):
+  File "/workspace/scratch/755787e1d1d5/reproduccion/o93/Programa_NS_O93_2026-10-22/experimentos/simulacion_galerkin.py", line 115, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/755787e1d1d5/reproduccion/o93/Programa_NS_O93_2026-10-22/experimentos/simulacion_galerkin.py", line 101, in main
+    if __import__('importlib').util.find_spec('matplotlib'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'importlib' has no attribute 'util'

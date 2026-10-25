@@ -1,0 +1,108 @@
+{
+  "module": "O36",
+  "status": "PASS",
+  "assertions": 483,
+  "basis": "exact instantaneous NS 2D moment identities; numerical quadratures validate examples only",
+  "gauge": "p:q phase invariant under translation, rotation, positive dilation",
+  "sampled_parity_signs": [
+    {
+      "d": 5.5,
+      "theta_B": -0.35,
+      "dotE_negative": -0.00379628627001453
+    },
+    {
+      "d": 6.0,
+      "theta_B": -0.35,
+      "dotE_negative": -0.003060279454608232
+    },
+    {
+      "d": 6.5,
+      "theta_B": -0.35,
+      "dotE_negative": -0.0025273335968699984
+    },
+    {
+      "d": 8.0,
+      "theta_B": -0.35,
+      "dotE_negative": -0.0015752137442648344
+    },
+    {
+      "d": 20.0,
+      "theta_B": -0.35,
+      "dotE_negative": -0.0002316358537696064
+    }
+  ],
+  "near_zero_scaling": [
+    {
+      "theta_abs": 0.005,
+      "dot_psi": -1.0456651291096408e-06,
+      "dot_psi_over_theta2": -0.04182660516438563,
+      "dot_E_over_E": -0.000209131283043748
+    },
+    {
+      "theta_abs": 0.01,
+      "dot_psi": -4.1824574975452e-06,
+      "dot_psi_over_theta2": -0.041824574975452,
+      "dot_E_over_E": -0.00041823180813653764
+    },
+    {
+      "theta_abs": 0.02,
+      "dot_psi": -1.6726582603612816e-05,
+      "dot_psi_over_theta2": -0.04181645650903204,
+      "dot_E_over_E": -0.0008362176166561967
+    },
+    {
+      "theta_abs": 0.05,
+      "dot_psi": -0.00010439932363770499,
+      "dot_psi_over_theta2": -0.04175972945508199,
+      "dot_E_over_E": -0.0020862461939595957
+    },
+    {
+      "theta_abs": 0.1,
+      "dot_psi": -0.0004155857590157769,
+      "dot_psi_over_theta2": -0.04155857590157768,
+      "dot_E_over_E": -0.004141995487480549
+    }
+  ],
+  "independent_quadrature_comparison": [
+    {
+      "theta_B": -0.35,
+      "d": 6.0,
+      "dot_E": -0.003060279454608232,
+      "dot_psi": -0.004750380989584829
+    },
+    {
+      "theta_B": 0.35,
+      "d": 6.0,
+      "dot_E": 0.003060279454608232,
+      "dot_psi": -0.004750380989584829
+    },
+    {
+      "theta_B": -0.35,
+      "d": 8.0,
+      "dot_E": -0.0015752137442648344,
+      "dot_psi": -0.002445157553837299
+    },
+    {
+      "theta_B": 0.35,
+      "d": 8.0,
+      "dot_E": 0.0015752137442648344,
+      "dot_psi": -0.002445157553837299
+    }
+  ],
+  "separation": {
+    "d0": 6.0,
+    "viscosity": 0.02,
+    "total_circulation": 2.0,
+    "M0_upper_bound": 0.7073553026306459,
+    "U0_upper_bound": 0.9490167245562361,
+    "S0_each": 1.06,
+    "T_geom_supremum": 0.3217447463978217,
+    "guarantee": "Two tagged disjoint 75% concentration disks if 0<=T<T_geom; no certified phase-locking horizon."
+  },
+  "limitations": [
+    "No full PDE time integration",
+    "No interval-arithmetic certification for d=6 sign",
+    "Uniform local contraction interval in theorem is existential and only for compact set away from exact alignment",
+    "No proof of global phase synchronization/attractor"
+  ]
+}

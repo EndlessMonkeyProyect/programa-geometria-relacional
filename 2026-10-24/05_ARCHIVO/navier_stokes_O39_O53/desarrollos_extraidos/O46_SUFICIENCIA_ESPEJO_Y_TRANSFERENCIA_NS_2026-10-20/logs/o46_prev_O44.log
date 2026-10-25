@@ -1,0 +1,6 @@
+{
+  "checks": 114,
+  "status": "PASS",
+  "scope": "O44 NS 3D Galerkin finito N32/48/64, T=.12; ausencia de vueltas y discriminación de fases en esta familia",
+  "no_claim": "no retorno físico universal, no prueba global de Navier-Stokes, no topología ni memoria material demostradas"
+}

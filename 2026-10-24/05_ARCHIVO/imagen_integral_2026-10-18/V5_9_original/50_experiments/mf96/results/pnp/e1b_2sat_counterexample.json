@@ -1,0 +1,19 @@
+{
+  "experiment": "E1b_2SAT_counterexample_to_monotone_interface_size",
+  "generator": "random_ksat from mf96/scripts/pnp_two_languages.py",
+  "eliminator": "dp_eliminate from same file",
+  "n": 8,
+  "m_requested": 32,
+  "seed": 6,
+  "initial_clauses": 32,
+  "max_clauses": 33,
+  "trace": [
+    33,
+    26,
+    7,
+    5,
+    3
+  ],
+  "status": "UNSAT",
+  "interpretation": "Refutes the universal claim that 2-SAT never exceeds its initial clause count under this Davis-Putnam procedure. Does not affect tractability of 2-SAT."
+}

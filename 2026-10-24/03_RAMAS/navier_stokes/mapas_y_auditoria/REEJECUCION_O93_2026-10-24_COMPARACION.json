@@ -1,0 +1,22 @@
+{
+  "verificacion_exacta.json": {
+    "sha_igual": true,
+    "origen_sha": "c6458dca872362e0e55bbe15c44647cf32fc836299ccdc49d223180ac6c21be5",
+    "nuevo_sha": "c6458dca872362e0e55bbe15c44647cf32fc836299ccdc49d223180ac6c21be5"
+  },
+  "galerkin_resumen.json": {
+    "sha_igual": true,
+    "origen_sha": "b2846e158fa16bad41eef51a88d18c7fa52c112c55fe85cddec0ed2188db3ce8",
+    "nuevo_sha": "b2846e158fa16bad41eef51a88d18c7fa52c112c55fe85cddec0ed2188db3ce8"
+  },
+  "galerkin_evolucion.csv": {
+    "sha_igual": true,
+    "origen_sha": "d7c6e302c62d291939e346a212eefe033cbbb12d64dcbfd4628f127b3880ccb9",
+    "nuevo_sha": "d7c6e302c62d291939e346a212eefe033cbbb12d64dcbfd4628f127b3880ccb9"
+  },
+  "ondas_exactas.csv": {
+    "sha_igual": true,
+    "origen_sha": "cd717beec2ff3450d8b59daec188c71d3575c2f3405e0e4d30ff39f10ca80c1f",
+    "nuevo_sha": "cd717beec2ff3450d8b59daec188c71d3575c2f3405e0e4d30ff39f10ca80c1f"
+  }
+}

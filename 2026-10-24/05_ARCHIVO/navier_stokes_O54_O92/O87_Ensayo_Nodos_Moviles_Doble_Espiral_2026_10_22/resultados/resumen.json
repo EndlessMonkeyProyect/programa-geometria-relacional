@@ -1,0 +1,31 @@
+{
+  "estado": "VERIFICADO EN MODELO CINEMATICO DE SUPERFICIE, NO NS 3D",
+  "R": 2.0,
+  "a": 0.6,
+  "kappa": 0.8,
+  "p_vueltas_exteriores": 1,
+  "q_vueltas_interiores": 2,
+  "epsilon_desacoplamiento": 0.25,
+  "periodo_normalizado": 15.707963267948966,
+  "max_error_inversion_fase": 1.7763568394002505e-15,
+  "max_error_ode": 2.1671553440683056e-13,
+  "desfase_normalizado_error_max": 4.440892098500626e-16,
+  "error_max_pares_opuestos_rad": 1.7763568394002505e-15,
+  "desfase_geometrico_variacion_max_abs": 0.2876720682253069,
+  "desfase_geometrico_variacion_min": -0.2876720682253069,
+  "desfase_geometrico_variacion_max": 0.28767162665329504,
+  "perdida_coherencia_max_abs_radianes": 1.2499999575185807,
+  "drift_final_nodos_radianes": [
+    0.07206928935629087,
+    -0.40535556864781164,
+    -0.07323924695446493,
+    0.44139582179936454
+  ],
+  "fase_deriva_inicial": [
+    0.0,
+    0.35714285714285715,
+    2.3550899983602947e-17,
+    -0.35714285714285715
+  ],
+  "flujo_superficial_divergencia": "exactamente cero para ambos modelos"
+}

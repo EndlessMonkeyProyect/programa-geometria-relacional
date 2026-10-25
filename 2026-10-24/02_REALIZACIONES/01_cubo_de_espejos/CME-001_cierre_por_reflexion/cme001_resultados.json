@@ -1,0 +1,50 @@
+{
+  "cubo": {
+    "conteo_por_longitud": [
+      4,
+      7,
+      8,
+      8
+    ],
+    "cierra": true,
+    "diedros_en_pi": null
+  },
+  "ortoesquema": {
+    "conteo_por_longitud": [
+      5,
+      14,
+      28,
+      41,
+      47,
+      48,
+      48
+    ],
+    "cierra": true,
+    "diedros_en_pi": [
+      0.25,
+      0.333333,
+      0.5
+    ]
+  },
+  "tetraedro_regular": {
+    "conteo_por_longitud": [
+      5,
+      17,
+      53,
+      161,
+      485,
+      1457,
+      4373,
+      13121,
+      39365,
+      118097,
+      354293,
+      1062881
+    ],
+    "cierra": false,
+    "diedros_en_pi": [
+      0.391827
+    ]
+  },
+  "comprobacion": "tetraedro regular = 2·3^L−1 (producto libre de cuatro Z2) hasta L=12; cubo=8; ortoesquema=48"
+}

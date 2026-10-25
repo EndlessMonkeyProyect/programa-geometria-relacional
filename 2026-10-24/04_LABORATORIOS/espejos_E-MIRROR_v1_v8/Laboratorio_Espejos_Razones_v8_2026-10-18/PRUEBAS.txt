@@ -1,0 +1,28 @@
+test_R_endpoints_and_invalid (test_razones_cavidades_v8.TestRazones.test_R_endpoints_and_invalid) ... ok
+test_at_reduced_source_node_response_can_vanish (test_razones_cavidades_v8.TestRazones.test_at_reduced_source_node_response_can_vanish) ... ok
+test_away_from_node_transmission_declines_with_g (test_razones_cavidades_v8.TestRazones.test_away_from_node_transmission_declines_with_g) ... ok
+test_determinant_equals_matrix_determinant (test_razones_cavidades_v8.TestRazones.test_determinant_equals_matrix_determinant) ... ok
+test_energy_fraction (test_razones_cavidades_v8.TestRazones.test_energy_fraction) ... ok
+test_finite_difference_agrees_with_green (test_razones_cavidades_v8.TestRazones.test_finite_difference_agrees_with_green) ... ok
+test_green_function_symmetry (test_razones_cavidades_v8.TestRazones.test_green_function_symmetry) ... ok
+test_measured_response_position (test_razones_cavidades_v8.TestRazones.test_measured_response_position) ... ok
+test_modes_include_pinned_node (test_razones_cavidades_v8.TestRazones.test_modes_include_pinned_node) ... ok
+test_node_field_derivative_continuity (test_razones_cavidades_v8.TestRazones.test_node_field_derivative_continuity) ... ok
+test_node_ratio (test_razones_cavidades_v8.TestRazones.test_node_ratio) ... ok
+test_other_node_ratios (test_razones_cavidades_v8.TestRazones.test_other_node_ratios) ... ok
+test_projective_retains_common_node (test_razones_cavidades_v8.TestRazones.test_projective_retains_common_node) ... ok
+test_ratio_equivalent_away_from_nodes (test_razones_cavidades_v8.TestRazones.test_ratio_equivalent_away_from_nodes) ... ok
+test_ratio_forgets_amplitude (test_razones_cavidades_v8.TestRazones.test_ratio_forgets_amplitude) ... ok
+test_ratio_loses_phase_sign (test_razones_cavidades_v8.TestRazones.test_ratio_loses_phase_sign) ... ok
+test_ratio_undefined_at_common_node (test_razones_cavidades_v8.TestRazones.test_ratio_undefined_at_common_node) ... ok
+test_sheet_conserves_energy (test_razones_cavidades_v8.TestRazones.test_sheet_conserves_energy) ... ok
+test_single_node_not_eigenmode (test_razones_cavidades_v8.TestRazones.test_single_node_not_eigenmode) ... ok
+test_tangent_covers_common_node (test_razones_cavidades_v8.TestRazones.test_tangent_covers_common_node) ... ok
+test_tangent_matches_determinant (test_razones_cavidades_v8.TestRazones.test_tangent_matches_determinant) ... ok
+test_transfer_coupled_nonzero (test_razones_cavidades_v8.TestRazones.test_transfer_coupled_nonzero) ... ok
+test_transfer_independent_exactly_zero (test_razones_cavidades_v8.TestRazones.test_transfer_independent_exactly_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.037s
+
+OK

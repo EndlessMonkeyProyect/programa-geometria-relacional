@@ -1,0 +1,21 @@
+{
+  "experiment": "E-MIRROR-v7",
+  "method": "SHA-256",
+  "files": {
+    "01_modos_pared_movil.png": "9a7c240f64dc9f3e6df9028e2831e319e4902c28833d2a6fee48e9adfd1eb8e6",
+    "02_senal_frecuencia_fija.png": "70ebc8e5221ba6939e39df435a167172c360cb853a8f9881f7198c670e57aded",
+    "03_modo_nodo_comun.png": "a3df3e5e2bb215e9478b350a0fc1909a70930dbb0af7b35efdd678d58d1313aa",
+    "04_nodo_y_respuesta_vidrio.png": "69ddfb8003bd4580934e4948809d5857671b10507f576de1097bcdcad6a82797",
+    "05_vidrio_y_frecuencia.png": "354e6c7be6cda28f8af556653bb0fffa7195b3eb0ccd5b104908899fce8751d3",
+    "06_paridad_de_modos_comunes.png": "ef12129046fa850bf304d353571d36d4a7ee772083daf33da676e46e2f1561c5",
+    "HALLAZGO.es.md": "4015d1fdbaf9a7a16872e732eda37bced620a30677121fe7658001a37aa413e2",
+    "PENDIENTE_LABORATORIO_ESFERAS.es.md": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81",
+    "PRUEBAS.txt": "eb3ab9489f26072d3cf87a7f1bb88622f227cd73af55dafc2d6f0b2d1ca0ec1c",
+    "README.es.md": "6442e31a01fe025b6189673237e38d4fd80030129c4686851c4b84ccdd8ebb21",
+    "barrido_campo_v7.csv": "ff375478cab7d8bdff9c76d54c874a9eb0e7fca1ab267c4c3db557f004af70ad",
+    "modos_v7.csv": "b786c18da7538a9d0fe5648f6d2959d485b60280a9cacb886730ac89c15821eb",
+    "onda_cavidades_v7.py": "dfbebe03c342548ee829ccceca2643c17ed8472d71c08d4fcca911fb9b86c862",
+    "resultados_v7.json": "fcfd0a30dd6c259c485c4a821ef6f100edf1fccf2aae98621f5af637de0599ca",
+    "test_onda_cavidades_v7.py": "bf4df3c02b23ff838a754ef855ba0ae30ea3b182d7164520efa1629e5c700a0d"
+  }
+}

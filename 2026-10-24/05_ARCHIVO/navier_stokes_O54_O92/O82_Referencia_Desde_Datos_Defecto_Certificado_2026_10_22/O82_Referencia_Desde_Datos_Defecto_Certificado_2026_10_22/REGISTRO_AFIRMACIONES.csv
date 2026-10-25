@@ -1,0 +1,7 @@
+ID,Tipo,Enunciado,Condicion,Limite
+O82-T1,Teorema,Certificado a priori con referencia de calor y defecto,Toro 3D media cero dato inicial suave norma y defecto finitos y M_F<nu/2,Condicion suficiente no universal
+O82-T2,Teorema,Desigualdad crítica para resto con defecto,Soluciones suaves locales y referencia solenoidal computada,No establece por sí sola pequeñez del resto
+O82-E1,Computacional,Defecto Fourier del campo de tres ondas y tres certificados,nu=1 A=2 B=C=5e-5,No es simulación temporal
+O82-O1,Ontologia,Referencia dinámica y resto físico como realización candidata del cierre propio,Comparación de mecanismos con el programa,No identifica la referencia de calor con múltiplo ontológico
+O82-F1,Obstruccion,Reetiquetar el normalizador no hace disminuir la norma crítica,Fijar magnitud física y operador,No refuta herencia aritmética O40
+O82-A1,Abierto,Criterio desde datos iniciales para cualquier flujo 3D,Requeriria construir referencias y defectos universalmente controlados,No demostrado

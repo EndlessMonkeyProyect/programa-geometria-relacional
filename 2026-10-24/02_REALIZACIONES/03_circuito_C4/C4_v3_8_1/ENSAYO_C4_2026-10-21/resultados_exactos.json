@@ -1,0 +1,827 @@
+{
+  "contrato": "base regular en R^3, cara reflejada respecto del tetra original salvo cuando se declara espejo móvil",
+  "referencias_base": [
+    [
+      "1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "-1"
+    ],
+    [
+      "-1",
+      "1",
+      "-1"
+    ],
+    [
+      "-1",
+      "-1",
+      "1"
+    ]
+  ],
+  "imagenes_caras": [
+    [
+      "-5/3",
+      "-5/3",
+      "-5/3"
+    ],
+    [
+      "-5/3",
+      "5/3",
+      "5/3"
+    ],
+    [
+      "5/3",
+      "-5/3",
+      "5/3"
+    ],
+    [
+      "5/3",
+      "5/3",
+      "-5/3"
+    ]
+  ],
+  "normales_exteriores_sin_normalizar": [
+    [
+      "-1",
+      "-1",
+      "-1"
+    ],
+    [
+      "-1",
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "-1",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "-1"
+    ]
+  ],
+  "producto_pares_normales_unitarias": "-1/3",
+  "rango_normales": 3,
+  "equilibrio_con_pesos_positivos": "a1=a2=a3=a4, únicamente, salvo escala",
+  "distancia_cuadrada_original": "8",
+  "distancia_cuadrada_capa_completa": "200/9",
+  "factor_radial_y_lados_capa_completa": "5/3",
+  "estados_de_activacion": [
+    {
+      "mascara": "0000",
+      "caras_reflejadas": [],
+      "k": 0,
+      "regular": true,
+      "d2_distintas": [
+        "8"
+      ],
+      "centro_xyz": [
+        "0",
+        "0",
+        "0"
+      ],
+      "centro_norma2": "0",
+      "mantiene_foco_original": true,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0001",
+      "caras_reflejadas": [
+        1
+      ],
+      "k": 1,
+      "regular": true,
+      "d2_distintas": [
+        "8"
+      ],
+      "centro_xyz": [
+        "-2/3",
+        "-2/3",
+        "-2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0010",
+      "caras_reflejadas": [
+        2
+      ],
+      "k": 1,
+      "regular": true,
+      "d2_distintas": [
+        "8"
+      ],
+      "centro_xyz": [
+        "-2/3",
+        "2/3",
+        "2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0011",
+      "caras_reflejadas": [
+        1,
+        2
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "-4/3",
+        "0",
+        "0"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0100",
+      "caras_reflejadas": [
+        3
+      ],
+      "k": 1,
+      "regular": true,
+      "d2_distintas": [
+        "8"
+      ],
+      "centro_xyz": [
+        "2/3",
+        "-2/3",
+        "2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0101",
+      "caras_reflejadas": [
+        1,
+        3
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "0",
+        "-4/3",
+        "0"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0110",
+      "caras_reflejadas": [
+        2,
+        3
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "0",
+        "0",
+        "4/3"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "0111",
+      "caras_reflejadas": [
+        1,
+        2,
+        3
+      ],
+      "k": 3,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "-2/3",
+        "-2/3",
+        "2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "-1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "mascara": "1000",
+      "caras_reflejadas": [
+        4
+      ],
+      "k": 1,
+      "regular": true,
+      "d2_distintas": [
+        "8"
+      ],
+      "centro_xyz": [
+        "2/3",
+        "2/3",
+        "-2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1001",
+      "caras_reflejadas": [
+        1,
+        4
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "0",
+        "0",
+        "-4/3"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1010",
+      "caras_reflejadas": [
+        2,
+        4
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "0",
+        "4/3",
+        "0"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1011",
+      "caras_reflejadas": [
+        1,
+        2,
+        4
+      ],
+      "k": 3,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "-2/3",
+        "2/3",
+        "-2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "-1",
+          "1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1100",
+      "caras_reflejadas": [
+        3,
+        4
+      ],
+      "k": 2,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "4/3",
+        "0",
+        "0"
+      ],
+      "centro_norma2": "16/9",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1101",
+      "caras_reflejadas": [
+        1,
+        3,
+        4
+      ],
+      "k": 3,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "2/3",
+        "-2/3",
+        "-2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1110",
+      "caras_reflejadas": [
+        2,
+        3,
+        4
+      ],
+      "k": 3,
+      "regular": false,
+      "d2_distintas": [
+        "8",
+        "200/9"
+      ],
+      "centro_xyz": [
+        "2/3",
+        "2/3",
+        "2/3"
+      ],
+      "centro_norma2": "4/3",
+      "mantiene_foco_original": false,
+      "puntos_xyz": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    },
+    {
+      "mascara": "1111",
+      "caras_reflejadas": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "k": 4,
+      "regular": true,
+      "d2_distintas": [
+        "200/9"
+      ],
+      "centro_xyz": [
+        "0",
+        "0",
+        "0"
+      ],
+      "centro_norma2": "0",
+      "mantiene_foco_original": true,
+      "puntos_xyz": [
+        [
+          "-5/3",
+          "-5/3",
+          "-5/3"
+        ],
+        [
+          "-5/3",
+          "5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "-5/3",
+          "5/3"
+        ],
+        [
+          "5/3",
+          "5/3",
+          "-5/3"
+        ]
+      ]
+    }
+  ],
+  "conteos_por_numero_de_caras": {
+    "0": {
+      "configuraciones": 1,
+      "regulares": 1,
+      "foco_original": 1
+    },
+    "1": {
+      "configuraciones": 4,
+      "regulares": 4,
+      "foco_original": 0
+    },
+    "2": {
+      "configuraciones": 6,
+      "regulares": 0,
+      "foco_original": 0
+    },
+    "3": {
+      "configuraciones": 4,
+      "regulares": 0,
+      "foco_original": 0
+    },
+    "4": {
+      "configuraciones": 1,
+      "regulares": 1,
+      "foco_original": 1
+    }
+  },
+  "orden_fijo": {
+    "permutaciones": 24,
+    "resultados_finales_distintos": 1,
+    "orden_independiente": true
+  },
+  "espejo_movil": {
+    "orden_1_luego_2": [
+      [
+        "-5/3",
+        "-5/3",
+        "-5/3"
+      ],
+      [
+        "-31/9",
+        "-1/9",
+        "-1/9"
+      ],
+      [
+        "-1",
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1",
+        "1"
+      ]
+    ],
+    "orden_2_luego_1": [
+      [
+        "-31/9",
+        "1/9",
+        "1/9"
+      ],
+      [
+        "-5/3",
+        "5/3",
+        "5/3"
+      ],
+      [
+        "-1",
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1",
+        "1"
+      ]
+    ],
+    "conmutan": false
+  },
+  "observacion": {
+    "imagenes_tridimensionales_1_y_2_iguales": false,
+    "proyeccion_1_y_2_iguales": true,
+    "proyeccion_elegida": "P(x,y,z)=(x,y-z), mirada a lo largo de (0,1,1)"
+  },
+  "interpretacion": "El cierre global es una condición geométrica declarada, no raíz prima ni raíz relacional acreditada por coincidencia puntual."
+}

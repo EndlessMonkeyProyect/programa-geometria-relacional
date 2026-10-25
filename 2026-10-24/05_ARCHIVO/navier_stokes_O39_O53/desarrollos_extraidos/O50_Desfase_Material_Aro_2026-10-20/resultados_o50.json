@@ -1,0 +1,439 @@
+{
+  "test_count": 48,
+  "tests": [
+    {
+      "name": "axisymmetric-divergence-zero",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "shell-label-materially-conserved",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "phase-evolution-analytic",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "clock-monotone",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "deformed-shell-volume",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "positive-physical-radius",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.38-theta0.0",
+      "PASS": true,
+      "diagnostic": 1.2566170326522297e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.38-theta0.0",
+      "PASS": true,
+      "diagnostic": 4.3249431813663364e-11
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.38-theta1.57",
+      "PASS": true,
+      "diagnostic": 1.2430945162122953e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.38-theta1.57",
+      "PASS": true,
+      "diagnostic": 4.34624281009377e-11
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.38-theta3.14",
+      "PASS": true,
+      "diagnostic": 1.2393419623890622e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.38-theta3.14",
+      "PASS": true,
+      "diagnostic": 4.265487962840098e-11
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.9-theta0.0",
+      "PASS": true,
+      "diagnostic": 1.248112724283601e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.9-theta0.0",
+      "PASS": true,
+      "diagnostic": 1.0174006082053211e-10
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.9-theta1.57",
+      "PASS": true,
+      "diagnostic": 1.2494671963736437e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.9-theta1.57",
+      "PASS": true,
+      "diagnostic": 1.0346401513317005e-10
+    },
+    {
+      "name": "ode-analytic-e0.0-rho0.9-theta3.14",
+      "PASS": true,
+      "diagnostic": 1.2720158260037806e-11
+    },
+    {
+      "name": "ode-material-label-e0.0-rho0.9-theta3.14",
+      "PASS": true,
+      "diagnostic": 1.0368850222874926e-10
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.38-theta0.0",
+      "PASS": true,
+      "diagnostic": 1.1822098855418517e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.38-theta0.0",
+      "PASS": true,
+      "diagnostic": 4.032091327488274e-11
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.38-theta1.57",
+      "PASS": true,
+      "diagnostic": 1.1325829163411072e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.38-theta1.57",
+      "PASS": true,
+      "diagnostic": 4.0550701685404533e-11
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.38-theta3.14",
+      "PASS": true,
+      "diagnostic": 1.1673995103933521e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.38-theta3.14",
+      "PASS": true,
+      "diagnostic": 3.9791753225770776e-11
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.9-theta0.0",
+      "PASS": true,
+      "diagnostic": 2.4137580822980453e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.9-theta0.0",
+      "PASS": true,
+      "diagnostic": 7.917622113495781e-11
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.9-theta1.57",
+      "PASS": true,
+      "diagnostic": 2.4050761382454766e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.9-theta1.57",
+      "PASS": true,
+      "diagnostic": 7.926048706252686e-11
+    },
+    {
+      "name": "ode-analytic-e0.2-rho0.9-theta3.14",
+      "PASS": true,
+      "diagnostic": 2.4507507134785556e-11
+    },
+    {
+      "name": "ode-material-label-e0.2-rho0.9-theta3.14",
+      "PASS": true,
+      "diagnostic": 7.936873380742782e-11
+    },
+    {
+      "name": "predicted-phase-drift-e0.0-n1",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.0-n1",
+      "PASS": true,
+      "diagnostic": 1.0089706847793423e-12
+    },
+    {
+      "name": "predicted-phase-drift-e0.0-n2",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.0-n2",
+      "PASS": true,
+      "diagnostic": 2.8244073746463982e-12
+    },
+    {
+      "name": "predicted-phase-drift-e0.0-n3",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.0-n3",
+      "PASS": true,
+      "diagnostic": 5.282885240376345e-12
+    },
+    {
+      "name": "predicted-phase-drift-e0.2-n1",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.2-n1",
+      "PASS": true,
+      "diagnostic": 6.261657858885883e-12
+    },
+    {
+      "name": "predicted-phase-drift-e0.2-n2",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.2-n2",
+      "PASS": true,
+      "diagnostic": 2.651923125540634e-11
+    },
+    {
+      "name": "predicted-phase-drift-e0.2-n3",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "material-unwrapped-drift-e0.2-n3",
+      "PASS": true,
+      "diagnostic": 6.699529819798045e-11
+    },
+    {
+      "name": "antipodal-interior-exterior-pair-e0.0",
+      "PASS": true,
+      "diagnostic": 6.565263282044484e-12
+    },
+    {
+      "name": "antipodal-interior-exterior-pair-e0.2",
+      "PASS": true,
+      "diagnostic": 5.3017617497500796e-12
+    },
+    {
+      "name": "axial-translation-galilean-e0.0",
+      "PASS": true,
+      "diagnostic": 4.577227485924595e-12
+    },
+    {
+      "name": "axial-translation-galilean-e0.2",
+      "PASS": true,
+      "diagnostic": 4.445332990599127e-12
+    },
+    {
+      "name": "instantaneous-omega-inner-outer-different",
+      "PASS": true,
+      "diagnostic": null
+    },
+    {
+      "name": "circular-orbit-period-independent-of-rho",
+      "PASS": true,
+      "diagnostic": null
+    }
+  ],
+  "times": {
+    "one_cycle": 0.8990918348720717,
+    "two_cycles": 1.835531202833815,
+    "three_cycles": 2.843443505835246
+  },
+  "trajectories": [
+    {
+      "eps": 0.0,
+      "rho": 0.38,
+      "theta0": 0.0,
+      "max_xy_ode_error": 1.2566170326522297e-11,
+      "max_shell_label_error": 4.3249431813663364e-11,
+      "at_T2": [
+        1.2159345960075367,
+        0.6262140136549003
+      ]
+    },
+    {
+      "eps": 0.0,
+      "rho": 0.38,
+      "theta0": 1.5707963267948966,
+      "max_xy_ode_error": 1.2430945162122953e-11,
+      "max_shell_label_error": 4.34624281009377e-11,
+      "at_T2": [
+        1.1249999999989817,
+        0.7024358291479791
+      ]
+    },
+    {
+      "eps": 0.0,
+      "rho": 0.38,
+      "theta0": 3.141592653589793,
+      "max_xy_ode_error": 1.2393419623890622e-11,
+      "max_shell_label_error": 4.265487962840098e-11,
+      "at_T2": [
+        1.0340654039922617,
+        0.626214013653556
+      ]
+    },
+    {
+      "eps": 0.0,
+      "rho": 0.9,
+      "theta0": 0.0,
+      "max_xy_ode_error": 1.248112724283601e-11,
+      "max_shell_label_error": 1.0174006082053211e-10,
+      "at_T2": [
+        1.3403714116071763,
+        0.6262140136550918
+      ]
+    },
+    {
+      "eps": 0.0,
+      "rho": 0.9,
+      "theta0": 1.5707963267948966,
+      "max_xy_ode_error": 1.2494671963736437e-11,
+      "max_shell_label_error": 1.0346401513317005e-10,
+      "at_T2": [
+        1.1249999999995075,
+        0.8067393661475611
+      ]
+    },
+    {
+      "eps": 0.0,
+      "rho": 0.9,
+      "theta0": 3.141592653589793,
+      "max_xy_ode_error": 1.2720158260037806e-11,
+      "max_shell_label_error": 1.0368850222874926e-10,
+      "at_T2": [
+        0.9096285883931621,
+        0.6262140136537313
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.38,
+      "theta0": 0.0,
+      "max_xy_ode_error": 1.1822098855418517e-11,
+      "max_shell_label_error": 4.032091327488274e-11,
+      "at_T2": [
+        1.2100116016872913,
+        0.6532729516934925
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.38,
+      "theta0": 1.5707963267948966,
+      "max_xy_ode_error": 1.1325829163411072e-11,
+      "max_shell_label_error": 4.0550701685404533e-11,
+      "at_T2": [
+        1.092717987520178,
+        0.6974711468368782
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.38,
+      "theta0": 3.141592653589793,
+      "max_xy_ode_error": 1.1673995103933521e-11,
+      "max_shell_label_error": 3.9791753225770776e-11,
+      "at_T2": [
+        1.0399883983126377,
+        0.5991550756155477
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.9,
+      "theta0": 0.0,
+      "max_xy_ode_error": 2.4137580822980453e-11,
+      "max_shell_label_error": 7.917622113495781e-11,
+      "at_T2": [
+        1.0284310738179865,
+        0.7875750518273592
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.9,
+      "theta0": 1.5707963267948966,
+      "max_xy_ode_error": 2.4050761382454766e-11,
+      "max_shell_label_error": 7.926048706252686e-11,
+      "at_T2": [
+        0.9324921107217664,
+        0.5452694755246694
+      ]
+    },
+    {
+      "eps": 0.2,
+      "rho": 0.9,
+      "theta0": 3.141592653589793,
+      "max_xy_ode_error": 2.4507507134785556e-11,
+      "max_shell_label_error": 7.936873380742782e-11,
+      "at_T2": [
+        1.2215689261823348,
+        0.4648529754819097
+      ]
+    }
+  ],
+  "phase_drift": [
+    {
+      "eps": 0.0,
+      "cycles": 1,
+      "time": 0.8990918348720717,
+      "phase_difference_rad": -1.0089706847793423e-12,
+      "phase_difference_cycles": -1.6058267191744689e-13,
+      "predicted_rad": 0.0
+    },
+    {
+      "eps": 0.0,
+      "cycles": 2,
+      "time": 1.835531202833815,
+      "phase_difference_rad": -2.8244073746463982e-12,
+      "phase_difference_cycles": -4.4951839498017703e-13,
+      "predicted_rad": 0.0
+    },
+    {
+      "eps": 0.0,
+      "cycles": 3,
+      "time": 2.843443505835246,
+      "phase_difference_rad": -5.282885240376345e-12,
+      "phase_difference_cycles": -8.40797299793111e-13,
+      "predicted_rad": 0.0
+    },
+    {
+      "eps": 0.2,
+      "cycles": 1,
+      "time": 0.8990918348720717,
+      "phase_difference_rad": 0.8364176280854849,
+      "phase_difference_cycles": 0.13311999999900342,
+      "predicted_rad": 0.8364176280917466
+    },
+    {
+      "eps": 0.2,
+      "cycles": 2,
+      "time": 1.835531202833815,
+      "phase_difference_rad": 1.672835256156974,
+      "phase_difference_cycles": 0.26623999999577935,
+      "predicted_rad": 1.6728352561834932
+    },
+    {
+      "eps": 0.2,
+      "cycles": 3,
+      "time": 2.843443505835246,
+      "phase_difference_rad": 2.5092528842082444,
+      "phase_difference_cycles": 0.3993599999893374,
+      "predicted_rad": 2.5092528842752397
+    }
+  ],
+  "period_circle": 7.853981633974483,
+  "omega_inner": 0.875912408759124,
+  "omega_outer": 0.7361963190184049,
+  "model": "axisymmetric divergence-free KINEMATIC family, not unforced Euler/NS solution",
+  "conclusion": "material closed surfaces and even smooth deformation do not enforce inter-shell phase locking; constant frequency profile is isochronous; differential core profile makes drift."
+}

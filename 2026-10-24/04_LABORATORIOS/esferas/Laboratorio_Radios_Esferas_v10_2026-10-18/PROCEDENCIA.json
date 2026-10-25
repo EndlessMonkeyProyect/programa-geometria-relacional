@@ -1,0 +1,8 @@
+{
+  "antecedente": "Laboratorio v9",
+  "archivo_v9": "Laboratorio_Ritmos_Silencios_v9_2026-10-18.zip",
+  "sha256_v9": "fa3a13eea12f3fac08933cc7c1d1ec51b48513d105319cf6a3f425f10c6b2132",
+  "fuentes_programa_intactas": true,
+  "ejecucion": "numpy/matplotlib; unittest",
+  "fecha": "2026-10-18"
+}

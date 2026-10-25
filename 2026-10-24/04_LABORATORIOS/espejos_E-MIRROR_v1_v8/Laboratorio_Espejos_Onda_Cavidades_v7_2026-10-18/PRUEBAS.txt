@@ -1,0 +1,26 @@
+test_01_sheet_reflectivity_calibrated (test_onda_cavidades_v7.TestCavities.test_01_sheet_reflectivity_calibrated) ... ok
+test_02_zero_barrier (test_onda_cavidades_v7.TestCavities.test_02_zero_barrier) ... ok
+test_03_common_node_independent_of_divider (test_onda_cavidades_v7.TestCavities.test_03_common_node_independent_of_divider) ... ok
+test_04_half_resonance_frequency_invariant (test_onda_cavidades_v7.TestCavities.test_04_half_resonance_frequency_invariant) ... ok
+test_05_not_all_rational_nodes_at_same_color (test_onda_cavidades_v7.TestCavities.test_05_not_all_rational_nodes_at_same_color) ... ok
+test_06_other_rational_mode_different_frequency (test_onda_cavidades_v7.TestCavities.test_06_other_rational_mode_different_frequency) ... ok
+test_07_node_eigenfunction (test_onda_cavidades_v7.TestCavities.test_07_node_eigenfunction) ... ok
+test_08_ratio_energy (test_onda_cavidades_v7.TestCavities.test_08_ratio_energy) ... ok
+test_09_sheet_continuity_and_jump_nodal (test_onda_cavidades_v7.TestCavities.test_09_sheet_continuity_and_jump_nodal) ... ok
+test_10_green_reciprocal_denom (test_onda_cavidades_v7.TestCavities.test_10_green_reciprocal_denom) ... ok
+test_11_green_finite_with_loss (test_onda_cavidades_v7.TestCavities.test_11_green_finite_with_loss) ... ok
+test_12_divider_amplitude_finite_loss (test_onda_cavidades_v7.TestCavities.test_12_divider_amplitude_finite_loss) ... ok
+test_13_modes_respect_char_eq (test_onda_cavidades_v7.TestCavities.test_13_modes_respect_char_eq) ... ok
+test_14_finite_spectrum_positive (test_onda_cavidades_v7.TestCavities.test_14_finite_spectrum_positive) ... ok
+test_15_reflection_phase_unitary (test_onda_cavidades_v7.TestCavities.test_15_reflection_phase_unitary) ... ok
+test_16_fixed_frequency_resonance_local (test_onda_cavidades_v7.TestCavities.test_16_fixed_frequency_resonance_local) ... ok
+test_17_frequency_dependence_sheet (test_onda_cavidades_v7.TestCavities.test_17_frequency_dependence_sheet) ... ok
+test_18_exact_geometric_phase (test_onda_cavidades_v7.TestCavities.test_18_exact_geometric_phase) ... ok
+test_19_no_constant_rearrangement_claim (test_onda_cavidades_v7.TestCavities.test_19_no_constant_rearrangement_claim) ... ok
+test_20_ideal_sheet_no_internal_absorption (test_onda_cavidades_v7.TestCavities.test_20_ideal_sheet_no_internal_absorption) ... ok
+test_21_opposite_sign_when_both_longitudinal_indices_odd (test_onda_cavidades_v7.TestRelativeParity.test_21_opposite_sign_when_both_longitudinal_indices_odd) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.013s
+
+OK

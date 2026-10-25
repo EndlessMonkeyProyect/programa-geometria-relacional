@@ -1,0 +1,24 @@
+{
+  "total_checks": 9718,
+  "reference_examples": {
+    "uniform_radii": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "matched_gear_speeds": [
+      1.0,
+      -1.0,
+      1.0,
+      -1.0
+    ],
+    "offset_holonomy": 1.1,
+    "compensated_holonomy": 1.0
+  },
+  "caveats": [
+    "No PDE regularity theorem",
+    "Gear system not automatically an NS vortex",
+    "Affine exact NS field not finite-energy on whole R3"
+  ]
+}

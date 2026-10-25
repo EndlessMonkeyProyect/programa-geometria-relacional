@@ -1,0 +1,16 @@
+test_MCM_normalization (__main__.TestO45.test_MCM_normalization) ... ok
+test_O25_single_mode_scale (__main__.TestO45.test_O25_single_mode_scale) ... ok
+test_O41_defect_from_omitted_phase (__main__.TestO45.test_O41_defect_from_omitted_phase) ... ok
+test_T1_particle_frame (__main__.TestO45.test_T1_particle_frame) ... ok
+test_T2_3phases_rank_two (__main__.TestO45.test_T2_3phases_rank_two) ... ok
+test_T3_gauge_covariant_rates (__main__.TestO45.test_T3_gauge_covariant_rates) ... ok
+test_T3_reparametrized_clock (__main__.TestO45.test_T3_reparametrized_clock) ... ok
+test_T5_moving_frame_NS_exact (__main__.TestO45.test_T5_moving_frame_NS_exact) ... ok
+test_T6_jacobian_continuity (__main__.TestO45.test_T6_jacobian_continuity) ... ok
+test_T6_tracer_slip_zero (__main__.TestO45.test_T6_tracer_slip_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+OK
+{"program": "Programa de Geometría Relacional", "module": "O45", "date": "2026-10-20", "tests": 10, "failures": 0, "errors": 0, "successful": true, "scope": "Identidades cinemáticas, gauge, NS exacto en cizalla, conservación bajo marco, MCM. No prueba regularidad global ni singularidad física."}

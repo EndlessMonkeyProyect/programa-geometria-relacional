@@ -1,0 +1,22 @@
+[
+  {
+    "ruta": "LEER_PRIMERO.md",
+    "bytes": 2249,
+    "sha256": "1d83f6bc0f2c58835b4cf438ab73fbea912465d7edbfab120dd616e2418b2656"
+  },
+  {
+    "ruta": "O84_FORMALIZACION.es.md",
+    "bytes": 9245,
+    "sha256": "1dfeabc7882fe41732a864cc8408a872dc1f2d3412f36405a31c05640ef61389"
+  },
+  {
+    "ruta": "codigo/o84_verificar.py",
+    "bytes": 4500,
+    "sha256": "b4349bad24630923135552b32613758442132b4b749959bae99a905156e609ea"
+  },
+  {
+    "ruta": "resultados/verificacion.json",
+    "bytes": 677,
+    "sha256": "70c88c37a0982efdb8b58f5ea12ebb008cf584566d67b28ae441a832cb718145"
+  }
+]

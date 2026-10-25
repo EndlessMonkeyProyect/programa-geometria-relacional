@@ -1,0 +1,92 @@
+{
+  "version": "8.0",
+  "date": "2026-10-18",
+  "origin": "Extensión E-MIRROR, proyecto relacional v3.4.1 fuente no modificada",
+  "files": [
+    {
+      "ruta": "01_razones_y_nodo.png",
+      "bytes": 77838,
+      "sha256": "108916f4ba4a8f1e4cda56b84b0b3c5f9f529056289efc7d4922c4054084d070"
+    },
+    {
+      "ruta": "02_matriz_y_nodo.png",
+      "bytes": 89090,
+      "sha256": "32a95b43ffa0a7a81092c721f2b28362476060a46616293f83ac81b6fe6b5e3e"
+    },
+    {
+      "ruta": "03_transferencia_controlada.png",
+      "bytes": 149722,
+      "sha256": "627d6418915bd148284aa5f792b2e2ce1c3e57ca10dcd1c8c51a71acda404288"
+    },
+    {
+      "ruta": "04_pared_movil.png",
+      "bytes": 128578,
+      "sha256": "db2767eae76b63c29b8ab58dde6a6ab14d4cb91774e0c3c7c9e3fcc58e0a9e60"
+    },
+    {
+      "ruta": "05_campo_E.png",
+      "bytes": 90070,
+      "sha256": "75103b429a8b95a2094c6a1186f7b5ba084742417d2395e9b22436095a453986"
+    },
+    {
+      "ruta": "06_gradiente_H.png",
+      "bytes": 89599,
+      "sha256": "7b8eba90f1b1f248ce9f81b5bb78f993c0cde8cf10a03d3f6696330c130b751b"
+    },
+    {
+      "ruta": "07_tangente_y_nodo.png",
+      "bytes": 77479,
+      "sha256": "5beb61ca0423c8ae04817b0c286a6c8add2fbb7b984f8f029a7b5fc97435b9c3"
+    },
+    {
+      "ruta": "HALLAZGO.es.md",
+      "bytes": 1527,
+      "sha256": "754b97fb772456c2836410f40246e7b46b715fbc887668299bee61587715ecda"
+    },
+    {
+      "ruta": "PENDIENTE_LABORATORIO_ESFERAS.es.md",
+      "bytes": 1543,
+      "sha256": "107d27a60a65292ca4288830b5aad68dd64a012ce623e13a5130b578673c0d81"
+    },
+    {
+      "ruta": "PRUEBAS.txt",
+      "bytes": 2700,
+      "sha256": "2a4bed72cf8b7e03f99d2d295bcc711ba8ed9ed127d9012cf002008ad2b4b1cb"
+    },
+    {
+      "ruta": "README.es.md",
+      "bytes": 6396,
+      "sha256": "c13653be5f020b94444c8fa5b82ee79453937c75af04bc477f8eb3f5029a6c2e"
+    },
+    {
+      "ruta": "log_ejecucion_v8.txt",
+      "bytes": 1813,
+      "sha256": "8e6de4f58028aa8735b51329543e3a084e0d3d5dc5b163b90b2d754b50b79149"
+    },
+    {
+      "ruta": "pared_movil_v8.csv",
+      "bytes": 33777,
+      "sha256": "b58cffedb5b18e337d0b0580e58f0b58650341935a64aa6eaf103071522bde37"
+    },
+    {
+      "ruta": "razones_cavidades_v8.py",
+      "bytes": 12358,
+      "sha256": "ef88d485173e4c218f5d08c66764780942896adcc97c641de2242054d1f7db70"
+    },
+    {
+      "ruta": "resultados_v8.json",
+      "bytes": 1812,
+      "sha256": "229e07e56075352962f0c8dfbe3283e2a8c063de56e69c05171f55e1e0ebffab"
+    },
+    {
+      "ruta": "test_razones_cavidades_v8.py",
+      "bytes": 6371,
+      "sha256": "fdafa6b1a60813e913bb710c690b81b9cc84201582ec8b0cf22e899f685c3e1d"
+    },
+    {
+      "ruta": "transferencia_v8.csv",
+      "bytes": 87599,
+      "sha256": "e5d699e355464f87acef6eda55ba6a18ffd8b8458b45c54f375e558e6a709969"
+    }
+  ]
+}

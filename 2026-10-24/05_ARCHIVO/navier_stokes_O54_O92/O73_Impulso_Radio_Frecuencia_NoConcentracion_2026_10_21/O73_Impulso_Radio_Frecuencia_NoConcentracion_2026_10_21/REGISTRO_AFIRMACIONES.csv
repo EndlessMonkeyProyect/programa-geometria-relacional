@@ -1,0 +1,9 @@
+codigo,etiqueta,afirmacion,estado,limite
+O73-D1,D,Formula del impulso axisimetrico y conservacion en R3 libre,Clasica derivada,No valido sin cambio en caja periodica o recipiente con paredes
+O73-T1,T,Familia suave de datos con misma Gamma inicial mismo impulso y mismo radio efectivo,Demostrado algebraicamente y comprobado por cuadratura,Datos iniciales no trayectoria singular
+O73-F1,F,Esos tres datos no acotan uniformemente el grosor ni vorticidad maxima del nucleo,Demostrado en la familia,No invalida regularidad global de cada dato
+O73-D2,D,Ecuacion eta igual omega theta sobre r y principio de maximo sin swirl,Clasica derivada,Subclase axisimetrica sin giro azimutal
+O73-T2,T,Cota de area para circulacion prescrita en region r menor igual Rmax,Condicional demostrada,Depende de maximo inicial de eta y de cota radial
+O73-F2,F,Swirl agrega fuente derivada de z de (r utheta)^2 sobre r^4,Derivacion clasica,No predice singularidad ni inestabilidad necesaria
+O73-H1,H,Relacionar eta con semilla normalizadora del programa,Hipotesis,Sin identificacion ontologica demostrada
+O73-A1,A,Regularidad global Navier Stokes 3D general,Pendiente,No reivindicada

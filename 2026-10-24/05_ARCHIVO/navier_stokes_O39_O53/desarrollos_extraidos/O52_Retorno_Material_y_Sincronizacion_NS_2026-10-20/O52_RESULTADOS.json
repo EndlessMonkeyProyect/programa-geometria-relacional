@@ -1,0 +1,135 @@
+{
+  "resoluciones": {
+    "40": {
+      "N": 40,
+      "T": 2.4,
+      "n_muestras": 121,
+      "retornos_2pi": 5,
+      "eventos": [
+        {
+          "tracer": "d0.12_outer",
+          "primer_retorno_fase_t": 1.3619400600627314,
+          "avance_centro_hasta_retorno": 1.4333519495938292,
+          "vueltas_finales": -1.4575633711661353
+        },
+        {
+          "tracer": "d0.12_inner",
+          "primer_retorno_fase_t": 1.3987245024027009,
+          "avance_centro_hasta_retorno": 1.4673330469314416,
+          "vueltas_finales": -1.309552484123348
+        },
+        {
+          "tracer": "d0.26_outer",
+          "primer_retorno_fase_t": 1.8167417079376458,
+          "avance_centro_hasta_retorno": 1.8410110165831264,
+          "vueltas_finales": -1.2324155845080604
+        },
+        {
+          "tracer": "d0.26_inner",
+          "primer_retorno_fase_t": 1.7652968596903615,
+          "avance_centro_hasta_retorno": 1.7962240960138582,
+          "vueltas_finales": -1.1963012023900221
+        },
+        {
+          "tracer": "d0.34_outer",
+          "primer_retorno_fase_t": null,
+          "avance_centro_hasta_retorno": null,
+          "vueltas_finales": -0.9706608549799196
+        },
+        {
+          "tracer": "d0.34_inner",
+          "primer_retorno_fase_t": 2.053496901879068,
+          "avance_centro_hasta_retorno": 2.042955041678291,
+          "vueltas_finales": -1.121141376805786
+        }
+      ],
+      "avance_centro": 2.326748654965736,
+      "desfase_exterior_final_vueltas": 0.22514778665807497,
+      "desfase_exterior_max_vueltas": 0.32506552228788876,
+      "tiempo_maximo_desfase": 1.58,
+      "balance_energia_relativo_E0": 1.0986148675418796e-05,
+      "energia_relativa_final": 0.5253580935844023,
+      "enstrofia_relativa_final": 0.28816449077872797,
+      "divergencia_maxima": 1.1450222301155673e-15
+    },
+    "48": {
+      "N": 48,
+      "T": 2.4,
+      "n_muestras": 121,
+      "retornos_2pi": 5,
+      "eventos": [
+        {
+          "tracer": "d0.12_outer",
+          "primer_retorno_fase_t": 1.3591355002762058,
+          "avance_centro_hasta_retorno": 1.430815463446496,
+          "vueltas_finales": -1.4636840822716952
+        },
+        {
+          "tracer": "d0.12_inner",
+          "primer_retorno_fase_t": 1.3800481893254757,
+          "avance_centro_hasta_retorno": 1.4501667934839957,
+          "vueltas_finales": -1.32011999776391
+        },
+        {
+          "tracer": "d0.26_outer",
+          "primer_retorno_fase_t": 1.795335209444899,
+          "avance_centro_hasta_retorno": 1.8223987565270865,
+          "vueltas_finales": -1.2379299119574385
+        },
+        {
+          "tracer": "d0.26_inner",
+          "primer_retorno_fase_t": 1.733027888685874,
+          "avance_centro_hasta_retorno": 1.767963328054557,
+          "vueltas_finales": -1.205031751584922
+        },
+        {
+          "tracer": "d0.34_outer",
+          "primer_retorno_fase_t": null,
+          "avance_centro_hasta_retorno": null,
+          "vueltas_finales": -0.99730096236129
+        },
+        {
+          "tracer": "d0.34_inner",
+          "primer_retorno_fase_t": 2.0302333284271943,
+          "avance_centro_hasta_retorno": 2.0233498500672256,
+          "vueltas_finales": -1.127892743637807
+        }
+      ],
+      "avance_centro": 2.3266851574814185,
+      "desfase_exterior_final_vueltas": 0.2257541703142568,
+      "desfase_exterior_max_vueltas": 0.3150366497483548,
+      "tiempo_maximo_desfase": 1.58,
+      "balance_energia_relativo_E0": 1.0993521063422315e-05,
+      "energia_relativa_final": 0.5253592548069743,
+      "enstrofia_relativa_final": 0.28815404204485334,
+      "divergencia_maxima": 1.0886619925210583e-15
+    }
+  },
+  "checks": {
+    "40_5_retornos": true,
+    "40_desfase_no_nulo": true,
+    "40_desfase_no_monotono": true,
+    "40_energia_disipa": true,
+    "40_enstrofia_disipa": true,
+    "40_balance_energia": true,
+    "40_divergencia": true,
+    "48_5_retornos": true,
+    "48_desfase_no_nulo": true,
+    "48_desfase_no_monotono": true,
+    "48_energia_disipa": true,
+    "48_enstrofia_disipa": true,
+    "48_balance_energia": true,
+    "48_divergencia": true,
+    "desplazamiento_espacial_40_48": true,
+    "desfase_espacial_40_48": true,
+    "retorno_40_48_d0.12_outer": true,
+    "retorno_40_48_d0.12_inner": true,
+    "retorno_40_48_d0.26_outer": true,
+    "retorno_40_48_d0.26_inner": true,
+    "no_retorno_40_48_d0.34_outer": true,
+    "retorno_40_48_d0.34_inner": true
+  },
+  "n_checks": 22,
+  "n_pass": 22,
+  "nota": "Cruce de -2π de fase respecto al centro de enstrofía: NO equivale a retorno al mismo punto físico o período exacto de Poincaré."
+}

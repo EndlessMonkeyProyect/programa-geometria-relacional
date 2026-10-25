@@ -1,0 +1,13 @@
+{
+  "domain": "T2 embebido en T3",
+  "N": 96,
+  "nu": 0.025,
+  "coef_pressure_gradient_exact": "3456/5525",
+  "pressure_gradient_origin": 0.6255203619909475,
+  "relative_acceleration": 1.2510407239818968,
+  "D4_common_norm": 4.7852512947616616e-18,
+  "D4_common_derivative_norm": 0.4743416490252567,
+  "checks": 68,
+  "passed": 68,
+  "limits": "testigo 2D embebido; no resolución de regularidad 3D"
+}

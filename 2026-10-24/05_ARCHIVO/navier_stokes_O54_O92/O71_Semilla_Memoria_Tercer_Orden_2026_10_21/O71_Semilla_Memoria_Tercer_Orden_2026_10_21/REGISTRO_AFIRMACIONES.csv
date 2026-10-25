@@ -1,0 +1,14 @@
+id,etiqueta,afirmacion,soporte,limite
+O71-01,O,"La identidad puede mantenerse mientras la relación referencial coincide",hilo ontológico del usuario,No equivale a ley PDE
+O71-02,D,"La proyección por D4 a es idempotente",teoría finita de grupos,Grupo D4 no es cubo óptico infinito
+O71-03,D,"u+=a+v y u-=a-v comparten a y tau",identidad de grupo y producto tensorial,Exige P_G v=0 y a invariante
+O71-04,D,"La referencia tiene misma primera derivada para gemelos",ecuación proyectada NS,Soluciones suficientemente regulares
+O71-05,D,"La diferencia de segunda derivada corresponde a la derivada de tau",diferenciación de ecuación proyectada,No prueba cota de regularidad
+O71-06,D,"La diferencia entre segundas derivadas escala cúbicamente con amplitud v",identidad O71.5,Subfamilia simétrica y oposición v/-v
+O71-07,D,"Los momentos radiales de vorticidad coinciden para ambos gemelos",simetría de integrales con pesos invariantes,Radios estadísticos no radios fundamentales
+O71-08,E,"Cálculos con 32³ 40³ 48³ muestran futuro colectivo distinto",resultados/resumen.json,No certifica convergencia PDE
+O71-09,E,"La identidad de tensión se verifica con error < 1e-13",resultados/resumen.json,Consistencia del sistema Galerkin
+O71-10,E,"Las frecuencias de dos modos colectivos coinciden inicialmente",resultados/resumen.json,No son ritmos topológicos materiales ni múltiplo entero
+O71-11,A,"Filtro de borde de 48³ necesita modo estricto para evitar alias",código / verificación de identidad,No demuestra independencia completa del esquema
+O71-12,H,"Una semilla con memoria de interacciones podría cerrar una familia",hipótesis O72,No construido todavía
+O71-13,A,"Conseguir cierre reducido no basta para NS global",criterio de continuación y falta de cotas,Problema general permanece abierto

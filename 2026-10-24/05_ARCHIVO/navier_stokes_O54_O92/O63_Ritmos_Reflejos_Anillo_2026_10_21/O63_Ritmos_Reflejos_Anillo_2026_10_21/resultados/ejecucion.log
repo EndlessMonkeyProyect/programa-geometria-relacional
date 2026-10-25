@@ -1,0 +1,126 @@
+listo 40 0.0 False Sdot 0 0.41634029731320954 90 0.4163402973132099 initial E 0.07788156601762133
+listo 40 0.14 False Sdot 0 0.7918714879117785 90 0.1928216867990399 initial E 0.08749412175821777
+listo 40 0.14 True Sdot 0 0.7471066563333492 90 0.18192139493856202 initial E 0.07788156601762114
+listo 48 0.0 False Sdot 0 0.4652486485547587 90 0.46524864855475817 initial E 0.07788169093160463
+listo 48 0.14 False Sdot 0 0.8876605744667391 90 0.2498005992558317 initial E 0.08749141496359596
+listo 48 0.14 True Sdot 0 0.8374943715817372 90 0.23568309995088277 initial E 0.07788169093160356
+{
+  "checks": {
+    "datos_finitos": true,
+    "derivada_initial_positiva_todos": true,
+    "reproduccion_O53_tolerancia_1e-8": true,
+    "rotacion_cambio_global_band_minimo": true,
+    "rotacion_covariancia_slope": true,
+    "rotacion_distingue_anclaje_local": true,
+    "trayectoria_equivariante_90grados": true,
+    "distribucion_angular_invariante_por_rotacion": true,
+    "caso_perturbado_tiene_varianza_angular": true,
+    "caso_base_armonico2_nulo": true,
+    "perturbacion_armonico2_presente": true,
+    "sym_sin_perturbacion_azimutes": true
+  },
+  "num_pronosticos": 72,
+  "num_reproducciones": 24,
+  "max_error_reproduccion_O53": 9.957312752106873e-16,
+  "simetria": [
+    {
+      "N": 40,
+      "relative_E_err": 4.815266944056456e-16,
+      "max_Q_err": 1.3877787807814457e-17,
+      "s_original_0": 0.7918714879117785,
+      "s_original_90": 0.1928216867990399,
+      "s_rotated_0": 0.19282168679904046,
+      "s_original_minus90": 0.1928216867990402,
+      "delta_slopes": 0.5990498011127386,
+      "azimuthal_sorted_max_err": 7.993605777301127e-15,
+      "rotated_std": 0.24653023477727623
+    },
+    {
+      "N": 48,
+      "relative_E_err": 8.025779133304937e-16,
+      "max_Q_err": 5.551115123125783e-17,
+      "s_original_0": 0.8876605744667391,
+      "s_original_90": 0.2498005992558317,
+      "s_rotated_0": 0.2498005992558423,
+      "s_original_minus90": 0.24980059925585277,
+      "delta_slopes": 0.6378599752109073,
+      "azimuthal_sorted_max_err": 1.4765966227514582e-14,
+      "rotated_std": 0.22222425853997121
+    }
+  ],
+  "control_temporal_rotacion": [
+    {
+      "N": 40,
+      "max_difference": 1.3075478200175183e-15
+    }
+  ],
+  "distribuciones": [
+    {
+      "N": 40,
+      "eps": 0.0,
+      "match": 0,
+      "mean": 0.4870432115482306,
+      "std": 0.050685879971755735,
+      "range": 0.1284366376287447,
+      "abs_harmonic_1": 8.043982508912177e-16,
+      "abs_harmonic_2": 4.349515757282156e-16,
+      "count": 24
+    },
+    {
+      "N": 40,
+      "eps": 0.14,
+      "match": 0,
+      "mean": 0.6057898895858388,
+      "std": 0.24653023477727604,
+      "range": 0.8213330749676145,
+      "abs_harmonic_1": 9.667447495842697e-16,
+      "abs_harmonic_2": 0.1632371558134006,
+      "count": 24
+    },
+    {
+      "N": 40,
+      "eps": 0.14,
+      "match": 1,
+      "mean": 0.5715443298034834,
+      "std": 0.23259377588557245,
+      "range": 0.7749027673583926,
+      "abs_harmonic_1": 9.15183963332935e-16,
+      "abs_harmonic_2": 0.15400929005629638,
+      "count": 24
+    },
+    {
+      "N": 48,
+      "eps": 0.0,
+      "match": 0,
+      "mean": 0.4720682602405937,
+      "std": 0.006649633851219212,
+      "range": 0.020940933670827,
+      "abs_harmonic_1": 4.741957824710772e-15,
+      "abs_harmonic_2": 1.837684282745955e-16,
+      "count": 24
+    },
+    {
+      "N": 48,
+      "eps": 0.14,
+      "match": 0,
+      "mean": 0.5693614370871197,
+      "std": 0.2222242585399703,
+      "range": 0.6378599752109373,
+      "abs_harmonic_1": 7.251806815605725e-15,
+      "abs_harmonic_2": 0.15703597637790287,
+      "count": 24
+    },
+    {
+      "N": 48,
+      "eps": 0.14,
+      "match": 1,
+      "mean": 0.5371839334450679,
+      "std": 0.2096652381660151,
+      "range": 0.6018112716308824,
+      "abs_harmonic_1": 6.8251766800290175e-15,
+      "abs_harmonic_2": 0.14816107658194158,
+      "count": 24
+    }
+  ],
+  "comentario": "Taylor de primer orden inicial no sirve como pronóstico largo; rotación preserva espectro pero cambia respuesta en marca fija."
+}

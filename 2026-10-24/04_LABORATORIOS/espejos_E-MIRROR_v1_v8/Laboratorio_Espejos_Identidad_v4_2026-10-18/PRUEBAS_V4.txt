@@ -1,0 +1,24 @@
+test_calibracion_mirror_asignacion_sin_etiquetas (test_identidad_mirrors.TestMirrorV4.test_calibracion_mirror_asignacion_sin_etiquetas) ... ok
+test_camara_desplazada_dos_spots (test_identidad_mirrors.TestMirrorV4.test_camara_desplazada_dos_spots) ... ok
+test_coincidencia_proyectada (test_identidad_mirrors.TestMirrorV4.test_coincidencia_proyectada) ... ok
+test_dos_fuentes_reconstruibles_dos_vistas (test_identidad_mirrors.TestMirrorV4.test_dos_fuentes_reconstruibles_dos_vistas) ... ok
+test_fuente_fuera_apertura_no_visible (test_identidad_mirrors.TestMirrorV4.test_fuente_fuera_apertura_no_visible) ... ok
+test_fuentes_distintas (test_identidad_mirrors.TestMirrorV4.test_fuentes_distintas) ... ok
+test_infiere_un_origen_desde_dos_reflejos (test_identidad_mirrors.TestMirrorV4.test_infiere_un_origen_desde_dos_reflejos) ... ok
+test_lado_finito_valida_reflejos (test_identidad_mirrors.TestMirrorV4.test_lado_finito_valida_reflejos) ... ok
+test_modelo_dos_spots_bic (test_identidad_mirrors.TestMirrorV4.test_modelo_dos_spots_bic) ... ok
+test_pantalla_negra_no_fuentes (test_identidad_mirrors.TestMirrorV4.test_pantalla_negra_no_fuentes) ... ok
+test_primera_camara_infiere_amplitud_doble (test_identidad_mirrors.TestMirrorV4.test_primera_camara_infiere_amplitud_doble) ... ok
+test_primera_camara_un_spot_detectado (test_identidad_mirrors.TestMirrorV4.test_primera_camara_un_spot_detectado) ... ok
+test_ray_pixel_unidad (test_identidad_mirrors.TestMirrorV4.test_ray_pixel_unidad) ... ok
+test_reflexion_involutiva (test_identidad_mirrors.TestMirrorV4.test_reflexion_involutiva) ... ok
+test_ruido_seed_alternativas (test_identidad_mirrors.TestMirrorV4.test_ruido_seed_alternativas) ... ok
+test_segundo_espejo_desdobla (test_identidad_mirrors.TestMirrorV4.test_segundo_espejo_desdobla) ... ok
+test_un_modelo_un_spot_bic (test_identidad_mirrors.TestMirrorV4.test_un_modelo_un_spot_bic) ... ok
+test_una_fuente_dos_imagenes (test_identidad_mirrors.TestMirrorV4.test_una_fuente_dos_imagenes) ... ok
+test_uno_dos_igual_imagen_si_brillo_desconocido (test_identidad_mirrors.TestMirrorV4.test_uno_dos_igual_imagen_si_brillo_desconocido) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.326s
+
+OK

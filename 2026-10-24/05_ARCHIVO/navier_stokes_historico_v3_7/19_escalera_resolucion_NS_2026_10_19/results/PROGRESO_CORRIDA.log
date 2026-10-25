@@ -1,0 +1,19 @@
+10:04:10 spinup N=64 hasta t=10
+10:05:23 N=64 listo t=10.000; refinando a 128
+10:22:03 N=128 listo t=15.000
+10:22:03 N=64: evolución de 150 pasos
+10:22:22 N=64: evolución lista (19 s), kmax_eta=0.981, CFL=0.093
+10:22:24 N=64: presupuesto en malla común (2 s)
+10:22:25 N=64: listo (0 s de presupuesto en modo alto)
+10:22:25 N=128: evolución de 150 pasos
+10:26:47 N=128: evolución lista (262 s), kmax_eta=1.963, CFL=0.188
+10:26:51 N=128: presupuesto en malla común (4 s)
+10:26:55 N=128: listo (3 s de presupuesto en modo alto)
+10:26:55 N=192: evolución de 150 pasos
+10:44:00 N=192: evolución lista (1024 s), kmax_eta=2.945, CFL=0.282
+10:44:15 N=192: presupuesto en malla común (14 s)
+10:44:39 N=192: listo (24 s de presupuesto en modo alto)
+10:45:03 N=256: evolución de 150 pasos
+11:25:52 N=256: evolución lista (2448 s), kmax_eta=3.927, CFL=0.376
+11:26:21 N=256: presupuesto en malla común (29 s)
+11:27:47 N=256: listo (86 s de presupuesto en modo alto)

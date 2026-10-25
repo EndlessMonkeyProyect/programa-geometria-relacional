@@ -1,0 +1,104 @@
+{
+  "units": "longitud normalizada λ0=1, frecuencia q=k/k0",
+  "model": "1D Maxwell transverse-E idealized as Helmholtz + conservative reactive sheet, PEC ends",
+  "g_nominal_R50": 12.566370614359172,
+  "source_x": 0.23,
+  "loss_k_imag_fraction": 0.003,
+  "mode_protected_at_B_half": {
+    "0": {
+      "g_lambda_inv": 0.0,
+      "eigen_q_near_1": 1.0000000000000007,
+      "determinant_at_q1_bhalf": 2.3084048324661477e-15,
+      "green_B_abs2_at_half_lossy": 31.180104794793056
+    },
+    "0.25": {
+      "g_lambda_inv": 7.2551974569368705,
+      "eigen_q_near_1": 1.0000000000000038,
+      "determinant_at_q1_bhalf": 2.3084048324661473e-15,
+      "green_B_abs2_at_half_lossy": 31.1771068229598
+    },
+    "0.5": {
+      "g_lambda_inv": 12.566370614359172,
+      "eigen_q_near_1": 1.0000000000000102,
+      "determinant_at_q1_bhalf": 2.3084048324661473e-15,
+      "green_B_abs2_at_half_lossy": 31.17283258974899
+    },
+    "0.9": {
+      "g_lambda_inv": 37.699111843077524,
+      "eigen_q_near_1": 1.0,
+      "determinant_at_q1_bhalf": 2.3084048324661465e-15,
+      "green_B_abs2_at_half_lossy": 31.128828728765885
+    }
+  },
+  "commensurate_nodal_modes": [
+    {
+      "b_over_a": 0.5,
+      "longitudinal_index_A": 2,
+      "longitudinal_index_B": 1,
+      "lowest_common_q": 1.0,
+      "matches_q0_1": true,
+      "node_at_sheet": true,
+      "relative_sign_B_over_A_at_common_node": 1
+    },
+    {
+      "b_over_a": 0.6666666666666666,
+      "longitudinal_index_A": 3,
+      "longitudinal_index_B": 2,
+      "lowest_common_q": 1.5,
+      "matches_q0_1": false,
+      "node_at_sheet": true,
+      "relative_sign_B_over_A_at_common_node": 1
+    },
+    {
+      "b_over_a": 0.75,
+      "longitudinal_index_A": 4,
+      "longitudinal_index_B": 3,
+      "lowest_common_q": 2.0,
+      "matches_q0_1": false,
+      "node_at_sheet": true,
+      "relative_sign_B_over_A_at_common_node": 1
+    },
+    {
+      "b_over_a": 0.4,
+      "longitudinal_index_A": 5,
+      "longitudinal_index_B": 2,
+      "lowest_common_q": 2.5,
+      "matches_q0_1": false,
+      "node_at_sheet": true,
+      "relative_sign_B_over_A_at_common_node": 1
+    },
+    {
+      "b_over_a": 0.6,
+      "longitudinal_index_A": 5,
+      "longitudinal_index_B": 3,
+      "lowest_common_q": 2.5,
+      "matches_q0_1": false,
+      "node_at_sheet": true,
+      "relative_sign_B_over_A_at_common_node": -1
+    }
+  ],
+  "mode_half_shape_right_over_left": -0.9999999999999996,
+  "mode_half_node_E": 0.0,
+  "mode_half_energy_fraction_A": 0.6666666666666666,
+  "mode_half_energy_fraction_B": 0.3333333333333333,
+  "max_detected_signal_by_R": {
+    "0.0": {
+      "B": 0.5,
+      "I": 31.180104794793056
+    },
+    "0.25": {
+      "B": 0.5,
+      "I": 31.1771068229598
+    },
+    "0.5": {
+      "B": 0.5,
+      "I": 31.17283258974899
+    },
+    "0.9": {
+      "B": 0.4995,
+      "I": 31.282208532968472
+    }
+  },
+  "sweep_n": 1441,
+  "eigen_sample_count": 501
+}

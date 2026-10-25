@@ -1,0 +1,13 @@
+ID,Estado,Afirmación,Límite
+O58-O,[ONTOLOGIA],Continuidad del cierre mediante múltiplo normalizador y resto unitario,Propuesta conceptual del programa
+O58-D1,[DEFINICION],Estado entero a^2+b^2+1=N^2,Requiere validación de interpretación del autor
+O58-T1,[DEMOSTRADO],Todo estado de dos cuadrados tiene N impar y a b pares,Bajo variables enteras positivas
+O58-T2,[DEMOSTRADO],GCD(a b N)=1,Bajo resto bruto 1
+O58-T3,[DEMOSTRADO],Una homotecia por q transforma el resto bruto 1 a q^2,No implica una ley de expansión física
+O58-T4,[DEMOSTRADO],Balance Δa+Δb+Δr=0 entre dos estados normalizados,Es contabilidad aritmética no energía
+O58-T5,[DEMOSTRADO],Infinitud de estados simétricos por ecuación de Pell,Es familia testigo no selección de física
+O58-T6,[DEMOSTRADO],Existe estela anidada de divisibilidad 3 a 99 a 3880899,No implica coste temporal ni unicidad
+O58-F1,[CONTRAEJEMPLO],N=4 cumple producto bilateral y falla suma de dos cuadrados,Los dos contratos son distintos
+O58-F2,[CONTRAEJEMPLO],3 puede enlazarse a 9 o 99 con repartos distintos,La referencia no determina transición única
+O58-A1,[ABIERTO],Derivar estados enteros físicos desde el flujo NS,No existe asignación universal derivada
+O58-A2,[ABIERTO],Demostrar que una transición de normalizador controla vorticidad,NS 3D regularidad permanece abierta

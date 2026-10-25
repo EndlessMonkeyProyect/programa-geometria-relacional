@@ -1,0 +1,59 @@
+Rescate de soluciones ya presentes y puentes de integración
+Programa de Geometría Relacional — nota para el LLM compilador
+24 de octubre de 2026 — revisión del ZIP Programa_Geometria_Relacional_Ordenado_2026-10-24(1).zip
+Instrucción principal
+NO reabrir como preguntas sin respuesta los desarrollos ya registrados. Recuperar primero las definiciones originales, las construcciones exactas, los testigos computacionales y sus hipótesis. Mantener la secuencia narrativa/ontología → definición formal → teorema condicionado → ensayo → falsador → obligación residual. Una demostración de una realización no prueba automáticamente una ley ontológica ni física universal.
+1. Aparición de 2, 3, 4 y la quinta referencia: contenido existente
+Fuentes:
+- 01_HILO/fuentes/06_hilo_del_dos/v2_8/docs/DEL_CUATRO_A_LA_DISTANCIA_Y_EL_TIEMPO_v2_7.md, T8.
+- 01_HILO/fuentes/06_hilo_del_dos/v2_8/docs/T8_DEL_LENGUAJE_AL_ESPACIO_v2_8.md.
+- 02_REALIZACIONES/01_cubo_de_espejos/geometria_O19_O22/O19/O19_CONSTRUCCION_TETRAEDRO_REFLEXION_CUBO.es.md.
+- 02_REALIZACIONES/01_cubo_de_espejos/geometria_O19_O22/O20/O20_QUINTA_REFERENCIA_Y_ESPEJO_QUE_CRECE.es.md.
+- 02_REALIZACIONES/01_cubo_de_espejos/geometria_O19_O22/O22/O22_CONTINUIDAD_Relleno_Y_FOCO.es.md.
+Ya establecido en la realización T8: n distinciones binarias producen 2^n estados y 2^n−1 comparaciones de paridad no triviales. Para n=2, los cuatro estados dan tres comparaciones; el 3 no fue añadido como dato. Sus cuatro referencias admiten 24 permutaciones, sin una de ellas designada intrínsecamente como la unidad. En la realización euclídea regular, los ejes de pares de aristas opuestas del tetraedro son mutuamente ortogonales. O19 construye el cubo a partir del tetraedro y su imagen en planos centrales; O20 y O22 registran la quinta referencia, el factor geométrico 5/3 condicionado y la distinción entre reflejar y rellenar.
+
+Aclaración: esas pruebas son exactas dentro de sus contratos matemáticos. T8 v2.8 conserva abierta la selección ontológica de las dos distinciones y la derivación de una métrica física; no borrar esa etiqueta.
+2. Puente derivable a partir de las definiciones ya presentes: ángulos π/2 y π/3
+La realización T8 produce cuatro referencias intercambiables con grupo de permutaciones S4. Existe una representación de reflexión canónica sobre el subespacio tridimensional
+V = {(x1,x2,x3,x4) ∈ R⁴ : x1+x2+x3+x4 = 0}.
+Definir s12, s23, s34 como intercambios de coordenadas contiguas. Cada sij es una reflexión respecto del hiperplano xi=xj, con normal ei−ej.
+- s12 s34 actúa sobre pares disjuntos: ambos intercambios conmutan; (s12 s34)^2 = 1. Sus hiperplanos tienen ángulo agudo π/2.
+- s12 s23 comparte una referencia: el producto es un 3-ciclo; (s12 s23)^3 = 1. Sus hiperplanos tienen ángulo agudo π/3.
+- s23 s34 también tiene orden 3. Los tres generan S4 de orden 24: es la realización de reflexiones tipo A3, con relaciones (s12 s23)^3=(s23 s34)^3=(s12 s34)^2=1.
+Esta construcción conecta directamente las cuatro referencias de T8 y los órdenes 2 y 3 que CME-002 utilizaba como entradas del grupo triangular (2,3,3), que tiene 24 elementos. Es una deducción algebraica propuesta aquí desde definiciones ya documentadas; no adjudicarla a un archivo que no la escribía expresamente, ni declarar por ella que el movimiento de pared, por sí solo, obliga a escoger intercambios contiguos.
+
+Puente complementario, igualmente construido con operaciones ya documentadas: en el espacio de tres comparaciones de O19, permitir cambio de signo de una coordenada y permutaciones de coordenadas. Sean r1 inversión del signo de x1, r2 intercambio de x1,x2, r3 intercambio de x2,x3. Entonces (r1 r2)^4=(r2 r3)^3=(r1 r3)^2=1. Generan el grupo de 48 simetrías firmadas B3, correspondiente a (2,3,4) en CME-002. Computado independientemente: órdenes 4, 3 y 2; grupo de 48.
+
+Obligación residual reducida: establecer, con una regla explícita del programa sobre la pared móvil o sobre cambios mínimos de referencia, por qué se elige esta representación/estos generadores en lugar de otros. El vínculo de S4 → π/2, π/3 y bits + permutaciones → π/4 ya queda reconstruido sin fijar a mano valores angulares.
+3. El 6: dos resultados documentados y una lectura compartida
+Fuentes:
+- 01_HILO/fuentes/06_hilo_del_dos/v2_8/docs/HILO_DEL_DOS_FORMALIZACION_v2.md, §§7–9.
+- 02_REALIZACIONES/01_cubo_de_espejos/CME-002_pared_que_se_corre/CME-002_Pared_que_se_corre.md.
+- 01_HILO/ESQUEMA_ACORDADO_2026-10-24.md.
+Hecho aritmético: según la genealogía adoptada, ord_p(2) marca la aparición de un primo como novedad. En el teorema clásico de Zsigmondy para 2^n−1, n=6 es la excepción no trivial: 2⁶−1=63=3²·7; sus divisores primos ya han aparecido en órdenes anteriores. La aritmética y la evidencia están desarrolladas.
+
+Hecho geométrico: la familia de triángulos de reflexión (2,3,k) tiene suma 1/2+1/3+1/k. Al tomar k=6, suma exactamente 1: la geometría es euclídea y se repite en vez de formar un grupo finito o hiperbólico. Para k<6 el signo es positivo y para k>6 negativo. CME-002 lo comprueba.
+
+Interpretación ya expresada por el autor: el 6 funciona como composición o repetición de los referentes 2 y 3; el mismo mecanismo ontológico de normalización se reconoce en las dos realizaciones. No clasificar esta lectura como ausente. Sin embargo, los teoremas de Zsigmondy y Coxeter pertenecen a dominios diferentes: la igualdad numérica en 6 no establece, por sí sola, una equivalencia formal entre ambos. Etiquetar el puente como [O] lectura formulada, [T] dos hechos demostrados y [A] morfismo generativo o preservación explícita de operaciones entre realizaciones. No confundir una obligación de prueba adicional con ausencia de las soluciones parciales.
+4. Novedad, normalizador común, autorreferencia y cierre propio: ya formalizados
+Fuentes:
+- 03_RAMAS/yang_mills/R01/R01_PUENTE_NORMALIZACION_AUTORREFERENCIA_YM.es.md, T1–T5.
+- 01_HILO/fuentes/02_nucleo_formal/common_reference_join.md.
+- 01_HILO/imagen_total_3_9/Imagen_Total_3_9_Informe_General.md, §1.
+- 05_ARCHIVO/navier_stokes_O54_O92/O56_Normalizador_Novedad_2026_10_21/O56_Normalizador_Novedad_2026_10_21/O56_FORMALIZACION.es.md.
+La secuencia ya acordada es novedad → múltiplo independiente → normalización interna → referencia común → autorrelación/cierre propio → continuidad.
+
+En R-01, si una firma anterior es Φ_N(x)=x mod N y aparece un primo p∤N, la pregunta módulo p no factoriza por la firma antigua (T1). La referencia común L=mcm(N,p)=Np recupera conjuntamente ambas firmas, y cada clase antigua se divide en p clases nuevas (T2). La relación de fase se conserva exactamente: j/N=(pj)/L (T3). Para transformaciones afines declaradas, las proyecciones conmutan con la actualización (T4). Un observable de traza conjunta SU(2) distingue pares que las trazas separadas no distinguen (T5).
+
+También hay falsadores ya escritos: un mapa constante conserva conmutatividad de la descripción pero borra las diferencias; un refinamiento con potencia prima puede dar distinciones nuevas sin primo nuevo; un MCM no basta para generar dinámicas físicas. O56 demuestra que la perpendicularidad material requiere información del tensor de deformación que el cociente de radios no transporta.
+
+Corrección editorial: no volver a calificar como pendiente la definición de novedad o de cierre. La cuestión residual es qué realizaciones admiten una misma operación conmutativa suficiente, y qué propiedades físicas adicionales pueden obtenerse de su dinámica.
+5. Indicaciones imperativas para una compilación pública
+1. Conservar fuente y autoría: nunca sustituir el lenguaje ontológico de partida por las analogías matemáticas posteriores. Mantener los originales y su manifiesto de integridad.
+2. Registrar dependencias: para cada afirmación integradora incluir referencia de archivo/sección, contrato de hipótesis, prueba, ensayo/falsador, estado y qué aporta nuevo la compilación.
+3. Ascender soluciones ya logradas: T8, O19–O22, CME-002, genealogía multiplicativa, R-01, O56 no se presentan como tareas inéditas; son los materiales de base.
+4. Separar tres niveles: (i) resultado exacto en un modelo, (ii) equivalencia entre modelos bajo mapa explícito, (iii) predicción/demostración física. Nunca trasladar la marca [T] del nivel (i) a (iii) sin prueba.
+5. No convertir pendientes residuales en cierres inventados: en Navier–Stokes 3D sin fuerza, P frente a NP general y Yang–Mills 4D con brecha espectral, las obligaciones de prueba general siguen abiertas según los propios documentos vigentes. No atribuir soluciones de los problemas del milenio al archivo.
+6. Añadir este puente S4/A3 y B3 como proposición de síntesis nueva que debe cotejarse; no presentar como descubrimiento original de las teorías de reflexión, y comprobar si otras conversaciones lo expresan en vocabulario propio.
+6. Propuesta de cierre editorial
+La pregunta adecuada no es «¿cómo inventamos de nuevo el 2, el 3, el 6 y el cierre?», sino: ¿cuál es el mapa mínimo entre las realizaciones ya resueltas que preserva las diferencias pertinentes, y qué hipótesis exige? Eso es compatible con la economía relacional y con el criterio del autor: donde hay que imponer una regla externa, documentarlo; donde ya existe una derivación, recuperarla y ponerla al frente.

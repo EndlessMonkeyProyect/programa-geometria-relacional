@@ -1,0 +1,40 @@
+{
+  "pruebas": 240,
+  "superadas": 240,
+  "fallidas": 0,
+  "estado": "exactitudes simbolicas, identidades aritmeticas, cuadratura periodica, y contraejemplo ODE sin pretension NS general",
+  "tabla_muestra": [
+    {
+      "alpha": 1.0,
+      "J": 12,
+      "energia_media_inicial": 0.0833333283662796,
+      "vorticidad_cuadratica_media_inicial": 6.0,
+      "ell_omega_inicial": 0.0007324218968278738,
+      "vorticidad_t_0_1": 1.4567386906953448
+    },
+    {
+      "alpha": 1.5,
+      "J": 12,
+      "energia_media_inicial": 0.03571428571376601,
+      "vorticidad_cuadratica_media_inicial": 0.49987792968750006,
+      "ell_omega_inicial": 0.011048543456039806,
+      "vorticidad_t_0_1": 0.41460556744898497
+    },
+    {
+      "alpha": 2.0,
+      "J": 12,
+      "energia_media_inicial": 0.016666666666666607,
+      "vorticidad_cuadratica_media_inicial": 0.1666666567325592,
+      "ell_omega_inicial": 0.16666666169961286,
+      "vorticidad_t_0_1": 0.15759121892259753
+    },
+    {
+      "alpha": 3.0,
+      "J": 12,
+      "energia_media_inicial": 0.003968253968253968,
+      "vorticidad_cuadratica_media_inicial": 0.033333333333333215,
+      "ell_omega_inicial": 0.44721360882796146,
+      "vorticidad_t_0_1": 0.03252493550059904
+    }
+  ]
+}

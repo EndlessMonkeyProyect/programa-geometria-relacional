@@ -1,0 +1,16 @@
+{
+  "19_escalera_resolucion_NS_2026_10_19/PRERREGISTRO_O17F.json": "0d9d50e8ca68826ec1a7fa411b8b5f212d0dbd53ddbf0635e77f6890f5c47a07",
+  "19_escalera_resolucion_NS_2026_10_19/PROCEDENCIA.json": "5e58988828506d324dbfc94be1c818349db0ab1076c0841ecbf4cad24a8459ab",
+  "19_escalera_resolucion_NS_2026_10_19/README.es.md": "51bc30d98654961d9b54bffb7ddee76f8fb343031447290a93945df3acf8d9f3",
+  "19_escalera_resolucion_NS_2026_10_19/docs/01_O17F_ESCALERA_DE_RESOLUCION_NS.es.md": "64e001b32b676e735eaba16601fb7c0c73acf2e98427bdce00e76a256aa9367b",
+  "19_escalera_resolucion_NS_2026_10_19/experiments/analisis_o17f.py": "fef07c9845c1accf1897f9672f00e9a3483c5db4d91ef30527577cf8653f5c33",
+  "19_escalera_resolucion_NS_2026_10_19/experiments/escalera_ns_o17f.py": "b289cab1be2a832485def0fabc9a09bf45b9e7910e61b428e780973a6da7d265",
+  "19_escalera_resolucion_NS_2026_10_19/results/DIAGNOSTICOS_NIVELES.json": "27b48ed2891e6b4946568d63e116c0f7884ced4c1be211832a8cfc5cbf6dc34d",
+  "19_escalera_resolucion_NS_2026_10_19/results/PROGRESO_CORRIDA.log": "8267dfb17cf40a7a69f294b8c70e3073116e919c2199f985a439e1ba7bfa2547",
+  "19_escalera_resolucion_NS_2026_10_19/results/PRUEBAS_O17F.txt": "8e858c17e6aa9534da86bc2eef65c7a7a9e5f40cbc988eeb76cd9332861e2486",
+  "19_escalera_resolucion_NS_2026_10_19/results/PRUEBAS_REGRESION_O14_O17E_Y_SUITE.txt": "94e44793285cccf722ac4cf27b0e3630f0e16c9f3a4a2deeda29745096b96d21",
+  "19_escalera_resolucion_NS_2026_10_19/results/RESULTADOS_O17F.json": "57ba6792db67deb7cb53ac80e0cb219720422279d6c7c35fba15669f469c0d3d",
+  "19_escalera_resolucion_NS_2026_10_19/results/RESULTADOS_O17F.txt": "7dfdc983f4e5d7c1eac76b6789ca7cfadf3dd202012ed8cf73c3350a8423403b",
+  "19_escalera_resolucion_NS_2026_10_19/tests/test_o17f.py": "0724e11de97692c3cc1e9ec3c3f917bb9f2f408e43e34977ce1849ed28e32f98",
+  "START_HERE_3_5_4.es.md": "00a7c19db76d7893bdfadd24dd808ce414d50606ce38747d2199c3488228daeb"
+}

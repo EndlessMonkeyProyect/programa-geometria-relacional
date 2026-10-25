@@ -1,0 +1,17 @@
+mascara,k,caras_reflejadas,regular,mantiene_foco_original,centro_norma2,d2_distintas
+0000,0,,True,True,0,8
+0001,1,1,True,False,4/3,8
+0010,1,2,True,False,4/3,8
+0011,2,1;2,False,False,16/9,8;200/9
+0100,1,3,True,False,4/3,8
+0101,2,1;3,False,False,16/9,8;200/9
+0110,2,2;3,False,False,16/9,8;200/9
+0111,3,1;2;3,False,False,4/3,8;200/9
+1000,1,4,True,False,4/3,8
+1001,2,1;4,False,False,16/9,8;200/9
+1010,2,2;4,False,False,16/9,8;200/9
+1011,3,1;2;4,False,False,4/3,8;200/9
+1100,2,3;4,False,False,16/9,8;200/9
+1101,3,1;3;4,False,False,4/3,8;200/9
+1110,3,2;3;4,False,False,4/3,8;200/9
+1111,4,1;2;3;4,True,True,0,200/9

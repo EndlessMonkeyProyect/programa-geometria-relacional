@@ -1,0 +1,63 @@
+{
+  "symbolic_checks_and_numeric_assertions": 29,
+  "nu": 1,
+  "t_star": 0.11552453009332422,
+  "vorticity_ratio_at_star": 1.4142135623730951,
+  "tracer_rate_ratio_at_star": 2.8284271247461903,
+  "phase_slip_at_star": 0.03318282619303968,
+  "initial_vorticity_l2_squared_mean": 4,
+  "gradient_integral_upper_bound": 2.5,
+  "samples": [
+    {
+      "t": 0,
+      "vorticity_ratio": 1.0,
+      "tracer_rate_ratio": 2.0,
+      "phase_slip": 0.0,
+      "omega2": 4.0
+    },
+    {
+      "t": 0.05,
+      "vorticity_ratio": 1.1618342427282833,
+      "tracer_rate_ratio": 2.3236684854565666,
+      "phase_slip": 0.006906527537562879,
+      "omega2": 3.1503149281431977
+    },
+    {
+      "t": 0.11552453009332422,
+      "vorticity_ratio": 1.414213562373095,
+      "tracer_rate_ratio": 2.82842712474619,
+      "phase_slip": 0.03318282619303975,
+      "omega2": 2.381101577952299
+    },
+    {
+      "t": 0.1351550360360548,
+      "vorticity_ratio": 1.5,
+      "tracer_rate_ratio": 3.0,
+      "phase_slip": 0.04403255877283513,
+      "omega2": 2.2046348375101203
+    },
+    {
+      "t": 0.2,
+      "vorticity_ratio": 1.822118800390509,
+      "tracer_rate_ratio": 3.644237600781018,
+      "phase_slip": 0.08720297590264714,
+      "omega2": 1.7444331280605894
+    },
+    {
+      "t": 0.5,
+      "vorticity_ratio": 4.4816890703380645,
+      "tracer_rate_ratio": 8.963378140676129,
+      "phase_slip": 0.3546063221930395,
+      "omega2": 0.772390160120353
+    },
+    {
+      "t": 1.0,
+      "vorticity_ratio": 20.08553692318767,
+      "tracer_rate_ratio": 40.17107384637534,
+      "phase_slip": 0.7733989371014824,
+      "omega2": 0.27134149172903044
+    }
+  ],
+  "model_limitation": "four material tracers in exact shear, not four nodes on a toroidal vortex tube",
+  "figure_created": true
+}

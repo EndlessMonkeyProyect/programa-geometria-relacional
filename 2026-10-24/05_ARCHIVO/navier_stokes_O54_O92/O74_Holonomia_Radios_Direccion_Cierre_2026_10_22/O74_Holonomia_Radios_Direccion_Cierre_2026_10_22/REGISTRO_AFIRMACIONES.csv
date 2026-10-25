@@ -1,0 +1,11 @@
+ID,Enunciado,Tipo,Alcance,Limitacion
+O74.1,"Ciclo de cuatro contactos exteriores generales admite giro no nulo sii H=1",DEMOSTRADO,modelo lineal de cuatro contactos,no implica ley NS
+O74.2,"Los radios nodales se cancelan telescopicamente cuando cada nodo usa el mismo brazo en ambos enlaces",DEMOSTRADO,modelo de engranes,no implica contactos fisicos realizables
+O74.3,"La paridad par no garantiza holonomia cuando hay brazos de contacto diferentes",DEMOSTRADO,modelo lineal,no implica movimiento forzado con rozamiento
+O74.4,"Holonomia 1 no implica repeticion temporal entera",DEMOSTRADO,velocidades constantes,normalizador aritmetico no identificado fisicamente
+O74.5,"Anillo articulado puede aproximar area cero manteniendo lados y giro compatible",DEMOSTRADO,modelo geometricamente independiente,requiere restricciones materiales adicionales
+O74.6,"Flujo afin exacto NS contrae area material sin singularidad en tiempo finito",DEMOSTRADO_NS,solucion clasica de flujo incomprensible,no tiene energia total finita en R3
+O74.7,"Cizalla periodica exacta NS disipa la circulacion de lazo material",DEMOSTRADO_NS,flujo viscoso especial,no es un anillo toroidal
+O74.8,"Separation de particulas bajo L(t) integrable",DEMOSTRADO,criterio condicional de flujo suave,no es estimacion a priori general
+O74.9,"Una referencia del anillo puede derivarse como H(u) no trivial invariante NS",HIPOTESIS,prueba O75 pendiente,sin evidencia de ley universal
+O74.10,"H=1 no acota frecuencias en un modelo cinemático con radios decrecientes",DEMOSTRADO_CINEMATICO,modelo r_i(t)=(T-t)r_i0,no implica blow-up de NS

@@ -1,0 +1,14 @@
+{
+  "edition": "1.0 · atlas extensible",
+  "concept_count": 100,
+  "determinant_count": 30,
+  "concept_link_count": 101,
+  "families": 7,
+  "axes": 9,
+  "pdf_pages": 35,
+  "data_ref_integrity": "all nodes and discriminant endpoints verified",
+  "html_interaction": "tested with Chromium; known pair and open pair passed; no JS errors",
+  "html_mobile": "390px viewport; no horizontal overflow",
+  "rosi_runtime": "NOT RUN; editorial mapping based on written protocol",
+  "lexicography": "history labels explicitly marked for external source verification"
+}

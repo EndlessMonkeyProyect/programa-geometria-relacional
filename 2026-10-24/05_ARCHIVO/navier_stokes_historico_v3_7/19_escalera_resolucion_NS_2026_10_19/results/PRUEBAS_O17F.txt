@@ -1,0 +1,19 @@
+COMANDO: python -B -m unittest discover -s 19_escalera_resolucion_NS_2026_10_19/tests -v
+test_desplazamiento_grande_no_se_acredita (test_o17f.TestAnalisisSintetico.test_desplazamiento_grande_no_se_acredita) ... ok
+test_niveles_identicos_son_contenido_del_plano (test_o17f.TestAnalisisSintetico.test_niveles_identicos_son_contenido_del_plano) ... ok
+test_bloques_fisicos_comunes (test_o17f.TestHerramientas.test_bloques_fisicos_comunes) ... ok
+test_criterio (test_o17f.TestHerramientas.test_criterio) ... ok
+test_mediana_igual_a_la_del_autor (test_o17f.TestHerramientas.test_mediana_igual_a_la_del_autor) ... ok
+test_puntos_comunes (test_o17f.TestHerramientas.test_puntos_comunes) ... ok
+test_replica_por_bloques (test_o17f.TestHerramientas.test_replica_por_bloques) ... ok
+test_truncamiento_ida_y_vuelta (test_o17f.TestHerramientas.test_truncamiento_ida_y_vuelta) ... ok
+test_parametros_coinciden (test_o17f.TestPrerregistro.test_parametros_coinciden) ... ok
+test_criterio_aplicado (test_o17f.TestResultadosGuardados.test_criterio_aplicado) ... ok
+test_niveles_mismo_flujo (test_o17f.TestResultadosGuardados.test_niveles_mismo_flujo) ... ok
+test_puntual (test_o17f.TestResultadosGuardados.test_puntual) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.429s
+
+OK
+SALIDA: 0

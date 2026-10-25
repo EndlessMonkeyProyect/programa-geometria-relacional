@@ -1,0 +1,22 @@
+{
+  "version": "O56_2026-10-21_candidato",
+  "source": "O55_Primera_Simulacion_2026-10-21.zip y programa O54",
+  "scope": "Archivos de la adenda O56; no manifiesto del programa completo",
+  "sha256": {
+    "LEER_PRIMERO.md": "68699b01e712d183bb813243ec3d2f32470a355faaa09adf09761416e73ffcd9",
+    "O56_FORMALIZACION.es.md": "7ce74b711c41ae5080b6481698e47b5c6a4962d9db3dc29fce4d0798d2920402",
+    "REGISTRO_ESTADOS.csv": "6f4defd4fb61795813a5079bdacab37692efa719cb69d959b42b36405d86d7a2",
+    "codigo/ensayo_o56.py": "5d6532a5bfb075044e986c88c42d13c6ff3df0b5b98853c8efe13e4bdd85f2b8",
+    "codigo/simulacion_toroide_O56.py": "5da223b21d52e78377347d0a32d1cd0ece5e61c56e275c0e16cbd38c7ca31b97",
+    "fuentes/O55_resultados_original.csv": "2e98c910eea7ad2e6476b474048bf070eadbf4ea12d7973a8e59dc2538d75614",
+    "fuentes/O55_simulacion_original.py": "15331a627adfa3ee81dd01f0004edd705c8039ecc4cd99ef97067374342b8cf0",
+    "graficos/angulos_cizallas_exactas.png": "dc074ec5a8b807d203384cc52025ce2c72789e5127b44426c4771388224f75ac",
+    "graficos/toroide_angulo_local.png": "f88422925c4a3cb6009aa50749308ace5f8336667150abae4f9638b47676a747",
+    "graficos/toroide_relacion_radios.png": "47d4f5b30d31b467f13a699e1e07deb00d6d770a7ed6dd299af1eefedc09567f",
+    "resultados/resumen.json": "15977e14f3a040d9fba53ff72f296c72360880a6e5012892bb6141f81c9f1f47",
+    "resultados/serie_exacta.csv": "1c5345358cf9e66062e3bc34572a467c404e034bb56e8a35fa5f640db06e0c30",
+    "resultados/toroide_N32_orientaciones.csv": "7cca0c194e5821a2aa966ba6cc27e00831e406cf45a57a093a65f3a683c5dd6d",
+    "resultados/toroide_N32_resumen.json": "6ccf078f5e684b13d8b41c7b0bcb2c3f1f49a330d7fffe5be576972d05ae0524",
+    "verificar_paquete.py": "038b3261d30c11aea9223189d4a78b3a47632bad776d0fea520ac1bd3c632bec"
+  }
+}
