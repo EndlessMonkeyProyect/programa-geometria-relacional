@@ -2,7 +2,11 @@
 
 [Read this repository in English](README.en.md).
 
-## Edición actual: 24 de octubre de 2026
+## Complemento actual: 27 de octubre de 2026
+
+El [complemento «Más allá de Yang–Mills»](2026-10-27_mas_alla_de_yang_mills/LEER_PRIMERO.md) añade un [artículo en español](2026-10-27_mas_alla_de_yang_mills/articulo/Mas_alla_de_Yang_Mills_2026-10-27.md), su [traducción inglesa](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.md) y siete paquetes de comprobación PR-01 a PR-07, además de una revisión independiente de R-02. El artículo es un borrador para revisión; no afirma resolver la brecha de masa de Yang–Mills.
+
+## Edición base: 24 de octubre de 2026
 
 La [edición ordenada](2026-10-24/00_LEER_PRIMERO.md) reúne el hilo integrado, las realizaciones, las tres ramas de investigación, laboratorios y archivo histórico. El [manuscrito público](2026-10-24/00_PUBLICACION/Programa_Geometria_Relacional_Manuscrito_Publico_2026-10-24.md) y el [suplemento sobre ritmo, tiempo y gravedad](2026-10-24/01_HILO/SUPLEMENTOS/Suplemento_Ritmo_Ciclo_Base_Tiempo_y_Gravedad_2026-10-24.md) forman parte del paquete.
 

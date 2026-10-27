@@ -2,7 +2,11 @@
 
 [Leer este repositorio en español](README.md).
 
-## Current edition: October 24, 2026
+## Current complement: October 27, 2026
+
+The [Beyond Yang–Mills article](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.md) ([PDF](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.pdf)) is an English translation of the [Spanish reference text](2026-10-27_mas_alla_de_yang_mills/articulo/Mas_alla_de_Yang_Mills_2026-10-27.md). The [package guide](2026-10-27_mas_alla_de_yang_mills/LEER_PRIMERO.md) introduces seven reproducible packages, PR-01 to PR-07, and an independent R-02 check. The article is a draft for review and does not claim to solve the Yang–Mills mass gap.
+
+## Base organized edition: October 24, 2026
 
 The [English reading guide](2026-10-24/00_READ_FIRST.en.md) introduces the organized edition: its integrated thread, realizations, three research branches, laboratories, and historical archive. The package also includes an [English public manuscript](2026-10-24/00_PUBLICACION/Programa_Geometria_Relacional_Manuscrito_Publico_2026-10-24.en.md) and an [English supplement on rhythm, time, and gravity](2026-10-24/01_HILO/SUPLEMENTOS/Suplemento_Ritmo_Ciclo_Base_Tiempo_y_Gravedad_2026-10-24.en.md).
 

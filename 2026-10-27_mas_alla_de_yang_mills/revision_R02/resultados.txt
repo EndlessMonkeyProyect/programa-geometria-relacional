@@ -1,0 +1,8 @@
+ensayos: 5000
+  error máx nu_formula   : 1.11e-15
+  error máx D_cruz       : 6.66e-16
+  error máx region       : 0.00e+00
+  error máx T3_reciproca : 8.77e-12
+  error máx T1           : 1.25e-15
+T4  mismo UV: True | nu1 = 2.0 | nu2 = 0.0
+OK: todas las afirmaciones de R-02 comprobadas.

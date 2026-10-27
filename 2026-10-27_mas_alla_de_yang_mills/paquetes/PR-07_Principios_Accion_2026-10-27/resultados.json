@@ -1,0 +1,149 @@
+{
+  "A_invariancia_y_positividad": {
+    "accion": 36.81018307906351,
+    "accion_tras_cambio_de_referencia": 36.81018307906351,
+    "defecto_min": 0.07749653027833348,
+    "defecto_max": 1.8672444821605927
+  },
+  "B_nu_igual_defecto_transportes_constantes_error": 0.0,
+  "C_limite_continuo_defecto_sobre_a4F2_8": {
+    "16": 0.9882948160011135,
+    "32": 0.9970670767560275,
+    "64": 0.9992663487564883,
+    "128": 0.9998165608375437
+  },
+  "D_U2": {
+    "error_ceguera_de_fase": 4.440892098500626e-16,
+    "sensibilidad_direccion_central": 1.77635683940025e-11,
+    "sensibilidad_direccion_su2": 0.12494690039943632,
+    "sensibilidad_mezcla": 0.011244775866003918,
+    "dimensiones": {
+      "nu_sensibles": 3,
+      "nu_ciegas": 1
+    }
+  },
+  "E_control_grafo": {
+    "casos_aleatorios": 500,
+    "todos_un_cero_y_N_menos_1_positivos": true,
+    "solape_maximo_modo_uniforme_con_foton": 0.7071014133678319,
+    "pesos_ajustados": [
+      0.08759945936204734,
+      0.1051788307470456,
+      0.1592164479062917,
+      0.10562331014477717,
+      0.13562779283662602,
+      0.10776237321382441
+    ],
+    "espectro_ajustado": [
+      5.551115123125783e-17,
+      0.42471288495175635,
+      0.42471289331815,
+      0.5525906501513179
+    ]
+  },
+  "F_electrodebil": {
+    "g": 0.6517,
+    "g_prima": 0.3576,
+    "v_GeV": 246.22,
+    "M_W_arbol_GeV": 80.23078699999999,
+    "M_Z_arbol_GeV": 91.51559284179862,
+    "sin2_theta_W": 0.2314149904635556,
+    "fraccion_nu_sensible_del_foton": 0.23141499046355554,
+    "foton_en_base_W1_W2_W3_B": [
+      0.0,
+      0.0,
+      0.48105611986914326,
+      0.8766898023454159
+    ]
+  },
+  "G_familia_de_defectos": {
+    "admisibilidad": {
+      "wilson": {
+        "error_invariancia_conjugacion": 7.771561172376096e-16,
+        "minimo_en_1000_muestras": 0.01270445055251401,
+        "valor_en_identidad": 0.0
+      },
+      "manton": {
+        "error_invariancia_conjugacion": 1.3322676295501878e-15,
+        "minimo_en_1000_muestras": 0.004491347332216983,
+        "valor_en_identidad": 0.0
+      },
+      "wilson_al_cuadrado": {
+        "error_invariancia_conjugacion": 1.7763568394002505e-15,
+        "minimo_en_1000_muestras": 4.306340470891875e-06,
+        "valor_en_identidad": 0.0
+      }
+    },
+    "coeficiente_cuadratico": {
+      "wilson": {
+        "min": 0.12499999739583334,
+        "max": 0.12499999739583346
+      },
+      "manton": {
+        "min": 0.125,
+        "max": 0.12500000000000014
+      },
+      "wilson_al_cuadrado": {
+        "min": 1.562499934895834e-08,
+        "max": 1.5624999348958373e-08
+      }
+    },
+    "epsilon_coeficiente": 0.001,
+    "limite_continuo_sobre_a4F2_8": {
+      "wilson": {
+        "16": 0.9882948160011135,
+        "32": 0.9970670767560275,
+        "64": 0.9992663487564883,
+        "128": 0.9998165608375437
+      },
+      "manton": {
+        "16": 0.9885234081879398,
+        "32": 0.997081660503881,
+        "64": 0.9992672649655431,
+        "128": 0.9998166181882546
+      },
+      "wilson_al_cuadrado": {
+        "16": 0.001370953700575645,
+        "32": 8.750006571671285e-05,
+        "64": 5.497253097432568e-06,
+        "128": 3.440241114902429e-07
+      }
+    },
+    "U2_dos_constantes": {
+      "error_invariancia_y_forma_estable": 8.881784197001252e-16,
+      "lambda_0": {
+        "kappa_u1": 0.12499999739583331,
+        "kappa_su2": 0.12499999739583337,
+        "cociente_u1_su2": 0.9999999999999996
+      },
+      "lambda_1": {
+        "kappa_u1": 0.6249999557291678,
+        "kappa_su2": 0.12499999739583337,
+        "cociente_u1_su2": 4.999999750000002
+      }
+    }
+  },
+  "H_separacion_3_mas_1": {
+    "error_forma_cerrada_eps_1": 8.881784197001252e-16,
+    "desviacion_relativa_max_respecto_de_eps4_xy2_8": {
+      "0.4": 0.30562612111913956,
+      "0.2": 0.08596941417129456,
+      "0.1": 0.02214574829248417,
+      "0.05": 0.005578201611658007
+    },
+    "resto_sobre_eps6_max": {
+      "0.4": 13.727592917212649,
+      "0.2": 15.445710160549202,
+      "0.1": 15.915279298408965,
+      "0.05": 16.03533743088766
+    },
+    "control_no_centrales_alineados_nu": 0.0,
+    "control_no_centrales_no_alineados_nu": 0.23307412178498077,
+    "control_no_alineados_forma_cerrada": 0.2330741217849808,
+    "dimension_nucleo_de_la_comparacion": {
+      "X_central": 4,
+      "X_no_central": 2,
+      "comun_a_todas_las_X": 1
+    }
+  }
+}

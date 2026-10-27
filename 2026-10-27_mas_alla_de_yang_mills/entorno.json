@@ -1,0 +1,117 @@
+{
+  "generado_con": {
+    "python": "3.13.17",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "plataforma": "Linux-6.18.44-fc-v180-x86_64-with-glibc2.39",
+    "fecha": "2026-10-27"
+  },
+  "tolerancias_de_comparacion": {
+    "rtol": 1e-09,
+    "atol": 1e-12,
+    "especificas": {
+      "paquetes/PR-07_Principios_Accion_2026-10-27/D_U2/sensibilidad_mezcla": {
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "motivo": "ν/ε⁴ con ε = 0,05: ν ≈ 7·10⁻⁸ se obtiene como 1 − ½ tr de una matriz próxima a la identidad; la cancelación deja un error relativo ≈ 10⁻¹⁶/ν ≈ 2·10⁻⁹, que depende de la biblioteca de álgebra lineal"
+      },
+      "paquetes/PR-07_Principios_Accion_2026-10-27/D_U2/sensibilidad_direccion_central": {
+        "rtol": 0.0,
+        "atol": 1e-09,
+        "motivo": "el valor exacto es 0; lo almacenado (≈ 2·10⁻¹¹) es redondeo dividido por ε⁴ ≈ 6·10⁻⁶. Se compara en absoluto; la aserción del verificador exige < 10⁻⁶"
+      },
+      "paquetes/PR-07_Principios_Accion_2026-10-27/E_control_grafo/espectro_ajustado": {
+        "rtol": 1e-07,
+        "atol": 1e-12,
+        "motivo": "sale de un ajuste por mínimos cuadrados con autovalores degenerados; el optimizador se detiene con tolerancia ≈ 10⁻⁸ y la aserción exige |espectro − objetivo| < 10⁻⁸, así que dos ejecuciones correctas pueden diferir en unos 10⁻⁸ relativos"
+      }
+    },
+    "parametrizaciones_no_unicas": {
+      "pesos_ajustados": "espectro_ajustado"
+    }
+  },
+  "semillas_y_parametros": {
+    "revision_R02": {
+      "semilla": 7,
+      "pares": 5000
+    },
+    "PR-01": {
+      "niveles": 16,
+      "aritmetica": "fracciones exactas"
+    },
+    "PR-02": {
+      "niveles": "2^2 a 2^11 puntos",
+      "aleatoriedad": "ninguna"
+    },
+    "PR-03": {
+      "betas": [
+        0.0,
+        0.5,
+        1.0,
+        1.5
+      ],
+      "espines": "2 a 11",
+      "aleatoriedad": "ninguna"
+    },
+    "PR-04": {
+      "betas_2D": {
+        "alta_T": 0.25,
+        "critico": "ln(1+sqrt2)/2",
+        "baja_T": 0.6
+      },
+      "espines_2D": "hasta 20 (completo) o 16 (rapido)",
+      "espines_1D": 16,
+      "semilla_arranque_eigsh": 20261027
+    },
+    "PR-05": {
+      "betas": [
+        0.2,
+        0.25,
+        0.3
+      ],
+      "ventanas": "b = 1 a 4 (completo) o 1 a 2 (rapido)",
+      "semilla_arranque_eigsh": 20261027
+    },
+    "PR-06": {
+      "cajas": "n = 1 a 21 impares (completo) o hasta 13 (rapido)",
+      "aleatoriedad": "ninguna"
+    },
+    "PR-07": {
+      "semilla": 20261027,
+      "pares_aleatorios": 2000,
+      "redes_continuo": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "parametrizacion_no_unica": "pesos_ajustados (se compara espectro_ajustado)",
+      "semilla_secciones_G_H": 20261028,
+      "epsilon_coeficiente_cuadratico": 0.001,
+      "epsilons_expansion": [
+        0.4,
+        0.2,
+        0.1,
+        0.05
+      ],
+      "pares_expansion": 200
+    }
+  },
+  "validado_tambien_con": [
+    {
+      "python": "3.13.17",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "quien": "Claude, entorno virtual con las versiones del revisor",
+      "fecha": "2026-10-27"
+    },
+    {
+      "python": "3.13.5",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "quien": "revisor externo, versión rápida de la entrega anterior",
+      "fecha": "2026-10-27",
+      "nota": "todas las aserciones pasaron; 4 diferencias en PR-07 por debajo de 10⁻⁸ relativas, cubiertas ahora por las tolerancias específicas"
+    }
+  ]
+}

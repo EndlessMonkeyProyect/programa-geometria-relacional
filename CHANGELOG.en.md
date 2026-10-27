@@ -1,5 +1,11 @@
 # History of this edition
 
+## Beyond Yang–Mills complement — 2026-10-27
+
+- Added the Spanish and English article in Markdown and PDF, plus seven PR-01 to PR-07 packages.
+- Added an independent R-02 check, reference results, and a SHA-256 manifest: 47 files verified.
+- The complement is a draft for review and explicitly leaves the mass gap open.
+
 ## Organized edition — 2026-10-24
 
 - Browsable addition of the dated package: 1,047 files checked against its SHA-256 manifest.

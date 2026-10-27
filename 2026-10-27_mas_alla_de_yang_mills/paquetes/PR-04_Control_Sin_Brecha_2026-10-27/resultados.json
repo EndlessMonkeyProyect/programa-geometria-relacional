@@ -1,0 +1,1310 @@
+{
+  "rapido": false,
+  "beta_critico": 0.44068679350977147,
+  "series_2D": {
+    "alta_T": {
+      "beta": 0.25,
+      "filas": [
+        {
+          "espines": 1,
+          "brecha": 1.0
+        },
+        {
+          "espines": 2,
+          "brecha": 0.7550813375962909,
+          "brecha_heredados": 0.9400148488063781,
+          "brecha_nuevos": 1.0599851511936222,
+          "acoplamiento": 0.23745932879105924,
+          "acoplamiento_efectivo": 0.23745932879105922,
+          "peso_heredado_modo_bajo": 0.6224593312018538,
+          "cambio_de_lo_heredado_TV": 0.0,
+          "perdida_log": 0.28092980362016123
+        },
+        {
+          "espines": 3,
+          "brecha": 0.6635759877328524,
+          "brecha_heredados": 0.7321401559394322,
+          "brecha_nuevos": 1.0565905580149626,
+          "acoplamiento": 0.23105857863000495,
+          "acoplamiento_efectivo": 0.1521936805160026,
+          "peso_heredado_modo_bajo": 0.8341060030667873,
+          "cambio_de_lo_heredado_TV": 2.7755575615628914e-17,
+          "perdida_log": 0.12918210255140988
+        },
+        {
+          "espines": 4,
+          "brecha": 0.5378828427399901,
+          "brecha_heredados": 0.6155131274610196,
+          "brecha_nuevos": 1.1067761335170365,
+          "acoplamiento": 0.3088284164842808,
+          "acoplamiento_efectivo": 0.1953451838585702,
+          "peso_heredado_modo_bajo": 0.8655292893150022,
+          "cambio_de_lo_heredado_TV": 0.02977750977801412,
+          "perdida_log": 0.21000260078670652
+        },
+        {
+          "espines": 5,
+          "brecha": 0.5128891984447558,
+          "brecha_heredados": 0.5300171920782032,
+          "brecha_nuevos": 1.0531354422639088,
+          "acoplamiento": 0.23745932879105924,
+          "acoplamiento_efectivo": 0.08978853703216873,
+          "peso_heredado_modo_bajo": 0.9647876685594803,
+          "cambio_de_lo_heredado_TV": 7.28583859910259e-17,
+          "perdida_log": 0.047580937618858565
+        },
+        {
+          "espines": 6,
+          "brecha": 0.4578162908955555,
+          "brecha_heredados": 0.49053474945535136,
+          "brecha_nuevos": 1.1035363207934923,
+          "acoplamiento": 0.3128631120257149,
+          "acoplamiento_efectivo": 0.1307981886106131,
+          "peso_heredado_modo_bajo": 0.9417410534289435,
+          "cambio_de_lo_heredado_TV": 0.02975909222417467,
+          "perdida_log": 0.11359184233934096
+        },
+        {
+          "espines": 7,
+          "brecha": 0.4475414644570504,
+          "brecha_heredados": 0.45437036256088464,
+          "brecha_nuevos": 1.0531140672303223,
+          "acoplamiento": 0.23745932879105927,
+          "acoplamiento_efectivo": 0.059773137538306036,
+          "peso_heredado_modo_bajo": 0.9870477091519156,
+          "cambio_de_lo_heredado_TV": 6.591949208711867e-17,
+          "perdida_log": 0.02269880063865545
+        },
+        {
+          "espines": 8,
+          "brecha": 0.4109794195375919,
+          "brecha_heredados": 0.4319315255002638,
+          "brecha_nuevos": 1.1005731480192524,
+          "acoplamiento": 0.30882841648428083,
+          "acoplamiento_efectivo": 0.10908393151355356,
+          "peso_heredado_modo_bajo": 0.9644118955943,
+          "cambio_de_lo_heredado_TV": 0.02975804151609196,
+          "perdida_log": 0.08522605230230149
+        },
+        {
+          "espines": 9,
+          "brecha": 0.3825262766651854,
+          "brecha_heredados": 0.3977403610224262,
+          "brecha_nuevos": 1.1002553336701109,
+          "acoplamiento": 0.3168140637726595,
+          "acoplamiento_efectivo": 0.09462601674700334,
+          "peso_heredado_modo_bajo": 0.9748550042317593,
+          "cambio_de_lo_heredado_TV": 0.029735515617431714,
+          "perdida_log": 0.07174579105377099
+        },
+        {
+          "espines": 10,
+          "brecha": 0.3784596477934404,
+          "brecha_heredados": 0.38104273299532593,
+          "brecha_nuevos": 1.0530878644289794,
+          "acoplamiento": 0.23745932879105935,
+          "acoplamiento_efectivo": 0.03917490263451627,
+          "peso_heredado_modo_bajo": 0.995641313154501,
+          "cambio_de_lo_heredado_TV": 7.35089072945172e-17,
+          "perdida_log": 0.010687891726332091
+        },
+        {
+          "espines": 11,
+          "brecha": 0.36224191544034756,
+          "brecha_heredados": 0.3713409080334552,
+          "brecha_nuevos": 1.100531252064887,
+          "acoplamiento": 0.30882841648428144,
+          "acoplamiento_efectivo": 0.07335697312639511,
+          "peso_heredado_modo_bajo": 0.9847831820431316,
+          "cambio_de_lo_heredado_TV": 0.02975674670791341,
+          "perdida_log": 0.04379719301783949
+        },
+        {
+          "espines": 12,
+          "brecha": 0.3466056919631807,
+          "brecha_heredados": 0.35471682693098666,
+          "brecha_nuevos": 1.1002289455426377,
+          "acoplamiento": 0.31681406377266,
+          "acoplamiento_efectivo": 0.07018168705141112,
+          "peso_heredado_modo_bajo": 0.9868230765771326,
+          "cambio_de_lo_heredado_TV": 0.02973382817283901,
+          "perdida_log": 0.04412446389740787
+        },
+        {
+          "espines": 13,
+          "brecha": 0.34454806462789134,
+          "brecha_heredados": 0.34582835265035444,
+          "brecha_nuevos": 1.0530860775235305,
+          "acoplamiento": 0.2374593287910604,
+          "acoplamiento_efectivo": 0.02835654125700347,
+          "peso_heredado_modo_bajo": 0.9979510844456769,
+          "cambio_de_lo_heredado_TV": 3.310628274343433e-18,
+          "perdida_log": 0.005954198742792739
+        },
+        {
+          "espines": 14,
+          "brecha": 0.3346028603906606,
+          "brecha_heredados": 0.340098156436429,
+          "brecha_nuevos": 1.1005058272877206,
+          "acoplamiento": 0.3088284164842817,
+          "acoplamiento_efectivo": 0.05812665952623851,
+          "peso_heredado_modo_bajo": 0.9910801352365487,
+          "cambio_de_lo_heredado_TV": 0.029756656026573937,
+          "perdida_log": 0.029289263483404444
+        },
+        {
+          "espines": 15,
+          "brecha": 0.3208195132210443,
+          "brecha_heredados": 0.3276682164909242,
+          "brecha_nuevos": 1.0972438651887866,
+          "acoplamiento": 0.3128631120257159,
+          "acoplamiento_efectivo": 0.06643211829044629,
+          "peso_heredado_modo_bajo": 0.989429876901351,
+          "cambio_de_lo_heredado_TV": 0.029732196431858312,
+          "perdida_log": 0.04206563631177616
+        },
+        {
+          "espines": 16,
+          "brecha": 0.3117793003794317,
+          "brecha_heredados": 0.31621467364615097,
+          "brecha_nuevos": 1.1002011835684387,
+          "acoplamiento": 0.3168140637726601,
+          "acoplamiento_efectivo": 0.053248834091828894,
+          "peso_heredado_modo_bajo": 0.9930971435052246,
+          "cambio_de_lo_heredado_TV": 0.029731993252083713,
+          "perdida_log": 0.028583133965254737
+        },
+        {
+          "espines": 17,
+          "brecha": 0.3107438174219947,
+          "brecha_heredados": 0.3113733230484409,
+          "brecha_nuevos": 1.0530841421341222,
+          "acoplamiento": 0.23745932879106074,
+          "acoplamiento_efectivo": 0.020461784192279467,
+          "peso_heredado_modo_bajo": 0.9990475484039862,
+          "cambio_de_lo_heredado_TV": 2.899732591630372e-17,
+          "perdida_log": 0.003326732398568024
+        },
+        {
+          "espines": 18,
+          "brecha": 0.3056661591758014,
+          "brecha_heredados": 0.3083986597640777,
+          "brecha_nuevos": 1.1005022915489282,
+          "acoplamiento": 0.3088284164842822,
+          "acoplamiento_efectivo": 0.041818758296265024,
+          "peso_heredado_modo_bajo": 0.9957110514026439,
+          "cambio_de_lo_heredado_TV": 0.029756557707568326,
+          "perdida_log": 0.016475311216038215
+        },
+        {
+          "espines": 19,
+          "brecha": 0.2978753525470037,
+          "brecha_heredados": 0.3016931190920827,
+          "brecha_nuevos": 1.097240195293042,
+          "acoplamiento": 0.3128631120257162,
+          "acoplamiento_efectivo": 0.0500170079852988,
+          "peso_heredado_modo_bajo": 0.9941714580151986,
+          "cambio_de_lo_heredado_TV": 0.029732019912792153,
+          "perdida_log": 0.025818404353224297
+        },
+        {
+          "espines": 20,
+          "brecha": 0.2922822265565491,
+          "brecha_heredados": 0.2949570514369611,
+          "brecha_nuevos": 1.100199135468881,
+          "acoplamiento": 0.3168140637726605,
+          "acoplamiento_efectivo": 0.0418192191761874,
+          "peso_heredado_modo_bajo": 0.9959148911404988,
+          "cambio_de_lo_heredado_TV": 0.029731845348300666,
+          "perdida_log": 0.01895525417545612
+        }
+      ],
+      "z_ef_cuadrados": [
+        {
+          "de": 1,
+          "a": 4,
+          "z_ef": 0.8946361239720121
+        },
+        {
+          "de": 4,
+          "a": 9,
+          "z_ef": 0.8406233166233431
+        },
+        {
+          "de": 9,
+          "a": 16,
+          "z_ef": 0.7108603584572851
+        }
+      ],
+      "z_ef_rectangulos": [
+        {
+          "de": 2,
+          "a": 6,
+          "z_ef": 0.9108900172651789
+        },
+        {
+          "de": 6,
+          "a": 12,
+          "z_ef": 0.8029469077880517
+        },
+        {
+          "de": 12,
+          "a": 20,
+          "z_ef": 0.6674212361931408
+        }
+      ]
+    },
+    "critico": {
+      "beta": 0.44068679350977147,
+      "filas": [
+        {
+          "espines": 1,
+          "brecha": 1.0
+        },
+        {
+          "espines": 2,
+          "brecha": 0.5857864376269051,
+          "brecha_heredados": 0.8284271247461901,
+          "brecha_nuevos": 1.1715728752538097,
+          "acoplamiento": 0.3770087846867105,
+          "acoplamiento_efectivo": 0.37700878468671045,
+          "peso_heredado_modo_bajo": 0.7071067811865477,
+          "cambio_de_lo_heredado_TV": 0.0,
+          "perdida_log": 0.5347999967395702
+        },
+        {
+          "espines": 3,
+          "brecha": 0.45880389985380277,
+          "brecha_heredados": 0.5371508982061364,
+          "brecha_nuevos": 1.146446609406726,
+          "acoplamiento": 0.3535533905932738,
+          "acoplamiento_efectivo": 0.21615668763908438,
+          "peso_heredado_modo_bajo": 0.8852990250365491,
+          "cambio_de_lo_heredado_TV": 8.326672684688674e-17,
+          "perdida_log": 0.2443323969062087
+        },
+        {
+          "espines": 4,
+          "brecha": 0.292893218813453,
+          "brecha_heredados": 0.35961179679779287,
+          "brecha_nuevos": 1.2499999999999993,
+          "acoplamiento": 0.4330127018922195,
+          "acoplamiento_efectivo": 0.23633410373467673,
+          "peso_heredado_modo_bajo": 0.926776695296637,
+          "cambio_de_lo_heredado_TV": 0.08088022903976172,
+          "perdida_log": 0.4488147836537351
+        },
+        {
+          "espines": 5,
+          "brecha": 0.2675178002066445,
+          "brecha_heredados": 0.2816321967470967,
+          "brecha_nuevos": 1.1187273160858189,
+          "acoplamiento": 0.37700878468671056,
+          "acoplamiento_efectivo": 0.10551811660775237,
+          "peso_heredado_modo_bajo": 0.9817216991612563,
+          "cambio_de_lo_heredado_TV": 5.724587470723463e-17,
+          "perdida_log": 0.09062199473186
+        },
+        {
+          "espines": 6,
+          "brecha": 0.2061507745066434,
+          "brecha_heredados": 0.22951236619781015,
+          "brecha_nuevos": 1.2271695448389772,
+          "acoplamiento": 0.4447059114159813,
+          "acoplamiento_efectivo": 0.1421599019597165,
+          "peso_heredado_modo_bajo": 0.9734029273906262,
+          "cambio_de_lo_heredado_TV": 0.07984082936342662,
+          "perdida_log": 0.26057829079960754
+        },
+        {
+          "espines": 7,
+          "brecha": 0.19700275131735273,
+          "brecha_heredados": 0.20196659758913937,
+          "brecha_nuevos": 1.1177653111944126,
+          "acoplamiento": 0.3770087846867106,
+          "acoplamiento_efectivo": 0.06486331613334648,
+          "peso_heredado_modo_bajo": 0.9939381581176228,
+          "cambio_de_lo_heredado_TV": 6.423897871976614e-17,
+          "perdida_log": 0.04539012143275911
+        },
+        {
+          "espines": 8,
+          "brecha": 0.16157524917868957,
+          "brecha_heredados": 0.174402467857236,
+          "brecha_nuevos": 1.208485829159976,
+          "acoplamiento": 0.43301270189221963,
+          "acoplamiento_efectivo": 0.10916713453074109,
+          "peso_heredado_modo_bajo": 0.9859209415667319,
+          "cambio_de_lo_heredado_TV": 0.07969553824288511,
+          "perdida_log": 0.19824672138470928
+        },
+        {
+          "espines": 9,
+          "brecha": 0.13426620918092272,
+          "brecha_heredados": 0.14272064070086884,
+          "brecha_nuevos": 1.2024953588381648,
+          "acoplamiento": 0.4550898605622281,
+          "acoplamiento_efectivo": 0.0889318043781256,
+          "peso_heredado_modo_bajo": 0.9908197917396089,
+          "cambio_de_lo_heredado_TV": 0.07804011025771629,
+          "perdida_log": 0.18514650845522984
+        },
+        {
+          "espines": 10,
+          "brecha": 0.13123826946081657,
+          "brecha_heredados": 0.13281367667160976,
+          "brecha_nuevos": 1.1162989645545014,
+          "acoplamiento": 0.3770087846867111,
+          "acoplamiento_efectivo": 0.03817000146480027,
+          "peso_heredado_modo_bajo": 0.9982291145606472,
+          "cambio_de_lo_heredado_TV": 4.599770068417115e-17,
+          "perdida_log": 0.02280994293759124
+        },
+        {
+          "espines": 11,
+          "brecha": 0.11732232503705252,
+          "brecha_heredados": 0.12217441785173892,
+          "brecha_nuevos": 1.2067493467001194,
+          "acoplamiento": 0.43301270189221996,
+          "acoplamiento_efectivo": 0.06788969917565138,
+          "peso_heredado_modo_bajo": 0.9947302661077544,
+          "cambio_de_lo_heredado_TV": 0.07946691485253347,
+          "perdida_log": 0.11208946011925541
+        },
+        {
+          "espines": 12,
+          "brecha": 0.10343528502403912,
+          "brecha_heredados": 0.10746952675951278,
+          "brecha_nuevos": 1.2009346942607901,
+          "acoplamiento": 0.4550898605622282,
+          "acoplamiento_efectivo": 0.061924211843381184,
+          "peso_heredado_modo_bajo": 0.9956656475254868,
+          "cambio_de_lo_heredado_TV": 0.07765302439906432,
+          "perdida_log": 0.12597891014438314
+        },
+        {
+          "espines": 13,
+          "brecha": 0.10203025670104518,
+          "brecha_heredados": 0.10274871904333743,
+          "brecha_nuevos": 1.116015940294384,
+          "acoplamiento": 0.3770087846867119,
+          "acoplamiento_efectivo": 0.026237889778119406,
+          "peso_heredado_modo_bajo": 0.9992200047111077,
+          "cambio_de_lo_heredado_TV": 2.7332753973716308e-17,
+          "perdida_log": 0.013676748056246815
+        },
+        {
+          "espines": 14,
+          "brecha": 0.09432348849840887,
+          "brecha_heredados": 0.09695276556700738,
+          "brecha_nuevos": 1.2053506602955313,
+          "acoplamiento": 0.4330127018922204,
+          "acoplamiento_efectivo": 0.05053656123630262,
+          "peso_heredado_modo_bajo": 0.9972003964955178,
+          "cambio_de_lo_heredado_TV": 0.0794208255261408,
+          "perdida_log": 0.078539162299647
+        },
+        {
+          "espines": 15,
+          "brecha": 0.08358669134486593,
+          "brecha_heredados": 0.08641055234061085,
+          "brecha_nuevos": 1.1810721653241145,
+          "acoplamiento": 0.4447059114159819,
+          "acoplamiento_efectivo": 0.0531122503014674,
+          "peso_heredado_modo_bajo": 0.9970837839031979,
+          "cambio_de_lo_heredado_TV": 0.07724158378757764,
+          "perdida_log": 0.12084592834286047
+        },
+        {
+          "espines": 16,
+          "brecha": 0.07622818702092367,
+          "brecha_heredados": 0.0781260694054597,
+          "brecha_nuevos": 1.1989579857684798,
+          "acoplamiento": 0.4550898605622284,
+          "acoplamiento_efectivo": 0.04307780453601208,
+          "peso_heredado_modo_bajo": 0.9980130220445532,
+          "cambio_de_lo_heredado_TV": 0.07711791988264938,
+          "perdida_log": 0.0921530102740502
+        },
+        {
+          "espines": 17,
+          "brecha": 0.07559789889116103,
+          "brecha_heredados": 0.07591403092600198,
+          "brecha_nuevos": 1.1156404173095733,
+          "acoplamiento": 0.3770087846867128,
+          "acoplamiento_efectivo": 0.017717468583819822,
+          "peso_heredado_modo_bajo": 0.9996688053435526,
+          "cambio_de_lo_heredado_TV": 5.959271288986349e-17,
+          "perdida_log": 0.008302812350112905
+        },
+        {
+          "espines": 18,
+          "brecha": 0.07195598462867056,
+          "brecha_heredados": 0.07313497147282967,
+          "brecha_nuevos": 1.204809715145977,
+          "acoplamiento": 0.43301270189222035,
+          "acoplamiento_efectivo": 0.03423369132884439,
+          "peso_heredado_modo_bajo": 0.9987704707144056,
+          "cambio_de_lo_heredado_TV": 0.07935861789014295,
+          "perdida_log": 0.04937388287512638
+        },
+        {
+          "espines": 19,
+          "brecha": 0.06624510156698502,
+          "brecha_heredados": 0.06767980430193954,
+          "brecha_nuevos": 1.180438735876198,
+          "acoplamiento": 0.44470591141598165,
+          "acoplamiento_efectivo": 0.038047173982290045,
+          "peso_heredado_modo_bajo": 0.9985303817683331,
+          "cambio_de_lo_heredado_TV": 0.07708270958236568,
+          "perdida_log": 0.08269308395799314
+        },
+        {
+          "espines": 20,
+          "brecha": 0.061898680607241914,
+          "brecha_heredados": 0.06295267905622193,
+          "brecha_nuevos": 1.198463417824025,
+          "acoplamiento": 0.4550898605622283,
+          "acoplamiento_efectivo": 0.03229111791339312,
+          "peso_heredado_modo_bajo": 0.9989084629578058,
+          "cambio_de_lo_heredado_TV": 0.07697359533261171,
+          "perdida_log": 0.06786265896504498
+        }
+      ],
+      "z_ef_cuadrados": [
+        {
+          "de": 1,
+          "a": 4,
+          "z_ef": 1.7715533031636095
+        },
+        {
+          "de": 4,
+          "a": 9,
+          "z_ef": 1.9236763440470754
+        },
+        {
+          "de": 9,
+          "a": 16,
+          "z_ef": 1.9677735124385216
+        }
+      ],
+      "z_ef_rectangulos": [
+        {
+          "de": 2,
+          "a": 6,
+          "z_ef": 1.901212059729487
+        },
+        {
+          "de": 6,
+          "a": 12,
+          "z_ef": 1.9899429264555275
+        },
+        {
+          "de": 12,
+          "a": 20,
+          "z_ef": 2.0102644160085914
+        }
+      ]
+    },
+    "baja_T": {
+      "beta": 0.6,
+      "filas": [
+        {
+          "espines": 1,
+          "brecha": 1.0
+        },
+        {
+          "espines": 2,
+          "brecha": 0.46295043300196487,
+          "brecha_heredados": 0.7115777625872228,
+          "brecha_nuevos": 1.2884222374127772,
+          "acoplamiento": 0.45302853152818606,
+          "acoplamiento_efectivo": 0.45302853152818606,
+          "peso_heredado_modo_bajo": 0.7685247834990179,
+          "cambio_de_lo_heredado_TV": 5.551115123125783e-17,
+          "perdida_log": 0.7701352867780856
+        },
+        {
+          "espines": 3,
+          "brecha": 0.330885775280636,
+          "brecha_heredados": 0.4018772324129642,
+          "brecha_nuevos": 1.2238569228608978,
+          "acoplamiento": 0.41682730350607755,
+          "acoplamiento_efectivo": 0.23523784988288868,
+          "peso_heredado_modo_bajo": 0.9172785561798413,
+          "cambio_de_lo_heredado_TV": 8.326672684688674e-17,
+          "perdida_log": 0.33584676617076925
+        },
+        {
+          "espines": 4,
+          "brecha": 0.16634539298784493,
+          "brecha_heredados": 0.2117004227522634,
+          "brecha_nuevos": 1.3474900018962959,
+          "acoplamiento": 0.476172973275897,
+          "acoplamiento_efectivo": 0.21721131250844333,
+          "peso_heredado_modo_bajo": 0.9584136517530393,
+          "cambio_de_lo_heredado_TV": 0.12206066479589908,
+          "perdida_log": 0.6877069186451484
+        },
+        {
+          "espines": 5,
+          "brecha": 0.14682375833849162,
+          "brecha_heredados": 0.15611379165190453,
+          "brecha_nuevos": 1.1467372044006854,
+          "acoplamiento": 0.453028531528186,
+          "acoplamiento_efectivo": 0.09764108107607553,
+          "peso_heredado_modo_bajo": 0.99026548294739,
+          "cambio_de_lo_heredado_TV": 2.1250362580715887e-17,
+          "perdida_log": 0.12483336275978969
+        },
+        {
+          "espines": 6,
+          "brecha": 0.09679581332988695,
+          "brecha_heredados": 0.10976472958142097,
+          "brecha_nuevos": 1.2915214036960685,
+          "acoplamiento": 0.48940232323967525,
+          "acoplamiento_efectivo": 0.11818448350944735,
+          "peso_heredado_modo_bajo": 0.9876496869531253,
+          "cambio_de_lo_heredado_TV": 0.11578138080214587,
+          "perdida_log": 0.4166292020054607
+        },
+        {
+          "espines": 7,
+          "brecha": 0.09079441774726169,
+          "brecha_heredados": 0.09359873086961921,
+          "brecha_nuevos": 1.1424687617027258,
+          "acoplamiento": 0.45302853152818623,
+          "acoplamiento_efectivo": 0.055106179049985264,
+          "peso_heredado_modo_bajo": 0.9971974073324366,
+          "cambio_de_lo_heredado_TV": 8.470329472543003e-18,
+          "perdida_log": 0.06400593745990621
+        },
+        {
+          "espines": 8,
+          "brecha": 0.06576155440274056,
+          "brecha_heredados": 0.07198107126219665,
+          "brecha_nuevos": 1.2525128410136543,
+          "acoplamiento": 0.4761729732758972,
+          "acoplamiento_efectivo": 0.08474868558480973,
+          "peso_heredado_modo_bajo": 0.9943319024293773,
+          "cambio_de_lo_heredado_TV": 0.11463788818305454,
+          "perdida_log": 0.32256241718315254
+        },
+        {
+          "espines": 9,
+          "brecha": 0.04758868383978596,
+          "brecha_heredados": 0.05107874865779904,
+          "brecha_nuevos": 1.2272108608427894,
+          "acoplamiento": 0.4972586430327742,
+          "acoplamiento_efectivo": 0.0633841422760235,
+          "peso_heredado_modo_bajo": 0.996810646658454,
+          "cambio_de_lo_heredado_TV": 0.10343381798948831,
+          "perdida_log": 0.3234403894640442
+        },
+        {
+          "espines": 10,
+          "brecha": 0.046031044395721095,
+          "brecha_heredados": 0.046730281535739535,
+          "brecha_nuevos": 1.135870788001306,
+          "acoplamiento": 0.4530285315281866,
+          "acoplamiento_efectivo": 0.028504071554486633,
+          "peso_heredado_modo_bajo": 0.9993506467584843,
+          "cambio_de_lo_heredado_TV": 2.6361385854227937e-17,
+          "perdida_log": 0.03327895148669799
+        },
+        {
+          "espines": 11,
+          "brecha": 0.03801496093112709,
+          "brecha_heredados": 0.03991592952386192,
+          "brecha_nuevos": 1.2464299340086402,
+          "acoplamiento": 0.4761729732758974,
+          "acoplamiento_efectivo": 0.047128876517574636,
+          "peso_heredado_modo_bajo": 0.9982801669612238,
+          "cambio_de_lo_heredado_TV": 0.11268272077981809,
+          "perdida_log": 0.19133625607176497
+        },
+        {
+          "espines": 12,
+          "brecha": 0.030115529754924892,
+          "brecha_heredados": 0.03152100032212677,
+          "brecha_nuevos": 1.219730407106699,
+          "acoplamiento": 0.49725864303277484,
+          "acoplamiento_efectivo": 0.04034098042411951,
+          "peso_heredado_modo_bajo": 0.9987259813757994,
+          "cambio_de_lo_heredado_TV": 0.09985987610759893,
+          "perdida_log": 0.23293881355127377
+        },
+        {
+          "espines": 13,
+          "brecha": 0.02949577455896608,
+          "brecha_heredados": 0.029770159568902214,
+          "brecha_nuevos": 1.1342812440478334,
+          "acoplamiento": 0.4530285315281872,
+          "acoplamiento_efectivo": 0.01807522437545373,
+          "peso_heredado_modo_bajo": 0.9997516595328194,
+          "cambio_de_lo_heredado_TV": 7.860643428915484e-17,
+          "perdida_log": 0.02079395960870868
+        },
+        {
+          "espines": 14,
+          "brecha": 0.02566757778120038,
+          "brecha_heredados": 0.0265590259064769,
+          "brecha_nuevos": 1.2412383959594622,
+          "acoplamiento": 0.4761729732758976,
+          "acoplamiento_efectivo": 0.03239653694655493,
+          "peso_heredado_modo_bajo": 0.9992041736869608,
+          "cambio_de_lo_heredado_TV": 0.11217041453686477,
+          "perdida_log": 0.13901838727295285
+        },
+        {
+          "espines": 15,
+          "brecha": 0.020399211306081563,
+          "brecha_heredados": 0.021213835608546304,
+          "brecha_nuevos": 1.1774218391814382,
+          "acoplamiento": 0.48940232323967586,
+          "acoplamiento_efectivo": 0.03115140388182825,
+          "peso_heredado_modo_bajo": 0.9992821490915914,
+          "cambio_de_lo_heredado_TV": 0.09588484531450342,
+          "perdida_log": 0.22973239188817512
+        },
+        {
+          "espines": 16,
+          "brecha": 0.01694444652141053,
+          "brecha_heredados": 0.017465645418446432,
+          "brecha_nuevos": 1.2102154903651452,
+          "acoplamiento": 0.4972586430327746,
+          "acoplamiento_efectivo": 0.02473381406419545,
+          "peso_heredado_modo_bajo": 0.9995364655132988,
+          "cambio_de_lo_heredado_TV": 0.09450842364861395,
+          "perdida_log": 0.1855560973499198
+        },
+        {
+          "espines": 17,
+          "brecha": 0.016720542854410356,
+          "brecha_heredados": 0.016818041426924283,
+          "brecha_nuevos": 1.132194165665321,
+          "acoplamiento": 0.4530285315281887,
+          "acoplamiento_efectivo": 0.010913436009830564,
+          "peso_heredado_modo_bajo": 0.9999142514419399,
+          "cambio_de_lo_heredado_TV": 1.6022934624124893e-16,
+          "perdida_log": 0.013302066787744864
+        },
+        {
+          "espines": 18,
+          "brecha": 0.015244738019739105,
+          "brecha_heredados": 0.01556219753086165,
+          "brecha_nuevos": 1.2390633321676296,
+          "acoplamiento": 0.476172973275898,
+          "acoplamiento_efectivo": 0.019474268167748925,
+          "peso_heredado_modo_bajo": 0.9997205793149322,
+          "cambio_de_lo_heredado_TV": 0.11143854861465537,
+          "perdida_log": 0.09240367887380109
+        },
+        {
+          "espines": 19,
+          "brecha": 0.01292280711617655,
+          "brecha_heredados": 0.01325870863639871,
+          "brecha_nuevos": 1.174802242834791,
+          "acoplamiento": 0.4894023232396761,
+          "acoplamiento_efectivo": 0.02003791271826721,
+          "peso_heredado_modo_bajo": 0.9997050082281662,
+          "cambio_de_lo_heredado_TV": 0.09390932383249197,
+          "perdida_log": 0.1652406518158756
+        },
+        {
+          "espines": 20,
+          "brecha": 0.011186044761739195,
+          "brecha_heredados": 0.011428779866394236,
+          "brecha_nuevos": 1.2074357550088688,
+          "acoplamiento": 0.49725864303277495,
+          "acoplamiento_efectivo": 0.016896350690626633,
+          "peso_heredado_modo_bajo": 0.9997849196628497,
+          "cambio_de_lo_heredado_TV": 0.09266497861385273,
+          "perdida_log": 0.14432674583163685
+        }
+      ],
+      "z_ef_cuadrados": [
+        {
+          "de": 1,
+          "a": 4,
+          "z_ef": 2.5877461842158933
+        },
+        {
+          "de": 4,
+          "a": 9,
+          "z_ef": 3.08650802213665
+        },
+        {
+          "de": 9,
+          "a": 16,
+          "z_ef": 3.589569723370854
+        }
+      ],
+      "z_ef_rectangulos": [
+        {
+          "de": 2,
+          "a": 6,
+          "z_ef": 2.8490783613543917
+        },
+        {
+          "de": 6,
+          "a": 12,
+          "z_ef": 3.3688740226098797
+        },
+        {
+          "de": 12,
+          "a": 20,
+          "z_ef": 3.8775422897834315
+        }
+      ]
+    }
+  },
+  "series_1D": {
+    "1D_beta_0.5": {
+      "beta": 0.5,
+      "limite_exacto": 0.23840584404423515,
+      "filas": [
+        {
+          "espines": 1,
+          "brecha": 1.0
+        },
+        {
+          "espines": 2,
+          "brecha": 0.5378828427399903,
+          "brecha_heredados": 0.7864477329659273,
+          "brecha_nuevos": 1.2135522670340726,
+          "acoplamiento": 0.40981422166474496,
+          "acoplamiento_efectivo": 0.40981422166474496,
+          "peso_heredado_modo_bajo": 0.731058578630005,
+          "cambio_de_lo_heredado_TV": 0.0,
+          "perdida_log": 0.6201145069582774
+        },
+        {
+          "espines": 3,
+          "brecha": 0.4067498619164807,
+          "brecha_heredados": 0.4833943022706567,
+          "brecha_nuevos": 1.1759728631680575,
+          "acoplamiento": 0.38079707797788237,
+          "acoplamiento_efectivo": 0.22641352568977488,
+          "peso_heredado_modo_bajo": 0.8983125345208802,
+          "cambio_de_lo_heredado_TV": 5.551115123125783e-17,
+          "perdida_log": 0.2794423654048422
+        },
+        {
+          "espines": 4,
+          "brecha": 0.3489231927834584,
+          "brecha_heredados": 0.3843569217041608,
+          "brecha_nuevos": 1.1759728631680573,
+          "acoplamiento": 0.38079707797788226,
+          "acoplamiento_efectivo": 0.15136571476116706,
+          "peso_heredado_modo_bajo": 0.9488217306009274,
+          "cambio_de_lo_heredado_TV": 5.551115123125783e-17,
+          "perdida_log": 0.15334658662166356
+        },
+        {
+          "espines": 5,
+          "brecha": 0.31736855305293393,
+          "brecha_heredados": 0.3371865177194162,
+          "brecha_nuevos": 1.1759728631680573,
+          "acoplamiento": 0.3807970779778825,
+          "acoplamiento_efectivo": 0.11191625440138955,
+          "peso_heredado_modo_bajo": 0.9700375709620735,
+          "cambio_de_lo_heredado_TV": 0.0,
+          "perdida_log": 0.0947880935212992
+        },
+        {
+          "espines": 6,
+          "brecha": 0.2979559841893686,
+          "brecha_heredados": 0.31033284573200215,
+          "brecha_nuevos": 1.175972863168057,
+          "acoplamiento": 0.3807970779778825,
+          "acoplamiento_efectivo": 0.0877380810992455,
+          "peso_heredado_modo_bajo": 0.9807428321117777,
+          "cambio_de_lo_heredado_TV": 3.903127820947816e-18,
+          "perdida_log": 0.06311795494249131
+        },
+        {
+          "espines": 7,
+          "brecha": 0.28505261089923734,
+          "brecha_heredados": 0.2933636592638654,
+          "brecha_nuevos": 1.175972863168057,
+          "acoplamiento": 0.38079707797788265,
+          "acoplamiento_efectivo": 0.07146826739170181,
+          "peso_heredado_modo_bajo": 0.9868096201434657,
+          "cambio_de_lo_heredado_TV": 1.8431436932253575e-17,
+          "perdida_log": 0.0442720086548844
+        },
+        {
+          "espines": 8,
+          "brecha": 0.27599567141917475,
+          "brecha_heredados": 0.2818726210714355,
+          "brecha_nuevos": 1.1759728631680575,
+          "acoplamiento": 0.3807970779778829,
+          "acoplamiento_efectivo": 0.05981767374565776,
+          "peso_heredado_modo_bajo": 0.9905351320294276,
+          "cambio_de_lo_heredado_TV": 1.2018381082001817e-16,
+          "perdida_log": 0.032288580548372484
+        },
+        {
+          "espines": 9,
+          "brecha": 0.26937444771878155,
+          "brecha_heredados": 0.2736952945903126,
+          "brecha_nuevos": 1.175972863168058,
+          "acoplamiento": 0.38079707797788276,
+          "acoplamiento_efectivo": 0.05109665121383363,
+          "peso_heredado_modo_bajo": 0.9929620323358443,
+          "cambio_de_lo_heredado_TV": 4.052883246022376e-17,
+          "perdida_log": 0.024282771706297637
+        },
+        {
+          "espines": 10,
+          "brecha": 0.26437778445727345,
+          "brecha_heredados": 0.26765316429549213,
+          "brecha_nuevos": 1.1759728631680575,
+          "acoplamiento": 0.380797077977883,
+          "acoplamiento_efectivo": 0.044347702739352575,
+          "peso_heredado_modo_bajo": 0.9946164271706239,
+          "cambio_de_lo_heredado_TV": 2.119784653798612e-17,
+          "perdida_log": 0.018723328652836855
+        },
+        {
+          "espines": 11,
+          "brecha": 0.2605095103663634,
+          "brecha_heredados": 0.263054521302961,
+          "brecha_nuevos": 1.1759728631680564,
+          "acoplamiento": 0.3807970779778833,
+          "acoplamiento_efectivo": 0.038987516724331935,
+          "peso_heredado_modo_bajo": 0.9957857124037048,
+          "cambio_de_lo_heredado_TV": 6.73988351294983e-17,
+          "perdida_log": 0.014739713319920356
+        },
+        {
+          "espines": 12,
+          "brecha": 0.2574510314061045,
+          "brecha_heredados": 0.25946941410584384,
+          "brecha_nuevos": 1.1759728631680593,
+          "acoplamiento": 0.38079707797788354,
+          "acoplamiento_efectivo": 0.034640490612250344,
+          "peso_heredado_modo_bajo": 0.9966368999125403,
+          "cambio_de_lo_heredado_TV": 3.6325219701237484e-17,
+          "perdida_log": 0.011809835928616182
+        },
+        {
+          "espines": 13,
+          "brecha": 0.25498959610241284,
+          "brecha_heredados": 0.25661818088722677,
+          "brecha_nuevos": 1.1759728631680577,
+          "acoplamiento": 0.38079707797788354,
+          "acoplamiento_efectivo": 0.03105395101358537,
+          "peso_heredado_modo_bajo": 0.9972719824119027,
+          "cambio_de_lo_heredado_TV": 1.0091921110502158e-17,
+          "perdida_log": 0.009606787994916882
+        },
+        {
+          "espines": 14,
+          "brecha": 0.25297845161111804,
+          "brecha_heredados": 0.2543120705733193,
+          "brecha_nuevos": 1.1759728631680553,
+          "acoplamiento": 0.3807970779778834,
+          "acoplamiento_efectivo": 0.028051790860362864,
+          "peso_heredado_modo_bajo": 0.9977558388465311,
+          "cambio_de_lo_heredado_TV": 3.7269767316544435e-17,
+          "perdida_log": 0.00791843112505377
+        },
+        {
+          "espines": 15,
+          "brecha": 0.25131356758396783,
+          "brecha_heredados": 0.25241971631839527,
+          "brecha_nuevos": 1.1759728631680548,
+          "acoplamiento": 0.3807970779778835,
+          "acoplamiento_efectivo": 0.025507619900796648,
+          "peso_heredado_modo_bajo": 0.9981311741143091,
+          "cambio_de_lo_heredado_TV": 7.730899818964296e-17,
+          "perdida_log": 0.00660288092050068
+        },
+        {
+          "espines": 16,
+          "brecha": 0.24991945599008297,
+          "brecha_heredados": 0.25084728141476426,
+          "brecha_nuevos": 1.1759728631680588,
+          "acoplamiento": 0.38079707797788337,
+          "acoplamiento_efectivo": 0.023328466521013943,
+          "peso_heredado_modo_bajo": 0.9984269272247579,
+          "cambio_de_lo_heredado_TV": 1.3081576837395414e-17,
+          "perdida_log": 0.005562742769436039
+        }
+      ],
+      "z_ef": [
+        {
+          "de": 1,
+          "a": 2,
+          "z_ef": 0.8946361239720114
+        },
+        {
+          "de": 2,
+          "a": 3,
+          "z_ef": 0.6891896733326223
+        },
+        {
+          "de": 3,
+          "a": 4,
+          "z_ef": 0.5330418587253691
+        },
+        {
+          "de": 4,
+          "a": 5,
+          "z_ef": 0.4247852692271063
+        },
+        {
+          "de": 5,
+          "a": 6,
+          "z_ef": 0.3461903027398029
+        },
+        {
+          "de": 6,
+          "a": 7,
+          "z_ef": 0.2871995680103112
+        },
+        {
+          "de": 7,
+          "a": 8,
+          "z_ef": 0.24180516591454165
+        },
+        {
+          "de": 8,
+          "a": 9,
+          "z_ef": 0.20616527304610688
+        },
+        {
+          "de": 9,
+          "a": 10,
+          "z_ef": 0.1777072609785206
+        },
+        {
+          "de": 10,
+          "a": 11,
+          "z_ef": 0.154649937185949
+        },
+        {
+          "de": 11,
+          "a": 12,
+          "z_ef": 0.13572749147532415
+        },
+        {
+          "de": 12,
+          "a": 13,
+          "z_ef": 0.12002077733426138
+        },
+        {
+          "de": 13,
+          "a": 14,
+          "z_ef": 0.1068499230909814
+        },
+        {
+          "de": 14,
+          "a": 15,
+          "z_ef": 0.09570381371573264
+        },
+        {
+          "de": 15,
+          "a": 16,
+          "z_ef": 0.08619259740362539
+        }
+      ]
+    },
+    "1D_beta_1.5": {
+      "beta": 1.5,
+      "limite_exacto": 0.004945246313269536,
+      "filas": [
+        {
+          "espines": 1,
+          "brecha": 1.0
+        },
+        {
+          "espines": 2,
+          "brecha": 0.09485174635513367,
+          "brecha_heredados": 0.18070663892364852,
+          "brecha_nuevos": 1.8192933610763513,
+          "acoplamiento": 0.3847749336593624,
+          "acoplamiento_efectivo": 0.38477493365936233,
+          "peso_heredado_modo_bajo": 0.9525741268224334,
+          "cambio_de_lo_heredado_TV": 1.1102230246251565e-16,
+          "perdida_log": 2.3554401710137958
+        },
+        {
+          "espines": 3,
+          "brecha": 0.050962554700518276,
+          "brecha_heredados": 0.06699254194938505,
+          "brecha_nuevos": 1.4503360362902837,
+          "acoplamiento": 0.4975273768433654,
+          "acoplamiento_efectivo": 0.14100735301372436,
+          "peso_heredado_modo_bajo": 0.9872593613248699,
+          "cambio_de_lo_heredado_TV": 5.551115123125783e-17,
+          "perdida_log": 0.6212239664751371
+        },
+        {
+          "espines": 4,
+          "brecha": 0.03554125852328631,
+          "brecha_heredados": 0.04213356934355322,
+          "brecha_nuevos": 1.4503360362902833,
+          "acoplamiento": 0.4975273768433653,
+          "acoplamiento_efectivo": 0.08623733151146952,
+          "peso_heredado_modo_bajo": 0.9942030728477775,
+          "cambio_de_lo_heredado_TV": 5.551115123125783e-17,
+          "perdida_log": 0.36039690793372897
+        },
+        {
+          "espines": 5,
+          "brecha": 0.02768162739380339,
+          "brecha_heredados": 0.031255849777781904,
+          "brecha_nuevos": 1.450336036290283,
+          "acoplamiento": 0.4975273768433654,
+          "acoplamiento_efectivo": 0.06208122156990232,
+          "peso_heredado_modo_bajo": 0.9967035131776874,
+          "cambio_de_lo_heredado_TV": 6.59262683506967e-17,
+          "perdida_log": 0.2499253114095197
+        },
+        {
+          "espines": 6,
+          "brecha": 0.022921676773796383,
+          "brecha_heredados": 0.025159114388981354,
+          "brecha_nuevos": 1.4503360362902828,
+          "acoplamiento": 0.4975273768433654,
+          "acoplamiento_efectivo": 0.04847403602331995,
+          "peso_heredado_modo_bajo": 0.9978783217286544,
+          "cambio_de_lo_heredado_TV": 1.2625576650241062e-16,
+          "perdida_log": 0.18868587530930947
+        },
+        {
+          "espines": 7,
+          "brecha": 0.019732769621265273,
+          "brecha_heredados": 0.021262925142154533,
+          "brecha_nuevos": 1.4503360362902848,
+          "acoplamiento": 0.4975273768433654,
+          "acoplamiento_efectivo": 0.03974102186250079,
+          "peso_heredado_modo_bajo": 0.9985224109217549,
+          "cambio_de_lo_heredado_TV": 7.516657724207347e-17,
+          "perdida_log": 0.14980236051676143
+        },
+        {
+          "espines": 8,
+          "brecha": 0.017449405724258654,
+          "brecha_heredados": 0.01856055150039804,
+          "brecha_nuevos": 1.450336036290283,
+          "acoplamiento": 0.4975273768433655,
+          "acoplamiento_efectivo": 0.03365890073127884,
+          "peso_heredado_modo_bajo": 0.9989131976620986,
+          "cambio_de_lo_heredado_TV": 6.3535742850198056e-21,
+          "perdida_log": 0.12297509417177414
+        },
+        {
+          "espines": 9,
+          "brecha": 0.015735384239253206,
+          "brecha_heredados": 0.01657801814117041,
+          "brecha_nuevos": 1.4503360362902833,
+          "acoplamiento": 0.4975273768433656,
+          "acoplamiento_efectivo": 0.02917820776137971,
+          "peso_heredado_modo_bajo": 0.9991679526614134,
+          "cambio_de_lo_heredado_TV": 5.551142921564243e-17,
+          "perdida_log": 0.10339364253425742
+        },
+        {
+          "espines": 10,
+          "brecha": 0.014402551969411924,
+          "brecha_heredados": 0.015062872520852396,
+          "brecha_nuevos": 1.4503360362902837,
+          "acoplamiento": 0.4975273768433658,
+          "acoplamiento_efectivo": 0.02573896058953209,
+          "peso_heredado_modo_bajo": 0.999343174006474,
+          "cambio_de_lo_heredado_TV": 2.3161057151484775e-23,
+          "perdida_log": 0.08850653863947455
+        },
+        {
+          "espines": 11,
+          "brecha": 0.013337395282269163,
+          "brecha_heredados": 0.013868309757180073,
+          "brecha_nuevos": 1.4503360362902837,
+          "acoplamiento": 0.4975273768433664,
+          "acoplamiento_efectivo": 0.02301508384624902,
+          "peso_heredado_modo_bajo": 0.9994688068428281,
+          "cambio_de_lo_heredado_TV": 3.122669202485381e-17,
+          "perdida_log": 0.0768336457575869
+        },
+        {
+          "espines": 12,
+          "brecha": 0.012467369444046186,
+          "brecha_heredados": 0.01290314346718402,
+          "brecha_nuevos": 1.450336036290284,
+          "acoplamiento": 0.4975273768433664,
+          "acoplamiento_efectivo": 0.020803824245097323,
+          "peso_heredado_modo_bajo": 0.9995619238175744,
+          "cambio_de_lo_heredado_TV": 6.2038545941477076e-24,
+          "perdida_log": 0.06745697854021221
+        },
+        {
+          "espines": 13,
+          "brecha": 0.011743946458509827,
+          "brecha_heredados": 0.012107746303671826,
+          "brecha_nuevos": 1.4503360362902848,
+          "acoplamiento": 0.49752737684336545,
+          "acoplamiento_efectivo": 0.018972483291548936,
+          "peso_heredado_modo_bajo": 0.9996328364777034,
+          "cambio_de_lo_heredado_TV": 6.988875403683738e-20,
+          "perdida_log": 0.059776873869406125
+        },
+        {
+          "espines": 14,
+          "brecha": 0.011133436886502179,
+          "brecha_heredados": 0.01144148514453245,
+          "brecha_nuevos": 1.450336036290284,
+          "acoplamiento": 0.4975273768433654,
+          "acoplamiento_efectivo": 0.017430564077398868,
+          "peso_heredado_modo_bajo": 0.9996880711833507,
+          "cambio_de_lo_heredado_TV": 1.4907779871675686e-18,
+          "perdida_log": 0.053385000357053694
+        },
+        {
+          "espines": 15,
+          "brecha": 0.010611721792564937,
+          "brecha_heredados": 0.01087571652242019,
+          "brecha_nuevos": 1.4503360362902806,
+          "acoplamiento": 0.49752737684336534,
+          "acoplamiento_efectivo": 0.0161142282301814,
+          "peso_heredado_modo_bajo": 0.9997319218375007,
+          "cambio_de_lo_heredado_TV": 6.39679726064172e-17,
+          "perdida_log": 0.047993692827883204
+        },
+        {
+          "espines": 16,
+          "brecha": 0.01016108022492809,
+          "brecha_heredados": 0.010389668843396389,
+          "brecha_nuevos": 1.4503360362902842,
+          "acoplamiento": 0.4975273768433655,
+          "acoplamiento_efectivo": 0.014977151104479561,
+          "peso_heredado_modo_bajo": 0.9997673072944501,
+          "cambio_de_lo_heredado_TV": 2.4312625115206944e-17,
+          "perdida_log": 0.04339446177642488
+        }
+      ],
+      "z_ef": [
+        {
+          "de": 1,
+          "a": 2,
+          "z_ef": 3.3981818538322552
+        },
+        {
+          "de": 2,
+          "a": 3,
+          "z_ef": 1.5321268194288509
+        },
+        {
+          "de": 3,
+          "a": 4,
+          "z_ef": 1.2527610944339815
+        },
+        {
+          "de": 4,
+          "a": 5,
+          "z_ef": 1.1200203184791946
+        },
+        {
+          "de": 5,
+          "a": 6,
+          "z_ef": 1.034907109325242
+        },
+        {
+          "de": 6,
+          "a": 7,
+          "z_ef": 0.9717917604037188
+        },
+        {
+          "de": 7,
+          "a": 8,
+          "z_ef": 0.9209451931469649
+        },
+        {
+          "de": 8,
+          "a": 9,
+          "z_ef": 0.8778313613506685
+        },
+        {
+          "de": 9,
+          "a": 10,
+          "z_ef": 0.8400351695972375
+        },
+        {
+          "de": 10,
+          "a": 11,
+          "z_ef": 0.8061431204445213
+        },
+        {
+          "de": 11,
+          "a": 12,
+          "z_ef": 0.7752661878716384
+        },
+        {
+          "de": 12,
+          "a": 13,
+          "z_ef": 0.7468122407004667
+        },
+        {
+          "de": 13,
+          "a": 14,
+          "z_ef": 0.7203678471503366
+        },
+        {
+          "de": 14,
+          "a": 15,
+          "z_ef": 0.6956326326693073
+        },
+        {
+          "de": 15,
+          "a": 16,
+          "z_ef": 0.6723807892022297
+        }
+      ]
+    }
+  },
+  "ciclo": [
+    {
+      "puntos": 4,
+      "z_ef": 1.0000000000000002
+    },
+    {
+      "puntos": 8,
+      "z_ef": 1.7715533031636117
+    },
+    {
+      "puntos": 16,
+      "z_ef": 1.9440184647577536
+    },
+    {
+      "puntos": 32,
+      "z_ef": 1.9860724987600458
+    },
+    {
+      "puntos": 64,
+      "z_ef": 1.9965223263554923
+    },
+    {
+      "puntos": 128,
+      "z_ef": 1.9991308435598045
+    },
+    {
+      "puntos": 256,
+      "z_ef": 1.9997827272532702
+    },
+    {
+      "puntos": 512,
+      "z_ef": 1.9999456828358708
+    },
+    {
+      "puntos": 1024,
+      "z_ef": 1.999986420772875
+    },
+    {
+      "puntos": 2048,
+      "z_ef": 1.9999966051972131
+    }
+  ]
+}

@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Complemento Más allá de Yang–Mills — 2026-10-27
+
+- Incorporación del artículo en español e inglés, en Markdown y PDF, y de siete paquetes PR-01 a PR-07.
+- Revisión independiente de R-02, resultados de referencia y manifiesto SHA-256: 47 archivos verificados.
+- El complemento se presenta como borrador para revisión y deja explícita la brecha de masa como problema abierto.
+
 ## Edición ordenada — 2026-10-24
 
 - Incorporación navegable del paquete fechado: 1.047 archivos cotejados con su manifiesto SHA-256.

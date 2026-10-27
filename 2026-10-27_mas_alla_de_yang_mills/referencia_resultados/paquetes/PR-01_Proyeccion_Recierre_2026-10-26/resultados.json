@@ -1,0 +1,149 @@
+{
+  "pruebas": "16 niveles; fracciones exactas; compatibilidad de soportes y regla de recierre",
+  "filas": [
+    {
+      "n": 1,
+      "N": 2,
+      "delta2_foco_atomico": "1/2",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/2",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "delta2_foco_atomico": "3/4",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/4",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 3,
+      "N": 8,
+      "delta2_foco_atomico": "7/8",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/8",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 4,
+      "N": 16,
+      "delta2_foco_atomico": "15/16",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/16",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 5,
+      "N": 32,
+      "delta2_foco_atomico": "31/32",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/32",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 6,
+      "N": 64,
+      "delta2_foco_atomico": "63/64",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/64",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 7,
+      "N": 128,
+      "delta2_foco_atomico": "127/128",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/128",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 8,
+      "N": 256,
+      "delta2_foco_atomico": "255/256",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/256",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 9,
+      "N": 512,
+      "delta2_foco_atomico": "511/512",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/512",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 10,
+      "N": 1024,
+      "delta2_foco_atomico": "1023/1024",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/1024",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 11,
+      "N": 2048,
+      "delta2_foco_atomico": "2047/2048",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/2048",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 12,
+      "N": 4096,
+      "delta2_foco_atomico": "4095/4096",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/4096",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 13,
+      "N": 8192,
+      "delta2_foco_atomico": "8191/8192",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/8192",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 14,
+      "N": 16384,
+      "delta2_foco_atomico": "16383/16384",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/16384",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 15,
+      "N": 32768,
+      "delta2_foco_atomico": "32767/32768",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/32768",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    },
+    {
+      "n": 16,
+      "N": 65536,
+      "delta2_foco_atomico": "65535/65536",
+      "delta2_mitad": "1/2",
+      "delta2_todo_menos_una": "1/65536",
+      "compatible_mitad": true,
+      "compatible_todo_menos_una": false
+    }
+  ]
+}
