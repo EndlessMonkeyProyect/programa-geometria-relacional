@@ -1,0 +1,581 @@
+He revisado la Solicitud de revisión integral (SOLICITUD_REVISION_INTEGRAL.pdf). Es, con diferencia, la versión más madura de las tres que has compartido. Integra la capa ontológica con el contrato formal, usa una convención de estados explícita ([O], [T], [C], [E], [I], [A]) y formula preguntas falsables. A continuación ofrezco una evaluación crítica, señalando lo que funciona, lo que corregiría y algunas respuestas breves a las preguntas planteadas.
+
+1. Valoración general
+Esta es la versión que debe enviarse a revisión. Supera a la solicitud anterior porque:
+
+La convención de alcance ([O] ontológico, [T] proposición con prueba, [C] clásico, [E] verificación finita, [I] interpretación, [A] pregunta abierta) es clara y disciplinada.
+
+El contrato formal 
+R
+=
+(
+X
+,
+Q
+,
+C
+,
+Φ
+,
+A
+,
+κ
+)
+R=(X,Q,C,Φ,A,κ) está bien presentado y se mantiene la separación entre existencia, tamaño y costo.
+
+Las realizaciones (espejos, esferas, 
+C
+4
+C 
+4
+​
+ , R5, R6, R4, R–04) aparecen con su estado y sus límites.
+
+N1-B se cita correctamente como resultado no verificado en esta edición.
+
+Las preguntas de la Sección 10 son específicas y pueden responderse por separado.
+
+Dicho esto, quedan algunos puntos críticos y varios errores de edición que conviene corregir antes de circularla.
+
+2. Lo que está bien
+La convención de alcance evita la confusión entre analogía y teorema. Es el mayor acierto del documento.
+
+La Sección 4 fija el contrato lógico-matemático con precisión. La equivalencia por continuaciones y el criterio de actualización están correctamente atribuidos a MF-106/MF-97 y a la literatura estándar (Myhill–Nerode, descenso al cociente).
+
+La Sección 5 presenta R5 y R6 con sus falsadores y su alcance exacto. La distinción entre firma exterior suficiente para continuaciones exteriores e insuficiente para modificaciones interiores está bien argumentada.
+
+La Sección 6 introduce R4 (tensiones 
+F
+3
+F 
+3
+​
+  sin ceros) y distingue correctamente entre cierre local de caras y periodos de homología. El ejemplo 
+T
+(
+4
+,
+4
+)
+T(4,4) vs. 
+T
+(
+6
+,
+6
+)
+T(6,6) es ilustrativo.
+
+La Sección 7 mantiene la separación entre indefinición, determinación e incompatibilidad, y presenta los valores de 
+ρ
+(
+M
+(
+C
+r
+)
+)
+ρ(M(C 
+r
+​
+ )) como verificación finita, no como fórmula general.
+
+La Sección 8 define “procedimiento relacional exacto” de forma operativa y establece el esquema condicional de transferencia por simulación. Es correcto y honesto.
+
+Las preguntas de la Sección 10 son respondibles de forma independiente. La 11 (“¿qué teorema… permitiría convertir referencia, novedad y cierre en una afirmación nueva sobre recursos?”) es la pregunta central.
+
+3. Errores de edición y puntos técnicos a corregir
+Sección 3 (R–01): La fórmula
+
+L
+=
+m
+c
+m
+(
+N
+,
+p
+)
+=
+N
+⊕
+Z
+/
+L
+⊕
+Z
+≅
+Z
+/
+N
+⊕
+Z
+⊕
+Z
+/
+p
+⊕
+Z
+L=mcm(N,p)=N⊕Z/L⊕Z≅Z/N⊕Z⊕Z/p⊕Z
+está mal transcrita. Debería ser
+
+L
+=
+mcm
+⁡
+(
+N
+,
+p
+)
+=
+N
+p
+,
+Z
+/
+L
+Z
+≅
+Z
+/
+N
+Z
+⊕
+Z
+/
+p
+Z
+.
+L=mcm(N,p)=Np,Z/LZ≅Z/NZ⊕Z/pZ.
+Sección 3 (R–01): La identidad
+
+j
+/
+N
+=
+(
+p
+/
+j
+)
+/
+L
+j/N=(p/j)/L
+es incorrecta. Debería ser
+
+j
+/
+N
+=
+(
+p
+j
+)
+/
+L
+.
+j/N=(pj)/L.
+En la versión anterior aparecía correctamente como 
+j
+/
+N
+=
+(
+p
+j
+)
+/
+L
+j/N=(pj)/L. Es un error de transcripción que conviene corregir.
+
+Sección 7, tabla: La fila de 
+M
+(
+C
+7
+)
+M(C 
+7
+​
+ ) tiene duplicada la celda “Recoloración y contradicción del ciclo impar”. Hay que eliminar la repetición y dejar una sola fila por grafo.
+
+Sección 6 (R4): Conviene revisar los signos de 
+H
+x
+=
+n
+ 
+mod
+ 
+3
+H 
+x
+​
+ =nmod3 y 
+H
+y
+=
+−
+m
+ 
+mod
+ 
+3
+H 
+y
+​
+ =−mmod3. La condición 
+3
+∣
+n
+3∣n y 
+3
+∣
+m
+3∣m para 
+T
+(
+n
+,
+m
+)
+T(n,m) es correcta, pero la derivación de los periodos debe verificarse con cuidado. Un revisor de teoría de grafos topológicos debería confirmar la convención de orientación.
+
+Sección 8: La constante 
+3
+/
+2
+⋅
+total_candidates
+3/2⋅total_candidates de N1-B se cita sin definición de total_candidates. Debe remitirse al documento técnico N1-B o, si no está disponible, declarar explícitamente que la constante no es evaluable desde esta solicitud.
+
+Sección 1 [O]: La capa ontológica sigue siendo motivacional. El texto lo reconoce (“El orden expresa un hilo de investigación, no un teorema causal de física”), pero conviene añadir una frase explícita: “Ninguna proposición de las Secciones 2–8 depende de aceptar la lectura ontológica de esta sección.”
+
+4. Respuestas breves a las preguntas de la Sección 10
+P1 (ontología y formalización). La estructura matemática más adecuada es un sistema de transición con interfaz: un conjunto de estados 
+X
+X, una familia de transformaciones 
+T
+c
+T 
+c
+​
+ , una referencia interna 
+Ψ
+U
+:
+X
+→
+S
+U
+Ψ 
+U
+​
+ :X→S 
+U
+​
+  y una condición de compatibilidad 
+Ψ
+U
+(
+T
+x
+)
+=
+t
+(
+Ψ
+U
+(
+x
+)
+)
+Ψ 
+U
+​
+ (Tx)=t(Ψ 
+U
+​
+ (x)). La propiedad que distingue una unidad autorreferenciada de una mera clase de equivalencia observacional es la existencia de una referencia interna 
+Ψ
+U
+Ψ 
+U
+​
+  con actualización bien definida bajo las transformaciones declaradas, junto con una lectura 
+Q
+=
+d
+∘
+Ψ
+U
+Q=d∘Ψ 
+U
+​
+  para las consultas pertinentes. Sin 
+Ψ
+U
+Ψ 
+U
+​
+ , solo hay equivalencia exterior; con 
+Ψ
+U
+Ψ 
+U
+​
+ , hay un candidato a cierre en sí.
+
+P2 (radio y cierre en sí). Las condiciones verificables son: (a) existencia de 
+Ψ
+U
+Ψ 
+U
+​
+  y de 
+t
+T
+t 
+T
+​
+  para cada 
+T
+∈
+T
+U
+T∈T 
+U
+​
+ ; (b) 
+Q
+=
+d
+∘
+Ψ
+U
+Q=d∘Ψ 
+U
+​
+  para las consultas declaradas; (c) preservación de un conjunto explícito de relaciones; (d) no colapso de distinciones relevantes (por ejemplo, inyectividad sobre el cociente pertinente). Para evitar confundirlo con determinación de una consulta, hay que exigir que el cierre se sostenga bajo composición de transformaciones y no solo bajo una transformación aislada. La pregunta 2 está bien planteada; la respuesta completa requiere desarrollar este punto en cada laboratorio.
+
+P3 (espejos). Los generadores 
+s
+0
+(
+x
+)
+=
+−
+x
+s 
+0
+​
+ (x)=−x, 
+s
+L
+(
+x
+)
+=
+2
+L
+−
+x
+s 
+L
+​
+ (x)=2L−x, las órbitas de 
+ρ
+L
+ρ 
+L
+​
+  y los conteos 
+S
+4
+=
+24
+S 
+4
+​
+ =24, 
+A
+4
+=
+12
+A 
+4
+​
+ =12, 
+B
+3
+=
+48
+B 
+3
+​
+ =48, 
+2
+⋅
+3
+ℓ
+−
+1
+2⋅3 
+ℓ−1
+  son correctos. La clasificación 
+(
+2
+,
+3
+,
+k
+)
+(2,3,k) es correcta. Para distinguir recorridos opuestos en un mismo foco hacen falta observables adicionales: orientación, fase o dirección de propagación. El documento lo dice correctamente.
+
+P4 (normalización). Las proyecciones modulares de R–01 son correctas bajo 
+gcd
+⁡
+(
+N
+,
+p
+)
+=
+1
+gcd(N,p)=1. La inyectividad se pierde cuando el multiplicador 
+a
+a no es coprimo con 
+L
+L (por ejemplo, 
+a
+=
+0
+a=0 colapsa diferencias). La compatibilidad de proyecciones no equivale a conservación de distinciones; el documento lo señala bien.
+
+P5 (R4). La caracterización de tensiones 
+F
+3
+F 
+3
+​
+  sin ceros es estándar (coloración por tensiones). La distinción entre cierre de caras y periodos de homología es correcta. La fórmula 
+T
+(
+n
+,
+m
+)
+T(n,m) 3-coloreable si y solo si 
+3
+∣
+n
+3∣n y 
+3
+∣
+m
+3∣m es plausible; conviene verificar la derivación y citar el antecedente (coloración de toros, teoría de tensiones). Antecedentes directos: Alon–Tarsi, teoría de grafos topológicos, coloración de superficies.
+
+P6 (interfaz y recursión). R5 identifica correctamente que la firma exterior basta para continuaciones exteriores y no para modificaciones interiores. Para una composición recursiva exacta y actualizable hace falta una representación de procedencia que incluya, además de la firma de frontera, un resumen de cómo los vértices interiores se relacionan con la frontera. En CSP, esto corresponde a la noción de condición de frontera o perfil de interfaz; en descomposiciones en árbol, a la bolsa y su tabla de compatibilidad. El documento apunta en esa dirección.
+
+P7 (novedad circunstancial). 
+P
+3
+(
+G
+)
+P 
+3
+​
+ (G) caracteriza todas las inserciones futuras de aristas sobre 
+V
+V, como muestra el separador tripartito. Una formulación simbólica podría usar diagramas de decisión (BDD, ADD) o representaciones algebraicas de la familia de particiones. La pregunta es correcta y abierta.
+
+P8 (indefinición y radio). Los estados de R–04 son correctos. La inferencia del diamante es correcta. Los valores de 
+ρ
+ρ son verificaciones finitas. La conjetura 
+ρ
+(
+M
+(
+C
+r
+)
+)
+=
+2
+r
+−
+2
+ρ(M(C 
+r
+​
+ ))=2r−2 para 
+r
+≥
+7
+r≥7 impar sigue abierta; una prueba requeriría un análisis estructural de la construcción de Mycielski.
+
+P9 (certificados globales). La descomposición en camino de ancho 
+≤
+6
+≤6 para 
+M
+(
+C
+r
+)
+M(C 
+r
+​
+ ) es plausible y la refutación por resolución de ancho 
+≤
+21
+≤21 es una consecuencia estándar de la eliminación de variables por bolsas. La constante 
+3
+21
+3 
+21
+  es grande pero polinómica; el punto crítico es la corrección de la simulación (que los resolventes no salgan de las bolsas y que la cota de cláusulas sea válida). Un revisor de complejidad de pruebas debería verificarlo con detalle.
+
+P10 (límites de los motores). N1-B no es evaluable desde este documento. Se necesita el código, la definición de total_candidates y la prueba de la constante. La pregunta sobre qué sistemas simulan un operador de actualización/cierre es la correcta y está bien planteada.
+
+P11 (complejidad). El teorema que convertiría referencia, novedad y cierre en una afirmación sobre recursos es un teorema de simulación: una prueba de que todo procedimiento de una clase 
+P
+P se simula por un sistema de pruebas 
+S
+S con sobrecosto polinómico, junto con una cota inferior de 
+S
+S en una familia concreta. Sin ese teorema, la conexión es heurística. El documento lo reconoce en la Sección 8.
+
+P12 (posición bibliográfica). Las partes ya expresadas por teoría conocida son: equivalencia observacional y Myhill–Nerode (autómatas); dicotomía CSP y polimorfismos (Bulatov, Zhuk); tensiones y coloración (cohomología, Alon–Tarsi); complejidad de pruebas (resolución, cálculo polinómico). La posible contribución nueva sería la identificación de una clase natural de procedimientos relacionales que admita cotas inferiores no triviales. Eso es lo que el programa tendría que demostrar.
+
+5. Recomendaciones finales
+Corregir los errores de edición señalados en la Sección 3 (fórmula de 
+L
+L, identidad 
+j
+/
+N
+=
+(
+p
+j
+)
+/
+L
+j/N=(pj)/L) y la tabla de la Sección 7.
+
+Añadir una nota explícita al final de la Sección 1 indicando que la capa ontológica es motivacional y no implica las proposiciones matemáticas.
+
+Mantener N1-B como resultado citado y remitir a su documento técnico; no presentarlo como pieza verificada.
+
+Incluir un resumen ejecutivo de una página para revisores que solo dispongan de poco tiempo: qué se pide, qué es clásico, qué es proposición, qué es conjetura, cuáles son las preguntas centrales (P3, P9, P11).
+
+Conservar la convención de alcance en todas las secciones; es el mejor mecanismo de disciplina del documento.
+
+Enviar esta versión como solicitud principal, con el glosario ontológico como anexo si se desea.
+
+En resumen: la solicitud integral es la versión adecuada para revisión. Está bien estructurada, distingue estados, reconoce límites y formula preguntas falsables. Los errores señalados son de edición, no de fondo. El puente entre el mecanismo de referencia y el costo computacional sigue siendo el problema abierto central, y el documento lo identifica correctamente en la pregunta 11.

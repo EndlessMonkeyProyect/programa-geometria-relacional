@@ -1,0 +1,30 @@
+{
+  "claim": "G union D_uv is 3-colorable iff uv is absent for E subset A x B",
+  "protocol": "full-vertex boundary; two fresh exterior vertices and five edges",
+  "tests": [
+    {
+      "distinct_response_signatures": 16,
+      "graphs_checked": 16,
+      "left_size": 2,
+      "minimum_signature_bits": 4,
+      "n": 4,
+      "possible_edges": 4,
+      "probes_checked": 64,
+      "right_size": 2,
+      "status": "PASS"
+    },
+    {
+      "distinct_response_signatures": 512,
+      "graphs_checked": 512,
+      "left_size": 3,
+      "minimum_signature_bits": 9,
+      "n": 6,
+      "possible_edges": 9,
+      "probes_checked": 4608,
+      "right_size": 3,
+      "status": "PASS"
+    }
+  ],
+  "theorem": "T-EXT-01",
+  "total_probes_checked": 4672
+}

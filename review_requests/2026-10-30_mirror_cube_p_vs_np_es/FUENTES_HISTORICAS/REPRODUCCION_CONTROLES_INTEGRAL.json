@@ -1,0 +1,26 @@
+[
+  {
+    "name": "verificar_r5.py",
+    "exit_code": 0,
+    "seconds": 0.82,
+    "stdout_last": "R5: PASS (32+32+128 ensayos; dos interiores con mismo exterior y recierre diferente)\n",
+    "stderr_last": "",
+    "salida_json_idéntica_a_archivada": true
+  },
+  {
+    "name": "verificar_r6.py",
+    "exit_code": 0,
+    "seconds": 1.23,
+    "stdout_last": "R6 PASS\n3 grafos 8 composiciones 64 updates 24 contextos 8\n4 grafos 64 composiciones 4096 updates 384 contextos 384\n5 grafos 1024 composiciones 1048576 updates 10240 contextos 25600\nSALIDA /mnt/data/Solicitud_Revision_Cubo_PNP_Integral_2026-10-30/_checks/PNP_CME_R6_Determinante_Circunstancial_2026-10-29/resultados_r6.json\n",
+    "stderr_last": "",
+    "salida_json_idéntica_a_archivada": true
+  },
+  {
+    "name": "verificar_fase_holonomia.py",
+    "exit_code": 0,
+    "seconds": 0.71,
+    "stdout_last": "V= 20, caras= 40, dual bipartito, periodos=[2, 2], 3COL=0\nT(6,4): V= 24, caras= 48, dual bipartito, periodos=[0, 2], 3COL=0\nT(4,6): V= 24, caras= 48, dual bipartito, periodos=[1, 0], 3COL=0\nT(5,5): V= 25, caras= 50, dual bipartito, periodos=[2, 1], 3COL=0\nT(6,6): V= 36, caras= 72, dual bipartito, periodos=[0, 0], 3COL=6\nT(6,9): V= 54, caras=108, dual bipartito, periodos=[0, 0], 3COL=6\nT(9,6): V= 54, caras=108, dual bipartito, periodos=[0, 0], 3COL=6\nT(9,9): V= 81, caras=162, dual bipartito, periodos=[0, 0], 3COL=6\nT(10,10): V=100, caras=200, dual bipartito, periodos=[1, 2], 3COL=0\nPASS: todos los cierres locales y los controles globales;  /mnt/data/Solicitud_Revision_Cubo_PNP_Integral_2026-10-30/_checks/PNP_CME_R4_Cierre_Fase_Holonomia_2026-10-29/laboratorio/resultados_fase_holonomia.json\n",
+    "stderr_last": "",
+    "salida_json_idéntica_a_archivada": true
+  }
+]

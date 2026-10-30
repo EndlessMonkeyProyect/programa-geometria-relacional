@@ -1,5 +1,11 @@
 # History of this edition
 
+## Mirror Cube and P versus NP review request — 2026-10-30
+
+- Added browsable Spanish and English packages with the full request, summaries, and technical notes.
+- Reproduced the 4,672 finite T-EXT-01 queries; the results agree with the archived JSON files.
+- Verified SHA-256 manifests for 23 Spanish and 13 English package files. Independent mathematical review is requested; no P versus NP solution is claimed.
+
 ## Beyond Yang–Mills complement — 2026-10-27
 
 - Added the Spanish and English article in Markdown and PDF, plus seven PR-01 to PR-07 packages.

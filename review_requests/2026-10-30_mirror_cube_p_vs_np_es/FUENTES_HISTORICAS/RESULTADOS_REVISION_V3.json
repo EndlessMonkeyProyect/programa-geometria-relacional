@@ -1,0 +1,44 @@
+{
+  "R5": {
+    "firmas_antes": [
+      6,
+      6
+    ],
+    "firmas_despues": [
+      0,
+      6
+    ]
+  },
+  "R6": {
+    "dos_aristas_disjuntas": 14,
+    "pares_de_grafos_4_vertices_comprobados": 4096,
+    "pares_separados_por_contexto": 4032,
+    "particiones_5_vertices": 25,
+    "un_arista": 19
+  },
+  "alcance": "Controles finitos y estructurales; no recomputa rho(M(C_r)) ni N1-B",
+  "diamantes_ruedas": {
+    "r_max": 101,
+    "r_min": 5,
+    "ruedas_comprobadas": 49
+  },
+  "espejos": {
+    "L1": [
+      "1/4",
+      "1/4"
+    ],
+    "L2": [
+      "1/4",
+      "7/4"
+    ]
+  },
+  "mycielski": {
+    "anchura_max": 6,
+    "aristas_para_M_C5": 20,
+    "bolsas_para_M_C5": 3,
+    "configuraciones": 49,
+    "r_max": 101,
+    "r_min": 5
+  },
+  "version": "2026-10-30-v3-controles-heredados"
+}

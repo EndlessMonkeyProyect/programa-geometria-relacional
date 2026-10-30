@@ -2,7 +2,11 @@
 
 [Read this repository in English](README.en.md).
 
-## Complemento actual: 27 de octubre de 2026
+## Solicitud de revisión actual: 30 de octubre de 2026
+
+La [solicitud de revisión independiente sobre el cubo de espejos y P frente a NP](review_requests/2026-10-30_mirror_cube_p_vs_np_es/LEER_PRIMERO.md) reúne el documento integral, el resumen ejecutivo, la nota técnica T-EXT-01 y sus antecedentes. La [edición inglesa](review_requests/2026-10-30_mirror_cube_p_vs_np/README.md) ofrece el texto completo y un resumen en inglés. T-EXT-01 establece una cota informacional cuadrática para una familia delimitada de consultas de 3-coloración; no demuestra P = NP ni P ≠ NP.
+
+## Complemento anterior: 27 de octubre de 2026
 
 El [complemento «Más allá de Yang–Mills»](2026-10-27_mas_alla_de_yang_mills/LEER_PRIMERO.md) añade un [artículo en español](2026-10-27_mas_alla_de_yang_mills/articulo/Mas_alla_de_Yang_Mills_2026-10-27.md), su [traducción inglesa](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.md) y siete paquetes de comprobación PR-01 a PR-07, además de una revisión independiente de R-02. El artículo es un borrador para revisión; no afirma resolver la brecha de masa de Yang–Mills.
 

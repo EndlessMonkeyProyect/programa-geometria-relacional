@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Solicitud de revisión del cubo de espejos y P frente a NP — 2026-10-30
+
+- Incorporación navegable de los paquetes español e inglés, con el documento integral, resúmenes y notas técnicas.
+- Reproducción de las 4.672 consultas finitas de T-EXT-01; sus resultados coinciden con los JSON archivados.
+- Manifiestos SHA-256 verificados: 23 archivos del paquete español y 13 del inglés. Se solicita revisión matemática independiente; no se afirma una solución de P versus NP.
+
 ## Complemento Más allá de Yang–Mills — 2026-10-27
 
 - Incorporación del artículo en español e inglés, en Markdown y PDF, y de siete paquetes PR-01 a PR-07.

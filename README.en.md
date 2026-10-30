@@ -2,7 +2,11 @@
 
 [Leer este repositorio en español](README.md).
 
-## Current complement: October 27, 2026
+## Current review request: October 30, 2026
+
+The [English review request](review_requests/2026-10-30_mirror_cube_p_vs_np/README.md) contains the full text, executive summary, T-EXT-01 materials, and a finite verifier. The [Spanish source package](review_requests/2026-10-30_mirror_cube_p_vs_np_es/LEER_PRIMERO.md) preserves the integral request and historical sources. T-EXT-01 gives a quadratic information bound for a specified family of 3-coloring queries; it does not prove P = NP or P ≠ NP.
+
+## Previous complement: October 27, 2026
 
 The [Beyond Yang–Mills article](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.md) ([PDF](2026-10-27_mas_alla_de_yang_mills/articulo/Beyond_Yang_Mills_2026-10-27_EN.pdf)) is an English translation of the [Spanish reference text](2026-10-27_mas_alla_de_yang_mills/articulo/Mas_alla_de_Yang_Mills_2026-10-27.md). The [package guide](2026-10-27_mas_alla_de_yang_mills/LEER_PRIMERO.md) introduces seven reproducible packages, PR-01 to PR-07, and an independent R-02 check. The article is a draft for review and does not claim to solve the Yang–Mills mass gap.
 
