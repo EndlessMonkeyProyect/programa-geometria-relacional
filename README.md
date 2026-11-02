@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Hilo de gravedad G–01: 1 de noviembre de 2026
+
+La [entrega G–01 · El mecanismo de la gravedad](2026-11-01_G01_mecanismo_de_la_gravedad/LEER_PRIMERO.md) reúne el documento v1.3 en [español](2026-11-01_G01_mecanismo_de_la_gravedad/articulo/G01_Mecanismo_de_la_Gravedad_v1.3_2026-11-01.md) y en [inglés](2026-11-01_G01_mecanismo_de_la_gravedad/articulo/G01_Mechanism_of_Gravity_v1.3_2026-11-01_EN.md), un verificador reproducible sin dependencias, la revisión que llevó de la v1.2 a la v1.3 y las versiones anteriores. Su resultado nuevo es que las soluciones del contrato O58, a²+b²+1=N², son los puntos enteros del hiperboloide de Minkowski en 2+1, con todas sus soluciones en un único árbol de transformaciones de Lorentz enteras. El estado ROSI es OPEN: no deriva la gravedad ni la ley de Newton.
+
 ## Solicitud de revisión actual: 30 de octubre de 2026
 
 La [solicitud de revisión independiente sobre el cubo de espejos y P frente a NP](review_requests/2026-10-30_mirror_cube_p_vs_np_es/LEER_PRIMERO.md) reúne el documento integral, el resumen ejecutivo, la nota técnica T-EXT-01 y sus antecedentes. La [edición inglesa](review_requests/2026-10-30_mirror_cube_p_vs_np/README.md) ofrece el texto completo y un resumen en inglés. T-EXT-01 establece una cota informacional cuadrática para una familia delimitada de consultas de 3-coloración; no demuestra P = NP ni P ≠ NP.

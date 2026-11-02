@@ -1,0 +1,2 @@
+# G–01 v1.3: el verificador usa sólo la biblioteca estándar de Python 3.9 o posterior.
+# No hay dependencias que instalar.

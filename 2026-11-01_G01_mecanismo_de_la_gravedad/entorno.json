@@ -1,0 +1,49 @@
+{
+  "generado_con": {
+    "python": "3.13.18",
+    "plataforma": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "dependencias": "ninguna (biblioteca estándar)",
+    "fecha": "2026-11-01"
+  },
+  "tolerancias_de_comparacion": {
+    "rtol": 1e-09,
+    "atol": 1e-12
+  },
+  "semillas_y_parametros": {
+    "reflejos": {
+      "semilla": 20261101,
+      "casos": 200
+    },
+    "tetraedro": {
+      "semilla": 7,
+      "casos": 300
+    },
+    "hiperboloide": {
+      "Nmax": 3000
+    },
+    "resolucion_finita": {
+      "semilla": 31,
+      "muestras": 404,
+      "resoluciones": [
+        2,
+        3,
+        7,
+        10,
+        50,
+        100,
+        333,
+        1000
+      ]
+    },
+    "orbitas": {
+      "dt": 0.001,
+      "pasos": 200000,
+      "perturbacion": 0.02
+    },
+    "MF43": {
+      "n": 8,
+      "eta": 0.5,
+      "pasos": 300
+    }
+  }
+}

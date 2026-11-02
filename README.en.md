@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Gravity thread G–01: November 1, 2026
+
+The [G–01 · The Mechanism of Gravity package](2026-11-01_G01_mecanismo_de_la_gravedad/READ_FIRST.en.md) contains document v1.3 in [English](2026-11-01_G01_mecanismo_de_la_gravedad/articulo/G01_Mechanism_of_Gravity_v1.3_2026-11-01_EN.md) and in the [Spanish reference text](2026-11-01_G01_mecanismo_de_la_gravedad/articulo/G01_Mecanismo_de_la_Gravedad_v1.3_2026-11-01.md), a dependency-free reproducible verifier, the review that led from v1.2 to v1.3, and the earlier versions. Its new result is that the solutions of the O58 contract, a²+b²+1=N², are the integer points of the Minkowski hyperboloid in 2+1, with all its solutions in a single tree of integer Lorentz transformations. Its ROSI status is OPEN: it does not derive gravity or Newton’s law.
+
 ## Current review request: October 30, 2026
 
 The [English review request](review_requests/2026-10-30_mirror_cube_p_vs_np/README.md) contains the full text, executive summary, T-EXT-01 materials, and a finite verifier. The [Spanish source package](review_requests/2026-10-30_mirror_cube_p_vs_np_es/LEER_PRIMERO.md) preserves the integral request and historical sources. T-EXT-01 gives a quadratic information bound for a specified family of 3-coloring queries; it does not prove P = NP or P ≠ NP.

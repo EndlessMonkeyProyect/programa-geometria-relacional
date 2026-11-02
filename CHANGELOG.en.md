@@ -1,5 +1,11 @@
 # History of this edition
 
+## Gravity thread G–01 — 2026-11-01
+
+- Added document G–01 v1.3 in Spanish and English, as Word, PDF and Markdown, with its figures.
+- Added a dependency-free verifier for the exact results and computable controls; the 16 O58 branches from (2,2,3) match the O58 file. SHA-256 manifest for the package.
+- Added the v1.2 → v1.3 review spreadsheet and versions 1.0 to 1.2 in `historial/`. Status is OPEN; no derivation of gravity is claimed.
+
 ## Mirror Cube and P versus NP review request — 2026-10-30
 
 - Added browsable Spanish and English packages with the full request, summaries, and technical notes.

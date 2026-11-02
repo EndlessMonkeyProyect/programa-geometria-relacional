@@ -1,0 +1,264 @@
+{
+  "A_espejos_2nL_mas_menos_p": {
+    "imagenes_generadas": 17,
+    "todas_de_la_forma_2nL_pm_p": true
+  },
+  "B_K4_xor": {
+    "patrones_compatibles": 8,
+    "patrones_totales": 64
+  },
+  "C_coloracion": {
+    "K4": 4,
+    "K4_menos_e": 3,
+    "en_el_diamante_3_y_4_comparten_color": true
+  },
+  "D_reflejos": {
+    "derivada_aV": -0.11999999999234845,
+    "derivada_aV2": -0.1439999999797159,
+    "error_max_R_cos_mitad_delta": 1.7763568394002505e-15,
+    "identidad_4FD_exacta_en_200_casos": true
+  },
+  "E_tetraedro": {
+    "Emin_igual_S2_sobre_4": true,
+    "Fix_A4_es_cero": true,
+    "casos_aleatorios": 300,
+    "isotropia_exige_pesos_iguales": true,
+    "norma_4_c2": true,
+    "norma_proyecciones_4_3_c2": true,
+    "orden_A4": 12
+  },
+  "F_O45_regla_de_la_cadena": {
+    "error_max": 3.48609030531577e-10
+  },
+  "G_MF43_dispersion": {
+    "error_max": 7.672334989550222e-14,
+    "eta": 0.5
+  },
+  "H_potenciales_y_orbitas": {
+    "circular_estable_por_p": {
+      "0.5": true,
+      "1.0": true,
+      "1.5": true,
+      "1.9": true,
+      "2.5": false
+    },
+    "error_max_aceleracion": 2.3223367673352868e-11,
+    "p1_orbita_perturbada_acotada": true,
+    "p1_rmax": 1.084202254489027,
+    "p1_rmin": 1.0,
+    "p2_orbita_perturbada_escapa_o_cae": true
+  },
+  "I_sintonia_B10": {
+    "K_prima": -0.25,
+    "atractiva": true,
+    "fuerza_con_1_menos_cos": -0.0,
+    "fuerza_con_menos_cos": -0.24999999997943334
+  },
+  "J_B12_orden": {
+    "deriva_relativa_energia_segundo_orden": 2.5568436257117355e-13,
+    "primer_orden_W_monotona_decreciente": true
+  },
+  "K_O40_YM02": {
+    "diferencia": "1/6",
+    "mcm_2_3": 6,
+    "minimalidad_y_fibras_hasta_12": true
+  },
+  "L_O58": {
+    "B16_residuo_bruto_q2": true,
+    "balance_B15_cero_en_todas": true,
+    "ramas_desde_2_2_3_hasta_200": [
+      [
+        4,
+        8,
+        9
+      ],
+      [
+        8,
+        32,
+        33
+      ],
+      [
+        10,
+        50,
+        51
+      ],
+      [
+        22,
+        46,
+        51
+      ],
+      [
+        34,
+        38,
+        51
+      ],
+      [
+        28,
+        76,
+        81
+      ],
+      [
+        44,
+        68,
+        81
+      ],
+      [
+        14,
+        98,
+        99
+      ],
+      [
+        70,
+        70,
+        99
+      ],
+      [
+        32,
+        100,
+        105
+      ],
+      [
+        68,
+        80,
+        105
+      ],
+      [
+        16,
+        128,
+        129
+      ],
+      [
+        64,
+        112,
+        129
+      ],
+      [
+        38,
+        142,
+        147
+      ],
+      [
+        82,
+        122,
+        147
+      ],
+      [
+        70,
+        182,
+        195
+      ]
+    ],
+    "ternas_citadas_validas": true
+  },
+  "M_hiperboloide": {
+    "B18_uno_menos_v2_igual_1_sobre_N2": true,
+    "Nmax": 2985,
+    "alcanzadas_por_el_arbol": 754,
+    "cadena_anidada_O58": [
+      3,
+      99,
+      3880899
+    ],
+    "con_N_multiplo_del_padre": [
+      [
+        4,
+        8,
+        9
+      ],
+      [
+        22,
+        46,
+        51
+      ]
+    ],
+    "cosh_d_2_2_3_a_4_8_9": 3,
+    "cosh_d_2_2_3_a_70_70_99": 17,
+    "descenso_unico_correcto": true,
+    "eta1": 1.762747174039086,
+    "generadores_conservan_la_forma": true,
+    "hijos_de_2_2_3": [
+      [
+        4,
+        8,
+        9
+      ],
+      [
+        12,
+        12,
+        17
+      ],
+      [
+        8,
+        4,
+        9
+      ]
+    ],
+    "patron_dos_negativos_ausente": true,
+    "pell": [
+      [
+        3,
+        2
+      ],
+      [
+        17,
+        12
+      ],
+      [
+        99,
+        70
+      ],
+      [
+        577,
+        408
+      ],
+      [
+        3363,
+        2378
+      ],
+      [
+        19601,
+        13860
+      ]
+    ],
+    "primeros_productos_de_Minkowski_en_aristas": [
+      3,
+      35,
+      51,
+      291,
+      339,
+      579
+    ],
+    "soluciones_3_menor_N_hasta_120_a_menor_b": 15,
+    "soluciones_N_mayor_que_1": 754
+  },
+  "N_resolucion_finita": {
+    "L_eps": {
+      "1/100": [
+        6,
+        2,
+        2
+      ],
+      "1/1000": [
+        6,
+        166,
+        2
+      ]
+    },
+    "aproximacion_50_99_a_1_1000": "42/83",
+    "cota_Dirichlet_cumplida": true,
+    "max_q_sobre_cota": 0.6666666666666666,
+    "mcm_exacto": [
+      6,
+      198,
+      1000
+    ]
+  },
+  "O_legado_TOV": {
+    "diferencia_relativa_con_SLy_RG": 0.006341463414634098,
+    "raiz_16_15": 1.0327955589886444
+  },
+  "_resumen": {
+    "secciones": 15,
+    "todas_las_aserciones_pasaron": true
+  }
+}

@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Hilo de gravedad G–01 — 2026-11-01
+
+- Incorporación del documento G–01 v1.3 en español e inglés, en Word, PDF y Markdown, con sus figuras.
+- Verificador sin dependencias para los resultados exactos y los controles calculables; las 16 ramas O58 desde (2,2,3) coinciden con el archivo de O58. Manifiesto SHA-256 del paquete.
+- Revisión de la v1.2 a la v1.3 en hoja de cálculo y versiones 1.0 a 1.2 en `historial/`. El estado es OPEN; no se afirma una derivación de la gravedad.
+
 ## Solicitud de revisión del cubo de espejos y P frente a NP — 2026-10-30
 
 - Incorporación navegable de los paquetes español e inglés, con el documento integral, resúmenes y notas técnicas.
