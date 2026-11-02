@@ -1,5 +1,11 @@
 # History of this edition
 
+## G–01 review request · 2026-11-02
+
+- Added the English and Spanish G–01 v1.3 review requests, one-page summaries, short invitations, and SHA-256 manifests.
+- Q1–Q3 focus on the descent proof for the tree of ordered positive pairs, its precedents, and the finite check through $N=3000$.
+- Recorded the weak-field difficulty under the literal identification $r_s/r=1-1/N^2$. The jump from rest to the first tree node is from 0 to $8/9$.
+
 ## Gravity thread G–01 — 2026-11-01
 
 - Added document G–01 v1.3 in Spanish and English, as Word, PDF and Markdown, with its figures.

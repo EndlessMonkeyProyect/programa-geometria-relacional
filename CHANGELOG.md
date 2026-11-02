@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Solicitud de revisión de G–01 · 2026-11-02
+
+- Se incorporan las solicitudes de revisión de G–01 v1.3 en español e inglés, los resúmenes de una página, las invitaciones y sus manifiestos SHA-256.
+- Q1–Q3 se concentran en la prueba de descenso del árbol de pares ordenados positivos, sus antecedentes y la comprobación finita hasta $N=3000$.
+- Se explicita la dificultad del campo débil bajo la identificación literal $r_s/r=1-1/N^2$. El salto desde el reposo al primer nodo es de 0 a $8/9$.
+
 ## Hilo de gravedad G–01 — 2026-11-01
 
 - Incorporación del documento G–01 v1.3 en español e inglés, en Word, PDF y Markdown, con sus figuras.

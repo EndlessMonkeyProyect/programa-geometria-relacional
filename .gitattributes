@@ -5,3 +5,7 @@ fuentes/paquetes_extraidos/** -text
 review_requests/2026-10-30_mirror_cube_p_vs_np/** -text
 review_requests/2026-10-30_mirror_cube_p_vs_np_es/** -text
 2026-11-01_G01_mecanismo_de_la_gravedad/** -text
+review_requests/2026-11-02_G01_gravedad_es/** -text
+review_requests/2026-11-02_G01_gravity/** -text
+review_requests/2026-11-02_G01_gravedad_es/*.pdf binary
+review_requests/2026-11-02_G01_gravity/*.pdf binary
