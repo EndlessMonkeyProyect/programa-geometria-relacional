@@ -1,0 +1,261 @@
+{
+  "referencia": "Claude (Anthropic), A 2^{o(n)} Time Algorithm for 3-SAT, 26-10-2026, §4 y Apéndice H",
+  "costo_del_cruce_bits_por_bloque": 4,
+  "medida": "log2(rango por filas) + log2(rango por columnas) de la peor pieza, por bloque",
+  "control_ocho_cuadrados": {
+    "identidad_R_mas_C_igual_2_cruce": true,
+    "orden_de_bits": "p1 = bit más significativo",
+    "R_rangos_filas_columnas": [
+      8,
+      64
+    ],
+    "C_rangos_filas_columnas": [
+      64,
+      8
+    ],
+    "esperado_por_el_paper": "R: 8 por filas y 64 por columnas (Apéndice H)"
+  },
+  "D1_dos_cortes": {
+    "descripcion": "cruce = C + R con C=[x=u][y=v], R=-[x!=y](-1)^x[u!=v](-1)^u  (SWAP = I - 2P_-)",
+    "por_t": [
+      {
+        "t": 1,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          1,
+          4
+        ],
+        "rangos_columnas": [
+          4,
+          1
+        ],
+        "peor_pieza_i": 0,
+        "bits_por_bloque_peor_pieza": 2.0,
+        "rho": 0.5,
+        "formula_cerrada_coincide": true
+      },
+      {
+        "t": 2,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          1,
+          7,
+          16
+        ],
+        "rangos_columnas": [
+          16,
+          7,
+          1
+        ],
+        "peor_pieza_i": 1,
+        "bits_por_bloque_peor_pieza": 2.8074,
+        "rho": 0.7018,
+        "formula_cerrada_coincide": true
+      },
+      {
+        "t": 3,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          1,
+          10,
+          37,
+          64
+        ],
+        "rangos_columnas": [
+          64,
+          37,
+          10,
+          1
+        ],
+        "peor_pieza_i": 1,
+        "bits_por_bloque_peor_pieza": 2.8438,
+        "rho": 0.7109,
+        "formula_cerrada_coincide": true
+      },
+      {
+        "t": 4,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          1,
+          13,
+          67,
+          175,
+          256
+        ],
+        "rangos_columnas": [
+          256,
+          175,
+          67,
+          13,
+          1
+        ],
+        "peor_pieza_i": 2,
+        "bits_por_bloque_peor_pieza": 3.033,
+        "rho": 0.7583,
+        "formula_cerrada_coincide": true
+      },
+      {
+        "t": 5,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          1,
+          16,
+          106,
+          376,
+          781,
+          1024
+        ],
+        "rangos_columnas": [
+          1024,
+          781,
+          376,
+          106,
+          16,
+          1
+        ],
+        "peor_pieza_i": 2,
+        "bits_por_bloque_peor_pieza": 3.0565,
+        "rho": 0.7641,
+        "formula_cerrada_coincide": true
+      }
+    ],
+    "t_adicional": []
+  },
+  "D2_signo_propio": {
+    "descripcion": "cruce = P_+ - P_-  (partes simétrica y antisimétrica de SWAP)",
+    "por_t": [
+      {
+        "t": 1,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          3,
+          1
+        ],
+        "rangos_columnas": [
+          4,
+          4
+        ],
+        "peor_pieza_i": 0,
+        "bits_por_bloque_peor_pieza": 3.585,
+        "rho": 0.8962,
+        "formula_filas_coincide": true
+      },
+      {
+        "t": 2,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          9,
+          6,
+          1
+        ],
+        "rangos_columnas": [
+          16,
+          16,
+          16
+        ],
+        "peor_pieza_i": 0,
+        "bits_por_bloque_peor_pieza": 3.585,
+        "rho": 0.8962,
+        "formula_filas_coincide": true
+      },
+      {
+        "t": 3,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          27,
+          27,
+          9,
+          1
+        ],
+        "rangos_columnas": [
+          64,
+          64,
+          64,
+          64
+        ],
+        "peor_pieza_i": 0,
+        "bits_por_bloque_peor_pieza": 3.585,
+        "rho": 0.8962,
+        "formula_filas_coincide": true
+      },
+      {
+        "t": 4,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          81,
+          108,
+          54,
+          12,
+          1
+        ],
+        "rangos_columnas": [
+          256,
+          244,
+          256,
+          148,
+          256
+        ],
+        "peor_pieza_i": 1,
+        "bits_por_bloque_peor_pieza": 3.6714,
+        "rho": 0.9179,
+        "formula_filas_coincide": true
+      },
+      {
+        "t": 5,
+        "suma_de_piezas_igual_al_cruce": true,
+        "rangos_filas": [
+          243,
+          405,
+          270,
+          90,
+          15,
+          1
+        ],
+        "rangos_columnas": [
+          1024,
+          1024,
+          1024,
+          1024,
+          1024,
+          1024
+        ],
+        "peor_pieza_i": 1,
+        "bits_por_bloque_peor_pieza": 3.7324,
+        "rho": 0.9331,
+        "formula_filas_coincide": true
+      }
+    ],
+    "t_adicional": []
+  },
+  "D1_asintotico_por_formula": [
+    {
+      "t": 10,
+      "peor_pieza_i": 5,
+      "bits_por_bloque": 3.2644,
+      "rho": 0.8161
+    },
+    {
+      "t": 100,
+      "peor_pieza_i": 50,
+      "bits_por_bloque": 3.5231,
+      "rho": 0.8808
+    },
+    {
+      "t": 1000,
+      "peor_pieza_i": 500,
+      "bits_por_bloque": 3.5755,
+      "rho": 0.8939
+    },
+    {
+      "t": 10000,
+      "peor_pieza_i": 5000,
+      "bits_por_bloque": 3.5837,
+      "rho": 0.8959
+    }
+  ],
+  "limite_D1": {
+    "bits_por_bloque": 3.585,
+    "rho": 0.8962,
+    "nota": "log2(12) = 2 + log2(3); el paper reporta ~3.58 de 4 bits (Apéndice H)"
+  }
+}

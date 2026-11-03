@@ -1,0 +1,143 @@
+{
+  "referencia": "Conversación del 3-11-2026; Claude (Anthropic) 2026, Apéndice B",
+  "V1_p": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 5,
+    "5": 7,
+    "10": 42,
+    "20": 627,
+    "50": 204226,
+    "100": 190569292
+  },
+  "V1_cociente_Hardy_Ramanujan": {
+    "100": 0.997661,
+    "1000": 0.999806,
+    "2000": 0.999906
+  },
+  "V2_log_concava_para_todo_E_mayor_que_25_hasta": 1999,
+  "V2_excepciones": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25
+  ],
+  "V3_autoconjugadas_igual_impares_distintas_hasta": 40,
+  "V3_valores_n_1_a_20": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    4,
+    5,
+    5,
+    5,
+    6,
+    7
+  ],
+  "V4_dim_V_E_igual_p_E_hasta": 8,
+  "V4_relacion_Heisenberg_hasta_peso": 8,
+  "V5_familias": [
+    {
+      "familia": "todas las partes",
+      "log2_c_E1000": 104.246,
+      "log2_c_E2000": 151.726,
+      "alfa_estimado_E2000": 0.541,
+      "rho_estimado_E2000": 0.728,
+      "alfa_asintotico": 0.5,
+      "rho_si_existieran_operadores": 0.7071,
+      "crecimiento": "superpolinómico"
+    },
+    {
+      "familia": "partes distintas",
+      "log2_c_E1000": 72.871,
+      "log2_c_E2000": 106.399,
+      "alfa_estimado_E2000": 0.546,
+      "rho_estimado_E2000": 0.73,
+      "alfa_asintotico": 0.5,
+      "rho_si_existieran_operadores": 0.7071,
+      "crecimiento": "superpolinómico"
+    },
+    {
+      "familia": "impares distintas (= autoconjugadas)",
+      "log2_c_E1000": 48.877,
+      "log2_c_E2000": 72.368,
+      "alfa_estimado_E2000": 0.566,
+      "rho_estimado_E2000": 0.74,
+      "alfa_asintotico": 0.5,
+      "rho_si_existieran_operadores": 0.7071,
+      "crecimiento": "superpolinómico"
+    },
+    {
+      "familia": "primos",
+      "log2_c_E1000": 55.422,
+      "log2_c_E2000": 78.562,
+      "alfa_estimado_E2000": 0.503,
+      "rho_estimado_E2000": 0.709,
+      "alfa_asintotico": 0.5,
+      "rho_si_existieran_operadores": 0.7071,
+      "crecimiento": "superpolinómico (α = 1/2 con factor 1/sqrt(log E))"
+    },
+    {
+      "familia": "cuadrados 1, 4, 9, 16, ...",
+      "log2_c_E1000": 31.897,
+      "log2_c_E2000": 43.146,
+      "alfa_estimado_E2000": 0.436,
+      "rho_estimado_E2000": 0.676,
+      "alfa_asintotico": 0.3333,
+      "rho_si_existieran_operadores": 0.63,
+      "crecimiento": "superpolinómico"
+    },
+    {
+      "familia": "cubos 1, 8, 27, ...",
+      "log2_c_E1000": 16.174,
+      "log2_c_E2000": 21.411,
+      "alfa_estimado_E2000": 0.405,
+      "rho_estimado_E2000": 0.662,
+      "alfa_asintotico": 0.25,
+      "rho_si_existieran_operadores": 0.5946,
+      "crecimiento": "superpolinómico"
+    },
+    {
+      "familia": "potencias de 2 (duplicación)",
+      "log2_c_E1000": 30.884,
+      "log2_c_E2000": 37.946,
+      "alfa_estimado_E2000": 0.297,
+      "rho_estimado_E2000": 0.614,
+      "alfa_asintotico": 0.0,
+      "rho_si_existieran_operadores": null,
+      "crecimiento": "cuasipolinómico: log c ~ (log E)^2; no alcanza"
+    },
+    {
+      "familia": "múltiplos que cierran 1 a 5",
+      "log2_c_E1000": 28.414,
+      "log2_c_E2000": 32.393,
+      "alfa_estimado_E2000": 0.189,
+      "rho_estimado_E2000": 0.57,
+      "alfa_asintotico": 0.0,
+      "rho_si_existieran_operadores": null,
+      "crecimiento": "polinómico (grado 4); no alcanza"
+    }
+  ],
+  "V5_nota": "rho = 2^(alfa−1) es el cálculo del Apéndice B (\"if it grew like E^alfa\"). Que exista una estructura de operadores con los Lemas 9 y 10 para una familia restringida no se verifica aquí: es la pregunta abierta."
+}

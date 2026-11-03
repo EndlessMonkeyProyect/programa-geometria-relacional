@@ -1,0 +1,458 @@
+{
+  "referencia": "Claude (Anthropic), A 2^{o(n)} Time Algorithm for 3-SAT, 26-10-2026, §4 y Apéndice H",
+  "A_tetraedro_como_alfabeto": [
+    {
+      "tipo": "cara",
+      "vertices": [
+        "000",
+        "010",
+        "100",
+        "110"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "cara",
+      "vertices": [
+        "000",
+        "001",
+        "100",
+        "101"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "rectángulo diagonal",
+      "vertices": [
+        "000",
+        "011",
+        "100",
+        "111"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "cara",
+      "vertices": [
+        "000",
+        "001",
+        "010",
+        "011"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "rectángulo diagonal",
+      "vertices": [
+        "000",
+        "010",
+        "101",
+        "111"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "rectángulo diagonal",
+      "vertices": [
+        "000",
+        "001",
+        "110",
+        "111"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    },
+    {
+      "tipo": "tetraedro (clase par)",
+      "vertices": [
+        "000",
+        "011",
+        "101",
+        "110"
+      ],
+      "R_mas_C_igual_2_cruce": true,
+      "signos_de_cuaterniones_Q8": true,
+      "por_t": [
+        {
+          "t": 1,
+          "rangos_filas": [
+            4,
+            16
+          ],
+          "rangos_columnas": [
+            16,
+            4
+          ],
+          "rho": 0.75,
+          "formula_apendice_H_coincide": true
+        },
+        {
+          "t": 2,
+          "rangos_filas": [
+            16,
+            112,
+            256
+          ],
+          "rangos_columnas": [
+            256,
+            112,
+            16
+          ],
+          "rho": 0.8509,
+          "formula_apendice_H_coincide": true
+        }
+      ]
+    }
+  ],
+  "A_rho_asintotico_por_formula": {
+    "N4_cuaterniones_t10000": 0.948,
+    "N8_octoniones_t10000": 0.9005,
+    "conteo_simple_Lema_2": {
+      "N4": "2+4+1+1 = 8 de 8 bits (sin ganancia)",
+      "N8": "3+6+1+1 = 11 de 12 bits (rho = 11/12)"
+    }
+  },
+  "B_tetraedro_de_los_dos_cortes": {
+    "vertices": {
+      "Phi+": {
+        "correlacion_estado": [
+          1,
+          -1,
+          1
+        ],
+        "producto_estado": -1,
+        "rangos_estado_filas_columnas": [
+          1,
+          4
+        ],
+        "cruce_I_menos_2Pi": {
+          "correlacion": [
+            -1,
+            1,
+            -1
+          ],
+          "es_reflejo_central_del_estado": true,
+          "palabra_en_el_cubo": "101",
+          "rangos_filas_columnas": [
+            4,
+            4
+          ],
+          "igual_a_SWAP_con_local": [
+            "XZ"
+          ]
+        },
+        "rho_D1_por_t": [
+          0.5,
+          0.7018,
+          0.7109,
+          0.7583
+        ]
+      },
+      "Phi-": {
+        "correlacion_estado": [
+          -1,
+          1,
+          1
+        ],
+        "producto_estado": -1,
+        "rangos_estado_filas_columnas": [
+          1,
+          4
+        ],
+        "cruce_I_menos_2Pi": {
+          "correlacion": [
+            1,
+            -1,
+            -1
+          ],
+          "es_reflejo_central_del_estado": true,
+          "palabra_en_el_cubo": "011",
+          "rangos_filas_columnas": [
+            4,
+            4
+          ],
+          "igual_a_SWAP_con_local": [
+            "X"
+          ]
+        },
+        "rho_D1_por_t": [
+          0.5,
+          0.7018,
+          0.7109,
+          0.7583
+        ]
+      },
+      "Psi+": {
+        "correlacion_estado": [
+          1,
+          1,
+          -1
+        ],
+        "producto_estado": -1,
+        "rangos_estado_filas_columnas": [
+          1,
+          4
+        ],
+        "cruce_I_menos_2Pi": {
+          "correlacion": [
+            -1,
+            -1,
+            1
+          ],
+          "es_reflejo_central_del_estado": true,
+          "palabra_en_el_cubo": "110",
+          "rangos_filas_columnas": [
+            4,
+            4
+          ],
+          "igual_a_SWAP_con_local": [
+            "Z"
+          ]
+        },
+        "rho_D1_por_t": [
+          0.5,
+          0.7018,
+          0.7109,
+          0.7583
+        ]
+      },
+      "Psi- (singlete)": {
+        "correlacion_estado": [
+          -1,
+          -1,
+          -1
+        ],
+        "producto_estado": -1,
+        "rangos_estado_filas_columnas": [
+          1,
+          4
+        ],
+        "cruce_I_menos_2Pi": {
+          "correlacion": [
+            1,
+            1,
+            1
+          ],
+          "es_reflejo_central_del_estado": true,
+          "palabra_en_el_cubo": "000",
+          "rangos_filas_columnas": [
+            4,
+            4
+          ],
+          "igual_a_SWAP_con_local": [
+            "I"
+          ]
+        },
+        "rho_D1_por_t": [
+          0.5,
+          0.7018,
+          0.7109,
+          0.7583
+        ]
+      }
+    },
+    "centro": {
+      "rangos_identidad_filas_columnas": [
+        4,
+        1
+      ],
+      "suma_de_los_cuatro_estados_es_I": true
+    },
+    "estados_forman_tetraedro_regular_distancias": [
+      2.828427
+    ],
+    "cruces_ocupan_la_clase_par": true,
+    "palabras_de_los_cruces": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ]
+  },
+  "B_rho_asintotico_D1": 0.8962
+}

@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## El cruce como reflejo central · 3 de noviembre de 2026
+
+La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) reúne el paper [*El cruce como reflejo central*](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.md) ([PDF](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.pdf)), el ensayo [«La caja de espejos» v0.3](2026-11-03_cruce_reflejo_central/articulo/La_caja_de_espejos_v0.3_2026-11-03.md), las [notas del 3 de noviembre](2026-11-03_cruce_reflejo_central/articulo/Notas_2026-11-03.md) sobre particiones y el origen del tetraedro, y cinco verificadores reproducibles. Mide la pieza que descompone el algoritmo de Claude (2026), el cruce: la ganancia viene de repartirlo entre dos cortes, los cruces ocupan el tetraedro del programa y, en la duplicación por reflexión, solo el 8 lo abarata. Son teoremas clásicos dichos en el lenguaje del programa; no es un algoritmo propio ni un reclamo de prioridad, y la equivalencia algorítmica sigue abierta. La [solicitud de verificación](review_requests/2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) pide revisar la reproducibilidad, las pruebas y la precedencia documental.
+
 ## Solicitud de revisión de G–01 · 2 de noviembre de 2026
 
 Se solicita revisar el árbol de soluciones enteras positivas de $N^2-a^2-b^2=1$ para $N>1$, distinguiendo el orden de $a$ y $b$. Las preguntas prioritarias son la demostración de descenso desde cada nodo distinto de la raíz, los antecedentes del árbol y la reproducción del conteo de 754 soluciones hasta $N=3000$. La interpretación gravitatoria sigue abierta. La solicitud cuantifica el salto que la lectura entera literal deja antes del primer valor de campo gravitatorio. [Resumen de una página](review_requests/2026-11-02_G01_gravedad_es/RESUMEN_EJECUTIVO_G01.pdf) · [Solicitud completa](review_requests/2026-11-02_G01_gravedad_es/SOLICITUD_REVISION_G01.md) · [English edition](review_requests/2026-11-02_G01_gravity/README.md)

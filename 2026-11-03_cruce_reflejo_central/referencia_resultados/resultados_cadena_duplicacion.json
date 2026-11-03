@@ -1,0 +1,61 @@
+{
+  "referencia": "Paper «El cruce como reflejo central», §7; Claude (Anthropic) 2026, §4 y Apéndice H",
+  "regla": "(a,b)(c,d) = (ac − conj(d) b, d a + b conj(c)); conj(a,b) = (conj(a), −b)",
+  "niveles": [
+    {
+      "N": 2,
+      "P0_destino_por_xor": true,
+      "P1_violaciones_identidad_28": 0,
+      "C4_asociativa": true,
+      "P1_R_mas_C_igual_2_cruce": true,
+      "P2_dos_ordenes": true,
+      "P2_relaciones_Hurwitz_Radon": true,
+      "P3_rango_R_filas": 2,
+      "P3_rango_R_columnas": 2,
+      "P3_costo_bloque_conteo_Lema_2": 4.0,
+      "P3_costo_cruce": 4.0,
+      "P3_gana": false
+    },
+    {
+      "N": 4,
+      "P0_destino_por_xor": true,
+      "P1_violaciones_identidad_28": 0,
+      "C4_asociativa": true,
+      "P1_R_mas_C_igual_2_cruce": true,
+      "P2_dos_ordenes": true,
+      "P2_relaciones_Hurwitz_Radon": true,
+      "P3_rango_R_filas": 4,
+      "P3_rango_R_columnas": 16,
+      "P3_costo_bloque_conteo_Lema_2": 8.0,
+      "P3_costo_cruce": 8.0,
+      "P3_gana": false
+    },
+    {
+      "N": 8,
+      "P0_destino_por_xor": true,
+      "P1_violaciones_identidad_28": 0,
+      "C4_asociativa": false,
+      "P1_R_mas_C_igual_2_cruce": true,
+      "P2_dos_ordenes": true,
+      "P2_relaciones_Hurwitz_Radon": true,
+      "P3_rango_R_filas": 8,
+      "P3_rango_R_columnas": 64,
+      "P3_costo_bloque_conteo_Lema_2": 11.0,
+      "P3_costo_cruce": 12.0,
+      "P3_gana": true
+    },
+    {
+      "N": 16,
+      "P0_destino_por_xor": true,
+      "P1_violaciones_identidad_28": 672,
+      "C4_asociativa": false
+    }
+  ],
+  "niveles_con_ganancia": [
+    8
+  ],
+  "niveles_no_asociativos_hasta_8": [
+    8
+  ],
+  "C4_ganancia_solo_en_el_nivel_no_asociativo": true
+}

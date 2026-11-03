@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## The Cross as Central Reflection · November 3, 2026
+
+The [November 3 delivery](2026-11-03_cruce_reflejo_central/READ_FIRST.en.md) contains the paper [*The Cross as Central Reflection*](2026-11-03_cruce_reflejo_central/articulo/The_Cross_as_Central_Reflection_2026-11-03_EN.md) ([PDF](2026-11-03_cruce_reflejo_central/articulo/The_Cross_as_Central_Reflection_2026-11-03_EN.pdf)), the essay ["La caja de espejos" v0.3](2026-11-03_cruce_reflejo_central/articulo/La_caja_de_espejos_v0.3_2026-11-03_EN.md), the [notes of November 3](2026-11-03_cruce_reflejo_central/articulo/Notes_2026-11-03_EN.md) on partitions and the origin of the tetrahedron, and five reproducible verifiers. It measures the piece that Claude's algorithm (2026) decomposes, the cross: the gain comes from splitting it across two cuts, the crosses occupy the program's tetrahedron and, in doubling by reflection, only the 8 makes it cheaper. These are classical theorems stated in the program's language; it is not an algorithm of its own nor a priority claim, and algorithmic equivalence remains open. The [request for verification](review_requests/2026-11-03_cruce_reflejo_central/README.md) asks for review of reproducibility, the proofs and documentary precedence.
+
 ## G–01 review request · November 2, 2026
 
 We invite review of the tree of positive integer solutions to $N^2-a^2-b^2=1$ for $N>1$, counting different orderings of $a$ and $b$ separately. The first three questions concern the descent proof for each non-root node, precedents for the tree, and reproduction of the count of 754 solutions through $N=3000$. The gravitational interpretation remains open. The request quantifies the gap left by the literal integer reading in the weak-field regime. [One-page summary](review_requests/2026-11-02_G01_gravity/EXECUTIVE_SUMMARY_EN.pdf) · [Full request](review_requests/2026-11-02_G01_gravity/REVIEW_REQUEST_EN.md) · [Edición en español](review_requests/2026-11-02_G01_gravedad_es/LEER_PRIMERO.md)

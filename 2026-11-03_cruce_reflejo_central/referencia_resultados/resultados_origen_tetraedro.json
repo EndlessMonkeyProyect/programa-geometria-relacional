@@ -1,0 +1,127 @@
+{
+  "T1": {
+    "tetraedro_par_desde_origen": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ],
+    "tetraedro_impar_un_bit": [
+      "001",
+      "010",
+      "100",
+      "111"
+    ],
+    "distancias_hamming_entre_vertices": [
+      2
+    ],
+    "distancia_euclidea_al_cuadrado": [
+      8
+    ],
+    "producto_de_signos": [
+      1
+    ],
+    "es_subgrupo_xor": true,
+    "maximo_de_palabras_equidistantes_en_3_bits": 4
+  },
+  "T2": {
+    "SWAP": "000",
+    "(X⊗I)·SWAP·(X⊗I)": "011",
+    "(Y⊗I)·SWAP·(Y⊗I)": "101",
+    "(Z⊗I)·SWAP·(Z⊗I)": "110"
+  },
+  "T3": {
+    "D3_modulo_2": [
+      "000",
+      "011",
+      "101",
+      "110"
+    ],
+    "vecinos_desde_D3": {
+      "distancia2": "3/4",
+      "cantidad": 4,
+      "producto_de_signos": [
+        1
+      ]
+    },
+    "vecinos_desde_la_copia": {
+      "distancia2": "3/4",
+      "cantidad": 4,
+      "producto_de_signos": [
+        -1
+      ]
+    },
+    "vecino_mas_cercano_dentro_de_D3_distancia2": 2
+  },
+  "T4": {
+    "tabla": [
+      {
+        "n": 2,
+        "es_red": true,
+        "norma_de_h": "1/2",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 3,
+        "es_red": false,
+        "norma_de_h": "3/4",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 4,
+        "es_red": true,
+        "norma_de_h": "1",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 5,
+        "es_red": false,
+        "norma_de_h": "5/4",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 6,
+        "es_red": true,
+        "norma_de_h": "3/2",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 7,
+        "es_red": false,
+        "norma_de_h": "7/4",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 8,
+        "es_red": true,
+        "norma_de_h": "2",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": true
+      },
+      {
+        "n": 9,
+        "es_red": false,
+        "norma_de_h": "9/4",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      },
+      {
+        "n": 10,
+        "es_red": true,
+        "norma_de_h": "5/2",
+        "norma_minima_de_Dn": 2,
+        "misma_distancia": false
+      }
+    ],
+    "E8_raices_de_D8": 112,
+    "E8_raices_semienteras": 128,
+    "E8_total_vectores_minimos": 240,
+    "E8_normas_pares_en_muestra": true
+  }
+}
