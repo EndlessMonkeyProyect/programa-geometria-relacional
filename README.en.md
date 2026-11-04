@@ -12,7 +12,7 @@ The [November 3 delivery](2026-11-03_cruce_reflejo_central/READ_FIRST.en.md) con
 
 ## Received feedback
 
-An [English comment supplied on November 3](received_feedback/README.md) is preserved. Its author and exact target manuscript are not identified in the file; the provenance note explains its scope.
+An [English comment on the Cross delivery](received_feedback/README.md) is preserved and also published on [Zenodo](https://doi.org/10.5281/zenodo.23934998). The provenance note explains that the file does not identify its author or the exact manuscript version.
 
 ## G–01 review request · November 2, 2026
 

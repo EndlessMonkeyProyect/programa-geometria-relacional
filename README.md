@@ -12,7 +12,7 @@ La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md
 
 ## Comentarios recibidos
 
-Se conserva un [comentario en inglés aportado el 3 de noviembre](received_feedback/README.md). Su autor y el manuscrito exacto evaluado no constan en el archivo; la nota de procedencia delimita su alcance.
+Se conserva un [comentario en inglés sobre la entrega del cruce](received_feedback/README.md), publicado también en [Zenodo](https://doi.org/10.5281/zenodo.23934998). La nota de procedencia aclara que el autor y la versión exacta del manuscrito no constan en el archivo.
 
 ## Solicitud de revisión de G–01 · 2 de noviembre de 2026
 
