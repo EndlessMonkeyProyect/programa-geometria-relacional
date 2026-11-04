@@ -8,11 +8,13 @@ The [November 3 delivery](2026-11-03_cruce_reflejo_central/READ_FIRST.en.md) con
 
 [GitHub release 2026-11-03](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-03) · [Zenodo DOI: 10.5281/zenodo.23932854](https://doi.org/10.5281/zenodo.23932854)
 
+## Independent review request · pair swap · November 3, 2026
 
+The [bilingual request](review_requests/2026-11-03_intercambio_par_eth/README.md) invites review of documentary precedence and the local coincidence of the pair swap in OpenAI's and Anthropic's ETH constructions. Its [proof note](review_requests/2026-11-03_intercambio_par_eth/PROOF_NOTE_3_3_EN.md) derives related binomial counts for one-bit ranks and explicitly chosen measurement rows; it does not show that this relationship affects either bound. A finite verifier is included. The program claims neither priority nor an algorithm of its own. [Edición en español](review_requests/2026-11-03_intercambio_par_eth/LEER_PRIMERO.md).
 
 ## Received feedback
 
-An [English comment on the Cross delivery](received_feedback/README.md) is preserved and also published on [Zenodo](https://doi.org/10.5281/zenodo.23934998). The provenance note explains that the file does not identify its author or the exact manuscript version.
+An [English comment that appears to concern a draft request on the pair swap](received_feedback/README.md) is preserved and also published on [Zenodo](https://doi.org/10.5281/zenodo.23934998). The provenance note explains the evidence and corrects its earlier attribution.
 
 ## G–01 review request · November 2, 2026
 

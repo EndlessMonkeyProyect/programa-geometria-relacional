@@ -8,11 +8,13 @@ La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md
 
 [Versión de GitHub 2026-11-03](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-03) · [DOI de Zenodo: 10.5281/zenodo.23932854](https://doi.org/10.5281/zenodo.23932854)
 
+## Solicitud de revisión independiente · intercambio de un par · 3 de noviembre de 2026
 
+La [solicitud bilingüe](review_requests/2026-11-03_intercambio_par_eth/LEER_PRIMERO.md) pide verificar la precedencia documental y la coincidencia local del intercambio de un par en las construcciones de OpenAI y Anthropic sobre la ETH. La [nota de prueba](review_requests/2026-11-03_intercambio_par_eth/NOTA_PRUEBA_3_3.md) deriva conteos binomiales relacionados para los rangos de un bit y las filas de medición explícitas; no demuestra que esa relación influya en las cotas. Se incluye un verificador finito. No se reclama prioridad ni un algoritmo propio. [English edition](review_requests/2026-11-03_intercambio_par_eth/README.md).
 
 ## Comentarios recibidos
 
-Se conserva un [comentario en inglés sobre la entrega del cruce](received_feedback/README.md), publicado también en [Zenodo](https://doi.org/10.5281/zenodo.23934998). La nota de procedencia aclara que el autor y la versión exacta del manuscrito no constan en el archivo.
+Se conserva un [comentario en inglés que parece referirse a un borrador de la solicitud sobre el intercambio de un par](received_feedback/README.md), publicado también en [Zenodo](https://doi.org/10.5281/zenodo.23934998). La nota de procedencia explica los indicios y la corrección de su atribución anterior.
 
 ## Solicitud de revisión de G–01 · 2 de noviembre de 2026
 

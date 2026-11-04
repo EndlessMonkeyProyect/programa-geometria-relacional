@@ -1,0 +1,19 @@
+verificar_pieza_compartida.py · salida del 2026-11-03 · output
+Python 3.13.18 · numpy 2.5.3 · Linux-6.18.44-fc-v230-x86_64-with-glibc2.39
+sha256 del script / script sha256: 11747e6a2e7070733e326ed8299c0dd6d9bc6e022364d486d9c5da0e609505c8
+
+[OK] r=2: S = I - 2P_-, P_- projector, rank 1 = r(r-1)/2, p = 0.2500
+[OK] r=3: S = I - 2P_-, P_- projector, rank 3 = r(r-1)/2, p = 0.3333
+[OK] r=4: S = I - 2P_-, P_- projector, rank 6 = r(r-1)/2, p = 0.3750
+[OK] r=5: S = I - 2P_-, P_- projector, rank 10 = r(r-1)/2, p = 0.4000
+[OK] r=2: pair swap = [x=v][y=u] = [x=u][y=v] - [x!=y](-1)^x [u!=v](-1)^u (16 entries)
+[OK] r=2, Q=3: V0 = (-1)^W0, M0 fixes window [0, 1], rank(I-M0) = 10 = 10
+[OK] r=2, Q=4: V0 = (-1)^W0, M0 fixes window [0, 1], rank(I-M0) = 67 = 67
+[OK] r=3, Q=3: V0 = (-1)^W0, M0 fixes window [0, 1], rank(I-M0) = 189 = 189
+[OK] realignment: R(I) = Phi Phi^T, R(S) = S, and they commute
+[OK] t=3: row and column ranks of every A_i are tail sums of C(t,j) 3^(t-j)
+[OK] t=4: row and column ranks of every A_i are tail sums of C(t,j) 3^(t-j)
+[OK] t=5: row and column ranks of every A_i are tail sums of C(t,j) 3^(t-j)
+
+All checks passed.
+exit status: 0

@@ -11,4 +11,5 @@ review_requests/2026-11-02_G01_gravedad_es/*.pdf binary
 review_requests/2026-11-02_G01_gravity/*.pdf binary
 2026-11-03_cruce_reflejo_central/** -text
 review_requests/2026-11-03_cruce_reflejo_central/** -text
+review_requests/2026-11-03_intercambio_par_eth/** -text
 received_feedback/*.txt -text
