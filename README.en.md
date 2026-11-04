@@ -10,6 +10,10 @@ The [November 3 delivery](2026-11-03_cruce_reflejo_central/READ_FIRST.en.md) con
 
 
 
+## Received feedback
+
+An [English comment supplied on November 3](received_feedback/README.md) is preserved. Its author and exact target manuscript are not identified in the file; the provenance note explains its scope.
+
 ## G–01 review request · November 2, 2026
 
 We invite review of the tree of positive integer solutions to $N^2-a^2-b^2=1$ for $N>1$, counting different orderings of $a$ and $b$ separately. The first three questions concern the descent proof for each non-root node, precedents for the tree, and reproduction of the count of 754 solutions through $N=3000$. The gravitational interpretation remains open. The request quantifies the gap left by the literal integer reading in the weak-field regime. [One-page summary](review_requests/2026-11-02_G01_gravity/EXECUTIVE_SUMMARY_EN.pdf) · [Full request](review_requests/2026-11-02_G01_gravity/REVIEW_REQUEST_EN.md) · [Edición en español](review_requests/2026-11-02_G01_gravedad_es/LEER_PRIMERO.md)

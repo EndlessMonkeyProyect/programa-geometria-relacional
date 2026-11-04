@@ -10,6 +10,10 @@ La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md
 
 
 
+## Comentarios recibidos
+
+Se conserva un [comentario en inglés aportado el 3 de noviembre](received_feedback/README.md). Su autor y el manuscrito exacto evaluado no constan en el archivo; la nota de procedencia delimita su alcance.
+
 ## Solicitud de revisión de G–01 · 2 de noviembre de 2026
 
 Se solicita revisar el árbol de soluciones enteras positivas de $N^2-a^2-b^2=1$ para $N>1$, distinguiendo el orden de $a$ y $b$. Las preguntas prioritarias son la demostración de descenso desde cada nodo distinto de la raíz, los antecedentes del árbol y la reproducción del conteo de 754 soluciones hasta $N=3000$. La interpretación gravitatoria sigue abierta. La solicitud cuantifica el salto que la lectura entera literal deja antes del primer valor de campo gravitatorio. [Resumen de una página](review_requests/2026-11-02_G01_gravedad_es/RESUMEN_EJECUTIVO_G01.pdf) · [Solicitud completa](review_requests/2026-11-02_G01_gravedad_es/SOLICITUD_REVISION_G01.md) · [English edition](review_requests/2026-11-02_G01_gravity/README.md)
