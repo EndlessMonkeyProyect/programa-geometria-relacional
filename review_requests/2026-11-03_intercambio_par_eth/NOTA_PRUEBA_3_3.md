@@ -12,6 +12,8 @@ lang: es
 
 [English](PROOF_NOTE_3_3_EN.md) · [Solicitud de revisión](SOLICITUD_REVISION.md)
 
+**Fuentes fijadas · actualización editorial del 4 de noviembre de 2026:** [OpenAI, §§2.7 y 4.2, commit `42907c9`](https://github.com/openai/math/blob/42907c9e999cc00d6abe7a50bfc1023250edd1b9/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf) · [Anthropic, Apéndice H, commit `16a5ce4`](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/paper.pdf). [Hilo de revisión](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4).
+
 Esta nota prueba las fórmulas de la sección 3.3 para todo t y Q en sus respectivos contextos: el cruce de un bit es S = I − 2P₋; en la construcción explícita de OpenAI el número de filas de medición cuenta los factores antisimétricos fuera de una ventana; y en la división de un bit los rangos de cada pieza, por filas y por columnas, son colas superiores de las mismas multiplicidades binomiales con r = 2. No prueba que esta coincidencia cumpla algún papel en las cotas de ninguno de los dos algoritmos.
 
 ## 1. Definiciones

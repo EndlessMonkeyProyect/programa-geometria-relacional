@@ -1,5 +1,11 @@
 # History of this edition
 
+## Pair-swap review · 2026-11-04
+
+- Opened a [dedicated thread](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4) for a human assessment of the rank formulas, their correspondence with the preprints and their precedents.
+- Fixed the OpenAI and Anthropic references by commit and the reproducible delivery by the commit of tag `2026-11-03-pair-swap-review`.
+- Updated both language guides and their SHA-256 manifest. The archived tag and ZIP retain their original content.
+
 ## G–01 review request · 2026-11-02
 
 - Added the English and Spanish G–01 v1.3 review requests, one-page summaries, short invitations, and SHA-256 manifests.

@@ -24,6 +24,8 @@ No se reclama equivalencia algorítmica, influencia entre grupos ni anticipació
 
 ## 1. Alcance y preguntas de revisión
 
+**Prioridad de revisión · 4 de noviembre de 2026.** Se pide primero un dictamen humano sobre las proposiciones 1, 2, 4 y 5 y el corolario 3 de la nota de prueba: corrección y fidelidad a las fuentes. La segunda pregunta es bibliográfica: antecedentes de las fórmulas o de la comparación. Las respuestas se reúnen en el [hilo específico](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4); la cronología documental es una consulta separada.
+
 Cada pregunta dice qué evidencia la resolvería y en qué estado está hoy.
 
 | # | Pregunta | Evidencia que la resuelve | Estado |
@@ -156,12 +158,16 @@ Todo lo marcado como medido se regenera con verificadores en Python; son comprob
 
 ```bash
 git clone https://github.com/EndlessMonkeyProyect/programa-geometria-relacional
-cd programa-geometria-relacional/2026-11-03_cruce_reflejo_central
-pip install -r requirements.txt   # numpy>=1.24
+cd programa-geometria-relacional
+git checkout --detach 46e47274e9e573b9c91da1516d067c4f49c289f9
+cd 2026-11-03_cruce_reflejo_central
+python3 -m pip install -r requirements.txt   # numpy>=1.24
 bash reproducir_todo.sh            # regenera y compara todos los resultados
 cd ../review_requests/2026-11-03_intercambio_par_eth
 python3 verificar_pieza_compartida.py   # sección 3.3, menos de un segundo
 ```
+
+El commit fijado corresponde a la etiqueta `2026-11-03-pair-swap-review`; evita depender de futuros cambios de `main`. El bloque completo requiere Bash y el comando `python3` en `PATH`, porque `reproducir_todo.sh` lo invoca internamente. En Windows puede usarse Git Bash con ese comando configurado. Para ejecutar solo el verificador de la sección 3.3 con PowerShell, véase [LEER_PRIMERO](LEER_PRIMERO.md). Las dependencias conservan el rango declarado; no se afirma un entorno congelado. Fuentes contrastadas: OpenAI, commit `42907c9e999cc00d6abe7a50bfc1023250edd1b9`, y Anthropic, commit `16a5ce41304fcdaea4e0be7c132e1c361dc26da5`.
 
 **Enlaces.**
 
@@ -174,7 +180,7 @@ python3 verificar_pieza_compartida.py   # sección 3.3, menos de un segundo
 
 Los metadatos de commit son consistentes con que la composición de interfaces, el núcleo del recierre, MF-85 y la revisión v3 fueran públicos antes del 16 de octubre, pero no lo acreditan. Siguen faltando sellos de tiempo independientes del contenido pertinente. Además se identifica, medida después, una coincidencia exacta y local entre los dos algoritmos: el intercambio de un par. Sumas relacionadas de sus multiplicidades binomiales cuentan los rangos de la división de un bit y las filas de la matriz explícita de mediciones de OpenAI.
 
-No acredita que el programa descubriera los algoritmos, que hubiera influencia entre grupos ni que las correspondencias impliquen el mismo mecanismo. La distancia entre correspondencia y equivalencia es, precisamente, el objeto de esta revisión. Se invita a señalar correspondencias, contradicciones o formulaciones más precisas, sobre todo en H2, H3 y H5, como [issues en este repositorio](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues).
+No acredita que el programa descubriera los algoritmos, que hubiera influencia entre grupos ni que las correspondencias impliquen el mismo mecanismo. La distancia entre correspondencia y equivalencia es, precisamente, el objeto de esta revisión. Se invita a señalar correspondencias, contradicciones o formulaciones más precisas, sobre todo en H2, H3 y H5, como [issues en este repositorio](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4).
 
 ## Anexo — Motivación del programa
 
@@ -185,7 +191,7 @@ El programa nació de una convicción personal: que detrás de la multiplicidad 
 ## Referencias
 
 - Claude (Anthropic). [A 2^o(n) Time Algorithm for 3-SAT](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/paper.pdf). 26 de octubre de 2026, commit `16a5ce4`.
-- OpenAI. [The Exponential Time Hypothesis is False](https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026). 17 de octubre de 2026, revisado el 25.
+- OpenAI. [The Exponential Time Hypothesis is False](https://github.com/openai/math/blob/42907c9e999cc00d6abe7a50bfc1023250edd1b9/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf). 17 de octubre de 2026, revisado el 25.
 - Programa de Geometría Relacional. MF-61B y MF-62B, 29 de septiembre de 2026 (`fb27fbf`); MF-63B, recierre acreditado de compatibilidad, 3 de octubre de 2026 (`c44cfb8`; completo en `0fd5315`); v3.0.0-review, 9 de octubre de 2026 (`6e36993`).
 - Le Matt Ansatz Di Ego. El cruce como reflejo central. 3 de noviembre de 2026. [DOI 10.5281/zenodo.23932854](https://doi.org/10.5281/zenodo.23932854).
 - Endless-monkey. [P vs NP and Yang–Mills: Two Problems, One Structural Question](https://www.reddit.com/user/Endless-monkey/comments/1wwk0xh/p_vs_np_and_yangmills_two_problems_one_structural/). Reddit, 3 de octubre de 2026.

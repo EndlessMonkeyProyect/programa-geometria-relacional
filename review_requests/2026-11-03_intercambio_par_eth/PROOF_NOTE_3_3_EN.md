@@ -12,6 +12,8 @@ lang: en
 
 [Español](NOTA_PRUEBA_3_3.md) · [Review request](REVIEW_REQUEST_EN.md)
 
+**Fixed sources · editorial update of November 4, 2026:** [OpenAI, §§2.7 and 4.2, commit `42907c9`](https://github.com/openai/math/blob/42907c9e999cc00d6abe7a50bfc1023250edd1b9/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf) · [Anthropic, Appendix H, commit `16a5ce4`](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/paper.pdf). [Review thread](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4).
+
 This note proves the formulas of Section 3.3 for every t and Q in their respective settings: the one-bit crossing is S = I − 2P₋; in OpenAI's explicit construction the number of measurement rows is the count outside a window of antisymmetric factors; and in the one-bit split the ranks of each piece, by rows and by columns, are upper tails of the same binomial multiplicities at r = 2. It does not prove that this coincidence plays any role in either algorithm's bound.
 
 ## 1. Definitions

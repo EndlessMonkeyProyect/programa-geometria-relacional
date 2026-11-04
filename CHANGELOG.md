@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Revisión del intercambio de un par · 2026-11-04
+
+- Se abre un [hilo específico](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4) para un dictamen humano sobre las fórmulas de rango, su correspondencia con los preprints y sus antecedentes.
+- Se fijan las referencias de OpenAI y Anthropic por commit y la entrega reproducible por el commit de la etiqueta `2026-11-03-pair-swap-review`.
+- Se actualizan las guías en ambos idiomas y su manifiesto SHA-256. La etiqueta y el ZIP archivados conservan su contenido original.
+
 ## Solicitud de revisión de G–01 · 2026-11-02
 
 - Se incorporan las solicitudes de revisión de G–01 v1.3 en español e inglés, los resúmenes de una página, las invitaciones y sus manifiestos SHA-256.

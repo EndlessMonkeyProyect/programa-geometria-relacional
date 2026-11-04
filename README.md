@@ -14,6 +14,8 @@ La [solicitud bilingüe](review_requests/2026-11-03_intercambio_par_eth/LEER_PRI
 
 [Versión de GitHub y ZIP público](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-03-pair-swap-review) · [DOI de Zenodo: 10.5281/zenodo.23937720](https://doi.org/10.5281/zenodo.23937720)
 
+**Revisión prioritaria · 4 de noviembre:** [hilo específico](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4) para evaluar la corrección de la nota de prueba, su fidelidad a las fuentes y sus antecedentes. Las instrucciones bilingües fijan el commit de la entrega archivada y las versiones de ambos preprints.
+
 ## Comentarios recibidos
 
 Se conserva un [comentario en inglés que parece referirse a un borrador de la solicitud sobre el intercambio de un par](received_feedback/README.md), publicado también en [Zenodo](https://doi.org/10.5281/zenodo.23934998). La nota de procedencia explica los indicios y la corrección de su atribución anterior.
