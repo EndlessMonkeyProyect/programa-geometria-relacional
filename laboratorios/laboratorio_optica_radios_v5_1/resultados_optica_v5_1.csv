@@ -1,0 +1,139 @@
+seccion,caso,medida,valor,unidad,notas
+A_espejos,L=1,firma(0.25),0.25,u,
+A_espejos,L=1,firma(1.75),0.25,u,
+A_espejos,L=1,misma_orbita,1,bool,
+A_espejos,L=2,firma(0.25),0.25,u,
+A_espejos,L=2,firma(1.75),1.75,u,
+A_espejos,L=2,misma_orbita,0,bool,
+B_radios,acercamiento,factor_doppler,0.993350823,adimensional,
+B_radios,alejamiento,factor_doppler,1.00669368,adimensional,
+B_radios,banda 450 nm,umbral_rayleigh_acercamiento,1.0907e-06,rad,
+B_radios,banda 550 nm,umbral_rayleigh_acercamiento,1.33308e-06,rad,
+B_radios,banda 650 nm,umbral_rayleigh_acercamiento,1.57545e-06,rad,
+B_radios,t=0 s,distancia_D,1e+15,m,
+B_radios,t=0 s,componentes_espaciales,1,grupos,
+B_radios,t=0 s,extension_angular/umbral_550nm,0.7501,adimensional,
+B_radios,t=0 s,imagen,puntual,,
+B_radios,t=0 s,flujo_relativo,1,proporción,Ley 1/D²
+B_radios,t=2e+08 s,distancia_D,6e+14,m,
+B_radios,t=2e+08 s,componentes_espaciales,1,grupos,
+B_radios,t=2e+08 s,extension_angular/umbral_550nm,1.25,adimensional,
+B_radios,t=2e+08 s,imagen,extendida,,
+B_radios,t=2e+08 s,flujo_relativo,2.77778,proporción,Ley 1/D²
+B_radios,t=3.3e+08 s,distancia_D,3.4e+14,m,
+B_radios,t=3.3e+08 s,componentes_espaciales,2,grupos,
+B_radios,t=3.3e+08 s,extension_angular/umbral_550nm,2.206,adimensional,
+B_radios,t=3.3e+08 s,imagen,extendida,,
+B_radios,t=3.3e+08 s,flujo_relativo,8.65052,proporción,Ley 1/D²
+B_radios,t=4e+08 s,distancia_D,2e+14,m,
+B_radios,t=4e+08 s,componentes_espaciales,3,grupos,
+B_radios,t=4e+08 s,extension_angular/umbral_550nm,3.751,adimensional,
+B_radios,t=4e+08 s,imagen,extendida,,
+B_radios,t=4e+08 s,flujo_relativo,25,proporción,Ley 1/D²
+B_radios,t=4.9e+08 s,distancia_D,2e+13,m,
+B_radios,t=4.9e+08 s,componentes_espaciales,3,grupos,
+B_radios,t=4.9e+08 s,extension_angular/umbral_550nm,37.51,adimensional,
+B_radios,t=4.9e+08 s,imagen,extendida,,
+B_radios,t=4.9e+08 s,flujo_relativo,2500,proporción,Ley 1/D²
+B_radios,t=4.96e+08 s,distancia_D,8e+12,m,
+B_radios,t=4.96e+08 s,componentes_espaciales,4,grupos,
+B_radios,t=4.96e+08 s,extension_angular/umbral_550nm,93.77,adimensional,
+B_radios,t=4.96e+08 s,imagen,extendida,,
+B_radios,t=4.96e+08 s,flujo_relativo,15625,proporción,Ley 1/D²
+B_radios,t=4.99e+08 s,distancia_D,2e+12,m,
+B_radios,t=4.99e+08 s,componentes_espaciales,5,grupos,
+B_radios,t=4.99e+08 s,extension_angular/umbral_550nm,375.1,adimensional,
+B_radios,t=4.99e+08 s,imagen,extendida,,
+B_radios,t=4.99e+08 s,flujo_relativo,250000,proporción,Ley 1/D²
+B_transiciones,D_1,distancia,6.34738e+12,m,"5 componentes por debajo, 4 por encima"
+B_transiciones,D_2,distancia,9.16843e+12,m,"4 componentes por debajo, 3 por encima"
+B_transiciones,D_3,distancia,3.11021e+14,m,"3 componentes por debajo, 2 por encima"
+B_transiciones,D_4,distancia,3.67571e+14,m,"2 componentes por debajo, 1 por encima"
+B_transiciones,escalera,componentes_por_tramo,5-4-3-2-1,grupos,De cerca a lejos
+B_radios,alejamiento,componentes_en_orden_recorrido,5-4-3-3-2-1-1,grupos,
+B_radios,alejamiento,desplazamiento_relativo_transiciones,0.986746,adimensional,D_i(alejamiento)/D_i(acercamiento)
+B_espectro,receptor_ideal,peso_banda_450_nm,2.2,relativo,
+B_espectro,receptor_ideal,peso_banda_550_nm,2,relativo,
+B_espectro,receptor_ideal,peso_banda_650_nm,2.3,relativo,
+C_fases,"P=[3], nuevo=5",periodo_heredado_H,3,u,
+C_fases,"P=[3], nuevo=5",periodo_combinado_H2,15,u,
+C_fases,"P=[3], nuevo=5",clases_por_clase_heredada,5,clases,
+C_fases,"P=[3], nuevo=5",bits_que_cuesta,2.3219,bits,log2(m)
+C_fases,"P=[3], nuevo=5",bits_que_aporta,2.3219,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3], nuevo=5",eficiencia,1.0000,proporción,
+C_fases,"P=[3, 5], nuevo=9",periodo_heredado_H,15,u,
+C_fases,"P=[3, 5], nuevo=9",periodo_combinado_H2,45,u,
+C_fases,"P=[3, 5], nuevo=9",clases_por_clase_heredada,3,clases,
+C_fases,"P=[3, 5], nuevo=9",bits_que_cuesta,3.1699,bits,log2(m)
+C_fases,"P=[3, 5], nuevo=9",bits_que_aporta,1.5850,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3, 5], nuevo=9",eficiencia,0.5000,proporción,
+C_fases,"P=[3, 5, 9], nuevo=7",periodo_heredado_H,45,u,
+C_fases,"P=[3, 5, 9], nuevo=7",periodo_combinado_H2,315,u,
+C_fases,"P=[3, 5, 9], nuevo=7",clases_por_clase_heredada,7,clases,
+C_fases,"P=[3, 5, 9], nuevo=7",bits_que_cuesta,2.8074,bits,log2(m)
+C_fases,"P=[3, 5, 9], nuevo=7",bits_que_aporta,2.8074,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3, 5, 9], nuevo=7",eficiencia,1.0000,proporción,
+C_fases,"P=[3, 5, 7], nuevo=9",periodo_heredado_H,105,u,
+C_fases,"P=[3, 5, 7], nuevo=9",periodo_combinado_H2,315,u,
+C_fases,"P=[3, 5, 7], nuevo=9",clases_por_clase_heredada,3,clases,
+C_fases,"P=[3, 5, 7], nuevo=9",bits_que_cuesta,3.1699,bits,log2(m)
+C_fases,"P=[3, 5, 7], nuevo=9",bits_que_aporta,1.5850,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3, 5, 7], nuevo=9",eficiencia,0.5000,proporción,
+C_fases,"P=[3, 5, 7, 9], nuevo=9",periodo_heredado_H,315,u,
+C_fases,"P=[3, 5, 7, 9], nuevo=9",periodo_combinado_H2,315,u,
+C_fases,"P=[3, 5, 7, 9], nuevo=9",clases_por_clase_heredada,1,clases,
+C_fases,"P=[3, 5, 7, 9], nuevo=9",bits_que_cuesta,3.1699,bits,log2(m)
+C_fases,"P=[3, 5, 7, 9], nuevo=9",bits_que_aporta,0.0000,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3, 5, 7, 9], nuevo=9",eficiencia,0.0000,proporción,
+C_fases,"P=[3, 5], nuevo=5",periodo_heredado_H,15,u,
+C_fases,"P=[3, 5], nuevo=5",periodo_combinado_H2,15,u,
+C_fases,"P=[3, 5], nuevo=5",clases_por_clase_heredada,1,clases,
+C_fases,"P=[3, 5], nuevo=5",bits_que_cuesta,2.3219,bits,log2(m)
+C_fases,"P=[3, 5], nuevo=5",bits_que_aporta,0.0000,bits,"log2(m/mcd(H,m))"
+C_fases,"P=[3, 5], nuevo=5",eficiencia,0.0000,proporción,
+C_fases,periodo=3,lambda,600,nm,
+C_fases,periodo=3,periodo_en_distancia,300,nm,
+C_fases,periodo=5,lambda,1000,nm,
+C_fases,periodo=5,periodo_en_distancia,500,nm,
+C_fases,periodo=7,lambda,1400,nm,
+C_fases,periodo=7,periodo_en_distancia,700,nm,
+C_fases,periodo=9,lambda,1800,nm,
+C_fases,periodo=9,periodo_en_distancia,900,nm,
+D_economia,"ventana=[0,630)u",bits_para_ubicar_una_posicion,9.2992,bits,
+D_economia,"P=[3, 5]",firmas_distintas,15,clases,
+D_economia,"P=[3, 5]",posiciones_por_firma,42,posiciones,
+D_economia,"P=[3, 5]",bits_que_distingue,3.9069,bits,
+D_economia,"P=[3, 5]",bits_guardados,3.9069,bits,suma de log2(p)
+D_economia,"P=[3, 5]",bits_redundantes,0.0000,bits,
+D_economia,"P=[3, 5, 9]",firmas_distintas,45,clases,
+D_economia,"P=[3, 5, 9]",posiciones_por_firma,14,posiciones,
+D_economia,"P=[3, 5, 9]",bits_que_distingue,5.4919,bits,
+D_economia,"P=[3, 5, 9]",bits_guardados,7.0768,bits,suma de log2(p)
+D_economia,"P=[3, 5, 9]",bits_redundantes,1.5850,bits,
+D_economia,"P=[5, 7, 9]",firmas_distintas,315,clases,
+D_economia,"P=[5, 7, 9]",posiciones_por_firma,2,posiciones,
+D_economia,"P=[5, 7, 9]",bits_que_distingue,8.2992,bits,
+D_economia,"P=[5, 7, 9]",bits_guardados,8.2992,bits,suma de log2(p)
+D_economia,"P=[5, 7, 9]",bits_redundantes,0.0000,bits,
+D_economia,"P=[3, 5, 7, 9]",firmas_distintas,315,clases,
+D_economia,"P=[3, 5, 7, 9]",posiciones_por_firma,2,posiciones,
+D_economia,"P=[3, 5, 7, 9]",bits_que_distingue,8.2992,bits,
+D_economia,"P=[3, 5, 7, 9]",bits_guardados,9.8842,bits,suma de log2(p)
+D_economia,"P=[3, 5, 7, 9]",bits_redundantes,1.5850,bits,
+D_economia,"P=[3, 5, 7, 9]",base_minima,"{5,7,9}",periodos,Potencias máximas de primos de H
+D_economia,"P=[3, 5, 9], consulta x mod 3",respondida_con_lo_heredado,1,bool,
+D_economia,"P=[3, 5, 9], consulta x mod 9",respondida_con_lo_heredado,1,bool,
+D_economia,"P=[3, 5, 9], consulta x mod 15",respondida_con_lo_heredado,1,bool,
+D_economia,"P=[3, 5, 9], consulta x mod 45",respondida_con_lo_heredado,1,bool,
+D_economia,"P=[3, 5, 9], consulta x mod 2",respondida_con_lo_heredado,0,bool,
+D_economia,"P=[3, 5, 9], consulta x mod 7",respondida_con_lo_heredado,0,bool,
+E_reapertura,A,posiciones_distintas,5,posiciones,
+E_reapertura,B,posiciones_distintas,3,posiciones,
+E_reapertura,A_lejos,componentes_espaciales,1,grupos,
+E_reapertura,B_lejos,componentes_espaciales,1,grupos,
+E_reapertura,A_cerca,componentes_espaciales,5,grupos,
+E_reapertura,B_cerca,componentes_espaciales,3,grupos,
+E_reapertura,A_lejos,extension_angular/umbral_550nm,0.7501,adimensional,
+E_reapertura,B_lejos,extension_angular/umbral_550nm,0.7501,adimensional,
+E_reapertura,A_vs_B_lejos,diferencia_de_centroides,1.538e-10,rad,
+E_reapertura,A_vs_B_lejos,diferencia_de_centroides/umbral_550nm,0.0001154,adimensional,

@@ -13,3 +13,4 @@ review_requests/2026-11-02_G01_gravity/*.pdf binary
 review_requests/2026-11-03_cruce_reflejo_central/** -text
 review_requests/2026-11-03_intercambio_par_eth/** -text
 received_feedback/*.txt -text
+laboratorios/laboratorio_optica_radios_v5_1/** -text
