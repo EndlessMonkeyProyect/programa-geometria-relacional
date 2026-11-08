@@ -1,0 +1,3 @@
+numpy>=1.24
+networkx>=3.2
+matplotlib>=3.7  # opcional: solo para fusion_optica.png

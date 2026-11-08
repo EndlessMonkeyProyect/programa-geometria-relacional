@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## La economía del cálculo desde las relaciones entre referencias · 8 de noviembre de 2026
+
+La [nueva entrega bilingüe](2026-11-08_economia_del_calculo/README.md) reúne el [informe en español](2026-11-08_economia_del_calculo/informe.md), su [versión inglesa](2026-11-08_economia_del_calculo/report.md), un laboratorio reproducible y sus resultados. También conserva una [copia de lectura independiente](2026-11-08_economia_del_calculo/La_economia_del_calculo_desde_las_relaciones_entre_referencias_2026-11-08.md) del manuscrito español; el informe del paquete es la referencia. El trabajo relaciona particiones, rango de corte, simetría y óptica con la economía del cálculo. No presenta una nueva cota de complejidad.
+
 ## El cruce como reflejo central · 3 de noviembre de 2026
 
 La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) reúne el paper [*El cruce como reflejo central*](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.md) ([PDF](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.pdf)), el ensayo [«La caja de espejos» v0.3](2026-11-03_cruce_reflejo_central/articulo/La_caja_de_espejos_v0.3_2026-11-03.md), las [notas del 3 de noviembre](2026-11-03_cruce_reflejo_central/articulo/Notas_2026-11-03.md) sobre particiones y el origen del tetraedro, y cinco verificadores reproducibles. Mide la pieza que descompone el algoritmo de Claude (2026), el cruce: la ganancia viene de repartirlo entre dos cortes, los cruces ocupan el tetraedro del programa y, en la duplicación por reflexión, solo el 8 lo abarata. Son teoremas clásicos dichos en el lenguaje del programa; no es un algoritmo propio ni un reclamo de prioridad, y la equivalencia algorítmica sigue abierta. La [solicitud de verificación](review_requests/2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) pide revisar la reproducibilidad, las pruebas y la precedencia documental.
