@@ -2,11 +2,11 @@
 
 [Read this repository in English](README.en.md).
 
-## La economía del cálculo desde las relaciones entre referencias · 8 de noviembre de 2026
+## La economía del cálculo desde las relaciones entre referencias · versión 2, 8 de noviembre de 2026
 
-La [nueva entrega bilingüe](2026-11-08_economia_del_calculo/README.md) reúne el [informe en español](2026-11-08_economia_del_calculo/informe.md), su [versión inglesa](2026-11-08_economia_del_calculo/report.md), un laboratorio reproducible y sus resultados. También conserva una [copia de lectura independiente](2026-11-08_economia_del_calculo/La_economia_del_calculo_desde_las_relaciones_entre_referencias_2026-11-08.md) del manuscrito español; el informe del paquete es la referencia. El trabajo relaciona particiones, rango de corte, simetría y óptica con la economía del cálculo. No presenta una nueva cota de complejidad.
+La [entrega bilingüe v2](2026-11-08_economia_del_calculo/README.md) reúne el [informe en español](2026-11-08_economia_del_calculo/informe.md), su [versión inglesa](2026-11-08_economia_del_calculo/report.md), el laboratorio reproducible y sus resultados. El [registro de cambios](2026-11-08_economia_del_calculo/CAMBIOS.md) explica las revisiones; la [solicitud de revisión](review_requests/2026-11-08_economia_del_calculo/LEER_PRIMERO.md) pregunta por los órdenes mínimos de las recurrencias de una rejilla de tres colores. El informe español es la referencia. No se presenta una nueva cota de complejidad.
 
-[Versión en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-08-economia-del-calculo) · [Registro en Zenodo y DOI](https://doi.org/10.5281/zenodo.24063282).
+[Versión v2 en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-08-economia-del-calculo-v2) · [Registro v2 en Zenodo y DOI](https://doi.org/10.5281/zenodo.24072932).
 
 ## Laboratorios reproducibles
 

@@ -1,20 +1,23 @@
 # The economy of computation from relations between references
 
-Endless Monkey Project · Relational Geometry Program · November 8, 2026 · Le Matt Ansatz Di Ego
+Endless Monkey Project  
+Relational Geometry Program
+
+November 8, 2026 · version 2
 
 *English version of `informe.md`. If the two differ, the Spanish text is the reference.*
 
 ## Summary
 
-This report looks for where the economy of computation lies and whether the relational reading points to it. It competes with no one: it observes what coincides and what differs with the October 2026 work on 3-SAT. The short answer is that it points to the right place, and that gathering distinctions is not enough to get there.
+This report looks for where the economy of computation lies and whether the relational reading points to it. It observes what coincides and what differs with the October 2026 work on 3-SAT. The short answer is that it points to the right place, and that gathering distinctions is not enough to get there.
 
 1. **The economy exists and has an exact measure.** The distinctions that must stay active are the rank of the relation between what has been decided and what is pending. They are set by the boundary, not by the size: the same form physics found when it bounded the information of a region by its border (§3).
-2. **What is shared and what is pending is the Chinese remainder theorem.** The lcm/gcd law is exact when the two references permute, that is, when there is reflection x − y + z. Outside that case it fails, with a four-element counterexample (§2).
-3. **Gathering configurations has a proven limit.** A reference valid for every future cannot gather anything. On expander graphs, no order goes below 2^Ω(n) distinctions (§4, §6).
-4. **There are families with exact economy.** Small separators, relations closed under reflection, and large symmetries. In the hypercube, 2^n states reduce to n + 1 classes; in the three-colour grid of width 10, 1536 states → 136 orbits → 51, the exact minimum for counting (§5).
+2. **What is shared and what is pending is the Chinese remainder theorem.** The lcm/gcd law is exact when the two references permute, that is, when there is reflection x − y + z, and their blocks are homogeneous. Under permutation, the deviation is exactly k²·Cov(p\_J, q\_J); without permutation, the law already fails on four elements (§2).
+3. **Gathering configurations has a proven limit.** A reference valid for every future cannot gather anything. On expander graphs, every order has some cut with 2^Ω(n) distinctions (§4, §6).
+4. **There are families with exact economy.** Small separators, relations closed under reflection, and large symmetries. In the hypercube, 2^n states reduce to n + 1 classes; in the three-colour grid of width 10, 1536 states → 136 orbits → 51, the dimension of the minimal linear representation of the count (§5).
 5. **Optics has the same structure.** The ℓ-th distinction merges at a distance R ∝ ε^(−1/ℓ), with measured slopes 0.998 · 0.499 · 0.333 · 0.253. For a distant galaxy, the angular reference collapses into one point and what is pending arrives as frequency (§7).
 6. **The October works coincide on where the economy is and differ on how.** OpenAI changes the reference until almost nothing crosses between the parts and returns exactly through the Chinese remainder theorem. Anthropic saves through a signed reflection, SWAP = I − 2·singlet. Neither gathers configurations (§8).
-7. **The coincidence is not a proof.** It shows that the questions of the ontology point to where the real economy is. That advantage, moreover, only appears at scales far beyond the \~10^80 atoms of the observable universe (§8).
+7. **The coincidence orients.** It shows that the questions of the ontology point to where the real economy is. That advantage, moreover, only appears at scales far beyond the \~10^80 atoms of the observable universe (§8).
 
 The most promising open route is to formalize the “±1” as a signed decomposition that lowers the rank of an operation (§10).
 
@@ -57,7 +60,7 @@ The rule lcm(H, m)/H = m/gcd(H, m) is the Chinese remainder theorem for two refe
 
 *Proof.* Each block of P ∧ Q is the non-empty intersection of a block of P and a block of Q, both inside the same J. There are at most p\_J·q\_J for each J. Equality says that every block of P meets every block of Q inside its J. That means that if x and z are in the same J, there is y with x P y Q z: P∘Q contains P ∨ Q. Since P∘Q is always contained in P ∨ Q, they are equal; the same holds for Q∘P. Conversely, if they permute, P∘Q is an equivalence, it coincides with P ∨ Q and every pair of blocks meets. ∎
 
-**Corollary 2.2 (product law).** If P and Q permute and are homogeneous (p\_J and q\_J equal for all J), then |P ∧ Q|·|P ∨ Q| = |P|·|Q|. The novelty inside each inherited block is constant and equal to |Q|/|P ∨ Q|.
+**Corollary 2.2 (product law).** If P and Q permute and k = |P ∨ Q|, then |P ∧ Q|·|P ∨ Q| = |P|·|Q| + k²·Cov\_J(p\_J, q\_J), with the covariance taken with equal weight for each block J. The product law |P ∧ Q|·|P ∨ Q| = |P|·|Q| holds exactly when that covariance vanishes; it suffices that p\_J or q\_J be equal for all J (homogeneity). With q\_J constant, the novelty inside each inherited block is constant and equal to |Q|/|P ∨ Q|. *Proof:* under permutation, |P ∧ Q| = Σ\_J p\_J q\_J by Proposition 2.1, and k·Σ\_J p\_J q\_J − (Σ\_J p\_J)(Σ\_J q\_J) = k²·Cov\_J(p\_J, q\_J). ∎
 
 For residues modulo H and m: P ∧ Q is the residue modulo the lcm and P ∨ Q the residue modulo the gcd. They permute because they are cosets of subgroups, and they are homogeneous by translation. The corollary gives lcm·gcd = H·m and novelty m/gcd. In the language of groups it is the second isomorphism theorem, \[K : K∩K′\] = \[K+K′ : K′\].
 
@@ -69,9 +72,9 @@ X/(P\wedge Q) \;\longrightarrow\; X/P \times_{X/(P\vee Q)} X/Q
 
 In the program’s words: what is shared is not paid twice, and what is pending is exactly what is missing. When they do not permute, pairs appear that agree on what is shared and correspond to no configuration. That is the mathematical form of incompatibility.
 
-**Counterexample.** On X = {1, 2, 3, 4}, let P = {123 | 4} and Q = {1 | 234}. Then |P ∧ Q| = 3 and |P ∨ Q| = 1, but |P|·|Q| = 4. The pair (block {4} of P, block {1} of Q) agrees on what is shared and its intersection is empty.
+**Counterexample.** On X = {1, 2, 3, 4}, let P = {123 | 4} and Q = {1 | 234}. Then |P ∧ Q| = 3 and |P ∨ Q| = 1, but |P|·|Q| = 4. The pair (block {4} of P, block {1} of Q) agrees on what is shared and its intersection is empty. The product law also requires zero covariance: P = {12 | 34 | 5} and Q = {13 | 24 | 5} permute and give |P ∧ Q|·|P ∨ Q| = 5·2 = 10 against |P|·|Q| = 9. The difference, 1, is k²·Cov with k = 2 (E1).
 
-**An example that fits.** A distant galaxy is distinguished with two independent references: its position in the sky and the frequency of its light. Distance coarsens only the first, until everything is gathered into one point; the second does not depend on distance. What stays distinguishable is what frequency separates. It is an example of the structure of Corollary 2.3, not a proof; the version with numbers is in §7.
+**An example that fits.** A distant galaxy is distinguished with two independent references: its position in the sky and the frequency of its light. Distance coarsens only the first, until everything is gathered into one point; the second does not depend on distance. What stays distinguishable is what frequency separates. It is an example of the structure of Corollary 2.3; the version with numbers is in §7.
 
 **Lab (E1).** The product law and uniform novelty hold for all H, m < 60. In 3000 random pairs of partitions of 7 elements, the inequality never fails and equality coincides with permutability in all 3000 cases (334 pairs permuted). In GF(2)^10, a new XOR equation always removes 0, 1/2 or all of the inherited solutions. A new clause removes fractions ranging from 0.035 to 0.146 depending on what was inherited: the novelty of a clause is not homogeneous.
 
@@ -99,7 +102,7 @@ The hierarchy is always: rank ≤ Nerode classes ≤ configurations of the past.
 
 **The boundary, not the volume.** Proposition 3.4 says that the logarithm of the active distinctions does not exceed the size of the boundary, however many variables lie behind it. Physics reached a similar form by another path. The Bekenstein bound and the holographic principle bound the information of a region by the area of its border. In one-dimensional gapped quantum systems, entanglement entropy obeys an “area law” (Hastings, 2007).
 
-With the latter the connection is exact: the cut rank is the Schmidt rank of a state, and the tensor networks that describe those states are the same ones Anthropic’s algorithm uses (§8). With holography it is a coincidence of form, not a proven equivalence.
+With the latter the connection is exact: the cut rank is the Schmidt rank of a state, and the tensor networks that describe those states are the same ones Anthropic’s algorithm uses (§8). With holography it is a coincidence of form.
 
 **Proposition 3.5 (novelty is bounded by the new relation).** Adding a constraint C multiplies the cut matrix entrywise: M → M ∘ M\_C. Since rank(M ∘ N) ≤ rank(M)·rank(N), the novelty that C introduces is at most rank(M\_C). A constraint that does not cross the cut has rank 1 and adds nothing; a clause that crosses it has rank ≤ 2 and at most doubles. It is the analogue of m/gcd(H, m) ≤ m: novelty never exceeds the relation that brings it.
 
@@ -163,40 +166,57 @@ If the positions change at different rates, the economy disappears. With rates 1
 
 **5.5 The three-colour grid, reconstructed (E5).** The 3-colourings of a column of 10 cells number 3·2^9 = 1536. The group is S3 (permuting colours) × Z2 (reversing the column), of order 12. Burnside gives 136 orbits, above the bound 1536/12 = 128. That is result B of the program, and it now has its exact explanation.
 
-But 136 is not the minimum for counting. The Krylov dimension of the space spanned by T^k·1, computed exactly over the rationals, is 51. It coincides with the rank modulo two primes and with the Hankel rank of the sequence. Since T is symmetric, the Hankel rank is exactly that dimension.
+The count admits a linear representation smaller than the 136 orbits. Let b\_k = 1ᵀ·T^k·1, the count for k + 1 columns. Since T is symmetric, the Hankel matrix H\_N with entries b\_(i+j) is the Gram matrix of the first N Krylov vectors T^i·1. In exact arithmetic, det H\_51 ≠ 0 and det H\_52 = 0. The Krylov dimension is 51, the same as computed over the rationals (E5x), and the minimal recurrence valid for every m ≥ 1 has order 51. The shifted Hankel matrix, with entries b\_(1+i+j), is also nonsingular: the recurrence has no zero root, and no shorter one holds from m = 2 on (E5c).
 
-By the minimal realization theorem (Kronecker), no linear representation of the sequence a\_m = 1ᵀ·T^(m−1)·1 has fewer than 51 states, and the sequence satisfies a linear recurrence of order 51. The counts from the quotient match the full ones: 1536 · 118,098 · 10,107,954 · 896,895,828 · 80,796,885,414 for m = 1…5.
+By the minimal realization theorem (Kronecker), no linear representation of the sequence a\_m = 1ᵀ·T^(m−1)·1 has fewer than 51 states. The counts from the quotient match the full ones: 1536 · 118,098 · 10,107,954 · 896,895,828 · 80,796,885,414 for m = 1…5.
 
-The hierarchy is 1536 (the structure) → 136 (what symmetry gathers) → 51 (what the query needs). The natural economy is set by the query, not by the symmetry. Whether 51 already appears in the transfer-matrix literature remains to be checked.
+The hierarchy is 1536 (the structure) → 136 (what symmetry gathers) → 51 (the dimension of the minimal linear representation of the count, over the rationals). For linear representations, the economy is set by the query. The same certificate gives the minimal order for every width (E5c):
+
+| Width w | Columns | Orbits under S₃ × Z₂ | Minimal order |
+| --- | --- | --- | --- |
+| 1 | 3 | 1 | 1 |
+| 2 | 6 | 1 | 1 |
+| 3 | 12 | 2 | 2 |
+| 4 | 24 | 3 | 3 |
+| 5 | 48 | 6 | 5 |
+| 6 | 96 | 10 | 7 |
+| 7 | 192 | 20 | 13 |
+| 8 | 384 | 36 | 19 |
+| 9 | 768 | 72 | 35 |
+| 10 | 1536 | 136 | 51 |
+
+The orders 7 and 13 for widths 6 and 7 match the recurrences published in the OEIS, [A207995](https://oeis.org/A207995) and [A207996](https://oeis.org/A207996), with generating functions by R. J. Mathar (2015). The counting table [A207997](https://oeis.org/A207997) includes widths beyond 7, but does not by itself give the minimal recurrence orders for widths 8 to 10. Whether the sequence of orders 1, 1, 2, 3, 5, 7, 13, 19, 35, 51 has a known explanation, and whether the orders for widths 8 to 10 appear in the transfer-matrix literature, remains open.
 
 ## 6. Families where the reduction is impossible
 
-On expander graphs no order and no algebra of weights reduces the cut distinctions below 2^Ω(n). Even so, deciding can be trivial and counting can be cheap by another route: the magnitudes come apart.
+On expander graphs, for every order and every algebra of weights, some cut keeps 2^Ω(n) distinctions. Even so, deciding can be trivial and counting can be cheap by another route: the magnitudes come apart.
 
 **Theorem 6.1.** Let G\_n be a family of graphs of degree ≤ d in which every partition with both sides of at least n/3 vertices is crossed by at least h·n edges (expanders). Let φ\_n be its monotone 2-CNF.
 
 1. *Deciding* costs O(1): setting everything to 1 satisfies it.
 2. *Counting* is #P-complete for monotone 2-CNF of degree ≤ 3, because it is equivalent to counting independent sets (Greenhill, 2000). Whether it stays so when restricted to expanders remains open.
-3. *Representing* costs 2^Ω(n) for every variable order and every field K. The same holds for covers by rectangles (the nondeterministic version) and for representations with a variable tree.
+3. *Representing* costs 2^Ω(n): for every variable order and every field K, some cut has rank 2^Ω(n). The same holds for covers by rectangles (the nondeterministic version) and for representations with a variable tree.
 
 *Proof of 3.* The middle cut of any order is a partition with both sides of size n/2, so at least h·n edges cross it. Each chosen edge excludes at most 2d² neighbouring edges, so an induced matching of size μ ≥ h·n/(2d²) can be extracted. By Proposition 3.6, the rank is at least 2^μ. In a variable tree there is always a node separating between n/3 and 2n/3 variables, and the same argument applies there. ∎ The rectangle technique is the known one from knowledge compilation (Bova, Capelli, Mengel and Slivovsky, 2016).
 
 For small n, random 3-regular graphs are not yet good expanders, and that teaches something too. With n = 14, the E2 graph has a balanced cut crossed by only 3 edges, and its minimum rank is 4, the same as the cycle. With n = 16 the minimum rank rises to 10. What decides is not how many relations there are, but how many independent relations cross the best cut.
 
-**Theorem 6.2 (Tseitin: expensive representation, cheap counting).** A Tseitin formula puts a variable on each edge of a graph G and requires at each vertex that the parity of its edges equal a given charge. For the homogeneous case on a connected G and an edge cut (A, B), an exact formula holds for the cut rank:
+**Theorem 6.2 (Tseitin: expensive representation, cheap counting).** A Tseitin formula puts a variable on each edge of a graph G and requires at each vertex that the parity of its edges equal a given charge. For a connected G, any satisfiable charge and an edge cut (A, B), the cut rank is 2^λ(A), where λ(A) = r(A) + r(B) − r(E) is the connectivity function of the graphic matroid and r(S) = |V(S)| − c(S). In terms of the graph:
 
 ```math
 \log_2 \operatorname{rank} M_{A,B} \;=\; \beta + 1 - c_A - c_B
 ```
 
-Here β counts the vertices touching edges on both sides, and c\_A, c\_B the connected components of each side. *Proof:* the solutions form the cycle space, of dimension |E| − |V| + 1; the distinct rows number 2^(dim − dim(cycles inside A) − dim(cycles inside B)), and each term is Euler’s formula for its subgraph. ∎ It was checked on the 3003 balanced cuts of a graph with 10 vertices (E3b).
+Here β counts the vertices touching edges on both sides, and c\_A, c\_B the connected components of the graph formed by the edges of each side, with only the vertices those edges touch. *Proof:* each row of M\_(A,B) depends only on the parity that side A leaves on those β vertices. Rows with the same parity are equal and rows with different parities have disjoint supports, so M\_(A,B) is a direct sum of all-ones blocks. Its rank, over any field, is the number of parity vectors both sides can realize. Each side imposes one condition per component, and the c\_A + c\_B conditions have exactly one linear relation because G is connected. ∎
+
+With zero charge, the solutions form the cycle space and the formula is Forney’s state space theorem (1994) applied to the cycle code: dim C − dim C\_A − dim C\_B. The function λ is the same one that defines the trellis-width of a code from its matroid ([Kashyap, 2008](https://arxiv.org/pdf/0705.1384)). It was checked with the rank computed directly on the 3003 cuts with |A| = 7 of a 3-regular graph with 10 vertices, with zero charge and with a random satisfiable charge, and on 216 arbitrary cuts of random connected graphs (E3b). On a tree with zero charge there is a single solution and every cut has rank 1: the exponent is set by the graph.
 
 On expanders, every ordered decision diagram for a satisfiable Tseitin formula has size 2^Ω(n) (Itsykson and coauthors, 2017), and so does every nondeterministic read-once branching program (Glinskih–Itsykson, 2017). Yet Gaussian elimination counts its solutions in polynomial time. Changing the reference, from the sequential cut to linear algebra over GF(2), collapses the cost. Reducing operations does not require reducing distinctions.
 
 | Family | Decide | Count | Representation by order |
 | --- | --- | --- | --- |
-| Monotone 2-CNF, expander | O(1) | #P-complete at degree ≤ 3; 2^o(n) according to the October works | 2^Ω(n) for every order and field |
-| Tseitin, expander | Polynomial | Polynomial (Gauss) | 2^Ω(n) for every order |
+| Monotone 2-CNF, expander | O(1) | #P-complete at degree ≤ 3; 2^o(n) according to the October works | 2^Ω(n) on some cut of every order, over every field |
+| Tseitin, expander | Polynomial | Polynomial (Gauss) | 2^Ω(n) on some cut of every order |
 | Cycle | Linear | Linear | 4 states |
 | 3-colour grid, 10 × m | — | Linear in m | 51 states |
 | General 3-colouring | NP-complete | #P-complete | No bounded local closure (Mycielski) |
@@ -215,8 +235,6 @@ Three testable predictions follow. The order of fusion is fixed: 5 → 4 → 3 �
 
 ![Each distinction merges at R ∝ ε^(−1/ℓ)](optical_fusion.png)
 
-*Lab E6 · kernel 1/|y − x|, 600 observation points on the sphere of radius R, 300 distances between 1.05 r and 10⁴ r*
-
 The lab confirms all three. With ε = 10^−3 the fusions occur at R/r = 2.26 · 4.30 · 13.4 · 401. In the wave case (Fraunhofer, aperture of 20 wavelengths) the same staircase 5 → 1 appears.
 
 **The last bit before singularity.** The last distinction to merge, from two to one, is the dipole: the pattern that weighs each source by its position: those on one side with a plus sign, those on the other with a minus sign, and the central one with zero. The sources and the observation sphere are symmetric about the centre, so every combination is even or odd; the first, the total, is even, and the second is odd: a ±. It is the one that needs the most distance to merge (R/r ≈ 401 versus 13 at ε = 10^−3), and when it merges only the total remains: the structure becomes singular. In the program's language, the ± is the last bit before singularity. It follows from the symmetry and the multipole expansion, and E6 checks it: for R between 20 r and 400 r, the second singular vector is (−0.63 · −0.32 · 0 · 0.32 · 0.63), odd up to 10^−6 and proportional to position. That this bit is a sign is what links it to the route of §10.
@@ -232,7 +250,7 @@ The lab confirms all three. With ε = 10^−3 the fusions occur at R/r = 2.26 ·
 
 **The galaxy: what merges and what arrives.** Let A\_d be the angular reference at distance d and F the spectral reference. What is distinguished is their combination A\_d ∧ F. By the fusion law, A\_d coarsens as d grows until everything is gathered into a single block; F does not depend on d. In that limit A\_d ∧ F = F: what arrives is exactly what frequency separates.
 
-In the language of §2, the angular reference collapses into a singularity and what is pending between the two systems arrives as a spectrum. Brightness and its variation in time are further references that also survive. The example adds nothing to optics; it shows that the same structure of references appears in observation and in computation.
+In the language of §2, the angular reference collapses into a singularity and what is pending between the two systems arrives as a spectrum. Brightness and its variation in time are further references that also survive. The example shows that the same structure of references appears in observation and in computation.
 
 ## 8. What coincides and what differs with the October 2026 works
 
@@ -262,7 +280,7 @@ OpenAI deforms the function outside the Boolean space, and that is why Theorem 4
 
 **Scale.** The advantage of these algorithms is asymptotic. Anthropic computes that, with 5 clauses per variable, its bound does not improve on exhaustive search below about 10^10000 variables. The later paper lowers some thresholds; for #3-SAT with one clause per variable, to about 2^420 ≈ 10^126 clauses.
 
-All of them lie above the \~10^80 atoms of the observable universe. Lloyd (2002) estimated that the universe could have performed at most about 10^120 operations on about 10^90 bits. No physical structure realizes that regime. That does not make another method better at physical scale: claiming so would require measuring it against the best practical solvers.
+All of them lie above the \~10^80 atoms of the observable universe. Lloyd (2002) estimated that the universe could have performed at most about 10^120 operations on about 10^90 bits. No physical structure realizes that regime. At physical scale, the relevant comparison is against the best practical solvers.
 
 ## 9. Answers to the eight questions
 
@@ -277,7 +295,7 @@ All of them lie above the \~10^80 atoms of the observable universe. Lloyd (2002)
 
 ## 10. ROSI-style assessment
 
-Ten relations are resolved, four are open, five are superposed, and three had been closed prematurely. The most promising open route is the one of the sign.
+Eleven relations are resolved, four are open, five are superposed, and three had been closed prematurely. The most promising open route is the one of the sign.
 
 | Relation | Status | Basis |
 | --- | --- | --- |
@@ -288,36 +306,38 @@ Ten relations are resolved, four are open, five are superposed, and three had be
 | On expanders every representation by order costs 2^Ω(n) | Resolved (known technique) | Theorem 6.1, E2, E2b |
 | Gathering configurations does not reach the economy of the October algorithms on those families | Resolved, conditional on those works being correct | §8 |
 | Optical distinctions merge at R ∝ ε^(−1/ℓ) | Resolved in the static case | Prop. 7.1, E6 |
-| Grid of width 10: 1536 → 136 → 51 | Resolved (exact computation) | E5 |
+| Grid of width 10: 1536 → 136 → 51 | Resolved: det H\_51 ≠ 0 and det H\_52 = 0, exactly | §5.5, E5, E5x, E5c |
+| Tseitin cut rank = 2^λ(A), with λ the connectivity of the graphic matroid | Resolved (already formulated: Forney, Kashyap) | Theorem 6.2, E3b |
 | Hypercube: 2^n states → n + 1 exact classes; with different rates the closure stops being operational | Resolved | §5.4, E11 |
 | The last distinction before singularity is the dipole, a ± | Resolved in the symmetric case | §7, E6 |
 | Formalizing the “unresolved ±1” as a signed decomposition that lowers the rank of an operation | Open: the most promising route | §8 |
 | Does optical lab v5.1, with its angular criterion, follow the ε^(−1/ℓ) law? | Open, narrowed: if it counts maxima, it follows the scale-space law and not ε^(−1/ℓ) (§12) | §7 |
-| Is the grid’s 51 already published? | Open | §5 |
+| Does the sequence of orders 1, 1, 2, 3, 5, 7, 13, 19, 35, 51 have an explanation? | Open: widths 6 and 7 match the OEIS; widths 8 to 10 are not listed there yet | §5.5, E5c |
 | Validity of the October works | Open: Lean reproduced, expert review pending | §8 |
-| The October works coincide with the ontology | Superposed: the mechanism coincides (change of reference and Chinese remainder theorem; signed reflection), it does not prove the ontology | §8 |
+| The October works coincide with the ontology | Superposed: the mechanism coincides (change of reference and Chinese remainder theorem; signed reflection) | §8 |
 | The boundary sets the distinctions, as the border sets information in physics | Superposed: exact with the Schmidt rank; with holography it is a coincidence of form | §3 |
-| The galaxy: the angular merges and the frequency remains | Superposed: an example that fits with two references, not a proof | §2, §7 |
+| The galaxy: the angular merges and the frequency remains | Superposed: an example that fits with two references | §2, §7 |
 | Reflection as x − y + z (permutability, compact frames) or as the involution I − 2P (signed cancellation) | Superposed: both formalize reflection and give different economies | §5, §8 |
 | Inheritance as refinement of partitions or as entrywise product of cut matrices | Superposed: the same fact at two levels | §2, Prop. 3.5 |
 | “Reducing observables reduces operations” | Prematurely closed: fails in both directions | Tseitin (§6), October (§8) |
 | “The economy arises from the relation without external decision” | Half prematurely closed: the minimum is canonical, but finding it is coNP-hard and the choice of reference decides the cost (256 versus 2 in E9) | §3, §4 |
 | “The local symmetries of 3-SAT are the information that remains” | Prematurely closed: what remains is the cut rank; no symmetry goes below it | Prop. 3.7, E10 |
 
-The route of the sign, concretely: look for an identity of the type X = Σ\_j (−1)^j·c\_j·O\_j where each O\_j has a smaller cut rank than X, like SWAP = I − 2·singlet. The tetrahedron, the mirror cube and the program’s “±1” could supply candidates for those identities. Their value is measured by a number: the tensor rank of the resulting operation.
+The route of the sign, concretely: look for identities X = Σ\_j s\_j·c\_j·O\_j with s\_j ∈ {−1, +1}, like SWAP = I − 2·P₋, where P₋ projects onto the antisymmetric subspace (the singlet). Lower cut rank for each O\_j is easy to achieve: every matrix decomposes into rank-one terms, sometimes too many. Real economy also requires bounds on how many terms there are, how they are found, what it costs to evaluate and recombine them, and exactness across the whole input family. The tetrahedron, the mirror cube and the program’s “±1” can supply candidates. Their value is measured by the total cost of the resulting operation, starting with its tensor rank.
 
 ## 11. Reproducible lab
 
-A single script, `laboratorio_economia_relacional.py`, reproduces every figure of the report in about 4 minutes with numpy and networkx. Run it with `python3 -I laboratorio_economia_relacional.py`; it writes `resultados_laboratorio.json`. For a single experiment: `python3 -I laboratorio_economia_relacional.py E5`. Output keys are in Spanish.
+A single script, `laboratorio_economia_relacional.py`, reproduces every figure of the report in about 4 minutes with numpy and networkx. Run it with `python3 -I laboratorio_economia_relacional.py`; it writes `resultados_laboratorio.json`. For the grid: `python3 -I laboratorio_economia_relacional.py E5 E5x E5c`. Output keys are in Spanish.
 
 | Experiment | What it checks | Result |
 | --- | --- | --- |
-| E1 | lcm/gcd law and inheritance inequality | Exact for H, m < 60; equality ⇔ permutation in 3000/3000 pairs; counterexample 3·1 ≠ 2·2 |
+| E1 | lcm/gcd law and inheritance inequality | Exact for H, m < 60; equality ⇔ permutation in 3000/3000 pairs; counterexample 3·1 ≠ 2·2; under permutation, deviation = k²·Cov in 334 of 334 pairs; {12\|34\|5} and {13\|24\|5}: 5·2 ≠ 3·3 |
 | E2 | Minimum rank over all balanced cuts, monotone 2-CNF | 3-regular graph: 5, 4, 7, 4, 10 for n = 8…16; cycle: always 4 |
 | E2b | 2^μ ≤ rank ≤ 2^boundary + 1 | Holds on 126 + 462 cuts |
 | E3/E4 | XOR system: reflection, rectangles, frame | 64 solutions by brute force and by Gauss; 7 points generate 64 |
-| E3b | Tseitin formula β + 1 − c\_A − c\_B | Exact on 3003 cuts |
+| E3b | Tseitin: direct rank = 2^λ(A) = 2^(β + 1 − c\_A − c\_B) | Exact on 3003 cuts with zero and with random charge, and on 216 cuts of random graphs; tree: rank 1 |
 | E5 | 3-colour grid, width 10 | 1536 → 136 orbits → Krylov 51 (exact over Q and modulo 2 primes) |
+| E5c | Certified minimal order, widths 1 to 10 | det H\_d ≠ 0, det H\_(d+1) = 0, no zero root; orders 1, 1, 2, 3, 5, 7, 13, 19, 35, 51 |
 | E6 | Optics as ε-rank | Staircase 5 → 1; slopes 0.998 · 0.499 · 0.333 · 0.253; the last distinction is the dipole, odd |
 | E9 | Same structure, another order | Rank 256 versus 2; count 6561 in both |
 | E10 | Symmetries of random 3-CNF | 30 of 30 with trivial group |
@@ -326,7 +346,7 @@ A single script, `laboratorio_economia_relacional.py`, reproduces every figure o
 
 With matplotlib installed, the lab also draws the figure of the fusion law, in Spanish (`fusion_optica.png`) and in English (`optical_fusion.png`).
 
-Ranks modulo p are lower bounds of the rational rank. Where equality matters (E5) the exact rank over the rationals was also computed.
+Ranks modulo p are lower bounds of the rational rank. Where equality matters (E5x) the exact rank over the rationals was also computed. In E5c, a determinant that is nonzero modulo p is nonzero over the integers, and the vanishing determinant is computed exactly.
 
 ## 12. Comparison with two independent investigations
 
@@ -358,6 +378,8 @@ B proposes a concrete, open generalization of inheritance to vector phases in �
 
 **What the comparison clarifies: two different optical laws.** B’s criterion counts maxima under blur and is local: the weak or close sources disappear first (here 2.5, then −1.6, then 4.4 and finally −4.2), with thresholds proportional to the separations. This report’s criterion counts independent combinations above noise and is global: it removes multipole orders, with thresholds R ∝ ε^(−1/ℓ). Both give 5 → 1, but they measure different things: which sources remain visible and how many combinations remain measurable. If lab v5.1 uses angular resolution, its law is the scale-space one, not ε^(−1/ℓ).
 
+**Later review.** An external review on November 8 pointed out four precisions, now incorporated. The product law requires permutation and zero covariance (Corollary 2.2). On expanders, every order has some cut of exponential rank (Theorem 6.1). The Tseitin formula is the connectivity function of the graphic matroid, and the exponential bound belongs to satisfiable families on expanders (Theorem 6.2). The order 51 is certified by Hankel determinants (§5.5). A second reading, of version 2, specified that 51 is the dimension of the minimal linear representation of the count over the rationals, and separated the proven computation from the question of its antecedents.
+
 ## Sources
 
 **The October 2026 works and their status (pages consulted on November 8, 2026)**
@@ -367,6 +389,9 @@ B proposes a concrete, open generalization of inheritance to vector phases in �
 - R. Majdoddin, *Lowered crossover points of Anthropic’s subexponential 3-SAT algorithm*, October 30, 2026: [arXiv 2610.41622](https://arxiv.org/html/2610.41622)
 - Verification status as of November 7: [ShiftDelete](https://shiftdelete.net/en/exponential-time-hypothesis)
 - Bounds for Tseitin formulas in read-once programs: [Glinskih–Itsykson, MFCS 2017](https://drops.dagstuhl.de/opus/volltexte/2017/8076/) and [ECCC TR19-020](https://eccc.weizmann.ac.il/report/2019/020/download), which summarizes the result of Itsykson and coauthors (STACS 2017) for ordered diagrams
+- State space theorem: G. D. Forney, *Dimension/length profiles and trellis complexity of linear block codes*, IEEE Trans. Inf. Theory 40(6), 1741–1752, 1994
+- Connectivity function and trellis-width: [N. Kashyap, *Matroid pathwidth and code trellis complexity*, arXiv:0705.1384](https://arxiv.org/pdf/0705.1384)
+- Recurrences for 3-colourings of grids in the OEIS: [A207995](https://oeis.org/A207995) (width 6), [A207996](https://oeis.org/A207996) (width 7) and the table [A207997](https://oeis.org/A207997)
 
 **Classical literature cited (standard references, no link)**
 

@@ -7,6 +7,15 @@
   "violaciones_desigualdad": 0,
   "igualdad_sii_permutan_(casos_que_cumplen)": 3000,
   "pares_que_permutan": 334,
+  "con_permutacion:_|P∧Q||P∨Q|−|P||Q|_=_k²·Cov(p_J,q_J)": true,
+  "pares_que_permutan_y_cumplen_|P∧Q||P∨Q|=|P||Q|": 176,
+  "identidad_de_producto_sii_covarianza_nula_(casos)": 334,
+  "contraejemplo_producto_{12|34|5}_{13|24|5}": {
+   "permutan": true,
+   "|P∧Q|": 5,
+   "|P∨Q|": 2,
+   "|P|·|Q|": 9
+  },
   "contraejemplo_{123|4}_{1|234}": {
    "|P|": 2,
    "|Q|": 2,
@@ -66,6 +75,185 @@
    896895828,
    80796885414
   ]
+ },
+ "E5c_certificado_orden_minimo": {
+  "ancho=1": {
+   "columnas": 3,
+   "orbitas_S3xZ2": 1,
+   "orden_minimo": 1,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    3,
+    6,
+    12
+   ]
+  },
+  "ancho=2": {
+   "columnas": 6,
+   "orbitas_S3xZ2": 1,
+   "orden_minimo": 1,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    6,
+    18,
+    54
+   ]
+  },
+  "ancho=3": {
+   "columnas": 12,
+   "orbitas_S3xZ2": 2,
+   "orden_minimo": 2,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    12,
+    54,
+    246
+   ]
+  },
+  "ancho=4": {
+   "columnas": 24,
+   "orbitas_S3xZ2": 3,
+   "orden_minimo": 3,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    24,
+    162,
+    1122
+   ]
+  },
+  "ancho=5": {
+   "columnas": 48,
+   "orbitas_S3xZ2": 6,
+   "orden_minimo": 5,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    48,
+    486,
+    5118
+   ]
+  },
+  "ancho=6": {
+   "columnas": 96,
+   "orbitas_S3xZ2": 10,
+   "orden_minimo": 7,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    96,
+    1458,
+    23346
+   ]
+  },
+  "ancho=7": {
+   "columnas": 192,
+   "orbitas_S3xZ2": 20,
+   "orden_minimo": 13,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    192,
+    4374,
+    106494
+   ]
+  },
+  "ancho=8": {
+   "columnas": 384,
+   "orbitas_S3xZ2": 36,
+   "orden_minimo": 19,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    384,
+    13122,
+    485778
+   ]
+  },
+  "ancho=9": {
+   "columnas": 768,
+   "orbitas_S3xZ2": 72,
+   "orden_minimo": 35,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_3": [
+    768,
+    39366,
+    2215902
+   ]
+  },
+  "ancho=10": {
+   "columnas": 1536,
+   "orbitas_S3xZ2": 136,
+   "orden_minimo": 51,
+   "certificado": {
+    "det_H_d_no_nulo": true,
+    "det_H_d+1_cero_exacto": true,
+    "sin_raiz_nula_(det_H'_d_no_nulo)": true
+   },
+   "a_1..a_5": [
+    1536,
+    118098,
+    10107954,
+    896895828,
+    80796885414
+   ]
+  },
+  "ordenes_por_ancho": [
+   1,
+   1,
+   2,
+   3,
+   5,
+   7,
+   13,
+   19,
+   35,
+   51
+  ],
+  "orbitas_por_ancho": [
+   1,
+   1,
+   2,
+   3,
+   6,
+   10,
+   20,
+   36,
+   72,
+   136
+  ],
+  "todo_certificado": true
  },
  "E6_optica_rango_eps": {
   "estatico_escalera_rango_eps": {
@@ -206,12 +394,31 @@
   "2CNF_monotona_corte_rectangular": false
  },
  "E3b_tseitin": {
-  "validacion_V=10": {
+  "V=10_carga_nula": {
    "cortes": 3003,
-   "formula_exacta": true,
+   "rango_directo_=_2^(β+1−c_A−c_B)": true,
+   "β+1−c_A−c_B_=_λ(A)": true,
    "soluciones": 64,
-   "2^(E-V+1)": 64,
+   "2^(E−V+1)": 64,
    "min_rango_corte": 4
+  },
+  "V=10_carga_aleatoria": {
+   "cortes": 3003,
+   "rango_directo_=_2^(β+1−c_A−c_B)": true,
+   "β+1−c_A−c_B_=_λ(A)": true,
+   "soluciones": 64,
+   "2^(E−V+1)": 64,
+   "min_rango_corte": 4
+  },
+  "grafos_aleatorios_cortes_arbitrarios": {
+   "cortes": 216,
+   "rango_=_2^λ(A)": true
+  },
+  "arbol_12_vertices": {
+   "soluciones": 1,
+   "rangos_de_corte": [
+    1
+   ]
   },
   "V=8_E=12": {
    "min_log2_rango_corte": 3,
@@ -289,7 +496,7 @@
     "min_filas_distintas": 5
    },
    "soluciones_3reg": 392,
-   "seg": 8.9
+   "seg": 8.7
   },
   "n=16": {
    "3-regular": {
@@ -301,7 +508,7 @@
     "min_filas_distintas": 5
    },
    "soluciones_3reg": 997,
-   "seg": 142.7
+   "seg": 138.4
   }
  },
  "E2b_cotas_por_corte": {
@@ -374,5 +581,5 @@
    ]
   }
  },
- "segundos_totales": 244.6
+ "segundos_totales": 250.1
 }

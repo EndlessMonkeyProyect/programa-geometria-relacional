@@ -1,20 +1,23 @@
 # La economía del cálculo desde las relaciones entre referencias
 
-Endless Monkey Project · Relational Geometry Program · 8 de noviembre de 2026 · Le Matt Ansatz Di Ego
+Endless Monkey Project  
+Relational Geometry Program
+
+8 de noviembre de 2026 · versión 2
 
 *Versión en inglés: `report.md`.*
 
 ## Resumen
 
-Este informe busca dónde está la economía del cálculo y si la lectura relacional apunta hacia ella. No compite con nadie: observa qué coincide y qué difiere con los trabajos de octubre de 2026 sobre 3-SAT. La respuesta corta es que apunta al lugar correcto, y que reunir distinciones no basta para llegar.
+Este informe busca dónde está la economía del cálculo y si la lectura relacional apunta hacia ella. Observa qué coincide y qué difiere con los trabajos de octubre de 2026 sobre 3-SAT. La respuesta corta es que apunta al lugar correcto, y que reunir distinciones no basta para llegar.
 
 1. **La economía existe y tiene medida exacta.** Las distinciones que deben quedar activas son el rango de la relación entre lo decidido y lo pendiente. Las fija la frontera, no el tamaño: la misma forma que la física encontró al acotar la información de una región por su borde (§3).
-2. **Lo común y lo pendiente es el teorema chino del resto.** La ley mcm/mcd es exacta cuando las dos referencias permutan, es decir, cuando hay reflexión x − y + z. Fuera de ahí falla, con un contraejemplo de cuatro elementos (§2).
-3. **Reunir configuraciones tiene un límite demostrado.** Una referencia válida para cualquier futuro no puede reunir nada. En grafos expansores, ningún orden baja de 2^Ω(n) distinciones (§4, §6).
-4. **Hay familias con economía exacta.** Separadores pequeños, relaciones cerradas bajo reflexión y simetrías grandes. En el hipercubo, 2^n estados se reducen a n + 1 clases; en la rejilla de tres colores de ancho 10, 1536 estados → 136 órbitas → 51, el mínimo exacto para contar (§5).
+2. **Lo común y lo pendiente es el teorema chino del resto.** La ley mcm/mcd es exacta cuando las dos referencias permutan, es decir, cuando hay reflexión x − y + z, y sus bloques son homogéneos. Con permutación, la desviación es exactamente k²·Cov(p\_J, q\_J); sin permutación, la ley falla ya con cuatro elementos (§2).
+3. **Reunir configuraciones tiene un límite demostrado.** Una referencia válida para cualquier futuro no puede reunir nada. En grafos expansores, todo orden tiene algún corte con 2^Ω(n) distinciones (§4, §6).
+4. **Hay familias con economía exacta.** Separadores pequeños, relaciones cerradas bajo reflexión y simetrías grandes. En el hipercubo, 2^n estados se reducen a n + 1 clases; en la rejilla de tres colores de ancho 10, 1536 estados → 136 órbitas → 51, la dimensión de la representación lineal mínima de la cuenta (§5).
 5. **La óptica tiene la misma estructura.** La distinción ℓ-ésima se funde a una distancia R ∝ ε^(−1/ℓ), con pendientes medidas 0,998 · 0,499 · 0,333 · 0,253. De una galaxia lejana, la referencia angular se reúne en un punto y lo pendiente llega como frecuencia (§7).
 6. **Los trabajos de octubre coinciden en dónde está la economía y difieren en cómo.** OpenAI cambia la referencia hasta que casi nada cruza entre las partes y vuelve exacto con el teorema chino del resto. Anthropic ahorra con una reflexión con signo, SWAP = I − 2·singlete. Ninguno reúne configuraciones (§8).
-7. **La coincidencia no es una prueba.** Muestra que las preguntas de la ontología apuntan donde está la economía real. Esa ventaja, además, solo aparece en escalas muy superiores a los \~10^80 átomos del universo observable (§8).
+7. **La coincidencia orienta.** Muestra que las preguntas de la ontología apuntan donde está la economía real. Esa ventaja, además, solo aparece en escalas muy superiores a los \~10^80 átomos del universo observable (§8).
 
 La ruta abierta con más futuro es formalizar el «±1» como una descomposición con signo que baje el rango de una operación (§10).
 
@@ -57,7 +60,7 @@ La regla mcm(H, m)/H = m/mcd(H, m) es el teorema chino del resto para dos refere
 
 *Prueba.* Cada bloque de P ∧ Q es la intersección no vacía de un bloque de P y uno de Q, ambos dentro del mismo J. Hay a lo sumo p\_J·q\_J por cada J. La igualdad dice que todo bloque de P corta a todo bloque de Q dentro de su J. Eso significa que si x y z están en el mismo J, existe y con x P y Q z: P∘Q contiene a P ∨ Q. Como P∘Q siempre está contenida en P ∨ Q, son iguales; lo mismo vale para Q∘P. Recíprocamente, si permutan, P∘Q es una equivalencia, coincide con P ∨ Q y todos los pares de bloques se cortan. ∎
 
-**Corolario 2.2 (ley del producto).** Si P y Q permutan y son homogéneas (p\_J y q\_J iguales en todos los J), entonces |P ∧ Q|·|P ∨ Q| = |P|·|Q|. La novedad dentro de cada bloque heredado es constante e igual a |Q|/|P ∨ Q|.
+**Corolario 2.2 (ley del producto).** Si P y Q permutan y k = |P ∨ Q|, entonces |P ∧ Q|·|P ∨ Q| = |P|·|Q| + k²·Cov\_J(p\_J, q\_J), con la covarianza tomada con el mismo peso para cada bloque J. La ley del producto |P ∧ Q|·|P ∨ Q| = |P|·|Q| vale exactamente cuando esa covarianza es nula; basta que p\_J o q\_J sea igual en todos los J (homogeneidad). Con q\_J constante, la novedad dentro de cada bloque heredado es constante e igual a |Q|/|P ∨ Q|. *Prueba:* con permutación, |P ∧ Q| = Σ\_J p\_J q\_J por la proposición 2.1, y k·Σ\_J p\_J q\_J − (Σ\_J p\_J)(Σ\_J q\_J) = k²·Cov\_J(p\_J, q\_J). ∎
 
 Para residuos módulo H y m: P ∧ Q es el residuo módulo mcm y P ∨ Q el residuo módulo mcd. Permutan porque son clases laterales de subgrupos, y son homogéneas por traslación. El corolario da mcm·mcd = H·m y novedad m/mcd. En lenguaje de grupos es el segundo teorema de isomorfía, \[K : K∩K′\] = \[K+K′ : K′\].
 
@@ -69,9 +72,9 @@ X/(P\wedge Q) \;\longrightarrow\; X/P \times_{X/(P\vee Q)} X/Q
 
 En palabras del programa: lo común no se paga dos veces, y lo pendiente es exactamente lo que falta. Cuando no permutan aparecen pares que coinciden en lo común y no corresponden a ninguna configuración. Esa es la forma matemática de la incompatibilidad.
 
-**Contraejemplo.** En X = {1, 2, 3, 4}, sea P = {123 | 4} y Q = {1 | 234}. Entonces |P ∧ Q| = 3 y |P ∨ Q| = 1, pero |P|·|Q| = 4. El par (bloque {4} de P, bloque {1} de Q) coincide en lo común y su intersección es vacía.
+**Contraejemplo.** En X = {1, 2, 3, 4}, sea P = {123 | 4} y Q = {1 | 234}. Entonces |P ∧ Q| = 3 y |P ∨ Q| = 1, pero |P|·|Q| = 4. El par (bloque {4} de P, bloque {1} de Q) coincide en lo común y su intersección es vacía. La ley del producto pide además covarianza nula: P = {12 | 34 | 5} y Q = {13 | 24 | 5} permutan, y dan |P ∧ Q|·|P ∨ Q| = 5·2 = 10 frente a |P|·|Q| = 9. La diferencia, 1, es k²·Cov con k = 2 (E1).
 
-**Un ejemplo que encaja.** Una galaxia lejana se distingue con dos referencias independientes: su posición en el cielo y la frecuencia de su luz. La distancia engruesa solo la primera, hasta reunir todo en un punto; la segunda no depende de la distancia. Lo que sigue distinguible es lo que la frecuencia separa. Es un ejemplo de la estructura del corolario 2.3, no una prueba; la versión con números está en el §7.
+**Un ejemplo que encaja.** Una galaxia lejana se distingue con dos referencias independientes: su posición en el cielo y la frecuencia de su luz. La distancia engruesa solo la primera, hasta reunir todo en un punto; la segunda no depende de la distancia. Lo que sigue distinguible es lo que la frecuencia separa. Es un ejemplo de la estructura del corolario 2.3; la versión con números está en el §7.
 
 **Laboratorio (E1).** La ley del producto y la novedad uniforme se cumplen para todos los H, m < 60. En 3000 pares aleatorios de particiones de 7 elementos, la desigualdad nunca falla y la igualdad coincide con la permutación en los 3000 casos (334 pares permutaban). En GF(2)^10, una ecuación XOR nueva elimina siempre 0, 1/2 o todas las soluciones heredadas. Una cláusula nueva elimina fracciones que van de 0,035 a 0,146 según lo heredado: la novedad de una cláusula no es homogénea.
 
@@ -99,7 +102,7 @@ La jerarquía es siempre: rango ≤ clases de Nerode ≤ configuraciones del pas
 
 **La frontera, no el volumen.** La proposición 3.4 dice que el logaritmo de las distinciones activas no supera el tamaño de la frontera, sin importar cuántas variables haya detrás. La física llegó a una forma parecida por otro camino. La cota de Bekenstein y el principio holográfico acotan la información de una región por el área de su borde. En sistemas cuánticos de una dimensión con brecha, la entropía de entrelazamiento cumple una «ley de área» (Hastings, 2007).
 
-Con esta última la conexión es exacta: el rango de corte es el rango de Schmidt de un estado, y las redes tensoriales que describen esos estados son las mismas que usa el algoritmo de Anthropic (§8). Con la holografía es una coincidencia de forma, no una equivalencia demostrada.
+Con esta última la conexión es exacta: el rango de corte es el rango de Schmidt de un estado, y las redes tensoriales que describen esos estados son las mismas que usa el algoritmo de Anthropic (§8). Con la holografía es una coincidencia de forma.
 
 **Proposición 3.5 (la novedad está acotada por la relación nueva).** Añadir una restricción C multiplica la matriz de corte entrada por entrada: M → M ∘ M\_C. Como rank(M ∘ N) ≤ rank(M)·rank(N), la novedad que introduce C es a lo sumo rank(M\_C). Una restricción que no cruza el corte tiene rango 1 y no añade nada; una cláusula que lo cruza tiene rango ≤ 2 y a lo sumo duplica. Es el análogo de m/mcd(H, m) ≤ m: la novedad nunca supera a la relación que la trae.
 
@@ -163,40 +166,57 @@ Si las posiciones cambian con tasas distintas, la economía desaparece. Con tasa
 
 **5.5 La rejilla de tres colores, reconstruida (E5).** Las 3-coloraciones de una columna de 10 celdas son 3·2^9 = 1536. El grupo es S3 (permutar colores) × Z2 (invertir la columna), de orden 12. Burnside da 136 órbitas, por encima de la cota 1536/12 = 128. Ese es el resultado B del programa, y ahora tiene su explicación exacta.
 
-Pero 136 no es el mínimo para contar. La dimensión de Krylov del espacio generado por T^k·1, calculada exactamente sobre los racionales, es 51. Coincide con el rango módulo dos primos y con el rango de Hankel de la sucesión. Como T es simétrica, el rango de Hankel es exactamente esa dimensión.
+La cuenta admite una representación lineal más pequeña que las 136 órbitas. Sea b\_k = 1ᵀ·T^k·1, la cuenta para k + 1 columnas. Como T es simétrica, el Hankel H\_N con entradas b\_(i+j) es la matriz de Gram de los N primeros vectores de Krylov T^i·1. Con aritmética exacta, det H\_51 ≠ 0 y det H\_52 = 0. La dimensión de Krylov es 51, la misma que se calcula sobre los racionales (E5x), y la recurrencia mínima válida para todo m ≥ 1 tiene orden 51. El Hankel desplazado, con entradas b\_(1+i+j), también es no singular: la recurrencia no tiene raíz nula y ninguna más corta vale desde m = 2 (E5c).
 
-Por el teorema de realización mínima (Kronecker), ninguna representación lineal de la sucesión a\_m = 1ᵀ·T^(m−1)·1 tiene menos de 51 estados, y la sucesión cumple una recurrencia lineal de orden 51. Las cuentas por cociente coinciden con las completas: 1536 · 118 098 · 10 107 954 · 896 895 828 · 80 796 885 414 para m = 1…5.
+Por el teorema de realización mínima (Kronecker), ninguna representación lineal de la sucesión a\_m = 1ᵀ·T^(m−1)·1 tiene menos de 51 estados. Las cuentas por cociente coinciden con las completas: 1536 · 118 098 · 10 107 954 · 896 895 828 · 80 796 885 414 para m = 1…5.
 
-La jerarquía es 1536 (la estructura) → 136 (lo que la simetría reúne) → 51 (lo que la consulta necesita). La economía natural la fija la consulta, no la simetría. Queda por revisar si el 51 ya figura en la literatura de matrices de transferencia.
+La jerarquía es 1536 (la estructura) → 136 (lo que la simetría reúne) → 51 (la dimensión de la representación lineal mínima de la cuenta, sobre los racionales). Para representaciones lineales, la economía la fija la consulta. El mismo certificado da el orden mínimo para cada ancho (E5c):
+
+| Ancho w | Columnas | Órbitas bajo S₃ × Z₂ | Orden mínimo |
+| --- | --- | --- | --- |
+| 1 | 3 | 1 | 1 |
+| 2 | 6 | 1 | 1 |
+| 3 | 12 | 2 | 2 |
+| 4 | 24 | 3 | 3 |
+| 5 | 48 | 6 | 5 |
+| 6 | 96 | 10 | 7 |
+| 7 | 192 | 20 | 13 |
+| 8 | 384 | 36 | 19 |
+| 9 | 768 | 72 | 35 |
+| 10 | 1536 | 136 | 51 |
+
+Los órdenes 7 y 13 de los anchos 6 y 7 coinciden con las recurrencias publicadas en OEIS, [A207995](https://oeis.org/A207995) y [A207996](https://oeis.org/A207996), con funciones generatrices de R. J. Mathar (2015). La tabla de conteos [A207997](https://oeis.org/A207997) incluye anchos mayores que 7, pero no da por sí misma los órdenes mínimos de recurrencia para los anchos 8 a 10. Queda abierto si la sucesión de órdenes 1, 1, 2, 3, 5, 7, 13, 19, 35, 51 tiene una explicación conocida y si los órdenes de los anchos 8 a 10 figuran en la literatura de matrices de transferencia.
 
 ## 6. Familias donde la reducción es imposible
 
-En grafos expansores ningún orden y ninguna álgebra de pesos reduce las distinciones de corte por debajo de 2^Ω(n). Aun así, decidir puede ser trivial y contar puede ser barato por otra vía: las magnitudes se separan.
+En grafos expansores, para todo orden y toda álgebra de pesos, algún corte conserva 2^Ω(n) distinciones. Aun así, decidir puede ser trivial y contar puede ser barato por otra vía: las magnitudes se separan.
 
 **Teorema 6.1.** Sea G\_n una familia de grafos de grado ≤ d en la que toda partición con ambos lados de al menos n/3 vértices es cruzada por al menos h·n aristas (expansores). Sea φ\_n su 2-CNF monótona.
 
 1. *Decidir* cuesta O(1): poner todo en 1 la satisface.
 2. *Contar* es #P-completo para 2-CNF monótonas de grado ≤ 3, porque equivale a contar conjuntos independientes (Greenhill, 2000). Queda abierto si sigue siéndolo restringido a expansores.
-3. *Representar* cuesta 2^Ω(n) para todo orden de variables y todo campo K. Lo mismo vale para el cubrimiento por rectángulos (versión no determinista) y para representaciones con árbol de variables.
+3. *Representar* cuesta 2^Ω(n): para todo orden de variables y todo campo K, algún corte tiene rango 2^Ω(n). Lo mismo vale para el cubrimiento por rectángulos (versión no determinista) y para representaciones con árbol de variables.
 
 *Prueba de 3.* El corte del medio de cualquier orden es una partición con ambos lados de tamaño n/2, así que lo cruzan al menos h·n aristas. Cada arista elegida excluye a lo sumo 2d² aristas vecinas, de modo que se extrae un emparejamiento inducido de tamaño μ ≥ h·n/(2d²). Por la proposición 3.6, el rango es al menos 2^μ. En un árbol de variables siempre hay un nodo que separa entre n/3 y 2n/3 variables, y el mismo argumento se aplica allí. ∎ La técnica de rectángulos es la conocida de compilación de conocimiento (Bova, Capelli, Mengel y Slivovsky, 2016).
 
 En n pequeño los grafos 3-regulares aleatorios aún no son buenos expansores, y eso también enseña. Con n = 14, el grafo de E2 tiene un corte balanceado con solo 3 aristas y su rango mínimo es 4, el mismo que el ciclo. Con n = 16 el rango mínimo sube a 10. Lo que decide no es cuántas relaciones hay, sino cuántas relaciones independientes cruzan el mejor corte.
 
-**Teorema 6.2 (Tseitin: representación cara, conteo barato).** Una fórmula de Tseitin pone una variable en cada arista de un grafo G y exige en cada vértice que la paridad de sus aristas valga una carga dada. Para el caso homogéneo sobre G conexo y un corte de aristas (A, B), vale una fórmula exacta para el rango de corte:
+**Teorema 6.2 (Tseitin: representación cara, conteo barato).** Una fórmula de Tseitin pone una variable en cada arista de un grafo G y exige en cada vértice que la paridad de sus aristas valga una carga dada. Para G conexo, cualquier carga satisfacible y un corte de aristas (A, B), el rango de corte es 2^λ(A), donde λ(A) = r(A) + r(B) − r(E) es la función de conectividad del matroide gráfico y r(S) = |V(S)| − c(S). En términos del grafo:
 
 ```math
 \log_2 \operatorname{rank} M_{A,B} \;=\; \beta + 1 - c_A - c_B
 ```
 
-Aquí β cuenta los vértices que tocan aristas de ambos lados, y c\_A, c\_B las componentes conexas de cada lado. *Prueba:* las soluciones forman el espacio de ciclos, de dimensión |E| − |V| + 1; las filas distintas son 2^(dim − dim(ciclos dentro de A) − dim(ciclos dentro de B)), y cada término es la fórmula de Euler de su subgrafo. ∎ Se comprobó en los 3003 cortes balanceados de un grafo con 10 vértices (E3b).
+Aquí β cuenta los vértices que tocan aristas de ambos lados, y c\_A, c\_B las componentes conexas del grafo formado por las aristas de cada lado, solo con los vértices que esas aristas tocan. *Prueba:* cada fila de M\_(A,B) depende solo de la paridad que el lado A deja en esos β vértices. Filas con la misma paridad son iguales y filas con paridades distintas tienen soportes disjuntos, así que M\_(A,B) es una suma directa de bloques de unos. Su rango, sobre cualquier campo, es el número de vectores de paridad que ambos lados pueden realizar. Cada lado impone una condición por componente, y las c\_A + c\_B condiciones tienen exactamente una relación lineal porque G es conexo. ∎
+
+Con carga nula, las soluciones forman el espacio de ciclos y la fórmula es el teorema del espacio de estados de Forney (1994) aplicado al código de ciclos: dim C − dim C\_A − dim C\_B. La función λ es la misma que define el ancho de trellis de un código desde su matroide ([Kashyap, 2008](https://arxiv.org/pdf/0705.1384)). Se comprobó con el rango calculado directamente en los 3003 cortes con |A| = 7 de un grafo 3-regular de 10 vértices, con carga nula y con una carga aleatoria satisfacible, y en 216 cortes arbitrarios de grafos conexos aleatorios (E3b). En un árbol con carga nula hay una sola solución y todo corte tiene rango 1: el exponente lo fija el grafo.
 
 Sobre expansores, todo diagrama ordenado para una fórmula de Tseitin satisfacible tiene tamaño 2^Ω(n) (Itsykson y coautores, 2017), y también todo programa de lectura única no determinista (Glinskih–Itsykson, 2017). Sin embargo la eliminación de Gauss cuenta sus soluciones en tiempo polinómico. Cambiar de referencia, del corte secuencial al álgebra lineal sobre GF(2), hace colapsar el costo. Reducir operaciones no requiere reducir distinciones.
 
 | Familia | Decidir | Contar | Representación por orden |
 | --- | --- | --- | --- |
-| 2-CNF monótona, expansor | O(1) | #P-completo en grado ≤ 3; 2^o(n) según los trabajos de octubre | 2^Ω(n) en todo orden y campo |
-| Tseitin, expansor | Polinómico | Polinómico (Gauss) | 2^Ω(n) en todo orden |
+| 2-CNF monótona, expansor | O(1) | #P-completo en grado ≤ 3; 2^o(n) según los trabajos de octubre | 2^Ω(n) en algún corte de cada orden, sobre todo campo |
+| Tseitin, expansor | Polinómico | Polinómico (Gauss) | 2^Ω(n) en algún corte de cada orden |
 | Ciclo | Lineal | Lineal | 4 estados |
 | Rejilla 3 colores, 10 × m | — | Lineal en m | 51 estados |
 | 3-coloración general | NP-completo | #P-completo | Sin cierre local acotado (Mycielski) |
@@ -215,8 +235,6 @@ De ahí salen tres predicciones comprobables. El orden de fusión está fijado: 
 
 ![Cada distinción se funde a R ∝ ε^(−1/ℓ)](fusion_optica.png)
 
-*Laboratorio E6 · núcleo 1/|y − x|, 600 puntos de observación en la esfera de radio R, 300 distancias entre 1,05 r y 10⁴ r*
-
 El laboratorio confirma las tres. Con ε = 10^−3 las fusiones ocurren en R/r = 2,26 · 4,30 · 13,4 · 401. En el caso ondulatorio (Fraunhofer, apertura de 20 longitudes de onda) aparece la misma escalera 5 → 1.
 
 **El último bit antes de la singularidad.** La última distinción que se funde, la de dos a uno, es el dipolo: el patrón que pesa cada fuente por su posición: las de un lado con signo más, las del otro con signo menos y la del centro con cero. Las fuentes y la esfera de observación son simétricas respecto del centro, así que cada combinación es par o impar; la primera, el total, es par, y la segunda es impar: un ±. Es la que más distancia necesita para fundirse (R/r ≈ 401 frente a 13 con ε = 10^−3), y cuando se funde solo queda el total: la estructura se singulariza. En el lenguaje del programa, el ± es el último bit antes de la singularidad. Se deduce de la simetría y de la expansión multipolar, y E6 lo comprueba: con R entre 20 r y 400 r, el segundo vector singular es (−0,63 · −0,32 · 0 · 0,32 · 0,63), impar hasta 10^−6 y proporcional a la posición. Que ese bit sea un signo es lo que lo conecta con la ruta del §10.
@@ -232,7 +250,7 @@ El laboratorio confirma las tres. Con ε = 10^−3 las fusiones ocurren en R/r =
 
 **La galaxia: lo que se funde y lo que llega.** Sean A\_d la referencia angular a distancia d y F la referencia espectral. Lo que se distingue es su combinación A\_d ∧ F. Por la ley de fusión, A\_d engruesa al crecer d hasta reunir todo en un solo bloque; F no depende de d. En ese límite A\_d ∧ F = F: lo que llega es exactamente lo que la frecuencia separa.
 
-En el lenguaje del §2, la referencia angular se reúne en una singularidad y lo pendiente entre los dos sistemas llega como espectro. El brillo y su variación en el tiempo son otras referencias que también sobreviven. El ejemplo no añade nada a la óptica; muestra que la misma estructura de referencias aparece en la observación y en el cálculo.
+En el lenguaje del §2, la referencia angular se reúne en una singularidad y lo pendiente entre los dos sistemas llega como espectro. El brillo y su variación en el tiempo son otras referencias que también sobreviven. El ejemplo muestra que la misma estructura de referencias aparece en la observación y en el cálculo.
 
 ## 8. Qué coincide y qué difiere con los trabajos de octubre de 2026
 
@@ -262,7 +280,7 @@ OpenAI deforma la función fuera del espacio booleano, y por eso el teorema 4.1 
 
 **Escala.** La ventaja de estos algoritmos es asintótica. Anthropic calcula que, con 5 cláusulas por variable, su cota no mejora la búsqueda exhaustiva antes de unas 10^10000 variables. El trabajo posterior baja algunos umbrales; para #3-SAT con una cláusula por variable, a unas 2^420 ≈ 10^126 cláusulas.
 
-Todos quedan por encima de los \~10^80 átomos del universo observable. Lloyd (2002) estimó que el universo pudo hacer a lo sumo unas 10^120 operaciones sobre unos 10^90 bits. Ese régimen no lo realiza ninguna estructura física. Eso no vuelve mejor a otro método en la escala física: para afirmarlo habría que medirlo contra los mejores resolvedores prácticos.
+Todos quedan por encima de los \~10^80 átomos del universo observable. Lloyd (2002) estimó que el universo pudo hacer a lo sumo unas 10^120 operaciones sobre unos 10^90 bits. Ese régimen no lo realiza ninguna estructura física. En la escala física, la comparación pertinente es contra los mejores resolvedores prácticos.
 
 ## 9. Respuesta a las ocho preguntas
 
@@ -277,7 +295,7 @@ Todos quedan por encima de los \~10^80 átomos del universo observable. Lloyd (2
 
 ## 10. Evaluación tipo ROSI
 
-Diez relaciones quedan resueltas, cuatro abiertas, cinco superpuestas y tres estaban cerradas antes de tiempo. La ruta abierta con más futuro es la del signo.
+Once relaciones quedan resueltas, cuatro abiertas, cinco superpuestas y tres estaban cerradas antes de tiempo. La ruta abierta con más futuro es la del signo.
 
 | Relación | Estado | Base |
 | --- | --- | --- |
@@ -288,36 +306,38 @@ Diez relaciones quedan resueltas, cuatro abiertas, cinco superpuestas y tres est
 | En expansores toda representación por orden cuesta 2^Ω(n) | Resuelta (técnica ya formulada) | Teorema 6.1, E2, E2b |
 | Reunir configuraciones no alcanza la economía de los algoritmos de octubre en esas familias | Resuelta, condicionada a que esos trabajos sean correctos | §8 |
 | Las distinciones ópticas se funden a R ∝ ε^(−1/ℓ) | Resuelta en el caso estático | Prop. 7.1, E6 |
-| Rejilla de ancho 10: 1536 → 136 → 51 | Resuelta (cálculo exacto) | E5 |
+| Rejilla de ancho 10: 1536 → 136 → 51 | Resuelta: det H\_51 ≠ 0 y det H\_52 = 0, en exacto | §5.5, E5, E5x, E5c |
+| Rango de corte de Tseitin = 2^λ(A), con λ la conectividad del matroide gráfico | Resuelta (ya formulada: Forney, Kashyap) | Teorema 6.2, E3b |
 | Hipercubo: 2^n estados → n + 1 clases exactas; con tasas distintas el cierre deja de ser operativo | Resuelta | §5.4, E11 |
 | La última distinción antes de la singularidad es el dipolo, un ± | Resuelta en el caso simétrico | §7, E6 |
 | Formalizar el «±1 sin resolver» como descomposición con signo que baje el rango de una operación | Abierta: la ruta más prometedora | §8 |
 | ¿Sigue el laboratorio óptico v5.1, con su criterio angular, la ley ε^(−1/ℓ)? | Abierta, acotada: si cuenta máximos, sigue la ley de escala-espacio y no ε^(−1/ℓ) (§12) | §7 |
-| ¿El 51 de la rejilla ya está publicado? | Abierta | §5 |
+| ¿Tiene explicación la sucesión de órdenes 1, 1, 2, 3, 5, 7, 13, 19, 35, 51? | Abierta: los anchos 6 y 7 coinciden con OEIS; los anchos 8 a 10 todavía no figuran allí | §5.5, E5c |
 | Validez de los trabajos de octubre | Abierta: Lean reproducido, revisión experta pendiente | §8 |
-| Los trabajos de octubre coinciden con la ontología | Superpuesta: coincide el mecanismo (cambio de referencia y teorema chino del resto; reflexión con signo), no demuestra la ontología | §8 |
+| Los trabajos de octubre coinciden con la ontología | Superpuesta: coincide el mecanismo (cambio de referencia y teorema chino del resto; reflexión con signo) | §8 |
 | La frontera fija las distinciones, como el borde fija la información en física | Superpuesta: exacta con el rango de Schmidt; con la holografía es coincidencia de forma | §3 |
-| La galaxia: lo angular se funde y la frecuencia queda | Superpuesta: ejemplo que encaja con dos referencias, no prueba | §2, §7 |
+| La galaxia: lo angular se funde y la frecuencia queda | Superpuesta: ejemplo que encaja con dos referencias | §2, §7 |
 | Reflexión como x − y + z (permutabilidad, marcos compactos) o como involución I − 2P (cancelación con signo) | Superpuesta: ambas formalizan la reflexión y dan economías distintas | §5, §8 |
 | Herencia como refinamiento de particiones o como producto entrada a entrada de matrices de corte | Superpuesta: el mismo hecho en dos niveles | §2, prop. 3.5 |
 | «Reducir observables reduce operaciones» | Prematuramente cerrada: falla en ambos sentidos | Tseitin (§6), octubre (§8) |
 | «La economía surge de la relación sin decisión externa» | Prematuramente cerrada a medias: el mínimo es canónico, pero hallarlo es coNP-difícil y la elección de referencia decide el costo (256 frente a 2 en E9) | §3, §4 |
 | «Las simetrías locales de 3-SAT son la información que queda» | Prematuramente cerrada: lo que queda es el rango de corte; ninguna simetría baja de él | Prop. 3.7, E10 |
 
-La ruta del signo en concreto: buscar una identidad del tipo X = Σ\_j (−1)^j·c\_j·O\_j donde cada O\_j tenga rango de corte menor que X, como SWAP = I − 2·singlete. El tetraedro, el cubo de espejos y el «±1» del programa podrían aportar candidatos a esas identidades. Su valor se mide con un número: el rango tensorial de la operación resultante.
+La ruta del signo en concreto: buscar identidades X = Σ\_j s\_j·c\_j·O\_j con s\_j ∈ {−1, +1}, como SWAP = I − 2·P₋, donde P₋ proyecta sobre el subespacio antisimétrico (el singlete). Que cada O\_j tenga menor rango de corte es fácil de lograr: toda matriz se descompone en términos de rango uno, a veces demasiados. La economía exige acotar también cuántos términos hay, cómo se encuentran, cuánto cuesta evaluarlos y recombinarlos, y que la identidad sea exacta para toda la familia de entradas. El tetraedro, el cubo de espejos y el «±1» del programa pueden aportar candidatos. Su valor se mide con el costo total de la operación resultante, empezando por su rango tensorial.
 
 ## 11. Laboratorio reproducible
 
-Un solo script, `laboratorio_economia_relacional.py`, reproduce todas las cifras del informe en unos 4 minutos con numpy y networkx. Se corre con `python3 -I laboratorio_economia_relacional.py` y escribe `resultados_laboratorio.json`. Para un experimento suelto: `python3 -I laboratorio_economia_relacional.py E5`.
+Un solo script, `laboratorio_economia_relacional.py`, reproduce todas las cifras del informe en unos 4 minutos con numpy y networkx. Se corre con `python3 -I laboratorio_economia_relacional.py` y escribe `resultados_laboratorio.json`. Para la rejilla: `python3 -I laboratorio_economia_relacional.py E5 E5x E5c`.
 
 | Experimento | Qué comprueba | Resultado |
 | --- | --- | --- |
-| E1 | Ley mcm/mcd y desigualdad de herencia | Exacta para H, m < 60; igualdad ⇔ permutan en 3000/3000 pares; contraejemplo 3·1 ≠ 2·2 |
+| E1 | Ley mcm/mcd y desigualdad de herencia | Exacta para H, m < 60; igualdad ⇔ permutan en 3000/3000 pares; contraejemplo 3·1 ≠ 2·2; con permutación, desviación = k²·Cov en 334 de 334 pares; {12\|34\|5} y {13\|24\|5}: 5·2 ≠ 3·3 |
 | E2 | Rango mínimo sobre todos los cortes balanceados, 2-CNF monótona | Grafo 3-regular: 5, 4, 7, 4, 10 para n = 8…16; ciclo: 4 siempre |
 | E2b | 2^μ ≤ rango ≤ 2^frontera + 1 | Se cumple en 126 + 462 cortes |
 | E3/E4 | Sistema XOR: reflexión, rectángulos, marco | 64 soluciones por fuerza bruta y por Gauss; 7 puntos generan 64 |
-| E3b | Fórmula de Tseitin β + 1 − c\_A − c\_B | Exacta en 3003 cortes |
+| E3b | Tseitin: rango directo = 2^λ(A) = 2^(β + 1 − c\_A − c\_B) | Exacta en 3003 cortes con carga nula y con carga aleatoria, y en 216 cortes de grafos aleatorios; árbol: rango 1 |
 | E5 | Rejilla 3 colores, ancho 10 | 1536 → 136 órbitas → Krylov 51 (exacto sobre Q y módulo 2 primos) |
+| E5c | Orden mínimo certificado, anchos 1 a 10 | det H\_d ≠ 0, det H\_(d+1) = 0, sin raíz nula; órdenes 1, 1, 2, 3, 5, 7, 13, 19, 35, 51 |
 | E6 | Óptica como rango-ε | Escalera 5 → 1; pendientes 0,998 · 0,499 · 0,333 · 0,253; la última distinción es el dipolo, impar |
 | E9 | Misma estructura, otro orden | Rango 256 frente a 2; cuenta 6561 en ambos |
 | E10 | Simetrías de 3-CNF aleatorias | 30 de 30 con grupo trivial |
@@ -326,7 +346,7 @@ Un solo script, `laboratorio_economia_relacional.py`, reproduce todas las cifras
 
 Con matplotlib instalado, el laboratorio también dibuja la figura de la ley de fusión, en español (`fusion_optica.png`) y en inglés (`optical_fusion.png`).
 
-Los rangos módulo p son cotas inferiores del rango racional. Donde importa la igualdad (E5) se calculó también el rango exacto sobre los racionales.
+Los rangos módulo p son cotas inferiores del rango racional. Donde importa la igualdad (E5x) se calculó también el rango exacto sobre los racionales. En E5c, un determinante no nulo módulo p es no nulo sobre los enteros, y el determinante nulo se calcula en exacto.
 
 ## 12. Contraste con dos investigaciones independientes
 
@@ -358,6 +378,8 @@ B propone una generalización concreta y abierta de la herencia a fases vectoria
 
 **Lo que el contraste aclara: dos leyes ópticas distintas.** El criterio de B cuenta máximos bajo desenfoque y es local: desaparecen primero las fuentes débiles o cercanas (aquí 2,5, luego −1,6, luego 4,4 y por último −4,2), con umbrales proporcionales a las separaciones. El criterio de este informe cuenta combinaciones independientes por encima del ruido y es global: elimina órdenes multipolares, con umbrales R ∝ ε^(−1/ℓ). Ambos dan 5 → 1, pero miden cosas distintas: qué fuentes siguen visibles y cuántas combinaciones siguen medibles. Si el laboratorio v5.1 usa resolución angular, su ley es la de escala-espacio, no ε^(−1/ℓ).
 
+**Revisión posterior.** Una revisión externa del 8 de noviembre señaló cuatro precisiones, ya incorporadas. La ley del producto pide permutación y covarianza nula (corolario 2.2). En expansores, cada orden tiene algún corte de rango exponencial (teorema 6.1). La fórmula de Tseitin es la función de conectividad del matroide gráfico, y la cota exponencial corresponde a familias satisfacibles sobre expansores (teorema 6.2). El orden 51 queda certificado por los determinantes de Hankel (§5.5). Una segunda lectura, sobre la versión 2, precisó que 51 es la dimensión de la representación lineal mínima de la cuenta sobre los racionales, y separó el cálculo demostrado de la pregunta por sus antecedentes.
+
 ## Fuentes
 
 **Trabajos de octubre de 2026 y su estado (páginas consultadas el 8 de noviembre de 2026)**
@@ -367,6 +389,9 @@ B propone una generalización concreta y abierta de la herencia a fases vectoria
 - R. Majdoddin, *Lowered crossover points of Anthropic’s subexponential 3-SAT algorithm*, 30 de octubre de 2026: [arXiv 2610.41622](https://arxiv.org/html/2610.41622)
 - Estado de la verificación al 7 de noviembre: [ShiftDelete](https://shiftdelete.net/en/exponential-time-hypothesis)
 - Cotas para Tseitin en programas de lectura única: [Glinskih–Itsykson, MFCS 2017](https://drops.dagstuhl.de/opus/volltexte/2017/8076/) y [ECCC TR19-020](https://eccc.weizmann.ac.il/report/2019/020/download), que resume el resultado de Itsykson y coautores (STACS 2017) para diagramas ordenados
+- Teorema del espacio de estados: G. D. Forney, *Dimension/length profiles and trellis complexity of linear block codes*, IEEE Trans. Inf. Theory 40(6), 1741–1752, 1994
+- Función de conectividad y ancho de trellis: [N. Kashyap, *Matroid pathwidth and code trellis complexity*, arXiv:0705.1384](https://arxiv.org/pdf/0705.1384)
+- Recurrencias de las 3-coloraciones de rejillas en OEIS: [A207995](https://oeis.org/A207995) (ancho 6), [A207996](https://oeis.org/A207996) (ancho 7) y la tabla [A207997](https://oeis.org/A207997)
 
 **Literatura clásica citada (referencias estándar, sin enlace)**
 

@@ -2,14 +2,15 @@
 Laboratorio: economía del cálculo a partir de relaciones entre referencias.
 Endless Monkey Project · Relational Geometry Program
 
-Cada experimento (E1..E12) comprueba una proposición del informe.
+Cada experimento (E1..E12, más E5x y E5c) comprueba una proposición del informe.
 Ejecutar todo:        python3 -I laboratorio_economia_relacional.py
-Un experimento:       python3 -I laboratorio_economia_relacional.py E5
+Un experimento:       python3 -I laboratorio_economia_relacional.py E5c
+Varios:               python3 -I laboratorio_economia_relacional.py E5 E5x E5c
 Requiere: numpy, networkx. Opcional: matplotlib (figuras de E6).
 Tiempo aproximado: 4-6 minutos. Salida: resultados_laboratorio.json
 
 EN: Reproducible lab for "The economy of computation from relations between
-references". Each experiment (E1..E12) checks a proposition of the report
+references". Each experiment (E1..E12, plus E5x and E5c) checks a proposition of the report
 (report.md). Run everything with the command above; output keys are in Spanish.
 Requires numpy and networkx; matplotlib is optional and draws the E6 figures
 fusion_optica.png (Spanish labels) and optical_fusion.png (English labels).
@@ -105,7 +106,9 @@ def max_induced_matching_across(G, A, B):
 
 # ---------------------------------------------------------------- E1
 def E1():
-    """Ley de herencia: mcm·mcd = H·m es CRT de congruencias permutables."""
+    """Ley de herencia: mcm·mcd = H·m es CRT de congruencias permutables.
+    Particiones: |P∧Q| ≤ Σ_J p_J q_J, con igualdad si y solo si permutan; con permutación,
+    |P∧Q|·|P∨Q| = |P|·|Q| + k²·Cov_J(p_J, q_J), k = |P∨Q|."""
     res = {}
     # (a) residuos: |P∧Q|·|P∨Q| = |P|·|Q| y novedad uniforme
     ok = True
@@ -157,17 +160,25 @@ def E1():
     rng = random.Random(1)
     n = 7
     viol = 0; eq_perm = 0; total = 0; perm_count = 0
+    ok_cov = True; prod_ok = 0; prod_ok_cov0 = 0
     for _ in range(3000):
         Pl = [rng.randrange(3) for _ in range(n)]
         Ql = [rng.randrange(3) for _ in range(n)]
         J = join(Pl, Ql, n)
         meet = len({(Pl[i], Ql[i]) for i in range(n)})
-        bound = 0
+        bound = 0; pJ = []; qJ = []
         for Jb in blocks_of(J):
-            bound += len({Pl[i] for i in Jb}) * len({Ql[i] for i in Jb})
+            pJ.append(len({Pl[i] for i in Jb})); qJ.append(len({Ql[i] for i in Jb}))
+            bound += pJ[-1] * qJ[-1]
         pm = permute(Pl, Ql, n)
         total += 1
         perm_count += pm
+        if pm:
+            # con permutación: |P∧Q|·|P∨Q| − |P|·|Q| = k·Σp_Jq_J − Σp_J·Σq_J = k²·Cov_J(p_J, q_J)
+            k = len(pJ); nP, nQ = len(set(Pl)), len(set(Ql))
+            cov_k2 = k * sum(a * b for a, b in zip(pJ, qJ)) - sum(pJ) * sum(qJ)
+            ok_cov &= (meet * k - nP * nQ == cov_k2) and (nP == sum(pJ)) and (nQ == sum(qJ))
+            prod_ok += (meet * k == nP * nQ); prod_ok_cov0 += ((meet * k == nP * nQ) == (cov_k2 == 0))
         if meet > bound:
             viol += 1
         if (meet == bound) == pm:
@@ -176,6 +187,14 @@ def E1():
     res["violaciones_desigualdad"] = viol
     res["igualdad_sii_permutan_(casos_que_cumplen)"] = eq_perm
     res["pares_que_permutan"] = perm_count
+    res["con_permutacion:_|P∧Q||P∨Q|−|P||Q|_=_k²·Cov(p_J,q_J)"] = bool(ok_cov)
+    res["pares_que_permutan_y_cumplen_|P∧Q||P∨Q|=|P||Q|"] = prod_ok
+    res["identidad_de_producto_sii_covarianza_nula_(casos)"] = prod_ok_cov0
+    # permutan pero la identidad de producto falla: {12|34|5} y {13|24|5}
+    Pl = [0, 0, 1, 1, 2]; Ql = [0, 1, 0, 1, 2]
+    res["contraejemplo_producto_{12|34|5}_{13|24|5}"] = {
+        "permutan": permute(Pl, Ql, 5), "|P∧Q|": len({(Pl[i], Ql[i]) for i in range(5)}),
+        "|P∨Q|": len(set(join(Pl, Ql, 5))), "|P|·|Q|": len(set(Pl)) * len(set(Ql))}
     # contraejemplo explícito {123|4} vs {1|234}
     Pl = [0, 0, 0, 1]; Ql = [0, 1, 1, 1]
     meet = len({(Pl[i], Ql[i]) for i in range(4)})
@@ -565,6 +584,80 @@ def E5_exacto():
                         "b_0..b_4": b[:5]}
     print("E5_exacto", OUT["E5_exacto"], flush=True)
 
+def bareiss_det(M):
+    """Determinante exacto de una matriz entera (Bareiss, sin fracciones)."""
+    M = [list(r) for r in M]; n = len(M); prev = 1; sign = 1
+    for k in range(n - 1):
+        if M[k][k] == 0:
+            sw = next((i for i in range(k + 1, n) if M[i][k] != 0), None)
+            if sw is None:
+                return 0
+            M[k], M[sw] = M[sw], M[k]; sign = -sign
+        for i in range(k + 1, n):
+            for j in range(k + 1, n):
+                M[i][j] = (M[i][j] * M[k][k] - M[i][k] * M[k][j]) // prev
+        prev = M[k][k]
+    return sign * M[n - 1][n - 1]
+
+def rejilla_cociente(w):
+    """Columnas propias de ancho w, órbitas bajo S3 × Z2 y matriz cociente exacta."""
+    states = [c for c in itertools.product(range(3), repeat=w)
+              if all(c[i] != c[i + 1] for i in range(w - 1))]
+    idx = {c: i for i, c in enumerate(states)}
+    perms = list(itertools.permutations(range(3)))
+    oid = [-1] * len(states); orbits = []
+    for i, c in enumerate(states):
+        if oid[i] < 0:
+            ims = set()
+            for p in perms:
+                pc = tuple(p[x] for x in c); ims.add(pc); ims.add(pc[::-1])
+            orb = sorted(idx[x] for x in ims)
+            for j in orb:
+                oid[j] = len(orbits)
+            orbits.append(orb)
+    comp = lambda a, b: all(x != y for x, y in zip(a, b))
+    Tq = [[sum(comp(states[o[0]], states[j]) for j in o2) for o2 in orbits] for o in orbits]
+    return len(states), [len(o) for o in orbits], Tq
+
+def sucesion_conteos(sizes, Tq, n_terms, mod=None):
+    """b_k = 1ᵀ T^k 1 = a_{k+1} (colorings of the w×(k+1) grid), exact or mod p."""
+    K = len(sizes); v = [1] * K; b = []
+    for k in range(n_terms):
+        b.append(sum(s * x for s, x in zip(sizes, v)) if mod is None
+                 else sum(s * x for s, x in zip(sizes, v)) % mod)
+        v = [sum(Tq[a][c] * v[c] for c in range(K)) for a in range(K)]
+        if mod is not None:
+            v = [x % mod for x in v]
+    return b
+
+def E5c():
+    """Certificado del orden mínimo de la recurrencia (rejilla w×m, 3 colores, bordes libres).
+    T es simétrica, así que H_N[i][j] = b_{i+j} = <T^i 1, T^j 1> es la matriz de Gram de los
+    N primeros vectores de Krylov. det H_d ≠ 0 y det H_{d+1} = 0 certifican que el orden mínimo
+    de una recurrencia válida para todo m ≥ 1 es d. El Hankel desplazado H'_d[i][j] = b_{1+i+j}
+    es Kᵀ T K; si det H'_d ≠ 0, la recurrencia no tiene raíz nula y no existe otra más corta
+    ni siquiera desde m = 2. Un determinante no nulo módulo p es no nulo sobre Z."""
+    res = {}
+    for w in range(1, 11):
+        n_states, sizes, Tq = rejilla_cociente(w)
+        K = len(sizes)
+        bp = sucesion_conteos(sizes, Tq, 2 * K + 3, mod=P)
+        d = rank_mod_p([[bp[i + j] for j in range(K + 1)] for i in range(K + 1)])
+        b = sucesion_conteos(sizes, Tq, 2 * d + 2)
+        Hd = [[b[i + j] % P for j in range(d)] for i in range(d)]
+        Hs = [[b[1 + i + j] % P for j in range(d)] for i in range(d)]
+        Hd1 = [[b[i + j] for j in range(d + 1)] for i in range(d + 1)]
+        cert = {"det_H_d_no_nulo": rank_mod_p(Hd) == d,
+                "det_H_d+1_cero_exacto": bareiss_det(Hd1) == 0,
+                "sin_raiz_nula_(det_H'_d_no_nulo)": rank_mod_p(Hs) == d}
+        res[f"ancho={w}"] = {"columnas": n_states, "orbitas_S3xZ2": K, "orden_minimo": d,
+                             "certificado": cert, ("a_1..a_5" if w == 10 else "a_1..a_3"): b[:5] if w == 10 else b[:3]}
+        print("E5c", w, res[f"ancho={w}"], flush=True)
+    res["ordenes_por_ancho"] = [res[f"ancho={w}"]["orden_minimo"] for w in range(1, 11)]
+    res["orbitas_por_ancho"] = [res[f"ancho={w}"]["orbitas_S3xZ2"] for w in range(1, 11)]
+    res["todo_certificado"] = all(all(res[f"ancho={w}"]["certificado"].values()) for w in range(1, 11))
+    OUT["E5c_certificado_orden_minimo"] = res
+
 def boundary_vertices(G, A):
     VA = {v for v in A}
     return [v for v in A if any(u not in VA for u in G[v])]
@@ -588,7 +681,9 @@ def E2b():
     print("E2b", res, flush=True)
 
 def tseitin_formula_log2rank(G, edges, Aset):
-    """log2(rango de corte) = β + 1 − c_A − c_B (Tseitin homogéneo, G conexo)."""
+    """log2(rango de corte) = β + 1 − c_A − c_B (G conexo, carga satisfacible).
+    β = vértices tocados por aristas de ambos lados; c_A, c_B = componentes del grafo
+    formado por las aristas de cada lado (solo con los vértices que tocan)."""
     def comps(es):
         parent = {}
         def f(x):
@@ -605,31 +700,72 @@ def tseitin_formula_log2rank(G, edges, Aset):
     beta = len(VA & VB)
     return beta + 1 - cA - cB
 
-def E3b():
-    """Tseitin (XOR en las aristas de un grafo): fórmula exacta del rango de corte
-    validada por fuerza bruta; mínimo sobre todos los cortes balanceados."""
-    res = {}
-    # validación por fuerza bruta, V=10 (15 aristas)
-    G = nx.random_regular_graph(3, 10, seed=3)
-    edges = list(G.edges()); E = len(edges)
-    bits = all_bits(E)
+def conectividad_matroide_grafico(G, edges, Aset):
+    """λ(A) = r(A) + r(B) − r(E), con r(S) = |V(S)| − componentes de (V(S), S)."""
+    def r(es):
+        H = nx.Graph(); H.add_edges_from(es)
+        return H.number_of_nodes() - nx.number_connected_components(H) if es else 0
+    EA = [edges[i] for i in Aset]; EB = [edges[i] for i in range(len(edges)) if i not in Aset]
+    return r(EA) + r(EB) - r(edges)
+
+def tseitin_tabla(G, edges, cargas):
+    """Tabla de verdad de TS_{G,c}: x_e por arista, ⊕_{e∋v} x_e = c(v)."""
+    E = len(edges); bits = all_bits(E)
     F = np.ones(1 << E, dtype=np.int64)
     for v in G.nodes():
         inc = [i for i, e in enumerate(edges) if v in e]
-        F &= (bits[:, inc].sum(1) % 2 == 0).astype(np.int64)
-    ok = True; checked = 0; minr = None
-    for comb in itertools.combinations(range(1, E), E // 2 - 1):
-        A = [0] + list(comb); B = [i for i in range(E) if i not in A]
-        M = cut_matrix(F, A, B)
-        r = nonzero_distinct_rows(M)
-        ok &= (r == 2 ** tseitin_formula_log2rank(G, edges, set(A)))
-        ok &= is_rectangular(M) if checked < 300 else True
-        checked += 1
-        minr = r if minr is None else min(minr, r)
-    res["validacion_V=10"] = {"cortes": checked, "formula_exacta": bool(ok),
-                              "soluciones": int(F.sum()), "2^(E-V+1)": 2 ** (E - 10 + 1),
-                              "min_rango_corte": minr}
-    # mínimo sobre cortes balanceados por la fórmula, V = 8..16
+        F &= (bits[:, inc].sum(1) % 2 == cargas[v]).astype(np.int64)
+    return F
+
+def E3b():
+    """Tseitin satisfacible: rango de corte = 2^λ(A), λ la función de conectividad del
+    matroide gráfico (= β + 1 − c_A − c_B). Rango calculado directamente sobre GF(p).
+    Para c ≡ 0 es el teorema del espacio de estados de Forney aplicado al código de ciclos."""
+    res = {}
+    # (a) 3-regular, V = 10: los 3003 cortes con |A| = 7, carga nula y carga aleatoria
+    G = nx.random_regular_graph(3, 10, seed=3)
+    edges = list(G.edges()); E = len(edges)
+    rng = random.Random(5)
+    c_al = [rng.randint(0, 1) for _ in range(10)]
+    if sum(c_al) % 2: c_al[0] ^= 1
+    for nombre, cargas in (("carga_nula", [0] * 10), ("carga_aleatoria", c_al)):
+        F = tseitin_tabla(G, edges, cargas)
+        ok = ok_lam = True; checked = 0; minr = None
+        for comb in itertools.combinations(range(1, E), E // 2 - 1):
+            A = [0] + list(comb); B = [i for i in range(E) if i not in A]
+            r = rank_mod_p(cut_matrix(F, A, B))
+            lam = conectividad_matroide_grafico(G, edges, set(A))
+            ok &= (r == 2 ** tseitin_formula_log2rank(G, edges, set(A)))
+            ok_lam &= (lam == tseitin_formula_log2rank(G, edges, set(A)))
+            checked += 1; minr = r if minr is None else min(minr, r)
+        res[f"V=10_{nombre}"] = {"cortes": checked, "rango_directo_=_2^(β+1−c_A−c_B)": bool(ok),
+                                 "β+1−c_A−c_B_=_λ(A)": bool(ok_lam), "soluciones": int(F.sum()),
+                                 "2^(E−V+1)": 2 ** (E - 10 + 1), "min_rango_corte": minr}
+        print("E3b", nombre, res[f"V=10_{nombre}"], flush=True)
+    # (b) grafos conexos aleatorios, cortes arbitrarios, cargas satisfacibles aleatorias
+    rng = random.Random(1); checked = 0; ok = True
+    while checked < 216:
+        V = rng.randint(5, 8); m = rng.randint(V, min(12, V * (V - 1) // 2))
+        H = nx.gnm_random_graph(V, m, seed=rng.randrange(10 ** 6))
+        if not nx.is_connected(H):
+            continue
+        ed = list(H.edges()); cargas = [rng.randint(0, 1) for _ in range(V)]
+        if sum(cargas) % 2: cargas[rng.randrange(V)] ^= 1
+        F = tseitin_tabla(H, ed, cargas)
+        for _ in range(6):
+            k = rng.randint(1, len(ed) - 1); A = sorted(rng.sample(range(len(ed)), k))
+            B = [i for i in range(len(ed)) if i not in A]
+            ok &= (rank_mod_p(cut_matrix(F, A, B)) == 2 ** conectividad_matroide_grafico(H, ed, set(A)))
+            checked += 1
+    res["grafos_aleatorios_cortes_arbitrarios"] = {"cortes": checked, "rango_=_2^λ(A)": bool(ok)}
+    # (c) árbol con carga nula: una sola solución y rango 1 en todo corte (λ = 0)
+    T = nx.random_labeled_tree(12, seed=4) if hasattr(nx, "random_labeled_tree") else nx.random_tree(12, seed=4)
+    ed = list(T.edges()); F = tseitin_tabla(T, ed, [0] * 12)
+    rangos = {rank_mod_p(cut_matrix(F, list(A), [i for i in range(len(ed)) if i not in A]))
+              for A in itertools.combinations(range(len(ed)), 5)}
+    res["arbol_12_vertices"] = {"soluciones": int(F.sum()), "rangos_de_corte": sorted(rangos)}
+    print("E3b", res["grafos_aleatorios_cortes_arbitrarios"], res["arbol_12_vertices"], flush=True)
+    # (d) mínimo sobre cortes balanceados por la fórmula, V = 8..16
     for V in (8, 10, 12, 14, 16):
         G = nx.random_regular_graph(3, V, seed=40 + V)
         while not nx.is_connected(G):
@@ -645,7 +781,7 @@ def E3b():
 
 import sys
 EXPERIMENTOS = {"E1": lambda: (E1(), print("E1", OUT["E1_herencia_CRT"], flush=True)),
-                "E9": E9, "E5": E5, "E5x": E5_exacto, "E6": E6,
+                "E9": E9, "E5": E5, "E5x": E5_exacto, "E5c": E5c, "E6": E6,
                 "E3": lambda: (E3_E4(), print("E3/E4", OUT["E3_E4_afin_reflexion"], flush=True)),
                 "E3b": E3b, "E2": E2, "E2b": E2b}
 
