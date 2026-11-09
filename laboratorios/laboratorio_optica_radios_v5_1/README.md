@@ -1,7 +1,7 @@
 # Laboratorio de radios y pared móvil — v5.1 / Radii and moving-wall lab — v5.1
 
 **Endless Monkey Project** · *Relational Geometry Program*
-Le Matt Asantz Di Ego
+Le Matt Ansatz Di Ego
 
 ## Español
 

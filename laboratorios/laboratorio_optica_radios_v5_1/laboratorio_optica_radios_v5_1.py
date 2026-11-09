@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Endless Monkey Project — Relational Geometry Program
-# Le Matt Asantz Di Ego
+# Le Matt Ansatz Di Ego
 # Laboratorio óptico v5.1 / Optical lab v5.1 — solo biblioteca estándar, Python >= 3.9.
 """Radios, pared móvil y aparición de nuevas referencias (secciones A–E).
 

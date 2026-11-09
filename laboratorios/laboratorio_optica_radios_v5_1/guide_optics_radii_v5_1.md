@@ -1,7 +1,7 @@
 # Lab v5.1 — Radii, a moving wall and the appearance of new references
 
 **Endless Monkey Project** · *Relational Geometry Program*
-Le Matt Asantz Di Ego · November 7, 2026
+Le Matt Ansatz Di Ego · November 7, 2026
 
 *Versión en español: [guia_optica_radios_v5_1.md](guia_optica_radios_v5_1.md)*
 

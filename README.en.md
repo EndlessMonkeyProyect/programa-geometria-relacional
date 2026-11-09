@@ -2,6 +2,12 @@
 
 [Leer este repositorio en español](README.md).
 
+## The economy of computation from relations between references · November 8, 2026
+
+The [new bilingual delivery](2026-11-08_economia_del_calculo/README.md) contains the [Spanish report](2026-11-08_economia_del_calculo/informe.md), its [English version](2026-11-08_economia_del_calculo/report.md), a reproducible lab and its results. It also preserves a [standalone reading copy](2026-11-08_economia_del_calculo/La_economia_del_calculo_desde_las_relaciones_entre_referencias_2026-11-08.md) of the Spanish manuscript; the report in the package is authoritative. The work connects partitions, cut rank, symmetry and optics with computational economy. It does not establish a new complexity bound.
+
+[GitHub release](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-08-economia-del-calculo) · [Zenodo record and DOI](https://doi.org/10.5281/zenodo.24063282).
+
 ## Reproducible laboratories
 
 - [Optical lab v5.1 / Laboratorio óptico v5.1](laboratorios/laboratorio_optica_radios_v5_1/README.md) — radii, moving wall, and the economy of distinctions / radios, pared móvil y economía de las distinciones.

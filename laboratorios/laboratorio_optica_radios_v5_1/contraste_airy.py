@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Endless Monkey Project — Relational Geometry Program
-# Le Matt Asantz Di Ego
+# Le Matt Ansatz Di Ego
 # Contraste opcional de la sección B / Optional check of section B. Requiere numpy y scipy.
 """Compara el criterio discreto del laboratorio con una imagen física idealizada.
 

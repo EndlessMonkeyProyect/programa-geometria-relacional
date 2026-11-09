@@ -1,7 +1,7 @@
 # Laboratorio v5.1 — Radios, pared móvil y aparición de nuevas referencias
 
 **Endless Monkey Project** · *Relational Geometry Program*
-Le Matt Asantz Di Ego · 7 de noviembre de 2026
+Le Matt Ansatz Di Ego · 7 de noviembre de 2026
 
 *English version: [guide_optics_radii_v5_1.md](guide_optics_radii_v5_1.md)*
 
