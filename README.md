@@ -8,6 +8,10 @@ La [nueva entrega bilingüe](2026-11-08_economia_del_calculo/README.md) reúne e
 
 [Versión en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-08-economia-del-calculo) · [Registro en Zenodo y DOI](https://doi.org/10.5281/zenodo.24063282).
 
+## Laboratorios reproducibles
+
+- [Laboratorio óptico v5.1 / Optical lab v5.1](laboratorios/laboratorio_optica_radios_v5_1/README.md) — radios, pared móvil y economía de las distinciones / radii, moving wall and the economy of distinctions.
+
 ## El cruce como reflejo central · 3 de noviembre de 2026
 
 La [entrega del 3 de noviembre](2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) reúne el paper [*El cruce como reflejo central*](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.md) ([PDF](2026-11-03_cruce_reflejo_central/articulo/El_cruce_como_reflejo_central_2026-11-03.pdf)), el ensayo [«La caja de espejos» v0.3](2026-11-03_cruce_reflejo_central/articulo/La_caja_de_espejos_v0.3_2026-11-03.md), las [notas del 3 de noviembre](2026-11-03_cruce_reflejo_central/articulo/Notas_2026-11-03.md) sobre particiones y el origen del tetraedro, y cinco verificadores reproducibles. Mide la pieza que descompone el algoritmo de Claude (2026), el cruce: la ganancia viene de repartirlo entre dos cortes, los cruces ocupan el tetraedro del programa y, en la duplicación por reflexión, solo el 8 lo abarata. Son teoremas clásicos dichos en el lenguaje del programa; no es un algoritmo propio ni un reclamo de prioridad, y la equivalencia algorítmica sigue abierta. La [solicitud de verificación](review_requests/2026-11-03_cruce_reflejo_central/LEER_PRIMERO.md) pide revisar la reproducibilidad, las pruebas y la precedencia documental.
