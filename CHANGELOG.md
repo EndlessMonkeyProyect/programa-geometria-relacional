@@ -1,5 +1,13 @@
 # Historial de esta edición
 
+## ¿Qué cálculo deja de hacerse? v0.3 · 2026-11-10
+
+- El hilo del artículo se escribe en el vocabulario del programa: incertidumbre, reflejo, cierre, herencia y novedad. Los términos técnicos pasan a una sección de puentes con referencias.
+- Se añade una línea base genérica: eliminación de variables sobre la fórmula sin reconocimiento, medida con el mismo protocolo que las demás rutas. La familia de conexiones largas se extiende hasta 256 variables primarias, y las fórmulas se exportan en DIMACS para contadores dedicados.
+- Se añade una prueba del contrato del reconocedor con 5.889 fórmulas. El reconocedor rechaza de forma explícita una entrada de paridad fuera de la familia; sus conteos no cambian.
+- La tabla del §9 sale de un único archivo de resultados, las fórmulas usan delimitadores que GitHub muestra, y el artículo en inglés queda completo y con PDF.
+- El registro de reproducción queda en `ANEXO_EVIDENCIAS.md` y `EVIDENCE.en.md`. Se retiran el control editorial, el registro de auditoría, el laboratorio anterior y su control antes/después.
+
 ## ¿Qué cálculo deja de hacerse? · 2026-11-10
 
 - Se añade un manuscrito de continuación en español e inglés, PDF de lectura, dos laboratorios con resultados originales y un verificador autónomo.

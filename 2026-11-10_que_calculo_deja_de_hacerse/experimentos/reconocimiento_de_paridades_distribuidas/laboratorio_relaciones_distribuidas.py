@@ -181,6 +181,7 @@ def extract(cnf,nvars):
         if z not in {a for (a,) in units} and used_by[z]!=1:raise ValueError('auxiliar ROSI compartido')
     usable=sorted(sources|xor_outputs)
     index={v:i for i,v in enumerate(usable)}
+    if any(v not in index for z,a,b in xor for v in (a,b)):raise ValueError('entrada XOR fuera de la familia')
     rows=[]
     for z,a,b in xor:rows.append((sum(1<<index[v] for v in (z,a,b)),0))
     for (l,) in units:

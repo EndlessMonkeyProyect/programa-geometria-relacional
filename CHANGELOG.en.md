@@ -1,5 +1,13 @@
 # History of this edition
 
+## What computation becomes unnecessary? v0.3 · 2026-11-10
+
+- The paper's thread is written in the program's vocabulary: uncertainty, reflection, closure, inheritance and novelty. Technical terms move to a bridges section with references.
+- Added a generic baseline: variable elimination on the formula without recognition, measured with the same protocol as the other routes. The long-connection family is extended to 256 primary variables, and the formulas are exported in DIMACS for dedicated counters.
+- Added a contract test of the recognizer on 5,889 formulas. The recognizer explicitly rejects a parity input outside the family; its counts are unchanged.
+- The §9 table comes from a single results file, formulas use delimiters that GitHub renders, and the English paper is complete with a PDF.
+- The reproduction record lives in `ANEXO_EVIDENCIAS.md` and `EVIDENCE.en.md`. Removed the editorial checklist, the audit log, the earlier laboratory and its before/after control.
+
 ## What computation becomes unnecessary? · 2026-11-10
 
 - Added a follow-up paper in Spanish and English, a reading PDF, two laboratories with their original results, and a standalone verifier.

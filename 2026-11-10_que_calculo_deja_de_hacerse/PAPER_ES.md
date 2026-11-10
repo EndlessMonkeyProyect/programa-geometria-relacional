@@ -1,214 +1,277 @@
 # ¿Qué cálculo deja de hacerse?
-## La caja de espejos: reconocimiento, cierre y economía exacta
+## La caja de espejos: incertidumbre, reconocimiento y cierre
 
 **Endless Monkey Project**  
 *Relational Geometry Program*  
-**10 de noviembre de 2026 · Manuscrito para revisión independiente · versión 0.2**
+10 de noviembre de 2026 · manuscrito para revisión independiente · versión 0.3
 
 ### Resumen
 
-Estudiamos una pregunta: **¿cuándo reconocer relaciones heredadas y cambiar de referencia permite conservar una respuesta exacta con menos trabajo total?** La caja de espejos es el laboratorio conceptual que reúne los pasos de *referencia, reflejo, cierre, reapertura y costo*; la demostración depende de contratos matemáticos explícitos, no de la analogía óptica. Integramos tres situaciones matemáticas: la reconstrucción de los seis vínculos compatibles del tetraedro con tres bits independientes; la identificación de una raíz afín única antes del cierre, conservando el estado residual; y la recuperación de relaciones de paridad para contar soluciones exactas sin volver a resolver restricciones heredadas. Para sistemas de ecuaciones de paridad binaria (suma módulo dos, XOR) más cláusulas disyuntivas (OR) establecemos un procedimiento exacto con costo \(O(\operatorname{poly}(L)\,[1+2^{\min(t,d)}])\), **cuando la referencia de paridad está dada o es extraíble con un costo polinómico certificado**: \(L\) es la longitud de entrada, \(d\) la dimensión afín libre y \(t\) el número de cláusulas OR no implicadas por la referencia. Los controles reproducibles muestran ahorro frente a líneas base concretas y también casos negativos. Incorporamos asimismo un reconocedor de compuertas lógicas para una familia delimitada de fórmulas con relaciones de paridad ocultas, junto con su código, sus controles negativos y el costo de reconocimiento. La contribución de esta síntesis es relacionar dos medidas estructurales —distinciones observables y tamaño mínimo de representación— con los costos verificables de reconocimiento, cálculo y reconstrucción. **No se demuestra una cota subexponencial para la satisfacibilidad general de fórmulas con tres literales ni superioridad universal frente a algoritmos existentes.**
+Cuando una parte de la incertidumbre ya está resuelta por relaciones heredadas, reconocerla ahorra cálculo, y reconocerla también cuesta. Este manuscrito sigue esa cuenta en la caja de espejos, en cuatro pasos. En el tetraedro, seis comparaciones entre cuatro estados se reconstruyen desde tres, porque la comparación no tiene dirección. Mientras la incertidumbre se reduce, con cinco de ocho estados ya se reconoce el único cierre de cuatro que cabe, y un estado queda pendiente; la exclusión siguiente cierra o deshace lo reconocido. Cuando los reflejos están dados como ecuaciones de paridad, el número exacto de soluciones sale con costo $O(\operatorname{poly}(L)(1+2^{\min(t,d)}))$, donde $d$ es la incertidumbre que el cierre deja libre y $t$ la novedad que queda. Y cuando los reflejos llegan escondidos en compuertas lógicas, reconocerlos tiene un costo propio. Lo medimos contra un DPLL que enumera y contra la eliminación de variables sobre la fórmula tal como llega, aumentando el tamaño. En fórmulas de ancho constante, las dos rutas exactas crecen de forma polinómica y se separan por un factor constante. En fórmulas con conexiones largas, la tabla mayor de la eliminación crece de $2^{6}$ a $2^{58}$, mientras el reconocimiento cuenta 256 variables primarias en 58 ms. Cada resultado vale para la familia que define su sección; la pregunta para fórmulas de tres literales sin plantillas reconocibles queda abierta en el §12.
 
-**Palabras clave:** referencia, distinción, herencia, cubo de espejos, estructura mínima, subespacio afín, paridad binaria, fórmulas de cláusulas, conteo exacto, complejidad.
+**Palabras clave:** incertidumbre, comparación, reflejo, cierre, herencia, novedad, reconocimiento, conteo exacto.
 
-### Abstract
+## 1. La pregunta
 
-We ask when recognizing inherited relations and changing reference preserves an exact answer at lower *total* cost. A mirror cube organizes the conceptual operations of reference, reflection, closure, reopening, and cost, but all proofs rely on stated mathematical contracts. We connect minimal reconstruction on \(K_4\), early affine-root uniqueness with residual states, and exact counting in XOR+OR families. With an explicit or provably polynomial-time extractable affine reference, an exact algorithm has an \(O(\operatorname{poly}(L)[1+2^{\min(t,d)}])\) bound. The paper distinguishes observational, representational, recognition, and counting costs, reports positive and negative controls, and identifies the unresolved extension to unstructured 3-CNF. No general 3-SAT complexity breakthrough is claimed.
+La publicación del 8 de noviembre, «¿Dónde se ahorra el cálculo?», separó tres cosas: cuántas diferencias ve una consulta, cuántas hay que guardar para reconstruir la respuesta y cuántas operaciones cuesta darla. Este manuscrito la continúa con una cuarta: cuánto cuesta reconocer qué parte de la incertidumbre ya estaba resuelta.
 
----
+La caja de espejos es el laboratorio conceptual. Un espejo refleja un estado en otro. Un cierre es un conjunto que contiene el reflejo de sus propias combinaciones. Una restricción nueva corre la pared: o cae sobre un reflejo que ya estaba, y entonces es herencia, o abre una comparación que no tenía con qué compararse, y entonces es novedad. Cada imagen se traduce a una definición y a una cuenta verificable antes de hablar de ahorro.
 
-## 1. Pregunta, procedencia y alcance
+Los resultados son de cuatro tipos: teoremas bajo hipótesis escritas, controles finitos exhaustivos, mediciones sobre implementaciones concretas y preguntas abiertas.
 
-La publicación del programa del **8 de noviembre de 2026**, «¿Dónde se ahorra el cálculo?», distinguió cuántas diferencias siguen siendo observables, cuántas deben conservarse en una representación exacta y cuántas operaciones exige responder una consulta. También exigía contabilizar la construcción de las interfaces. Este manuscrito **hace explícito y somete a prueba el costo de descubrir, verificar y mantener la referencia**; no presenta ese costo como una idea inexistente en la publicación anterior. Es una ampliación del expediente anterior, no su sustitución.
+## 2. Incertidumbre, herencia y novedad
 
-El programa adopta *distinciones, herencia y economía* como ontología de trabajo. La caja de espejos, la pared móvil y las esferas sirven para plantear cambios de observación en los que la estructura subyacente no necesita cambiar. La imagen debe traducirse a una transformación y a un contrato verificables antes de afirmar una ventaja algorítmica.
+Sea $X$ un conjunto finito de estados y $\mathcal Q$ una familia de consultas. Dos estados son indistinguibles, $x\sim_{\mathcal Q}y$, cuando toda consulta da la misma respuesta sobre ambos. La resolución de la consulta es
 
-Distinguimos en lenguaje natural los **teoremas bajo hipótesis expresas**, los **controles finitos exhaustivos**, las **mediciones experimentales** sobre implementaciones determinadas y los **problemas abiertos**. Los resultados experimentales no se presentan como teoremas de complejidad general. No confundimos identidad algebraica con costo de construcción, ni unicidad con cierre, ni compresión con rapidez.
+$$
+D_{\mathcal Q}=\log_2\lvert X/{\sim_{\mathcal Q}}\rvert ,
+$$
 
-## 2. Distinción, herencia y las magnitudes de la economía
+el número de bits de diferencia que la consulta alcanza a ver. Es un conteo de clases, sin distribución de probabilidad.
 
-Sea \(X\) un conjunto finito de estados y \(\mathcal Q\) una familia declarada de consultas. Definimos \(x\sim_{\mathcal Q}y\) cuando todas las consultas disponibles dan la misma respuesta sobre \(x\) e \(y\). La capacidad de distinción del cociente es
+Una relación es **heredada** cuando ya es consecuencia de lo fijado. Una restricción es **novedad** cuando excluye estados que lo fijado todavía admitía. Las dos palabras se refieren siempre a una referencia y a una consulta.
 
-\[
-D_{\mathcal Q}=\log_2 |X/\!\sim_{\mathcal Q}|.
-\]
+La economía tiene dos medidas de estructura y tres de trabajo:
 
-Es un logaritmo del número de clases, **no una entropía de Shannon sin distribución probabilística**. Una clase puede contener muchas realizaciones internas aunque sea indistinguible para \(\mathcal Q\). Una **relación heredada** es una consecuencia de las restricciones ya fijadas; una **restricción novedosa** elimina realizaciones que antes eran compatibles. Estas definiciones son relativas a la referencia y a la consulta.
+1. $D_{\mathrm{obs}}$: lo que la consulta necesita distinguir.
+2. $D_{\mathrm{rep}}$: lo mínimo que hay que guardar para reconstruirlo, dentro de una clase de representaciones declarada.
+3. $C_{\mathrm{rec}}$: reconocer, comprobar y mantener la referencia.
+4. $C_{\mathrm{calc}}$: contar sobre esa referencia y llevar lo pendiente.
+5. $C_{\mathrm{recon}}$: reconstruir la respuesta.
 
-Separamos **dos magnitudes estructurales** y **tres componentes computacionales**. No tienen las mismas unidades y no deben sumarse indiscriminadamente:
+Las dos primeras se miden en bits; las otras tres, en operaciones. Frente a una ruta de comparación $B$, con el mismo problema, la misma respuesta y el mismo modelo de costo, hay economía neta cuando
 
-1. \(D_{\mathrm{obs}}\): cantidad de clases observables exigidas por la consulta, medida aquí por su logaritmo en base dos.
-2. \(D_{\mathrm{rep}}\): tamaño mínimo de una representación dentro de una **clase de representaciones declarada** (bits, rangos de corte, autómatas, etc.).
-3. \(C_{\mathrm{rec}}\): trabajo para descubrir, construir, certificar y actualizar la referencia económica.
-4. \(C_{\mathrm{calc}}\): trabajo para resolver la consulta exacta sobre esa referencia y manejar residuos. El trabajo de reconstrucción de la respuesta se contabiliza aparte como \(C_{\mathrm{recon}}\).
+$$
+C_{\mathrm{rec}}(F)+C_{\mathrm{calc}}(F)+C_{\mathrm{recon}}(F)<C_B(F).
+$$
 
-En un modelo de costo fijo, una economía neta frente a una línea base \(B\) exige
+Guardar poco y calcular poco son dos cosas distintas: la representación más corta puede salir cara de encontrar.
 
-\[
-C_{\mathrm{rec}}(F)+C_{\mathrm{calc}}(F)+C_{\mathrm{recon}}(F) < C_B(F),
-\]
+## 3. El tetraedro: la comparación sin dirección
 
-con el mismo problema, la misma respuesta y el mismo entorno de medida. Minimizar el tamaño de representación \(D_{\mathrm{rep}}\) **no** garantiza minimizar el costo de ejecutar todo el cálculo.
+Cuatro estados $s_0,s_1,s_2,s_3\in\mathbb F_2$ ocupan los vértices de un tetraedro. Cada arista lleva la comparación entre sus dos extremos, el reflejo de un estado en el otro:
 
-## 3. Reconstrucción de los vínculos del tetraedro: seis vínculos, tres bits
+$$
+b_{ij}=s_i\oplus s_j .
+$$
 
-Consideremos el grafo completo de cuatro vértices (\(K_4\), las seis aristas de un tetraedro) con vértices \(V=\{0,1,2,3\}\), estados \(s_i\in\mathbb F_2\) y etiquetas de arista \(b_{ij}=s_i\oplus s_j\). Para cualquier foco \(f\), la estrella \((b_{fi})_{i\ne f}\) reconstruye todas las aristas mediante
+Desde cualquier vértice $f$, las tres comparaciones que salen de él reconstruyen las seis: $b_{ij}=b_{fi}\oplus b_{fj}$.
 
-\[
-b_{ij}=b_{fi}\oplus b_{fj}.
-\]
+**Teorema 1.** Las seis comparaciones compatibles forman ocho patrones. Tres bits los codifican exactamente, y tres es el mínimo de cualquier código binario inyectivo.
 
-**Teorema 1 (mínimo bajo el contrato de vínculos).** El espacio de los seis vínculos compatibles tiene ocho patrones distintos y admite una codificación exacta de tres bits; ninguna codificación binaria inyectiva de esos patrones usa menos de tres bits.
+**Prueba.** La aplicación lineal $\delta:\mathbb F_2^4\to\mathbb F_2^6$, $\delta(s)_{ij}=s_i\oplus s_j$, tiene núcleo $\lbrace 0000,1111\rbrace$. Por rango y nulidad, su imagen tiene dimensión 3: son $2^3=8$ patrones. Las tres comparaciones desde un vértice los distinguen todos, y dos bits distinguen a lo sumo cuatro. $\square$
 
-**Prueba.** La aplicación lineal \(\delta:\mathbb F_2^4\to\mathbb F_2^6\), \(\delta(s)_{ij}=s_i\oplus s_j\), tiene núcleo \(\{0000,1111\}\). Por rango-nulidad, \(\dim\operatorname{im}\delta=3\), luego hay \(2^3=8\) patrones. Una estrella de un foco determina exactamente el patrón y usa tres bits. Menos de tres bits distinguen a lo sumo cuatro patrones. \(\square\)
+Invertir los cuatro estados a la vez deja intactas las seis comparaciones: la comparación registra la diferencia, no el lado desde el que se comparó. Por eso las 16 configuraciones de vértices dan 8 patrones, y un bit —la orientación del conjunto— queda fuera de lo que las aristas ven. La economía aquí es de representación: tres bits sostienen seis comparaciones.
 
-La inversión simultánea de todos los estados de vértice no cambia ninguna arista. Las **16** configuraciones de vértices producen **8** patrones de vínculos. Esta economía es de **representación y reconstrucción bajo un contrato local**; no establece un límite sobre toda tarea futura imaginable.
+## 4. La incertidumbre se reduce: reconocer antes de cerrar
 
-## 4. Convergencia de una raíz afín antes del cierre
+Trabajamos en $\mathbb F_2^n$, los $2^n$ estados de $n$ bits. Un **cierre** de dimensión $d$ es un conjunto $P$ de $2^d$ estados que contiene el reflejo de sus propias combinaciones: si $a,b,c\in P$, entonces $a\oplus b\oplus c\in P$. Sea $S$ el conjunto de estados que siguen admitidos.
 
-Trabajamos sobre \(\mathbb F_2^n\). Una raíz candidata de dimensión \(d\) es un subespacio afín \(P=a+U\) de \(2^d\) puntos contenido en el conjunto \(S\) de estados admitidos. Definimos
-\(\mathcal R_d(S)=\{P:\dim P=d,\ P\subseteq S\}\).
+**Teorema 2 (un solo cierre cabe).** Si $\lvert S\rvert<3\cdot2^{d-1}$, entonces $S$ contiene a lo sumo un cierre de dimensión $d$.
 
-**Teorema 2 (umbral de no multiplicidad).** Si \(|S|<3\cdot2^{d-1}\), entonces \(|\mathcal R_d(S)|\le1\).
+**Prueba.** Dos cierres distintos de dimensión $d$ comparten a lo sumo $2^{d-1}$ estados, así que juntos ocupan al menos $2^{d+1}-2^{d-1}=3\cdot2^{d-1}$. $\square$
 
-**Prueba.** Dos subespacios afines distintos de dimensión \(d\) intersectan en, como máximo, \(2^{d-1}\) puntos. Su unión tiene al menos \(2^{d+1}-2^{d-1}=3\cdot2^{d-1}\) puntos. No pueden caber ambos en \(S\). \(\square\)
+El teorema da unicidad cuando el cierre existe; que exista depende de $S$.
 
-**Precisiones.** El teorema afirma *a lo sumo una* raíz de dimensión \(d\), no su existencia. Tampoco coincide automáticamente con el operador de núcleo máximo del atlas anterior, que selecciona núcleos cerrados de cardinalidad máxima.
+En $\mathbb F_2^3$ hay ocho estados: tres bits de incertidumbre. Cada exclusión resuelve una parte. Tras tres exclusiones quedan cinco estados, y en los 56 casos posibles cuatro de ellos forman el único cierre que cabe; el quinto es la incertidumbre que sigue abierta. El cierre ya se reconoce, con un estado todavía pendiente.
 
-En \(\mathbb F_2^3\), todo conjunto de **cinco** puntos contiene exactamente un plano afín de **cuatro** puntos y un punto residual. El control exhaustivo de raíces y residuos recorre las \(336\) secuencias ordenadas de tres exclusiones: en todas aparece esa raíz única. Considerando la cuarta exclusión, **336** extensiones alcanzan el cierre de cuatro estados y **1.344** retraen la raíz reconocida. Por tanto,
+La cuarta exclusión decide. Si resuelve el estado pendiente, quedan los cuatro del cierre: cierra. Si quita un estado del cierre reconocido, ese cierre deja de caber: lo reconocido se retrae. El recorrido exhaustivo de las 336 secuencias ordenadas de tres exclusiones y sus 1.680 continuaciones da 336 cierres y 1.344 retracciones.
 
-\[
-\boxed{\text{unicidad anticipada}\not\Rightarrow\text{cierre exacto}.}
-\]
+La cuenta de incertidumbre es exacta. Pasar de ocho estados a cuatro resuelve un bit:
 
-Reconocer no autoriza a descartar el residuo: hacerlo alteraría las respuestas de consultas que lo distinguen.
+$$
+\log_2\frac{8}{5}+\log_2\frac{5}{4}=1 .
+$$
 
-## 5. De tres cláusulas a una raíz y un estado residual
+Las tres primeras exclusiones resuelven 0,678 bits y ya permiten reconocer el cierre; la cuarta resuelve los 0,322 restantes y lo confirma. Reconocer ocurre antes que cerrar. El estado pendiente se conserva hasta que una exclusión lo resuelva, porque descartarlo antes cambiaría la respuesta de toda consulta que lo distinga.
 
-Una cláusula disyuntiva con tres literales sobre tres variables distintas excluye **una** de las ocho asignaciones posibles. Sean \(a,b,c\in\mathbb F_2^3\) tres asignaciones **distintas** excluidas por tres cláusulas. Su envoltura afín es
+## 5. Tres cláusulas: un cierre y un estado pendiente
 
-\[
-L=\{a,b,c,a\oplus b\oplus c\};\qquad P=\mathbb F_2^3\setminus L.
-\]
+Una cláusula de tres literales sobre tres variables distintas excluye uno de los ocho estados de esas variables. Sean $a,b,c\in\mathbb F_2^3$ tres estados distintos excluidos por tres cláusulas. Su propio cierre y su complemento son
 
-**Teorema 3 (descomposición local exacta).** El conjunto permitido por esas tres cláusulas es \(P\cup\{a\oplus b\oplus c\}\), unión disjunta de un plano afín de cuatro puntos y un único punto residual. \(P\) es el único plano afín contenido en los cinco estados permitidos.
+$$
+L=\lbrace a,b,c,a\oplus b\oplus c\rbrace ,\qquad P=\mathbb F_2^3\setminus L .
+$$
 
-**Prueba.** Tres puntos distintos de \(\mathbb F_2^3\) generan el plano de cuatro puntos indicado. Los cinco estados no excluidos son su complemento de cuatro puntos más el cuarto punto del propio plano. El complemento de un plano afín es otro plano afín. La unicidad sigue del Teorema 2 con \(d=2\) y \(|S|=5<6\). \(\square\)
+**Teorema 3.** Los estados que admiten las tres cláusulas son $P\cup\lbrace a\oplus b\oplus c\rbrace$: un cierre de cuatro estados y un estado pendiente. $P$ es el único cierre de dimensión 2 contenido en ellos.
 
-Si una cuarta cláusula excluye **exactamente el residuo**, el conjunto de modelos se convierte en \(P\): cierre. Si excluye un punto de \(P\), el plano anticipado deja de estar contenido: retracción. Este mecanismo explica, sin una ecuación de paridad escrita en la entrada, la raíz afín local de una fórmula de cláusulas de hasta tres literales (3-CNF). **No demuestra** que la misma extracción sea económica cuando la relación está codificada arbitrariamente entre muchas cláusulas.
+**Prueba.** Tres estados distintos de $\mathbb F_2^3$ generan el cierre de cuatro estados $L$. Los cinco admitidos son el complemento de $L$, que también es un cierre, más el cuarto estado de $L$. La unicidad sigue del Teorema 2 con $d=2$ y $\lvert S\rvert=5<6$. $\square$
 
-## 6. Conteo exacto con ecuaciones de paridad y cláusulas disyuntivas
+Una cuarta cláusula que excluye exactamente el estado pendiente cierra $P$; una que excluye un estado de $P$ lo retrae. Así, una fórmula de cláusulas de tres literales produce un cierre local sin que ninguna ecuación de paridad aparezca escrita. Según la terna, ese cierre fija una variable (24 de las 56 ternas), iguala o separa dos (24) o es una paridad de las tres (8).
 
-Sea \(F\) una conjunción de ecuaciones lineales \(Ax=b\) sobre \(\mathbb F_2\) con \(n\) variables y cláusulas disyuntivas \(C_1,\ldots,C_k\). Si el sistema de paridad es consistente y tiene rango \(r\), su espacio afín tiene dimensión \(d=n-r\). Para cada conjunto \(J\subseteq[k]\), negar las cláusulas de \(J\) equivale a añadir asignaciones unitarias. La inclusión-exclusión proporciona
+Reconocer el mismo cierre cuando la relación está repartida entre muchas cláusulas es otro problema, con su propio costo: el tema del §7.
 
-\[
-\#F=\sum_{J\subseteq[k]}(-1)^{|J|}\,N\!\left(Ax=b\;\land\!\bigwedge_{j\in J}\neg C_j\right),
-\]
+## 6. Contar cuando los reflejos están dados
 
-con cada sumando igual a cero si el sistema ampliado es inconsistente y a \(2^{n-r_J}\) en caso contrario, donde \(r_J\) es su rango.
+Sea $F$ la conjunción de ecuaciones de paridad $Ax=b$ sobre $\mathbb F_2$, con $n$ variables, y de cláusulas disyuntivas $C_1,\dots,C_k$. En el hilo:
 
-Si \(Ax=b\models C_j\), esa cláusula es **heredada** y puede eliminarse sin cambiar el conjunto de modelos; se detecta comprobando por eliminación gaussiana la inconsistencia de \(Ax=b\land\neg C_j\). Sean \(t\le k\) las cláusulas restantes. Alternativamente, pueden enumerarse las \(2^d\) asignaciones de parámetros libres de la referencia. Por ello:
+- las ecuaciones son el cierre heredado; si son consistentes y de rango $r$, dejan $d=n-r$ bits de incertidumbre libre;
+- cada cláusula corre la pared. Si el cierre ya la cumple ($Ax=b\models C_j$), es herencia y se retira sin cambiar las soluciones; si no, es novedad. Quedan $t\le k$ cláusulas de novedad.
 
-**Teorema 4 (dos rutas exactas).** Con las ecuaciones de paridad dadas explícitamente, el conteo puede efectuarse en
+Que una cláusula sea herencia se comprueba por eliminación gaussiana: $Ax=b\land\lnot C_j$ es inconsistente. Negar una cláusula equivale a fijar sus literales en falso, así que cada término de la inclusión–exclusión es otro sistema de paridad. Escribimos $N(\cdot)$ para el número de soluciones:
 
-\[
-\boxed{O\!\left(\operatorname{poly}(L)\,[1+2^{\min(t,d)}]\right),}
-\]
+$$
+N(F)=\sum_{J\subseteq\lbrace 1,\dots,k\rbrace}(-1)^{\lvert J\rvert}N\Big(Ax=b\land\bigwedge_{j\in J}\lnot C_j\Big).
+$$
 
-incluyendo la construcción de la base afín y la detección de cláusulas individualmente heredadas, bajo el modelo usual de operaciones de bits de tamaño polinómico. Si la referencia no está explícita, debe **sumarse el costo de extraerla y certificar su equivalencia**. Si el sistema de paridad es inconsistente, el conteo es cero.
+Cada sumando vale $0$ si el sistema ampliado es inconsistente, y $2^{n-r_J}$ si no, con $r_J$ su rango.
 
-**Prueba.** Gaussianamente se calcula una base y se comprueba cada cláusula. Quedan \(t\) cláusulas. La expansión de inclusión-exclusión explora como máximo \(2^t\) subconjuntos y cada uno es un sistema lineal resoluble en tiempo polinómico. La parametrización afín recorre como máximo \(2^d\) vectores libres y verifica cada cláusula en tiempo polinómico. Elegir el menor de esos dos procedimientos demuestra la cota. \(\square\)
+**Teorema 4 (dos rutas exactas).** Con las ecuaciones de paridad dadas, el número de soluciones se calcula en tiempo
 
-La cota es **paramétrica**: si \(\min(t,d)=O(\log L)\), es polinómica. Si ambos parámetros crecen linealmente, puede ser exponencial. La extracción por compuertas de tamaño constante y extensión auxiliar única puede incorporarse bajo una familia de codificaciones **reconocibles y certificadas**; el experimento distribuido incluido en el anexo verifica casos de esa familia. No hemos probado su disponibilidad económica para fórmulas generales de tres literales.
+$$
+O\big(\operatorname{poly}(L)\cdot(1+2^{\min(t,d)})\big),
+$$
 
-## 7. La otra parte de la economía: descubrir la referencia
+con $L$ la longitud de la entrada, incluyendo la construcción de la base y la retirada de las cláusulas heredadas, en el modelo usual de operaciones sobre palabras de tamaño polinómico. Si el sistema de paridad es inconsistente, el número es cero.
 
-La publicación anterior ya medía economía de observación, de representación y de ejecución. El paso nuevo es dar un lugar explícito a la pregunta: **¿cuánto cuesta identificar cuáles distinciones estaban heredadas antes de calcularlas otra vez?**
+**Prueba.** La eliminación gaussiana construye la base y prueba cada cláusula en tiempo polinómico. Quedan $t$ cláusulas: la inclusión–exclusión visita a lo sumo $2^t$ subconjuntos, cada uno un sistema lineal. Alternativamente, se recorren los $2^d$ valores de los parámetros libres y se prueba cada cláusula. Se toma la ruta menor. $\square$
 
-Para un extractor \(E\) y un verificador \(V\), escribimos \(E(F)=(R,\Delta,\pi)\), donde \(R\) es la referencia reconocida, \(\Delta\) es el residuo y \(\pi\) es un certificado que permite reconstruir exactamente la consulta. Entonces definimos
+Leído en el hilo: el costo se paga en la menor de dos incertidumbres, recorrer lo que el cierre dejó libre o desplegar la novedad que queda. Es polinómico cuando una de las dos es $O(\log L)$ y exponencial cuando las dos crecen linealmente. Cuando la entrada trae los reflejos escondidos, a la cuenta se suma el costo de reconocerlos.
 
-\[
-C_{\rm total}=C_E+C_V+C_{R,\Delta}+C_{\rm reconstrucción}.
-\]
+## 7. El costo de reconocer lo heredado
 
-**Proposición de transferencia (condicional).** Si para una familia \(\mathcal F\) existen un extractor y un verificador correctos de costo \(T_E(L),T_V(L)\), una descomposición **exacta y sin solapamientos no corregidos**, y un contador sobre \((R,\Delta)\) con costo \(T_C(L,t,d)\), entonces la respuesta de cada \(F\in\mathcal F\) puede calcularse con costo \(O(T_E+T_V+T_C+T_{\rm recon})\). Hay economía neta frente a \(B\) cuando esta suma es estrictamente menor que el costo de \(B\) en la misma familia y con el mismo modelo.
+La publicación del 8 de noviembre ya medía la economía de observar, de representar y de ejecutar. Aquí la pregunta previa tiene lugar propio: ¿cuánto cuesta saber qué estaba heredado antes de volver a calcularlo?
 
-Es un criterio de demostración, **no una cota nueva por sí solo**. Para codificaciones por compuertas que el reconocedor logra identificar localmente y cuyas variables auxiliares tienen extensión única, ofrece un contrato plausible. Para una fórmula arbitraria de cláusulas de tres literales, encontrar la mejor referencia puede exigir resolver inferencias difíciles; no se puede asumir gratuita.
+Un reconocedor $E$ lee la fórmula y devuelve $E(F)=(R,\Delta,\pi)$: la referencia reconocida $R$, lo pendiente $\Delta$ y una constancia $\pi$ con la que se comprueba que la respuesta se reconstruye exacta. Un comprobador $V$ la revisa. El costo total es
 
-Aquí está la función precisa de la **caja de espejos**: proponer transformaciones de referencia que preserven las respuestas, distinguir imágenes heredadas de diferencias nuevas, y llevar la contabilidad de reaperturas. La analogía no sustituye a \(E\), \(V\) ni a la prueba de costo.
+$$
+C_{\mathrm{total}}=C_E+C_V+C_{R,\Delta}+C_{\mathrm{recon}} .
+$$
 
-## 8. Controles reproducibles: ventajas y límites
+**Proposición de transferencia (condicional).** Supongamos que una familia $\mathcal F$ admite un reconocedor y un comprobador correctos, de costos $T_E(L)$ y $T_V(L)$; una descomposición exacta de cada fórmula en referencia y pendiente, disjunta o corregida por inclusión–exclusión; y un contador sobre $(R,\Delta)$ de costo $T_C(L,t,d)$. Entonces cada $F\in\mathcal F$ se cuenta con costo $O(T_E+T_V+T_C+T_{\mathrm{recon}})$. Hay economía neta frente a $B$ cuando esa suma es menor que el costo de $B$ en la misma familia y con el mismo modelo.
 
-Los resultados que siguen pertenecen a los archivos de intercambio y comparación reunidos en `experimentos/intercambio_y_convergencia/`; no implican equivalencia de algoritmos externos ni generalización estadística.
+La proposición es un criterio para demostrar ahorros familia por familia. En una fórmula de tres literales cualquiera, encontrar la mejor referencia puede exigir inferencias difíciles, y ese costo entra completo en la cuenta.
 
-| Control | Resultado y lectura |
+La función de la caja de espejos es concreta: proponer cambios de referencia que conservan la respuesta, separar los reflejos heredados de las diferencias nuevas y llevar la cuenta de lo que se reabre.
+
+## 8. Controles con los reflejos dados
+
+Los controles de esta sección están en `experimentos/intercambio_y_convergencia/`. Los tiempos son los del archivo de resultados, medidos con implementaciones en Python.
+
+| Control | Resultado |
 |---|---|
-| Descomposición de intercambios y rangos | Identidades de intercambio y fórmulas de rangos comprobadas en los tamaños ensayados. Miden representación, no el tiempo total. |
-| Operación de cruce en los dos trabajos externos | Para \(r=2\), el operador local de intercambio coincide con el cruce por bits examinado en ambas construcciones. Es una coincidencia **local**, no una identidad entre algoritmos completos. |
-| Referencia periódica común | El mínimo común múltiplo de 12 y 18 es 36; la unicidad del referente modular exige el dominio declarado y no elimina el costo de construirlo. |
-| Raíz anticipada y estado residual | Con cinco de ocho estados hay una raíz de cuatro y un residuo de uno; 336 continuaciones cierran la raíz y 1.344 la retraen. |
-| Conteo con relaciones afines: caso favorable | 96 variables, 81 ecuaciones de paridad y ocho cláusulas disyuntivas; ambos procedimientos dan **10.656** soluciones; **0,0015 s** con inclusión-exclusión frente a **0,385 s** por eliminación de variables. |
-| Conteo con relaciones afines: caso contrario | 32 variables, 16 ecuaciones de paridad y 20 cláusulas disyuntivas; ambos dan **5.220** soluciones; **0,0378 s** con inclusión-exclusión frente a **0,0021 s** de eliminación. |
-| Referencia por ventana de interpolación | Una ventana demasiado estrecha conserva poca masa probabilística y puede hacer costosa la reconstrucción en el modelo evaluado. |
+| Unicidad del referente y su construcción (C5) | Los restos módulo 12 y 18 determinan un entero dentro de un ciclo de 36, su mínimo común múltiplo: en $[0,72)$ cada par de restos aparece dos veces, y solo existen 36 de los 216 pares posibles. Saber que la referencia es única y construirla son dos trabajos distintos. |
+| Reconocer antes de cerrar (C6) | Cinco de ocho estados: un cierre de cuatro y un estado pendiente; 336 continuaciones cierran y 1.344 retraen. |
+| Reflejos dados, caso favorable (C7) | 96 variables, 81 ecuaciones de paridad y 8 cláusulas: ambas rutas cuentan 10.656. La inclusión–exclusión visita 39 términos en 0,0015 s; la eliminación de variables forma una tabla de $2^{24}$ y tarda 0,385 s. |
+| Reflejos dados, caso contrario (C7) | 32 variables, 16 ecuaciones y 20 cláusulas: ambas cuentan 5.220; inclusión–exclusión 0,0378 s, eliminación 0,0021 s. |
+| Mucha novedad, poco cierre (C7) | 24 variables, 2 ecuaciones y 48 cláusulas: la inclusión–exclusión pasa el tope de dos millones de términos; la eliminación cuenta 4.672, igual que la fuerza bruta. |
+| Ventana de interpolación (C8) | Con $Q=400$, una ventana de ancho $\sqrt Q$ deja fuera el 24,8 % del peso; de ancho $2\sqrt Q$, el 2,1 %; de ancho $3\sqrt Q$, el 0,06 %. Una referencia demasiado estrecha encarece la reconstrucción. |
 
-Los tiempos son observaciones de **esas implementaciones y ese entorno**, no comparaciones con solvers industriales optimizados. El control favorable **sí** construye la base de paridad dentro del tiempo registrado, pero **recibe las ecuaciones como entrada**: no mide cuánto cuesta descubrirlas en una 3-CNF arbitraria.
+## 9. Reflejos escondidos en compuertas
 
-El expediente incluye también el código del **reconocimiento de relaciones ocultas mediante compuertas**, cuya prueba de crecimiento se trata por separado en la sección siguiente. El verificador autocontenido reproduce la reconstrucción local, el cierre y conteos pequeños; el reconocedor adicional opera solo dentro de su contrato sintáctico y **no** constituye un reconocedor universal de fórmulas de tres literales.
+Aquí la fórmula llega solo como cláusulas de hasta tres literales. Los reflejos, que son relaciones de paridad entre variables primarias, están construidos con compuertas de conjunción y disyunción de dos entradas y sus variables auxiliares. Los nombres de las variables se permutan y el orden de las cláusulas se mezcla. Algunos reflejos llegan como cierre con un estado pendiente. El reconocedor identifica compuertas completas, reconstruye las paridades y conserva los estados pendientes.
 
-## 9. Reconocimiento de paridades ocultas en fórmulas conectadas
+**Contrato.** La fórmula es un circuito funcional de compuertas de dos entradas, cada asignación de las variables primarias determina una sola extensión a las auxiliares, y las paridades se componen de forma reconocible. Lo que sale del contrato se rechaza.
 
-La prueba anterior supone conocidas las ecuaciones de paridad. El laboratorio complementario recibe únicamente una fórmula de cláusulas de hasta tres literales: las relaciones de paridad están expresadas mediante **compuertas de conjunción y disyunción** y sus variables auxiliares, no como ecuaciones declaradas. Las variables se renombran y el orden de las cláusulas se mezcla. El reconocedor identifica patrones completos de compuertas, reconstruye ciertas paridades y conserva los **estados residuales** de las raíces parciales.
+**Proposición de conservación del conteo (bajo el contrato).** Sustituir las compuertas verificadas por sus relaciones de paridad, y cada cierre parcial por su cierre más su estado pendiente, conserva el número de soluciones: las asignaciones primarias y sus extensiones están en biyección, y los casos pendientes se suman por separado. Con $u$ cierres parciales y $k$ cláusulas de novedad, el conteo cuesta $O(\operatorname{poly}(\lvert F\rvert)\cdot(1+2^{u+k}))$ en la familia.
 
-**Contrato.** La entrada pertenece a una familia de circuitos funcionales de compuertas de dos entradas, con codificación íntegra verificable, salidas auxiliares de extensión única y composición de paridades reconocible. Las compuertas no reconocidas se rechazan o permanecen como restricciones originales. No se supone que toda fórmula admita tal descomposición.
+**Medición.** El script `experimentos/linea_base_generica/comparacion_y_escala.py` mide todas las rutas sobre las mismas fórmulas ya generadas, en la misma ejecución:
 
-**Proposición de conservación del conteo, condicionada al contrato.** Si cada asignación de variables primarias determina exactamente una extensión a las auxiliares, eliminar las compuertas verificadas y sustituirlas por sus relaciones de paridad, con descomposición exacta y disjunta de cada raíz parcial en raíz más residuo, conserva el número de soluciones. Esto se sigue de la biyección entre asignaciones primarias y extensiones válidas, y de la suma disjunta de los casos residuales. Con \(u\) raíces parciales y \(k\) cláusulas disyuntivas no absorbidas, el procedimiento por inclusión-exclusión tiene cota \(O(\operatorname{poly}(|F|)[1+2^{u+k}])\) para la familia reconocible. Es una cota **paramétrica**, no general para todas las fórmulas.
+- reconocer y contar, mediana de 7;
+- eliminación de variables sobre la fórmula tal como llega, sin reconocer nada, mediana de 3, cuando su tabla mayor es de hasta $2^{24}$;
+- el DPLL del laboratorio, mediana de 3, hasta 32 variables primarias en el ciclo y 24 en conexiones largas.
 
-El laboratorio suministrado reporta, entre otros, estos controles con fórmulas conectadas:
+Los conteos completados coinciden en todas las filas. La familia de conexiones largas se extiende hasta 256 variables primarias.
 
-| Variables primarias | Cláusulas | Soluciones exactas | Reconocimiento y conteo registrados | Comparación registrada |
-|---:|---:|---:|---:|---|
-| 24 | 248 | 5.312 | 1,23 ms | Contador convencional: 168 ms |
-| 32 | 333 | 98.560 | 2,20 ms | Contador convencional: 3.247 ms |
-| 96, con conexiones largas | 1.549 | 156.800 | 15,02 ms | No se presenta comparación completa |
+| Familia | Primarias | Cláusulas | Soluciones | Reconocer y contar | Eliminación genérica | Tabla mayor de la eliminación | DPLL |
+|-------|---------:|---------:|--------------------:|----------:|----------:|----------:|---------:|
+| ciclo | 24 | 248 | 5.312 | 1,4 ms | 6,6 ms | $2^{6}$ | 227,7 ms |
+| ciclo | 32 | 333 | 98.560 | 2,4 ms | 9,4 ms | $2^{5}$ | 4.662 ms |
+| ciclo | 96 | 941 | 420.906.795.008.000 | 12,9 ms | 45,8 ms | $2^{6}$ | — |
+| largas | 24 | 409 | 26 | 2,6 ms | 11,6 ms | $2^{9}$ | 19,6 ms |
+| largas | 48 | 789 | 364 | 6,5 ms | 27,8 ms | $2^{13}$ | — |
+| largas | 64 | 1.036 | 3.084 | 8,4 ms | 54,9 ms | $2^{18}$ | — |
+| largas | 96 | 1.549 | 156.800 | 12,8 ms | 247,0 ms | $2^{21}$ | — |
+| largas | 128 | 2.043 | 6.272.000 | 22,4 ms | — | $2^{29}$ | — |
+| largas | 200 | 3.183 | 25.690.112.000 | 41,3 ms | — | $2^{40}$ | — |
+| largas | 256 | 4.076 | 13.153.337.344.000 | 58,0 ms | — | $2^{58}$ | — |
 
-Estos tiempos proceden del archivo de resultados suministrado, en implementaciones de Python. **El contador de referencia no es un programa industrial optimizado**; sus diferencias no prueban optimalidad ni un ahorro frente a técnicas que también reconocen ecuaciones de paridad. En esta revisión se volvió a ejecutar el **laboratorio distribuido completo**: 144 verificaciones de compuertas, 30 controles aleatorios, los dos controles negativos, los tamaños de 8 a 96 variables primarias y los controles con conexiones largas. Los conteos coincidieron con sus referencias internas; los tiempos variaron entre ejecuciones, como corresponde a mediciones experimentales. El expediente adjunta el programa y los datos para su verificación independiente.
+Las 23 fórmulas medidas están en `RESULTADOS_COMPARACION.json`; la tabla muestra diez.
 
-La novedad de esta **síntesis del programa** es la secuencia comprobable de conceptos —distinción pendiente, reconocimiento de herencia, conservación del residuo y reconstrucción exacta—, no la invención de la eliminación gaussiana ni de las técnicas conocidas de reconocimiento de circuitos.
+**Ciclo de ternas.** Cada reflejo toca solo a sus vecinos y el ancho es constante: la eliminación forma tablas de a lo sumo $2^{6}$. Las dos rutas exactas crecen de forma polinómica y se separan por un factor de 3,5 a 5. El DPLL recorre dos nodos por solución (10.623 nodos para 5.312 soluciones; 197.119 para 98.560): su tiempo sigue al número de soluciones. En esta familia, la ventaja frente al DPLL viene de contar sin enumerar, y eso lo hacen las dos rutas exactas.
 
-## 10. Relación con los otros modelos estudiados
+**Conexiones largas.** Un tercio de los reflejos une variables lejanas. El ancho de la eliminación crece con el tamaño: $2^{6}$ con 12 primarias, $2^{21}$ con 96 y $2^{58}$ con 256. Una segunda ordenación, de relleno mínimo, da $2^{19}$ y $2^{54}$. La eliminación cuenta hasta 96 primarias, en 247 ms; desde 128 necesita tablas de $2^{29}$ o mayores. El reconocimiento cuenta las 256 primarias y 4.076 cláusulas en 58 ms. Aquí reconocer lo heredado paga: la eliminación guarda como tablas completas relaciones que el reconocimiento resuelve como ecuaciones de paridad.
 
-Los controles de intercambio y rango cotejan las identidades del operador de intercambio (escrito `SWAP` en los artículos técnicos), proyecciones antisimétricas y algunas piezas de rango de propuestas publicadas por OpenAI y Anthropic en octubre de 2026. El resultado que puede afirmarse aquí es una **identidad algebraica local en las representaciones construidas**, no que sus demostraciones de tiempo, sus algoritmos ni sus costos sean los mismos. En particular, escribir \(\mathrm{SWAP}=I-2P_-\), donde \(P_-\) es la proyección sobre la componente antisimétrica, no demuestra compresión: una descomposición podría generar demasiados términos o requerir mucho trabajo para encontrarlos y recombinarlos.
+**Alcance de la medición.** En todas estas fórmulas $u\le 3$ y $k\le 3$, así que $2^{u+k}\le 64$: la medición sigue la parte polinómica de la cota. Los pasos siguientes son hacer crecer $u+k$ y comparar con contadores dedicados que también reconocen compuertas o usan descomposiciones en árbol (§13). Con `--dimacs`, el script escribe cada fórmula en formato DIMACS con su conteo esperado, lista para esos contadores.
 
-El programa aporta una pregunta diferente y verificable: **cuándo la referencia y la herencia permiten evitar el recálculo de diferencias ya determinadas sin perder el residuo**. Esa pregunta complementa la comparación externa y permite obtener respuestas tanto positivas como negativas.
+**Contrato bajo prueba.** `prueba_adversarial.py` toma fórmulas válidas, les aplica al azar una de siete mutaciones (cambiar un signo, quitar o añadir una cláusula, reconectar un literal, fijar una variable, intercambiar o identificar variables) y añade ocho casos construidos fuera de la familia. De 5.889 fórmulas, el reconocedor rechaza 4.444 y acepta 1.445, y las 1.445 aceptadas dan el mismo conteo que la eliminación genérica. El laboratorio original verifica además 144 tablas de verdad de compuertas, 30 fórmulas aleatorias contra enumeración y dos controles fuera de contrato.
+
+## 10. Relación con los preprints de octubre
+
+Los controles C1–C4 cotejan, en representaciones construidas en el laboratorio, piezas de dos preprints de octubre de 2026, uno de OpenAI y otro de Anthropic. El operador de intercambio cumple $\mathrm{SWAP}=I-2P_-$, con $P_-$ la proyección sobre la parte antisimétrica. Con $r=2$, la matriz $V_0$ del preprint de OpenAI coincide con el cruce por bits del de Anthropic para $\lambda=1,\dots,5$, y las fórmulas de rango por pieza coinciden con los rangos medidos en todos los tamaños ensayados.
+
+Es una identidad local entre representaciones. Que una descomposición ahorre depende además de cuántos términos genera y de cuánto cuesta encontrarlos y recombinarlos: la misma cuenta del §2.
+
+La pregunta del programa es otra y los complementa: cuándo la referencia y la herencia permiten dejar de recalcular diferencias ya resueltas, conservando lo pendiente.
 
 ## 11. Estado de los resultados
 
-| Afirmación | Estado |
+| Resultado | Estado |
 |---|---|
-| Reconstrucción del tetraedro con tres bits | **Demostrado** para vínculos compatibles definidos por suma de paridad. |
-| Raíz afín única de dimensión fijada por debajo del umbral | **Demostrado**: unicidad *si existe*; existencia para cinco estados en \(\mathbb F_2^3\). |
-| Tres cláusulas distintas sobre el mismo trío ⇒ plano afín + residuo | **Demostrado** bajo las hipótesis declaradas. |
-| Conteo de paridad explícita con cláusulas disyuntivas y \(2^{\min(t,d)}\) | **Demostrado**: cota paramétrica con factores polinómicos. |
-| Ahorro frente a líneas base concretas | **Medido** en algunas instancias; controles contrarios también observados. |
-| Reconocimiento de compuertas ocultas en una familia certificable | **Teorema condicionado** a la codificación funcional y la validación completa de compuertas; **verificación parcial independiente de esta entrega** más resultados experimentales adjuntos. |
-| Economía neta para fórmulas generales; superioridad frente a todos los métodos | **Abierto**; no demostrado. |
+| Tetraedro: seis comparaciones desde tres bits | Teorema 1 |
+| A lo sumo un cierre de dimensión $d$ bajo el umbral $3\cdot2^{d-1}$ | Teorema 2; existencia comprobada para cinco estados en $\mathbb F_2^3$ |
+| Tres cláusulas: un cierre de cuatro y un estado pendiente | Teorema 3 |
+| Conteo con reflejos dados en $O(\operatorname{poly}(L)(1+2^{\min(t,d)}))$ | Teorema 4 |
+| Conteo con reflejos escondidos en compuertas | Proposición bajo contrato; 23 fórmulas medidas; 5.889 fórmulas en la prueba de contrato |
+| Ahorro frente a rutas concretas | Medido: casos favorables y contrarios con reflejos dados (§8); factor constante con ancho constante y ventaja creciente con conexiones largas (§9) |
+| Contadores dedicados, crecimiento en $u+k$, cota inferior para $C_{\mathrm{rec}}$ | Abierto |
+| Economía neta en fórmulas de tres literales sin plantillas reconocibles | Abierto: pregunta central (§12) |
 
-## 12. Preguntas de revisión independiente
+## 12. Preguntas para la revisión
 
-La revisión puede intentar (i) refutar alguna prueba local mediante un estado no considerado; (ii) exigir certificados semánticos de la extracción cuando las cláusulas están distribuidas; (iii) encontrar cotas inferiores para \(C_{\mathrm{rec}}\); (iv) comparar con eliminación gaussiana, satisfacibilidad con restricciones de paridad, eliminación de variables, compilación de conocimientos y técnicas de ancho; y (v) construir familias donde reconocer una referencia mínima resulta más caro que contar directamente. El éxito del programa no depende de imponer un resultado polinómico o de reclamar prioridad sobre resultados ya conocidos.
+1. Refutar alguna prueba local con un estado no considerado.
+2. Exigir constancias semánticas del reconocimiento cuando los reflejos están repartidos.
+3. Encontrar cotas inferiores para $C_{\mathrm{rec}}$.
+4. Contar las fórmulas exportadas con contadores dedicados (GANAK, SharpSAT-TD) y con preprocesado por definibilidad (B+E).
+5. Construir familias donde reconocer la referencia mínima cueste más que contar directamente.
 
-**Problema abierto central.** ¿Existe una familia no trivial de 3-CNF sin plantillas locales reconocibles para la cual una transformación de referencias, verificable con economía neta, recupere una representación exacta más barata que las estrategias comparadas? Un contraejemplo a cualquier mecanismo propuesto también delimitaría su alcance.
+**Pregunta central.** ¿Existe una familia no trivial de fórmulas de tres literales, sin plantillas locales reconocibles, en la que un cambio de referencia verificable recupere una representación exacta más barata que las rutas comparadas? Un contraejemplo a cualquier mecanismo propuesto también delimita su alcance.
 
-## 13. Reproducibilidad, fuentes y notas de versión
+## 13. Puentes con lo conocido
 
-Este expediente entrega el artículo en español e inglés, el laboratorio de intercambio y convergencia con sus resultados originales, el laboratorio de reconocimiento de paridades ocultas con sus resultados y un verificador autónomo de reconstrucción, raíces y conteo en tamaños pequeños. Para las pruebas completas del laboratorio de intercambio y convergencia hace falta Python 3, NumPy y recursos de memoria/tiempo suficientes (el cálculo incluye matrices densas). No se alteró el archivo de resultados del laboratorio original.
+El hilo de este manuscrito está escrito en el vocabulario del programa. Esta tabla lo enlaza con el vocabulario técnico.
 
-**Referencias internas del programa:**
+| En el hilo | En la literatura |
+|---|---|
+| comparación sin dirección en el tetraedro | espacio de cortes (cociclos) de $K_4$, de dimensión 3 |
+| cierre | subespacio afín de $\mathbb F_2^n$ |
+| cierre con un estado pendiente | raíz afín más residuo; bloque de paridad con tres de sus cuatro cláusulas |
+| reflejos dados | sistema de ecuaciones XOR; eliminación gaussiana |
+| herencia de una cláusula | implicación $Ax=b\models C_j$ |
+| novedad que queda | cláusulas OR no implicadas |
+| desplegar la novedad | inclusión–exclusión sobre cláusulas [Iwama 1989] |
+| reconocer lo heredado | detección de compuertas y definibilidad [Lagniez y Marquis 2014; Lagniez, Lonca y Marquis 2016] |
+| reconocedor, comprobador y constancia | extractor, verificador y certificado |
+| eliminación genérica | eliminación de variables; conteo exponencial en el ancho de árbol [Samer y Szeider 2010] |
+| reflejos dentro de un resolvedor | XOR nativo con eliminación gaussiana [Soos, Nohl y Castelluccia 2009] |
+| contadores dedicados | GANAK [Sharma et al. 2019]; SharpSAT-TD [Korhonen y Järvisalo 2021] |
 
-- Endless Monkey Project, «[¿Dónde se ahorra el cálculo?](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-08_economia_del_calculo)», 8 de noviembre de 2026, informe y laboratorios E1–E12.
+La conservación del conteo al sustituir compuertas reconocidas (§9) tiene antecedente directo en B+E, que elimina salidas de compuertas definidas y conserva el número de modelos. Lo propio de esta síntesis es la secuencia del hilo, sobre técnicas conocidas: incertidumbre que se reduce, reconocimiento antes del cierre, conservación de lo pendiente y cuenta completa del costo de reconocer.
+
+### Referencias
+
+**Del programa**
+
+- Endless Monkey Project, «[¿Dónde se ahorra el cálculo?](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-08_economia_del_calculo)», 8 de noviembre de 2026.
 - Endless Monkey Project, «[El cruce como reflejo central](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-03_cruce_reflejo_central)», 3 de noviembre de 2026.
-- Programa de Geometría Relacional, «Reconstrucción focal de los vínculos del tetraedro», 18 de octubre de 2026; fuente de la reconstrucción y del mínimo bajo contrato de vínculos.
-- Programa de Geometría Relacional, «Atlas de raíces afines y cierre» y «Extracción de relaciones afines para conteo exacto»; controles de convergencia y conteo de este expediente.
-- OpenAI, «[The Exponential Time Hypothesis is False](https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026)», material externo de comparación; Anthropic, [preprint Hexagon Math 2610.00577](https://hexagonmath.org/2610.00577), material externo de comparación. Las referencias externas **no** sustentan una afirmación de superioridad de este trabajo.
+- Programa de Geometría Relacional, «Reconstrucción focal de los vínculos del tetraedro», 18 de octubre de 2026.
 
-**Registro editorial.** Manuscrito nuevo de consolidación de resultados y delimitación de costos. No sustituye ni corrige silenciosamente los documentos fuente; los resultados previos no acompañados por código aquí permanecen expresamente como pendientes de incorporación. Se solicita revisión independiente.
+**Externas**
+
+- K. Iwama, «CNF-satisfiability test by counting and polynomial average time», *SIAM Journal on Computing* 18(2), 385–391, 1989.
+- J.-M. Lagniez y P. Marquis, «Preprocessing for Propositional Model Counting», AAAI 2014, 2688–2694.
+- J.-M. Lagniez, E. Lonca y P. Marquis, «Improving Model Counting by Leveraging Definability», IJCAI 2016, 751–757; «Definability for model counting», *Artificial Intelligence* 281, 2020.
+- M. Samer y S. Szeider, «Algorithms for propositional model counting», *Journal of Discrete Algorithms* 8, 2010.
+- M. Soos, K. Nohl y C. Castelluccia, «Extending SAT Solvers to Cryptographic Problems», SAT 2009, LNCS 5584, 244–257.
+- S. Sharma, S. Roy, M. Soos y K. S. Meel, «GANAK: A Scalable Probabilistic Exact Model Counter», IJCAI 2019, 1169–1176.
+- T. Korhonen y M. Järvisalo, «Integrating Tree Decompositions into Decision Heuristics of Propositional Model Counters», CP 2021, LIPIcs 210, 8:1–8:11.
+- OpenAI, «[The Exponential Time Hypothesis is False](https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026)», preprint, 25 de octubre de 2026.
+- Anthropic, «[A $2^{o(n)}$ Time Algorithm for 3-SAT](https://hexagonmath.org/2610.00577)», Hexagon 2610.00577, 27 de octubre de 2026.
+
+## 14. Reproducción
+
+```bash
+python3 -I experimentos/verificar_reconstruccion_y_convergencia.py
+```
+
+Comprueba los teoremas 1 a 4 en tamaños pequeños, sin dependencias. Las demás instrucciones y el registro de reproducción están en [`ANEXO_EVIDENCIAS.md`](ANEXO_EVIDENCIAS.md).

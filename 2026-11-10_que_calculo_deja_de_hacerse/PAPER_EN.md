@@ -1,130 +1,277 @@
 # What computation becomes unnecessary?
-## Mirror Cube: minimal structures, reference discovery, and exact counting
+## The mirror box: uncertainty, recognition and closure
 
 **Endless Monkey Project**  
 *Relational Geometry Program*  
-**November 10, 2026 · Manuscript for independent review · version 0.2**
+November 10, 2026 · manuscript for independent review · version 0.3
 
 ### Abstract
 
-When can recognizing inherited relations and changing reference reduce the **total cost** of an exact computation? A *mirror cube* provides a conceptual laboratory for reference, reflection, closure, reopening, and cost. We do not derive mathematics from an optical metaphor: each result is stated under a verifiable contract. We connect three existing strands of the program. Reconstruction of the six binary edge labels of the four-vertex complete graph requires only three independent bits. A unique affine root may be recognized before closure, provided its residual state is retained. Recovering inherited parity relations can then support exact counting. For explicitly given XOR equations plus OR clauses, or for a family where the XOR reference can be extracted with a certified polynomial cost, we obtain an exact upper bound \(O(\operatorname{poly}(L)[1+2^{\min(t,d)}])\). Here \(L\) is the input length, \(d\) is affine free dimension, and \(t\) counts OR clauses not implied by the affine base. Experiments demonstrate favorable and unfavorable regimes against specific baselines. No general subexponential bound for 3-SAT, universal optimality, or algorithmic equivalence with external work is claimed.
+When part of the uncertainty is already resolved by inherited relations, recognizing it saves computation, and recognizing it also costs something. This manuscript follows that account inside the mirror box, in four steps. In the tetrahedron, six comparisons between four states are rebuilt from three, because a comparison has no direction. As uncertainty shrinks, five of eight states are already enough to recognize the only four-state closure that fits, while one state stays pending; the next exclusion either closes or undoes what was recognized. When the reflections are given as parity equations, the exact number of solutions costs $O(\operatorname{poly}(L)(1+2^{\min(t,d)}))$, where $d$ is the uncertainty the closure leaves free and $t$ is the remaining novelty. And when the reflections arrive hidden inside logic gates, recognizing them has a cost of its own. We measure it against a DPLL that enumerates and against variable elimination on the formula as it arrives, at increasing sizes. On constant-width formulas, both exact routes grow polynomially and differ by a constant factor. On formulas with long connections, the largest elimination table grows from $2^{6}$ to $2^{58}$, while recognition counts 256 primary variables in 58 ms. Each result holds for the family its section defines; the question for three-literal formulas without recognizable templates stays open in §12.
 
-**Keywords:** distinctions, inheritance, representation, reference recognition, affine spaces, XOR, CNF, exact counting, computational complexity.
+**Keywords:** uncertainty, comparison, reflection, closure, inheritance, novelty, recognition, exact counting.
 
-## 1. The problem and four different costs
+## 1. The question
 
-The program's November 8 paper, *Where does computation become cheaper?*, distinguished observable differences, exact representation, and operations needed to answer a query. We now make a fourth cost explicit: **discovering, validating, and updating the reference** that enables the other savings.
+The program's November 8 paper, *Where does computation become cheaper?*, separated three things: how many differences a query sees, how many must be kept to rebuild the answer, and how many operations it takes to give it. This manuscript continues it with a fourth: how much it costs to recognize which part of the uncertainty was already resolved.
 
-Let \(X\) be a finite state space and \(\mathcal Q\) a declared family of queries. Write \(x\sim_{\mathcal Q}y\) if all queries return identical answers. Then
+The mirror box is the conceptual laboratory. A mirror reflects one state in another. A closure is a set that contains the reflection of its own combinations. A new constraint moves the wall: either it lands on a reflection that was already there, and then it is inheritance, or it opens a comparison that had nothing to compare with, and then it is novelty. Each image is translated into a definition and a checkable count before any saving is discussed.
 
-\[
-D_{\mathcal Q}=\log_2|X/\!\sim_{\mathcal Q}|
-\]
+The results come in four kinds: theorems under written hypotheses, exhaustive finite controls, measurements on specific implementations, and open questions.
 
-measures the capacity to distinguish equivalence classes; it is **not Shannon entropy** without a probability distribution. A new constraint is inherited relative to a reference when it is already implied by its known relations. A constraint is genuinely restrictive when it excludes previously admissible realizations.
+## 2. Uncertainty, inheritance and novelty
 
-We distinguish **two structural measures**, \(D_{\rm obs}\) for observable distinctions and \(D_{\rm rep}\) for minimum size in a specified representation class, from **computational costs**, \(C_{\rm rec}\) for discovering and verifying the reference, \(C_{\rm calc}\) for counting and managing residues, and \(C_{\rm recon}\) for reconstructing the output. These quantities have different units and must not be added indiscriminately. A net advantage over baseline \(B\) requires
+Let $X$ be a finite set of states and $\mathcal Q$ a family of queries. Two states are indistinguishable, $x\sim_{\mathcal Q}y$, when every query gives the same answer on both. The resolution of the query is
 
-\[
-C_{\rm rec}(F)+C_{\rm calc}(F)+C_{\rm recon}(F)< C_B(F)
-\]
+$$
+D_{\mathcal Q}=\log_2\lvert X/{\sim_{\mathcal Q}}\rvert ,
+$$
 
-under the same cost model and exact task. Minimal representation does not automatically imply fastest computation.
+the number of bits of difference the query can see. It counts classes; no probability distribution is involved.
 
-## 2. Reconstructing the six edges of a tetrahedron from three bits
+A relation is **inherited** when it already follows from what is fixed. A constraint is **novelty** when it excludes states that what is fixed still allowed. Both words always refer to a reference and a query.
 
-For \(K_4\), let \(s_i\in\mathbb F_2\) be vertex states and \(b_{ij}=s_i\oplus s_j\) the edge labels. From any focus \(f\), three star labels determine all six labels by
-\(b_{ij}=b_{fi}\oplus b_{fj}\).
+The economy has two structural measures and three work measures:
 
-**Theorem 1.** There are precisely eight compatible edge patterns, and exactly three independent bits are necessary and sufficient to identify them. **Proof:** The linear map \(\delta:\mathbb F_2^4\to\mathbb F_2^6\) taking vertex labels to edge differences has kernel \(\{0000,1111\}\), hence rank three and image size eight. The three star labels achieve the encoding, and fewer than three bits cannot distinguish eight patterns. \(\square\)
+1. $D_{\mathrm{obs}}$: what the query needs to distinguish.
+2. $D_{\mathrm{rep}}$: the least that must be kept to rebuild it, within a declared class of representations.
+3. $C_{\mathrm{rec}}$: recognizing, checking and maintaining the reference.
+4. $C_{\mathrm{calc}}$: counting on that reference and carrying what is pending.
+5. $C_{\mathrm{recon}}$: rebuilding the answer.
 
-The 16 vertex assignments yield eight observable edge patterns because global inversion preserves all edges. This is a minimum under the stated edge-reconstruction contract, not a general computational lower bound.
+The first two are measured in bits; the other three, in operations. Against a comparison route $B$, with the same problem, the same answer and the same cost model, there is net economy when
 
-## 3. Early recognition of an affine root does not imply closure
+$$
+C_{\mathrm{rec}}(F)+C_{\mathrm{calc}}(F)+C_{\mathrm{recon}}(F)<C_B(F).
+$$
 
-Let \(S\subseteq\mathbb F_2^n\) be the admissible states. A dimension-\(d\) affine root is a set \(P=a+U\subseteq S\), with \(|P|=2^d\). Define \(\mathcal R_d(S)\) as all such roots.
+Storing little and computing little are two different things: the shortest representation can be expensive to find.
 
-**Theorem 2.** If \(|S|<3\cdot2^{d-1}\), then \(|\mathcal R_d(S)|\le1\). **Proof:** Two distinct affine \(d\)-flats intersect in at most \(2^{d-1}\) states, so their union has at least \(3\cdot2^{d-1}\) states. \(\square\)
+## 3. The tetrahedron: comparison without direction
 
-This proves **at most one** root of fixed dimension, not its existence, and must not be conflated with a maximum-cardinality `Core` defined under a different contract. In \(\mathbb F_2^3\), every five-element subset contains a unique four-element affine plane and one residual point. Exhaustive affine-root and residual controls confirm all 336 ordered sequences of three exclusions. Of the 1,680 fourth-exclusion extensions, 336 close the root and 1,344 invalidate it. A residual state must not be discarded before it is excluded.
+Four states $s_0,s_1,s_2,s_3\in\mathbb F_2$ sit on the vertices of a tetrahedron. Each edge carries the comparison between its two ends, the reflection of one state in the other:
 
-## 4. An affine root and a residual state from three clauses
+$$
+b_{ij}=s_i\oplus s_j .
+$$
 
-A three-literal clause over three distinct variables forbids one of eight assignments. Let \(a,b,c\) be three distinct excluded assignments. The affine span is \(L=\{a,b,c,a\oplus b\oplus c\}\); its complement \(P=\mathbb F_2^3\setminus L\) is also an affine plane.
+From any vertex $f$, the three comparisons leaving it rebuild all six: $b_{ij}=b_{fi}\oplus b_{fj}$.
 
-**Theorem 3.** The allowed set is precisely \(P\cup\{a\oplus b\oplus c\}\): a unique affine plane of size four and a disjoint residual point. **Proof:** The three excluded states lie in the uniquely generated four-point plane \(L\). The five permitted states comprise its four-point complement and its remaining fourth point. Uniqueness follows from Theorem 2. \(\square\)
+**Theorem 1.** The six compatible comparisons form eight patterns. Three bits encode them exactly, and three is the minimum for any injective binary code.
 
-A fourth clause excluding that residual point closes the plane. If instead it excludes a point in \(P\), the previously recognized root must be retracted. This is an exact relationship discovered without an explicit XOR equation in that local 3-CNF, **not a general method for arbitrarily obscured parity**.
+**Proof.** The linear map $\delta:\mathbb F_2^4\to\mathbb F_2^6$, $\delta(s)_{ij}=s_i\oplus s_j$, has kernel $\lbrace 0000,1111\rbrace$. By rank–nullity its image has dimension 3: that is $2^3=8$ patterns. The three comparisons from one vertex separate them all, and two bits separate at most four. $\square$
 
-## 5. Exact counting with parity equations and disjunctive clauses
+Flipping all four states at once leaves the six comparisons intact: a comparison records the difference, not the side it was made from. That is why the 16 vertex configurations give 8 patterns, and one bit—the orientation of the whole—lies outside what the edges see. The economy here is one of representation: three bits hold six comparisons.
 
-Let \(F=(Ax=b)\land C_1\land\cdots\land C_k\), where \(Ax=b\) is over \(\mathbb F_2\), consistent of rank \(r\), and each \(C_j\) is an OR clause. The affine dimension is \(d=n-r\). Inclusion-exclusion yields
+## 4. Uncertainty shrinks: recognizing before closing
 
-\[
-\#F=\sum_{J\subseteq[k]}(-1)^{|J|}\,#\!\left(Ax=b\land\bigwedge_{j\in J}\neg C_j\right).
-\]
+We work in $\mathbb F_2^n$, the $2^n$ states of $n$ bits. A **closure** of dimension $d$ is a set $P$ of $2^d$ states that contains the reflection of its own combinations: if $a,b,c\in P$, then $a\oplus b\oplus c\in P$. Let $S$ be the set of states still admitted.
 
-Every negated clause is a set of unit equations; Gaussian elimination gives zero for inconsistent extensions and \(2^{n-r_J}\) otherwise. A clause already implied by \(Ax=b\) can be deleted after testing the inconsistency of \(Ax=b\land\neg C_j\). Let \(t\le k\) be the remaining clause count.
+**Theorem 2 (only one closure fits).** If $\lvert S\rvert<3\cdot2^{d-1}$, then $S$ contains at most one closure of dimension $d$.
 
-**Theorem 4.** With an explicit affine reference, exact counting takes
+**Proof.** Two distinct closures of dimension $d$ share at most $2^{d-1}$ states, so together they occupy at least $2^{d+1}-2^{d-1}=3\cdot2^{d-1}$. $\square$
 
-\[
-O(\operatorname{poly}(L)[1+2^{\min(t,d)}]).
-\]
+The theorem gives uniqueness when a closure exists; whether one exists depends on $S$.
 
-**Proof:** Construct the affine basis and remove clauses implied by it in polynomial time. Inclusion-exclusion then visits at most \(2^t\) terms, each solvable by Gaussian elimination. Alternatively, enumerate \(2^d\) free affine parameters and verify every OR clause. Choose the cheaper route. \(\square\)
+$\mathbb F_2^3$ has eight states: three bits of uncertainty. Each exclusion resolves part of it. After three exclusions five states remain, and in all 56 possible cases four of them form the only closure that fits; the fifth is the uncertainty that is still open. The closure can already be recognized, with one state still pending.
 
-This bound is polynomial for \(\min(t,d)=O(\log L)\) and can be exponential otherwise. Any extraction from an input that does not explicitly expose the XOR constraints **adds a recognition and validation cost**. A polynomial bound on that extra step is a separate assumption that must be proved for each recognizable encoding family.
+The fourth exclusion decides. If it resolves the pending state, the four states of the closure remain: it closes. If it removes a state of the recognized closure, that closure no longer fits: what was recognized is retracted. The exhaustive walk over the 336 ordered sequences of three exclusions and their 1,680 continuations gives 336 closures and 1,344 retractions.
 
-## 6. Recognition: the other component of economy
+The uncertainty account is exact. Going from eight states to four resolves one bit:
 
-A reference extractor may output \(E(F)=(R,\Delta,\pi)\), with reference \(R\), residual information \(\Delta\), and a certificate \(\pi\) allowing exact recovery of the requested answer. The total cost is
+$$
+\log_2\frac{8}{5}+\log_2\frac{5}{4}=1 .
+$$
 
-\[
-C_{\rm total}=C_E+C_V+C_{R,\Delta}+C_{\rm recon}.
-\]
+The first three exclusions resolve 0.678 bits and already allow the closure to be recognized; the fourth resolves the remaining 0.322 and confirms it. Recognition happens before closure. The pending state is kept until an exclusion resolves it, because discarding it earlier would change the answer of every query that distinguishes it.
 
-**Conditional transfer proposition.** If a family admits a correct extractor, a sound verifier, exact and non-overlapping (or properly inclusion-exclusion corrected) decomposition, and an exact counter for its outputs, the family can be counted at the combined cost of those operations. Net economy holds only where that combined cost is lower than a stated baseline. This criterion is not itself a new complexity upper bound.
+## 5. Three clauses: one closure and one pending state
 
-A mirror cube's precise methodological role is to ask which changes of reference conserve the answer, which differences are inherited, which reopen the state space, and how expensive every operation is. Discovering the optimal reference for unrestricted CNF may be difficult; it is never assumed free.
+A three-literal clause over three distinct variables excludes one of the eight states of those variables. Let $a,b,c\in\mathbb F_2^3$ be three distinct states excluded by three clauses. Their own closure and its complement are
 
-## 7. Reproducible controls and negative cases
+$$
+L=\lbrace a,b,c,a\oplus b\oplus c\rbrace ,\qquad P=\mathbb F_2^3\setminus L .
+$$
 
-The bundled exchange-and-convergence laboratory and its unchanged results file report:
+**Theorem 3.** The states admitted by the three clauses are $P\cup\lbrace a\oplus b\oplus c\rbrace$: a four-state closure and one pending state. $P$ is the only dimension-2 closure contained in them.
 
-| Control | Observation |
+**Proof.** Three distinct states of $\mathbb F_2^3$ generate the four-state closure $L$. The five admitted states are the complement of $L$, which is also a closure, plus the fourth state of $L$. Uniqueness follows from Theorem 2 with $d=2$ and $\lvert S\rvert=5<6$. $\square$
+
+A fourth clause excluding exactly the pending state closes $P$; one excluding a state of $P$ retracts it. So a formula of three-literal clauses produces a local closure with no parity equation written anywhere. Depending on the triple, that closure fixes one variable (24 of the 56 triples), equates or separates two (24), or is a parity of all three (8).
+
+Recognizing the same closure when the relation is spread over many clauses is a different problem with its own cost: the subject of §7.
+
+## 6. Counting when the reflections are given
+
+Let $F$ be the conjunction of parity equations $Ax=b$ over $\mathbb F_2$, with $n$ variables, and disjunctive clauses $C_1,\dots,C_k$. In the thread:
+
+- the equations are the inherited closure; if they are consistent and of rank $r$, they leave $d=n-r$ bits of free uncertainty;
+- each clause moves the wall. If the closure already satisfies it ($Ax=b\models C_j$), it is inheritance and is removed without changing the solutions; otherwise it is novelty. There remain $t\le k$ novelty clauses.
+
+Whether a clause is inherited is checked by Gaussian elimination: $Ax=b\land\lnot C_j$ is inconsistent. Negating a clause amounts to setting its literals false, so every inclusion–exclusion term is another parity system. We write $N(\cdot)$ for the number of solutions:
+
+$$
+N(F)=\sum_{J\subseteq\lbrace 1,\dots,k\rbrace}(-1)^{\lvert J\rvert}N\Big(Ax=b\land\bigwedge_{j\in J}\lnot C_j\Big).
+$$
+
+Each term is $0$ if the extended system is inconsistent and $2^{n-r_J}$ otherwise, with $r_J$ its rank.
+
+**Theorem 4 (two exact routes).** With the parity equations given, the number of solutions is computed in time
+
+$$
+O\big(\operatorname{poly}(L)\cdot(1+2^{\min(t,d)})\big),
+$$
+
+with $L$ the input length, including building the basis and removing inherited clauses, in the usual model of operations on polynomial-size words. If the parity system is inconsistent, the number is zero.
+
+**Proof.** Gaussian elimination builds the basis and tests every clause in polynomial time. With $t$ clauses left, inclusion–exclusion visits at most $2^t$ subsets, each a linear system. Alternatively, enumerate the $2^d$ values of the free parameters and test every clause. Take the cheaper route. $\square$
+
+Read in the thread: the cost is paid in the smaller of two uncertainties, walking what the closure left free or unfolding the remaining novelty. It is polynomial when either is $O(\log L)$ and exponential when both grow linearly. When the input hides the reflections, the cost of recognizing them is added to the account.
+
+## 7. The cost of recognizing what is inherited
+
+The November 8 paper already measured the economy of observing, representing and executing. Here the prior question gets its own place: how much does it cost to know what was inherited before computing it again?
+
+A recognizer $E$ reads the formula and returns $E(F)=(R,\Delta,\pi)$: the recognized reference $R$, what is pending $\Delta$, and a certificate $\pi$ that lets one check the answer is rebuilt exactly. A checker $V$ reviews it. The total cost is
+
+$$
+C_{\mathrm{total}}=C_E+C_V+C_{R,\Delta}+C_{\mathrm{recon}} .
+$$
+
+**Transfer proposition (conditional).** Suppose a family $\mathcal F$ admits a correct recognizer and checker, of costs $T_E(L)$ and $T_V(L)$; an exact decomposition of each formula into reference and pending part, disjoint or corrected by inclusion–exclusion; and a counter on $(R,\Delta)$ of cost $T_C(L,t,d)$. Then every $F\in\mathcal F$ is counted at cost $O(T_E+T_V+T_C+T_{\mathrm{recon}})$. There is net economy against $B$ when this sum is below the cost of $B$ on the same family under the same model.
+
+The proposition is a criterion for proving savings family by family. In an arbitrary three-literal formula, finding the best reference can require hard inference, and that cost enters the account in full.
+
+The role of the mirror box is concrete: to propose changes of reference that preserve the answer, to separate inherited reflections from new differences, and to keep account of what reopens.
+
+## 8. Controls with the reflections given
+
+The controls in this section are in `experimentos/intercambio_y_convergencia/`. Times are those of its results file, measured with Python implementations.
+
+| Control | Result |
 |---|---|
-| swap decomposition and tensor ranks | Local swap identities and matrix-rank formula checks; representational facts, not end-to-end time bounds. |
-| local swap comparison | Local SWAP-bit correspondence between studied OpenAI and Anthropic constructions for \(r=2\); no algorithm-wide equivalence established. |
-| common modular reference | LCM(12,18)=36 and an explicit uniqueness-vs-construction control. |
-| affine-root and residual controls | Five-state affine root plus residual; 336 closure extensions and 1,344 retractions. |
-| parity-plus-disjunction counting controls favorable | 96 variables, 81 XOR equations, eight OR clauses: **10,656** models with both algorithms; **0.0015 s** for affine inclusion-exclusion vs **0.385 s** for the included variable-elimination baseline. |
-| parity-plus-disjunction counting controls unfavorable | 32 variables, 16 XOR equations, 20 OR clauses: **5,220** models with both algorithms, but **0.0378 s** for affine inclusion-exclusion vs **0.0021 s** for variable elimination. |
-| interpolation-window control | An excessively narrow interpolation window fails to capture most of the weight in some tested regimes. |
+| Uniqueness of the reference and its construction (C5) | Residues mod 12 and 18 determine an integer within one cycle of 36, their least common multiple: in $[0,72)$ each residue pair appears twice, and only 36 of the 216 possible pairs exist. Knowing the reference is unique and building it are two different jobs. |
+| Recognizing before closing (C6) | Five of eight states: one four-state closure and one pending state; 336 continuations close and 1,344 retract. |
+| Reflections given, favorable case (C7) | 96 variables, 81 parity equations and 8 clauses: both routes count 10,656. Inclusion–exclusion visits 39 terms in 0.0015 s; variable elimination builds a $2^{24}$ table and takes 0.385 s. |
+| Reflections given, unfavorable case (C7) | 32 variables, 16 equations and 20 clauses: both count 5,220; inclusion–exclusion 0.0378 s, elimination 0.0021 s. |
+| Much novelty, little closure (C7) | 24 variables, 2 equations and 48 clauses: inclusion–exclusion passes the cap of two million terms; elimination counts 4,672, matching brute force. |
+| Interpolation window (C8) | With $Q=400$, a window of width $\sqrt Q$ leaves out 24.8% of the weight; of width $2\sqrt Q$, 2.1%; of width $3\sqrt Q$, 0.06%. A reference that is too narrow makes reconstruction expensive. |
 
-These are implementation-level measurements, not benchmarks against industrial solvers. In parity-plus-disjunction counting controls, constructing the affine basis from **explicit XOR input** is timed; discovering such equations from arbitrary CNF is not. The included circuit-gate recognizer and its original results are separately documented below; its tests do not establish general hidden-parity extraction. The lightweight independent verifier included in this bundle checks the local tetrahedral reconstruction and affine-root bridge and small XOR+OR counts, not arbitrary hidden-gadget discovery.
+## 9. Reflections hidden in gates
 
-## 8. Recognizing distributed parity relations in connected formulas
+Here the formula arrives only as clauses of at most three literals. The reflections, which are parity relations between primary variables, are built from two-input conjunction and disjunction gates and their auxiliary variables. Variable names are permuted and clause order is shuffled. Some reflections arrive as a closure with one pending state. The recognizer identifies complete gates, rebuilds the parities and keeps the pending states.
 
-The complementary experiment receives formulas of clauses with at most three literals. Parity relations are encoded via fully defined two-input conjunction and disjunction gates, not written as parity equations. Auxiliary variables are uniquely determined by the primary variables; all identifiers and the ordering of the clauses are permuted. The recognizer validates the complete gate templates, reconstructs selected parity relations and retains the residual states of partial affine roots.
+**Contract.** The formula is a functional circuit of two-input gates, each assignment of the primary variables determines a single extension to the auxiliaries, and parities compose recognizably. Anything outside the contract is rejected.
 
-**Scope of the proposition.** When a formula belongs to this recognizable family of functional circuits and each primary assignment has a unique auxiliary extension, removing the validated gates and replacing them by their exact parity relation preserves the solution count. Each partial root is partitioned into a disjoint affine root and its residual state. If there are \(u\) such partial roots and \(k\) remaining disjunctions, the corresponding inclusion–exclusion procedure has cost \(O(\operatorname{poly}(|F|)[1+2^{u+k}])\). This is **not** a guaranteed polynomial-time extractor for arbitrary formulas.
+**Count-preservation proposition (under the contract).** Replacing the verified gates by their parity relations, and each partial closure by its closure plus its pending state, preserves the number of solutions: primary assignments and their extensions are in bijection, and pending cases are added separately. With $u$ partial closures and $k$ novelty clauses, counting costs $O(\operatorname{poly}(\lvert F\rvert)\cdot(1+2^{u+k}))$ on the family.
 
-In the supplied experiment data, a connected instance with 24 primary variables and 248 clauses has **5,312** exact solutions; a 32-primary-variable instance with 333 clauses has **98,560** solutions. A 96-primary-variable case with long-distance constraints and 1,549 clauses has **156,800** solutions. Reported timings are comparisons between specific Python implementations, not against modern optimized counting tools. As an independent editorial check, we reran **the entire distributed-relation laboratory**: 144 gate truth-table checks, two negative tests, 30 additional random controls, all primary-variable sizes from 8 to 96, and all long-distance tests. The exact counts agreed with their internal reference values. Recorded execution times vary between runs. The complete code and supplied results are included for further verification.
+**Measurement.** The script `experimentos/linea_base_generica/comparacion_y_escala.py` measures every route on the same already-generated formulas, in the same run:
 
-## 9. Comparison, open problems, and scope
+- recognize and count, median of 7;
+- variable elimination on the formula as it arrives, recognizing nothing, median of 3, when its largest table is at most $2^{24}$;
+- the laboratory DPLL, median of 3, up to 32 primary variables in the cycle and 24 with long connections.
 
-The exchange-and-rank controls test local algebraic correspondences involving a swap operator and antisymmetric projections in external constructions. The identity \(\mathrm{SWAP}=I-2P_-\) is not enough for algorithmic efficiency: the number of terms, their discovery, evaluation, and recombination costs matter. The program does **not** claim to reproduce, supersede, or improve the whole OpenAI or Anthropic algorithms.
+All completed counts agree on every row. The long-connection family is extended up to 256 primary variables.
 
-**Open problem.** Is there a nontrivial family of 3-CNF encodings with no obvious local gadgets in which a verifiable reference transformation yields a better end-to-end exact counting cost than the compared methods? A negative result or a lower bound on recognition would also settle a useful part of this question.
+| Family | Primaries | Clauses | Solutions | Recognize and count | Generic elimination | Largest elimination table | DPLL |
+|-------|---------:|---------:|--------------------:|----------:|----------:|----------:|---------:|
+| cycle | 24 | 248 | 5,312 | 1.4 ms | 6.6 ms | $2^{6}$ | 227.7 ms |
+| cycle | 32 | 333 | 98,560 | 2.4 ms | 9.4 ms | $2^{5}$ | 4,662 ms |
+| cycle | 96 | 941 | 420,906,795,008,000 | 12.9 ms | 45.8 ms | $2^{6}$ | — |
+| long | 24 | 409 | 26 | 2.6 ms | 11.6 ms | $2^{9}$ | 19.6 ms |
+| long | 48 | 789 | 364 | 6.5 ms | 27.8 ms | $2^{13}$ | — |
+| long | 64 | 1,036 | 3,084 | 8.4 ms | 54.9 ms | $2^{18}$ | — |
+| long | 96 | 1,549 | 156,800 | 12.8 ms | 247.0 ms | $2^{21}$ | — |
+| long | 128 | 2,043 | 6,272,000 | 22.4 ms | — | $2^{29}$ | — |
+| long | 200 | 3,183 | 25,690,112,000 | 41.3 ms | — | $2^{40}$ | — |
+| long | 256 | 4,076 | 13,153,337,344,000 | 58.0 ms | — | $2^{58}$ | — |
 
-**Status:** K4 reconstruction, fixed-dimension affine uniqueness, local three-clause decomposition, and the explicit XOR+OR counting bound are proved under their hypotheses. Finite experiments support and limit specific implementations. A general recognition economy and any broad complexity advantage remain open.
+All 23 measured formulas are in `RESULTADOS_COMPARACION.json`; the table shows ten.
 
-## References and reproducibility
+**Cycle of triples.** Each reflection touches only its neighbors and the width is constant: elimination builds tables of at most $2^{6}$. Both exact routes grow polynomially and differ by a factor of 3.5 to 5. The DPLL visits two nodes per solution (10,623 nodes for 5,312 solutions; 197,119 for 98,560): its time follows the number of solutions. In this family the advantage over DPLL comes from counting without enumerating, which both exact routes do.
 
-- Endless Monkey Project, [Where does computation become cheaper? / ¿Dónde se ahorra el cálculo?](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-08_economia_del_calculo), November 8, 2026.
-- Endless Monkey Project, [El cruce como reflejo central](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-03_cruce_reflejo_central), November 3, 2026.
-- Focal reconstruction of the six edges of a tetrahedron (historical supplement), October 18, 2026; the atlas of affine-root convergence and residual states, and the exact counting laboratory as specified in the local verification bundle.
-- OpenAI, [The Exponential Time Hypothesis is False](https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026); Anthropic, [Hexagon Math preprint 2610.00577](https://hexagonmath.org/2610.00577). External references serve as comparison, not evidence of a universal advantage.
+**Long connections.** One third of the reflections join distant variables. The elimination width grows with size: $2^{6}$ at 12 primaries, $2^{21}$ at 96 and $2^{58}$ at 256. A second ordering, minimum fill-in, gives $2^{19}$ and $2^{54}$. Elimination counts up to 96 primaries, in 247 ms; from 128 on it needs tables of $2^{29}$ or more. Recognition counts all 256 primaries and 4,076 clauses in 58 ms. Here recognizing what is inherited pays: elimination stores as full tables relations that recognition resolves as parity equations.
 
-Editorial note: this manuscript consolidates independently stated results and scopes; it does not silently replace prior sources or upgrade unsupported claims. Independent proof and complexity review is requested.
+**Scope of the measurement.** In all these formulas $u\le 3$ and $k\le 3$, so $2^{u+k}\le 64$: the measurement follows the polynomial part of the bound. The next steps are to grow $u+k$ and to compare against dedicated counters that also recognize gates or use tree decompositions (§13). With `--dimacs`, the script writes each formula in DIMACS format with its expected count, ready for those counters.
+
+**Contract under test.** `prueba_adversarial.py` takes valid formulas, applies one of seven random mutations (flipping a sign, removing or adding a clause, rewiring a literal, fixing a variable, swapping or identifying variables) and adds eight hand-built cases outside the family. Of 5,889 formulas, the recognizer rejects 4,444 and accepts 1,445, and all 1,445 accepted ones give the same count as generic elimination. The original laboratory also checks 144 gate truth tables, 30 random formulas against enumeration, and two out-of-contract controls.
+
+## 10. Relation to the October preprints
+
+Controls C1–C4 check, in representations built in the laboratory, pieces of two October 2026 preprints, one by OpenAI and one by Anthropic. The swap operator satisfies $\mathrm{SWAP}=I-2P_-$, with $P_-$ the projection onto the antisymmetric part. With $r=2$, the matrix $V_0$ of the OpenAI preprint equals the bitwise crossing of the Anthropic one for $\lambda=1,\dots,5$, and the per-piece rank formulas match the measured ranks at every tested size.
+
+This is a local identity between representations. Whether a decomposition saves anything also depends on how many terms it produces and how much it costs to find and recombine them: the same account as in §2.
+
+The program's question is a different one that complements them: when do reference and inheritance let us stop recomputing differences already resolved, while keeping what is pending.
+
+## 11. Status of the results
+
+| Result | Status |
+|---|---|
+| Tetrahedron: six comparisons from three bits | Theorem 1 |
+| At most one closure of dimension $d$ below the threshold $3\cdot2^{d-1}$ | Theorem 2; existence checked for five states in $\mathbb F_2^3$ |
+| Three clauses: one four-state closure and one pending state | Theorem 3 |
+| Counting with given reflections in $O(\operatorname{poly}(L)(1+2^{\min(t,d)}))$ | Theorem 4 |
+| Counting with reflections hidden in gates | Proposition under contract; 23 measured formulas; 5,889 formulas in the contract test |
+| Savings against specific routes | Measured: favorable and unfavorable cases with given reflections (§8); constant factor at constant width and growing advantage with long connections (§9) |
+| Dedicated counters, growth in $u+k$, lower bound for $C_{\mathrm{rec}}$ | Open |
+| Net economy on three-literal formulas without recognizable templates | Open: central question (§12) |
+
+## 12. Questions for review
+
+1. Refute a local proof with a state not considered.
+2. Require semantic certificates for recognition when the reflections are spread out.
+3. Find lower bounds for $C_{\mathrm{rec}}$.
+4. Count the exported formulas with dedicated counters (GANAK, SharpSAT-TD) and with definability preprocessing (B+E).
+5. Build families where recognizing the minimal reference costs more than counting directly.
+
+**Central question.** Is there a nontrivial family of three-literal formulas, without recognizable local templates, in which a checkable change of reference recovers an exact representation cheaper than the compared routes? A counterexample to any proposed mechanism also marks its scope.
+
+## 13. Bridges to known work
+
+The thread of this manuscript is written in the program's vocabulary. This table links it to the technical vocabulary.
+
+| In the thread | In the literature |
+|---|---|
+| comparison without direction in the tetrahedron | cut (cocycle) space of $K_4$, of dimension 3 |
+| closure | affine subspace of $\mathbb F_2^n$ |
+| closure with one pending state | affine root plus residue; parity block with three of its four clauses |
+| given reflections | XOR equation system; Gaussian elimination |
+| inheritance of a clause | implication $Ax=b\models C_j$ |
+| remaining novelty | OR clauses not implied |
+| unfolding the novelty | inclusion–exclusion over clauses [Iwama 1989] |
+| recognizing what is inherited | gate detection and definability [Lagniez and Marquis 2014; Lagniez, Lonca and Marquis 2016] |
+| recognizer, checker and certificate | extractor, verifier and certificate |
+| generic elimination | variable elimination; counting exponential in treewidth [Samer and Szeider 2010] |
+| reflections inside a solver | native XOR with Gaussian elimination [Soos, Nohl and Castelluccia 2009] |
+| dedicated counters | GANAK [Sharma et al. 2019]; SharpSAT-TD [Korhonen and Järvisalo 2021] |
+
+Count preservation under replacement of recognized gates (§9) has a direct precedent in B+E, which eliminates outputs of defined gates while preserving the number of models. What belongs to this synthesis is the sequence of the thread, built on known techniques: uncertainty that shrinks, recognition before closure, keeping what is pending, and a full account of the cost of recognizing.
+
+### References
+
+**From the program**
+
+- Endless Monkey Project, [*¿Dónde se ahorra el cálculo? / Where does computation become cheaper?*](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-08_economia_del_calculo), November 8, 2026.
+- Endless Monkey Project, [*El cruce como reflejo central*](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/main/2026-11-03_cruce_reflejo_central), November 3, 2026.
+- Relational Geometry Program, *Focal reconstruction of the tetrahedron's links*, October 18, 2026.
+
+**External**
+
+- K. Iwama, "CNF-satisfiability test by counting and polynomial average time", *SIAM Journal on Computing* 18(2), 385–391, 1989.
+- J.-M. Lagniez and P. Marquis, "Preprocessing for Propositional Model Counting", AAAI 2014, 2688–2694.
+- J.-M. Lagniez, E. Lonca and P. Marquis, "Improving Model Counting by Leveraging Definability", IJCAI 2016, 751–757; "Definability for model counting", *Artificial Intelligence* 281, 2020.
+- M. Samer and S. Szeider, "Algorithms for propositional model counting", *Journal of Discrete Algorithms* 8, 2010.
+- M. Soos, K. Nohl and C. Castelluccia, "Extending SAT Solvers to Cryptographic Problems", SAT 2009, LNCS 5584, 244–257.
+- S. Sharma, S. Roy, M. Soos and K. S. Meel, "GANAK: A Scalable Probabilistic Exact Model Counter", IJCAI 2019, 1169–1176.
+- T. Korhonen and M. Järvisalo, "Integrating Tree Decompositions into Decision Heuristics of Propositional Model Counters", CP 2021, LIPIcs 210, 8:1–8:11.
+- OpenAI, "[The Exponential Time Hypothesis is False](https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026)", preprint, October 25, 2026.
+- Anthropic, "[A $2^{o(n)}$ Time Algorithm for 3-SAT](https://hexagonmath.org/2610.00577)", Hexagon 2610.00577, October 27, 2026.
+
+## 14. Reproduction
+
+```bash
+python3 -I experimentos/verificar_reconstruccion_y_convergencia.py
+```
+
+It checks Theorems 1 to 4 at small sizes, with no dependencies. Further instructions and the reproduction record are in [`EVIDENCE.en.md`](EVIDENCE.en.md).

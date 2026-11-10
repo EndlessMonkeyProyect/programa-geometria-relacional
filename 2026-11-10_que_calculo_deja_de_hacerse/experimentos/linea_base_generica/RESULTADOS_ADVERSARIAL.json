@@ -1,0 +1,49 @@
+{
+ "semilla": 20261110,
+ "mutaciones_generadas": 6000,
+ "descartadas_por_tautologia": 119,
+ "por_mutacion": {
+  "signo": {
+   "rechazada": 834,
+   "aceptada_correcta": 44
+  },
+  "quitar": {
+   "rechazada": 779,
+   "aceptada_correcta": 60
+  },
+  "anadir": {
+   "rechazada": 862,
+   "aceptada_correcta": 11
+  },
+  "reconectar": {
+   "rechazada": 807,
+   "aceptada_correcta": 41
+  },
+  "identificar": {
+   "rechazada": 684,
+   "aceptada_correcta": 59
+  },
+  "fijar": {
+   "aceptada_correcta": 424,
+   "rechazada": 422
+  },
+  "intercambiar": {
+   "aceptada_correcta": 803,
+   "rechazada": 51
+  }
+ },
+ "casos_a_mano": {
+  "ciclo_de_paridad": "aceptada_correcta",
+  "entrada_negada": "rechazada",
+  "compuerta_suelta": "rechazada",
+  "paridad_dentro_de_OR": "rechazada",
+  "auxiliar_fijada": "rechazada",
+  "tres_de_cuatro_sin_compuertas": "aceptada_correcta",
+  "bloque_de_paridad_sin_compuertas": "aceptada_correcta",
+  "igualdad_binaria": "rechazada"
+ },
+ "total": {
+  "aceptada_correcta": 1445,
+  "rechazada": 4444
+ }
+}
