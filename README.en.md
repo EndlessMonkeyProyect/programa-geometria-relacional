@@ -2,9 +2,13 @@
 
 [Leer este repositorio en español](README.md).
 
+## Total Picture 4.0 · November 10, 2026
+
+[Total Picture 4.0](2026-11-10_imagen_total_4_0/README.en.md) is the program's continuous reading as of today: [document](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.md) ([PDF](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.pdf)), in Spanish. It follows the thread agreed on October 24 (the totality and its indeterminacy, reflection, opening or closing, the branches) and gathers 3.9 and the deliveries from October 27 to November 10 in one text. It adds two verifiers: four capsules in Navier–Stokes and the re-closure of two $\mathbb Z_2$ plaquettes.
+
 ## What computation becomes unnecessary? · November 10, 2026
 
-The [bilingual continuation of the computation-economy work](2026-11-10_que_calculo_deja_de_hacerse/README.md) contains the [English paper](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md), the [Spanish reference text](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), code, results, and a [verification record](2026-11-10_que_calculo_deja_de_hacerse/ANEXO_AUDITORIA.md). It separates the cost of recognizing a useful reference from the cost of counting on it. The proofs concern defined families; economical recognition for general formulas remains open.
+The [bilingual continuation of the computation-economy work](2026-11-10_que_calculo_deja_de_hacerse/README.en.md), version 0.3, contains the [English paper](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.pdf)), the [Spanish paper](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), code, results and the [reproduction record](2026-11-10_que_calculo_deja_de_hacerse/EVIDENCE.en.md). It measures the cost of recognizing what is inherited against the cost of counting on it, with a generic-elimination baseline and a long-connection family of up to 256 primary variables. Each result holds for the family its section defines.
 
 ## The economy of computation from relations between references · version 2, November 8, 2026
 

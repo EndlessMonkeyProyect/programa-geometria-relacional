@@ -1,5 +1,12 @@
 # History of this edition
 
+## Total Picture 4.0 · 2026-11-10
+
+- New continuous-reading edition of the program. It follows the thread agreed on October 24 and gathers 3.9 with the deliveries from October 27 to November 10, with the program's language criterion applied throughout and the links to the literature in a final layer.
+- Integrates three November 10 notes: four capsules in Navier–Stokes (C4‑E1 to C4‑E3), the economy mechanism against P and NP (with a conditional proposition) and economy re-closure in Yang–Mills (two $\mathbb Z_2$ plaquettes and the $SU(2)$ character basis).
+- New verifiers in `verificadores/`. In the four-capsule verifier, the uniform-deformation test computes $H_F$ from its definition node by node, with a varying-deformation control and a comparison against the proof's reindexed form.
+- The root README links the current reproduction record of *What computation becomes unnecessary?*.
+
 ## What computation becomes unnecessary? v0.3 · 2026-11-10
 
 - The paper's thread is written in the program's vocabulary: uncertainty, reflection, closure, inheritance and novelty. Technical terms move to a bridges section with references.

@@ -1,0 +1,153 @@
+{
+  "alcance": "controles finitos, no teorema de regularidad 3D ni cota a priori",
+  "cizalla": {
+    "formula": "Phi=(x+eps sin y,y,z); K<=abs(eps); m>=1/(1+abs(eps))",
+    "max_abs_log_h": 0.33959255985093595,
+    "razon_mayor_observada": 0.11953225830303353,
+    "reindexacion_contra_definicion_max": 1.6653345369377348e-16,
+    "tests": 250
+  },
+  "estado": "PASS",
+  "fecha": "2026-11-10",
+  "id": "C4-E1/C4-E3",
+  "programa": "Endless Monkey Project — Relational Geometry Program",
+  "semilla": 20261110,
+  "taylor_green": {
+    "casos": [
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -4.991672913856604e-05,
+        "error_abs": 3.8624702394796095e-19,
+        "formula_exacta": -4.9916729138565654e-05,
+        "h": 0.1
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -8.485843953565109e-05,
+        "error_abs": 8.947378428436625e-17,
+        "formula_exacta": -8.485843953556161e-05,
+        "h": 0.1
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 1.9966691655382007e-05,
+        "error_abs": 4.4255777428142684e-17,
+        "formula_exacta": 1.9966691655426263e-05,
+        "h": 0.1
+      },
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -0.001932875047793603,
+        "error_abs": 1.713039432527097e-17,
+        "formula_exacta": -0.0019328750477935858,
+        "h": 0.25
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -0.0032858875812493693,
+        "error_abs": 2.736526283353413e-16,
+        "formula_exacta": -0.0032858875812490957,
+        "h": 0.25
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 0.0007731500191173746,
+        "error_abs": 5.984795992119984e-17,
+        "formula_exacta": 0.0007731500191174344,
+        "h": 0.25
+      },
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -0.02997205830664873,
+        "error_abs": 1.0061396160665481e-16,
+        "formula_exacta": -0.02997205830664883,
+        "h": 0.5
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -0.05095249912130306,
+        "error_abs": 5.551115123125783e-17,
+        "formula_exacta": -0.05095249912130301,
+        "h": 0.5
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 0.011988823322659603,
+        "error_abs": 6.938893903907228e-17,
+        "formula_exacta": 0.011988823322659534,
+        "h": 0.5
+      },
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -0.4226439399802987,
+        "error_abs": 5.551115123125783e-17,
+        "formula_exacta": -0.42264393998029864,
+        "h": 1.0
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -0.7184946979665078,
+        "error_abs": 1.1102230246251565e-16,
+        "formula_exacta": -0.7184946979665077,
+        "h": 1.0
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 0.16905757599211949,
+        "error_abs": 2.7755575615628914e-17,
+        "formula_exacta": 0.16905757599211946,
+        "h": 1.0
+      },
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -1.9999999999999998,
+        "error_abs": 2.220446049250313e-16,
+        "formula_exacta": -1.9999999999999996,
+        "h": 1.5707963267948966
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -3.3999999999999995,
+        "error_abs": 4.440892098500626e-16,
+        "formula_exacta": -3.399999999999999,
+        "h": 1.5707963267948966
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 0.7999999999999999,
+        "error_abs": 1.1102230246251565e-16,
+        "formula_exacta": 0.7999999999999998,
+        "h": 1.5707963267948966
+      },
+      {
+        "U": 1.0,
+        "derivada_4_nodos": -4.010943725324958,
+        "error_abs": 0.0,
+        "formula_exacta": -4.010943725324958,
+        "h": 2.0
+      },
+      {
+        "U": 1.7,
+        "derivada_4_nodos": -6.818604333052428,
+        "error_abs": 0.0,
+        "formula_exacta": -6.818604333052428,
+        "h": 2.0
+      },
+      {
+        "U": -0.4,
+        "derivada_4_nodos": 1.6043774901299832,
+        "error_abs": 0.0,
+        "formula_exacta": 1.6043774901299832,
+        "h": 2.0
+      }
+    ],
+    "tests": 18,
+    "tipo": "sustitucion numerica en una identidad demostrada"
+  },
+  "uniforme": {
+    "control_variable_log_h": 0.023194338087868846,
+    "max_abs_log_h": 0.0,
+    "resultado": "H_F=1 para F uniforme, calculado nodo por nodo desde la definicion",
+    "tests": 250
+  }
+}

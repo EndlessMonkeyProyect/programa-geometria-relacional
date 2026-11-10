@@ -1,5 +1,12 @@
 # Historial de esta edición
 
+## Imagen Total 4.0 · 2026-11-10
+
+- Nueva edición de lectura continua del programa. Sigue el hilo acordado el 24 de octubre y reúne la 3.9 con las entregas del 27 de octubre al 10 de noviembre, con el criterio de lenguaje del programa aplicado a todo el texto y los enlaces con la literatura en una capa final.
+- Integra tres notas del 10 de noviembre: cuatro cápsulas en Navier–Stokes (C4‑E1 a C4‑E3), el mecanismo de economía frente a P y NP (con una proposición condicional) y el recierre de la economía en Yang–Mills (dos plaquetas $\mathbb Z_2$ y la base de caracteres de $SU(2)$).
+- Verificadores nuevos en `verificadores/`. En el de cuatro cápsulas, la prueba con deformación uniforme calcula $H_F$ desde su definición nodo por nodo, con un control de deformación variable y la comparación de la forma reindexada de la prueba.
+- El README raíz enlaza el registro de reproducción vigente de *¿Qué cálculo deja de hacerse?*.
+
 ## ¿Qué cálculo deja de hacerse? v0.3 · 2026-11-10
 
 - El hilo del artículo se escribe en el vocabulario del programa: incertidumbre, reflejo, cierre, herencia y novedad. Los términos técnicos pasan a una sección de puentes con referencias.

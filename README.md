@@ -2,9 +2,13 @@
 
 [Read this repository in English](README.en.md).
 
+## Imagen Total 4.0 · 10 de noviembre de 2026
+
+La [Imagen Total 4.0](2026-11-10_imagen_total_4_0/README.md) es la lectura continua del programa a hoy: [documento](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.md) ([PDF](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.pdf)). Sigue el hilo acordado el 24 de octubre (la totalidad y su indeterminación, la reflexión, abrir o cerrar, las ramas) y reúne en un solo texto la 3.9 y las entregas del 27 de octubre al 10 de noviembre. Trae dos verificadores nuevos: cuatro cápsulas en Navier–Stokes y el recierre de dos plaquetas $\mathbb Z_2$.
+
 ## ¿Qué cálculo deja de hacerse? · 10 de noviembre de 2026
 
-La [continuación bilingüe del ramal de economía](2026-11-10_que_calculo_deja_de_hacerse/README.md) reúne el [manuscrito en español](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), la [versión inglesa](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md), código, resultados y un [registro de verificación](2026-11-10_que_calculo_deja_de_hacerse/ANEXO_AUDITORIA.md). Distingue el costo de reconocer una referencia del costo de contar sobre ella. Las pruebas se aplican a familias definidas; el reconocimiento económico para fórmulas generales sigue abierto.
+La [continuación bilingüe del ramal de economía](2026-11-10_que_calculo_deja_de_hacerse/README.md), versión 0.3, reúne el [manuscrito en español](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), la [versión inglesa](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.pdf)), código, resultados y el [registro de reproducción](2026-11-10_que_calculo_deja_de_hacerse/ANEXO_EVIDENCIAS.md). Mide el costo de reconocer lo heredado frente al de contar sobre ello, con una línea base de eliminación genérica y una familia de conexiones largas de hasta 256 variables primarias. Cada resultado vale para la familia que define su sección.
 
 ## La economía del cálculo desde las relaciones entre referencias · versión 2, 8 de noviembre de 2026
 
