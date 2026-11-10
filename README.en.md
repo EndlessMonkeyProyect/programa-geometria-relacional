@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## What computation becomes unnecessary? · November 10, 2026
+
+The [bilingual continuation of the computation-economy work](2026-11-10_que_calculo_deja_de_hacerse/README.md) contains the [English paper](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md), the [Spanish reference text](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), code, results, and a [verification record](2026-11-10_que_calculo_deja_de_hacerse/ANEXO_AUDITORIA.md). It separates the cost of recognizing a useful reference from the cost of counting on it. The proofs concern defined families; economical recognition for general formulas remains open.
+
 ## The economy of computation from relations between references · version 2, November 8, 2026
 
 The [bilingual v2 delivery](2026-11-08_economia_del_calculo/README.md) contains the [Spanish report](2026-11-08_economia_del_calculo/informe.md), its [English version](2026-11-08_economia_del_calculo/report.md), the reproducible lab and its results. The [change log](2026-11-08_economia_del_calculo/CAMBIOS.md) explains the revisions; the [review request](review_requests/2026-11-08_economia_del_calculo/README.md) asks about the minimal recurrence orders of a three-colour grid. The Spanish report is authoritative. The work does not establish a new complexity bound.

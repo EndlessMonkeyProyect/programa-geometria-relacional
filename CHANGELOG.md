@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## ¿Qué cálculo deja de hacerse? · 2026-11-10
+
+- Se añade un manuscrito de continuación en español e inglés, PDF de lectura, dos laboratorios con resultados originales y un verificador autónomo.
+- Se cotejan los 14 archivos del manifiesto recibido. El verificador autónomo y el laboratorio de relaciones distribuidas se reejecutan; este último requiere retirar el límite de ocho segundos de las repeticiones de DPLL, conservando el límite de nodos. También se reejecuta C7 del laboratorio de intercambio y convergencia.
+- El expediente se presenta para revisión independiente. No afirma una cota general nueva para 3-SAT.
+
 ## Revisión del intercambio de un par · 2026-11-04
 
 - Se abre un [hilo específico](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4) para un dictamen humano sobre las fórmulas de rango, su correspondencia con los preprints y sus antecedentes.

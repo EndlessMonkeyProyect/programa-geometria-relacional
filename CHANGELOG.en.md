@@ -1,5 +1,11 @@
 # History of this edition
 
+## What computation becomes unnecessary? · 2026-11-10
+
+- Added a follow-up paper in Spanish and English, a reading PDF, two laboratories with their original results, and a standalone verifier.
+- Checked all 14 files against the supplied manifest. Reran the standalone verifier and the distributed-relations laboratory; the latter required removing the eight-second wall-clock limit from repeated DPLL runs while retaining the node limit. Also reran C7 of the exchange-and-convergence laboratory.
+- The package invites independent review and makes no new general 3-SAT complexity claim.
+
 ## Pair-swap review · 2026-11-04
 
 - Opened a [dedicated thread](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/4) for a human assessment of the rank formulas, their correspondence with the preprints and their precedents.

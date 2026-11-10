@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## ¿Qué cálculo deja de hacerse? · 10 de noviembre de 2026
+
+La [continuación bilingüe del ramal de economía](2026-11-10_que_calculo_deja_de_hacerse/README.md) reúne el [manuscrito en español](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.md) ([PDF](2026-11-10_que_calculo_deja_de_hacerse/PAPER_ES.pdf)), la [versión inglesa](2026-11-10_que_calculo_deja_de_hacerse/PAPER_EN.md), código, resultados y un [registro de verificación](2026-11-10_que_calculo_deja_de_hacerse/ANEXO_AUDITORIA.md). Distingue el costo de reconocer una referencia del costo de contar sobre ella. Las pruebas se aplican a familias definidas; el reconocimiento económico para fórmulas generales sigue abierto.
+
 ## La economía del cálculo desde las relaciones entre referencias · versión 2, 8 de noviembre de 2026
 
 La [entrega bilingüe v2](2026-11-08_economia_del_calculo/README.md) reúne el [informe en español](2026-11-08_economia_del_calculo/informe.md), su [versión inglesa](2026-11-08_economia_del_calculo/report.md), el laboratorio reproducible y sus resultados. El [registro de cambios](2026-11-08_economia_del_calculo/CAMBIOS.md) explica las revisiones; la [solicitud de revisión](review_requests/2026-11-08_economia_del_calculo/LEER_PRIMERO.md) pregunta por los órdenes mínimos de las recurrencias de una rejilla de tres colores. El informe español es la referencia. No se presenta una nueva cota de complejidad.
