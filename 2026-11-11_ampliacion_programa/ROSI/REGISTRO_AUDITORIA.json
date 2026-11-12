@@ -1,0 +1,75 @@
+{
+  "edition": "2026-11-11-v0.1",
+  "audit_kind": "manual_proposal_not_external_certification",
+  "records": [
+    {
+      "id": "R-E01",
+      "statement": "Consulta recuperable si y solo si es constante sobre fibras de firma",
+      "status": "RESOLVED",
+      "scope": "conjuntos no vacíos, funciones declaradas",
+      "discriminant": "factorizacion y par testigo",
+      "source": "formalizacion/02_RESULTADOS_Y_PRUEBAS.md"
+    },
+    {
+      "id": "R-E02",
+      "statement": "bits suplementarios mínimos por cambio de consulta",
+      "status": "RESOLVED",
+      "scope": "X finito no vacío, etiqueta fija condicionada a la firma, sin tiempo",
+      "discriminant": "maximo de valores distintos de consulta por fibra",
+      "source": "formalizacion/02_RESULTADOS_Y_PRUEBAS.md"
+    },
+    {
+      "id": "R-E03",
+      "statement": "refinamiento monotono por inclusion de preguntas",
+      "status": "RESOLVED",
+      "scope": "familia de consultas ampliada con referencia y estados fijos",
+      "discriminant": "inclusion de equivalencias",
+      "source": "formalizacion/02_RESULTADOS_Y_PRUEBAS.md"
+    },
+    {
+      "id": "R-E08",
+      "statement": "cierre propio autorreferenciado no trivial",
+      "status": "OPEN",
+      "scope": "unidad interna de relaciones",
+      "missing_discriminants": [
+        "operador interno",
+        "estabilidad de composición",
+        "falsador"
+      ]
+    },
+    {
+      "id": "R-E09",
+      "statement": "economia al descubrir estructuras ocultas",
+      "status": "OPEN",
+      "scope": "entradas generales y reconocedor uniforme",
+      "missing_discriminants": [
+        "coste del reconocedor",
+        "certificados",
+        "familias adversariales",
+        "comparadores independientes"
+      ]
+    },
+    {
+      "id": "R-E10",
+      "statement": "extension a complejidad de 3SAT general",
+      "status": "OPEN",
+      "scope": "3SAT general",
+      "missing_discriminants": [
+        "cota uniforme de reconocimiento",
+        "coste total",
+        "correccion de conteo o decision"
+      ]
+    },
+    {
+      "id": "R-E12",
+      "statement": "puente fisico a Yang Mills, gravedad y flujo",
+      "status": "OPEN",
+      "scope": "realizaciones fisicas",
+      "missing_discriminants": [
+        "ecuacion dinamica",
+        "mapa de observables",
+        "prediccion contrastable"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## De la distinción a la economía · 11 de noviembre de 2026
+
+La [ampliación verificable v0.1](2026-11-11_ampliacion_programa/README.md) propone un contrato común para referencias, consultas y continuaciones, con tres proposiciones elementales, un laboratorio finito y una matriz de obligaciones abiertas. El [resumen en inglés](2026-11-11_ampliacion_programa/integracion/ENGLISH_SUMMARY.md) presenta su alcance. La reflexión complementaria [«¿Qué diferencias deben sobrevivir?»](2026-11-11_reflexion_mecanismo_p_np/REFLEXION_MECANISMO_P_NP.md) examina el costo de reconocer y conservar una respuesta exacta frente a P y NP; incluye una [nota de procedencia y un verificador](2026-11-11_reflexion_mecanismo_p_np/README.md). Ambos textos mantienen las conclusiones generales como preguntas abiertas.
+
 ## Imagen Total 4.0 · 10 de noviembre de 2026
 
 La [Imagen Total 4.0](2026-11-10_imagen_total_4_0/README.md) es la lectura continua del programa a hoy: [documento](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.md) ([PDF](2026-11-10_imagen_total_4_0/Imagen_Total_4_0.pdf)). Sigue el hilo acordado el 24 de octubre (la totalidad y su indeterminación, la reflexión, abrir o cerrar, las ramas) y reúne en un solo texto la 3.9 y las entregas del 27 de octubre al 10 de noviembre. Trae dos verificadores nuevos: cuatro cápsulas en Navier–Stokes y el recierre de dos plaquetas $\mathbb Z_2$.

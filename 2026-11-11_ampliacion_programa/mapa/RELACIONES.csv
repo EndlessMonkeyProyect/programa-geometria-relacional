@@ -1,0 +1,24 @@
+id_origen,concepto_origen,relacion_o_determinante,id_destino,concepto_destino,estado
+N01,Indefinicion,abre posibilidad,N02,Diferencia,O
+N02,Diferencia,referencia de comparacion,N03,Referencia,O
+N03,Referencia,consulta y criterio,N04,Distincion,D
+N04,Distincion,simultaneidad,N05,Comunes,D
+N05,Comunes,procedencia probada,N06,Herencia,D
+N06,Herencia,operaciones pertinentes,N07,Cierre declarado,D
+N07,Cierre declarado,recuperacion,N08,Informacion,D
+N08,Informacion,costo de descubrir,N09,Reconocimiento,D
+N09,Reconocimiento,construccion y verificacion,N10,Representacion,D
+N10,Representacion,continuaciones,N11,Actualizacion y calculo,T
+N11,Actualizacion y calculo,costo completo y comparador,N12,Economia,D
+N12,Economia,crecimiento por nuevas preguntas,N03,Referencia,O
+N03,Referencia,pared L,N13,Caja de espejos,T
+N03,Referencia,residuo modular,N14,Normalizacion modular,T
+N03,Referencia,contactos orientacion,N15,Esferas y tetraedro,I
+N13,Caja de espejos,testigo de nueva distincion,N08,Informacion,T
+N14,Normalizacion modular,suplemento informacional,N08,Informacion,T
+N15,Esferas y tetraedro,preservacion de relaciones,N08,Informacion,T
+N11,Actualizacion y calculo,complejidad general,N16,P frente a NP,A
+N11,Actualizacion y calculo,operadores fisicos,N17,Yang Mills,A
+N11,Actualizacion y calculo,dinamica y ritmos,N18,Gravedad tiempo y flujo,A
+N19,ROSI,discriminantes y falsadores,N07,Cierre declarado,D
+N19,ROSI,discriminantes y falsadores,N12,Economia,D

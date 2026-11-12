@@ -1,0 +1,20 @@
+test_actualizacion_compatible (test_laboratorio.IntegracionDeReferencias.test_actualizacion_compatible) ... ok
+test_actualizacion_incompatible (test_laboratorio.IntegracionDeReferencias.test_actualizacion_incompatible) ... ok
+test_corrida_conjunta (test_laboratorio.IntegracionDeReferencias.test_corrida_conjunta) ... ok
+test_cota_residual_exhaustiva_tres_estados (test_laboratorio.IntegracionDeReferencias.test_cota_residual_exhaustiva_tres_estados)
+Comprueba suficiencia y necesidad por búsqueda para 216 casos. ... ok
+test_factorizacion_preservada (test_laboratorio.IntegracionDeReferencias.test_factorizacion_preservada) ... ok
+test_factorizacion_reabierta (test_laboratorio.IntegracionDeReferencias.test_factorizacion_reabierta) ... ok
+test_firma_espejos (test_laboratorio.IntegracionDeReferencias.test_firma_espejos) ... ok
+test_herencia_y_novedad (test_laboratorio.IntegracionDeReferencias.test_herencia_y_novedad) ... ok
+test_refinamiento_consultas (test_laboratorio.IntegracionDeReferencias.test_refinamiento_consultas) ... ok
+test_relaciones_xor (test_laboratorio.IntegracionDeReferencias.test_relaciones_xor) ... ok
+test_suplemento_modular (test_laboratorio.IntegracionDeReferencias.test_suplemento_modular) ... ok
+test_suplemento_sin_novedad (test_laboratorio.IntegracionDeReferencias.test_suplemento_sin_novedad) ... ok
+test_tetraedro_orientado (test_laboratorio.IntegracionDeReferencias.test_tetraedro_orientado) ... ok
+test_umbral_economia (test_laboratorio.IntegracionDeReferencias.test_umbral_economia) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
