@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Measuring solutions relative to an axis · November 13, 2026
+
+The [v0.2 mathematical note](2026-11-13_medicion_soluciones_desde_un_eje/README.en.md) studies distributions of solutions projected onto a line of values. It obtains moments of real roots through Newton's identities, counts roots in intervals through Sturm's theorem, and recovers the first three Boolean moments with restricted counts. Hankel rank certifies the minimum number of positions in a positive atomic distribution from a sufficient moment sequence. The delivery includes exact examples, a [reproducible verifier](2026-11-13_medicion_soluciones_desde_un_eje/verificar_eje.py), and a [Spanish reference edition](2026-11-13_medicion_soluciones_desde_un_eje/README.md).
+
 ## From distinction to economy · November 11, 2026
 
 The [verifiable v0.1 extension](2026-11-11_ampliacion_programa/README.md) proposes a shared contract for references, queries, and continuations, with three elementary propositions, a finite laboratory, and a matrix of open obligations. Its [English summary](2026-11-11_ampliacion_programa/integracion/ENGLISH_SUMMARY.md) states the scope. The accompanying Spanish reflection [“Which differences must survive?”](2026-11-11_reflexion_mecanismo_p_np/REFLEXION_MECANISMO_P_NP.md) examines the cost of recognizing and preserving an exact answer in relation to P versus NP; see its [provenance note and verifier](2026-11-11_reflexion_mecanismo_p_np/README.md). Both texts leave general conclusions open.

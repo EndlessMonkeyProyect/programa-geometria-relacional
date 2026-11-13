@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Medición de soluciones respecto de un eje v0.2 · 2026-11-13
+
+- Se incorpora una nota matemática bilingüe sobre momentos de raíces reales y soluciones booleanas proyectadas sobre una referencia escalar.
+- La factorización de Hankel–Vandermonde certifica el mínimo de posiciones de la distribución proyectada a partir de una secuencia suficiente de momentos.
+- Se añaden dos pares de ejemplos exactos, un verificador con su dependencia declarada y una agenda de investigación sobre consultas de conteo y reutilización.
+
 ## Imagen Total 4.0 · 2026-11-10
 
 - Nueva edición de lectura continua del programa. Sigue el hilo acordado el 24 de octubre y reúne la 3.9 con las entregas del 27 de octubre al 10 de noviembre, con el criterio de lenguaje del programa aplicado a todo el texto y los enlaces con la literatura en una capa final.

@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Medición de soluciones respecto de un eje · 13 de noviembre de 2026
+
+La [nota matemática v0.2](2026-11-13_medicion_soluciones_desde_un_eje/README.md) estudia distribuciones de soluciones proyectadas sobre una recta de valores. Recupera momentos de raíces reales mediante Newton, cuenta raíces en intervalos mediante Sturm y obtiene los tres primeros momentos booleanos con conteos restringidos. El rango de Hankel certifica el mínimo de posiciones de una distribución atómica positiva a partir de una secuencia suficiente de momentos. Incluye ejemplos exactos, [verificador reproducible](2026-11-13_medicion_soluciones_desde_un_eje/verificar_eje.py) y [edición inglesa](2026-11-13_medicion_soluciones_desde_un_eje/README.en.md).
+
 ## De la distinción a la economía · 11 de noviembre de 2026
 
 La [ampliación verificable v0.1](2026-11-11_ampliacion_programa/README.md) propone un contrato común para referencias, consultas y continuaciones, con tres proposiciones elementales, un laboratorio finito y una matriz de obligaciones abiertas. El [resumen en inglés](2026-11-11_ampliacion_programa/integracion/ENGLISH_SUMMARY.md) presenta su alcance. La reflexión complementaria [«¿Qué diferencias deben sobrevivir?»](2026-11-11_reflexion_mecanismo_p_np/REFLEXION_MECANISMO_P_NP.md) examina el costo de reconocer y conservar una respuesta exacta frente a P y NP; incluye una [nota de procedencia y un verificador](2026-11-11_reflexion_mecanismo_p_np/README.md). Ambos textos mantienen las conclusiones generales como preguntas abiertas.

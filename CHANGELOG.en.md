@@ -1,5 +1,11 @@
 # History of this edition
 
+## Measuring solutions relative to an axis v0.2 · 2026-11-13
+
+- Added a bilingual mathematical note on moments of real roots and Boolean solutions projected relative to a scalar reference.
+- The Hankel–Vandermonde factorization certifies the minimum number of positions in the projected distribution from a sufficient moment sequence.
+- Added two pairs of exact examples, a verifier with its declared dependency, and a research agenda on counting queries and reuse.
+
 ## Total Picture 4.0 · 2026-11-10
 
 - New continuous-reading edition of the program. It follows the thread agreed on October 24 and gathers 3.9 with the deliveries from October 27 to November 10, with the program's language criterion applied throughout and the links to the literature in a final layer.

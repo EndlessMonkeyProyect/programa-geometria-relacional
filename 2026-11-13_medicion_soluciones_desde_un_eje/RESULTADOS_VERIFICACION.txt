@@ -1,0 +1,7 @@
+1. MOMENTOS DE RAICES: SOLO COEFICIENTES Y STURM
+P1 {'M0..4': ['4', '0', '20', '0', '164'], 'cuenta_intervalo': 2}
+P2 {'M0..4': ['4', '0', '20', '0', '136'], 'cuenta_intervalo': 0}
+2. CONTEOS RESTRINGIDOS Y RANGO DE HANKEL
+{'N': 3, 'cotas_primera': [2, 2, 2], 'cotas_doble': {(0, 1): 1, (0, 2): 1, (1, 2): 1}, 'S1': 6, 'S2': 12, 'eje': 2, 'dispersion': 0, 'Z(t)': '3*t**2', 'momentos_0_a_4': [3, 6, 12, 24, 48], 'H3_det': 0, 'H3_rango': 1}
+{'N': 3, 'cotas_primera': [0, 1, 2], 'cotas_doble': {(0, 1): 0, (0, 2): 0, (1, 2): 1}, 'S1': 3, 'S2': 5, 'eje': 1, 'dispersion': 2/3, 'Z(t)': 't**2 + t + 1', 'momentos_0_a_4': [3, 3, 5, 9, 17], 'H3_det': 4, 'H3_rango': 3}
+TODAS LAS PRUEBAS EXACTAS: OK
