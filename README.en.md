@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Independent review · recognition cost and exact counting · November 14, 2026
+
+The [English review request](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_EN.md) asks when recognizing inherited structure lowers the total cost of exact counting. It identifies the stated theorem, measured families, review questions, and [code and controls](review_requests/2026-11-14_recognition_cost/REPRODUCTION.md). [Spanish request](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_ES.md).
+
 ## Seven program works · November 12–13, 2026
 
 The [English delivery guide](README_ENTREGA_2026-11-12_13.en.md) introduces seven Spanish-language works on informational closure, quantification, cost certificates, counting representations, differences between solutions, a four-reference tesseract, and modular reflection of primes. Each folder contains its manuscript and, where applicable, a verifier. A [Spanish guide](README_ENTREGA_2026-11-12_13.md) and [rights statement](RIGHTS_ENTREGA_2026-11-12_13.md) accompany this edition.
