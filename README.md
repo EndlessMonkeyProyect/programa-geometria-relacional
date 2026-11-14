@@ -6,6 +6,8 @@
 
 La [solicitud en español](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_ES.md) pregunta cuándo reconocer relaciones heredadas reduce el costo total del conteo exacto. Presenta el teorema indicado, las familias medidas, las preguntas de revisión y el [código con sus controles](review_requests/2026-11-14_recognition_cost/REPRODUCTION.md). [Solicitud en inglés](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_EN.md).
 
+[Discusión de revisión](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/issues/7) · [DOI en Zenodo: 10.5281/zenodo.24222740](https://doi.org/10.5281/zenodo.24222740).
+
 ## Siete trabajos del programa · 12 y 13 de noviembre de 2026
 
 La [guía de la entrega](README_ENTREGA_2026-11-12_13.md) presenta siete trabajos sobre cierre de la información, cuantificación, certificación de costo, representaciones de conteo, diferencias entre soluciones, un teseracto de cuatro referencias y reflexión modular de primos. Cada carpeta contiene el manuscrito y, cuando corresponde, su verificador. El [resumen en inglés](README_ENTREGA_2026-11-12_13.en.md) y la [declaración de derechos](RIGHTS_ENTREGA_2026-11-12_13.md) acompañan la edición.
