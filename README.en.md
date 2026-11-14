@@ -2,9 +2,15 @@
 
 [Leer este repositorio en español](README.md).
 
+## Seven program works · November 12–13, 2026
+
+The [English delivery guide](README_ENTREGA_2026-11-12_13.en.md) introduces seven Spanish-language works on informational closure, quantification, cost certificates, counting representations, differences between solutions, a four-reference tesseract, and modular reflection of primes. Each folder contains its manuscript and, where applicable, a verifier. A [Spanish guide](README_ENTREGA_2026-11-12_13.md) and [rights statement](RIGHTS_ENTREGA_2026-11-12_13.md) accompany this edition.
+
 ## Measuring solutions relative to an axis · November 13, 2026
 
 The [v0.2 mathematical note](2026-11-13_medicion_soluciones_desde_un_eje/README.en.md) studies distributions of solutions projected onto a line of values. It obtains moments of real roots through Newton's identities, counts roots in intervals through Sturm's theorem, and recovers the first three Boolean moments with restricted counts. Hankel rank certifies the minimum number of positions in a positive atomic distribution from a sufficient moment sequence. The delivery includes exact examples, a [reproducible verifier](2026-11-13_medicion_soluciones_desde_un_eje/verificar_eje.py), and a [Spanish reference edition](2026-11-13_medicion_soluciones_desde_un_eje/README.md).
+
+[GitHub release](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-13-medicion-soluciones-eje-v0.2) · [Zenodo DOI: 10.5281/zenodo.24213729](https://doi.org/10.5281/zenodo.24213729).
 
 ## From distinction to economy · November 11, 2026
 

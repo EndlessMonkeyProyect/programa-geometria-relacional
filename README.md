@@ -2,9 +2,15 @@
 
 [Read this repository in English](README.en.md).
 
+## Siete trabajos del programa · 12 y 13 de noviembre de 2026
+
+La [guía de la entrega](README_ENTREGA_2026-11-12_13.md) presenta siete trabajos sobre cierre de la información, cuantificación, certificación de costo, representaciones de conteo, diferencias entre soluciones, un teseracto de cuatro referencias y reflexión modular de primos. Cada carpeta contiene el manuscrito y, cuando corresponde, su verificador. El [resumen en inglés](README_ENTREGA_2026-11-12_13.en.md) y la [declaración de derechos](RIGHTS_ENTREGA_2026-11-12_13.md) acompañan la edición.
+
 ## Medición de soluciones respecto de un eje · 13 de noviembre de 2026
 
 La [nota matemática v0.2](2026-11-13_medicion_soluciones_desde_un_eje/README.md) estudia distribuciones de soluciones proyectadas sobre una recta de valores. Recupera momentos de raíces reales mediante Newton, cuenta raíces en intervalos mediante Sturm y obtiene los tres primeros momentos booleanos con conteos restringidos. El rango de Hankel certifica el mínimo de posiciones de una distribución atómica positiva a partir de una secuencia suficiente de momentos. Incluye ejemplos exactos, [verificador reproducible](2026-11-13_medicion_soluciones_desde_un_eje/verificar_eje.py) y [edición inglesa](2026-11-13_medicion_soluciones_desde_un_eje/README.en.md).
+
+[Versión en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-13-medicion-soluciones-eje-v0.2) · [DOI en Zenodo: 10.5281/zenodo.24213729](https://doi.org/10.5281/zenodo.24213729).
 
 ## De la distinción a la economía · 11 de noviembre de 2026
 

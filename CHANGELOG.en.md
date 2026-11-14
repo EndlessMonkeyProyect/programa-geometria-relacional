@@ -1,5 +1,12 @@
 # History of this edition
 
+## Seven program works · 2026-11-14
+
+- Added seven November 12–13 manuscripts and a bilingual guide describing each work and its editorial status.
+- Ran all eight verifiers in the delivery using exact arithmetic; generated outputs can be reproduced from the scripts.
+- *Differences between solutions* links to the published v0.2 measurement note and keeps one canonical copy.
+- Public authorship uses the pseudonym Le Matt Ansatz Di Ego, with file-specific rights retained.
+
 ## Measuring solutions relative to an axis v0.2 · 2026-11-13
 
 - Added a bilingual mathematical note on moments of real roots and Boolean solutions projected relative to a scalar reference.

@@ -1,5 +1,12 @@
 # Historial de esta edición
 
+## Siete trabajos del programa · 2026-11-14
+
+- Se incorporan siete manuscritos del 12 y 13 de noviembre, con un índice bilingüe que describe la contribución y el estado de cada uno.
+- Se ejecutan los ocho verificadores de la entrega con aritmética exacta; los resultados generados se reproducen desde los scripts.
+- *Diferencias entre soluciones* enlaza la nota de medición v0.2 ya publicada y conserva una sola copia de esa base.
+- La autoría pública se identifica con el seudónimo Le Matt Ansatz Di Ego y se declara la conservación de derechos por archivo.
+
 ## Medición de soluciones respecto de un eje v0.2 · 2026-11-13
 
 - Se incorpora una nota matemática bilingüe sobre momentos de raíces reales y soluciones booleanas proyectadas sobre una referencia escalar.
