@@ -6,6 +6,8 @@
 
 The [editorial review note](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md) gives a query-based distinction criterion, normalizes arithmetic grids by least common multiple, and separates inherited and new components by projection. It states a conditional certificate for a Goldbach correlation and compares phases in Navier–Stokes with transport order in Yang–Mills. It includes [4,427 reproducible finite checks](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) and the [Spanish manuscript](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Nota_final.md).
 
+[GitHub version 1.0](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/2026-11-15-nota-final-distincion-v1/2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia) · [Zenodo DOI: 10.5281/zenodo.24254237](https://doi.org/10.5281/zenodo.24254237).
+
 ## Independent review · recognition cost and exact counting · November 14, 2026
 
 The [English review request](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_EN.md) asks when recognizing inherited structure lowers the total cost of exact counting. It identifies the stated theorem, measured families, review questions, and [code and controls](review_requests/2026-11-14_recognition_cost/REPRODUCTION.md). [Spanish request](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_ES.md).

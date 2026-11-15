@@ -6,6 +6,8 @@
 
 La [nota para examen editorial](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.md) formula un criterio de distinción por consultas, normaliza grillas mediante el MCM y separa por proyección lo heredado de lo nuevo. Presenta un certificado condicional para la correlación de Goldbach y compara fases de Navier–Stokes y transportes de Yang–Mills. Incluye [4.427 controles finitos reproducibles](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) y una [guía en inglés](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md).
 
+[Versión 1.0 en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/2026-11-15-nota-final-distincion-v1/2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia) · [DOI en Zenodo: 10.5281/zenodo.24254237](https://doi.org/10.5281/zenodo.24254237).
+
 ## Revisión independiente · costo de reconocimiento y conteo exacto · 14 de noviembre de 2026
 
 La [solicitud en español](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_ES.md) pregunta cuándo reconocer relaciones heredadas reduce el costo total del conteo exacto. Presenta el teorema indicado, las familias medidas, las preguntas de revisión y el [código con sus controles](review_requests/2026-11-14_recognition_cost/REPRODUCTION.md). [Solicitud en inglés](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_EN.md).
