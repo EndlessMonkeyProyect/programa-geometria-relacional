@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Cuándo una nueva distinción amplía la referencia · 15 de noviembre de 2026
+
+La [nota para examen editorial](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.md) formula un criterio de distinción por consultas, normaliza grillas mediante el MCM y separa por proyección lo heredado de lo nuevo. Presenta un certificado condicional para la correlación de Goldbach y compara fases de Navier–Stokes y transportes de Yang–Mills. Incluye [4.427 controles finitos reproducibles](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) y una [guía en inglés](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md).
+
 ## Revisión independiente · costo de reconocimiento y conteo exacto · 14 de noviembre de 2026
 
 La [solicitud en español](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_ES.md) pregunta cuándo reconocer relaciones heredadas reduce el costo total del conteo exacto. Presenta el teorema indicado, las familias medidas, las preguntas de revisión y el [código con sus controles](review_requests/2026-11-14_recognition_cost/REPRODUCTION.md). [Solicitud en inglés](review_requests/2026-11-14_recognition_cost/REVIEW_REQUEST_EN.md).

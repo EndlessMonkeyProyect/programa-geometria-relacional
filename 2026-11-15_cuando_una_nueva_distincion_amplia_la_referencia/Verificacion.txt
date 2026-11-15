@@ -1,0 +1,3 @@
+APROBADO: 4427 controles finitos; G(30) = 0.955167003705.
+Contrato: identidades de grillas, proyecciones, reflexión y conteo finito.
+ABIERTO: estimaciones uniformes, semilla generada sin conocer la respuesta y Goldbach.
