@@ -6,6 +6,8 @@
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.
 
+[GitHub version 1.0](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/2026-11-17-escalas-relacionales-riemann-v1/2026-11-17_escalas_relacionales_riemann) · [Zenodo DOI: 10.5281/zenodo.24331733](https://doi.org/10.5281/zenodo.24331733).
+
 ## When a New Distinction Extends a Reference · November 15, 2026
 
 The [editorial review note](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md) gives a query-based distinction criterion, normalizes arithmetic grids by least common multiple, and separates inherited and new components by projection. It states a conditional certificate for a Goldbach correlation and compares phases in Navier–Stokes with transport order in Yang–Mills. It includes [4,427 reproducible finite checks](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) and the [Spanish manuscript](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Nota_final.md).
