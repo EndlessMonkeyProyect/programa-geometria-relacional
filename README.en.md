@@ -8,6 +8,8 @@ The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) intro
 
 [GitHub version 1.0](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/2026-11-17-escalas-relacionales-riemann-v1/2026-11-17_escalas_relacionales_riemann) · [Zenodo DOI: 10.5281/zenodo.24331733](https://doi.org/10.5281/zenodo.24331733).
 
+[Bilingual R–03 supplement v0.2](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/README.md): [English paper](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_SPECTRAL_INHERITANCE_EN.md) · [texto en español](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_HERENCIA_Y_LOCALIZACION_ES.md).
+
 ## When a New Distinction Extends a Reference · November 15, 2026
 
 The [editorial review note](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md) gives a query-based distinction criterion, normalizes arithmetic grids by least common multiple, and separates inherited and new components by projection. It states a conditional certificate for a Goldbach correlation and compares phases in Navier–Stokes with transport order in Yang–Mills. It includes [4,427 reproducible finite checks](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) and the [Spanish manuscript](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Nota_final.md).
