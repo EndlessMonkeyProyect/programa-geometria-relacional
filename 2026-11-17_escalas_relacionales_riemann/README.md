@@ -24,7 +24,7 @@ Para una lectura de entrada, la reflexión; para las pruebas, la formalización.
 
 [R–03 en español](2026-11-18_r03_herencia_espectral/R03_HERENCIA_Y_LOCALIZACION_ES.md) · [R–03 in English](2026-11-18_r03_herencia_espectral/R03_SPECTRAL_INHERITANCE_EN.md) · [Anexo breve](2026-11-18_r03_herencia_espectral/ANEXO_V1_1_CONSERVACION_CEROS_ES.md) · [Guía y verificación](2026-11-18_r03_herencia_espectral/README.md).
 
-El complemento demuestra la conservación de ceros bajo filtros primos finitos, cuantifica la estabilidad de la normalización y examina la simetría mediante un modelo de control. La hipótesis de Riemann permanece abierta.
+El complemento (v0.3) demuestra la conservación de ceros bajo filtros primos finitos y cuantifica la estabilidad de la normalización. En el pivote $s=\tfrac12$ escribe con la discrepancia de la criba una equivalencia conocida: la hipótesis de Riemann equivale a una cota inferior para la discrepancia completa, normalizada por $e^{\mathrm{li}(\sqrt{\vartheta(X)})}$ (Akatsuka, 2024), con laboratorio hasta $X=10^8$. Con la función de Davenport–Heilbronn separa simetría y localización: lo que distingue a $\zeta$ es el producto de Euler, la herencia sobre todos los primos. La hipótesis de Riemann permanece abierta.
 
 ## Reproducción
 

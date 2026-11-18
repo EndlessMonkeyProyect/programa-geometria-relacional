@@ -1,0 +1,44 @@
+§1 · Filter factor and normalized recovery
+  PASS: all 12 algebraic normalization checks
+§1a · Independent Mellin quadrature from sieve counts
+  S=[2], s=0.7: |integral - Mellin|=5.95e-11 (tail bound 1.43e-09); leading tail term 5.95e-11; after subtracting it 4e-16 (remainder bound 5e-15)
+  S=[2], s=(0.7 + 2.4j): |integral - Mellin|=5.95e-11 (tail bound 2.47e-09); leading tail term 5.95e-11; after subtracting it 9e-15 (remainder bound 1e-14)
+  S=[2, 3], s=0.7: |integral - Mellin|=1.19e-10 (tail bound 8.57e-09); leading tail term 1.19e-10; after subtracting it 2e-15 (remainder bound 3e-14)
+  S=[2, 3], s=(0.7 + 2.4j): |integral - Mellin|=1.19e-10 (tail bound 1.48e-08); leading tail term 1.19e-10; after subtracting it 6e-15 (remainder bound 7e-14)
+  S=[2, 3, 5], s=0.7: |integral - Mellin|=4.76e-10 (tail bound 8.57e-08); leading tail term 4.76e-10; after subtracting it 6e-16 (remainder bound 8e-13)
+  S=[2, 3, 5], s=(0.7 + 2.4j): |integral - Mellin|=4.76e-10 (tail bound 1.48e-07); leading tail term 4.76e-10; after subtracting it 5e-15 (remainder bound 2e-12)
+  PASS: 6 independent sieve-integral comparisons; the residual is the leading tail term
+§2 · Known zeta zeros retain a nonzero finite multiplier
+  zero 1: Im(rho)=14.1347251417, |P_8(rho)|=8.12399444086
+  zero 2: Im(rho)=21.0220396388, |P_8(rho)|=3.57008184918
+  zero 3: Im(rho)=25.0108575801, |P_8(rho)|=3.74042480224
+  PASS: three illustrative known zeros (not exhaustive)
+§3 · Minimal control: symmetric polynomial with off-line zeros
+  PASS: H and symmetrized H_S preserve both symmetries; unsymmetrized H_S fails reflection
+§3b · Standard control: Davenport-Heilbronn function
+  functional equation Lambda(s) = Lambda(1-s) and real Lambda on the line: checked
+  zero on the line:  (0.5 + 5.09415984457j)
+  zero off the line: (0.808517182457 + 85.6993484854j)   mirror: (0.191482817543 + 85.6993484854j)
+  a(2)a(3) = -0.0807009 while a(6) = a(1) = 1: no Euler product
+  PASS: symmetric Dirichlet series with zeros on and off the line
+§4 · Finite-reference stability, growing inverse factor
+  k= 1: inverse |P_k(0.7)| = 2.60126873592
+  k= 3: inverse |P_k(0.7)| = 7.17337060251
+  k= 6: inverse |P_k(0.7)| = 14.2166811577
+  k=10: inverse |P_k(0.7)| = 23.4816162046
+  k=15: inverse |P_k(0.7)| = 35.0187710637
+  PASS: inverse factor increases on positive real sigma=0.7
+§4b · Inversion cost at the pivot s = 1/2, all primes up to X = 1e8
+  X=1e2: 1/P_S(1/2) = e^    6.95   E1(X) = 3.18748   F_S(1/2)*e^li = -0.916306
+  X=1e3: 1/P_S(1/2) = e^   14.27   E1(X) = 2.66213   F_S(1/2)*e^li = -1.09713
+  X=1e4: 1/P_S(1/2) = e^   30.91   E1(X) = 2.44392   F_S(1/2)*e^li = -1.19509
+  X=1e5: 1/P_S(1/2) = e^   71.92   E1(X) = 2.32983   F_S(1/2)*e^li = -1.25361
+  X=1e6: 1/P_S(1/2) = e^  178.32   E1(X) = 2.26433   F_S(1/2)*e^li = -1.28988
+  X=1e7: 1/P_S(1/2) = e^  463.67   E1(X) = 2.22287   F_S(1/2)*e^li = -1.31393
+  X=1e8: 1/P_S(1/2) = e^ 1246.86   E1(X) = 2.19449   F_S(1/2)*e^li = -1.33093
+  limit under RH: E1 -> -sqrt(2) zeta(1/2) = 2.0652532;  F_S(1/2)*e^li -> -sqrt(2) = -1.4142136
+  PASS: inverse factor grows as e^li(sqrt(theta)); E1 stays in (2, 3.5) and decreases (observation, not proof)
+§5 · Radius versus full transfer amplitude
+  r_7(rho)=0.256112851789, |lambda_7(rho)|=1.18685628755
+  PASS: radius and full multiplier are distinct quantities
+R-03 numerical checks: ALL PASS

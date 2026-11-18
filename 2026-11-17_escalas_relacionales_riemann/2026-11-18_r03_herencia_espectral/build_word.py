@@ -13,7 +13,7 @@ source=base/'_R03_Word_combined.md'
 header='''# Conservación, herencia y localización de los ceros
 
 **Formalización R–01 / R–02 · Adición v1.1**  
-**R–03 · Examen bilingüe · 18 de noviembre de 2026**
+**R–03 v0.3 · Examen bilingüe · 18 de noviembre de 2026**
 
 Endless Monkey Project  
 Relational Geometry Program  \n**Le Matt Ansatz Di Ego**
@@ -30,7 +30,7 @@ Dos anexos de incorporación a R–01/R–02 y dos versiones paralelas del exame
 chunks=[header]
 for name in ['ANEXO_V1_1_CONSERVACION_CEROS_ES.md','R03_HERENCIA_Y_LOCALIZACION_ES.md','ADDENDUM_V1_1_ZERO_PRESERVATION_EN.md','R03_SPECTRAL_INHERITANCE_EN.md']:
     chunks.append((base/name).read_text(encoding='utf-8'))
-    chunks.append('\n\n---\n\n')
+    chunks.append('\n\n')
 source.write_text('\n'.join(chunks),encoding='utf-8')
 out=base/'R03_Anexo_Bilingue.docx'
 subprocess.run(['pandoc',str(source),'--from=markdown+tex_math_dollars+tex_math_single_backslash','--to=docx','--standalone','--output',str(out)],check=True)

@@ -8,7 +8,7 @@ La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [form
 
 [Versión 1.0 en GitHub](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/tree/2026-11-17-escalas-relacionales-riemann-v1/2026-11-17_escalas_relacionales_riemann) · [DOI en Zenodo: 10.5281/zenodo.24331733](https://doi.org/10.5281/zenodo.24331733).
 
-[Complemento bilingüe R–03 v0.2](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/README.md): [texto en español](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_HERENCIA_Y_LOCALIZACION_ES.md) · [text in English](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_SPECTRAL_INHERITANCE_EN.md).
+[Complemento bilingüe R–03 v0.3](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/README.md): [texto en español](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_HERENCIA_Y_LOCALIZACION_ES.md) · [text in English](2026-11-17_escalas_relacionales_riemann/2026-11-18_r03_herencia_espectral/R03_SPECTRAL_INHERITANCE_EN.md).
 
 ## Cuándo una nueva distinción amplía la referencia · 15 de noviembre de 2026
 
