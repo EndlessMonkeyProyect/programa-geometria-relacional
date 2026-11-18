@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Relational scales and the Riemann hypothesis · November 17, 2026
+
+The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.
+
 ## When a New Distinction Extends a Reference · November 15, 2026
 
 The [editorial review note](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md) gives a query-based distinction criterion, normalizes arithmetic grids by least common multiple, and separates inherited and new components by projection. It states a conditional certificate for a Goldbach correlation and compares phases in Navier–Stokes with transport order in Yang–Mills. It includes [4,427 reproducible finite checks](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) and the [Spanish manuscript](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Nota_final.md).

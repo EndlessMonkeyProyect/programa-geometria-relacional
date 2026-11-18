@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
+
+La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [formalización de la criba](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) y la reflexión [«Un número por cero»](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). Presenta la herencia exacta de la discrepancia entre escalas, el conteo de primos y una lectura de la simetría de los ceros de ζ. Dos verificadores reproducen los cálculos; la hipótesis de Riemann permanece abierta. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/README.en.md).
+
 ## Cuándo una nueva distinción amplía la referencia · 15 de noviembre de 2026
 
 La [nota para examen editorial](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.md) formula un criterio de distinción por consultas, normaliza grillas mediante el MCM y separa por proyección lo heredado de lo nuevo. Presenta un certificado condicional para la correlación de Goldbach y compara fases de Navier–Stokes y transportes de Yang–Mills. Incluye [4.427 controles finitos reproducibles](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/Verificacion.txt) y una [guía en inglés](2026-11-15_cuando_una_nueva_distincion_amplia_la_referencia/README.en.md).
