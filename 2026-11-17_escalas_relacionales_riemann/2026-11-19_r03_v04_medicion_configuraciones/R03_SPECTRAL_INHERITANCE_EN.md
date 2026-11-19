@@ -300,7 +300,7 @@ The difference from the Mellin expression has leading tail term $\langle G\rangl
 
 ## 10. Exact bridge to the functional criterion from November 1
 
-The reading transcription of the earlier note *R–RH–01 — Primes, reflection, and closure* uses $f_n(t)=\{1/(nt)\}$ and the classical Nyman–Beurling/Báez-Duarte criterion, in which density of the full family is equivalent to RH. The sieve discrepancy becomes an **exact** linear combination of those functions after reference inversion.
+The compared text of the earlier note *R–RH–01 — Primes, reflection, and closure* uses $f_n(t)=\{1/(nt)\}$ and the classical Nyman–Beurling/Báez-Duarte criterion, in which density of the full family is equivalent to RH. The sieve discrepancy becomes an **exact** linear combination of those functions after reference inversion.
 
 **Proposition 6 (inversion bridge).** For any finite prime set $S$, including $S=\varnothing$, put $M_S=\prod_{p\in S}p$ and $h_S(t)=-E_S(1/t)$. Then
 
@@ -349,7 +349,7 @@ This is **not a new original characterization**: it is a translation into sieve-
 
 - L. Báez-Duarte (2003), [*A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis*](https://arxiv.org/abs/math/0202141), Theorem 1.1 (closure criterion).
 - L. Báez-Duarte (2002), [*A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2*](https://arxiv.org/abs/math/0205003), M. Balazard's Proposition 3.1 (conditional weighted approximants and bound).
-- R–RH–01 (Nov. 1, 2026), *Primes, reflection, and closure* (earlier program note; reading transcription, original pending comparison).
+- R–RH–01 (stated date: Nov. 1, 2026), *Primes, reflection, and closure* (supplied text compared; [provenance record, in Spanish](PROCEDENCIA_Y_LIMITES.md); public link pending).
 
 **Public signature:** Le Matt Ansatz Di Ego.
 

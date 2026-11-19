@@ -4,11 +4,11 @@
 
 ## Finding
 
-Three corrections are integrated: documentary identification of R–RH–01, pending comparison with the original; a projection computed independently from truncated integrals **both for the Gram matrix and the target vector**; and explicit separation of the families of approximating functions.
+Three corrections are integrated: comparison with the supplied R–RH–01 text; a projection computed independently from truncated integrals **both for the Gram matrix and the target vector**; and explicit separation of the families of approximating functions.
 
 ### Source and public-link requirement
 
-The antecedent is **R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann** (1 November 2026), identified in the program archive under `R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md` and PDF. It contains the classical Nyman–Beurling/Báez-Duarte criterion, its Gram matrix, and the closed-form finite `d_2` calculation. **No public GitHub URL or authenticated original bytes for this manuscript have been verified.** The original should be compared and linked by a stable relative path or commit before merging. The package includes a reading transcription for comparison only, outside the integration folder.
+The antecedent is **R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann** (date stated in the text: 1 November 2026). The file `R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md` was supplied on 19 November 2026: 17,087 bytes, SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`. It matches the earlier reading transcription apart from a final newline. It contains the classical Nyman–Beurling/Báez-Duarte criterion, its Gram matrix, and the closed-form finite `d_2` calculation. Independent metadata establishing the historical date and a public GitHub URL have not been verified. The file is kept outside this delivery; a stable public link is still needed for third-party reproduction.
 
 Background source: L. Báez-Duarte, *A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis*, 2003, [arXiv:math/0202141](https://arxiv.org/abs/math/0202141).
 
@@ -69,7 +69,7 @@ Special Möbius-coefficient trial approximants are not interchangeable with opti
 
 This supplies a traceable **integration** between finite prime-reference discrepancies, weighted Gram measurement, and an established closure criterion. It is mathematically exact and independently testable. RH remains open.
 
-Reproduce in an environment with `mpmath>=1.3` using `python verificacion_puente_gram_v1_1.py --N 3000 --dps 45`. No random seeds are used. `EJECUCION_LOCAL_2026-11-19.txt` records an earlier package run; current branch results are documented in the PR. Comparing and linking the original R–RH–01 remains a prerequisite before merging.
+Reproduce in an environment with `mpmath>=1.3` using `python verificacion_puente_gram_v1_1.py --N 3000 --dps 45`. No random seeds are used. `EJECUCION_LOCAL_2026-11-19.txt` records an earlier package run; current branch results are documented in the PR. The R–RH–01 comparison is recorded above; a public link remains pending.
 
 **Endless Monkey Project**<br>
 Relational Geometry Program<br>

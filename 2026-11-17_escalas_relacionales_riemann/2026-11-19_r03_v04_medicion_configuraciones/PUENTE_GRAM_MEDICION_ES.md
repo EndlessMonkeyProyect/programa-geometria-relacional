@@ -6,13 +6,13 @@
 
 ## Dictamen
 
-La revisión incorpora tres precisiones: la identificación documental de R–RH–01, pendiente de cotejo con el original; una proyección obtenida íntegramente desde integrales truncadas; y una separación entre familias de aproximación. Las identidades del puente permanecen correctas. La hipótesis de Riemann sigue abierta.
+La revisión incorpora tres precisiones: el cotejo del texto R–RH–01 recibido; una proyección obtenida íntegramente desde integrales truncadas; y una separación entre familias de aproximación. Las identidades del puente permanecen correctas. La hipótesis de Riemann sigue abierta.
 
 ## 1. Procedencia y enlace pendiente
 
-El antecedente es **R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann**, fechado **1 de noviembre de 2026**. La transcripción de lectura lo identifica con el nombre `R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md` (y una versión PDF pendiente de cotejo). Describe el criterio de Nyman–Beurling/Báez-Duarte, una matriz de Gram y la distancia `d_2` con expresiones cerradas.
+El antecedente es **R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann**, con fecha declarada **1 de noviembre de 2026**. Se recibió el archivo `R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md` el 19-XI-2026: 17.087 bytes, SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`. Su contenido coincide con la transcripción previa salvo el salto de línea final. Describe el criterio de Nyman–Beurling/Báez-Duarte, una matriz de Gram y la distancia `d_2` con expresiones cerradas.
 
-**No se ha verificado una URL pública permanente de ese manuscrito en GitHub.** Una transcripción textual obtenida del archivo del programa se adjunta como antecedente para cotejo, sin acreditar identidad de bytes con el original; la referencia permanece documental hasta que se adjunte o publique el archivo original. Antes de aprobar la integración, cotejar el original y enlazarlo por ruta relativa dentro del repositorio, con hash o commit estable. No debe inventarse un enlace GitHub.
+**No se ha verificado una URL pública permanente de ese manuscrito en GitHub.** El cotejo identifica el contenido del archivo recibido; no aporta metadatos independientes que autentiquen su fecha histórica. El manuscrito se conserva fuera de esta entrega. Para que un tercero pueda repetir el cotejo desde GitHub, habrá que publicarlo o enlazarlo por una ruta estable comprobada. No debe inventarse un enlace.
 
 Bibliografía matemática que fundamenta el criterio de cierre: L. Báez-Duarte, *A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis*, Rend. Lincei Mat. Appl. 14 (2003), 5–11; [arXiv:math/0202141](https://arxiv.org/abs/math/0202141). El cálculo finito de `d_2` no demuestra RH.
 
@@ -101,7 +101,7 @@ La igualdad de espacios para la segunda fila se obtiene mediante inversión de M
 
 Ejecución en un entorno con `mpmath>=1.3`: `python verificacion_puente_gram_v1_1.py --N 3000 --dps 45`.
 
-El algoritmo es determinista: no necesita semillas. `EJECUCION_LOCAL_2026-11-19.txt` conserva una ejecución previa del paquete; los resultados de esta rama se documentan en el PR. Las sumas `SHA256SUMS.txt` verifican integridad de archivos, no validez de teoremas. Antes de aprobar la integración, cotejar el original R–RH–01 y reemplazar esta nota de procedencia por su enlace comprobado.
+El algoritmo es determinista: no necesita semillas. `EJECUCION_LOCAL_2026-11-19.txt` conserva una ejecución previa del paquete; los resultados de esta rama se documentan en el PR. Las sumas `SHA256SUMS.txt` verifican integridad de archivos, no validez de teoremas. El cotejo de R–RH–01 se registra arriba; su enlace público sigue pendiente.
 
 **Endless Monkey Project**<br>
 Relational Geometry Program<br>

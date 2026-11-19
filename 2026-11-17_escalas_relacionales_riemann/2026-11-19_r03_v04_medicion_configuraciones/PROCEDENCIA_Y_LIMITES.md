@@ -19,7 +19,7 @@
 - [Akatsuka (2024), arXiv:2411.19259](https://arxiv.org/abs/2411.19259)
 - [Báez-Duarte, arXiv:math/0202141](https://arxiv.org/abs/math/0202141)
 - [Báez-Duarte, segunda nota, arXiv:math/0205003](https://arxiv.org/abs/math/0205003): Proposición 3.1 de M. Balazard, aproximantes de Möbius y cota condicional.
-- **R–RH–01, «Primos, reflexión y cierre» (1-XI-2026):** transcripción documental disponible en el paquete de antecedentes, no ruta pública verificada. Conseguir original y publicarlo o enlazarlo después de cotejo.
+- **R–RH–01, «Primos, reflexión y cierre» (fecha declarada: 1-XI-2026):** archivo Markdown recibido el 19-XI-2026, 17.087 bytes, SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`. Su contenido coincide byte por byte con la transcripción documental de 17.086 bytes, salvo el salto de línea final del archivo recibido. El cotejo acredita el contenido entregado y su hash; la fecha histórica no se verifica mediante metadatos independientes. No se incorpora aquí ni se dispone de ruta pública comprobada.
 
 ## Compromisos editoriales
 

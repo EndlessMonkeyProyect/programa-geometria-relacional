@@ -300,7 +300,7 @@ La diferencia frente a la expresión de Mellin tiene como término principal de 
 
 ## 10. Puente exacto con el criterio funcional del 1 de noviembre
 
-La transcripción de lectura de la nota previa *R–RH–01 — Primos, reflexión y cierre* emplea las funciones $f_n(t)=\{1/(nt)\}$ y el criterio de Nyman–Beurling/Báez-Duarte, cuyo cierre completo equivale a RH. La discrepancia de la criba es una combinación **exacta** de esas funciones cuando se invierte la referencia.
+El texto cotejado de la nota previa *R–RH–01 — Primos, reflexión y cierre* emplea las funciones $f_n(t)=\{1/(nt)\}$ y el criterio de Nyman–Beurling/Báez-Duarte, cuyo cierre completo equivale a RH. La discrepancia de la criba es una combinación **exacta** de esas funciones cuando se invierte la referencia.
 
 **Proposición 6 (puente de inversión).** Para cada conjunto finito $S$ de primos, incluido $S=\varnothing$, si $M_S=\prod_{p\in S}p$ y $h_S(t)=-E_S(1/t)$, entonces
 
@@ -349,7 +349,7 @@ El corolario **no es una nueva caracterización original**: presenta en el lengu
 
 - L. Báez-Duarte (2003), [*A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis*](https://arxiv.org/abs/math/0202141), Teorema 1.1 (criterio de cierre).
 - L. Báez-Duarte (2002), [*A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2*](https://arxiv.org/abs/math/0205003), Proposición 3.1 de M. Balazard (aproximantes ponderados y cota condicional).
-- R–RH–01 (1-XI-2026), *Primos, reflexión y cierre* (nota anterior del programa; transcripción de lectura, original pendiente de cotejo).
+- R–RH–01 (fecha declarada: 1-XI-2026), *Primos, reflexión y cierre* (texto recibido y cotejado; [registro de procedencia](PROCEDENCIA_Y_LIMITES.md); enlace público pendiente).
 
 **Firma pública:** Le Matt Ansatz Di Ego.
 

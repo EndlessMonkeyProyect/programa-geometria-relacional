@@ -8,7 +8,7 @@
 - Se diferencia la amplificación de un error de normalización del costo de tiempo o memoria.
 - El laboratorio de Gram v1.1 está integrado como documento ES/EN separado, con su verificador de proyección desde integrales truncadas.
 - Se conserva como fuente independiente el código R–03 v0.4 auditado y el verificador de controles espectrales.
-- La transcripción de R–RH–01 es documental y requiere cotejo antes de asumirla como bytes auténticos.
+- El archivo R–RH–01 recibido el 19-XI-2026 coincide con la transcripción previa salvo un salto de línea final; se registra su SHA-256 y queda pendiente un enlace público comprobado.
 - Sin afirmación de RH demostrada, origen físico de energía ni reducción global de complejidad.
 
 **English summary:** Bilingual R–03 v0.4 with terminology aligned to configuration granularity and weighted Gram measurement; archived v0.3 remains unchanged; RH is open.

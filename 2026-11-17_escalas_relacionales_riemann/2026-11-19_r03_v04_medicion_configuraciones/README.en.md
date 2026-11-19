@@ -26,4 +26,4 @@ python verificacion_puente_gram_v1_1.py --N 3000 --dps 45
 sha256sum -c SHA256SUMS.txt
 ```
 
-The full R–03 $10^8$ verification may require substantial memory. Audit logs from prior sessions are included separately, **not** as proof of a fresh run. The archival text of R–RH–01 remains subject to an original-file check before merging. RH remains open.
+The full R–03 $10^8$ verification may require substantial memory. Audit logs from prior sessions are included separately, **not** as proof of a fresh run. The R–RH–01 file supplied on 19 November 2026 (SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`) matches the reading transcription apart from a final newline. The manuscript is not included here; a public link remains pending. RH remains open.
