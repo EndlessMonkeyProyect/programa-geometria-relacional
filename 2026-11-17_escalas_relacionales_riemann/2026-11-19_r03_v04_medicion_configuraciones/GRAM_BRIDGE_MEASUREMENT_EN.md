@@ -6,9 +6,9 @@
 
 Three corrections are integrated: comparison with the supplied R–RH–01 text; a projection computed independently from truncated integrals **both for the Gram matrix and the target vector**; and explicit separation of the families of approximating functions.
 
-### Source and public-link requirement
+### Source and public link
 
-The antecedent is **R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann** (date stated in the text: 1 November 2026). The file `R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md` was supplied on 19 November 2026: 17,087 bytes, SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`. It matches the earlier reading transcription apart from a final newline. It contains the classical Nyman–Beurling/Báez-Duarte criterion, its Gram matrix, and the closed-form finite `d_2` calculation. Independent metadata establishing the historical date and a public GitHub URL have not been verified. The file is kept outside this delivery; a stable public link is still needed for third-party reproduction.
+The antecedent is **[R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Riemann](../../antecedentes/R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md)** (date stated in the text: 1 November 2026). The file was supplied on 19 November 2026 and preserved unchanged in `antecedentes/`: 17,087 bytes, SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`. It matches the earlier reading transcription apart from a final newline. It contains the classical Nyman–Beurling/Báez-Duarte criterion, its Gram matrix, and the closed-form finite `d_2` calculation. Independent metadata establishing the historical date have not been verified. The `R_RH_01_verificador.py` script mentioned in the manuscript was not among the supplied files.
 
 Background source: L. Báez-Duarte, *A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis*, 2003, [arXiv:math/0202141](https://arxiv.org/abs/math/0202141).
 
@@ -69,7 +69,7 @@ Special Möbius-coefficient trial approximants are not interchangeable with opti
 
 This supplies a traceable **integration** between finite prime-reference discrepancies, weighted Gram measurement, and an established closure criterion. It is mathematically exact and independently testable. RH remains open.
 
-Reproduce in an environment with `mpmath>=1.3` using `python verificacion_puente_gram_v1_1.py --N 3000 --dps 45`. No random seeds are used. `EJECUCION_LOCAL_2026-11-19.txt` records an earlier package run; current branch results are documented in the PR. The R–RH–01 comparison is recorded above; a public link remains pending.
+Reproduce in an environment with `mpmath>=1.3` using `python verificacion_puente_gram_v1_1.py --N 3000 --dps 45`. No random seeds are used. `EJECUCION_LOCAL_2026-11-19.txt` records an earlier package run; current branch results are documented in the PR. The R–RH–01 comparison and link are recorded above.
 
 **Endless Monkey Project**<br>
 Relational Geometry Program<br>

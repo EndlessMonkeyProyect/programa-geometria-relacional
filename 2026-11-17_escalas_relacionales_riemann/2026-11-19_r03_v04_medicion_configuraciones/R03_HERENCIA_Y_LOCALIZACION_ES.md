@@ -349,7 +349,7 @@ El corolario **no es una nueva caracterización original**: presenta en el lengu
 
 - L. Báez-Duarte (2003), [*A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis*](https://arxiv.org/abs/math/0202141), Teorema 1.1 (criterio de cierre).
 - L. Báez-Duarte (2002), [*A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2*](https://arxiv.org/abs/math/0205003), Proposición 3.1 de M. Balazard (aproximantes ponderados y cota condicional).
-- R–RH–01 (fecha declarada: 1-XI-2026), *Primos, reflexión y cierre* (texto recibido y cotejado; [registro de procedencia](PROCEDENCIA_Y_LIMITES.md); enlace público pendiente).
+- [R–RH–01, *Primos, reflexión y cierre*](../../antecedentes/R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md) (fecha declarada: 1-XI-2026; texto recibido y cotejado; [registro de procedencia](PROCEDENCIA_Y_LIMITES.md)).
 
 **Firma pública:** Le Matt Ansatz Di Ego.
 

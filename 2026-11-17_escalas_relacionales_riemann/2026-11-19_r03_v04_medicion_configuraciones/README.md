@@ -28,6 +28,6 @@ sha256sum -c SHA256SUMS.txt
 
 El verificador R–03 completo hasta $10^8$ consume memoria considerable; ejecutar aparte y registrar recursos. Los registros heredados del paquete de auditoría se conservan fuera de esta carpeta y no equivalen a una nueva ejecución.
 
-**Procedencia:** el archivo R–RH–01 recibido el 19-XI-2026 (SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`) coincide con la transcripción de lectura salvo un salto de línea final. El manuscrito no forma parte de esta carpeta; su enlace público sigue pendiente.
+**Procedencia:** el [manuscrito R–RH–01](../../antecedentes/R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md) recibido el 19-XI-2026 (SHA-256 `cba927f6532471cd8aee14f0dbc96ae2b1bfe3137d4910b2813ef72fe42feedf`) se conserva sin cambios en `antecedentes/`. Coincide con la transcripción de lectura salvo un salto de línea final.
 
 **Estado matemático:** identidades finitas verificables y relaciones conocidas; hipótesis de Riemann abierta. No hay prueba de energía física ni ventaja computacional general.

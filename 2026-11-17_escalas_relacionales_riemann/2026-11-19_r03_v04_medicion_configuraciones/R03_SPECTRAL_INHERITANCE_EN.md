@@ -349,7 +349,7 @@ This is **not a new original characterization**: it is a translation into sieve-
 
 - L. Báez-Duarte (2003), [*A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis*](https://arxiv.org/abs/math/0202141), Theorem 1.1 (closure criterion).
 - L. Báez-Duarte (2002), [*A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2*](https://arxiv.org/abs/math/0205003), M. Balazard's Proposition 3.1 (conditional weighted approximants and bound).
-- R–RH–01 (stated date: Nov. 1, 2026), *Primes, reflection, and closure* (supplied text compared; [provenance record, in Spanish](PROCEDENCIA_Y_LIMITES.md); public link pending).
+- [R–RH–01, *Primes, reflection, and closure* (Spanish source)](../../antecedentes/R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md) (stated date: Nov. 1, 2026; supplied text compared; [provenance record, in Spanish](PROCEDENCIA_Y_LIMITES.md)).
 
 **Public signature:** Le Matt Ansatz Di Ego.
 
