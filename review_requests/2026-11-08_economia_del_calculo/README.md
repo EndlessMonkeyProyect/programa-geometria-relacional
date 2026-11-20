@@ -12,4 +12,5 @@ Independent review is requested of the [November 8 delivery](../../2026-11-08_ec
 | --- | --- |
 | [`REVIEW_REQUEST_EN.md`](REVIEW_REQUEST_EN.md) | The full request |
 | [`SOLICITUD_REVISION.md`](SOLICITUD_REVISION.md) | Spanish edition |
-| `MANIFIESTO_SHA256.txt` | SHA-256 fingerprints of the files in the reviewed delivery |
+| `MANIFIESTO_SHA256.txt` | SHA-256 fingerprints of the files in the reviewed delivery (tag `2026-11-08-economia-del-calculo-v2`) |
+| [`APPENDIX_ECONOMY_EN.md`](../../2026-11-08_economia_del_calculo/revision_2026-11-19/APPENDIX_ECONOMY_EN.md) | 19 November appendix: partitions with defect, orbits and the grid spectrum |

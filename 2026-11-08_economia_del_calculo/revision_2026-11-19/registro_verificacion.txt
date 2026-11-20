@@ -1,0 +1,55 @@
+Registro de verificación · Verification log
+Revisión del 19 de noviembre de 2026 · ejecutado 2026-11-20 06:05 UTC
+Python 3.13.18 · sympy 1.14.0 · numpy 2.5.3 · networkx 3.7
+Repositorio: commit bea8ed1 (main); laboratorio original sha256 cc8824c5e7324f6e…, igual al de la etiqueta 2026-11-08-economia-del-calculo-v2
+
+== python3 -I verificar_revision.py
+Partitions n=1: 1 pairs checked
+Partitions n=2: 4 pairs checked
+Partitions n=3: 25 pairs checked
+Partitions n=4: 225 pairs checked
+Partitions n=5: 2704 pairs checked
+Example A (E=5, k=2, beta=1, delta=0, cov=1/4): OK
+Example B, product law without permuting (E=6, k=2, |P|=3, |Q|=4, delta=1): OK
+Product law without permuting: none on n<=5 elements, 720 ordered pairs on n=6: OK
+Grid w=1: states=   3, orbits=  1, modular Krylov rank= 1 (lower bound)
+Grid w=2: states=   6, orbits=  1, modular Krylov rank= 1 (lower bound)
+Grid w=3: states=  12, orbits=  2, modular Krylov rank= 2 (lower bound)
+Grid w=4: states=  24, orbits=  3, modular Krylov rank= 3 (lower bound)
+Grid w=5: states=  48, orbits=  6, modular Krylov rank= 5 (lower bound)
+Grid w=6: states=  96, orbits= 10, modular Krylov rank= 7 (lower bound)
+Grid w=7: states= 192, orbits= 20, modular Krylov rank=13 (lower bound)
+Grid w=8: states= 384, orbits= 36, modular Krylov rank=19 (lower bound)
+Grid w=9: states= 768, orbits= 72, modular Krylov rank=35 (lower bound)
+Grid w=10: states=1536, orbits=136, modular Krylov rank=51 (lower bound)
+All stated finite checks passed.
+
+== python3 -I brecha_exacta.py
+ w  orbits  d_w  distinct  zero-eig  inactive-nonzero(deg)   o-d = sum(m-1) + #inactive
+ 1       1    1         1         0  []                       0 =   0 +   0
+ 2       1    1         1         0  []                       0 =   0 +   0
+ 3       2    2         2         0  []                       0 =   0 +   0
+ 4       3    3         3         0  []                       0 =   0 +   0
+ 5       6    5         6         0  [1]                      1 =   0 +   1
+ 6      10    7         8         3  []                       3 =   2 +   1
+ 7      20   13        20         0  [7]                      7 =   0 +   7
+ 8      36   19        28         9  [8]                     17 =   8 +   9
+ 9      72   35        72         0  [37]                    37 =   0 +  37
+10     136   51        92        45  [40]                    85 =  44 +  41
+In every width the active part is a single irreducible factor of degree d_w.
+Table matches the appendix.
+
+== python3 -I laboratorio_economia_relacional.py E5 E5x E5c   (en 2026-11-08_economia_del_calculo/)
+E5 {'estados_columna': 1536, 'orbitas_S3xZ2': 136, 'cota_orbita_estabilizador_N/|G|': 128.0, 'conteos_completos_m=1..8': [1536, 118098, 10107954, 896895828, 80796885414], 'conteos_cociente_coinciden': True, 'dim_Krylov_modp': 51, 'dim_Krylov_mod_segundo_primo': 51, 'rango_Hankel_modp': 51}
+E5_exacto {'dim_Krylov_sobre_Q': 51, 'rango_Hankel_Q_28x28': 28, 'b_0..b_4': [1536, 118098, 10107954, 896895828, 80796885414]}
+E5c 1 {'columnas': 3, 'orbitas_S3xZ2': 1, 'orden_minimo': 1, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [3, 6, 12]}
+E5c 2 {'columnas': 6, 'orbitas_S3xZ2': 1, 'orden_minimo': 1, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [6, 18, 54]}
+E5c 3 {'columnas': 12, 'orbitas_S3xZ2': 2, 'orden_minimo': 2, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [12, 54, 246]}
+E5c 4 {'columnas': 24, 'orbitas_S3xZ2': 3, 'orden_minimo': 3, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [24, 162, 1122]}
+E5c 5 {'columnas': 48, 'orbitas_S3xZ2': 6, 'orden_minimo': 5, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [48, 486, 5118]}
+E5c 6 {'columnas': 96, 'orbitas_S3xZ2': 10, 'orden_minimo': 7, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [96, 1458, 23346]}
+E5c 7 {'columnas': 192, 'orbitas_S3xZ2': 20, 'orden_minimo': 13, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [192, 4374, 106494]}
+E5c 8 {'columnas': 384, 'orbitas_S3xZ2': 36, 'orden_minimo': 19, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [384, 13122, 485778]}
+E5c 9 {'columnas': 768, 'orbitas_S3xZ2': 72, 'orden_minimo': 35, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_3': [768, 39366, 2215902]}
+E5c 10 {'columnas': 1536, 'orbitas_S3xZ2': 136, 'orden_minimo': 51, 'certificado': {'det_H_d_no_nulo': True, 'det_H_d+1_cero_exacto': True, "sin_raiz_nula_(det_H'_d_no_nulo)": True}, 'a_1..a_5': [1536, 118098, 10107954, 896895828, 80796885414]}
+listo 3.1 s

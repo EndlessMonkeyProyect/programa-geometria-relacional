@@ -1,5 +1,11 @@
 # Historial de esta edición
 
+## Revisión de la economía del cálculo · 2026-11-19
+
+- Se incorpora un [anexo bilingüe](2026-11-08_economia_del_calculo/revision_2026-11-19/ANEXO_ECONOMIA_ES.md) que responde a una revisión matemática externa: identidad de ciclos y defecto para particiones, la ley del producto sin permutación (ejemplo B), órbitas por Burnside y la caracterización espectral del orden mínimo de la rejilla.
+- Para los anchos 1 a 10 se factoriza en exacto el polinomio característico del cociente; en el ancho 10, 136 = 51 + 40 + 45.
+- Se ejecutan `verificar_revision.py`, `brecha_exacta.py` y los certificados E5, E5x y E5c; el registro queda junto al anexo.
+
 ## Siete trabajos del programa · 2026-11-14
 
 - Se incorporan siete manuscritos del 12 y 13 de noviembre, con un índice bilingüe que describe la contribución y el estado de cada uno.
