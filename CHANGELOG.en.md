@@ -1,5 +1,11 @@
 # History of this edition
 
+## Revision of the economy of computation · 2026-11-19
+
+- Added a [bilingual appendix](2026-11-08_economia_del_calculo/revision_2026-11-19/APPENDIX_ECONOMY_EN.md) answering an external mathematical review: cycle and defect identities for partitions, the product law without permutation (Example B), Burnside orbits and the spectral characterization of the grid's minimal order.
+- For widths 1 to 10 the characteristic polynomial of the quotient is factored exactly; at width 10, 136 = 51 + 40 + 45.
+- Ran `verificar_revision.py`, `brecha_exacta.py` and the E5, E5x and E5c certificates; the log sits next to the appendix.
+
 ## Seven program works · 2026-11-14
 
 - Added seven November 12–13 manuscripts and a bilingual guide describing each work and its editorial status.

@@ -17,7 +17,7 @@ La pregunta es si la economía del cálculo puede surgir de las relaciones entre
 ### Resultados en breve
 
 - Las distinciones que deben quedar activas para responder con exactitud son el rango de la relación entre lo decidido y lo pendiente. Las fija la frontera.
-- La ley de herencia mcm/mcd es el teorema chino del resto. Pide que las referencias permuten (reflexión x − y + z) y que la covarianza entre bloques sea nula; con permutación, la desviación es exactamente k²·Cov(p_J, q_J).
+- La ley de herencia mcm/mcd es el teorema chino del resto. Con referencias que permutan (reflexión x − y + z), la desviación es exactamente k²·Cov(p_J, q_J); en general, la ley del producto vale exactamente cuando k·Cov(p_J, q_J) = δ, con δ el defecto de intersecciones ([revisión del 19 de noviembre](revision_2026-11-19/ANEXO_ECONOMIA_ES.md)).
 - Una referencia válida para cualquier futuro no puede reunir configuraciones. En grafos expansores, todo orden tiene algún corte con 2^Ω(n) distinciones.
 - En una fórmula de Tseitin satisfacible, el rango de corte es 2^λ(A), con λ la función de conectividad del matroide gráfico: el teorema del espacio de estados de Forney en el lenguaje del programa.
 - Hay economía exacta con separadores, reflexión y simetría: en el hipercubo, 2^n estados quedan en n + 1 clases; en la rejilla de tres colores de ancho 10, 1536 → 136 → 51: la sucesión de conteos admite una representación lineal mínima de dimensión 51 sobre los racionales, certificada en exacto. Para los anchos 1 a 10 los órdenes mínimos son 1, 1, 2, 3, 5, 7, 13, 19, 35, 51.
@@ -37,6 +37,7 @@ El estado de cada afirmación (resuelta, abierta, superpuesta o cerrada antes de
 | `resultados_laboratorio.json` | Resultados de la corrida de referencia |
 | `fusion_optica.png` · `optical_fusion.png` | Figura de la ley de fusión óptica (E6), en español y en inglés |
 | `requirements.txt` | Dependencias |
+| [`revision_2026-11-19/`](revision_2026-11-19/ANEXO_ECONOMIA_ES.md) | Revisión del 19 de noviembre: particiones con defecto, órbitas por Burnside y espectro de la rejilla, con verificadores y registro |
 
 ### Reproducir
 
@@ -59,7 +60,7 @@ The question is whether the economy of computation can arise from the relations 
 ### Results in brief
 
 - The distinctions that must stay active to answer exactly are the rank of the relation between what has been decided and what is pending. They are set by the boundary.
-- The lcm/gcd inheritance law is the Chinese remainder theorem. It requires the references to permute (reflection x − y + z) and zero covariance between blocks; under permutation, the deviation is exactly k²·Cov(p_J, q_J).
+- The lcm/gcd inheritance law is the Chinese remainder theorem. For references that permute (reflection x − y + z), the deviation is exactly k²·Cov(p_J, q_J); in general, the product law holds exactly when k·Cov(p_J, q_J) = δ, with δ the intersection defect ([19 November revision](revision_2026-11-19/APPENDIX_ECONOMY_EN.md)).
 - A reference valid for every future cannot gather configurations. On expander graphs, every order has some cut with 2^Ω(n) distinctions.
 - For a satisfiable Tseitin formula, the cut rank is 2^λ(A), with λ the connectivity function of the graphic matroid: Forney's state space theorem in the program's language.
 - There is exact economy with separators, reflection and symmetry: in the hypercube, 2^n states fall into n + 1 classes; in the three-colour grid of width 10, 1536 → 136 → 51: the counting sequence admits a minimal linear representation of dimension 51 over the rationals, certified exactly. For widths 1 to 10 the minimal orders are 1, 1, 2, 3, 5, 7, 13, 19, 35, 51.
@@ -79,6 +80,7 @@ The status of each claim (resolved, open, superposed or prematurely closed) is i
 | `resultados_laboratorio.json` | Results of the reference run (keys in Spanish) |
 | `fusion_optica.png` · `optical_fusion.png` | Figure of the optical fusion law (E6), in Spanish and in English |
 | `requirements.txt` | Dependencies |
+| [`revision_2026-11-19/`](revision_2026-11-19/APPENDIX_ECONOMY_EN.md) | 19 November revision: partitions with defect, Burnside orbits and the grid spectrum, with verifiers and log |
 
 ### Reproduce
 

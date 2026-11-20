@@ -12,4 +12,5 @@ Se pide revisión independiente de la [entrega del 8 de noviembre](../../2026-11
 | --- | --- |
 | [`SOLICITUD_REVISION.md`](SOLICITUD_REVISION.md) | La solicitud completa |
 | [`REVIEW_REQUEST_EN.md`](REVIEW_REQUEST_EN.md) | Edición inglesa |
-| `MANIFIESTO_SHA256.txt` | Huellas SHA-256 de los archivos de la entrega revisada |
+| `MANIFIESTO_SHA256.txt` | Huellas SHA-256 de los archivos de la entrega revisada (etiqueta `2026-11-08-economia-del-calculo-v2`) |
+| [`ANEXO_ECONOMIA_ES.md`](../../2026-11-08_economia_del_calculo/revision_2026-11-19/ANEXO_ECONOMIA_ES.md) | Anexo del 19 de noviembre: particiones con defecto, órbitas y espectro de la rejilla |

@@ -48,7 +48,7 @@ The [bilingual continuation of the computation-economy work](2026-11-10_que_calc
 
 ## The economy of computation from relations between references · version 2, November 8, 2026
 
-The [bilingual v2 delivery](2026-11-08_economia_del_calculo/README.md) contains the [Spanish report](2026-11-08_economia_del_calculo/informe.md), its [English version](2026-11-08_economia_del_calculo/report.md), the reproducible lab and its results. The [change log](2026-11-08_economia_del_calculo/CAMBIOS.md) explains the revisions; the [review request](review_requests/2026-11-08_economia_del_calculo/README.md) asks about the minimal recurrence orders of a three-colour grid. The Spanish report is authoritative. The work does not establish a new complexity bound.
+The [bilingual v2 delivery](2026-11-08_economia_del_calculo/README.md) contains the [Spanish report](2026-11-08_economia_del_calculo/informe.md), its [English version](2026-11-08_economia_del_calculo/report.md), the reproducible lab and its results. The [change log](2026-11-08_economia_del_calculo/CAMBIOS.md) explains the revisions; the [review request](review_requests/2026-11-08_economia_del_calculo/README.md) asks about the minimal recurrence orders of a three-colour grid. The Spanish report is authoritative. The work does not establish a new complexity bound. The [19 November revision](2026-11-08_economia_del_calculo/revision_2026-11-19/APPENDIX_ECONOMY_EN.md) generalizes the product law with an intersection defect and, for widths 1 to 10, factors the grid polynomial exactly.
 
 [GitHub v2 release](https://github.com/EndlessMonkeyProyect/programa-geometria-relacional/releases/tag/2026-11-08-economia-del-calculo-v2) · [Zenodo v2 record and DOI](https://doi.org/10.5281/zenodo.24072932).
 
