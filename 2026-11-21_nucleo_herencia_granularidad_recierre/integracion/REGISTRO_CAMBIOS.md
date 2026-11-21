@@ -6,6 +6,8 @@ Edición de publicación que consolida el núcleo de herencia, granularidad y re
 
 **Edición para el PR:** el manuscrito completo se incorpora en Markdown y en PDF de siete páginas, con ecuaciones compuestas y revisión visual de todas las páginas. El DOCX de preparación no se incorpora.
 
+**Ampliación bilingüe del PR:** el manuscrito completo se traduce al inglés y se incorpora en Markdown y PDF de siete páginas. Se cotejaron las 14 ecuaciones de bloque y 131 expresiones matemáticas con la edición española. Se corrigió un escape duplicado de notación en el párrafo español sobre ganancias relativas.
+
 ## 2026-11-21 — Consolidación de núcleo, herencia, granularidad y recierre
 
 - Se unifica la distinción fundacional entre historia y herencia, manteniendo el núcleo como referencia persistente de crecimiento.

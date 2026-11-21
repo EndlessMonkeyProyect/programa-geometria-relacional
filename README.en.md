@@ -4,7 +4,7 @@
 
 ## Relational version 3.5 · inheritance, granularity, and reclosure · November 21, 2026
 
-The [version 3.5 guide](2026-11-21_nucleo_herencia_granularidad_recierre/README.md) links the complete [Spanish manuscript](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf)), the RA–01 appendix, and two reproducible laboratories. It presents identities across scales, arithmetic reclosure, and recovery criteria with their assumptions; finite measurements are documented separately.
+The [version 3.5 guide](2026-11-21_nucleo_herencia_granularidad_recierre/README.en.md) links the complete [English manuscript](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.pdf)), the [Spanish source](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md), the RA–01 appendix, and two reproducible laboratories. It presents identities across scales, arithmetic reclosure, and recovery criteria with their assumptions; finite measurements are documented separately.
 
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 

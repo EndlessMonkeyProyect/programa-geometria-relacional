@@ -4,7 +4,7 @@
 
 ## Versión relacional 3.5 · herencia, granularidad y recierre · 21 de noviembre de 2026
 
-La [entrega 3.5](2026-11-21_nucleo_herencia_granularidad_recierre/README.md) reúne el [manuscrito completo](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf)), el anexo RA–01 y dos laboratorios reproducibles. Presenta identidades entre escalas, recierre aritmético y criterios de recuperación con sus hipótesis; las mediciones finitas se documentan por separado.
+La [entrega 3.5](2026-11-21_nucleo_herencia_granularidad_recierre/README.md) reúne el [manuscrito completo](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf)), su [traducción inglesa](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.pdf)), el anexo RA–01 y dos laboratorios reproducibles. Presenta identidades entre escalas, recierre aritmético y criterios de recuperación con sus hipótesis; las mediciones finitas se documentan por separado.
 
 ## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
 

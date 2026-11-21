@@ -11,14 +11,14 @@ Este documento es el procedimiento completo. Las instrucciones internas de `labo
 Crear en el repositorio español la carpeta `2026-11-21_nucleo_herencia_granularidad_recierre/` y copiar dentro **el contenido completo del ZIP**:
 
 - `README.md`, `MANIFIESTO_SHA256.txt`, `RESULTADOS_VERIFICACION_3_5.txt`
-- `documentos/` (manuscrito íntegro en Markdown y PDF; el DOCX de trabajo se sustituyó por el PDF)
+- `documentos/` (manuscrito íntegro en español e inglés, cada uno en Markdown y PDF; el DOCX de trabajo se sustituyó por PDF)
 - `anexos/`
 - `laboratorios/` (incluye `2026-11-21_armonicos_granularidad/` y `2026-11-21_RA01_semilla_mobius/`)
 - `scripts/`
 - `fuentes/`
 - `integracion/`
 
-En el repositorio en inglés, enlazar esta entrega como anexo español hasta disponer de una traducción técnica revisada de la notación y de los contratos.
+El índice en inglés enlaza el manuscrito completo traducido; los anexos y laboratorios conservan su edición española.
 
 ## 2. Pasos
 
@@ -32,7 +32,7 @@ En el repositorio en inglés, enlazar esta entrega como anexo español hasta dis
    (cd laboratorios/2026-11-21_armonicos_granularidad && sha256sum -c MANIFIESTO_SHA256.txt)
    ```
 
-   Resultado esperado: `RESULTADO: VERIFICACIÓN CONJUNTA 3.5 SATISFACTORIA` y ambos manifiestos `OK` (**33/33 principal; 5/5 armónico**). En Windows, ejecutar `py -3 scripts/verificar_todo.py`; la validación editorial usa `encoding="utf-8"` y verifica automáticamente los cinco hashes internos. El laboratorio S–RA–01 requiere `numpy` (unos 15 s); sin `numpy`, el script lo informa y ejecuta los controles exactos.
+   Resultado esperado: `RESULTADO: VERIFICACIÓN CONJUNTA 3.5 SATISFACTORIA` y ambos manifiestos `OK` (**36/36 principal; 5/5 armónico**). En Windows, ejecutar `py -3 scripts/verificar_todo.py`; la validación editorial usa `encoding="utf-8"` y verifica automáticamente los cinco hashes internos. El laboratorio S–RA–01 requiere `numpy` (unos 15 s); sin `numpy`, el script lo informa y ejecuta los controles exactos.
 4. Incorporar al índice principal la sección de `integracion/INSERCION_README.md`, ajustando la ruta relativa.
 5. Registrar la entrada de publicación 3.5 en `integracion/REGISTRO_CAMBIOS.md`.
 6. Comprobar que los seis documentos de `fuentes/` se mantienen íntegros como archivos históricos. Para lectura vigente, enlazar el compendio **revisado en PR #11** y R–03 v0.4 **en PR #9**; ambos PR estaban en borrador en el momento de esta revisión. No tratar la copia anterior de `fuentes/` como edición actual del PR #11.

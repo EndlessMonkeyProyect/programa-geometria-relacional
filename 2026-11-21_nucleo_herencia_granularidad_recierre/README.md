@@ -2,7 +2,7 @@
 
 **Núcleo persistente, herencia, granularidad y recierre.**
 
-**Identificador de publicación:** versión 3.5 · etiqueta propuesta `v3.5` · edición española.
+**Identificador de publicación:** versión 3.5 · etiqueta propuesta `v3.5` · manuscrito completo en español e inglés.
 
 Este paquete reúne una síntesis de resultados formales, el anexo RA–01 de recuperación acumulada, dos laboratorios reproducibles, seis fuentes de procedencia y la guía de incorporación al repositorio. Cada resultado se presenta con su objeto, su prueba o medición y su contrato.
 
@@ -10,6 +10,7 @@ Este paquete reúne una síntesis de resultados formales, el anexo RA–01 de re
 
 - `documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md` — fuente editorial canónica, con pruebas y trazabilidad.
 - `documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf` — manuscrito completo de lectura, generado desde el `.md` y revisado página por página.
+- [Manuscrito completo en inglés](documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.md) ([PDF](documentos/PERSISTENT_CORE_INHERITANCE_GRANULARITY_RECLOSURE_2026-11-21_EN.pdf)) — traducción íntegra con las mismas hipótesis, ecuaciones y alcances. [Guía en inglés](README.en.md).
 - `anexos/RA-01_recuperacion_acumulada/` — proposición de recuperación acumulada por semillas, con demostración.
 - `laboratorios/2026-11-21_armonicos_granularidad/` — laboratorio A–G–01: armónicos, granularidad y cierre por celdas (aritmética exacta).
 - `laboratorios/2026-11-21_RA01_semilla_mobius/` — laboratorio S–RA–01: semilla de Möbius por octavas y reproducción del registro 1024→2048 (requiere `numpy`).
