@@ -1,0 +1,19 @@
+LABORATORIO A-G-01 / ARMONICOS Y GRANULARIDAD / 2026-11-21
+K | n | delta/g | Q(n), Q(n+1) | misma celda
+ 3 |     3 |         3/4 |  3,  2 | NO
+ 3 |     9 |        1/10 |  1,  0 | NO
+ 3 |    10 |       9/110 |  0,  0 | SI
+  Umbral theta=1/2: 4 ratio: 9/20
+ 9 |     9 |        9/10 |  9,  8 | NO
+ 9 |    81 |        1/82 |  1,  0 | NO
+ 9 |    82 |     81/6806 |  0,  0 | SI
+  Umbral theta=1/2: 13 ratio: 81/182
+17 |    17 |       17/18 | 17, 16 | NO
+17 |   289 |       1/290 |  1,  0 | NO
+17 |   290 |   289/84390 |  0,  0 | SI
+  Umbral theta=1/2: 24 ratio: 289/600
+99 |    99 |      99/100 | 99, 98 | NO
+99 |  9801 |      1/9802 |  1,  0 | NO
+99 |  9802 | 9801/96089006 |  0,  0 | SI
+  Umbral theta=1/2: 140 ratio: 3267/6580
+PASS: 12 filas aritmeticas, 4 continuaciones O58, 800 controles de cola y 4 umbrales.
