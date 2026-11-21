@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Versión relacional 3.5 · herencia, granularidad y recierre · 21 de noviembre de 2026
+
+La [entrega 3.5](2026-11-21_nucleo_herencia_granularidad_recierre/README.md) reúne el [manuscrito completo](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf)), el anexo RA–01 y dos laboratorios reproducibles. Presenta identidades entre escalas, recierre aritmético y criterios de recuperación con sus hipótesis; las mediciones finitas se documentan por separado.
+
 ## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
 
 La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [formalización de la criba](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) y la reflexión [«Un número por cero»](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). Presenta la herencia exacta de la discrepancia entre escalas, el conteo de primos y una lectura de la simetría de los ceros de ζ. Dos verificadores reproducen los cálculos; la hipótesis de Riemann permanece abierta. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/README.en.md).

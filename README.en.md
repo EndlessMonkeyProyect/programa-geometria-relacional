@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Relational version 3.5 · inheritance, granularity, and reclosure · November 21, 2026
+
+The [version 3.5 guide](2026-11-21_nucleo_herencia_granularidad_recierre/README.md) links the complete [Spanish manuscript](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.md) ([PDF](2026-11-21_nucleo_herencia_granularidad_recierre/documentos/NUCLEO_HERENCIA_GRANULARIDAD_RECIERRE_2026-11-21.pdf)), the RA–01 appendix, and two reproducible laboratories. It presents identities across scales, arithmetic reclosure, and recovery criteria with their assumptions; finite measurements are documented separately.
+
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.
