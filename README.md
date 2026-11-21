@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## Compendio de referencias y cierre funcional · 21 de noviembre de 2026
+
+El [compendio CME–RH](2026-11-21_compendio_referencias_cme_riemann/README.md) reúne un [anexo en español](2026-11-21_compendio_referencias_cme_riemann/COMPENDIO_RIEMANN_CME_2026-11-21.md) y [verificadores reproducibles](2026-11-21_compendio_referencias_cme_riemann/scripts/verificar_todo.py). Demuestra identidades de recierre aritmético y recuperación por proyecciones, aplica el criterio clásico de Báez-Duarte a la familia libre de cuadrados y recalcula errores de Gram hasta 2048. Formula las condiciones pendientes para relacionar CME–002 con el espacio funcional; RH y GRH siguen abiertas.
+
 ## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
 
 La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [formalización de la criba](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) y la reflexión [«Un número por cero»](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). Presenta la herencia exacta de la discrepancia entre escalas, el conteo de primos y una lectura de la simetría de los ceros de ζ. Dos verificadores reproducen los cálculos; la hipótesis de Riemann permanece abierta. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/README.en.md).

@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## Reference and functional closure compendium · November 21, 2026
+
+The [CME–RH compendium](2026-11-21_compendio_referencias_cme_riemann/README.md) provides a [Spanish manuscript](2026-11-21_compendio_referencias_cme_riemann/COMPENDIO_RIEMANN_CME_2026-11-21.md) and [reproducible checks](2026-11-21_compendio_referencias_cme_riemann/scripts/verificar_todo.py). It proves arithmetic closure and projection identities, applies Báez-Duarte's classical criterion to squarefree indices, and recalculates Gram errors through 2048. It states the conditions for a geometric link to CME–002; RH and GRH remain open.
+
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.

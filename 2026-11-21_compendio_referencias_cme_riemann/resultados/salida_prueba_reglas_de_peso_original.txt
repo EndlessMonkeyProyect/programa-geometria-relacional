@@ -1,0 +1,45 @@
+== A. Herencia con sus propios pesos (mu): cota inferior exacta del resto ==
+   en [1, p_siguiente) solo sobrevive la unidad -> resto >= p_sig * rho^2, rho = prod(1-1/p)
+   P=    11  p_sig=    13  rho=0.20779  resto >= 0.5613
+   P=    29  p_sig=    31  rho=0.15795  resto >= 0.7734
+   P=    97  p_sig=   101  rho=0.12032  resto >= 1.4621
+   P=   997  p_sig=  1009  rho=0.08097  resto >= 6.6144
+   P=  9973  p_sig= 10007  rho=0.06088  resto >= 37.0954
+   P= 99991  p_sig=100003  rho=0.04875  resto >= 237.6918
+
+== B. Totalidad = bloque de primos (d | M_P) ==
+ P=5 dim=8 óptimo libre=0.03726
+    herencia   w=1                 sin ajuste: 0.68900   con escala a*=0.956: 0.68835
+    celda      w=1/d               sin ajuste: 1.44251   con escala a*=0.018: 0.99986
+    por resolver w=1-log d/log M   sin ajuste: 0.74715   con escala a*=0.929: 0.74567
+ P=7 dim=16 óptimo libre=0.02534
+    herencia   w=1                 sin ajuste: 0.70488   con escala a*=0.858: 0.69662
+    celda      w=1/d               sin ajuste: 1.37363   con escala a*=0.076: 0.99747
+    por resolver w=1-log d/log M   sin ajuste: 0.64102   con escala a*=1.067: 0.63960
+ P=11 dim=32 óptimo libre=0.02061
+    herencia   w=1                 sin ajuste: 0.72337   con escala a*=0.797: 0.70419
+    celda      w=1/d               sin ajuste: 1.34215   con escala a*=0.105: 0.99522
+    por resolver w=1-log d/log M   sin ajuste: 0.62027   con escala a*=1.031: 0.61992
+ P=13 dim=64 óptimo libre=0.01801
+    herencia   w=1                 sin ajuste: 0.77928   con escala a*=0.702: 0.73073
+    celda      w=1/d               sin ajuste: 1.31894   con escala a*=0.128: 0.99302
+    por resolver w=1-log d/log M   sin ajuste: 0.63984   con escala a*=0.934: 0.63805
+ P=17 dim=128 óptimo libre=0.01314
+    herencia   w=1                 sin ajuste: 0.83850   con escala a*=0.629: 0.75269
+    celda      w=1/d               sin ajuste: 1.30437   con escala a*=0.142: 0.99139
+    por resolver w=1-log d/log M   sin ajuste: 0.67627   con escala a*=0.840: 0.66413
+
+== C. Totalidad = tamaño N contra la unidad (d libre de cuadrados, d <= N) ==
+ N=   30 dim=  19  sin ajuste -> herencia: 0.0712   por resolver: 0.3245
+ N=  100 dim=  61  sin ajuste -> herencia: 0.1473   por resolver: 0.1785
+ N=  300 dim= 183  sin ajuste -> herencia: 0.0739   por resolver: 0.1169
+ N= 1000 dim= 608  sin ajuste -> herencia: 0.0542   por resolver: 0.0813
+ N= 3000 dim=1824  sin ajuste -> herencia: 0.0438   por resolver: 0.0610
+
+== D. Regla "por resolver" en la escala N: resto exacto en [1,N] ==
+   resto[1,N] = S / log^2 N,  S = int_1^N (psi(u) - beta_N u)^2 / u^2 du  (fluctuación acumulada)
+   N=10^3  S=2.833  resto[1,N]=0.0594  [0,1)=0.0210  suma=0.0804
+   N=10^4  S=2.937  resto[1,N]=0.0346  [0,1)=0.0118  suma=0.0464
+   N=10^5  S=3.044  resto[1,N]=0.0230  [0,1)=0.0075  suma=0.0305
+   N=10^6  S=3.149  resto[1,N]=0.0165  [0,1)=0.0052  suma=0.0217
+   N=10^7  S=3.256  resto[1,N]=0.0125  [0,1)=0.0038  suma=0.0164

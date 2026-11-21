@@ -1,0 +1,96 @@
+Entorno: Python 3.13.18; numpy 2.5.3; Linux x86_64
+
+====== verificar_puentes.py ======
+PASS: CRT: cada clase mod 6 admite exactamente cinco extensiones mod 30
+PASS: O58/G01: ramas distintas; Pell simétrica N=3,17,99,577,3363; resto estrictamente menor
+PASS: Consulta exacta q=Phi²; mejor reconstrucción lineal deja error 2/9
+PASS: Criba: G_S=-E_S(1/t)=sum mu(d){1/(dt)} y ventana x<q, exactos
+PASS: Saltos: un primo nuevo no puede ser absorbido por los indices divisores previos
+PASS: Control primo-indexado: cada mejora es positiva, y el resto >= 1/2
+PASS: Recurrencia (L) comprobada en un modelo formal que la satisface por construcción
+TOTAL: 7 controles exactos aprobados
+
+====== verificar_reflexiones.py ======
+CONTROL A: B3 de orden 48 ; relaciones (3,4,2); eje 4 fijo; resto cuadratico = 1
+CONTROL B: reflejos en R2 generan grupo infinito (traza = -14/25 ); sus normales abarcan R2; resto = 0
+CONTROL C: ganancia = desplazamiento por reflexion / 4 = 121/25 (aritmetica racional exacta)
+ESTADO: 3 controles racionales exactos aprobados
+
+====== verificar_periodos.py ======
+PASS periodo S=(2,), M=2: Q=13/12 = 1.083333333
+PASS periodo S=(2, 3), M=6: Q=10/9 = 1.111111111
+PASS periodo S=(2, 3, 5), M=30: Q=53/45 = 1.177777778
+PASS periodo S=(2, 3, 5, 7), M=210: Q=137/105 = 1.304761905
+ESTADO: 4 comprobaciones racionales exactas de promedios aprobadas
+
+====== verificar_focos.py ======
+N=8: focos que cambian por novedad=5; coincidencias no cuadrado-libres=3; cierre de saltos 5/5
+N=16: focos que cambian por novedad=9; coincidencias no cuadrado-libres=7; cierre de saltos 9/9
+N=64: focos que cambian por novedad=39; coincidencias no cuadrado-libres=25; cierre de saltos 39/39
+N=1024: focos que cambian por novedad=621; coincidencias no cuadrado-libres=403; cierre de saltos 621/621
+Distribución por primos distintos: {1: 137, 2: 282, 3: 168, 4: 34}
+Referencias nuevas= 621
+Foco n=1030: divisores en 1024= [1, 2, 5, 10, 103, 206, 515]
+Valores mu= [(1, 1), (2, -1), (5, -1), (10, 1), (103, -1), (206, 1), (515, 1), (1030, -1)]
+Salto anterior= 1 salto posterior= 0
+Error cuadrático global para c=-mu y N=16: 0.106470
+Error cuadrático global para c=-mu y N=32: 0.186754
+RESULTADO: saltos cerrados exactamente en todos los focos; el error de la combinación fija -mu crece de N=16 a N=32.
+
+====== ensayo_angulos.py ======
+Referencias libres de cuadrados: hasta 1024: 624; nuevas hasta 2048: 621; total: 1245
+Normales candidatas f_1027, f_1030: cos = 0.993546241849; ángulo = 6.512951133 grados
+Regla angular CME-002 con k = 1027: pi/k = 0.175267770 grados
+CME (2,3,1024) y (2,3,2048): régimen abierto bajo la identificación k = N
+RESULTADO: la asignación f_n = normal da ángulos distintos de los de CME-002;
+queda descartada esa asignación concreta. Otros entrelazadores siguen sin definir.
+
+====== recalcular_gram.py ======
+1. Fórmula de Gram contra integración directa
+   <f_1,f_1>: fórmula 1.2606614015   directa 1.2606614017
+   <f_1,f_2>: fórmula 0.7722092560   directa 0.7722092561
+   <f_2,f_3>: fórmula 0.4411035093   directa 0.4411035093
+   <f_3,f_5>: fórmula 0.2735564370   directa 0.2735564370
+   <f_4,f_6>: fórmula 0.2205517546   directa 0.2205517546
+   <f_7,f_10>: fórmula 0.1287268301   directa 0.1287268301
+
+2. Matriz de Gram de dimensión 1245 construida en 23.1 s
+    m    dim      e_m^2       e_m^2 log m   condición
+    1      1   0.858212          nan   1.00e+00
+    2      2   0.289965       0.2010   1.60e+01
+    4      3   0.093837       0.1301   3.10e+01
+    8      6   0.025884       0.0538   1.41e+02
+   16     11   0.019434       0.0539   6.35e+02
+   32     20   0.015212       0.0527   2.71e+03
+   64     39   0.011846       0.0493   9.02e+03
+  128     78   0.009977       0.0484   3.50e+04
+  256    157   0.008465       0.0469   1.36e+05
+  512    314   0.007580       0.0473   5.88e+05
+ 1024    624   0.006672       0.0462   2.26e+06
+ 2048   1245   0.006229       0.0475   8.61e+06
+   C0 = 2 + gamma - log(4 pi) = 0.046191
+
+3. Fracción recuperada por octava
+   j     m    gamma_m     1/(j+2)   gamma >= 1/(j+2)
+   0     1   0.6621      0.5000     sí
+   1     2   0.6764      0.3333     sí
+   2     4   0.7242      0.2500     sí
+   3     8   0.2492      0.2000     sí
+   4    16   0.2172      0.1667     sí
+   5    32   0.2213      0.1429     sí
+   6    64   0.1577      0.1250     sí
+   7   128   0.1515      0.1111     sí
+   8   256   0.1046      0.1000     sí
+   9   512   0.1197      0.0909     sí
+  10  1024   0.0664      0.0833     NO
+   Pasos donde falla gamma >= 1/(j+2): j = [10]
+   Paso 1024 -> 2048: gamma = 0.06642; ángulo arccos(sqrt(gamma)) = 75.065 grados
+
+4. Coeficientes fijos en N = 2048 (sin ajuste de escala)
+   pesos 1 - log n/log N: 0.067054
+   corte abrupto -mu(n):  0.084783
+   óptimo restringido:     0.006229
+RESULTADO: cifras de la tabla de §6 recalculadas en float64.
+
+TODOS LOS CONTROLES PROGRAMADOS: PASS.
+Alcance: identidades y lemas enumerados, instancias finitas y cifras de Gram en float64.
