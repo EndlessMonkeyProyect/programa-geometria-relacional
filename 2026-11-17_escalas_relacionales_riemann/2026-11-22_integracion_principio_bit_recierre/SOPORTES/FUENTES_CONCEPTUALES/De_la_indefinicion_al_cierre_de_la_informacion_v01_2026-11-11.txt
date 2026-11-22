@@ -1,0 +1,141 @@
+# De la indefinición al cierre de la información
+
+**El mecanismo de construcción del Programa de Geometría Relacional**  
+**Endless Monkey Project**  
+*Relational Geometry Program*  
+**Documento rector para lectura y verificación independiente — borrador 0.1, 11 de noviembre de 2026**
+
+## Propósito y criterio de lectura
+
+Este documento reconstruye el hilo conceptual con el que se ha desarrollado el programa. Su función es conservar los significados que permitieron formular las primeras preguntas y mostrar cómo se prolongan en la caja de espejos, la pared móvil, las esferas, la normalización aritmética, los modelos de continuidad y la economía del cálculo. La solicitud pública de verificación se elaborará a partir de este texto, una vez revisado.
+
+La prioridad corresponde al mecanismo ontológico. Las realizaciones matemáticas y los resultados computacionales sirven para someter a prueba operaciones concretas; no sustituyen el significado originario de las palabras. El programa distingue formulaciones ontológicas [O], resultados matemáticos bajo hipótesis [T], ensayos reproducibles o reportados [E], interpretaciones entre dominios [I] y preguntas abiertas [A]. Estas marcas califican las afirmaciones, no su interés.
+
+## 1. La unidad y la incertidumbre original [O]
+
+El comienzo es un espacio único, entendido como totalidad todavía sin diferencias acreditadas. «Único» designa la ausencia de una segunda referencia exterior desde la cual compararlo; no presupone una esfera física, un vacío geométrico, coordenadas, volumen o una dimensión particular. Antes de contar objetos se pregunta qué permitiría reconocer una diferencia.
+
+La **incertidumbre original** es la indefinición de la naturaleza de esa unidad dentro de su propio espacio de relaciones. No añade una sustancia al espacio: nombra lo que aún no queda determinado por sus relaciones. Tampoco se identifica, por definición, con ignorancia de un observador exterior, azar o distribución de probabilidades. Tales lecturas requieren un modelo posterior.
+
+La unidad puede disponer de una organización interna que una observación exterior no determine. Así se distinguen dos cuestiones: la unidad por las relaciones que la constituyen y la imagen de la unidad accesible desde una consulta. Confundirlas convierte una limitación de lectura en una afirmación sobre la existencia o inexistencia de relaciones internas.
+
+La indeterminación es relativa a una referencia y a una pregunta. En realizaciones formales, una consulta puede permanecer indefinida porque admite más de una respuesta compatible; puede quedar determinada cuando todas las posibilidades dan la misma; y puede ser incompatible cuando ninguna configuración satisface las condiciones. Lo incompatible no es un grado mayor de incertidumbre: es un estado lógico distinto.
+
+## 2. La reflexión comienza dentro de la unidad [O]
+
+La reflexión introduce la posibilidad de comparación en el propio espacio. No exige situar una cámara o un observador privilegiado fuera de la totalidad. El foco pertenece inicialmente a la organización que hace posible reconocer una relación. El espejo material aparece después como laboratorio para representar esa operación.
+
+Una reflexión permite relacionar manifestaciones, recorridos o sentidos. Que dos trayectorias coincidan en un foco no determina por sí solo que tengan igual orientación, fase, historia o procedencia. De la coincidencia de una lectura no se deduce automáticamente la identidad completa de aquello que la produce.
+
+La **diferencia** abre posibilidades; la **referencia** establece bajo qué comparación se reconocen; la **distinción** es la diferencia que una operación de lectura logra acreditar. Una distinción necesita una pregunta y una condición que permita separar sus respuestas. La referencia no crea de la nada la organización interna, pero sí determina qué parte puede reconocerse y conservarse en una descripción.
+
+Este es el primer movimiento del lenguaje: dar nombre a una diferencia de modo que pueda volver a encontrarse. El nombre cumple su función cuando sostiene una operación o un criterio de reconocimiento, no solamente cuando produce una imagen sugerente.
+
+## 3. Relaciones, comunes, herencia y radio [O]
+
+Una relación vincula diferencias respecto de referencias declaradas. Varias relaciones pueden formar una trama con comparaciones simultáneas; compartir un resultado no obliga a suponer que una relación desciende históricamente de otra. Por esa razón conservamos la palabra **comunes** para lo compartido y reservamos **herencia** para una procedencia lógica, constructiva o temporal acreditada.
+
+El **radio relacional** designa el alcance de las relaciones que sostienen una organización y permiten reconocerla. En este nivel no es automáticamente una distancia euclidiana, un tamaño de esfera, un radio de grafo ni una duración. Cada laboratorio puede aportar un radio medible con definiciones propias. Hacer coincidir dos radios de contratos distintos requiere un puente y una prueba.
+
+El **determinante** de una relación es aquello cuya variación puede cambiar una distinción, una compatibilidad o una respuesta bajo la consulta fijada. Un cambio de escala, una nueva arista, una pared desplazada o una fase añadida pueden ser determinantes distintos. El método los reconoce por sus consecuencias verificables, no por pertenecer a una lista única de objetos fundamentales.
+
+La **normalización** compara referencias o escalas conservando una relación declarada. No exige que dos sistemas sean físicamente idénticos. Una referencia común puede reunir diferencias sin destruir necesariamente la capacidad de distinguirlas de nuevo, siempre que se mantenga la información necesaria para recuperarlas.
+
+## 4. La caja de espejos: la misma fuente, varias imágenes [O/T]
+
+En la caja de espejos se pregunta qué estructura puede reconocerse a través de imágenes, qué recorridos son distinguibles y qué cambia al modificar una pared de referencia. Una misma fuente produce imágenes múltiples; multiplicar imágenes no multiplica automáticamente fuentes ni información independiente.
+
+En el laboratorio ideal de un eje con espejos en 0 y L>0, las reflexiones generan las posiciones **2kL ± x**, con k entero. La firma **ρ_L(x) = dist(x, 2Lℤ)** caracteriza las órbitas bajo esas reflexiones. Se trata de un hecho exacto para ese grupo y ese espacio; la firma de órbita no describe toda la naturaleza interior de una unidad.
+
+La pared móvil muestra el papel activo de la referencia. Para L=1, las posiciones x=1/4 e y=9/4 comparten firma 1/4. Para L=2, sus firmas son 1/4 y 7/4. Una descripción anterior que había reunido ambas posiciones no determina la nueva consulta. La novedad se reconoce en la distinción exigida por el cambio, sin borrar el resultado correcto para la referencia inicial.
+
+El laboratorio permite separar operaciones distintas: ampliar el grupo de reflexiones puede reunir órbitas; ampliar la familia de consultas puede separar clases de respuestas. Llamar «cierre» a ambos procesos, sin fijar qué se cierra, produce una pérdida del lenguaje. Las secuencias exploratorias de dos, tres, cuatro y cinco imágenes o referencias conservan su función de investigación y solo se convierten en resultados generales cuando se declara la regla generadora.
+
+La caja es también una prueba editorial: cuando una nueva formulación cambia el significado de «reflejo», «fuente», «imagen», «foco» o «referencia», debemos poder identificar la operación que justifica ese cambio.
+
+## 5. Las esferas: indefinición, vínculos y orientación [O/T/I]
+
+El laboratorio comienza con esferas como referencias sin orientación interna privilegiada. Dos esferas hacen accesible la relación entre centros, contactos o superficies según el contrato. Una tercera permite establecer un plano de comparación si sus centros no están alineados. La incorporación de una cuarta referencia abre dos extensiones espaciales reflejadas respecto de ese plano cuando se fijan distancias apropiadas.
+
+Cuatro esferas iguales mutuamente tangentes tienen sus centros en un tetraedro regular y seis contactos por pares. Un anillo de cuatro esferas, con solo cuatro vínculos periféricos, constituye otra estructura. Dibujar ambas figuras de modo semejante no autoriza tratarlas como la misma red de relaciones.
+
+El tetraedro ofrece un caso especialmente claro: las distancias internas pueden ser compatibles con orientaciones especulares distintas. Una consulta que solo conserva distancias puede reunir ambas; una consulta orientada y etiquetada puede separarlas. El llamado bit de orientación representa esa diferencia bajo condiciones expresas, sin imponerlo como una partícula o una propiedad física universal.
+
+Añadir una quinta referencia puede revelar diferencias que la configuración anterior no distinguía, si se especifica qué nuevas relaciones establece. La novedad depende de la regla de incorporación y de las consultas disponibles, no exclusivamente del número cinco.
+
+Los circuitos de contactos permiten preguntar por compatibilidad de sentidos y recorridos. En el modelo escalar ideal donde cada enlace exige s_i+s_j=0, un anillo de cuatro admite el patrón (a,−a,a,−a), mientras un triángulo o un tetraedro completo no admite un patrón no nulo bajo esa misma ley. La conclusión pertenece a esa regla algebraica: la óptica material, la dinámica y la persistencia temporal necesitan hipótesis adicionales.
+
+## 6. Autorreferencia, singularidad y cierre propio [O/A]
+
+Una organización alcanza **autorreferencia** cuando sus relaciones permiten reconocerla desde el ámbito de comparación que ella misma sostiene. Esa propiedad debe distinguirse de la simple posibilidad de observarla desde fuera. La referencia externa puede ser parcial y, aun así, la unidad puede conservar diferencias internas.
+
+La **singularidad relacional** nombra, en la propuesta ontológica, una organización con cierre propio cuya naturaleza no queda necesariamente agotada por una firma exterior. No significa automáticamente un punto geométrico, una concentración infinita ni una singularidad de relatividad general. Tampoco se declara singularidad cualquier consulta aún indefinida.
+
+El **cierre propio** expresa la continuidad de una organización bajo las relaciones y transformaciones que la constituyen. Su contenido debe reconstruirse según las operaciones internas, las continuaciones admitidas y los observables conservados. Cerrar una órbita de reflejos, completar un circuito de contactos, responder una consulta exterior y sostener un patrón dinámico son cierres diferentes.
+
+Una estructura puede quedar comprendida dentro de otra y seguir conservando una organización propia: surgen unidades de unidades. La nueva referencia permite comparar relaciones compartidas y diferencias internas sin exigir que desaparezca la identidad anterior. El principio «lo resuelto no se des-resuelve» significa que las respuestas acreditadas continúan siendo válidas dentro de su contrato, aunque una nueva pregunta demande una descripción más fina.
+
+## 7. La información entendida desde el cierre [O/T/A]
+
+La **información**, dentro de este hilo, es la diferencia reconocible mediante relaciones y conservable para nuevas comparaciones. No se reduce a una cantidad de símbolos ni a un número de imágenes. Depende de qué preguntas pueden responderse, qué transformaciones están permitidas y qué referencias mantienen esas respuestas.
+
+El **cierre informacional** es la condición propuesta en la que una organización dispone de relaciones suficientes para sostener su identidad y responder las continuaciones de un contrato declarado. La información contenida autorreferenciada es una imagen central del programa: un contenido puede formar parte de una unidad que se reconoce mediante sus propias relaciones. Llamar «información como cierre» a este proceso expresa una tesis ontológica; cada realización debe mostrar cuáles relaciones efectivamente cierran y cuáles permanecen abiertas.
+
+Por eso información, cierre y determinación no son sinónimos. Una unidad con cierre propio puede contener indefinición interna respecto de preguntas adicionales; una firma exterior puede decidir una consulta sin determinar toda la unidad; una descripción corta puede conservar respuestas exactas y, sin embargo, ser difícil de construir o actualizar.
+
+Aquí se completa el hilo de construcción: de la indefinición se reconocen diferencias; las diferencias sostienen referencias; algunas relaciones se conservan y permiten reconocimiento propio; ese reconocimiento constituye información disponible para una nueva comparación. El cierre, cuando está acreditado, convierte un resultado en referencia sin convertirlo en una totalidad cerrada a cualquier novedad.
+
+## 8. Un puente formal mínimo para comprobar el mecanismo [T/A]
+
+Sea X un conjunto de estados y Φ:X→S una firma que conserva cierta información. Sea d:X→B una nueva consulta. La consulta es recuperable de la firma si y solo si existe g:S→B sobre la imagen de Φ tal que **d=g∘Φ**. Si dos estados tienen **Φ(x)=Φ(y)** y **d(x)≠d(y)**, forman un testigo exacto de información faltante respecto de esa consulta. La nueva firma (Φ,d) conserva la anterior y añade la distinción necesaria.
+
+Si F:X→X actualiza los estados, hay una actualización bien definida sobre las firmas, f, con **Φ∘F=f∘Φ**, si y solo si **Φ(x)=Φ(y) implica Φ(Fx)=Φ(Fy)**. Esta condición comprueba continuidad operativa de una descripción, no existencia universal de cierre propio ni bajo costo de cómputo.
+
+El laboratorio modular da otro ejemplo. Para referencias de residuos módulo N y m, la referencia común se expresa módulo **L=mcm(N,m)**; la información anterior puede recuperarse mediante las proyecciones correspondientes. Si m aporta un factor independiente aparecen nuevas clases, aunque una transformación posterior pueda colapsar estados. Compatibilidad de referencias, conservación de diferencias y reversibilidad son propiedades diferentes.
+
+Estos enunciados son realizaciones matemáticas específicas. La cuestión abierta más importante consiste en identificar una condición **no trivial** de cierre interno que caracterice una unidad autorreferenciada sin reducirla a una firma exterior o a la identidad completa de sus estados. También falta establecer qué mapas entre laboratorios preservan realmente las operaciones pertinentes.
+
+## 9. Tiempo, normalización y aplicaciones posteriores [O/I/A]
+
+El programa ha desarrollado el **tiempo como comparación de ritmos y recurrencias** respecto de un ciclo elegido como referencia. La pared móvil permite variar foco, escala y recorrido, y preguntar qué cambia en las comparaciones disponibles. Un ritmo interno, el ritmo de una referencia y el de un flujo son magnitudes diferenciables en sus modelos; sus correspondencias físicas requieren una ley y mediciones específicas.
+
+En la línea G–01, la gravedad se investiga como posible resolución de diferencias de escala entre cierres que forman una referencia común sin perder identidad. Los múltiplos comunes muestran conservaciones aritméticas exactas; para hablar de gravitación física hace falta un operador dinámico, una métrica, un reloj y predicciones contrastables. El horizonte C se interpreta como límite de comparación en ese lenguaje, no como una unidad adicional ni como un observador físico privilegiado.
+
+En Navier–Stokes, la pregunta es qué relaciones de un flujo y de sus residuos debe conservar una descripción para permitir continuación. En Yang–Mills, la composición ordenada de caminos permite probar cuándo un observable exterior pierde diferencias internas. En P frente a NP, la misma pregunta se refiere a qué información debe preservarse y a qué costo puede reconocerse o recuperarse. Las semejanzas orientan hipótesis; no transfieren teoremas de un dominio a otro.
+
+## 10. Economía, lenguaje y ROSI [O/T/A]
+
+La economía no consiste solamente en reducir el número de estados nombrados. Exige comparar **el costo de reconocer una relación heredada, construir la representación, conservarla, actualizarla, consultar y certificar la respuesta**. Una firma puede ser pequeña y su construcción costosa. Un algoritmo puede resolver una familia mediante operaciones económicas aunque una representación secuencial alternativa requiera gran anchura.
+
+El lenguaje también tiene una economía propia: una nueva palabra debe conservar una distinción, permitir una operación, hacer visible un límite o recuperar una relación que antes no podía expresarse. Cuando un término cambia de dominio debe indicar su nuevo contrato. «Herencia» exige procedencia; «normalización», aquello que se preserva; «novedad», una consulta que separa estados anteriormente reunidos; «cierre», la estructura y las transformaciones pertinentes.
+
+**ROSI** funcionará como laboratorio de reflexión crítica del propio lenguaje. Para cada afirmación debe registrar el concepto original, la referencia, el determinante, la operación, el resultado, la procedencia, las obligaciones pendientes y posibles contraejemplos. El evaluador no adjudica verdad por autoridad: verifica que el programa no confunda metáfora, definición, prueba, simulación y puente interpretativo.
+
+## 11. Protocolo propuesto para la verificación independiente
+
+Una revisión independiente debería escoger una afirmación concreta y aplicar este recorrido:
+
+1. **Reconstrucción:** localizar la definición original y los cambios posteriores de significado.
+2. **Contrato:** identificar estados, referencias internas y externas, consultas, continuaciones y operaciones.
+3. **Conservación:** determinar qué respuesta anterior debe permanecer recuperable.
+4. **Novedad:** buscar estados que la firma antigua reúna y la consulta nueva distinga.
+5. **Cierre:** probar las condiciones de estabilidad interna, retorno, composición o suficiencia pertinentes, sin mezclarlas.
+6. **Economía:** contabilizar el costo total y compararlo con un método de referencia que resuelva la misma tarea.
+7. **Falsación:** registrar un contraejemplo, una condición omitida o un antecedente conocido, y actualizar el estado de la afirmación.
+
+Las preguntas centrales para los revisores serán: ¿existe una formalización no trivial de la unidad autorreferenciada y su cierre propio? ¿Qué realizaciones conservan efectivamente ese mecanismo? ¿Qué información debe mantenerse bajo cambio de referencia? ¿Qué resultados constituyen reducciones de costo demostrables? ¿Qué equivalencias son conocidas y qué contraejemplos delimitan la propuesta?
+
+## 12. Glosario de continuidad ontológica
+
+**Espacio único:** totalidad inicial sin segunda referencia exterior acreditada. **Indefinición:** relaciones que aún no determinan la naturaleza o una consulta. **Reflexión:** operación conceptual de comparación interna; en un laboratorio puede ser una isometría concreta. **Diferencia:** posibilidad de separación. **Distinción:** separación acreditada por una consulta. **Referencia:** organización desde la que se compara. **Foco:** lugar o relación donde se hace una lectura, interno o externo según contrato. **Radio relacional:** alcance de vínculos que sostienen una unidad. **Comunes:** relaciones compartidas o simultáneas. **Herencia:** procedencia demostrable. **Normalización:** transporte entre referencias conservando relaciones declaradas. **Singularidad relacional:** organización que se sostiene en cierre propio bajo sus relaciones. **Cierre propio:** continuidad interna respecto de transformaciones pertinentes. **Cierre observable:** suficiencia de una representación para consultas externas fijadas. **Información:** diferencias conservables y recuperables respecto de operaciones y preguntas. **Novedad:** distinción que la descripción anterior no permite recuperar. **Economía:** recursos completos necesarios para reconocer y responder. **ROSI:** auditoría de conceptos, evidencias, costos y obligaciones.
+
+## 13. Documentos de procedencia y estado de revisión
+
+- **Imagen Total 3.9**, 23 de octubre de 2026: §§1–5 (ontología, lenguaje, continuidad, cubo y esferas), §§6–10 (aplicaciones, tiempo, información contenida autorreferenciada y ROSI).
+- **Solicitud de revisión integral T-EXT-01**, 30 de octubre de 2026: §§1–4 (unidad autorreferenciada, radio, incertidumbre, caja de espejos y contrato interno) y §9 (ROSI).
+- **R–07, Matriz de trazabilidad — unidad de indefinición**, octubre de 2026: restituciones de singularidad, reflexión interna, herencia, radio y límites de las traducciones.
+- **G–01, Mecanismo de la gravedad v1.3**, 1 de noviembre de 2026: tiempo relativo, referencia, normalización y condición del límite C.
+- **Solicitudes y laboratorios de economía del cálculo**, 8–10 de noviembre de 2026: firmas, reconocimiento de lo heredado, costos y resultados acotados.
+- **Imagen Total 4.0**, 10 de noviembre de 2026: documento para la fase siguiente de revisión línea por línea; las correspondencias de este borrador con esa versión deben comprobarse antes de sustituirla.
+
+**Estado de este documento:** texto rector **para revisión del autor**, no publicación ni verificación externa concluida. Las formulaciones ontológicas sintetizan documentos previos; los puentes que introducen una lectura general de «cierre informacional» quedan expresamente propuestos para discusión. El siguiente paso será revisar esta lectura, registrar correcciones y solo después emitir la solicitud definitiva y la actualización de Imagen Total 4.0.

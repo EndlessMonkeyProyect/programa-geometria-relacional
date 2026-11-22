@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## De la reflexión al recierre aritmético · 22 de noviembre de 2026
+
+La [integración documental](2026-11-17_escalas_relacionales_riemann/2026-11-22_integracion_principio_bit_recierre/README.md) enlaza el bit relacional, las octavas, la herencia y el recierre de Möbius mediante identidades exactas y laboratorios finitos. El [documento maestro](2026-11-17_escalas_relacionales_riemann/2026-11-22_integracion_principio_bit_recierre/ACTUALIZACION_CONSOLIDADA_ES.md) distingue las condiciones globales pendientes y aporta una matriz de resultados y un verificador reproducible. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/2026-11-22_integracion_principio_bit_recierre/README.en.md).
+
 ## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
 
 La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [formalización de la criba](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) y la reflexión [«Un número por cero»](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). Presenta la herencia exacta de la discrepancia entre escalas, el conteo de primos y una lectura de la simetría de los ceros de ζ. Dos verificadores reproducen los cálculos; la hipótesis de Riemann permanece abierta. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/README.en.md).

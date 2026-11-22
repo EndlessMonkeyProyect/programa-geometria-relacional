@@ -1,0 +1,826 @@
+# Proyectores relacionales inducidos por el comparador
+## Del cierre con varios canales a un criterio estructural para el puente \(B\)
+
+**Le Matt Ansatz Di Ego**  
+**Borrador de trabajo v0.1 — septiembre de 2026**
+
+---
+
+## 0. Objetivo
+
+Ya se obtuvo, del lado aritmético, una descomposición canónica del sector de novedad de una octava:
+
+\[
+\mathbb Z/F_n\mathbb Z
+\cong
+\prod_{i=1}^{r}\mathbb Z/p_i^{\alpha_i}\mathbb Z,
+\qquad
+r=\omega(F_n),
+\]
+
+con proyectores CRT
+
+\[
+P_i^{\rm arith},
+\qquad
+(P_i^{\rm arith})^2=P_i^{\rm arith},
+\qquad
+P_i^{\rm arith}P_j^{\rm arith}=0,
+\qquad
+\sum_iP_i^{\rm arith}=I.
+\]
+
+La pregunta pendiente era si la arquitectura relacional puede producir **sus propios proyectores** sin introducirlos a mano.
+
+Esta nota muestra una construcción natural a partir del comparador \(C\).
+
+---
+
+# 1. El operador relacional ya disponible
+
+Para una arquitectura relacional representada por un comparador lineal
+
+\[
+C:V\to Y,
+\]
+
+definimos el operador de Gram
+
+\[
+\boxed{
+G:=C^\dagger C.
+}
+\]
+
+En una realización real con producto interno euclídeo,
+
+\[
+G=C^TC.
+\]
+
+Entonces:
+
+\[
+G^\dagger=G,
+\qquad
+G\ge0.
+\]
+
+Además,
+
+\[
+\ker G=\ker C.
+\]
+
+Por tanto \(G\) contiene exactamente la misma información sobre qué direcciones son indistinguibles, pero la organiza como un operador autoadjunto positivo.
+
+---
+
+# 2. Cambio entre dos niveles
+
+Supongamos dos arquitecturas sucesivas en una realización común:
+
+\[
+C_k,
+\qquad
+C_{k+1}.
+\]
+
+Definimos
+
+\[
+G_k=C_k^\dagger C_k,
+\]
+
+\[
+G_{k+1}=C_{k+1}^\dagger C_{k+1}.
+\]
+
+Si el nuevo nivel conserva las relaciones anteriores y añade nuevas relaciones, puede escribirse matricialmente
+
+\[
+C_{k+1}
+=
+\begin{pmatrix}
+C_k\\
+D_{k+1}
+\end{pmatrix},
+\]
+
+donde \(D_{k+1}\) contiene únicamente las nuevas comparaciones.
+
+Entonces
+
+\[
+G_{k+1}
+=
+C_k^\dagger C_k
++
+D_{k+1}^\dagger D_{k+1}.
+\]
+
+Definimos el operador de novedad:
+
+\[
+\boxed{
+\Delta G_{k+1}
+:=
+G_{k+1}-G_k
+=
+D_{k+1}^\dagger D_{k+1}.
+}
+\]
+
+Por construcción,
+
+\[
+\Delta G_{k+1}\ge0.
+\]
+
+Y además
+
+\[
+\boxed{
+\operatorname{rank}\Delta G_{k+1}
+=
+\operatorname{rank}D_{k+1}.
+}
+\]
+
+Así, el rango de \(\Delta G\) mide el número de nuevas direcciones relacionalmente independientes introducidas en ese paso.
+
+---
+
+# 3. Teorema espectral
+
+Como
+
+\[
+\Delta G=\Delta G^\dagger\ge0,
+\]
+
+el teorema espectral garantiza una descomposición
+
+\[
+\boxed{
+\Delta G
+=
+\sum_{a=1}^{s}
+\lambda_a P_a^{\rm rel},
+}
+\]
+
+donde:
+
+- \(\lambda_a>0\) son los valores propios positivos distintos;
+- \(P_a^{\rm rel}\) son los proyectores ortogonales sobre sus autoespacios.
+
+Los proyectores cumplen
+
+\[
+(P_a^{\rm rel})^2=P_a^{\rm rel},
+\]
+
+\[
+P_a^{\rm rel}P_b^{\rm rel}=0
+\qquad(a\neq b),
+\]
+
+y
+
+\[
+\sum_{a=1}^{s}P_a^{\rm rel}
+=
+P_{\rm nov},
+\]
+
+donde \(P_{\rm nov}\) es el proyector sobre
+
+\[
+\operatorname{im}\Delta G.
+\]
+
+Por tanto:
+
+\[
+\boxed{
+\text{el comparador induce internamente una familia de proyectores de novedad.}
+}
+\]
+
+No es necesario postular esos proyectores de forma independiente.
+
+---
+
+# 4. Dos conteos distintos
+
+Hay que distinguir:
+
+\[
+r_{\rm rel}
+:=
+\operatorname{rank}\Delta G,
+\]
+
+que cuenta **direcciones independientes nuevas**,
+
+de
+
+\[
+s_{\rm rel}
+:=
+\#\{\lambda_a>0\text{ distintas}\},
+\]
+
+que cuenta **sectores espectralmente distinguibles por \(\Delta G\)**.
+
+Siempre:
+
+\[
+1\le s_{\rm rel}\le r_{\rm rel}
+\]
+
+cuando existe novedad.
+
+Si todos los valores propios positivos son simples,
+
+\[
+s_{\rm rel}=r_{\rm rel},
+\]
+
+y cada dirección independiente posee un proyector canónico unidimensional.
+
+Si hay degeneración,
+
+\[
+s_{\rm rel}<r_{\rm rel},
+\]
+
+y \(\Delta G\) por sí solo no distingue las direcciones dentro del mismo autoespacio degenerado.
+
+---
+
+# 5. Primer criterio concreto para el puente \(B\)
+
+Del lado aritmético:
+
+\[
+r_{\rm arith}
+=
+\omega(F_n).
+\]
+
+Del lado relacional:
+
+\[
+r_{\rm rel}
+=
+\operatorname{rank}\Delta G.
+\]
+
+Por tanto, una condición necesaria para un puente que conserve independencia es
+
+\[
+\boxed{
+\operatorname{rank}\Delta G
+=
+\omega(F_n).
+}
+\]
+
+Esta igualdad no se impone como definición.
+
+Es un **test**.
+
+Si falla, el puente uno-a-uno entre irreducibles aritméticos y direcciones relacionales independientes queda falsado para esa realización.
+
+---
+
+# 6. Criterio más fuerte: preservación de proyectores
+
+La igualdad de rangos no basta para demostrar que ambos lados tienen la misma descomposición interna.
+
+Para un puente estructural fuerte se requiere una correspondencia
+
+\[
+B:
+P_i^{\rm arith}
+\longmapsto
+P_i^{\rm rel}
+\]
+
+que preserve
+
+\[
+P_i^2=P_i,
+\]
+
+\[
+P_iP_j=0,
+\]
+
+\[
+\sum_iP_i=P_{\rm nov}.
+\]
+
+Si el sector aritmético contiene \(r\) proyectores CRT primitivos, una condición suficiente simple para que \(\Delta G\) los pueda reflejar directamente es:
+
+\[
+\boxed{
+s_{\rm rel}=r_{\rm arith}.
+}
+\]
+
+Es decir, \(\Delta G\) debe poseer exactamente \(r\) sectores espectrales positivos distinguibles.
+
+---
+
+# 7. Caso de dos canales
+
+Supongamos que una octava introduce dos relaciones nuevas linealmente independientes representadas por vectores de comparación
+
+\[
+b_1,
+\qquad
+b_2.
+\]
+
+Entonces
+
+\[
+D=
+\begin{pmatrix}
+b_1^T\\
+b_2^T
+\end{pmatrix},
+\]
+
+y
+
+\[
+\Delta G
+=
+b_1b_1^T+b_2b_2^T.
+\]
+
+Si
+
+\[
+b_1,\ b_2
+\]
+
+son linealmente independientes,
+
+\[
+\operatorname{rank}\Delta G=2.
+\]
+
+Por tanto existen dos direcciones relacionales nuevas.
+
+---
+
+# 8. Caso ortogonal
+
+Si además
+
+\[
+b_1\cdot b_2=0,
+\]
+
+entonces cada vector es autovector de \(\Delta G\):
+
+\[
+\Delta G b_1
+=
+\|b_1\|^2 b_1,
+\]
+
+\[
+\Delta G b_2
+=
+\|b_2\|^2 b_2.
+\]
+
+Si
+
+\[
+\|b_1\|^2\neq\|b_2\|^2,
+\]
+
+los dos valores propios son distintos.
+
+Los proyectores son
+
+\[
+P_1
+=
+\frac{b_1b_1^T}{\|b_1\|^2},
+\]
+
+\[
+P_2
+=
+\frac{b_2b_2^T}{\|b_2\|^2}.
+\]
+
+Entonces:
+
+\[
+P_1P_2=0,
+\qquad
+P_1+P_2=P_{\rm nov}.
+\]
+
+Ésta es exactamente el álgebra requerida por dos canales CRT.
+
+---
+
+# 9. Mezcla relacional
+
+Si
+
+\[
+b_1\cdot b_2\neq0,
+\]
+
+los canales introducidos no coinciden con los autovectores de \(\Delta G\).
+
+Sin embargo, si siguen siendo linealmente independientes,
+
+\[
+\operatorname{rank}\Delta G=2.
+\]
+
+La diagonalización de \(\Delta G\) produce dos modos propios que son combinaciones de \(b_1\) y \(b_2\).
+
+Por tanto:
+
+\[
+\boxed{
+\text{independencia}
+\neq
+\text{ausencia de mezcla}.
+}
+\]
+
+El puente puede preservar el número de canales aunque los modos físicamente distinguidos sean combinaciones de los generadores iniciales.
+
+---
+
+# 10. Colapso de dos canales en uno
+
+Si
+
+\[
+b_2=\alpha b_1,
+\]
+
+entonces
+
+\[
+\Delta G
+=
+(1+\alpha^2)b_1b_1^T.
+\]
+
+Por tanto,
+
+\[
+\operatorname{rank}\Delta G=1.
+\]
+
+Así, dos novedades estructurales candidatas producen una sola diferencia relacional acreditable.
+
+Este es el mecanismo matemático mínimo de **compresión de canales**:
+
+\[
+\boxed{
+r_{\rm arith}=2,
+\qquad
+r_{\rm rel}=1.
+}
+\]
+
+Si ocurre, el puente inyectivo falla.
+
+---
+
+# 11. Degeneración sin pérdida de rango
+
+Existe otro caso distinto.
+
+Supongamos que
+
+\[
+b_1\perp b_2
+\]
+
+y
+
+\[
+\|b_1\|=\|b_2\|.
+\]
+
+Entonces
+
+\[
+\Delta G
+=
+\lambda P_{\rm nov}
+\]
+
+sobre el plano generado por ambos.
+
+Se mantiene
+
+\[
+\operatorname{rank}\Delta G=2,
+\]
+
+pero existe un único valor propio positivo distinto:
+
+\[
+s_{\rm rel}=1.
+\]
+
+La arquitectura sabe que existen dos direcciones independientes, pero \(\Delta G\) no contiene información suficiente para distinguir una de la otra.
+
+Entonces:
+
+\[
+\boxed{
+\text{rango preservado}
+\quad\text{pero}\quad
+\text{identidad de canal no resuelta}.
+}
+\]
+
+Para separar los dos canales haría falta otro operador relacional que conmute con \(\Delta G\).
+
+---
+
+# 12. Familia conmutante y resolución completa
+
+Sea una familia de operadores autoadjuntos
+
+\[
+G^{(1)},\ldots,G^{(m)}
+\]
+
+que conmutan:
+
+\[
+[G^{(a)},G^{(b)}]=0.
+\]
+
+Entonces pueden diagonalizarse simultáneamente.
+
+Sus autoespacios conjuntos generan proyectores canónicos más finos.
+
+Por tanto, si un solo \(\Delta G\) tiene degeneraciones, la arquitectura puede todavía resolver canales mediante una **familia conmutante de comparadores**.
+
+Esto sugiere una formulación más general:
+
+\[
+\boxed{
+\mathcal A_{\rm rel}
+=
+\text{álgebra conmutativa generada por los operadores de comparación}.
+}
+\]
+
+Los proyectores primitivos de \(\mathcal A_{\rm rel}\) serían los verdaderos candidatos relacionales para corresponder a los proyectores CRT.
+
+---
+
+# 13. Reformulación del puente
+
+El puente ya no necesita asignar primos a objetos físicos.
+
+Debe comparar dos álgebras de idempotentes:
+
+### Lado aritmético
+
+\[
+\mathcal A_{\rm arith}
+\cong
+\prod_{i=1}^{r}
+\mathbb Z/p_i^{\alpha_i}\mathbb Z.
+\]
+
+### Lado relacional
+
+\[
+\mathcal A_{\rm rel}
+=
+\operatorname{Alg}
+\bigl(
+G^{(1)},\ldots,G^{(m)}
+\bigr).
+\]
+
+El objetivo es construir una correspondencia entre sus proyectores primitivos:
+
+\[
+\boxed{
+\{P_i^{\rm arith}\}
+\longleftrightarrow
+\{P_i^{\rm rel}\}.
+}
+\]
+
+Ésta sería una versión estructural del puente \(B\).
+
+---
+
+# 14. Primer falsador no trivial: \(32\to64\)
+
+Para
+
+\[
+32\to64,
+\]
+
+el sector aritmético tiene
+
+\[
+r_{\rm arith}=2.
+\]
+
+Por tanto cualquier realización relacional candidata debe satisfacer al menos:
+
+\[
+\boxed{
+\operatorname{rank}\Delta G\ge2
+}
+\]
+
+si pretende conservar ambos canales.
+
+Más fuertemente, debe existir una familia conmutante de comparadores cuyo álgebra posea **dos proyectores primitivos distinguibles**.
+
+Si sólo aparece uno y no existe una regla interna que resuelva la degeneración, entonces:
+
+\[
+\boxed{
+\text{el puente uno-a-uno queda falsado en ese nivel}.
+}
+\]
+
+---
+
+# 15. Relación con pérdida de comparabilidad
+
+Esta formulación también permite estudiar el límite opuesto.
+
+Supongamos una evolución
+
+\[
+\Delta G(t).
+\]
+
+Puede ocurrir:
+
+### Separación
+
+\[
+\lambda_1(t)\neq\lambda_2(t).
+\]
+
+Los dos canales son distinguibles.
+
+### Degeneración
+
+\[
+\lambda_1(t)\to\lambda_2(t).
+\]
+
+Los canales siguen ocupando un plano de rango dos, pero pierden distinción espectral respecto de ese comparador.
+
+### Compresión
+
+\[
+\lambda_2(t)\to0.
+\]
+
+El rango efectivo puede caer de dos a uno.
+
+### Cierre total
+
+\[
+\lambda_1(t),\lambda_2(t)\to0.
+\]
+
+Entonces
+
+\[
+\Delta G(t)\to0.
+\]
+
+La novedad deja de aparecer como diferencia acreditable.
+
+Esto proporciona un lenguaje matemático preciso para distinguir:
+
+\[
+\text{mezcla},
+\quad
+\text{degeneración},
+\quad
+\text{pérdida de rango},
+\quad
+\text{cierre}.
+\]
+
+---
+
+# 16. Qué queda demostrado
+
+Bajo una realización lineal común de arquitecturas sucesivas:
+
+1. El nuevo contenido relacional puede representarse por
+   \[
+   D_{k+1}.
+   \]
+
+2. El operador
+   \[
+   \Delta G=D^\dagger D
+   \]
+   es positivo y canónico respecto del comparador.
+
+3. Su rango cuenta direcciones nuevas independientes.
+
+4. Su teorema espectral produce proyectores internos.
+
+5. La degeneración espectral y la pérdida de rango son fenómenos distintos.
+
+6. Una familia conmutante de comparadores puede resolver degeneraciones.
+
+7. La comparación con CRT puede formularse como correspondencia entre proyectores primitivos, no entre números y objetos físicos.
+
+---
+
+# 17. Qué sigue abierto
+
+1. Derivar qué relaciones concretas forman \(D_{k+1}\) en cada octava.
+2. Demostrar que el número de direcciones nuevas de \(D_{k+1}\) coincide con
+   \[
+   \omega(F_n).
+   \]
+3. Determinar si un único \(\Delta G\) basta o se necesita una familia conmutante.
+4. Construir el caso relacional explícito para
+   \[
+   32\to64
+   \]
+   con dos canales.
+5. Sólo después estudiar si los valores propios pueden asociarse a frecuencia, escala o un observable físico.
+
+---
+
+# 18. Próximo cálculo
+
+El siguiente test concreto es construir una arquitectura mínima de dos canales para el paso
+
+\[
+32\to64
+\]
+
+y comparar dos posibilidades:
+
+\[
+D_{\rm independent}
+\]
+
+con rango dos,
+
+frente a
+
+\[
+D_{\rm compressed}
+\]
+
+con rango uno.
+
+Luego calcular:
+
+\[
+\Delta G=D^\dagger D,
+\]
+
+sus valores propios, proyectores y núcleo.
+
+Esto permitirá ver explícitamente qué información matemática distingue:
+
+\[
+\boxed{
+\text{dos novedades realmente acreditadas}
+}
+\]
+
+de
+
+\[
+\boxed{
+\text{dos novedades estructurales comprimidas en una sola relación}.
+}
+\]

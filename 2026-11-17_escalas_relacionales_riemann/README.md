@@ -26,6 +26,10 @@ Para una lectura de entrada, la reflexión; para las pruebas, la formalización.
 
 El complemento (v0.3) demuestra la conservación de ceros bajo filtros primos finitos y cuantifica la estabilidad de la normalización. En el pivote $s=\tfrac12$ escribe con la discrepancia de la criba una equivalencia conocida: la hipótesis de Riemann equivale a una cota inferior para la discrepancia completa, normalizada por $e^{\mathrm{li}(\sqrt{\vartheta(X)})}$ (Akatsuka, 2024), con laboratorio hasta $X=10^8$. Con la función de Davenport–Heilbronn separa simetría y localización: lo que distingue a $\zeta$ es el producto de Euler, la herencia sobre todos los primos. La hipótesis de Riemann permanece abierta.
 
+## Integración documental · 22 de noviembre de 2026
+
+La [actualización consolidada](2026-11-22_integracion_principio_bit_recierre/README.md) relaciona reflexión, bit, octavas, herencia y recierre aritmético. Incluye [documento maestro](2026-11-22_integracion_principio_bit_recierre/ACTUALIZACION_CONSOLIDADA_ES.md), matriz de resultados, soportes históricos y verificador exacto. [English guide](2026-11-22_integracion_principio_bit_recierre/README.en.md).
+
 ## Reproducción
 
 ```bash

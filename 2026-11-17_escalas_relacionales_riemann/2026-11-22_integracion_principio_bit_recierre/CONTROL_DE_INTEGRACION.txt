@@ -1,0 +1,8 @@
+Edicion: 2026-11-22
+Paquetes ZIP historicos verificados: 16
+Archivos de soporte (originales y extraidos): 158
+Fuentes Biblioteca: 16
+Archivos historicos compilados omitidos de extraccion: 1 (conservados en ZIP)
+Las validaciones matematicas finitas se ejecutan con verificar_paquete.py.
+Fuente TeX con metadatos de identidad personal omitida: 1 (edicion publica bajo seudonimo conservada).
+Fuentes TeX con grafia del seudonimo normalizada: 2.

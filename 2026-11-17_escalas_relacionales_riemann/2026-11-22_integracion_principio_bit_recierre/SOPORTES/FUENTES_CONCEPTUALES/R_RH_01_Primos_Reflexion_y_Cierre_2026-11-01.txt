@@ -1,0 +1,445 @@
+<PARSED TEXT FOR PAGE: 1 / 8>
+Contents
+R–RH–01 — Primos, reflexión y cierre: una ruta relacional hacia la hipótesis de Rie-
+  mann                                                                                            1
+  Resumen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     1
+  1. Proveniencia en el programa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      1
+  2. Contrato de la hipótesis de Riemann . . . . . . . . . . . . . . . . . . . . . . . . . .      2
+  3. Resultado A — laboratorio de desplazamientos primos . . . . . . . . . . . . . . . . .        2
+  4. Resultado B — criterio clásico de cierre funcional . . . . . . . . . . . . . . . . . . . .   3
+       4.1. Entrelazamiento exacto entre referencia prima y dilatación . . . . . . . . . . .      4
+       4.2. Gram y comparador . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       4
+       4.3. La transformada de Mellin y la aparición exacta de zeta . . . . . . . . . . . . .     5
+       4.4. Barrera cuantitativa conocida . . . . . . . . . . . . . . . . . . . . . . . . . . .   5
+  5. Resultados exactos m=1 y m=2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       6
+  6. Tercera relación: la ventana móvil de Weil . . . . . . . . . . . . . . . . . . . . . . .     7
+  7. Controles adversariales . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    7
+  8. Programa experimental mínimo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       7
+  9. Dictamen ROSI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    7
+  10. Bibliografía externa contrastada . . . . . . . . . . . . . . . . . . . . . . . . . . . .    8
+  11. Reproducción . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    8
+
+
+R–RH–01 — Primos, reflexión y cierre: una ruta relacional
+hacia la hipótesis de Riemann
+Programa de Geometría Relacional · 1 de noviembre de 2026
+Estado: OPEN (puente matemático exacto; hipótesis de Riemann no demostrada).
+Naturaleza: nota de investigación, distinción entre resultados clásicos, nuevas articulaciones del
+programa y objetivos abiertos.
+
+
+Resumen
+El trabajo R–01 formaliza la incorporación de una referencia prima independiente y su normal-
+ización común; MF–69/MF–71 distinguen nuevos generadores primos de potencias heredadas y
+construyen comparadores de diferencias. R–RH–01 conecta esos elementos con la teoría analítica
+de números mediante dos modelos:
+  1. Un laboratorio de desplazamientos primos en ℓ2 (ℕ), cuyo vector de coeficientes 𝑛−𝑠
+     tiene norma finita exactamente para ℜ(𝑠) > 1/2. Esta frontera es un hecho de sumabilidad,
+     no una prueba sobre los ceros de la zeta.
+  2. Un laboratorio de cierre funcional en 𝐿2 (0, ∞) basado en el teorema clásico de Nyman–
+     Beurling, en la versión fortalecida de Báez-Duarte. La hipótesis de Riemann es equivalente a
+     que una función de referencia pertenezca al cierre del espacio generado por las dilataciones
+     aritméticas. Se obtiene un entrelazamiento exacto entre multiplicación prima y cambio de
+     escala, y se calculan los primeros dos errores óptimos.
+La conexión más útil es un diagrama conmutativo explícito: multiplicar la etiqueta de una
+referencia por un primo y luego transportarla equivale a transportar primero y dilatar después. La
+transformada de Mellin identifica además la imagen de cada referencia con un múltiplo explícito
+de la función zeta. El salto todavía abierto es demostrar que el espacio generado de este modo
+alcanza el objetivo en el límite infinito.
+
+
+1. Proveniencia en el programa
+
+
+
+                                                1
+<PARSED TEXT FOR PAGE: 2 / 8>
+Nodo del programa                Contenido recuperado               Uso en R–RH–01
+R–01, 23/10/2026                 Firma módulo N, primo p que        Distinguir incorporación prima
+                                 no divide a N, normalizador        y permanencia de referencias
+                                 Np, compatibilidad operativa       anteriores
+MF–69 / MF–71                    Valuaciones primas y               Generadores independientes y
+                                 operadores de comparación          modelo espectral
+O40 / O58                        Conservación de relaciones         Evitar confundir cambio de
+                                 bajo múltiplos comunes;            referencia con una nueva ley
+                                 distinta normalización de          dinámica
+                                 resto unitario
+CME–002                          Plegado y pared móvil: una         Interpretación operativa de un
+                                 firma anterior puede ser           cambio de escala
+                                 insuficiente
+MF–43 / O45                      Fases, ritmos y recurrencias       Fases 𝑒−𝑖𝑡 log 𝑝 , sin identificar
+                                 relativos a una referencia         ritmos discretos con períodos
+                                                                    enteros
+R–04                             Distinción entre control local e   Control adversarial: cierres de
+                                 incompatibilidad global            ventanas finitas no prueban
+                                                                    un límite global
+
+
+Fuentes internas principales: R01_PUENTE_NORMALIZACION_AUTORREFERENCIA_YM.es.md, MF71_K_incorporacion_noveda
+O58_FORMALIZACION.es.md, El_cubo_de_espejos.pdf, Programa_Geometria_Relacional_Manuscrito_Publico_2026-10-2
+
+
+2. Contrato de la hipótesis de Riemann
+Para ℜ(𝑠) > 1,
+
+                                      ∞
+                             𝜁(𝑠) = ∑ 𝑛−𝑠 = ∏ (1 − 𝑝−𝑠 )−1 .
+                                     𝑛=1         𝑝 primo
+
+Su continuación meromorfa y su ecuación funcional conducen a la función entera
+
+
+                    𝜉(𝑠) = 21 𝑠(𝑠 − 1)𝜋−𝑠/2 Γ(𝑠/2)𝜁(𝑠),      𝜉(1 − 𝑠) = 𝜉(𝑠).
+
+RH: todo cero de 𝜉 tiene parte real 1/2. La ecuación funcional establece la simetría, pero no
+establece por sí sola la localización.
+
+
+3. Resultado A — laboratorio de desplazamientos primos
+Sea ℋ = ℓ2 (ℕ) con base ortonormal 𝑒𝑛 . Para cada primo 𝑝 definimos
+
+
+                                           𝑆𝑝 𝑒𝑛 = 𝑒𝑝𝑛 .
+
+Cada 𝑆𝑝 es una isometría y los operadores conmutan: 𝑆𝑝 𝑆𝑞 = 𝑆𝑞 𝑆𝑝 . Los generadores primos
+alcanzan todas las etiquetas de la base desde 𝑒1 , por la factorización única.
+Lema A1 (frontera de normalización). El vector formal
+
+
+                                        Ψ𝑠 = ∑ 𝑛−𝑠 𝑒𝑛
+                                               𝑛≥1
+
+
+                                                2
+<PARSED TEXT FOR PAGE: 3 / 8>
+pertenece a ℋ si y solo si ℜ(𝑠) > 1/2. En ese dominio
+
+
+                               ‖Ψ𝑠 ‖2 = ∑ 𝑛−2ℜ(𝑠) = 𝜁(2ℜ(𝑠)).
+                                           𝑛≥1
+
+Demostración. Los 𝑒𝑛 son ortonormales; la suma de cuadrados coincide con una p-serie de
+exponente 2ℜ(𝑠), que converge precisamente cuando el exponente es mayor que uno. QED.
+Lema A2 (reconocimiento por cada primo). Para ℜ(𝑠) > 1/2:
+
+
+                                           𝑆𝑝∗ Ψ𝑠 = 𝑝−𝑠 Ψ𝑠 .
+
+Demostración. 𝑆𝑝∗ 𝑒𝑚 = 𝑒𝑚/𝑝 si 𝑝 ∣ 𝑚, y es cero en otro caso. El coeficiente de 𝑒𝑛 en 𝑆𝑝∗ Ψ𝑠 es
+(𝑝𝑛)−𝑠 = 𝑝−𝑠 𝑛−𝑠 . QED.
+Lema A3 (producto de factores como estado). Si ℜ(𝑠) > 1/2, el límite de los vectores con
+factores primos acotados existe en ℓ2 y
+
+
+
+                             Ψ𝑠 =    lim   ( ∏ (𝐼 − 𝑝−𝑠 𝑆𝑝 )−1 ) 𝑒1 ,
+                                    𝑃 →∞
+                                              𝑝≤𝑃
+
+con convergencia en norma. Para ℜ(𝑠) > 0, cada producto finito está definido y
+
+
+                                ‖Ψ𝑠,𝑃 ‖2 = ∏ (1 − 𝑝−2ℜ(𝑠) )−1 .
+                                              𝑝≤𝑃
+
+Alcance. La frontera 1/2 es real y exacta, pero mide pertenencia de un vector a un espacio de
+Hilbert; no da la posición de los ceros de 𝜉 . En particular, la expresión 𝜁(2𝜎) se identifica con
+esa norma únicamente para 𝜎 > 1/2. No se debe sustituir la serie divergente por el valor de la
+continuación analítica y llamarlo una norma.
+
+
+4. Resultado B — criterio clásico de cierre funcional
+Escribamos {𝑡} = 𝑡 − ⌊𝑡⌋, sea
+
+                                                                1
+                         𝜒(𝑥) = 1(0,1] (𝑥),      𝑓𝑘 (𝑥) = {       } , 𝑘 ≥ 1.
+                                                               𝑘𝑥
+Estas funciones pertenecen a 𝐿2 ((0, ∞), 𝑑𝑥). Sea
+
+
+                       𝒱𝑚 = span{𝑓1 , … , 𝑓𝑚 }, 𝑑𝑚 =            inf   ‖𝜒 − 𝑣‖𝐿2 .
+                                                               𝑣∈𝒱𝑚
+
+Teorema clásico (Nyman–Beurling, versión de Báez-Duarte):
+
+                                                        𝐿2
+                    RH   ⟺ 𝜒 ∈ span{𝑓𝑘 ∶ 𝑘 ∈ ℕ}              ⟺        lim   𝑑𝑚 = 0.
+                                                                      𝑚→∞
+
+No es un teorema nuevo del programa; es el criterio previo que aporta un objetivo preciso de
+cierre.
+
+
+                                                    3
+<PARSED TEXT FOR PAGE: 4 / 8>
+4.1. Entrelazamiento exacto entre referencia prima y dilatación
+
+Definamos 𝑇 en sucesiones de soporte finito por 𝑇 𝑒𝑛 = 𝑓𝑛 , y sobre funciones por 𝐷𝑝 ℎ(𝑥) =
+ℎ(𝑝𝑥). Entonces, para todo 𝑛,
+
+                          𝑇 𝑆𝑝 𝑒𝑛 = 𝑇 𝑒𝑝𝑛 = 𝑓𝑝𝑛 = 𝐷𝑝 𝑓𝑛 = 𝐷𝑝 𝑇 𝑒𝑛 ,
+
+es decir:
+
+
+                         𝑇 𝑆𝑝 = 𝐷𝑝 𝑇      en el dominio de soporte finito.
+
+Aquí el transporte es algebraicamente exacto. No se ha probado que 𝑇 se extienda a un
+operador acotado entre los espacios de Hilbert completos.
+                                        √                      √
+Para normalizar las normas, sea 𝑔𝑛 =        𝑛 𝑓𝑛 y 𝑈𝑝 ℎ(𝑥) =       𝑝 ℎ(𝑝𝑥). Entonces
+
+                                  ‖𝑈𝑝 ℎ‖2 = ‖ℎ‖2 ,       𝑈𝑝 𝑔𝑛 = 𝑔𝑝𝑛 ,
+
+por lo que 𝑇 ′ 𝑒𝑛 = 𝑔𝑛 satisface 𝑇 ′ 𝑆𝑝 = 𝑈𝑝 𝑇 ′ sobre sucesiones de soporte finito. Los 𝑈𝑝 son
+operadores unitarios sobre 𝐿2 (0, ∞); los 𝑆𝑝 son isometrías no sobreyectivas en ℓ2 (ℕ). Las 𝑔𝑛
+tienen la misma norma, pero no son ortogonales. Igualdad de normas individuales no significa
+que 𝑇 ′ sea isométrico.
+La equivalencia con RH puede escribirse como:
+
+                                                                      𝐿2
+                            RH     ⟺ 𝜒 ∈ span{𝑈𝑛 𝑔1 ∶ 𝑛 ≥ 1} .
+
+Es un problema de pertenencia a un subespacio cíclico generado mediante dilataciones por en-
+teros, todos ellos productos de primos.
+
+4.2. Gram y comparador
+                                                             𝑚
+Para cada 𝑚, sea 𝑇𝑚 ∶ ℂ𝑚 → 𝐿2 el operador 𝑇𝑚 𝑐 = ∑𝑘=1 𝑐𝑘 𝑓𝑘 . Defina
+
+                            ∗
+                     𝐺𝑚 = 𝑇 𝑚 𝑇𝑚 , (𝐺𝑚 )𝑗𝑘 = ⟨𝑓𝑗 , 𝑓𝑘 ⟩, 𝑏𝑘 = ⟨𝜒, 𝑓𝑘 ⟩.
+
+El problema de mejor cierre es:
+
+                                         2        ∗
+                                        𝑑𝑚 = 1 − 𝑏𝑚 𝐺+
+                                                     𝑚 𝑏𝑚 ,
+
+con 𝐺+
+     𝑚 la pseudoinversa Moore–Penrose (si 𝐺𝑚 es invertible, es su inversa). Como 𝒱𝑚 ⊆ 𝒱𝑚+1 ,
+
+
+                                       0 ≤ 𝑑𝑚+1 ≤ 𝑑𝑚 ≤ 1.
+                        ∗
+La positividad de 𝐺𝑚 = 𝑇𝑚 𝑇𝑚 es automática para cada m y no demuestra RH. Lo que falta
+es 𝑑𝑚 → 0.
+
+
+
+
+                                                     4
+<PARSED TEXT FOR PAGE: 5 / 8>
+4.3. La transformada de Mellin y la aparición exacta de zeta
+
+Para 0 < ℜ(𝑠) < 1, la identidad clásica de Mellin–parte fraccionaria es
+
+                                              ∞
+                                                   1              𝜁(𝑠)
+                            ℳ𝑓1 (𝑠) = ∫           { } 𝑥𝑠−1 𝑑𝑥 = −      .
+                                          0        𝑥               𝑠
+
+Como 𝑓𝑛 (𝑥) = 𝑓1 (𝑛𝑥), el cambio de escala produce
+
+
+                                                  𝜁(𝑠)
+                              ℳ𝑓𝑛 (𝑠) = −              , 0 < ℜ(𝑠) < 1.
+                                                  𝑠𝑛𝑠
+                                                             𝑚
+Por otra parte, ℳ𝜒(𝑠) = 1/𝑠. Escribiendo 𝐴𝑚 (𝑠) = ∑𝑘=1 𝑎𝑘 𝑘−𝑠 y 𝑎𝑘 = −𝑐𝑘 , la transformada
+del residuo es
+
+                                     𝑚
+                                                          1 − 𝜁(𝑠)𝐴𝑚 (𝑠)
+                            ℳ [𝜒 − ∑ 𝑐𝑘 𝑓𝑘 ] (𝑠) =                       .
+                                    𝑘=1
+                                                                 𝑠
+
+La isometría de Mellin–Plancherel sobre 𝐿2 ((0, ∞), 𝑑𝑥) identifica la norma de cierre con
+
+
+                                  ∞                                2
+                       2       1    ∣1 − 𝜁( 12 + 𝑖𝑡)𝐴𝑚 ( 12 + 𝑖𝑡)∣
+                      𝑑𝑚 = inf   ∫              1
+                                                                     𝑑𝑡.
+                           𝐴𝑚 2𝜋 −∞               + 𝑡 2
+                                                4
+
+Se obtiene una cadena exacta y conmutativa:
+
+
+                        𝑇                 ℳ                              evaluación
+                       → dilatación −→ multiplicación por 𝑝−𝑠
+  multiplicación prima −                                                 −−−−−→ forma con 𝜁(𝑠).
+
+Sentido de la frontera: la recta ℜ(𝑠) = 1/2 es la línea de Plancherel en esta realización de
+𝐿2 (𝑑𝑥); la localización de todos los ceros no se deduce de ese hecho. La equivalencia 𝑑𝑚 →
+0 ⟺ RH continúa siendo el criterio profundo.
+Antecedentes directos: Balazard–Saias, The Nyman–Beurling equivalent form for the Riemann
+hypothesis (1998/2000); y las exposiciones modernas del criterio de Báez-Duarte.
+
+4.4. Barrera cuantitativa conocida
+
+El descenso de 𝑑𝑚 no puede suponerse rápido. Resultados de Báez-Duarte, Balazard, Landreau y
+                                                                                   2
+Saias, mejorados por Burnol, proporcionan cotas inferiores de orden 1/ log 𝑚 para 𝑑𝑚  en sentido
+asintótico, con constantes expresadas mediante ceros de zeta en la línea crítica. Esta literatura
+constituye un control contra la extrapolación engañosa desde 𝑚 = 1, 2. La tarea abierta de RH
+requiere cotas superiores que realmente impliquen 𝑑𝑚 → 0, no solo la existencia de esos límites
+inferiores.
+
+
+
+
+                                                     5
+<PARSED TEXT FOR PAGE: 6 / 8>
+5. Resultados exactos m=1 y m=2
+Sea 𝛾 la constante de Euler–Mascheroni y 𝐴 = log(2𝜋) − 𝛾 .
+Lema B1. Para 𝑘 ≥ 1:
+
+
+                                           log 𝑘 + 1 − 𝛾                   𝐴
+                              ⟨𝜒, 𝑓𝑘 ⟩ =                     , ‖𝑓𝑘 ‖22 =     .
+                                                   𝑘                       𝑘
+                                                                             ∞
+Prueba (esquema). Con 𝑡 = 1/(𝑘𝑥), la integral de 𝜒𝑓𝑘 es 𝑘−1 ∫         {𝑡}𝑡−2 𝑑𝑡. Su primer tramo
+                                                                            1/𝑘
+es log 𝑘, y la parte de 1 a infinito es 1 − 𝛾 , al sumar sobre intervalos [𝑛, 𝑛 + 1). La relación
+𝑓𝑘 (𝑥) = 𝑓1 (𝑘𝑥) da ‖𝑓𝑘 ‖2 = 𝑘−1 ‖𝑓1 ‖2 . Para 𝑓1 , la suma de integrales sobre intervalos y la
+fórmula de Stirling producen ‖𝑓1 ‖2 = log(2𝜋) − 𝛾 . QED.
+Lema B2. Se verifica exactamente
+
+
+                                                   𝐴 log 𝜋 − 𝛾
+                                    ⟨𝑓1 , 𝑓2 ⟩ =     +         .
+                                                   2     4
+                                                  1
+Prueba (esquema). En la variable 𝑡 = 1/𝑥: {𝑡/2} = 2 {𝑡} + 12 (⌊𝑡⌋ mod 2). Así la correlación
+es 𝐴/2 más la mitad de la suma de integrales de {𝑡}/𝑡2 sobre los intervalos [2𝑗 + 1, 2𝑗 + 2). Esas
+integrales suman (log 𝜋 − 𝛾)/2 por el producto de Wallis y el límite de los números armónicos.
+QED.
+Por tanto,
+
+
+             𝐴 𝐵                                  1−𝛾
+       𝐺2 = (𝐵 𝐴/2) ,           𝑏2 = (                       ), 𝐵 = 𝐴/2 + (log 𝜋 − 𝛾)/4.
+                                           (log 2 + 1 − 𝛾)/2
+La proyección ortogonal da:
+
+                                      (1 − 𝛾)2
+                          𝑑12 = 1 −            ,           𝑑22 = 1 − 𝑏2⊤ 𝐺−1
+                                                                          2 𝑏2 .
+                                         𝐴
+Cálculos reproducibles:
+
+                                   Cantidad                       Valor
+                                   𝐺11             1.260661401508
+                                   𝐺12             0.772209255991
+                                   𝐺22             0.630330700754
+                                   𝑑1              0.926397350706
+                                   𝑑2              0.538483587254
+
+
+Esta reducción es estricta; ninguna cantidad finita de distancias demuestra la condición global
+𝑑𝑚 → 0.
+
+
+
+
+                                                       6
+<PARSED TEXT FOR PAGE: 7 / 8>
+6. Tercera relación: la ventana móvil de Weil
+El criterio de positividad de Weil, en su contrato de funciones de prueba adecuado, es equivalente
+a RH. Si una función de prueba está soportada en [𝑒−𝑎 , 𝑒𝑎 ], su convolución multiplicativa con la
+función invertida queda soportada en [𝑒−2𝑎 , 𝑒2𝑎 ]. Por la fórmula explícita, los términos aritméticos
+de esa forma incluyen potencias primas 𝑝𝑗 que alcanzan el soporte, es decir, log(𝑝𝑗 ) ≤ 2𝑎. Al
+aumentar la ventana aparecen términos adicionales.
+Esta es una versión matemática y ya conocida de una ventana que incorpora distinciones al
+ampliar su escala. Se diferencia de CME–002 porque la ventana es de funciones de prueba y la
+forma de Weil incluye contribuciones arquimedianas, polos y términos de borde que no pueden
+omitirse. Su positividad para todas las ventanas y todas las funciones admisibles es el paso
+profundo.
+
+
+7. Controles adversariales
+  1. Simetría no es localización. La función entera
+
+                              𝐹 (𝑠) = ((𝑠 − 1/4)2 + 9)((𝑠 − 3/4)2 + 9)
+     satisface 𝐹 (1 − 𝑠) = 𝐹 (𝑠) y tiene ceros con partes reales 1/4 y 3/4. La reflexión sola no
+     obliga a los ceros a estar en el eje.
+                                                               ∗
+  2. Positividad de Gram no es RH. Toda matriz 𝐺𝑚 = 𝑇𝑚           𝑇𝑚 es positiva semidefinida; lo
+     difícil es el límite 𝑑𝑚 → 0.
+  3. Producto de Euler finito no detecta ceros críticos. ∏𝑝≤𝑃 (1 − 𝑝−𝑠 )−1 no se anula para
+     ℜ(𝑠) > 0 y no proporciona la continuación analítica relevante para RH.
+  4. El umbral 1/2 de la norma no es una afirmación sobre los ceros. Es el límite de
+     convergencia cuadrática del vector Ψ𝑠 .
+  5. Las aproximaciones finitas pueden ocultar el comportamiento del límite. La posi-
+     tividad, la compatibilidad y el descenso inicial de errores no constituyen una cota uniforme.
+
+
+8. Programa experimental mínimo
+Control I (resuelto): verificar la firma CRT del puente R–01 para 𝑁 = 6, 𝑝 = 5. Exactamente
+30 clases nuevas y cinco refinamientos por clase antigua.
+Control II (resuelto): calcular ‖Ψ𝑠,𝑃 ‖2 con primos hasta 𝑃 = 10, 100, 1000, 10000. Se observa
+crecimiento en 𝜎 ≤ 1/2 y aproximación a un valor finito para 𝜎 > 1/2, de acuerdo con el teorema
+de convergencia.
+Control III (resuelto): reconstruir 𝑑1 , 𝑑2 con expresiones exactas, sin extrapolaciones.
+Control IV (resuelto): exhibir 𝐹 (𝑠) simétrica con ceros fuera del eje.
+Control V (pendiente): construir cotas certificadas para las matrices Gram 𝐺𝑚 , al menos para
+𝑚 = 3, … , 20, evitando cuadraturas sin control de los saltos de la parte fraccionaria. Registrar
+límites inferior y superior verificables para 𝑑𝑚 .
+Control VI (abierto): identificar alguna estructura relacional que imponga una cota global
+nueva sobre 𝑑𝑚 , o una forma de positividad de Weil, sin introducir como supuesto lo equivalente
+a RH.
+
+
+9. Dictamen ROSI
+  • RESOLVED: multiplicación prima; entrelazamiento 𝑇 𝑆𝑝 = 𝐷𝑝 𝑇 sobre soporte finito; umbral
+     de ℓ2 ; cálculos 𝑚 = 1, 2; control simétrico adversarial.
+
+
+                                                  7
+<PARSED TEXT FOR PAGE: 8 / 8>
+  • OPEN: demostrar 𝑑𝑚 → 0, establecer la positividad de Weil para todas las funciones admis-
+    ibles, o construir un operador autoadjunto con correspondencia espectral completa con los
+    ceros.
+  • FALSO / DESCARTADO: inferir RH de simetría, de una norma positiva arbitraria, de descenso
+    observado en una ventana finita o de coincidencia del número 1/2 en dos modelos diferentes.
+  • Hipótesis fértil de trabajo: buscar una propiedad adicional, verificable y no circular, que
+    vincule la conservación de referencias bajo dilataciones primas con la completitud del sube-
+    spacio cíclico que aproxima 𝜒.
+Pregunta central R–RH–01: ¿qué condición estructural, expresada en el lenguaje de referencias,
+transporte y cierre, puede garantizar que la distancia 𝑑𝑚 tienda a cero para la familia aritmética
+de Báez-Duarte?
+
+
+10. Bibliografía externa contrastada
+  • NIST Digital Library of Mathematical Functions, sección 27.4 (producto de Euler):
+    https://dlmf.nist.gov/27.4
+  • NIST DLMF, sección 25.4 (ecuación funcional): https://dlmf.nist.gov/25.4
+  • L. Báez-Duarte, A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis
+    (2002): https://arxiv.org/abs/math/0202141
+  • J. C. Lagarias, The Riemann Hypothesis: Arithmetic and Geometry: https://dept.math.lsa.umich.edu/~lagar
+    holyoke-rev.pdf
+  • J. Arias de Reyna, La hipótesis de Riemann y la Física, Instituto de Matemáticas, Universidad
+    de Sevilla (2022): https://institucional.us.es/blogimus/2022/11/la-hipotesis-de-riemann-y-la-
+    fisica/
+  • E. Bombieri y J. C. Lagarias, Li’s criterion for the Riemann hypothesis, discusión de la positivi-
+    dad de Weil: https://websites.umich.edu/~lagarias/doc/bombieri.pdf
+  • M. Balazard y É. Saias, The Nyman-Beurling equivalent form for the Riemann hypothesis
+    (1998): https://www.esi.ac.at/preprints/esi623.pdf
+  • J.-F. Burnol, A lower bound in an approximation problem involving the zeros of the Riemann
+    zeta function (2002): https://arxiv.org/abs/math/0103058
+
+
+11. Reproducción
+Ejecutar:
+python3 R_RH_01_verificador.py
+El código utiliza la biblioteca estándar y verifica las identidades y controles numéricos declarados.
+La ejecución de pruebas no demuestra la hipótesis de Riemann.
+
+
+
+
+                                                 8

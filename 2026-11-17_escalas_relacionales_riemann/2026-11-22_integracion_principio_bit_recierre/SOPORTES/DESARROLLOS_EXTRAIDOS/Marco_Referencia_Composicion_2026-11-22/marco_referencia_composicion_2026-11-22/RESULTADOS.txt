@@ -1,0 +1,2 @@
+OK: 254945 controles finitos; Python estandar; aritmetica exacta en la parte discreta.
+Probadas por escrito: 7 proposiciones. RH, P vs NP y brecha espectral YM: cuestiones abiertas.

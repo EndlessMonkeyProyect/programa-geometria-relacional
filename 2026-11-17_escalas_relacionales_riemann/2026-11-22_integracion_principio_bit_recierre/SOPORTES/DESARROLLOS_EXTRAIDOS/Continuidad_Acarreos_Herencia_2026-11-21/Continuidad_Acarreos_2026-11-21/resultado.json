@@ -1,0 +1,22 @@
+{
+  "m_max": 2048,
+  "cota_superior_L": 4098,
+  "verificaciones_exactas": 14548,
+  "pares_CRT_verificados": 139,
+  "pares_bloques_CRT": 10,
+  "periodo_bloques_CRT": 27720,
+  "casos_histograma_binario": 65,
+  "ejemplo_independencia": {
+    "q": 8,
+    "r": 9,
+    "periodo": 72,
+    "coactivaciones": 16
+  },
+  "ejemplo_dependencia": {
+    "q": 3,
+    "r": 9,
+    "coactivaciones_en_9": 2,
+    "covarianza": "2/27"
+  },
+  "alcance": "Identidades y promedios de ciclos finitos. No prueba RH ni cancelacion global."
+}

@@ -1,0 +1,26 @@
+{
+  "max_m": 2048,
+  "limite_L": 4098,
+  "numero_de_primos": 564,
+  "comprobaciones": {
+    "herencia_local": 4097,
+    "transicion": 2047,
+    "libre_cuadrados": 2048,
+    "binomial_y_acarreo": 2048,
+    "paridad_binaria": 2048,
+    "pesos_hc03": 2048,
+    "reconstruccion_divisores": 1023
+  },
+  "total": 15359,
+  "test_m5": {
+    "A": 42,
+    "B": 6,
+    "C": 252
+  },
+  "test_m6": {
+    "A": 462,
+    "B": 2,
+    "C": 924
+  },
+  "relaciones_RH": "No demostradas; solo equivalencia condicional clásica."
+}

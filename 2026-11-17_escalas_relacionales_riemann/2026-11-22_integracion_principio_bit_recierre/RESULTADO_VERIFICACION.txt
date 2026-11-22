@@ -1,0 +1,4 @@
+OK integridad archivos: 169
+OK ZIP historicos: 16
+OK controles aritmeticos exactos: 24745
+Alcance: verificaciones finitas; no demuestra RH/GRH.
