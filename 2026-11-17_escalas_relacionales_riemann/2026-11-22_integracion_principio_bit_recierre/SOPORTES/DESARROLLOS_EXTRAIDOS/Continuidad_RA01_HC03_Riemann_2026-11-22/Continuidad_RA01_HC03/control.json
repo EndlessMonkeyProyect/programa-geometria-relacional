@@ -1,0 +1,133 @@
+{
+  "hasta_exclusivo": 4194304,
+  "ultimo_bloque_inclusivo": [
+    2097152,
+    4194303
+  ],
+  "cantidad_primos": 295947,
+  "potencias_primas_heredadas": 399,
+  "descomposicion_algebraica": "C_j(m)=P_j(m)+H_j(m)",
+  "cota_universal_HC02_U_x": 11.601695310354398,
+  "error_maximo_de_descomposicion_flotante": 8.777760740485974e-10,
+  "exceso_maximo_en_desigualdad": 4.440892098500626e-16,
+  "ultimo_bloque": {
+    "j": 21,
+    "desde": 2097152,
+    "hasta_inclusive": 4194303,
+    "B_total": 1230.45422292,
+    "B_primos_nuevos": 1718.4764943,
+    "H_potencias_heredadas": 637.25937711,
+    "B_total_div_critico": 0.0017555174,
+    "B_primos_div_critico": 0.0024517901,
+    "H_div_raiz": 0.44004925,
+    "posicion_max_total": 3593310,
+    "posicion_max_primos": 3593310
+  },
+  "algunos_bloques": [
+    {
+      "j": 9,
+      "desde": 512,
+      "hasta_inclusive": 1023,
+      "B_total": 18.37613001,
+      "B_primos_nuevos": 27.76221722,
+      "H_potencias_heredadas": 13.33797463,
+      "B_total_div_critico": 0.0081211788,
+      "B_primos_div_critico": 0.0122692825,
+      "H_div_raiz": 0.58946077,
+      "posicion_max_total": 808,
+      "posicion_max_primos": 1008
+    },
+    {
+      "j": 10,
+      "desde": 1024,
+      "hasta_inclusive": 2047,
+      "B_total": 30.6735792,
+      "B_primos_nuevos": 38.66780488,
+      "H_potencias_heredadas": 14.17673255,
+      "B_total_div_critico": 0.0079218955,
+      "B_primos_div_critico": 0.0099865199,
+      "H_div_raiz": 0.44302289,
+      "posicion_max_total": 1422,
+      "posicion_max_primos": 1972
+    },
+    {
+      "j": 11,
+      "desde": 2048,
+      "hasta_inclusive": 4095,
+      "B_total": 35.20042006,
+      "B_primos_nuevos": 46.49795004,
+      "H_potencias_heredadas": 23.92090771,
+      "B_total_div_critico": 0.0054015746,
+      "B_primos_div_critico": 0.0071352031,
+      "H_div_raiz": 0.52858238,
+      "posicion_max_total": 2861,
+      "posicion_max_primos": 3298
+    },
+    {
+      "j": 15,
+      "desde": 32768,
+      "hasta_inclusive": 65535,
+      "B_total": 204.26660419,
+      "B_primos_nuevos": 139.74245377,
+      "H_potencias_heredadas": 70.04960336,
+      "B_total_div_critico": 0.0044079071,
+      "B_primos_div_critico": 0.0030155285,
+      "H_div_raiz": 0.38697304,
+      "posicion_max_total": 59753,
+      "posicion_max_primos": 59753
+    },
+    {
+      "j": 17,
+      "desde": 131072,
+      "hasta_inclusive": 262143,
+      "B_total": 279.1219837,
+      "B_primos_nuevos": 358.62381543,
+      "H_potencias_heredadas": 168.28269415,
+      "B_total_div_critico": 0.0023795458,
+      "B_primos_div_critico": 0.0030573077,
+      "H_div_raiz": 0.46481966,
+      "posicion_max_total": 175620,
+      "posicion_max_primos": 237958
+    },
+    {
+      "j": 19,
+      "desde": 524288,
+      "hasta_inclusive": 1048575,
+      "B_total": 697.74717524,
+      "B_primos_nuevos": 984.94609082,
+      "H_potencias_heredadas": 326.41128824,
+      "B_total_div_critico": 0.0024090906,
+      "B_primos_div_critico": 0.0034006937,
+      "H_div_raiz": 0.45079616,
+      "posicion_max_total": 993820,
+      "posicion_max_primos": 993820
+    },
+    {
+      "j": 20,
+      "desde": 1048576,
+      "hasta_inclusive": 2097151,
+      "B_total": 875.6253816,
+      "B_primos_nuevos": 904.1075038,
+      "H_potencias_heredadas": 441.04322421,
+      "B_total_div_critico": 0.0019390089,
+      "B_primos_div_critico": 0.0020020805,
+      "H_div_raiz": 0.43070627,
+      "posicion_max_total": 1513751,
+      "posicion_max_primos": 1772200
+    },
+    {
+      "j": 21,
+      "desde": 2097152,
+      "hasta_inclusive": 4194303,
+      "B_total": 1230.45422292,
+      "B_primos_nuevos": 1718.4764943,
+      "H_potencias_heredadas": 637.25937711,
+      "B_total_div_critico": 0.0017555174,
+      "B_primos_div_critico": 0.0024517901,
+      "H_div_raiz": 0.44004925,
+      "posicion_max_total": 3593310,
+      "posicion_max_primos": 3593310
+    }
+  ],
+  "alcance": "Calculo finito de las funciones clasicas. No prueba una cota uniforme al variar j."
+}

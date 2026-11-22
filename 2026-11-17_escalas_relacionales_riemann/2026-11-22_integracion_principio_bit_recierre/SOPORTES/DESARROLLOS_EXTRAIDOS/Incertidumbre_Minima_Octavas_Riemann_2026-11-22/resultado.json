@@ -1,0 +1,15 @@
+{
+  "fuente": "Datos redondeados de informe del 20-XI-2026; no se ejecuta matriz de Gram",
+  "c_ref_bettin_conrey_farmer": 0.04619141793224202,
+  "residual_2048": 0.00622744,
+  "error_por_log_2048": 0.04748185725916848,
+  "residual_2048_hipotetico_incertidumbre": 6.265e-06,
+  "ultima_theta": 0.06643900201330309,
+  "ultima_c_critico": 0.797268024159637,
+  "ultima_c_semilla": 0.5297850427920601,
+  "ultima_cambio_a": 0.00135235,
+  "c_rigida_1_pasa": false,
+  "c_flexible_075_pasa_10": true,
+  "c_semilla_05_pasa_10": true,
+  "solo_ensayo_finito": true
+}

@@ -1,0 +1,395 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage[expansion=false]{microtype}
+\usepackage{geometry}\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+
+\newtheorem{theorem}{Result}
+\newtheorem{proposition}{Proposition}
+\newtheorem{postulate}{Postulate}
+\newtheorem{remark}{Remark}
+\newcommand{\dd}{\,\mathrm{d}}
+\newcommand{\Ior}{I_{\mathrm{or}}}
+
+% Compile-safe figure inclusion: if the external figure is not present,
+% the review copy shows a placeholder instead of failing.
+\newcommand{\safeincludegraphics}[2][]{%
+\IfFileExists{#2}{\includegraphics[#1]{#2}}{%
+\fbox{\begin{minipage}[c][0.24\textheight][c]{0.92\linewidth}
+\centering \textbf{Figure placeholder}\\[0.5em]
+Missing file: \texttt{\detokenize{#2}}\\
+This box preserves the manuscript layout in review copies.
+\end{minipage}}}}
+
+
+\title{\bfseries Octave structure of a resonance band from a relational-radius ontology:\\
+derivation, operational test, and limits}
+\author{Le Matt Ansatz Di Ego}
+\date{Improved program manuscript (geometric companion) -- July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A companion continuum study models incompressible flow as redistribution of an accumulated field and predicts a finite band of wavenumbers that relax by oscillation, with closed-form edges. That study treats its wave-speed parameter $c$ as phenomenological. The present manuscript asks a narrower and more falsifiable question: if $c$ is the projection-limit relation of a unique origin and if admissible relational radii are binary octaves $R_\epsilon=2^{-\epsilon}$, what additional dimensionless structure follows inside the continuum band?
+
+From these assumptions, three results are obtained before the continuum band is consulted. First, if spatial comparison is generated as proportion to the relational radius, the spatial wavenumber is the inverse radius, $k=1/R$; therefore the same dispersion $\Omega(k)=ck$ is recovered, but with octave thresholds $k_\epsilon=2^\epsilon$ and log-period $\ln2$. Second, the Mersenne identity $M_{2k}=M_k(2^k+1)$, with coprime factors, gives a closed arithmetic ledger between adjacent octaves. Third, orientation is treated not as stored information but as an unresolved branch sign fixed by projection; repeated prime factors in $M_\epsilon$ count nested pending signs through $\Ior(\epsilon)=\sum_i(\alpha_i-1)$.
+
+Only after this construction is the continuum example considered. Its canonical band spans $6.61$ octaves, so the octave period fits inside it; its control number $\Lambda=c^2/(\nu\lambda)$ determines the number of octave thresholds available for resolution. The centre-on-threshold alignment of the canonical numbers is identified as example-specific, not universal. The discriminating prediction is therefore deliberately modest: within a ringing band, the response should show self-similarity under $k\to2k$, detectable as a peak at $\Delta=\ln2$ in log-wavenumber autocorrelation. If no such dimensionless signature is found in a suitable medium, the continuum description remains sufficient and the ontology adds no measurable content.
+\end{abstract}
+
+\noindent\textbf{Keywords:} relational geometry; projection radius; octave structure; log-periodicity; Mersenne spectrum; resonance band.
+
+\section{Logical status and relation to the continuum companion}\label{sec:status}
+
+This manuscript is a program document. It is not a derivation within continuum mechanics, and it does not depend on the continuum companion for its results: the derivation of Sections~\ref{sec:radius}--\ref{sec:transfer} proceeds from the stated ontology alone. The continuum band appears only in Section~\ref{sec:consistency}, as an external structure against which the derived octave prediction is tested. The relation between the two documents is deliberate and asymmetric. The continuum companion is self-contained and commits to no ontology; its wave-speed $c$ is a measurable coefficient. The present document supplies a candidate ontology for that same $c$ and derives additional structure from it. If the ontology is wrong, the continuum companion stands untouched; if it is right, the two are the same phenomenon seen at two depths.
+
+Three labels are used throughout, following the convention of the program's earlier notes. \emph{Postulate}: a foundational assumption not derived here. \emph{Derived}: a mathematical consequence of the postulates. \emph{Harmonic}: an interpretation consistent with the postulates but not following from arithmetic alone. \emph{Observation}: a numerical fact about a particular example, not a general theorem.
+
+\subsection*{Reader contract and operational vocabulary}
+The manuscript is written as a program, not as a completed physical theory. Its strongest claims are the derived algebraic structures and the dimensionless test proposed in Section~\ref{sec:detection}. Its weakest claims are the foundational ontology and the unresolved selection of the baryonic depth $\epsilon=4$. To avoid overloading interpretive language, the main terms are used as follows.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{6.0cm}}
+\toprule
+Program term & Mathematical object & Physical status\\
+\midrule
+Relational radius & $R_\epsilon=2^{-\epsilon}$ & Foundational scale variable; postulated, not independently derived here\\
+Octave threshold & $k_\epsilon=1/R_\epsilon=2^\epsilon$ & Derived mark in wavenumber space; measurable only if a medium realizes the band\\
+Pending sign & $\sigma\in\{\pm1\}$ or unresolved root branch & Interpretive mechanism for orientation; not a Shannon bit\\
+Transfer ledger & $M_{2k}=M_k(2^k+1)$ with coprime factors & Exact arithmetic identity; its transfer reading is programmatic\\
+Active level & $M_\epsilon$ not square-free, $\Ior(\epsilon)>0$ & Predicted location of non-neutral octave crossing\\
+Signature & Self-similarity under $k\to2k$ & Falsifiable dimensionless prediction\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The radius ontology}\label{sec:radius}
+
+The ontology is imported, as postulates, from the program's proton-radius framework; it is not re-derived here.
+
+\begin{postulate}[Unique origin and projection limit]\label{post:origin}
+There is a single origin with a universal angular frequency, and a single projection-limit relation $c$ connecting radius and frequency,
+\[
+|U|=c=\omega R .
+\]
+Because the origin is unique, $c$ is unique: there is exactly one projection-limit relation, not one per system.
+\end{postulate}
+
+\begin{postulate}[Binary radius quantization]\label{post:binary}
+The admissible relational radius is quantized in binary octaves,
+\[
+R_\epsilon = 2^{-\epsilon},\qquad \epsilon\in\mathbb{N}_{\ge 0},
+\]
+with the associated Mersenne signature $M_\epsilon=2^{\epsilon}-1$.
+\end{postulate}
+
+The uniqueness clause of Postulate~\ref{post:origin} is what removes any free scale from the construction below: there is no second $c$ to introduce a conversion factor. Where a scale relation appears, it is internal --- the comparison between octaves --- not external.
+
+\paragraph{The generative algebra in brief (self-contained summary).} The binary orientation and the squared structure used below come from a minimal projective algebra, summarized here so this document does not depend on reading the companion. On a real normed space with a unit reference $\hat\aleph$ ($\|\hat\aleph\|=1$) and a differentiation marker $R$ ($\|R\|=R\in(0,1]$, orthogonal to $\hat\aleph$), an antisymmetric bilinear operator $\times$ satisfies restricted norm compatibility ($\|A\times R\|=\|A\|\,\|R\|$ for $A\perp R$) and a double-projection closure $(A\times R)\times R=\sigma R^2 A$ with $\sigma\in\{\pm1\}$. Successive projections generate a hierarchy with norms $\|U\|=R$, $\|V\|=R^2$, $\|m\|=R\sqrt{1-R^2}$, $\|a\|=R^3$. Interpreting these as frequency components of one image frequency, $\|U\|^2=\|V\|^2+\|m\|^2$ becomes $\omega_I^2=\omega_V^2+\omega_m^2$, and the binary closure $\omega_V^2/\omega_I^2=2^{-\epsilon}$ defines the depth $\epsilon$ with Mersenne signature $M_\epsilon=2^\epsilon-1=\omega_m^2/\omega_V^2$. The sign $\sigma$ of the double-projection closure is the pending sign of Section~\ref{sec:selector}: the squared return $(\cdot)\times R\times R$ fixes the magnitude $R^2$ but not the sign. This paragraph is a summary of the companion algebra; its postulates are not re-derived here.
+
+\begin{postulate}[Space as proportion to the radius]\label{post:space}
+The relational radius $R$ is the reference from which the space of comparison is generated: every derived magnitude --- mass, frequency, length --- is a proportion relative to $R$ in its transition from unity to zero. A spatial length is not an independent quantity measured against an external ruler; it is a proportion of $R$. The reference is the Compton wavelength $\bar\lambda_p=\hbar/(m_pc)$ --- a quantity fixed by the proton mass and fundamental constants, with no free parameter --- not the charge radius. The charge radius is the verification target, not an input: from the Compton anchor the mechanism produces $R_V=4\bar\lambda_p$, which is only then compared against the measured charge radius, matching it to $0.02\%$. Because the anchor is a wavelength, the relation $k=1/R$ (next section) is partly built in: a wavelength already is an inverse wavenumber.
+\end{postulate}
+
+This postulate is the root of the framework; it is not derived here, and everything below rests on it. Its consequence for the present document is that the wavenumber--radius relation is not an additional assumption but a corollary, as the next section shows.
+
+\begin{remark}[The transition $R:1\to0$, formalized]\label{rem:transition}
+The phrase ``transition from unity to zero'' denotes the range of the projection parameter, not a temporal process. $R=\|\mathbf R\|\in(0,1]$ is the projection depth: $R=1$ is the undifferentiated reference (unit, no differences), and $R\to0$ is maximal projection. Each admissible value $R_\epsilon=2^{-\epsilon}$ is a fixed depth on this range; the ``transition'' is the family indexed by $\epsilon$, i.e.\ the discrete ladder $1,\tfrac12,\tfrac14,\dots$ of projection depths, each defining one octave. No dynamics in time is implied or required; $\epsilon$ labels depth, and the octave thresholds $k=2^\epsilon$ are the images of these depths under $k=1/R$.
+\end{remark}
+
+\section{From radius to wavenumber: the octave ladder}\label{sec:ladder}
+
+A mode of relational radius $R$ resonates, by Postulate~\ref{post:origin}, at $\omega=c/R$. Identify the spatial wavenumber with the inverse relational radius:
+\begin{equation}\label{eq:kR}
+k=\frac1R .
+\end{equation}
+This is not an independent postulate of the present document but a corollary of Postulate~\ref{post:space}. If the space of comparison is generated as a proportion to $R$ --- if a spatial length exists only as a proportion of the radius, not as an independent quantity against an external ruler --- then any spatial scale is by construction a proportion of $R$, and the inverse spatial scale, the wavenumber, is $k=1/R$. The direction of the derivation matters: one does not define $k=1/R$ by dimensional convention; rather, because space itself is the projection of $R$, wavenumber \emph{must} be the inverse radius. The bridge is therefore reduced to the foundational postulate that space emerges as proportion to the radius, which is accepted as the root of the framework and not re-derived.
+
+\begin{theorem}[Dispersion and thresholds]\label{res:disp}
+Under \eqref{eq:kR}, the resonance frequency of a mode is
+\[
+\Omega(k)=c\,k,
+\]
+identical to the linear dispersion of the continuum companion, and the admissible radii of Postulate~\ref{post:binary} place resonance thresholds at
+\[
+k_\epsilon = \frac{1}{R_\epsilon}=2^{\epsilon},\qquad \epsilon\in\mathbb{Z},
+\]
+a ladder whose spacing is multiplicative by $2$. On a logarithmic axis the thresholds are uniform with period $\ln 2$: the structure is log-periodic.
+\end{theorem}
+
+\emph{Derived.} Immediate from $\omega=c/R$, $k=1/R$, and $R_\epsilon=2^{-\epsilon}$. The extension to $\epsilon\in\mathbb{Z}$ (radii above and below unity) follows from the same rule; the physical range is fixed later by the band. \hfill$\square$
+
+The ladder is the first structure the ontology imposes that the bare continuum does not have: the continuum dispersion $\Omega=ck$ is featureless in $k$, while the radius ontology marks it at every power of two.
+
+\section{The octave transfer ledger}\label{sec:transfer}
+
+The thresholds are not passive marks. Crossing from octave $k$ to octave $2k$ changes the signature, and the change is governed by an exact, closed identity --- the arithmetic of the Mersenne spectrum.
+
+\begin{theorem}[Octave transfer, closed ledger]\label{res:octave}
+For every $k\ge1$,
+\[
+M_{2k}=M_k\,Q_k,\qquad Q_k=2^{k}+1,\qquad \gcd(M_k,Q_k)=1 .
+\]
+Hence the signature at octave $2k$ inherits the signature $M_k$ of octave $k$ and acquires the coprime complement $Q_k$. Information is transferred between adjacent octaves --- inherited and complemented --- and never created: the product is exact and the factors are coprime, so nothing is lost and nothing appears from outside.
+\end{theorem}
+
+\emph{Derived.} Difference of squares: $M_{2k}=2^{2k}-1=(2^{k}-1)(2^{k}+1)=M_k Q_k$. If $d=\gcd(M_k,Q_k)$ then $d\mid(Q_k-M_k)=2$; but $M_k$ is odd, so $d=1$. \hfill$\square$
+
+This is the resolution of a question the continuum companion could pose but not answer: in that document a node transfers orientation between a stored and an active channel, bounded by a Cauchy--Schwarz inequality, and an empty store can release nothing. Here the same transfer principle acquires an exact arithmetic ledger between octaves: what one octave releases, the adjacent octave receives, with the complement $Q_k$ counting exactly what is acquired. The scale relating one octave to the next --- the factor $2$ and the complement $Q_k$ --- is the internal scale anticipated in Section~\ref{sec:radius}; it is the octave comparison itself, not an external parameter.
+
+\begin{remark}[No free scale]\label{rem:scale}
+The absolute position of a threshold is not set by an external constant. Each octave is defined relative to the previous one by the factor $2$ and the complement $Q_k$. The scale is purely relational: a threshold is not ``at $k=2^\epsilon$ in fixed units'' but ``at twice the previous threshold, with complement $Q_k$.'' Consistent with Postulate~\ref{post:origin}, no second $c$ and no conversion factor enter.
+\end{remark}
+
+\section{Orientation as a pending sign: what a threshold resolves}\label{sec:selector}
+
+The word ``orientation'' in this program does not denote stored information. It denotes an \emph{unresolved sign} --- the sign in front of an absolute value, undetermined until the projection fixes it. This section states that mechanism precisely, anchors it in the proton, and derives from it the count that selects which thresholds carry a genuine transfer.
+
+\subsection{The mechanism, from the proton}
+The foundational framework fixes the proton through the baryonic partition $1:15$, giving the normalized visible fraction $r_V=\tfrac{1}{1+15}=\tfrac{1}{16}$ and hence
+\[
+\frac{\omega_V}{\omega_p}=\sqrt{\tfrac{1}{16}}=\frac14,\qquad R_V=4\,\bar\lambda_p .
+\]
+Here $\omega_p=m_pc^2/\hbar$ is the proton Compton frequency and $\bar\lambda_p=\hbar/(m_pc)$ the reduced Compton wavelength --- the anchor, fixed with no freedom. The factor $4$ is a \emph{square root}, $4=\sqrt{16}=2^2$: a second-order binary bifurcation. A square root carries an undetermined sign --- its magnitude is fixed (the absolute value), but which branch is taken is a \emph{pending solution}. Around the root $2^2$, the pending $\pm1$ projects two branches,
+\[
+2^2-1=3,\qquad 2^2+1=5,
+\]
+and these two branches are what \emph{define the relational radius}: the space in which the proton exists is fixed not by the central value $4$ alone but by the differentiated pair $(3,5)$ around it. The $-1$ is what ``poses the difference'': without it the system would collapse to the undifferentiated centre $4$, with no separation and no radius. Their product is the Mersenne signature,
+\[
+3\times5=15=M_4=(2^2-1)(2^2+1),
+\]
+a difference of squares --- the same octave law $M_{2k}=M_kQ_k$ of Section~\ref{sec:transfer}, here with $3=M_k$ and $5=Q_k$. The proton is therefore the concrete instance of the mechanism: a root leaves a pending sign, the projection resolves it into two branches, and the branches define the radius. The resulting $R_V=4\bar\lambda_p\approx0.8412\,\mathrm{fm}$ should be read conditionally and with care. Given the structurally selected depth $\epsilon=4$, the charge radius does not enter the derivation; the only dimensional anchor is the reduced Compton wavelength, and the result is numerically close to the measured proton charge radius, at the quoted $0.02\%$ level. However, because the selection rule fixing $\epsilon=4$ is not yet derived, this is best described as a constrained numerical success rather than a completed prediction of the proton radius. The generative algebra motivates $\epsilon=4$ structurally (spin-$\tfrac12$, the real dimension of the fundamental representation of $\mathfrak{su}(2)$), but a theorem selecting the admissible baryonic depth remains open.
+
+\begin{postulate}[Orientation as pending sign]\label{post:orient}
+A repeated square structure (a root) leaves the sign of its branch undetermined --- a pending solution, fixed only upon projection. The magnitude is determined (the absolute value); the branch is not. This is the internal meaning of the binary orientation $\sigma\in\{\pm1\}$ of the generative algebra's double-projection closure $(A\times R)\times R=\sigma R^2A$: the return through a squared projection does not fix the sign, and $\sigma$ is that pending choice. It is not a stored bit; it is a solution the projection must complete.
+\end{postulate}
+
+This recasts, and supersedes, the ``orientational bit'' language of the program's earlier technical note: what was counted as information stored is more honestly a sign left to be resolved. The two readings agree numerically but differ in meaning, and the pending-sign reading is the one carried here.
+
+\subsection{The count: nested pending signs}
+Two distinct facets of the same root mechanism must be separated, because they behave differently.
+
+\emph{Branch split (distinct primes).} When the two branches around a root are distinct primes --- as $3$ and $5$ around $2^2$ for the proton --- the pending sign is resolved once into two differentiated solutions. This is the radius-defining split; it is not a residual pending sign but a completed differentiation.
+
+\emph{Nested pending signs (repeated primes).} When a prime \emph{repeats} in $M_\epsilon$, each repetition beyond the first is a further root nested inside, leaving a further relative sign undetermined. Fixing one global reference among $\alpha$ copies (global inversion being equivalent, as in the generative algebra) leaves $\alpha-1$ relative signs pending.
+
+\begin{theorem}[Pending-sign count]\label{res:ior}
+The number of nested pending signs at depth $\epsilon$ is
+\[
+\Ior(\epsilon)=\sum_i(\alpha_i-1),
+\]
+over the prime multiplicities $\alpha_i$ of $M_\epsilon$, nonzero if and only if $M_\epsilon$ is not square-free. This is a count of unresolved branch choices, not of stored bits.
+\end{theorem}
+
+\emph{Derived, given Postulate~\ref{post:orient}.} A prime of multiplicity $\alpha$ is $\alpha$ nested roots; one is fixed as the reference against which the others are differences (the $-1$ that ``poses the difference''), leaving $\alpha-1$ relative signs pending. Distinct primes are independent. \hfill$\square$
+
+\begin{figure}[h]
+\centering
+\safeincludegraphics[width=\textwidth]{fig_pending.pdf}
+\caption{Left: the proton mechanism. The factor $4=\sqrt{16}=2^2$ is a root whose pending $\pm1$ projects the two branches $3$ and $5$; these define the relational radius, and their product $3\times5=15=M_4$ is a difference of squares, the octave law. Right: the nested pending-sign count $\Ior(\epsilon)$; the proton at $\epsilon=4$ is a branch split ($3,5$ distinct, $\Ior=0$), while nested pending signs appear only where a prime repeats, from $\epsilon=6$ ($M_6=3^2\cdot7$) onward.}
+\label{fig:pending}
+\end{figure}
+
+\subsection{Which thresholds transfer}
+A threshold carries a genuine transfer --- a pending sign to resolve at the octave crossing --- exactly when a prime repeats, $M_\epsilon$ not square-free. Up to $\epsilon=30$ these are
+\[
+\epsilon\in\{6,12,18,20,21,24,30\},
+\]
+with $\Ior=1$ at each except $\epsilon=18$ where $\Ior=2$. All other levels are square-free, $\Ior=0$: their octave crossing inherits $M_k$ and acquires $Q_k$ with no residual pending sign. Notably the proton depth $\epsilon=4$ is \emph{not} in this list: the proton is defined by the branch split $(3,5)$, a completed differentiation, not by a nested pending sign. The first level with a nested pending sign is $\epsilon=6$, the first prime repetition ($3^2$) in the spectrum.
+
+\begin{remark}[Space emerges as the sign is resolved]\label{rem:emergence}
+\emph{Programmatic.} The three notions --- the pending sign, its resolution by projection, and the definition of a relational radius --- are one act. A root leaves a sign pending; projecting it resolves the sign into differentiated branches; the branches define a radius; and the radius, by Postulate~\ref{post:space}, is the space of comparison. In this reading space emerges precisely as pending signs are resolved: each unresolved branch that projection completes is a new differentiation, and the proton's $(3,5)$ around $4$ is the concrete example of a radius so defined. This is stated as the conceptual core of the framework, not as a derived theorem.
+\end{remark}
+
+\section{Consistency with the continuum band}\label{sec:consistency}
+
+Only now is the continuum companion consulted. Its linear dispersion is $\varpi_k=ck$ --- identical to Result~\ref{res:disp} --- and its ringing band, for the canonical example $(\nu,c,\lambda)=(0.1,1.0,0.4)$, has edges
+\[
+k_\pm=\frac{c\pm\sqrt{c^2-\nu\lambda}}{\nu},\qquad k_-=0.2020,\quad k_+=19.7980,\quad \Lambda=\frac{c^2}{\nu\lambda}=25 .
+\]
+The test is whether the derived octave ladder, with its period $\ln 2$, fits consistently inside this band.
+
+\begin{proposition}[Octave fit]\label{res:fit}
+The continuum band spans
+\[
+\log_2\!\frac{k_+}{k_-}=6.61\ \text{octaves},
+\]
+so seven octave thresholds $k=2^\epsilon$, $\epsilon\in\{-2,-1,0,1,2,3,4\}$ (values $0.25$ to $16$), fall inside $(k_-,k_+)$. The period $\ln 2$ therefore fits within the band: the octave structure is resolvable. Had the band been narrower than one octave, the ladder could not fit and the two pictures would be inconsistent; it fits with room for six full octaves.
+\end{proposition}
+
+\emph{Derived (continuum) $+$ derived (ladder).} Direct computation. \hfill$\square$
+
+\begin{theorem}[The control number counts octaves]\label{res:count}
+The number of octave thresholds that fit inside the band is set by the continuum control number $\Lambda$ alone, through
+\[
+\log_2\frac{k_+}{k_-}=\log_2\frac{1+\sqrt{1-1/\Lambda}}{1-\sqrt{1-1/\Lambda}} .
+\]
+To fit $N$ octaves requires $\Lambda\ge \Lambda_N$ with $\Lambda_1\simeq1.12$, $\Lambda_3\simeq2.53$, $\Lambda_5\simeq8.51$, $\Lambda_7\simeq32.5$. The canonical $\Lambda=25$ yields $6.6$ octaves.
+\end{theorem}
+
+\emph{Derived.} From the inversion formulas $k_-+k_+=2c/\nu$, $k_-k_+=\lambda/\nu$ of the continuum companion, $k_+/k_-=(1+\delta)/(1-\delta)$ with $\delta=\sqrt{1-1/\Lambda}$; solving $k_+/k_-=2^N$ for $\Lambda$ gives $\Lambda_N$. \hfill$\square$
+
+This is a quantitative bridge that exists in neither document alone: the continuum's dimensionless control number, which governs the ringing band, is exactly the count of the radius ontology's octave thresholds. The two structures are not merely compatible on the logarithmic axis; one measures the other.
+
+\subsection{Robustness: what generalizes and what is example-specific}\label{sec:sweep}
+A parameter sweep separates the robust prediction from the coincidence, addressing the concern that the canonical numbers are too neat. Two facts are distinguished (Figure~\ref{fig:sweep}).
+
+\emph{Robust and scale-free.} For every parameter set with a band ($\Lambda>1$), the log-periodic octave structure exists, and the number of octaves that fit is a function of $\Lambda$ alone: two media with the same $\Lambda$ but different absolute scales have the same octave count and geometrically similar bands at different positions. This was verified across eight parameter sets; the octave count tracks $\log_2(k_+/k_-)=f(\Lambda)$ exactly, independent of absolute scale. The self-similarity under $k\to2k$ is therefore a genuine, dimensionless, scale-free prediction, not an artifact of the canonical choice.
+
+\emph{Example-specific, not universal.} The coincidence of Remark~\ref{rem:center} --- the band centre $\sqrt{k_-k_+}$ landing exactly on a threshold $2^\epsilon$ --- holds only when $\log_2\sqrt{\lambda/\nu}$ is near an integer. Across the eight sets, only the canonical $(0.1,1.0,0.4)$ and one other landed on the ladder; the rest have centres off the ladder by up to half an octave. The centre coincidence is thus confirmed as a property of special parameters, explicitly not claimed as general. The robust content is the octave period, not the centre alignment.
+
+\begin{figure}[h]
+\centering
+\safeincludegraphics[width=\textwidth]{fig_sweep.pdf}
+\caption{Left: the octave count depends on $\Lambda$ alone; sweep points (red) lie on the curve $f(\Lambda)$, and two cases with equal $\Lambda=50$ but different absolute scale (orange squares) share the same octave count --- the structure is scale-free. Right: the band-centre-on-threshold coincidence is example-specific: only the canonical case (and one other) place the centre within tolerance of a threshold $2^n$; most cases fall off the ladder.}
+\label{fig:sweep}
+\end{figure}
+
+\begin{remark}[Centre coincidence, example-specific]\label{rem:center}
+\emph{Observation.} In the canonical example the band is log-symmetric about its geometric centre $\sqrt{k_-k_+}=2.000$, which coincides exactly with the octave threshold $2^{1}$. This alignment is a property of the particular parameters $(\nu,c,\lambda)=(0.1,1.0,0.4)$, not a general theorem; a different example centres the band elsewhere. It is recorded because it is suggestive --- the continuum band's symmetry point falling on a ladder rung is what one would expect if the two structures shared an origin --- but it is not claimed as universal.
+\end{remark}
+
+\begin{figure}[h]
+\centering
+\safeincludegraphics[width=\textwidth]{fig_geometric.pdf}
+\caption{Top: the continuum ringing band (green) on a logarithmic wavenumber axis, with the derived octave thresholds $k=2^\epsilon$ overlaid; grey dotted lines are square-free (neutral) levels, red solid lines are active transfer levels ($\Ior>0$), and the orange dashed line is the band centre, which in this example lands on the threshold $2^1$. Six full octaves fit inside the band. Bottom: the continuum control number $\Lambda=c^2/(\nu\lambda)$ determines how many octave thresholds fit; the canonical $\Lambda=25$ (orange) gives $6.6$ octaves, and $\Lambda_N$ marks the value needed for $N$ octaves.}
+\label{fig:geometric}
+\end{figure}
+
+\section{The distinguishing prediction}\label{sec:prediction}
+
+The continuum companion and the radius ontology agree on the existence, edges, and dispersion of the resonance band. They differ inside it. The bare continuum predicts a smooth band, featureless between $k_-$ and $k_+$. The radius ontology predicts that this smooth band is structured:
+
+\begin{enumerate}
+\item \emph{Log-periodicity.} The response is self-similar under $k\to 2k$: the band carries an octave structure of period $\ln 2$. This is dimensionless and does not depend on the absolute scale of $c$ (Remark~\ref{rem:scale}), so it is the robust, scale-free signature.
+\item \emph{Selective transfer.} Information is transferred between adjacent octaves only at levels of prime repetition, $\Ior(\epsilon)>0$ --- the levels $\epsilon\in\{6,12,18,\dots\}$ --- and neutrally elsewhere. The transferred amount is the coprime complement $Q_k$ (Result~\ref{res:octave}), and the number of free orientational bits is $\Ior(\epsilon)$ (Result~\ref{res:ior}).
+\item \emph{Conserved ledger.} Across the octave ladder the transfer is closed: what one octave releases the adjacent octave acquires, so a global information ledger is conserved --- the discrete analogue of the continuum companion's exact energy and enstrophy balances.
+\end{enumerate}
+
+The test is therefore sharp and dimensionless. A medium whose resonance band shows self-similarity under doubling of wavenumber --- octave structure of period $\ln 2$ --- is evidence for the radius ontology. A band that is smooth under rescaling is described completely by the continuum, and the ontology adds nothing measurable. Because the log-periodic signature is scale-free, the test does not require fixing the absolute position of the thresholds; it requires only detecting the period.
+
+
+\section{Operational detection protocol}\label{sec:detection}
+
+The previous section states the distinguishing prediction qualitatively. This section turns it into a minimal analysis protocol. Let $S(k)$ be a measured or simulated spectral response inside the ringing band $(k_-,k_+)$. Set
+\[
+x=\ln k,\qquad s(x)=S(e^x),
+\]
+and remove the smooth background by subtracting either a low-order trend or a local average on the log axis:
+\[
+\tilde s(x)=s(x)-\langle s\rangle_{\mathrm{smooth}}(x).
+\]
+The octave prediction is not an absolute peak at a fixed physical wavenumber; it is a spacing. Therefore the natural statistic is a normalized log-wavenumber autocorrelation,
+\[
+C(\Delta)=
+\frac{
+\int_{x_-}^{x_+-\Delta}\tilde s(x)\tilde s(x+\Delta)\,\dd x
+}{
+\left[
+\int_{x_-}^{x_+-\Delta}\tilde s(x)^2\,\dd x
+\int_{x_-}^{x_+-\Delta}\tilde s(x+\Delta)^2\,\dd x
+\right]^{1/2}
+},
+\qquad x_\pm=\ln k_\pm .
+\]
+The radius ontology predicts a reproducible local maximum at
+\[
+\Delta=\ln 2
+\]
+and, when the band is wide enough, weaker echoes near $2\ln2,3\ln2,\dots$. A smooth continuum band with no octave structure should not produce a stable maximum locked to $\ln2$ after background removal.
+
+\paragraph{Minimal falsification test.}
+A convincing test should satisfy four conditions:
+\begin{enumerate}[label=(\roman*)]
+\item the band edges $k_\pm$ are independently estimated, not chosen to force octave alignment;
+\item the statistic $C(\Delta)$ is computed on the log axis, not the linear $k$ axis;
+\item the peak at $\ln2$ survives reasonable changes of smoothing window and band trimming;
+\item surrogate spectra with the same smooth envelope but randomized log-phase do not reproduce the same locked peak.
+\end{enumerate}
+Failure of this test would not refute the continuum companion; it would mean that the continuum description is sufficient and that the relational-radius ontology has not earned extra empirical content.
+
+\section{Candidate systems for a first test}\label{sec:candidates}
+
+The ontology is medium-agnostic, but the prediction is not useful until it is attached to a platform. The following candidates are ordered from most controlled to most physical.
+
+\paragraph{1. Direct numerical test of the continuum companion.}
+The cleanest first target is a spectral simulation of the continuum closure itself. One chooses $(\nu,c,\lambda)$ so that $\Lambda>1$ and the band spans several octaves, excites modes across $(k_-,k_+)$, and applies the log-autocorrelation test above. This does not prove the ontology, but it tests whether the octave structure can be resolved without experimental ambiguity.
+
+\paragraph{2. Discrete oscillator or wave-network analogue.}
+A network with tunable coupling and damping can be engineered so that its normal modes occupy a controlled ringing band. This is a mathematical analogue rather than a fundamental physical realization. Its value is diagnostic: if a deliberately octave-neutral network produces no $\ln2$ peak while an octave-structured version does, the detection pipeline is validated.
+
+\paragraph{3. Acoustic or elastic resonator with measurable spatial modes.}
+Cavities, plates, membranes, or elastic metamaterials can provide spatial spectra with controlled dissipation and drive. They are promising because $k$-space response can be measured directly. The challenge is to separate genuine log-periodicity from geometric harmonics imposed by the boundary.
+
+\paragraph{4. Fluid, capillary-wave, or plasma spectra.}
+These systems are closer to the continuum motivation but harder to interpret. Broadband response, nonlinear transfer, and finite-size effects can mimic or obscure log-periodic spacing. They become useful only after the numerical and analogue tests establish a robust detection standard.
+
+The practical research sequence should therefore be: first verify the statistic on synthetic spectra; then test the continuum closure numerically; then move to controlled wave networks; only then search in naturally broadband media.
+
+\section{Economy of claim: what this document does not establish}\label{sec:limits}
+
+Because this is a program document that builds a substantial ontology, it is important to state plainly what it does \emph{not} earn, so that the claim does not outrun the evidence. Five limits are explicit.
+
+\emph{One discriminant only.} The sole prediction that distinguishes this ontology from the bare continuum companion --- which reproduces the same band edges and the same dispersion $\Omega=ck$ --- is the log-periodic self-similarity under $k\to2k$ (Section~\ref{sec:prediction}). If that signature cannot be measured, the ontology adds no falsifiable content beyond the continuum; it is then an interpretation, not a distinct theory. The entire empirical weight of this document rests on that single scale-free signature.
+
+\emph{No demonstrated medium.} Section~\ref{sec:candidates} names possible platforms, but none is yet shown to realize the signature. A candidate is not a validation. Until one platform produces a reproducible $\ln2$ log-autocorrelation peak under the tests of Section~\ref{sec:detection}, the ontology remains a program with a testable target rather than an established physical theory.
+
+\emph{$\epsilon$ is not derived.} The harmonic depth $\epsilon$, and specifically the baryonic $\epsilon=4$ that anchors the proton, is structurally motivated (the real dimension of the fundamental representation of $\mathfrak{su}(2)$) but not derived by a selection rule. A theorem fixing the admissible depths is absent, here and in the companion algebra. The proton match is predictive \emph{given} $\epsilon=4$; the value $\epsilon=4$ is a structurally-motivated integer, which is far weaker than a derivation but far stronger than a continuously tuned fit.
+
+\emph{The root postulate is undischarged.} That space is generated as a proportion to the radius (Postulate~\ref{post:space}) is the foundation from which $k=1/R$ follows; it is not itself derived. The Compton anchor mitigates this --- the reference being a wavelength makes the inverse-wavenumber reading partly built in --- but does not eliminate it. The ontology stands or falls with this postulate.
+
+\emph{The Mersenne reading is interpretation over arithmetic.} The identity $M_{2k}=M_kQ_k$ is elementary (a difference of squares); the reading of it as a closed transfer ledger between octaves is an interpretation laid over that arithmetic, not forced by it. Alternative readings exist --- the factorization as mere arithmetic with no transfer, or $Q_k$ as an independent channel rather than an acquired complement. What would make the ledger reading preferable is that it reproduces the conservation already established, independently, in the continuum companion's energy and enstrophy balances; that consistency is the argument for it, not uniqueness.
+
+None of these is concealed in the status table below, and none is claimed as resolved. The document's positive content is the derived octave structure and its scale-free consistency with the continuum; its honest scope is that of a program with one falsifiable signature and these five open flanks.
+
+
+\section{What is derived, what is postulated, what is open}\label{sec:ledger}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{>{\raggedright\arraybackslash}p{7.6cm} >{\raggedright\arraybackslash}p{5.6cm}}
+\toprule
+Statement & Status\\
+\midrule
+Unique origin, single $c=\omega R$ & Postulate~\ref{post:origin}\\
+Binary radius quantization $R=2^{-\epsilon}$ & Postulate~\ref{post:binary}\\
+Space generated as proportion to $R$; reference fixed by $R_V=4\bar\lambda_p$ & Postulate~\ref{post:space} (foundational root)\\
+Wavenumber $=$ inverse radius, $k=1/R$ & Derived from Postulate~\ref{post:space} (\S\ref{sec:ladder})\\
+Orientation as a pending sign (undetermined root branch) & Postulate~\ref{post:orient}, anchored in $\sigma$ of the generative algebra\\
+Dispersion $\Omega=ck$; thresholds $k=2^\epsilon$; period $\ln 2$ & Derived (Result~\ref{res:disp})\\
+Octave transfer $M_{2k}=M_k Q_k$, coprime, closed ledger & Derived (Result~\ref{res:octave})\\
+Proton radius from pending $\pm1$ around root $2^2$: branches $3,5$ & Derived from foundational chain (\S\ref{sec:selector})\\
+Nested pending-sign count $\Ior=\sum(\alpha_i-1)$; active levels & Derived (Result~\ref{res:ior})\\
+Space emerges as pending signs are resolved & Programmatic (Remark~\ref{rem:emergence}), conceptual core\\
+Period $\ln 2$ fits inside continuum band ($6.6$ octaves) & Derived (Proposition~\ref{res:fit})\\
+$\Lambda$ counts the octave thresholds & Derived (Result~\ref{res:count})\\
+Band centre on threshold $2^1$ & Observation, example-specific (Remark~\ref{rem:center})\\
+Log-autocorrelation peak at $\Delta=\ln2$ & Operational test proposed in \S\ref{sec:detection}\\
+Self-similarity under $k\to2k$ as the physical signature & Prediction, untested\\
+Selective transfer at $\Ior>0$ levels & Prediction, untested\\
+Absolute threshold position in physical units & Open for an abstract medium; for the physical (baryonic) system fixed by the reference radius $R_V=4\bar\lambda_p$\\
+Foundational postulate that space emerges as proportion to $R$ & Not derived (root of the framework; consequence $k=1/R$ now derived)\\
+Physical medium realizing the octave signature & Open (as for the continuum band)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The honest summary. From a unique-origin, binary-radius ontology --- with no free scale, the inter-octave scale being the octave comparison itself --- the resonance band acquires a derived octave structure of period $\ln 2$, a closed transfer ledger between octaves, and a selector for which octaves transfer free information. This structure is consistent with the continuum companion's band, which it fits inside and whose control number counts its octaves, with a suggestive but example-specific centre coincidence. The distinguishing prediction is dimensionless self-similarity under doubling of wavenumber. The wavenumber--radius bridge is no longer an independent assumption: it is a corollary of the foundational postulate that space is generated as a proportion to the radius, so the document's postulate count is reduced by one, and what remains irreducibly postulated is that foundational root itself. For the physical baryonic system the absolute scale is not free either --- it is anchored by the reference radius $R_V=4\bar\lambda_p$, matching the proton charge radius to $0.02\%$. What remains genuinely open is what remained open for the continuum band: a physical medium in which to detect the log-periodic signature, and, for an abstract (non-baryonic) medium, the absolute threshold positions --- which, consistent with the program's discipline, are not to be fixed by a free parameter but by a scale relation that must itself emerge.
+
+\begin{thebibliography}{9}
+\bibitem{proton} Le Matt Ansatz Di Ego. \emph{A Geometric Correspondence for the Proton Charge Radius from a Relational Projection of a Single Event}. Program manuscript, 2026.
+\bibitem{octaves} Le Matt Ansatz Di Ego. \emph{Orientational Uncertainty and Relational Octaves in the Mersenne Spectrum}. Technical note, 2026.
+\bibitem{continuum} Le Matt Ansatz Di Ego. \emph{Incompressible flow as redistribution of an accumulated field: behavior across closures, exact balances, and a self-calibrating prediction}. Continuum companion, 2026.
+\end{thebibliography}
+
+\end{document}

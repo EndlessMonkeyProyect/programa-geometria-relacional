@@ -1,0 +1,26 @@
+# Nota de auditoría matemática — RA–01 v5
+
+**Fecha:** 21 de noviembre de 2026. **Tipo:** corrección editorial y matemática aditiva de v4.
+
+## Corrección de alcance
+
+El criterio \\(\\sum_j\\gamma_j=\\infty\\) es necesario y suficiente para cierre global **cuando** \\(\\gamma_j=(e_j^2-e_{j+1}^2)/e_j^2\\) representa la **ganancia óptima** y todos los errores \\(e_j\\) permanecen positivos. Si alguno se anula, el cierre ocurre en ese paso.
+
+Con semillas concretas \\(g_j\\), el teorema RA–01 declara únicamente la suficiencia de la divergencia de \\(\\sum_j a_j/E_j\\), donde \\(a_j\\le d_j\\) y \\(E_j\\ge e_j^2\\). No se atribuye la necesidad a una semilla prefijada.
+
+## Contraejemplo comprobable
+
+En \\(\\ell^2\\), la secuencia \\(\\chi=\\sum_{k\\ge0}2^{-(k+1)}v_{2k+1}\\) y los espacios \\(W_j=\\operatorname{span}(v_1,\\ldots,v_{2j})\\) cumplen \\(e_j^2=4^{-j}/3\\to0\\). No obstante, para \\(g_j=v_{2j+2}\\) se obtiene \\(d_j=0\\) para todo \\(j\\). Esta distinción se comprueba también mediante aritmética racional en `scripts/verificar_ra01.py`.
+
+## Lectura de los ensayos
+
+Los porcentajes de ganancia de la capa de Möbius, el 59,75 % para `1024→2048` y el intervalo observado \\(0{,}44\\le(j+1)d_j/e_j^2\\le1{,}20\\) corresponden a **resultados finitos en doble precisión**. No son cotas aritméticas verificadas para todas las octavas. Una cota universal previa \\(\\gamma_{2^j}\\ge1/(j+2)\\) fue descartada por el registro numérico en `1024→2048`; no se restituye en v5.
+
+## Verificación e integración
+
+- Los resultados de `fuentes/` y los textos históricos permanecen sin editar.
+- El anexo RA–01, el documento principal, el laboratorio S–RA–01 y las instrucciones de integración reflejan la corrección.
+- El registro de verificación y el manifiesto SHA-256 se regeneran desde el paquete actualizado.
+- Se solicita revisión independiente de las pruebas y certificación numérica por intervalos antes de presentar los valores como desigualdades rigurosas.
+
+**Endless Monkey Project / Relational Geometry Program**

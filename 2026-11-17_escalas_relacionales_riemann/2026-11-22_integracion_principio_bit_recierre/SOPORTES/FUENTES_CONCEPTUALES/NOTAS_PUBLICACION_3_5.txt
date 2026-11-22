@@ -1,0 +1,35 @@
+# Versión 3.5 — Herencia, granularidad y recierre
+
+**Fecha:** 21 de noviembre de 2026  
+**Identificador:** `v3.5` (propuesto; comprobar disponibilidad en el repositorio).  
+**Firma:** Endless Monkey Project / Relational Geometry Program
+
+La edición 3.5 integra la secuencia formal **referencia → herencia → granularidad → recierre → recuperación**, mediante definiciones, demostraciones de identidades y laboratorios reproducibles.
+
+## Resultados incluidos
+
+- Transporte racional entre normalizadores (O40) y resto algebraico decreciente en la familia O58.
+- Recierre exacto por Möbius al duplicar cualquier escala entera: `J_N(n)=-μ(n)` y `J_{2N}(n)=0` para `N<n≤2N`.
+- Identidades exactas de proyecciones, reflexión en Hilbert y certificado funcional de tres ventanas.
+- Proposición RA–01: **criterio suficiente** de cierre global mediante la divergencia de una suma de ganancias relativas certificadas con semillas explícitas. La equivalencia necesaria y suficiente corresponde a las **ganancias óptimas exactas**, siempre que el error permanezca positivo; se conserva un contraejemplo a la necesidad para una semilla prefijada.
+- Laboratorio A–G–01: resolución y coincidencia observacional de escalas armónicas para consultas declaradas.
+- Laboratorio S–RA–01: mediciones finitas, reproducibles en doble precisión, de las ganancias de la semilla de Möbius por octavas. El registro 1024→2048 informa aproximadamente 59,75 % de la mejora óptima, sujeto a certificación numérica rigurosa.
+
+## Alcance de la publicación
+
+La identidad de recierre de saltos y las identidades funcionales son exactas en sus contratos. Las regularidades numéricas de las octavas **no** son cotas universales. La transferencia del criterio RA–01 a toda la familia de Riemann requiere una estimación aritmética no circular, todavía abierta. No se anuncia demostración de RH ni GRH.
+
+## Reproducción
+
+Desde el directorio raíz del paquete:
+
+```bash
+python3 scripts/verificar_todo.py
+sha256sum -c MANIFIESTO_SHA256.txt
+```
+
+Los controles exactos usan la biblioteca estándar de Python. El laboratorio S–RA–01 utiliza `numpy`.
+
+## Conservación de procedencia
+
+Las seis fuentes documentales de `fuentes/` permanecen sin cambios de contenido. El historial interno de preparación v3–v5 se conserva en `integracion/REGISTRO_CAMBIOS.md` y los registros de ejecución anteriores, sin confundirlo con la versión pública **3.5**.

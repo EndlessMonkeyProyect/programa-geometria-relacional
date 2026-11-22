@@ -1,0 +1,14 @@
+VERIFICACION FINITA EXACTA
+bit_potencia_dos_mersenne: 4761
+factorizacion_Legendre: 898767
+herencia_potencias_de_dos: 2500
+mersenne_modulo_silencioso: 832
+orden_orbita_impar: 22800
+reflexion_y_defecto: 45149
+retorno_mersenne_periodico: 7500
+testigos_orbitas: 5
+transicion_por_primo: 898767
+v2_B_mersenne: 69
+TOTAL: 1881150
+ESTADO: TODOS LOS CONTROLES PASARON
+ALCANCE: identidades finitas; RH y cotas globales no evaluadas

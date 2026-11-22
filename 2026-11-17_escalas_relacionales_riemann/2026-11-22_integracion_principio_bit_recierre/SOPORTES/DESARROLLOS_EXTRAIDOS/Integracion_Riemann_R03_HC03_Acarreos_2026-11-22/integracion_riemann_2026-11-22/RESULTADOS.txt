@@ -1,0 +1,8 @@
+S_identidad: 30630
+condicionamiento: 399
+dependencia_3_9: 1
+legendre_carry: 30630
+periodos_coprimos: 158
+segunda_diferencia: 399
+ventanas: 602
+TOTAL: 62819 controles finitos exactos OK (M=400)

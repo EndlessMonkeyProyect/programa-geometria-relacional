@@ -1,0 +1,21 @@
+id,resultado,procedencia,contenido,estatuto,limite
+G01,Unidad-reflexion-diferencia,Nucleo Generativo Canonico / La reflexion,Ontologia operacional; formalizacion parcial,FUNDAMENTAL,La existencia fisica de la realizacion no se deriva
+G02,Bit relacional minimo,MF-9 / La reflexion,Realizacion binaria explicita,CONDICIONADO,No afirma unicidad ontologica de binariedad
+G03,Singularidad con informacion interna,El hilo / nota de 11-XI,Concepto de autorreferencia,CONCEPTUAL,No identificar con cero de zeta o singularidad fisica
+G04,Herencia y nueva referencia,MF-86 / CR-6 / Nucleo Canonico,Suficiencia para consultas especificadas,DEMOSTRADO_BAJO_CONTRATO,No equivale a observabilidad universal
+O01,M(2k)=M(k)(2^k+1),Mersenne mayo 2026,Factorizacion exacta,DEMOSTRADO,No selecciona por si sola un primo nuevo
+B01,Bit modular y transporte diadico,Acarreos; octavas 21-22 XI,Identidades exactas de piso,DEMOSTRADO,La trayectoria movil difiere del promedio periodico
+A01,Segunda diferencia de T,"HC-03, 21-XI",Delta^2 T(n)=Lambda(n)/n,DEMOSTRADO,No controla globalmente la suma
+A02,Correccion de reconstruccion <1/8,"HC-03, 21-XI",Resto de reconstruccion discreta,DEMOSTRADO,No es la discrepancia psi(x)-x
+H01,Herencia de potencias primas,"HC-01/02, 21-XI",Psi=theta+U; B(x)<24sqrt(x),DEMOSTRADO,Solo la componente definida
+M01,Recierre local de Mobius,"Compendio CME 21-XI, Prop. F",F_N(m)=-mu(m); F_2N(m)=0,DEMOSTRADO_ANTERIOR,La compensacion de prefijos sigue abierta
+F01,Involucion en soporte primo,Anexo coherencia 22-XI,T_p^2=id; mu(T_p n)=-mu(n),DEMOSTRADO,No es espejo optico CME-002
+F02,Identidad de frontera,Anexo coherencia 22-XI,"M(X)=suma sin p en (X/p,X]",DEMOSTRADO,El valor de frontera exige cancelacion
+C01,Coherencia normalizada,Anexo coherencia 22-XI,Cota equivalente clasica a RH,EQUIVALENCIA_CLASICA,No se demuestra la tasa
+R01,Proyeccion y unidad,RA-01 / CR-6,Q_j-Q_{j+1}=norma^2,DEMOSTRADO,Declara producto interno y espacios
+R02,Ganancia acumulada,RA-01 v5,Producto de (1-gamma_j),DEMOSTRADO_CONDICIONAL,Divergencia de ganancias no acreditada
+R03,Ensayo diez octavas,S-RA-01/20-XI/22-XI,Contraccion finita y desfase normalizado,ENSAYO_FINITO,Datos redondeados y doble precision
+R04,Varianza de fases fijas,Memoria y trayectoria 22-XI,Var(H_X)<=0.5psi(X)log X,DEMOSTRADO,No controla t=X
+R05,Cota global de primos,"Von Koch, RH",E(x)=O(sqrt(x)log^2 x),EQUIVALENCIA_CLASICA,Pendiente derivar incondicionalmente desde el programa
+R06,Cota global de Mobius,RH y M(x),O_eps(x^(1/2+eps)),EQUIVALENCIA_CLASICA,No se sigue del recierre local
+X01,Correspondencias Navier Stokes/P-NP/YM,O18/CR-6 / marco comun,Comparacion de contratos,CORRESPONDENCIA,No equivalencia de teoremas

@@ -1,0 +1,22 @@
+Criba hasta 2000000
+{
+  "N": 2000000,
+  "prime_count": 148933,
+  "prime_powers_count": 302,
+  "samples": 307,
+  "rational_checks": 1352,
+  "boundary_checks": 4,
+  "max_finite_identity_absolute_error": 3.0689499830316436e-09,
+  "theorem_constant": 23.203390620708795,
+  "max_observed_normalized_power_correction": 2.454487547792394,
+  "max_observed_G_over_sqrt": 0.17954557121407608,
+  "max_observed_abs_G_over_sqrt": 0.17954557121407608,
+  "G_terminal": -12.267800725996494,
+  "G_terminal_normalized": -0.008674645083597372,
+  "sampling_note": "Finite sample in [100, 1000000]; these maxima are not global mathematical bounds."
+}
+Frontera:
+{'x': 1000, 'z': 31, 'G': 1.53091, 'H': 75.00052, 'H_sqrt': 2.37172, 'theta_z': 26.02438, 'Bpow_finite': 76.56079, 'Bpow_over_sqrt': 2.42106, 'boundary_flux_approx': -1.56027, 'flux_over_sqrt': -0.04934, 'tail_bound': 0.00775, 'max_reconstruction_error': 0.0}
+{'x': 10000, 'z': 100, 'G': 1.74932, 'H': 217.60769, 'H_sqrt': 2.17608, 'theta_z': 83.72839, 'Bpow_finite': 233.30939, 'Bpow_over_sqrt': 2.33309, 'boundary_flux_approx': -15.7017, 'flux_over_sqrt': -0.15702, 'tail_bound': 0.07754, 'max_reconstruction_error': 0.0}
+{'x': 100000, 'z': 316, 'G': 3.67146, 'H': 693.922, 'H_sqrt': 2.19437, 'theta_z': 294.23786, 'Bpow_finite': 706.06575, 'Bpow_over_sqrt': 2.23278, 'boundary_flux_approx': -12.14376, 'flux_over_sqrt': -0.0384, 'tail_bound': 0.77543, 'max_reconstruction_error': 0.0}
+{'x': 1000000, 'z': 1000, 'G': 11.04044, 'H': 2126.80563, 'H_sqrt': 2.12681, 'theta_z': 956.24527, 'Bpow_finite': 2161.3987, 'Bpow_over_sqrt': 2.1614, 'boundary_flux_approx': -34.59306, 'flux_over_sqrt': -0.03459, 'tail_bound': 7.75433, 'max_reconstruction_error': 0.0}

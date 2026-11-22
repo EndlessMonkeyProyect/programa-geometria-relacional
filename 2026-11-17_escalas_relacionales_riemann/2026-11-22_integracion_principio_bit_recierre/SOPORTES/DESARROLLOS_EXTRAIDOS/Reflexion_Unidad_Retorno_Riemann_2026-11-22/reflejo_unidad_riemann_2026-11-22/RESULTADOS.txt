@@ -1,0 +1,2 @@
+Control: python3 verificar_reflejo_unidad.py
+OK: 102,711 finite exact checks (reflections, carry identities, inheritance, toy unit bound).

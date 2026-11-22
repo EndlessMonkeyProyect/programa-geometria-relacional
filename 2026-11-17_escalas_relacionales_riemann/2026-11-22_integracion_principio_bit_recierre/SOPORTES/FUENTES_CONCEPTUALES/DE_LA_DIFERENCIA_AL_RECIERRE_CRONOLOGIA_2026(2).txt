@@ -1,0 +1,335 @@
+<PARSED TEXT FOR PAGE: 1 / 6>
+                                De la diferencia al recierre
+    Cronología documental de conceptos, laboratorios y resultados · revisión al 15 de
+                                noviembre de 2026
+
+
+
+
+Índice
+   1. Hilo de construcción . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      1
+   2. Cronología de los antecedentes y formalizaciones . . . . . . . . . . . . . . . . . . . . . . . .          1
+   3. ROSI como antecedente operativo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         3
+   4. Laboratorios y operaciones que se repiten . . . . . . . . . . . . . . . . . . . . . . . . . . . .         4
+   5. Correspondencia propuesta para correlaciones de Wilson . . . . . . . . . . . . . . . . . . . .            5
+   6. Estado de los resultados y criterio para revisión . . . . . . . . . . . . . . . . . . . . . . . . . .     5
+   7. Fuentes y controles de procedencia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        6
+
+
+1. Hilo de construcción
+La secuencia conceptual investigada parte de una unidad sin distinciones acreditadas, introduce reflexión
+y comparación, reconoce diferencias, identifica relaciones que persisten ante nuevas consultas y estudia
+cuándo esas relaciones pueden representarse mediante una nueva referencia. La información se entiende
+como diferencia recuperable bajo un contrato declarado. La economía compara el costo de procedimientos
+que responden las mismas preguntas.
+El hilo puede escribirse:
+Unidad e indefinición → reflexión → comparación → distinción → relaciones → cierre propio →
+nueva referencia → herencia, novedad y recierre → contraste y costo.
+Los laboratorios de espejos, esferas, múltiplos, grafos, lenguaje y teorías gauge son realizaciones de pre-
+guntas de este hilo. Cada realización exige distinguir una definición, una identidad exacta, un resultado
+comprobado, una condición y una hipótesis física.
+Criterio documental. La fecha de elaboración de un texto no equivale necesariamente a su primera pu-
+blicación. Se indica cuando se conoce un registro público concreto y cuando una fecha solo procede del
+documento o de un inventario anterior. Esta cronología es una reconstrucción de hitos principales, no un
+censo exhaustivo de todos los archivos.
+
+
+2. Cronología de los antecedentes y formalizaciones
+
+                                                           Concepto u operación
+Fecha                       Hito documental                incorporada                Alcance de la fecha
+2025                        Antecedentes de                Relaciones, proyección e   Registros de Zenodo
+                            interferencia armónica y       interrogantes sobre        identificados en
+                            exploración fundacional        identidad y dimensión      informes posteriores;
+                                                                                      ciertos metadatos de la
+                                                                                      exploración v7 difieren
+                                                                                      entre campos
+
+
+
+
+                                                       1
+<PARSED TEXT FOR PAGE: 2 / 6>
+                                                       Concepto u operación
+Fecha                   Hito documental                incorporada                   Alcance de la fecha
+Febrero de 2026         Emergence of Dimensions        Exploración de                Fecha de registro citada
+                                                       dimensión como                en informe histórico; no
+                                                       estructura emergente          equivale a validación
+                                                                                     física
+Mayo de 2026            From Generative Drift to       Reducir ramas                 Fecha interna del
+                        Formal Residue (ROSI)          especulativas a               artículo metodológico
+                                                       variables, reglas, salidas,
+                                                       falsadores y residuo
+                                                       auditable
+25 de mayo de 2026      ROSI-CIR —                     Nodos, vínculos, rutas,       Documento de
+                        Computador de                  selección por                 integración
+                        Inferencia Relacional          cierre/tensión/residuo y      experimental fechado;
+                                                       rutas que generan             no acredita
+                                                       nuevas semillas               implementación total de
+                                                                                     la arquitectura
+                                                                                     propuesta
+Junio de 2026           ROS-1 Lite v1.1 y              Estados de resolución,        Experimento
+                        paquete experimental           economía de soporte,          documentado;
+                                                       novedad, discriminantes       coincidencia reportada
+                                                       faltantes y razones           de 20/21 casos, sin
+                                                       trazables                     inferir validez científica
+                                                                                     universal
+7 de junio de 2026      Rama Navier–Stokes,            Redistribución de             Registro Zenodo citado
+                        versión 1                      diferencias y modelos         en presentación
+                                                       de flujo                      histórica
+Septiembre de 2026      Ontología, interfaces y        Definiciones de               Ediciones internas y
+                        cristal semántico              referencia,                   archivos de trabajo
+                                                       determinante,
+                                                       distinción, conservación,
+                                                       información y lenguaje
+20 y 29 de septiembre   Repositorio en inglés y        Primeros hitos públicos       Commits históricos
+                        edición organizada en          recuperables;                 identificados; no
+                        español                        preservación y                atribuirles contenido de
+                                                       organización de las           versiones posteriores
+                                                       fuentes
+1–3 de octubre          Rama Yang–Mills formal         Composición no                Archivo fijado al commit
+                                                       abeliana, testigo 𝑄8 ,        del 3 de octubre;
+                                                       𝑆𝑈 (2), observable de         publicación de Reddit
+                                                       conmutación y                 del mismo día
+                                                       obligaciones de control
+                                                       espectral
+6 de octubre            MF-86                          Normalizador suficiente,      Fecha del documento,
+                                                       idempotente y                 con pruebas en
+                                                       composicional; cierre         contratos declarados
+                                                       reutilizable ante
+                                                       continuaciones
+8 de octubre            MF-103, MF-104,                Espectro de                   Documentos fechados;
+                        YM-R3A/YM-R3B, anexo           transferencia, residuo        demostraciones en
+                        de múltiplos                   transversal,                  modelos especificados y
+                                                       contraejemplo de              criterios físicos
+                                                       uniformidad, heren-           condicionados
+                                                       cia/profundidad/novedad
+                                                       aritméticas
+
+
+
+                                                   2
+<PARSED TEXT FOR PAGE: 3 / 6>
+                                                          Concepto u operación
+Fecha                       Hito documental               incorporada                Alcance de la fecha
+15–22 de octubre            Economía, comparación         Múltiplos comunes,         Formalizaciones y
+                            y convergencia;               diferencia heredada,       laboratorios con sus
+                            O58/O60, LAB-CONV             nodos como clases de       propias pruebas y
+                                                          caminos, firmas de         falsadores
+                                                          frontera y costo de
+                                                          reconocimiento
+20–23 de octubre            Imágenes Totales              Reintegración de           Ediciones de síntesis
+                            3.7–3.9                       laboratorio óptico,        que conservan alcances
+                                                          esferas, grafos,           diferentes
+                                                          dinámica SU(2), lenguaje
+                                                          y ROSI
+27 de octubre               Más allá de Yang–Mills        Familia de acciones        Complemento público
+                            (PR-01 a PR-07)               gauge, condición           específico con paquetes
+                                                          cuadrática para límite     reproducibles; no es la
+                                                          clásico, identidad del     primera aparición de YM
+                                                          defecto de Wilson y ruta
+                                                          condicional hacia el
+                                                          espectro
+29–30 de octubre            R-04, cubo de espejos y       Diamantes, ruedas          Certificados en clases
+                            3-coloración                  impares, grafos de         declaradas; no solución
+                                                          Mycielski, radio de        general de P frente a NP
+                                                          determinación y
+                                                          barreras de ventanas
+                                                          fijas
+1–4 de noviembre            G–01, reflexiones sobre       Correspondencias de        Rutas y resultados
+                            tiempo y gravedad;            modelos y solicitudes de   sectoriales; puentes
+                            comparación ETH               contraste de algoritmos    físicos y complejidad
+                                                          y estructuras              general abiertos
+10 de noviembre             Imagen Total 4.0              Recierre exacto en ℤ2 ,    Edición integradora con
+                                                          identidades de             identidades algebraicas
+                                                          caracteres 𝑆𝑈 (2),         y experimentos finitos
+                                                          continuidad de firmas y
+                                                          preservación bajo
+                                                          transformaciones
+12 de noviembre             ¿Cómo se cuantifica la        Contratos de consulta,     Formalización integrada
+                            información de un             rango de distinciones,     con ensayos declarados;
+                            sistema?                      entropías, actualización   distingue conceptos de
+                                                          de firmas y comparación    magnitudes físicas
+                                                          de costos
+15 de noviembre            Auditoría sobre                Contraste con los          Comparación
+                           Wilson-loop RG y               manuscritos de             documental; no
+                           revisión histórica             MathePhysics y retorno     identidad de teoremas
+                                                          a MF-86/MF-104,            ni prueba de brecha de
+                                                          múltiplos y                masa
+                                                          convergencia
+
+
+3. ROSI como antecedente operativo
+ROSI conecta el reconocimiento de relaciones con la disciplina para examinarlas. La rama CIR propone
+registrar la procedencia de un nodo, formular vínculos, abrir varias rutas, comparar cierre, residuo, tensión,
+evidencia y costo, y conservar como semilla una ruta que supera las comprobaciones declaradas.
+Este procedimiento anticipa tres preguntas que se vuelven explícitas en octubre:
+
+
+
+                                                      3
+<PARSED TEXT FOR PAGE: 4 / 6>
+  1. Cuándo confluyen varias rutas: coincidencia de valor, coincidencia de respuestas ante continuacio-
+     nes y posibilidad de sustituir una historia por un nodo no son lo mismo.
+  2. Cuándo sobrevive una referencia: el recierre es válido si preserva las respuestas requeridas y permite
+     continuar bajo el contrato; MF-86 lo formaliza mediante suficiencia, idempotencia y composición.
+  3. Qué costo tiene reconocer y sostener la equivalencia: una firma pequeña o una puntuación favo-
+     rable no prueban que construirla, verificarla y actualizarla sea económico.
+El documento de integración de ROSI-CIR, fechado el 25 de mayo, propuso además nodos lógicos como
+convergencia de varias rutas, ramas con estados (vivas, dormidas, fallidas, incorporadas) y memoria de linaje.
+Estas son reglas programáticas propuestas, no un teorema de física cuántica. El término «nodo lógico»
+allí designa una estructura clásica de inferencia; no establece un qubit físico.
+La aplicación transversal ROS-1 Lite identifica si una respuesta está resuelta, abierta, superpuesta o cerrada
+prematuramente; separa economía de soporte y novedad, y exige registrar los discriminantes ausentes. Los
+resultados reportados de calibración reflejan acuerdo en un conjunto de prueba, no validación universal del
+evaluador.
+
+                                     Formalización posterior o             Correspondencia comprobable y
+Operación en ROSI                    paralela                              límite
+Ruta que converge a un nodo          MF-97 y LAB-CONV: equivalencia        Exacta si las continuaciones y
+                                     por continuaciones                    preguntas del contrato preservan
+                                                                           las mismas respuestas; la
+                                                                           intuición de convergencia sola no
+                                                                           lo acredita
+Ruta estable que produce semilla     MF-86: normalizador suficiente,       Correspondencia de función;
+                                     idempotente y composicional           debe probarse que el operador
+                                                                           propuesto cumple esas
+                                                                           propiedades
+Residuo y discriminante faltante     MF-70, E9: pregunta nueva no          Falsador matemático disponible:
+                                     factorizable por firma previa         igual firma, diferente respuesta
+Historia, linaje y costo             MF-98 / CR-6: interfaz,               El costo depende de operaciones
+                                     reconocimiento, actualización y       y precisión declaradas; una
+                                     memoria                               puntuación heurística no equivale
+                                                                           a una cota asintótica
+Evaluación de rutas y evidencias     Auditorías PR, YM y ROS31             Control documental y de
+                                                                           reproducción; no sustituye
+                                                                           demostración física o matemática
+
+
+Lectura cronológica. ROSI no se añade como resultado derivado de los laboratorios de octubre: existe
+una línea metodológica anterior, documentada en mayo-junio, que luego encuentra realizaciones formales
+específicas en el programa. La relación es de continuidad de operaciones y preguntas; no se declara que un
+archivo de mayo ya contuviera las demostraciones de octubre.
+
+
+4. Laboratorios y operaciones que se repiten
+Espejos y pared móvil. Cambiar el observador o referencia modifica qué distinciones son accesibles; se
+estudian reflejos, órbitas, recierres y continuidad. Su utilidad es establecer casos de prueba geométricos y
+falsadores, sin inferir por analogía una ley de campo.
+Esferas y tetraedro. Una diferencia de orientación puede permanecer indefinida para una consulta y resol-
+verse al introducir otras relaciones. La simetría y el cambio de referencia importan; contar cuatro vértices
+no impone cuatro dimensiones físicas.
+Múltiplos, herencia y novedad. Para ciclos enteros conmensurables, la referencia común se calcula exacta-
+mente por el m.c.m. El factor de extensión distingue profundización de generadores heredados y aparición
+de generadores primos nuevos. Esta aritmética no constituye una ley universal de frecuencias o masas.
+
+
+
+                                                      4
+<PARSED TEXT FOR PAGE: 5 / 6>
+Grafos y cápsulas. Una subestructura puede ser sustituida por una firma de frontera cuando conserva las
+preguntas externas. El laboratorio de convergencias prueba igualdades sectoriales y exhibe contraejemplos:
+misma cardinalidad o mismas proyecciones por parejas pueden esconder incompatibilidades globales.
+Yang–Mills. Un defecto local de composición en 𝑆𝑈 (2) coincide con un defecto de Wilson para un lazo
+particular. La integración de variables internas produce observables efectivos sobre el borde. El resultado
+general sobre correlaciones y brecha requiere una dinámica física, una familia completa de observables y
+estimaciones uniformes al retirar reguladores; estos pasos no se obtienen solo de la normalización informa-
+cional.
+ROSI. Es el instrumento metodológico transversal: exige declarar la pregunta, el determinante, la fuente, el
+testigo, el costo y el falsador antes de clasificar una ruta como cerrada.
+
+
+5. Correspondencia propuesta para correlaciones de Wilson
+Sea 𝑉 la configuración de variables de borde y 𝑊 (𝐶) un lazo de Wilson. La integración interior permite
+considerar la respuesta condicional
+
+
+                                         𝐹𝐶 (𝑉 ) = 𝔼[𝑊 (𝐶) ∣ 𝑉 ].
+
+Una firma Φ(𝑉 ) conserva una familia declarada de respuestas cuando cada 𝐹𝐶 se factoriza por ella:
+
+
+                                          𝐹𝐶 (𝑉 ) = 𝐹̃𝐶 (Φ(𝑉 )).
+Si se piden correlaciones de múltiples lazos, la familia de consultas debe incluir productos como
+𝑊 (𝐶1 )𝑊 (𝐶2 ), no solo cada lazo individual. La equivalencia de firmas debe mantenerse para las
+continuaciones y nuevas integraciones permitidas.
+Esta formulación enlaza tres niveles: rutas y nodos de ROSI, recierre formal de MF-86/MF-97 y observables
+efectivos de una teoría gauge. La propiedad de factorizar es exacta una vez definida la clase de equivalencia,
+pero no garantiza una firma pequeña, una iteración económica, ni la contracción espectral del operador
+físico.
+El resultado de MF-104 sobre dos proyecciones 𝑃 , 𝑄 demuestra, en un modelo auxiliar, que una transver-
+salidad mínima 𝜂∗ > 0 da contracción del recierre alternado 𝑃 𝑄𝑃 ; también exhibe familias en que 𝜂∗ → 0.
+El traslado de esa desigualdad al Hamiltoniano Wilson 4D es una obligación abierta.
+
+
+6. Estado de los resultados y criterio para revisión
+
+Nivel                                Ejemplos documentados                 Estado
+Definición/operación                 referencia, determinante, firma,      Desarrollado bajo contratos
+                                     nodo, ruta, herencia, recierre        explícitos
+Identidad exacta                     m.c.m., composición 𝑆𝑈 (2),           Matemáticamente comprobable
+                                     cocientes de equivalencia,            en su dominio
+                                     integración de enlaces en
+                                     modelos definidos
+Ensayo reproducible                  ROS-1 Lite, laboratorios de grafos,   Verificable según paquete,
+                                     pruebas de recierre, scripts          entradas y versión; no prueba
+                                     gauge finitos                         generalización
+Criterio condicionado                contraste de interfaces y             Demostrable bajo hipótesis
+                                     contracción, correlaciones            indicadas
+                                     exponenciales ⇒ brecha
+                                     espectral
+
+
+
+
+                                                      5
+<PARSED TEXT FOR PAGE: 6 / 6>
+Nivel                                  Ejemplos documentados                  Estado
+Problemas abiertos                     complejidad general P/NP, teoría       No demostrado por las
+                                       Yang–Mills cuántica 4D con             construcciones citadas
+                                       brecha positiva, ley gravitatoria y
+                                       selección de escalas
+
+
+El valor de esta cronología es la trazabilidad del desarrollo: permite reconocer preguntas que existían an-
+tes de sus realizaciones matemáticas, conservar resultados sin ampliar artificialmente su alcance, y localizar
+qué relación nueva habría que demostrar para pasar de un laboratorio al siguiente.
+
+
+7. Fuentes y controles de procedencia
+ROSI y lenguaje
+   • ROSI_CIR_documento_integracion.docx — documento interno, 25-V-2026.
+   • paper_1_method_formal_residue.pdf — artículo metodológico, mayo de 2026.
+   • README.md, paquete ROS1_Lite_Experiment — v1.1, junio de 2026, con datos y esquemas del experimen-
+     to.
+   • Imagen_Total_3_9.pdf — 23-X-2026, capítulo 10, con descripción de ROSI, ejecuciones, auditoría y lími-
+     tes.
+   • COMO_SE_CUANTIFICA_LA_INFORMACION_FORMALIZACION_INTEGRADA_2026-11-12.md — formulación de in-
+     formación y costo.
+Normalización, convergencia y física
+   • MF86_AUTORREFERENCIA_IDEMPOTENCIA_NORMALIZACION_v0_1.md — 6-X-2026.
+   • MF103_UNIDAD_INVERSA_Y_AISLAMIENTO_ESPECTRAL.md y MF104_PESO_DE_NOVEDAD_Y_TRANSVERSALIDAD.md
+     — 8-X-2026.
+   • ANEXO_EXCESO_DE_CIERRE_Y_NOVEDAD_RELACIONAL.md — 8-X-2026.
+   • SUPLEMENTO_NODOS_DE_CONVERGENCIA_v0_1_2026-10-22.md, LAB_CONV_V2_NODOS_Y_FRONTERAS.md —
+     22-X-2026.
+   • RECIERRE_ENTRE_ESCALAS_Y_GAP_YANG_MILLS.md, AUDITORIA_YM_RELACIONAL_2026-10-08.md — 8-X-
+     2026.
+   • Beyond_Yang_Mills_2026-10-27_EN.pdf — 27-X-2026.
+Hitos públicos y versiones localizables
+   • Repositorio inglés (historial y rama formal)
+   • Yang–Mills tal como figuraba en commit del 3 de octubre
+   • Reddit, 3 de octubre — P vs NP and Yang–Mills
+   • Repositorio organizado y entregas
+   • Más allá de Yang–Mills — guía de verificación
+   • Imagen Total 4.0
+   • MathePhysics — 4D Wilson Loop RG
+Las fechas del documento original, de la incorporación a un repositorio y de su difusión pública se deben conservar
+en campos separados para cualquier evaluación histórica de precedencia.
+Endless Monkey Project
+Relational Geometry Program
+
+
+
+
+                                                        6

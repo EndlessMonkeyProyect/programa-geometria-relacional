@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## From reflection to arithmetic reclosure · November 22, 2026
+
+The [integration guide](2026-11-17_escalas_relacionales_riemann/2026-11-22_integracion_principio_bit_recierre/README.en.md) connects the relational bit, octaves, inheritance, and Möbius-sum reclosure through exact identities and finite laboratories. The [Spanish master document](2026-11-17_escalas_relacionales_riemann/2026-11-22_integracion_principio_bit_recierre/ACTUALIZACION_CONSOLIDADA_ES.md) separates the remaining global conditions and provides a results matrix and reproducible verifier.
+
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.

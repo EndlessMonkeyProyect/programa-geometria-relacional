@@ -1,0 +1,174 @@
+<PARSED TEXT FOR PAGE: 1 / 3>
+                                                                                          ANEXO TÉCNICO • 21 NOV 2026
+
+
+
+
+          Granularidad heredada y condición de cierre funcional
+                  Proposición de transferencia verificable hacia la vía de Riemann
+
+21 de noviembre de 2026 · Anexo técnico de formalización
+Continuidad: ROSI · O40/O58 · MF-86 · CR-6 · CME-002 · R–RH–01 · R–03 · Granularidad, referencia y agotamiento del
+resto (20-XI) · Resolución entre escalas (20-XI) · Herencia, visibilidad y cierre (21-XI).
+Estado: conservación e identidades de norma DEMOSTRADAS; transferencia desde la granularidad aritmética
+CONDICIONAL; cierre global en la familia de Riemann ABIERTO.
+
+Resultado en una frase
+La granularidad que se reduce con las escalas solo obliga al cierre funcional cuando controla el residuo en la
+norma del problema, con una regla de reconstrucción admisible y sin acumulación de diferencia invisible en las
+regiones no observadas. La desigualdad precisa ya puede formularse y demostrarse como implicación; su hipótesis
+cuantitativa no está acreditada para todas las escalas de la familia aritmética.
+
+1. Contratos que no deben confundirse
+Historia: procedencia y dependencias de las distinciones constituidas. Herencia: compatibilidad de una
+ampliación con las respuestas y relaciones anteriormente acreditadas. Granularidad: resolución de una familia de
+consultas respecto de una escala declarada. Cierre: capacidad de reconstruir el objetivo con el error exigido por un
+contrato; para la vía funcional a Riemann, ese error se mide en L²((0,∞),dx).
+
+O40 da el transporte exacto h/N = [h(M/N)]/M cuando N|M; O58 proporciona, para una familia particular, un
+grano algebraico g_N=1/N²→0. Ninguna de las dos identidades dice que el residuo funcional sea g_N ni que
+tenga una cota proporcional a ese valor. MF-86 y CR-6 prueban suficiencia para consultas declaradas; no afirman
+suficiencia de una interfaz para todas las consultas futuras ni para todas las combinaciones lineales requeridas en
+L².
+
+2. Proposición G — Puente exacto de granularidad, costo y cierre
+Sean
+
+
+
+
+Para cada escala k, elíjanse antes de evaluar el error un índice m_k, coeficientes reales c_{k,n} (en particular,
+se pueden restringir a índices libres de cuadrados) y un aproximante lineal admisible
+
+
+
+
+Sea N_k→∞ una escala normalizadora, g_k=N_k^{-2}, y sea R_k≥1 otra frontera de consulta. Entonces sin
+hipótesis adicional vale la desigualdad
+
+
+
+
+Demostración. En 0<x<g_k, se tiene 0≤f_n(x)<1 y 0≤χ(x)≤1, de donde |B_k(x)|≤1+L_k y la integral de
+esa ventana es como máximo g_k(1+L_k)². En x>R_k≥1, se tiene exactamente f_n(x)=1/(nx) y χ(x)=0, así que
+B_k(x)=−C_k/x y ∫_{R_k}^∞|B_k(x)|²dx=|C_k|²/R_k. La integral restante es la de la ventana intermedia.
+Sumando se obtiene (G1). □
+
+Condición suficiente G+. Si se construye una sucesión explícita de tales aproximantes, sin utilizar RH ni una
+afirmación equivalente en la construcción o en las cotas, para la cual
+
+                                                                   Endless Monkey Project / Relational Geometry Program   |   1
+<PARSED TEXT FOR PAGE: 2 / 3>
+                                                                                             ANEXO TÉCNICO • 21 NOV 2026
+
+
+
+
+entonces \|χ−a_k\|₂→0. Por optimalidad de la distancia a los espacios lineales W_m=span\{f_n:1≤n≤m\},
+se deduce dist(χ,W_m)→0 siempre que m_k→∞; mediante el criterio clásico de Nyman–Beurling/Báez-Duarte,
+se deduciría RH. Para aplicar la versión con índices libres de cuadrados, basta la dirección suficiente porque cada
+aproximante pertenece también a la familia entera del criterio clásico.
+
+Prueba de G+. Los tres términos no negativos del lado derecho de (G1) convergen a cero por (G2), luego también la
+norma cuadrática. Para cualquier m≥m_k, la distancia óptima en W_m no supera \|χ−a_k\|₂; m_k→∞
+concluye el límite completo. □
+
+Procedencia del teorema. (G1) es la especialización δ=g_k del certificado de tres ventanas, proposición V, del
+anexo Resolución entre escalas del 20-XI-2026. El aporte de esta formulación es explicitar la elección de grano
+heredado, el costo y el contrato de verificación, no atribuirse un nuevo resultado sobre RH.
+
+3. Segundo criterio: recuperación acumulativa por proyecciones
+Sea W_1⊆W_2⊆⋯ una cadena de subespacios aritméticos, P_j su proyector ortogonal, y Q_j=\|χ−P_jχ\|². La
+identidad exacta es
+
+
+
+
+Si se demuestra para esa familia aritmética y sin suponer RH una cota Δ_j≥η_j Q_j con 0≤η_j<1 y ∑_jη_j=∞,
+entonces Q_j→0 por iteración de Q_{j+1}≤(1−η_j)Q_j. Es otra condición suficiente. La existencia de primos
+nuevos, los cierres de focos aritméticos y la monotonía de Q_j no establecen por sí solos esa cota.
+
+En esta vía el criterio directamente comprobable en dimensión finita es la matriz de Gram: la ganancia exacta
+viene de proyectar el residuo contra las nuevas direcciones, no de contar cuántas referencias se agregaron. El
+siguiente resultado incondicional tendría que ser una cota inferior aritmética para esa ganancia, con
+cuantificadores uniformes y sin recurrir al resultado buscado.
+
+4. Falsador — Grano decreciente con residuo persistente
+En H₀=ℓ²(\{0,1,2,…\}), con base ortonormal (u_j), sea
+
+
+
+
+Cada ampliación hereda todas las referencias anteriores y añade una dirección; el grano g_m→0. Cada paso
+recupera incluso un componente positivo del objetivo, pero
+
+
+
+
+Demostración. La componente u₀/√2 es ortogonal a todo V_m; las restantes direcciones omitidas tienen energía
+∑_{j>m}2^{-(j+1)}=2^{-(m+1)}. □
+
+Por lo tanto, herencia + grano decreciente + ganancia estricta por paso no implican completitud global. Este
+ejemplo prueba una limitación lógica general; no refuta las propiedades especiales de las funciones f_n ni la
+hipótesis de Riemann.
+
+5. Relación con los laboratorios
+ Laboratorio o formalización            Resultado utilizable                       Límite de transferencia
+
+                                        Continuidad de relaciones y consultas;     No impone completitud para una
+ ROSI / historia–herencia
+                                        testigos de novedad                        consulta exterior al contrato
+
+
+                                                                      Endless Monkey Project / Relational Geometry Program   |   2
+<PARSED TEXT FOR PAGE: 3 / 3>
+                                                                                               ANEXO TÉCNICO • 21 NOV 2026
+
+
+ Laboratorio o formalización             Resultado utilizable                         Límite de transferencia
+                                         Transporte del normalizador; grano
+ O40 / O58 / esferas                                                                  No identifica el grano con el error L²
+                                         algebraico 1/N²
+                                         Criterios de cierre, repetición y apertura   No equivale sin morfismo a densidad
+ CME-002 / caja de espejos
+                                         para las reflexiones especificadas           funcional
+                                         Interfaz suficiente bajo consultas y         No garantiza decodificación lineal de
+ MF-86 / CR-6
+                                         continuaciones declaradas                    una consulta nueva
+                                         Puentes de primos, funciones
+                                                                                      Falta la cota global independiente para
+ R–RH–01 / R–03                          fraccionarias, proyecciones y matrices
+                                                                                      el límite
+                                         de Gram
+
+
+6. Veredicto y obligación matemática
+Demostrado: (G1), (G3), (G4) y las implicaciones condicionales expuestas. Recuperado de trabajos anteriores:
+granularidad del normalizador, herencia de respuestas, interfaces, correspondencias aritméticas y certificado de
+tres ventanas. Abierto: una regla explícita de coeficientes/continuación que cumpla (G2), o una cota universal de
+ganancia en (G3), para la familia relevante de funciones fraccionarias.
+
+Prueba a entregar para cerrar el problema: una construcción aritmética, independiente de RH, que controle
+simultáneamente la ventana x→0, la región intermedia y la cola, o que deduzca una desigualdad de recuperación
+acumulativa suficientemente fuerte para imponer Q_j→0. Las identidades de cierre geométrico y la desaparición
+de un grano algebraico no sustituyen esa estimación.
+
+Importante: la referencia normalizada «1» y la recta crítica Re(s)=1/2 cumplen funciones diferentes. La simetría
+entre s y 1−s identifica el eje crítico; no sitúa automáticamente todos los ceros allí. En el criterio funcional, lo que
+debe tender a cero es el error de reconstrucción, no la parte real de los ceros.
+
+Referencias de trazabilidad
+  1.     GRANULARIDAD_RESTO_Y_CIERRE_RH.md, 20-XI-2026, §§1–6.
+  2.     ANEXO_TECNICO_ES.md — Resolución entre escalas, granularidad y resto funcional, 20-XI-2026, §§2, 5–8
+         (proposición V, T y controles A/B).
+  3.     ANEXO_HERENCIA_VISIBILIDAD_CIERRE_2026-11-21.md, §§1–7.
+  4.     ANEXO_CR6_RH_CONSULTA_UNITARIA_Y_RESIDUO_2026-11-21.md, teoremas 1–4.
+  5.     CR6_Economia_Herencia_2026-10-16.pdf, CR-6.1–6.5.
+  6.     R_RH_01_Primos_Reflexion_y_Cierre_2026-11-01.md, contrato funcional y proyecciones.
+  7.     L. Báez-Duarte, A strengthening of the Nyman–Beurling criterion for the Riemann Hypothesis,
+         https://arxiv.org/abs/math/0202141 (criterio clásico; no prueba del presente programa).
+
+
+
+
+                                                                        Endless Monkey Project / Relational Geometry Program   |   3

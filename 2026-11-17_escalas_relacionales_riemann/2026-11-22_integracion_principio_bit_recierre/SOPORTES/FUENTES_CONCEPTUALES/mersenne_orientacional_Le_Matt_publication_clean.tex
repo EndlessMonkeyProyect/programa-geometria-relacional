@@ -1,0 +1,435 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  pdftitle={Incertidumbre orientacional y octavas relacionales en el espectro de Mersenne},
+  pdfauthor={Le Matt Ansatz Di Ego}
+}
+
+\newtheorem{postulado}{Postulado}
+\newtheorem{definicion}{Definición}
+\newtheorem{lema}{Lema}
+\newtheorem{proposicion}{Proposición}
+\newtheorem{teorema}{Teorema}
+\newtheorem{corolario}{Corolario}
+\newtheorem{observacion}{Observación}
+\newtheorem{advertencia}{Advertencia}
+
+\newcommand{\Meps}{M_{\varepsilon}}
+\newcommand{\Mk}{M_k}
+\newcommand{\Qk}{Q_k}
+\newcommand{\Ior}{I_{\mathrm{or}}}
+\newcommand{\N}{\mathbb{N}}
+
+\title{\textbf{Incertidumbre orientacional y octavas relacionales}\\
+en el espectro de Mersenne\\[2mm]
+\large Nota técnica complementaria al marco geométrico-relacional del radio del protón}
+
+\author{Le Matt Ansatz Di Ego\\
+\small Cartago, Costa Rica}
+
+\date{Versión técnica revisada --- \today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Esta nota formaliza dos estructuras aritméticas asociadas al espectro
+\[
+M_{\varepsilon}=2^{\varepsilon}-1,
+\]
+usado en el marco principal geométrico-relacional del radio del protón. 
+La primera estructura es la \emph{incertidumbre orientacional}: una vez postulado que cada copia de un primo repetido porta una orientación binaria interna, un factor $p^\alpha$ con $\alpha\geq2$ contiene exactamente $\alpha-1$ bits relacionales independientes. La segunda estructura es la \emph{octava relacional}
+\[
+M_{2k}=M_k(2^k+1),
+\]
+con factores coprimos. Esta identidad muestra que todo nivel par contiene, de manera aritméticamente exacta, una copia heredada del nivel $k$ y un cociente complementario.
+
+El resultado central de la nota es deliberadamente condicional: la aritmética es formal; la lectura armónica depende de los postulados interpretativos del marco. Bajo esta lectura, los niveles pares pueden entenderse como cierres relacionales de niveles previos, y la singularidad de $\varepsilon=6$ queda caracterizada como el primer y único caso de repetición pura para $\varepsilon\leq30$. La lista de valores con incertidumbre orientacional positiva en ese rango es:
+\[
+\varepsilon=6,12,18,20,21,24,30.
+\]
+\end{abstract}
+
+\clearpage
+\section{Estatus lógico de la nota}
+
+El propósito de esta nota no es introducir nuevas partículas, ni extender el marco a escalas astrofísicas, químicas o cosmológicas. Su objetivo es más modesto: aislar dos patrones aritméticos del espectro de Mersenne y precisar qué parte de esos patrones es demostrable y qué parte pertenece a la lectura física del programa.
+
+Usaremos tres etiquetas:
+
+\begin{description}[leftmargin=2.4cm,style=nextline]
+\item[Formal.]
+Consecuencia matemática directa de definiciones, factorizaciones o identidades aritméticas.
+
+\item[Armónica.]
+Interpretación interna del marco. Es consistente con sus postulados, pero no se deriva de la aritmética desnuda.
+
+\item[Programática.]
+Dirección de trabajo futuro. No se usa como premisa para demostrar resultados en esta nota.
+\end{description}
+
+\begin{advertencia}[Separación entre aritmética e interpretación]
+La identidad $M_{2k}=M_k(2^k+1)$ es un teorema elemental. La afirmación de que un nivel par representa una relación entre cierres previos es una lectura armónica. Del mismo modo, el conteo $\alpha-1$ bits es formal una vez introducida una orientación binaria por copia prima, pero esa orientación es un postulado del marco, no una consecuencia de la factorización por sí sola.
+\end{advertencia}
+
+\clearpage
+\section{Antecedentes mínimos}
+
+En el paper principal, la profundidad armónica $\varepsilon$ determina la fracción cuadrática proyectada
+\[
+r_V=2^{-\varepsilon},
+\]
+y la firma confinada se escribe como
+\[
+\frac{\omega_m^2}{\omega_V^2}=2^\varepsilon-1=M_\varepsilon.
+\]
+Los primeros términos relevantes son
+\[
+M_1=1,\quad
+M_2=3,\quad
+M_3=7,\quad
+M_4=15=3\cdot5,\quad
+M_5=31,\quad
+M_6=63=3^2\cdot7.
+\]
+
+En el marco principal se usan las asignaciones de bajo orden
+\[
+\varepsilon=2\leftrightarrow \text{electrón},\qquad
+\varepsilon=3\leftrightarrow \text{neutrón libre},\qquad
+\varepsilon=4\leftrightarrow \text{protón}.
+\]
+Esta nota no requiere asignar significado elemental a los niveles $\varepsilon\geq5$.
+
+\begin{observacion}[Convención de profundidad]
+En esta nota, $\varepsilon$ denota siempre la profundidad armónica cuadrática del cierre:
+\[
+r_V=\frac{\omega_V^2}{\omega_I^2}=2^{-\varepsilon},
+\qquad
+\omega_V=\omega_I\,2^{-\varepsilon/2}.
+\]
+Con esta convención, la firma de Mersenne queda fijada por
+\[
+M_\varepsilon=\frac{\omega_m^2}{\omega_V^2}=2^\varepsilon-1.
+\]
+Por tanto, $\varepsilon$ es el índice que debe conservarse al comparar esta nota con el documento principal del radio del protón.
+\end{observacion}
+
+\clearpage
+\section{Incertidumbre orientacional}
+
+\subsection{Idea}
+
+Supongamos que
+\[
+M_\varepsilon=\prod_{i=1}^{s}p_i^{\alpha_i}
+\]
+es la factorización prima de $M_\varepsilon$. Cuando todos los exponentes $\alpha_i$ son iguales a $1$, cada primo aparece una sola vez. En ese caso no hay ambigüedad interna entre copias del mismo modo.
+
+La situación cambia cuando aparece un factor $p^\alpha$ con $\alpha\geq2$. En la lectura armónica, esto significa que el mismo modo primo aparece repetido. Si cada copia porta una orientación binaria, entonces sólo importan las orientaciones relativas entre copias, no el signo absoluto de todas ellas a la vez.
+
+\subsection{Postulado orientacional}
+
+\begin{postulado}[Orientación binaria por copia prima]\label{post:orientacion}
+Para cada ocurrencia de un primo $p_i$ en la factorización de $M_\varepsilon$, se introduce una variable
+\[
+\sigma_i^{(j)}\in\{+1,-1\},
+\qquad
+j=1,\ldots,\alpha_i.
+\]
+Dos asignaciones que difieren por inversión simultánea de todas las copias del mismo primo se consideran físicamente equivalentes:
+\[
+\sigma_i^{(j)}\mapsto -\sigma_i^{(j)}
+\qquad
+\text{para todo }j.
+\]
+\end{postulado}
+
+\begin{definicion}[Relaciones orientacionales]\label{def:relaciones}
+Para un primo $p_i$ con multiplicidad $\alpha_i\geq2$, definimos las relaciones internas
+\[
+\eta_i^{(j,k)}=\sigma_i^{(j)}\sigma_i^{(k)}
+\in\{+1,-1\},
+\qquad
+1\leq j<k\leq\alpha_i.
+\]
+Estas relaciones son invariantes bajo inversión global de todas las copias de $p_i$.
+\end{definicion}
+
+\begin{teorema}[Conteo de grados orientacionales]\label{th:conteo}
+Bajo el Postulado~\ref{post:orientacion}, un factor $p_i^{\alpha_i}$ contribuye exactamente $\alpha_i-1$ bits orientacionales independientes. Por tanto,
+\[
+\boxed{\Ior(\varepsilon)=\sum_{i=1}^{s}(\alpha_i-1).}
+\]
+\end{teorema}
+
+\begin{proof}
+Para un primo fijo $p_i$ con multiplicidad $\alpha_i$, existen $2^{\alpha_i}$ asignaciones de signos. La inversión simultánea de todos los signos no cambia las relaciones internas $\eta_i^{(j,k)}$, de modo que las configuraciones distinguibles son
+\[
+\frac{2^{\alpha_i}}{2}=2^{\alpha_i-1}.
+\]
+La cantidad de información necesaria para distinguirlas es
+\[
+\log_2(2^{\alpha_i-1})=\alpha_i-1
+\]
+bits. Como las elecciones correspondientes a primos distintos son independientes en este modelo combinatorio, las contribuciones se suman.
+\end{proof}
+
+\begin{corolario}
+Si $M_\varepsilon$ es primo, entonces $\Ior(\varepsilon)=0$. Si $M_\varepsilon$ es compuesto pero libre de cuadrados, también $\Ior(\varepsilon)=0$. La incertidumbre orientacional aparece exactamente cuando $M_\varepsilon$ no es libre de cuadrados.
+\end{corolario}
+
+\clearpage
+\section{Casos de bajo orden}
+
+\begin{table}[h]
+\centering
+\caption{Primeros valores de $M_\varepsilon$ y su incertidumbre orientacional}
+\label{tab:primeros}
+\begin{tabular}{cclc}
+\toprule
+$\varepsilon$ & $M_\varepsilon$ & Factorización & $\Ior(\varepsilon)$\\
+\midrule
+1 & $1$ & unidad & $0$\\
+2 & $3$ & $3$ & $0$\\
+3 & $7$ & $7$ & $0$\\
+4 & $15$ & $3\cdot5$ & $0$\\
+5 & $31$ & $31$ & $0$\\
+6 & $63$ & $3^2\cdot7$ & $1$\\
+7 & $127$ & $127$ & $0$\\
+8 & $255$ & $3\cdot5\cdot17$ & $0$\\
+9 & $511$ & $7\cdot73$ & $0$\\
+10 & $1023$ & $3\cdot11\cdot31$ & $0$\\
+11 & $2047$ & $23\cdot89$ & $0$\\
+12 & $4095$ & $3^2\cdot5\cdot7\cdot13$ & $1$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Repetición pura}
+
+\begin{definicion}[Repetición pura hasta un nivel]\label{def:repeticion-pura}
+Diremos que un nivel $\varepsilon$ con $\Ior(\varepsilon)>0$ exhibe \emph{repetición pura} si todos los primos que aparecen en $M_\varepsilon$ ya habían aparecido en algún $M_j$ con $1<j<\varepsilon$.
+\end{definicion}
+
+\begin{proposicion}[Singularidad de $\varepsilon=6$ hasta $\varepsilon=30$]\label{prop:eps6}
+Para $1\leq\varepsilon\leq30$, los valores con incertidumbre orientacional positiva son
+\[
+\varepsilon=6,12,18,20,21,24,30.
+\]
+Entre ellos, sólo $\varepsilon=6$ es un caso de repetición pura.
+\end{proposicion}
+
+\begin{proof}
+La afirmación se verifica por factorización directa de los números $2^\varepsilon-1$ en el rango indicado. Los casos con exponentes repetidos son:
+\[
+\begin{array}{cclc}
+\varepsilon & M_\varepsilon & \text{factorización} & \Ior(\varepsilon)\\
+\hline
+6  & 63        & 3^2\cdot7 & 1\\
+12 & 4095      & 3^2\cdot5\cdot7\cdot13 & 1\\
+18 & 262143    & 3^3\cdot7\cdot19\cdot73 & 2\\
+20 & 1048575   & 3\cdot5^2\cdot11\cdot31\cdot41 & 1\\
+21 & 2097151   & 7^2\cdot127\cdot337 & 1\\
+24 & 16777215  & 3^2\cdot5\cdot7\cdot13\cdot17\cdot241 & 1\\
+30 & 1073741823& 3^2\cdot7\cdot11\cdot31\cdot151\cdot331 & 1.
+\end{array}
+\]
+En $\varepsilon=6$, los primos $3$ y $7$ ya habían aparecido en $M_2$ y $M_3$. En los demás casos aparece al menos un primo nuevo respecto de todos los niveles anteriores: $13$ en $\varepsilon=12$, $19$ en $\varepsilon=18$, $41$ en $\varepsilon=20$, $337$ en $\varepsilon=21$, $241$ en $\varepsilon=24$ y $331$ en $\varepsilon=30$. Por tanto, sólo $\varepsilon=6$ cumple la condición de repetición pura en este rango.
+\end{proof}
+
+\begin{observacion}[Control aritmético]
+El valor $\varepsilon=28$ no pertenece a la lista de niveles con incertidumbre orientacional positiva, pues
+\[
+M_{28}=2^{28}-1
+=3\cdot5\cdot13\cdot29\cdot43\cdot113\cdot127,
+\]
+es libre de cuadrados y por tanto tiene $\Ior(28)=0$. En cambio, $\varepsilon=21$ sí pertenece a la lista, ya que
+\[
+M_{21}=7^2\cdot127\cdot337,
+\]
+por lo que $\Ior(21)=1$.
+\end{observacion}
+
+\clearpage
+\section{Octavas relacionales}
+
+\subsection{Identidad fundamental}
+
+\begin{teorema}[Factorización de octava]\label{th:octava}
+Para todo $k\geq1$,
+\[
+\boxed{M_{2k}=M_kQ_k,\qquad Q_k=2^k+1.}
+\]
+Además,
+\[
+\gcd(M_k,Q_k)=1.
+\]
+\end{teorema}
+
+\begin{proof}
+La identidad se obtiene de la diferencia de cuadrados:
+\[
+M_{2k}=2^{2k}-1=(2^k-1)(2^k+1)=M_kQ_k.
+\]
+Si $d=\gcd(M_k,Q_k)$, entonces
+\[
+d\mid(Q_k-M_k)=2.
+\]
+Pero $M_k=2^k-1$ es impar para $k\geq1$, así que $d$ también es impar. El único divisor impar de $2$ es $1$. Luego $\gcd(M_k,Q_k)=1$.
+\end{proof}
+
+\subsection{Lectura armónica de la octava}
+
+La identidad formal dice que el nivel $2k$ contiene dos factores coprimos:
+\[
+M_{2k}=\underbrace{M_k}_{\text{firma heredada}}\,
+\underbrace{(2^k+1)}_{\text{cociente complementario}}.
+\]
+La lectura armónica propuesta es que el nivel $2k$ puede interpretarse como una relación entre un cierre previo $M_k$ y una información complementaria $Q_k$. Esta interpretación no afirma, por sí sola, que todo nivel par sea físicamente elemental ni que todo cociente $Q_k$ corresponda a una partícula.
+
+\begin{table}[h]
+\centering
+\caption{Primeras octavas relacionales}
+\label{tab:octavas}
+\begin{tabular}{ccllp{5.0cm}}
+\toprule
+$k$ & $M_k$ & $Q_k=2^k+1$ & $M_{2k}$ & Lectura armónica\\
+\midrule
+1 & $1$ & $3$ & $3$ & Primer cierre no trivial del modo unidad.\\
+2 & $3$ & $5$ & $15$ & El nivel $\varepsilon=4$ contiene la firma $M_2$ más un complemento coprimo.\\
+3 & $7$ & $9=3^2$ & $63$ & El nivel $\varepsilon=6$ combina la firma $M_3$ con una repetición cuadrática del primo $3$.\\
+4 & $15$ & $17$ & $255$ & El nivel $\varepsilon=8$ hereda el cierre compuesto $3\cdot5$ y añade un primo nuevo.\\
+5 & $31$ & $33=3\cdot11$ & $1023$ & El nivel $\varepsilon=10$ relaciona una firma prima con un complemento compuesto.\\
+6 & $63$ & $65=5\cdot13$ & $4095$ & El nivel $\varepsilon=12$ transporta la repetición de $\varepsilon=6$ y añade $13$.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\section{Compatibilidad con la orientación $\sigma$ del marco principal}
+
+En el paper principal, la doble cobertura introduce una orientación interna
+\[
+\sigma\in\{+1,-1\}
+\]
+asociada a la estructura espinorial mínima. La incertidumbre orientacional definida aquí también produce elecciones binarias, especialmente cuando aparece un factor cuadrático $p^2$.
+
+La similitud es formal, pero no debe confundirse con identidad conceptual. Por ejemplo, el protón en el marco principal corresponde a $\varepsilon=4$ y
+\[
+M_4=15=3\cdot5,
+\]
+por lo que
+\[
+\Ior(4)=0.
+\]
+Sin embargo, el protón sí posee la orientación $\sigma$ de la doble cobertura. Por tanto, la orientación espinorial del marco principal no se reduce a la repetición de primos. La relación correcta es más débil:
+
+\[
+\text{repetición prima} \Longrightarrow \text{posible bit orientacional adicional},
+\]
+pero
+\[
+\text{bit espinorial fundamental} \not\Longrightarrow \text{repetición prima}.
+\]
+
+\clearpage
+\section{Direcciones programáticas}
+
+Las líneas siguientes son naturales, pero no forman parte de los resultados demostrados en esta nota:
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Operador de proyección perpendicular.}
+Formalizar cuándo una incertidumbre orientacional no puede absorberse dentro de la geometría coherente $\mathcal{G}_\varepsilon$ y debe proyectarse como un grado de libertad externo.
+
+\item \textbf{Generalización a múltiplos superiores.}
+Para $q>2$,
+\[
+M_{qk}=M_k\sum_{j=0}^{q-1}2^{jk}.
+\]
+El cociente
+\[
+R_{q,k}=\sum_{j=0}^{q-1}2^{jk}
+\]
+podría clasificar relaciones de orden superior.
+
+\item \textbf{Crecimiento estadístico de $\Ior(\varepsilon)$.}
+Estudiar la frecuencia con la que $M_\varepsilon$ deja de ser libre de cuadrados y la distribución de multiplicidades primas en el espectro.
+
+\item \textbf{Criterio físico de admisibilidad.}
+Separar niveles aritméticamente interesantes de niveles físicamente admisibles. La aritmética sugiere candidatos; el marco físico debe imponer filtros adicionales.
+\end{enumerate}
+
+\clearpage
+\section{Conclusiones}
+
+Esta nota establece tres resultados principales:
+
+\begin{enumerate}[leftmargin=*]
+\item La incertidumbre orientacional no es una propiedad automática de los números de Mersenne: es una cantidad formal \emph{condicionada} al postulado de orientación binaria por copia prima.
+
+\item Bajo ese postulado, la fórmula
+\[
+\Ior(\varepsilon)=\sum_i(\alpha_i-1)
+\]
+mide exactamente el número de bits orientacionales independientes asociados a las multiplicidades primas de $M_\varepsilon$.
+
+\item La identidad
+\[
+M_{2k}=M_k(2^k+1)
+\]
+provee una estructura de octavas coprimas. La lectura armónica interpreta esos niveles pares como relaciones entre cierres previos y cocientes complementarios, pero esa lectura debe mantenerse separada del teorema aritmético.
+\end{enumerate}
+
+El caso $\varepsilon=6$ queda destacado sin exageración: no porque sea el único nivel con incertidumbre orientacional, sino porque es el primer y único caso de repetición pura hasta $\varepsilon=30$. En él,
+\[
+M_6=63=3^2\cdot7,
+\]
+y el único bit adicional proviene de la repetición del primo $3$.
+
+\section*{Reconocimientos}
+
+Se agradecen las discusiones técnicas y revisiones editoriales realizadas durante la preparación de esta nota, especialmente en la separación entre resultados formales, lecturas armónicas y direcciones programáticas.
+
+\begin{thebibliography}{9}
+
+\bibitem{paper-v56}
+Le Matt Ansatz Di Ego,
+``Derivación geométrica del radio de carga del protón desde una proyección relacional de un evento único,''
+manuscrito, 2026.
+
+\bibitem{emergence}
+Le Matt Ansatz Di Ego,
+``Relational Geometry and the Emergence of Dimensions: a minimal generative algebraic model,''
+manuscrito, 2026.
+
+\bibitem{HardyWright}
+G.~H.~Hardy and E.~M.~Wright,
+\emph{An Introduction to the Theory of Numbers},
+6th ed., Oxford University Press, 2008.
+
+\bibitem{Jaynes1957}
+E.~T.~Jaynes,
+``Information theory and statistical mechanics,''
+\emph{Physical Review} \textbf{106}, 620--630, 1957.
+
+\end{thebibliography}
+
+\end{document}
