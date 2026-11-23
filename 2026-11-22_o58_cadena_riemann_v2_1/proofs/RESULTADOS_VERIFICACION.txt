@@ -1,0 +1,9 @@
+Comprobación finita exacta: CORRECTA
+pell: 12
+divisibility: 98
+orbit: 25
+chain: 8
+mobius: 20
+local: 1485
+Total: 1648
+No es una prueba de RH ni de convergencia global en L2.

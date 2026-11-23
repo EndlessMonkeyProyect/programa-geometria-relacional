@@ -1,0 +1,483 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage[a4paper,left=28mm,right=28mm,top=26mm,bottom=25mm]{geometry}
+\usepackage{xcolor,booktabs,tabularx,array,longtable}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,babel}
+\usepackage{titlesec,enumitem,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=InkBlue,citecolor=InkBlue,urlcolor=InkBlue]{hyperref}
+\usepackage[capitalize,nameinlink,noabbrev]{cleveref}
+\definecolor{InkBlue}{HTML}{203A51}
+\definecolor{Copper}{HTML}{946C50}
+\definecolor{Graphite}{HTML}{27323B}
+\definecolor{Faint}{HTML}{687580}
+\definecolor{Pale}{HTML}{EFF3F5}
+\color{Graphite}
+\titleformat{\section}{\Large\bfseries\color{InkBlue}}{\thesection}{0.65em}{}
+\titleformat{\subsection}{\large\bfseries\color{InkBlue}}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{13pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{5pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=17pt,topsep=3pt,itemsep=2pt}
+\setlist[enumerate]{leftmargin=18pt,topsep=3pt,itemsep=3pt}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{Faint}\textsc{Herencia, semilla y recuperación funcional}}
+\fancyhead[R]{\footnotesize\color{Faint}22-XI-2026}
+\fancyfoot[L]{\footnotesize\color{Faint}Manuscrito para examen matemático}
+\fancyfoot[R]{\footnotesize\color{Faint}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\pagestyle{fancy}
+\newtheoremstyle{mine}{7pt}{7pt}{\normalfont}{} {\bfseries\color{InkBlue}}{.}{.5em}{}
+\theoremstyle{mine}
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{proposicion}[teorema]{Proposición}
+\newtheorem{corolario}[teorema]{Corolario}
+\theoremstyle{definition}
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{observacion}[teorema]{Observación}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\WW}{\mathcal W}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\rad}{\operatorname{rad}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\RH}{\mathrm{RH}}
+\hypersetup{pdftitle={De la semilla heredada a la recuperación funcional: demostración encadenada},pdfsubject={O58, Pell, Moebius, RA-01 y criterio de Riemann},pdfauthor={Endless Monkey Project / Relational Geometry Program}}
+\begin{document}
+\thispagestyle{empty}
+\vspace*{8mm}
+{\color{Copper}\rule{27mm}{1.7pt}}\\[14pt]
+{\sffamily\small\bfseries\color{Copper} ARTÍCULO DE INVESTIGACIÓN \;\textbar\; DEMOSTRACIÓN ENCADENADA}\\[11pt]
+{\fontsize{21}{25}\selectfont\bfseries\color{InkBlue}De la semilla heredada a la\\[3pt]recuperación funcional}\\[9pt]
+{\fontsize{12.5}{17}\selectfont\color{Faint}O58, recierres de Pell, referencias primas, inversión de Möbius y criterio de Riemann}\\[12pt]
+{\small 22 de noviembre de 2026 \;\textbar\; Versión 2.1 \;\textbar\; Corrección editorial y matemática}\\[10pt]
+\rule{\linewidth}{.55pt}
+\vspace{3pt}
+\textbf{Resumen.} Se presenta una cadena única de demostración que enlaza la unidad pendiente de O58 con una familia entera de Pell, la incorporación eventual de toda referencia prima, la reconstrucción exacta por inversión de Möbius y la recuperación funcional en el espacio de Nyman--Beurling. Se prueban: (i) la persistencia de la semilla unitaria bajo normalización; (ii) la cobertura de todo índice libre de cuadrados por una sola cadena hereditaria; (iii) la identidad de espacios funcionales generados por discrepancias de criba; (iv) la conservación exacta de la unidad de consulta y la contabilidad de las ganancias. Combinando estas pruebas con un teorema publicado de Báez-Duarte se obtiene una equivalencia precisa: la hipótesis de Riemann es equivalente a que la parte recuperada por esta cadena particular tienda a uno. Se demuestra, además, una barrera de transferencia: el resto geométrico $N^{-2}$ de O58 no puede acotar con un factor uniforme el error funcional cuadrático, a causa de una cota inferior clásica. La equivalencia organiza el problema y localiza su obligación cuantitativa; \textbf{no constituye una demostración incondicional de la hipótesis de Riemann}.
+
+\textbf{Palabras clave.} Semilla; referencia; herencia; información recuperable; Pell; Möbius; proyección; Nyman--Beurling; Riemann.
+\vspace{6pt}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+\tikzset{stage/.style={draw=InkBlue!75,rounded corners=2pt,align=center,text width=2.16cm,minimum height=1.04cm,fill=Pale,font=\footnotesize}}
+\node[stage] (a) at (1.15,0) {Unidad O58\\$N^2-2a^2=1$};
+\node[stage] (b) at (3.80,0) {Herencia Pell\\$a_k\mid a_{\ell k}$};
+\node[stage] (c) at (6.45,0) {Cobertura prima\\$S_j\nearrow$};
+\node[stage] (d) at (9.10,0) {Möbius\\$\WW_j=\operatorname{span}f_d$};
+\draw[->,thick,InkBlue] (a)--(b);
+\draw[->,thick,InkBlue] (b)--(c);
+\draw[->,thick,InkBlue] (c)--(d);
+\node[stage,text width=3.0cm,fill=white] (e) at (3.15,-1.65) {Consulta funcional\\$U_j+Q_j=1$};
+\node[stage,text width=3.0cm,fill=white] (f) at (7.25,-1.65) {Criterio clásico\\$U_j\to1\ \Longleftrightarrow\ \RH$};
+\draw[->,thick,InkBlue] (d.south) |- (f.east);
+\draw[->,thick,InkBlue] (e)--(f);
+\node[font=\scriptsize,text=Faint,align=center] at (5.2,-2.45) {Las flechas identifican deducciones exactas o teoremas externos indicados en el texto.};
+\end{tikzpicture}
+\end{center}
+\vfill
+\rule{\linewidth}{.5pt}
+{\footnotesize\color{Faint}Estatus: resultados aritméticos y funcionales demostrados bajo sus hipótesis; reducción a RH acreditada por criterio clásico; estimación global incondicional pendiente de prueba.}\newpage
+
+\section{Objeto y regla de lectura}
+
+La información se define operativamente como \emph{diferencia recuperable bajo un contrato de consulta}. La \emph{semilla} es una relación reconocible y heredable; la \emph{normalización} permite expresar su peso relativo a una escala, y el \emph{recierre} consolida respuestas admitidas sin exigir la enumeración del interior. La formulación de suficiencia, idempotencia y composición está documentada en MF--86 y CR--6 \cite{MF86,CR6}. Su significado es contextual: una consulta nueva puede requerir enriquecer la interfaz.
+
+Se distinguen en todo momento tres objetos:
+\begin{enumerate}
+\item La unidad primitiva $1$ en la relación entera O58, que se conserva al crear un estado nuevo.
+\item La fracción normalizada $1/N^2$ de esa unidad en una escala aritmética determinada.
+\item La consulta funcional $\chi$, normalizada por $\norm\chi_2^2=1$, y su porción reconstruida en una familia de referencias.
+\end{enumerate}
+
+La identidad de los tres significados no es premisa del trabajo. La cadena demostrará qué relaciones exactas existen y cuál traducción cuantitativa queda delimitada por una obstrucción.
+
+\section{La semilla entera y los recierres de O58}
+
+\begin{definicion}[Contrato O58 de dos canales]
+Un estado admisible es una terna $(a,b,N)$ de enteros positivos tal que
+\begin{equation}\label{eq:o58}
+  a^2+b^2+1=N^2.
+\end{equation}
+Su representación normalizada es
+\begin{equation}\label{eq:o58norm}
+\frac{a^2}{N^2}+\frac{b^2}{N^2}+\frac1{N^2}=1.
+\end{equation}
+La cantidad entera $1$ recibe el nombre de \emph{semilla pendiente}; el cociente $1/N^2$ es su representación relativa a $N$.
+\end{definicion}
+
+Esta formulación procede de O58 (21-X-2026), que distingue explícitamente la reescala pura de un nuevo cierre con resto bruto uno \cite{O58}.
+
+\begin{lema}[Continuidad de la semilla y diferencia de operaciones]\label{le:transport}
+Si $N\mid M$, $q=M/N$ y dos estados $(a,b,N)$, $(a',b',M)$ satisfacen \eqref{eq:o58}, entonces la vieja fracción pendiente se transporta como $1/N^2=q^2/M^2$, mientras la nueva semilla primitiva se presenta como $1/M^2$. Además,
+\begin{equation}\label{eq:trace}
+\frac{a'^2-q^2a^2}{M^2}+\frac{b'^2-q^2b^2}{M^2}+\frac{1-q^2}{M^2}=0.
+\end{equation}
+\end{lema}
+\begin{proof}
+La igualdad del transporte resulta de $M=qN$. Al restar las dos identidades normalizadas, una vez expresadas sobre el denominador común $M^2$, se obtiene \eqref{eq:trace}.
+\end{proof}
+
+\begin{lema}[Familia infinita de recierres Pell]\label{le:pell}
+Sea
+\begin{equation}\label{eq:pell}
+N_k+a_k\sqrt2=(3+2\sqrt2)^k,\qquad k\ge1.
+\end{equation}
+Entonces $N_k,a_k$ son enteros positivos, $N_k^2-2a_k^2=1$ y $N_k\to\infty$. Por tanto la rama simétrica $(a_k,a_k,N_k)$ satisface O58 y
+\begin{equation}\label{eq:seed-limit}
+\frac{2a_k^2}{N_k^2}=1-\frac1{N_k^2}\longrightarrow1,
+\qquad \frac1{N_k^2}\longrightarrow0.
+\end{equation}
+\end{lema}
+\begin{proof}
+La norma algebraica de $3+2\sqrt2$ es $9-8=1$ y la multiplicatividad de la norma implica $N_k^2-2a_k^2=1$. La recurrencia entera
+$N_{k+1}=3N_k+4a_k$, $a_{k+1}=2N_k+3a_k$ conserva positividad. Como $3+2\sqrt2>1$ y su conjugado es menor que uno, $N_k\to\infty$. Dividir por $N_k^2$ concluye.
+\end{proof}
+
+\begin{observacion}
+El límite \eqref{eq:seed-limit} \emph{no borra} el entero $1$ de la relación de cada etapa. Significa que su representación fraccionaria disminuye. El laboratorio O58 demuestra existencia de tales trayectorias, no una ley única que elija la siguiente rama. La continuidad también puede organizarse mediante la subfamilia $k\mapsto3k$, para la que $N_k\mid N_{3k}$ \cite{O58}.
+\end{observacion}
+
+\section{Herencia por Pell y cobertura de las referencias primas}
+
+La conexión aritmética ya fue desarrollada en la \emph{Auditoría de una sola escala} del 20-XI-2026 \cite{PellAudit}. Se reconstruye aquí en forma completa para asegurar que ninguna incorporación se postule.
+
+\begin{lema}[Divisibilidad heredada]\label{le:div}
+Para $k,\ell\ge1$, se tiene $a_k\mid a_{\ell k}$.
+\end{lema}
+\begin{proof}
+Escríbase $(N_k+a_k\sqrt2)^\ell=N_{\ell k}+a_{\ell k}\sqrt2$. La coordenada de $\sqrt2$ se obtiene sumando términos con potencias impares de $a_k\sqrt2$; cada término contiene el factor entero $a_k$.
+\end{proof}
+
+\begin{lema}[Aparición de cada primo]\label{le:orbit}
+Para cada primo $p$ existe un entero $1\le t_p\le p^2$ tal que $p\mid a_{t_p}$.
+\end{lema}
+\begin{proof}
+La actualización viene dada inequívocamente por
+\[
+\begin{pmatrix}N_{k+1}\\a_{k+1}\end{pmatrix}
+=\begin{pmatrix}3&4\\2&3\end{pmatrix}
+\begin{pmatrix}N_k\\a_k\end{pmatrix}.
+\]
+La matriz tiene determinante $1$ y define, módulo $p$, una aplicación lineal biyectiva de los $p^2$ vectores de $\mathbb F_p^2$. La órbita del vector $(1,0)$ vuelve a su inicio en un período positivo $t_p\le p^2$. La segunda coordenada de ese retorno es $a_{t_p}\equiv0\pmod p$.
+\end{proof}
+
+\begin{teorema}[Cobertura prima mediante una sola cadena]\label{th:coverage}
+Defínase
+\begin{equation}\label{eq:chain}
+\kappa_j=\operatorname{mcm}(1,\ldots,j),\quad A_j=a_{\kappa_j},
+\quad S_j=\{p:\ p\text{ primo},\ p\mid A_j\}.
+\end{equation}
+Entonces $A_j\mid A_{j+1}$, $S_j\subseteq S_{j+1}$ y cada entero positivo libre de cuadrados divide $A_j$ desde una etapa suficientemente grande.
+\end{teorema}
+\begin{proof}
+Como $\kappa_j\mid\kappa_{j+1}$, el lema \ref{le:div} da $A_j\mid A_{j+1}$. Dado $p$, el lema \ref{le:orbit} proporciona $t_p$; cuando $j\ge t_p$, se tiene $t_p\mid\kappa_j$, de modo que $a_{t_p}\mid A_j$ y $p\in S_j$. Para un entero libre de cuadrados $d$, basta tomar una etapa posterior a las de sus finitos factores primos.
+\end{proof}
+
+La conclusión prueba \emph{cobertura exacta}: no exige que las referencias tengan costo de construcción acotado por un polinomio, ni que su aparición sea simultánea en un tiempo físico determinado.
+
+\section{De la cobertura prima a las consultas de Möbius}
+
+Sea $\mu$ la función de Möbius y $\{x\}=x-\lfloor x\rfloor$. Defínase para $d\ge1$ la función de parte fraccionaria
+\begin{equation}\label{eq:fd}
+f_d(x)=\left\{\frac{1}{dx}\right\}
+=\frac{1}{dx}-\left\lfloor\frac{1}{dx}\right\rfloor,\qquad x>0.
+\end{equation}
+Así, $f_d(x)$ es la parte fraccionaria de $1/(dx)$, y las llaves representan precisamente la operación $y\mapsto y-\lfloor y\rfloor$, no una función definida por casos.
+Para un conjunto finito de primos $S$ se fija $M_S:=\prod_{p\in S}p$ (el producto de sus primos, con $M_\varnothing=1$). La discrepancia de criba correspondiente es
+\begin{equation}\label{eq:GS}
+G_S(x)=\sum_{d\mid M_S}\mu(d) f_d(x).
+\end{equation}
+La identidad \eqref{eq:GS} es la inversión exacta utilizada en R--03, sin asumir RH \cite{R03}.
+
+\begin{lema}[Inversión explícita en el retículo de subconjuntos]\label{le:mobinv}
+Para cada conjunto finito $S$ de primos se cumple
+\begin{equation}\label{eq:mobinv}
+\boxed{\quad f_{M_S}=\sum_{T\subseteq S}(-1)^{|T|}G_T.\quad}
+\end{equation}
+\end{lema}
+\begin{proof}
+Al sustituir \eqref{eq:GS} en el lado derecho, el coeficiente de $f_{M_U}$, para $U\subseteq S$, incluye expresamente el factor de Möbius\,:
+\[
+\mu(M_U)\sum_{\substack{T\subseteq S\\U\subseteq T}}(-1)^{|T|}
+=(-1)^{|U|}\sum_{\substack{T\subseteq S\\U\subseteq T}}(-1)^{|T|}.
+\]
+Como $\sum_{T:U\subseteq T\subseteq S}(-1)^{|T|}=(-1)^{|U|}(1-1)^{|S\setminus U|}$, el coeficiente vale cero si $U\ne S$ y uno si $U=S$.
+\end{proof}
+
+\begin{teorema}[Identificación exacta de la interfaz funcional]\label{th:spaces}
+Para cada $j$ defínase
+\begin{equation}\label{eq:W}
+\WW_j=\operatorname{span}\{G_T:T\subseteq S_j\}.
+\end{equation}
+Entonces
+\begin{equation}\label{eq:span}
+\boxed{\ \WW_j=\operatorname{span}\{f_d:d\mid A_j,\ \mu(d)\ne0\},\qquad
+\bigcup_{j\ge1}\WW_j=\operatorname{span}\{f_d:\mu(d)\ne0\}.\ }
+\end{equation}
+\end{teorema}
+\begin{proof}
+La fórmula \eqref{eq:GS} da una inclusión para cada etapa, y el lema \ref{le:mobinv} da la opuesta. El teorema \ref{th:coverage} asegura que todo índice libre de cuadrados aparece finalmente; como las interfaces están anidadas, cada combinación finita pertenece a alguna etapa.
+\end{proof}
+
+Se ha llegado a una familia de consultas funcionales por un camino aritmético completamente especificado. El paso siguiente examina el cierre en una norma concreta; la existencia de todas las referencias no fija de antemano el valor del límite.
+
+\section{Conservación de la unidad y recuperación funcional}
+
+Trabájese en $\HH=L^2((0,\infty),dx)$ con la consulta unitaria
+\begin{equation}\label{eq:target}
+\chi(x)=\mathbf1_{(0,1]}(x),\qquad \norm\chi_2^2=1.
+\end{equation}
+Cada $f_d$ de \eqref{eq:fd} pertenece a $\HH$: su parte fraccionaria pertenece a $[0,1)$ para $0<x\le1/d$ y coincide con $1/(dx)$ cuando $x>1/d$, pues entonces $0<1/(dx)<1$. Su cuadrado es integrable en ambos intervalos. Sean $P_j$ las proyecciones ortogonales sobre $\WW_j$, y defínanse
+\begin{equation}\label{eq:UQ}
+U_j=\norm{P_j\chi}_2^2,\qquad Q_j=\norm{\chi-P_j\chi}_2^2,
+\qquad\Delta_j=\norm{(P_{j+1}-P_j)\chi}_2^2.
+\end{equation}
+
+\begin{teorema}[Contabilidad exacta de recuperación]\label{th:conserv}
+Para toda etapa $j$ y todo $J>j$ se cumple
+\begin{align}\label{eq:budget}
+\boxed{U_j+Q_j=1,}\qquad
+\boxed{U_{j+1}-U_j=Q_j-Q_{j+1}=\Delta_j\ge0,}
+\end{align}
+\begin{equation}\label{eq:tel}
+\boxed{\quad Q_j=\sum_{k=j}^{J-1}\Delta_k+Q_J.\quad}
+\end{equation}
+Además, la consulta $\mathcal C_\chi(h)=\int_0^1h(x)\,dx$ recupera exactamente el residuo óptimo:
+\begin{equation}\label{eq:one-query}
+\boxed{\quad \mathcal C_\chi(\chi-P_j\chi)=Q_j.\quad}
+\end{equation}
+\end{teorema}
+\begin{proof}
+La descomposición $\chi=P_j\chi+(\chi-P_j\chi)$ es ortogonal; Pitágoras prueba la primera igualdad. Dado que $\WW_j\subseteq\WW_{j+1}$, la diferencia de proyecciones es el proyector sobre $\WW_{j+1}\cap\WW_j^\perp$. Las dos descomposiciones ortogonales resultantes prueban la segunda igualdad; sumarlas prueba \eqref{eq:tel}. Finalmente, el residuo $r_j=\chi-P_j\chi$ es perpendicular a $P_j\chi$, y
+$\inner{r_j}{\chi}=\inner{r_j}{r_j}=Q_j$. Como $\chi=\mathbf 1_{(0,1]}$, el producto escalar es la integral de \eqref{eq:one-query}.
+\end{proof}
+
+\begin{corolario}[Límite exacto de la recuperación]\label{co:closure}
+Sea
+\[
+\WW_\infty:=\overline{\bigcup_{j\ge1}\WW_j}^{\,\norm{\cdot}_2}
+\]
+la clausura en $L^2((0,\infty),dx)$ de la unión creciente de interfaces. Entonces
+\begin{equation}\label{eq:limit}
+\boxed{\ \lim_{j\to\infty} Q_j=\dist(\chi,\WW_\infty)^2,\qquad
+\lim_{j\to\infty}U_j=1-\dist(\chi,\WW_\infty)^2.\ }
+\end{equation}
+En particular, $U_j\to1$ si y solo si $\chi\in\WW_\infty$.
+\end{corolario}
+\begin{proof}
+Las proyecciones sobre subespacios cerrados crecientes convergen fuertemente a la proyección sobre el cierre de su unión. Aplicar esta propiedad a $\chi$ y usar \eqref{eq:budget}.
+\end{proof}
+
+\begin{observacion}[El uno conservado]
+En O58 la semilla bruta $1$ permanece mientras la representación $1/N^2$ se transforma. En $\HH$ el objeto fijo es $\chi$ y su \emph{norma} es uno. Recuperación y diferencia pendiente suman uno, pero ello no demuestra que una de ellas deba alcanzar su valor extremo. La conexión es una arquitectura común de conservación y consulta, no la igualdad entre $Q_j$ y $N_j^{-2}$.
+\end{observacion}
+
+\section{El criterio de Riemann dentro de esta cadena}
+
+La forma discreta del criterio de Nyman--Beurling, demostrada por Báez-Duarte, afirma que RH es equivalente a que $\chi$ pertenezca al cierre del espacio generado por $f_n$ con índices enteros $n\ge1$ \cite{BD2003}. El siguiente argumento también justifica la restricción a índices libres de cuadrados usada en R--03.
+
+\begin{lema}[Criterio restringido a índices libres de cuadrados]\label{le:squarefree}
+Se tiene
+\begin{equation}\label{eq:sfcrit}
+\RH\quad\Longleftrightarrow\quad
+\chi\in\overline{\operatorname{span}\{f_d:\mu(d)\ne0\}}^{\,L^2}.
+\end{equation}
+\end{lema}
+\begin{proof}
+La implicación hacia RH sigue por inclusión del espacio restringido en el de todos los índices y el teorema clásico. Recíprocamente, el Teorema 2 de Báez-Duarte (2003) construye, \emph{bajo RH}, aproximantes finitos a $-\chi$ de la forma
+\(
+\sum_{n\le X}\mu(n)\exp[-c\log n/\log\log X] f_n
+\)
+con error que tiende a cero en $L^2$. Como $\mu(n)=0$ para $n$ con un factor cuadrado, cada aproximante utiliza únicamente índices libres de cuadrados. Cambiar el signo es legítimo porque el espacio generado es lineal: si $-\chi$ pertenece al cierre, también pertenece $\chi$. Así se obtiene \eqref{eq:sfcrit}. Este paso emplea un resultado externo publicado, no una nueva estimación \cite[Teorema~2]{BD2003}.
+\end{proof}
+
+\begin{teorema}[Cadena O58--Möbius--Riemann: caracterización precisa]\label{th:main}
+Para la familia $\WW_j$ de \eqref{eq:W}, construida desde la cadena Pell de O58, se verifica
+\begin{equation}\label{eq:main}
+\boxed{\qquad \RH\ \Longleftrightarrow\ \lim_{j\to\infty}Q_j=0
+\ \Longleftrightarrow\ \lim_{j\to\infty}U_j=1.\qquad}
+\end{equation}
+\end{teorema}
+\begin{proof}
+El teorema \ref{th:spaces} identifica la unión de las $\WW_j$ con el espacio algebraico generado por los $f_d$ libres de cuadrados. El corolario \ref{co:closure} caracteriza el límite $Q_j$ por el cierre de esa unión. El lema \ref{le:squarefree} identifica esa pertenencia con RH. Finalmente \eqref{eq:budget} traduce $Q_j\to0$ en $U_j\to1$.
+\end{proof}
+
+\textbf{Lectura lógica.} La demostración de \cref{th:main} es completa como \emph{equivalencia}; una equivalencia con RH no decide cuál de sus dos lados es verdadero. En particular, la existencia de todas las referencias y la igualdad $U_j+Q_j=1$ no implican $U_j\to1$ sin un control adicional específico de la familia.
+
+\subsection{Una condición suficiente de recierre acumulado}
+
+\begin{proposicion}[Certificado suficiente RA--01]\label{pr:RA}
+Supóngase que para cada $j$ con $Q_j>0$ existe una cantidad $\eta_j\in[0,1)$ tal que
+\begin{equation}\label{eq:contract}
+\Delta_j\ge\eta_j Q_j,\qquad\sum_j\eta_j=\infty.
+\end{equation}
+Entonces $U_j\to1$ y, por \cref{th:main}, vale RH.
+\end{proposicion}
+\begin{proof}
+La identidad \eqref{eq:budget} da $Q_{j+1}\le (1-\eta_j)Q_j$. Por iteración,
+$Q_J\le Q_1\prod_{k=1}^{J-1}(1-\eta_k)\le Q_1\exp\bigl(-\sum_{k=1}^{J-1}\eta_k\bigr)\to0$. Si algún $Q_j=0$, el cierre ya se alcanzó.
+\end{proof}
+
+Con semillas funcionales concretas, las desigualdades geométricas certifican ganancias inferiores, pero la divergencia del certificado necesita prueba para \emph{todas} las etapas y no solo observación finita. RA--01 v5 ya documenta esta distinción entre ganancia óptima y semilla escogida \cite{RA01Audit}.
+
+\section{Dos pruebas de control que delimitan la transferencia}
+
+\subsection{La unidad geométrica no acota el resto funcional}
+
+Sea $D_j=\rad(A_j)=\prod_{p\mid A_j}p$. La familia $\WW_j$ está incluida en $\operatorname{span}\{f_n:1\le n\le D_j\}$. Denótese por
+$d(D)=\dist\bigl(\chi,\operatorname{span}\{f_n:1\le n\le D\}\bigr)$
+la distancia óptima para todos los índices hasta $D$. La cota clásica de Báez-Duarte--Balazard--Landreau--Saias y Burnol proporciona, para $D$ suficientemente grande, una constante $C_0>0$ tal que
+\[
+d(D)\ge\frac{C_0}{\sqrt{\log D}}.
+\]
+Como el espacio de referencia de $Q_j$ es menor, $Q_j$ es el \emph{cuadrado} de una distancia y se obtiene
+\begin{equation}\label{eq:burnol}
+Q_j=\dist(\chi,\WW_j)^2\ge d(D_j)^2\ge \frac{c}{\log D_j},\qquad c=C_0^2>0.
+\end{equation}
+La fuente primaria registra la cota inferior de distancia (no de distancia cuadrática) \cite[§1, ec.~(1.2)]{BD2003}; la mejora de la constante se atribuye a Burnol \cite{Burnol}.
+
+\begin{teorema}[Obstrucción de transferencia uniforme]\label{th:nogo}
+No existe una constante $C>0$ tal que, para todo $j$ suficientemente grande,
+\begin{equation}\label{eq:no}\boxed{Q_j\le C N_{\kappa_j}^{-2}.}\end{equation}
+Más aún, si $T_j:\RR\to\HH$ es lineal y $T_j(1/N_{\kappa_j})=\chi-P_j\chi$, entonces $\norm{T_j}_{\rm op}\to\infty$.
+\end{teorema}
+\begin{proof}
+Se tiene $D_j\le A_j=a_{\kappa_j}<N_{\kappa_j}$, de modo que $\log D_j\le\log N_{\kappa_j}$. Como $N_{\kappa_j}\to\infty$, la cota \eqref{eq:burnol} da
+\(
+Q_jN_{\kappa_j}^2\ge cN_{\kappa_j}^2/\log N_{\kappa_j}\to\infty,
+\)
+contradiciendo \eqref{eq:no}. Para la segunda afirmación, por definición de norma del operador,
+\(
+\norm{T_j}_{\rm op}\ge N_{\kappa_j}\norm{\chi-P_j\chi}_2=N_{\kappa_j}\sqrt{Q_j}
+\to\infty.
+\)
+\end{proof}
+
+\textbf{Consecuencia.} La conservación semántica de una semilla puede transportarse entre contratos; su \emph{tasa} de cierre no puede copiarse del cociente geométrico a la norma funcional mediante una aplicación lineal uniformemente acotada que identifique esos dos residuos. Esto no descarta un puente distinto con estimaciones aritméticas adecuadas.
+
+\subsection{Una consulta que detecta obstrucciones espectrales}
+
+Para $s$ con $\sigma=\Re(s)\in(1/2,1)$, considérese la consulta continua
+\begin{equation}\label{eq:lambda}
+\Lambda_s(h)=\int_0^1h(x)x^{s-1}\,dx
++\frac{1}{1-s}\int_1^\infty\frac{h(x)}{x}\,dx.
+\end{equation}
+Su norma como funcional de $L^2$ es
+\begin{equation}\label{eq:lnorm}
+\norm{\Lambda_s}=\left(\frac1{2\sigma-1}+\frac1{|1-s|^2}\right)^{1/2},
+\end{equation}
+porque sus dos núcleos tienen soportes disjuntos.
+
+\begin{lema}[Certificado de cero exterior]\label{le:zeros}
+Para $\sigma\in(1/2,1)$ se cumple
+\begin{equation}\label{eq:melldetect}
+\Lambda_s(f_n)=-\frac{\zeta(s)}{s n^s},\qquad\Lambda_s(\chi)=\frac1s.
+\end{equation}
+Si $\zeta(s_0)=0$ con $\sigma_0=\Re(s_0)>1/2$, entonces para todo $j$,
+\begin{equation}\label{eq:zerobound}
+\boxed{\quad Q_j\ge \frac{1}{|s_0|^2\left[(2\sigma_0-1)^{-1}+|1-s_0|^{-2}\right]}>0.\quad}
+\end{equation}
+\end{lema}
+\begin{proof}
+La identidad clásica de Mellin para $f_n$ es
+$\int_0^\infty f_n(x)x^{s-1}\,dx=-\zeta(s)/(sn^s)$ para $0<\sigma<1$. Para $x>1$, $f_n(x)=1/(nx)$; la segunda integral de \eqref{eq:lambda} coincide exactamente con la cola de Mellin $\int_1^\infty f_n(x)x^{s-1}dx$. Para $\chi$ el valor es $1/s$. Si $\zeta(s_0)=0$, el funcional anula toda $\WW_j$, así que $|\Lambda_{s_0}(\chi-P_j\chi)|=1/|s_0|$. La cota por la norma del funcional y \eqref{eq:lnorm} prueban \eqref{eq:zerobound}.
+\end{proof}
+
+Esta prueba recupera la dirección de obstrucción del criterio clásico con una consulta explícita. El certificado no demuestra que exista un cero exterior ni su ausencia. Identifica qué diferencia permanecería visible si existiera.
+
+\section{Laboratorios, procedencia y resultados contrastados}
+
+La cadena algebraica está probada sin experimentos. Los laboratorios documentados se utilizan como controles de implementación y como ilustración de magnitudes funcionales a escalas finitas, no como sustitutos de cuantificadores infinitos.
+
+\begin{table}[ht]
+\centering\small
+\caption{Estados exactos de O58 en la familia de Pell.}
+\begin{tabular}{@{}r r r l@{}}\toprule
+$k$&$a_k$&$N_k$&Identidad $2a_k^2+1=N_k^2$\\\midrule
+1&2&3&$8+1=9$\\
+2&12&17&$288+1=289$\\
+3&70&99&$9800+1=9801$\\
+4&408&577&$332928+1=332929$\\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\caption{Contrastes funcionales anteriores; valores de doble precisión y no certificados asintóticos.}
+\begin{tabular}{@{}l r r l@{}}\toprule
+Etapa&$Q$ antes&$Q$ después&Ganancia relativa aprox.\\\midrule
+$256\to512$&$0.008464$&$0.007578$&$10.46\%$\\
+$512\to1024$&$0.007578$&$0.006671$&$11.98\%$\\
+$1024\to2048$&$0.006671$&$0.006227$&$6.64\%$\\\bottomrule
+\end{tabular}
+\end{table}
+
+El script anexo \texttt{VERIFICAR\_CADENA\_O58\_MOBIUS.py} ejecuta 1.648 controles finitos exactos (Pell, divisibilidad, órbitas módulo primos, anidamiento, inversión de Möbius y recierre aritmético local) sin bibliotecas externas. Estos controles son auxiliares de las pruebas escritas y no comprueban una afirmación asintótica.
+
+En el laboratorio diádico S--RA--01, la última transición infringe el perfil rígido ensayado de ganancia relativa $(Q_j-Q_{j+1})/Q_j\ge1/(j+2)$, sin invalidar la identidad geométrica \eqref{eq:budget}. Los valores pertenecen a esa familia diádica y \emph{no} son mediciones de los espacios $\WW_j$ indexados por Pell en este artículo. Proceden de la nota de incertidumbre por octavas y la auditoría RA--01; su evaluación no es un cálculo nuevo certificado con intervalos \cite{Incert,RA01Audit}.
+
+\begin{table}[ht]
+\centering\footnotesize
+\caption{Trazabilidad y nivel de demostración de la cadena.}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}p{.21\linewidth}X p{.22\linewidth}@{}}\toprule
+Fuente / fecha&Resultado utilizado&Estatus\\\midrule
+MF--86; CR--6, oct. 2026&Suficiencia de interfaces y recierre contextual&Demostrado en contratos dados\\
+O58, 21-X-2026&Semilla primitiva, balance normalizado, rama Pell&Identidades exactas\\
+G--01; auditoría Pell, 20-XI-2026&Divisibilidad y cobertura de todos los primos&Prueba entera exacta\\
+R--03, 18-XI-2026&Möbius e inversión de interfaces finitas&Identidades exactas\\
+RA--01; anexos 21-XI-2026&Unidad funcional, consulta y ganancia telescópica&Geometría de Hilbert exacta\\
+Báez-Duarte, 2003&Criterio funcional y aproximantes libres de cuadrados&Teorema externo clásico\\
+Burnol, 2002&Obstrucción de tasa demasiado rápida&Cota externa clásica\\
+Cierre global de esta cadena&$U_j\to1$ para toda etapa relevante&Equivalente a RH; abierto\\\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Conclusión demostrativa y solicitud de revisión}
+
+La demostración hilada fija una cadena verificable:
+\[
+\boxed{\begin{gathered}
+\text{unidad pendiente en O58}\ \longrightarrow\ \text{recierres de Pell}\ \\
+\longrightarrow\ \text{cobertura de primos}\ \longrightarrow\ \text{inversión de Möbius}\\
+\longrightarrow\ \text{interfaz funcional creciente}\ \longrightarrow\ U_j+Q_j=1.
+\end{gathered}}
+\]
+
+La articulación demuestra existencia, herencia, reconstrucción y contabilidad exactas. El Lema 6.1 y el Teorema 6.2 establecen una equivalencia que utiliza un teorema publicado: la recuperación completa $U_j\to1$ es equivalente a RH; la obstrucción de \cref{th:nogo} impide confundir la tasa geométrica $1/N^2$ con la tasa funcional. En consecuencia, la cadena produce \emph{una caracterización y una localización precisa de la condición decisiva}, no una prueba incondicional de RH.
+
+\textbf{Se solicita revisión matemática sobre cuatro puntos verificables:}
+\begin{enumerate}
+\item Corrección y suficiencia de los lemas de Pell y de la igualdad de interfaces del Teorema~\ref{th:spaces}.
+\item Justificación bibliográfica del Lema~\ref{le:squarefree} desde el Teorema 2 de Báez-Duarte, y de la equivalencia completa del Teorema~\ref{th:main}, incluyendo las hipótesis de aproximación.
+\item Aplicabilidad de la cota inferior usada en el Teorema~\ref{th:nogo} a la cadena $D_j$, y alcance de la obstrucción para posibles mapas de transferencia.
+\item Existencia de una condición aritmética de recuperación acumulada que se derive de las relaciones presentes, sin introducir RH ni una hipótesis equivalente como premisa.
+\end{enumerate}
+
+Se invita a aportar una demostración, una corrección o un contraejemplo localizado, indicando la fórmula, la hipótesis y la sección afectadas. La evaluación de originalidad bibliográfica de cada articulación es distinta de la verificación de validez formal.
+
+\section*{Procedencia documental}
+\begin{thebibliography}{99}\setlength{\itemsep}{3pt}
+\bibitem{MF86} \textit{MF--86: Autorreferencia consolidada e idempotencia de la nueva referencia}. Archivo de formalización, 6-X-2026.
+\bibitem{CR6} \textit{CR--6: Economía de la herencia: interfaces suficientes, escala y costo del recierre}. Archivo de formalización, 16-X-2026.
+\bibitem{O58} \textit{O58: La estela de escalas: dos cuadrados, múltiplo normalizador y unidad pendiente}. Secciones 1--6, 21-X-2026.
+\bibitem{PellAudit} \textit{Una sola escala: del recierre de Pell a la herencia prima y el criterio de Riemann}. Auditoría del 20-XI-2026.
+\bibitem{R03} \textit{R--03: Herencia espectral, normalización y ubicación de los ceros}, v0.4, 18-XI-2026. \href{https://github.com/EndlessMonkeyProyect/programa-geometria-relacional}{Repositorio de consulta}.
+\bibitem{RA01Audit} \textit{Nota de auditoría matemática: RA--01 v5}; \textit{Suficiencia de la consulta unitaria y agotamiento del residuo}; 21-XI-2026.
+\bibitem{Incert} \textit{Diferencia mínima, memoria y desfase entre octavas}. Nota de formalización, 22-XI-2026.
+\bibitem{BD2003} L. Báez-Duarte, \textit{A strengthening of the Nyman--Beurling criterion for the Riemann hypothesis}, Rend. Lincei Mat. Appl. 14 (2003), 5--11, en particular Teoremas 1--2. \href{https://www.bdim.eu/item?id=RLIN_2003_9_14_1_5_0}{Edición académica}.
+\bibitem{Burnol} J.-F. Burnol, \textit{A lower bound in an approximation problem involving the zeros of the Riemann zeta function}, Adv. Math. 170 (2002), 1--28. \href{https://arxiv.org/abs/math/0103058}{Preprint}.
+\end{thebibliography}
+\medskip\noindent\textit{Endless Monkey Project / Relational Geometry Program}
+\end{document}

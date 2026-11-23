@@ -2,6 +2,10 @@
 
 [Read this repository in English](README.en.md).
 
+## O58, Möbius y recuperación funcional · 22 de noviembre de 2026
+
+La [edición bilingüe v2.1](2026-11-22_o58_cadena_riemann_v2_1/README.md) enlaza una rama de Pell de O58 con referencias primas, inversión de Möbius y recuperación funcional. Incluye el [manuscrito español](2026-11-22_o58_cadena_riemann_v2_1/DEMOSTRACION_HILADA_ES_v2_1.pdf), la [traducción inglesa](2026-11-22_o58_cadena_riemann_v2_1/CHAINED_DEMONSTRATION_EN_v2_1.pdf) y [1.648 controles finitos exactos](2026-11-22_o58_cadena_riemann_v2_1/proofs/VERIFICAR_CADENA_O58_MOBIUS.py). Caracteriza la hipótesis de Riemann por una condición de convergencia global aún abierta. [Nota editorial](2026-11-22_o58_cadena_riemann_v2_1/NOTA_EDITORIAL_ES_EN.md) · [Guía en inglés](2026-11-22_o58_cadena_riemann_v2_1/README.en.md).
+
 ## Escalas relacionales y la hipótesis de Riemann · 17 de noviembre de 2026
 
 La [entrega](2026-11-17_escalas_relacionales_riemann/README.md) reúne una [formalización de la criba](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) y la reflexión [«Un número por cero»](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). Presenta la herencia exacta de la discrepancia entre escalas, el conteo de primos y una lectura de la simetría de los ceros de ζ. Dos verificadores reproducen los cálculos; la hipótesis de Riemann permanece abierta. [Guía en inglés](2026-11-17_escalas_relacionales_riemann/README.en.md).
