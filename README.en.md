@@ -2,6 +2,10 @@
 
 [Leer este repositorio en español](README.md).
 
+## O58, Möbius, and functional recovery · November 22, 2026
+
+The [bilingual v2.1 edition](2026-11-22_o58_cadena_riemann_v2_1/README.en.md) connects an O58 Pell branch with prime references, Möbius inversion, and functional recovery. It includes the [English paper](2026-11-22_o58_cadena_riemann_v2_1/CHAINED_DEMONSTRATION_EN_v2_1.pdf), [Spanish paper](2026-11-22_o58_cadena_riemann_v2_1/DEMOSTRACION_HILADA_ES_v2_1.pdf), and [1,648 exact finite checks](2026-11-22_o58_cadena_riemann_v2_1/proofs/VERIFICAR_CADENA_O58_MOBIUS.py). It characterizes the Riemann hypothesis through a global convergence condition that remains open. [Editorial note](2026-11-22_o58_cadena_riemann_v2_1/NOTA_EDITORIAL_ES_EN.md).
+
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.
