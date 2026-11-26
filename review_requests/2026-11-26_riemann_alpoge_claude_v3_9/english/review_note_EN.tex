@@ -1,0 +1,405 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{babel}
+\babelprovide[import,main]{english}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage[a4paper,top=2.6cm,bottom=2.6cm,left=2.55cm,right=2.55cm,headsep=0.8cm,footskip=1.1cm]{geometry}
+\usepackage{xcolor,graphicx,booktabs,tabularx,array,fancyhdr,titlesec,enumitem,microtype,ragged2e,caption}
+\usepackage{xltabular,needspace}
+\setlength{\LTpre}{2pt}\setlength{\LTpost}{2pt}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{HTML}{1F3550}
+\definecolor{tag}{HTML}{6E7F96}
+\definecolor{rul}{HTML}{3A3A3A}
+\definecolor{hd}{HTML}{55606E}
+\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=navy!80!blue,citecolor=navy}
+
+\newcommand{\estatuto}[1]{{\normalfont\small\color{tag}\,[#1]}}
+\newcommand{\nueva}{{\normalfont\small\color{tag}\,[v3.2]}}
+\newcommand{\nuevatres}{{\normalfont\small\color{tag}\,[v3.3]}}
+\renewcommand{\Re}{\operatorname{Re}}
+\DeclareMathOperator{\dist}{dist}
+\newcommand{\RH}{\mathrm{RH}}
+
+\titleformat{\section}{\color{navy}\normalfont\Large\bfseries}{\thesection.}{0.4em}{}
+\titleformat{\subsection}{\color{navy}\normalfont\large\bfseries}{\thesubsection.}{0.4em}{}
+\titleformat{\paragraph}[runin]{\normalfont\bfseries}{}{0pt}{}[.]
+\titlespacing*{\section}{0pt}{1.4ex plus .4ex}{0.8ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .3ex}{0.6ex}
+\titlespacing*{\paragraph}{0pt}{0.8ex}{0.6em}
+\setcounter{secnumdepth}{2}
+\renewcommand{\thesection}{\arabic{section}}
+
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize\color{hd}TECHNICAL NOTE 01 \,·\, INDEPENDENT REVIEW}
+\fancyhead[R]{\sffamily\footnotesize\color{hd}26 NOV 2026}
+\fancyfoot[L]{\sffamily\footnotesize\color{hd}Endless Monkey Project / Relational Geometry Program}
+\fancyfoot[R]{\sffamily\footnotesize\color{hd}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{rul}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{rul}\leaders\hrule height \footrulewidth\hfill}\vskip 3pt}
+
+\setlength{\headheight}{22pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{0.55ex}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newenvironment{tabla}{\par\smallskip\small}{\par\smallskip}
+\captionsetup[figure]{font=small,labelfont=bf,name=Figure}
+\setlist{nosep,leftmargin=1.4em}
+
+\begin{document}
+{\sffamily\small\color{hd}INDEPENDENT MATHEMATICAL REVIEW / ENGLISH REVIEW EDITION 3.9}\par\vspace{1ex}
+{\color{navy}\bfseries\fontsize{23}{27}\selectfont Functional recovery and the economy of references\par}
+\vspace{0.8ex}
+{\large Request for independent review of mathematical correspondences in the Riemann--Alpöge--Claude dossier}\par
+{\small 26 November 2026 · Technical Note 01 · English review edition based on Spanish v3.9}\par
+\section*{Purpose of the request}
+Independent examination is invited of the exact identities, convergence criteria, and proposed correspondences developed in the dossier. Particular attention is directed to the inheritance of arithmetic references by dilation, the recovery of a unit query by orthogonal projection, and the cost of attaining a prescribed precision. The aim is to identify which constructions, operations, invariants, and estimates can be related to those in the Alpöge--Claude argument, including the reconstruction of inequality (M) in [15]. Corrections, alternative formulations, references to prior literature, and counterexamples are welcome.
+
+\section*{Abstract}
+The prime-generated and squarefree reference chains of O58 are instances of the Báez-Duarte criterion: $\RH\iff Q(S_j)\to0\iff Q^{\rm lc}(S_j)\to0$. Mellin--Parseval expresses the sieve's Euler factor directly in the residual norm. The shared classical arithmetic observable $W(X)$, transcribed from item 5 of Alpöge [8], satisfies the equivalent analytic criterion $\RH\iff W(X)=O(\sqrt X)$. Its identification by restitution and centering is algebraic. Dilation, exact projection gain, Gaussian information, and the scale bound $\log N(\varepsilon)\ge(c-o(1))/\varepsilon$ give an explicit language for examining the economy of references. Gram determinants, covolumes, directional gains and operator moments provide objects for comparison with theta lifts, multiplicity, divisibility and cost. Problem T specifies the proposed transfer. Numerical controls and documentary provenance are recorded separately from the mathematical arguments; external formal verification and classical reconstruction retain their respective evidentiary status.
+
+\section*{0. Review map and evidence status}
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{3.0cm}L@{}}\toprule
+\textbf{Status}&\textbf{Meaning and review location}\\\midrule\endhead
+Demonstrated & Arguments in §§3.1--3.7, 3.9--3.10, 4.3--4.5, 4.7--4.8, with cited classical theorems where indicated.\\
+Calculated & Finite numerical evaluations in §§3.8, 4.3--4.7; scripts and reported reproduction.\\
+Reported & External source or transcription, §§3.9, 4.1--4.2, 6.1--6.2.\\
+Conditional & Explicit hypotheses, including the quantitative L1 and Rubinstein's reconstruction.\\
+Proposed & Transfer, formalisation and examination tasks, §§4.6, 4.8, 7, 9.\\
+To be explored / verified & Candidate objects and provisional documentary records.\\\bottomrule\end{xltabular}\end{tabla}
+\section{Scope and organisation}
+The review edition retains the mathematical numbering and reference numbering of v3.9. It is an English adaptation focused on the review questions, with supporting chronology, physical correspondences, and the twenty-entry comparison matrix. Documentary precedence is examined using original versions, dates, hashes, and evidence of public availability; mathematical correspondence is examined using defined objects and proofs. The Spanish source and computational package are retained as the detailed version of record.
+\section{Taxonomy of correspondences}
+\begin{tabla}\begin{tabularx}{\linewidth}{@{}P{4cm}L@{}}\toprule
+Exact identity & Equality on its stated domain.\\
+Local zero equivalence & Same zeros and orders of vanishing in a strip.\\
+Exact interface & A common observable recovered by a formula.\\
+Functional equivalence & Equivalent propositions, with hypotheses stated where required.\\
+Structural comparison & Named spaces and a candidate map.\\
+Analogy & A candidate invariant or operation in distinct constructions.\\
+Physical correspondence & A designed signal associated with a mathematical structure in a finite experimental range.\\\bottomrule\end{tabularx}\end{tabla}
+\section{Exact mathematical core \estatuto{Classical foundations}}
+\subsection{Relational sieve}
+For a finite set of primes $S$, define
+\[P_S(s)=\prod_{p\in S}(1-p^{-s}),\quad C_S(x)=\#\{1\le n\le x:p\nmid n\ \forall p\in S\},\quad \delta_S=\prod_{p\in S}(1-1/p).\]
+Set $E_S(x)=C_S(x)-\delta_S x$ for $x>0$, $D_pf(x)=f(x/p)$ and $T_p=I-D_p$. For $p\notin S$,
+\[E_{S\cup\{p\}}=T_pE_S,\qquad T_pT_q=T_qT_p.\]
+Indeed $C_{S\cup\{p\}}(x)=C_S(x)-C_S(x/p)$, and the density is multiplied by $1-1/p$. Dilation operators commute. With $P=\prod_{p\in S}p$, inclusion--exclusion gives
+\[C_S(x)=\sum_{d\mid P}\mu(d)\lfloor x/d\rfloor,\quad E_S(x)=-\sum_{d\mid P}\mu(d)\{x/d\},\quad P_S(s)=\sum_{d\mid P}\mu(d)d^{-s}.\]
+Here $\{y\}=y-\lfloor y\rfloor$. For nonempty $S$, $E_S$ is periodic of period $P$, has mean zero, and $|E_S(x)|<2^{|S|-1}$ (the positive and negative terms each have $2^{|S|-1}$ summands).
+\subsection{Mellin transform and zeros}
+For $0<\Re s<1$,
+\[F_S(s):=\int_0^\infty E_S(x)x^{-s-1}\,dx=\frac{\zeta(s)P_S(s)}s.\]
+The classical integral of the fractional part is $\int_0^\infty\{x\}x^{-s-1}dx=-\zeta(s)/s$ [20,21]. Substitution $x=du$ and the finite sum above yield the result; absolute convergence follows from $E_S(x)=O(x)$ at zero and boundedness at infinity. Finite Euler factors vanish only on $\Re s=0$. Thus $F_S$ and $\zeta$ have identical zeros and orders of vanishing in the critical strip. Meromorphically,
+\[-\frac{\zeta'}\zeta=-\frac1s-\frac{F'_S}{F_S}+\frac{P'_S}{P_S}.\]
+\subsection{Sieve--von Mangoldt link}
+Let $\Lambda_S(n)$ equal $\Lambda(n)$ for prime powers with prime outside $S$, and zero otherwise. By meromorphic continuation of $F_S$, for $\Re s>1$,
+\[-\frac{F'_S}{F_S}(s)-\frac1s=\sum_{n\ge1}\Lambda_S(n)n^{-s}.\tag{3.3}\]
+This follows by subtracting $P'_S/P_S=\sum_{p\in S,k\ge1}(\log p)p^{-ks}$ from $-\zeta'/\zeta$. Each prime incorporation removes precisely its powers from this Dirichlet series. Define $T_S(X)=\sum_{n\le X}\Lambda_S(n)(X/n-1)$. Then
+\[T_S(X)=T(X)-\sum_{p\in S,k\ge1}(\log p)(X/p^k-1)_+,\]
+\[\int_1^\infty T_S(X)X^{-s-1}dX=\frac{-F'_S/F_S-1/s}{s(s-1)}.\]
+Here $y_+=\max(y,0)$ and the last equality follows by integration of each ramp on $[n,\infty)$ for $\Re s>1$.
+\subsection{Smoothed von Mangoldt observable}
+For $X\ge1$ and $c>1$,
+\begin{gather*}T(X)=\sum_{n\le X}\Lambda(n)(X/n-1)=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}(-\zeta'/\zeta)(s)\frac{X^s}{s(s-1)}\,ds,\\
+\int_1^\infty T(X)X^{-s-1}dX=\frac{(-\zeta'/\zeta)(s)}{s(s-1)}\quad(\Re s>1).\end{gather*}
+Mellin inversion of $(y-1)_+$ and absolute convergence justify the first identity. With $\psi(t)=\sum_{n\le t}\Lambda(n)$, termwise integration yields $T(X)=X\int_1^X\psi(t)t^{-2}dt$. Define
+\[W(X)=T(X)-X\log X+(1+\gamma)X,\]
+where $\gamma$ is Euler's constant. The residue at $s=1$ is $X\log X-(1+\gamma)X$, obtained from $-\zeta'/\zeta=(s-1)^{-1}-\gamma+O(s-1)$ and expansion of $X^s/s$.
+\subsection{Explicit formula for $W(X)$}
+For $X\ge1$, the classical residue calculation gives
+\[W(X)=\log2\pi-\sum_\rho\frac{X^\rho}{\rho(\rho-1)}-r(X),\qquad r(X)=\sum_{k\ge1}\frac{X^{-2k}}{2k(2k+1)}.\tag{3.5}\]
+The sum runs over nontrivial zeros with multiplicity and converges absolutely since $\sum_\rho|\rho|^{-2}<\infty$. Also $0\le r(X)\le(1-\log2)X^{-2}$. In the contour shift the residues at $1,0,\rho,-2k$ give respectively the main term, $\log2\pi$, $-m_\rho X^\rho/[\rho(\rho-1)]$, and the negative summands of $r$. The kernel decays quadratically; the usual contour estimates for $\zeta'/\zeta$ at heights avoiding zeros [20,21] justify the shift (the left boundary and endpoint $X=1$ may be handled by a limit). At $X=1$, symmetry of zeros gives $\sum_\rho 1/[\rho(\rho-1)]=\log4\pi-2-\gamma$.
+Under RH, $\rho-1=-\bar\rho$ and the formula becomes
+\[\frac{W(X)-\log2\pi+r(X)}{\sqrt X}=\sum_{u>0}\frac{2m_u\cos(u\log X)}{1/4+u^2}.\tag{3.5$'$}\]
+\subsection{Analytic equivalence and sharp bound}
+\textbf{Theorem.} For $1/2\le\theta<1$, absence of zeros of $\zeta$ in $\Re s>\theta$ is equivalent to $W(X)=O(X^\theta)$. In particular,
+\[\RH\iff W(X)=O(\sqrt X).\]
+Under RH,
+\[|W(X)-\log2\pi+r(X)|\le C_0\sqrt X,\quad C_0=2+\gamma-\log4\pi=0.0461914\ldots,\tag{3.6}\]
+with equality at $X=1$.
+\emph{Proof. Forward implication.} Bound the absolutely convergent zero sum in (3.5) by $X^\theta\sum_\rho|\rho(\rho-1)|^{-1}$. Under RH this sum is $\sum_\rho|\rho|^{-2}=C_0$. At $X=1$, $W(1)=1+\gamma$ and $r(1)=1-\log2$, yielding equality.
+\emph{Reverse implication.} For $\Re s>1$,
+\[G(s):=\int_1^\infty W(X)X^{-s-1}dX=\frac{(-\zeta'/\zeta)(s)}{s(s-1)}-\frac1{(s-1)^2}+\frac{1+\gamma}{s-1}.\]
+The growth bound makes the integral analytic on $\Re s>\theta$. Solving for $-\zeta'/\zeta$ shows that its sole possible pole there is at $1$. A zero would create a pole with nonzero residue, giving the converse. Symmetry supplies the RH equivalence. The equivalence is unconditional; the explicit bound is conditional on RH.
+\subsection{Discrete recovery}
+For integers $m\ge2$, the second difference of a ramp is supported at its kink, so
+\[\Delta^2T(m)=\Lambda(m)/m,\qquad \Delta^2T_S(m)=\Lambda_S(m)/m.\]
+For $T_\xi(X)=\sum_{n\le X}\Lambda(n)\xi(n)(X/n-1)$ with a Dirichlet character $\xi$, $\Delta^2T_\xi(m)=\Lambda(m)\xi(m)/m$. Applying the difference to (3.5) gives
+\[\Lambda(m)=m\Delta^2[X\log X](m)-m\sum_\rho\frac{\Delta^2[X^\rho](m)}{\rho(\rho-1)}-m\Delta^2r(m).\]
+Absolute convergence follows by taking a finite linear combination of the convergent sums. HC-03 [11] is a post-announcement record. Using 400 zeros gives 1.936 at $m=7$ (exact value about 1.946) and 0.699 at $m=8$ (about 0.693).
+\subsection{Numerical checks \estatuto{Calculated / reported reproduction}}
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{4.1cm}L@{}}\toprule
+Control & Recorded result (v3.9 and review [33])\\\midrule\endhead
+Sieve and Mellin & Update error $<10^{-29}$; Mellin difference $3.8\cdot10^{-9}$.\\
+Dirichlet series, $S=\{2,3\},s=2$ & 0.2015854 versus 0.2015849; tail about $5\cdot10^{-7}$.\\
+Residues and zero sum & 12 matching digits in residue control; 400 zeros plus estimated tail give 0.046194.\\
+$W$ from primes, $2\le X\le10^7$ & Reported maximum normalised value 0.022681 at $X\approx319439$, about $0.491 C_0$ (finite evaluation, not a uniform certificate).\\
+400 zeros versus primes & At $X=10^j$, $1\le j\le7$, normalised difference $\le6.1\cdot10^{-5}$.\\
+Gram and gain & Vasyunin versus piecewise integral: difference $\le4.3\cdot10^{-9}$; gain test: 0.0102920784 on both sides.\\\bottomrule\end{xltabular}\end{tabla}
+\subsection{Algebraic identification with Alpöge's item 5}
+The dossier transcribes item 5 of [8, p. 3], with narrated date 20 October 2026, as
+\[W_{\rm Alp}(X)=\sum_{n\le X}\Lambda(n)(X/n-1)_+-X\log X+(1+\gamma)X.\]
+For any finite $S$, set $b_S=\Lambda-\Lambda_S$. The reconstruction
+\[W_{\rm rel,S}(X)=T_S(X)+\sum_{p\in S,k\ge1}(\log p)(X/p^k-1)_+-X\log X+(1+\gamma)X\]
+satisfies $W_{\rm rel,S}=W=W_{\rm Alp}$ on $X\ge1$ using the reported transcription. Indeed $\Lambda=\Lambda_S+b_S$ by definition and the ramp sum is linear. This holds also for empty $S$. Define $\mathcal R_S(a)=a+b_S$, $\mathcal C(a)=\sum_{n\le X}a_n(X/n-1)_+-X\log X+(1+\gamma)X$ and $\mathcal B_S(g)=g+\sum_{n\le X}b_S(n)(X/n-1)_+$. Then
+\[\begin{array}{ccc}\Lambda_S&\xrightarrow{\mathcal R_S}&\Lambda\\\downarrow\mathcal C&&\downarrow\mathcal C\\\mathcal C(\Lambda_S)&\xrightarrow{\mathcal B_S}&W_{\rm Alp}=W_{\rm rel,S}\end{array}\qquad \mathcal C\circ\mathcal R_S=\mathcal B_S\circ\mathcal C.\tag{3.9}\]
+The algebraic equality and the transcription are distinct evidence records. This is a shared classical observable; the transfer of automorphic estimates is Problem T.
+\subsection{Mellin--Parseval and recovery}
+Use $H=L^2((0,\infty),dt/t^2)$, $e_n(t)=\{t/n\}$, $\chi=\mathbf1_{[1,\infty)}$. For finite $K$ let $Q(K)=\dist^2(\chi,\operatorname{span}\{e_n:n\in K\})$. Mellin transforms are $\mathcal M e_n(s)=-\zeta(s)n^{-s}/s$ and $\mathcal M\chi(s)=1/s$. Setting $t=e^v$ identifies the norm in $H$ with the $L^2(dv)$ norm of $e^{-v/2}f(e^v)$. Fourier Plancherel for the residual therefore yields, with $s=1/2+iu$,
+\[Q(K)=\inf_{(a_n)}\frac1{2\pi}\int_{\mathbb R}\frac{|1+\zeta(s)\sum_{n\in K}a_nn^{-s}|^2}{1/4+u^2}\,du.\tag{3.10}\]
+This is the classical Nyman--Beurling representation [23,26]. The sieve weights $a_d=-\mu(d)$ on $K_S=\{d:d\mid\prod_{p\in S}p\}$ give
+\[\|\chi-E_S\|_H^2=\frac1{2\pi}\int_{\mathbb R}\frac{|1-\zeta(s)P_S(s)|^2}{1/4+u^2}\,du.\tag{3.11}\]
+The damped weights $a_d=-\mu(d)d^{-\varepsilon}$ yield
+\[Q^{\rm lc}(S)\le\|\chi-f_{S,\varepsilon}\|_H^2=\frac1{2\pi}\int_{\mathbb R}\frac{|1-\zeta(s)P_S(s+\varepsilon)|^2}{1/4+u^2}\,du.\tag{3.12}\]
+The inequality follows from the optimal projection. The Euler factors thus enter the residual directly. Review [34] reports $Q(\{1\})=0.85821$ from numerical integration.
+\[W(X)=O(\sqrt X)\ \Longleftrightarrow\ \RH\ \Longleftrightarrow\ Q_N\to0\ \Longleftrightarrow\ Q^{\rm lc}(S_j)\to0.\]
+These arrows connect equivalent propositions. The analytic criterion concerns $W$; the functional criterion concerns the distance in $H$.
+\section{Functional recovery and transfer questions}
+\subsection{Formal derivation of Alpöge--Claude \estatuto{Reported}}
+The dossier records that the joint Lean FRO / Mathlib statement [9], 21 November, compares the theorem with the standard Mathlib statement \texttt{RiemannHypothesis}; the reports [12,15] record kernel checks and the standard dependencies \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}. If the reported statement matching and proof verification are correct, the file has the status of a formal proof of RH. The scope for GRH, direct examination of the formal statement and dependencies, and comparison with the classical reconstruction are distinct review tasks. This English edition preserves the source reports rather than conducting a new audit.
+\subsection{Classical reconstruction \estatuto{Conditional}}
+Rubinstein's working guide [15], v2 (22 November), organises inequality (M) into thirteen outstanding hypotheses within that reconstruction. These are obligations of the classical manuscript. The formal proof dependencies are the separate record in §4.1. The preprint of Emmerson [16] and the record by Nielsen [32] raise questions for examination, including the role of \texttt{anyGeometry}, \texttt{setDiv}, and equalities closed with \texttt{rfl}. Their claims are attributed to those sources. Review task C traces these definitions and dependencies to the final statements; task G examines the thirteen hypotheses of (M).
+\subsection{The Báez-Duarte criterion and Gram distances}
+In the space $H$ of §3.10, define $V_N=\operatorname{span}\{e_1,\ldots,e_N\}$,
+\[U_N=\|\Pi_{V_N}\chi\|^2,\quad Q_N=\dist(\chi,V_N)^2,\quad U_N+Q_N=1.\]
+For $G_N=(\langle e_j,e_k\rangle)_{j,k\le N}$ and $b_k=\langle\chi,e_k\rangle$,
+\[b_k=\frac{\log k+1-\gamma}{k},\quad \langle e_1,e_1\rangle=\log2\pi-\gamma,\]
+\[U_N=b^*G_N^{-1}b,\qquad Q_N=\frac{\det\operatorname{Gram}(\chi,e_1,\ldots,e_N)}{\det G_N}.\]
+The formula for $b_k$ follows by substituting $u=t/k$ into $\int_1^\infty\{t/k\}t^{-2}dt$ and using $\int_1^\infty\{u\}u^{-2}du=1-\gamma$. The determinant ratio is the Gram identity for squared distance. The inner products of coprime $h,k$ can be evaluated using Vasyunin sums [25]:
+\begin{gather*}\langle e_h,e_k\rangle=\frac{\log2\pi-\gamma}{2}(1/h+1/k)+\frac{k-h}{2hk}\log(h/k)-\frac{\pi}{2hk}(V(h,k)+V(k,h)),\\ V(h,k)=\sum_{m=1}^{k-1}\{mh/k\}\cot(\pi m/k),\qquad \langle e_{gh},e_{gk}\rangle=\langle e_h,e_k\rangle/g.\end{gather*}
+\textbf{Theorem (Báez-Duarte [13]).} $\RH\iff Q_N\to0\iff U_N\to1$.
+Burnol [23], strengthening [22], proves $\liminf Q_N\log N\ge c$ with $c=\sum_{\Re\rho=1/2}m(\rho)^2/|\rho|^2$ over distinct zeros on the line. Under RH and simple zeros, $c=C_0$. The asymptotic equality $Q_N\log N\to C_0$ is conjectural [22,26]. Under RH the recorded upper bound [24] is $Q_N\le(\log\log N)^{5/2+o(1)}(\log N)^{-1/2}$.
+\begin{center}\small\begin{tabular}{@{}lrrrrrrrrr@{}}\toprule
+$N$&1&2&5&10&20&40&80&160&320\\\midrule
+$Q_N$&.8582&.2900&.0361&.0238&.0165&.0127&.0110&.0093&.0080\\
+$Q_N\log N$&--&.201&.058&.055&.049&.047&.048&.047&.046\\\bottomrule\end{tabular}\end{center}
+\textbf{Quantitative L1 (conditional).} At a specified scale $N(j)\to\infty$, seek positive uniform constants $c_1,c_2$ with $c_1Q_{N(j)}\le Q_j^{\rm O58}\le c_2Q_{N(j)}$. The convergence equivalence itself follows independently in §4.7.
+\subsection{Gain and information}
+$D_pf(t)=f(t/p)$ has $D_pe_n=e_{pn}$ and $\|D_pf\|^2=p^{-1}\|f\|^2$. In Mellin it multiplies by $p^{-s}$; in the sieve $T_p=I-D_p$. For a finite prime set $S$, let $V_S=\overline{\operatorname{span}\{e_n:n\text{ is }S\text{-smooth}\}}$. For $S_j$ containing the first $j$ primes, put $Q(S_j)=\dist^2(\chi,V_{S_j})$.
+\textbf{Theorem.} $\RH\iff Q(S_j)\to0$.
+\emph{Proof.} $V_{p_{j+1}-1}\subseteq V_{S_j}\subseteq\overline{\operatorname{span}\{e_n:n\ge1\}}$. The closed union is the full reference space. The nested distances converge to the distance to the closed union, and [13] gives the equivalence.
+\textbf{Gain law.} For closed $V$, a new subspace $W$, residual $r=\chi-\Pi_V\chi$, and $Z=\overline{(I-\Pi_V)W}$, the enlarged space is the closed sum $V'=\overline{V+W}=V\oplus Z$. Orthogonal decomposition gives
+\[Q(V)-Q(V')=\|\Pi_Zr\|^2.\tag{4.4}\]
+The closure is essential when the subspaces are infinite dimensional.
+\textbf{Information form.} In an isonormal Gaussian model on the real Hilbert space [29,30], the conditional variance of the unit target given the reference system is $Q$. Consequently mutual information in nats is $I(K)=\tfrac12\log(1/Q(K))$. For an additional independent reference $u$ and positive residual variance,
+\begin{gather*}\kappa(u\mid V)=-\tfrac12\log\big(\dist^2(u,V)/\|u\|^2\big),\\
+\Delta I(u\mid V)=\tfrac12\log\frac{\dist^2(u,V)}{\dist^2(u,\operatorname{span}\{\chi\}+V)}=\kappa(u\mid\operatorname{span}\{\chi\}+V)-\kappa(u\mid V).\end{gather*}
+For a step with $Q>0$, $\eta=1-Q'/Q$, so $\Delta I=-\tfrac12\log(1-\eta)\ge\eta/2$. The sum of information increments telescopes. For the chains with positive finite-stage distances, vanishing residual is equivalent to divergent cumulative information and to $\sum_p\eta_p=\infty$; the latter follows from the infinite-product criterion (if no finite stage has $\eta=1$). A sufficient eventual bound is $\eta_p\ge a/p$ with $a>0$, by divergence of the prime reciprocal sum [31]; alternatively use $\sum_{x<p\le2x}\eta_p\ge a/\log x$ on dyadic blocks for large $x$. A finite exact recovery, if available, already settles the corresponding convergence.
+\begin{center}\small\begin{tabular}{@{}lrrrrrrrrr@{}}\toprule
+$p$&2&3&5&7&11&13&17&19&23\\\midrule
+References&11&47&108&187&265&346&420&495&562\\
+$Q$&.1247&.0500&.0290&.0188&.0148&.0123&.0108&.0097&.0089\\
+$p\eta_p$&1.71&1.80&2.10&2.48&2.31&2.22&2.01&2.05&1.89\\
+$\Delta I$&.964&.457&.272&.218&.118&.094&.063&.057&.043\\\bottomrule\end{tabular}\end{center}
+These are truncated $S$-smooth calculations with indices $n\le2000$, rather than the full infinite smooth space. At $L=8000$, $7\eta_7=2.52$ and $17\eta_{17}=2.23$. Finite-stage data motivate the proposed global estimate.
+\subsection{Minimum economy}
+For target squared error $\varepsilon$, define $N(\varepsilon)=\min\{\max K:Q(K)\le\varepsilon\}$ and $M(\varepsilon)=\min\{|K|:Q(K)\le\varepsilon\}$ over finite nonempty index sets, with value $+\infty$ if unattainable. As $K\subseteq\{1,\ldots,\max K\}$, $Q(K)\ge Q_{\max K}$. The lower bound [23] yields, for attainable precision as $\varepsilon\downarrow0$,
+\[\log N(\varepsilon)\ge\frac{c-o(1)}{\varepsilon},\qquad I(K)\le\tfrac12\log\log(\max K)-\tfrac12\log c+o(1).\]
+Under RH and simplicity of zeros, $c=C_0$; the corresponding conjectural asymptotic is $\log N(\varepsilon)\sim C_0/\varepsilon$. The minimum scale equals the first full segment that attains the tolerance. Cardinality is a different objective. Greedy selection produces feasible upper bounds for $M(\varepsilon)$, as the finite dictionary tests below illustrate.
+\begin{center}\small\begin{tabular}{@{}lrrrrr@{}}\toprule
+$\varepsilon$&.03&.02&.015&.0125&.011\\\midrule
+Initial segment&7&13&29&41&80\\
+Maximum $\Delta I$&5&11&17&26&37\\
+Orthogonal greedy&5&11&17&28&39\\\bottomrule\end{tabular}\end{center}
+Dictionary: $n\le1000$. Of the first 80 maximum-information choices, 73 are squarefree, compared with approximately 61\% of the dictionary. Orthogonal greedy convergence on the closed span is a classical result [28]; applying it with the infinite dictionary and RH gives vanishing error. Finite greedy experiments measure a specific selection rule, and a global optimum requires its own certificate.
+\subsection{Proposed theta-lift correspondence}
+Inheritance is represented by $V_S$, the new reference by $D_pV$, gain by $\Delta I_p$, redundancy by $\kappa$, and economy by scale and cardinality. The corresponding candidates on the automorphic side are accumulated divisibility, theta lifts, multiplicity gain, lift cost, and their balance.
+\textbf{Problem T.} Specify disjoint blocks $B_k$ of primes, automorphic gains $m_k$ and costs $c_k$, and a nonnegative explicit function $F$. Establish on a stated domain
+\[\sum_{p\in B_k}\Delta I_p\ge F(m_k,c_k),\qquad \sum_k F(m_k,c_k)=\infty.\]
+A transfer of this form would prove accumulated functional recovery for the specified chain. The review asks whether the arithmetic and directional quantities can be connected by a map preserving the relevant operations or estimates.
+\subsection{Squarefree chain and economy of inheritance}
+Write $P=\prod_{p\in S}p$, $K_S=\{d:d\mid P\}$, and $V_S^{\rm lc}=\operatorname{span}\{e_d:d\in K_S\}$. For $p\notin S$,
+\[V_{S\cup\{p\}}^{\rm lc}=V_S^{\rm lc}+D_pV_S^{\rm lc},\qquad |K_S|=2^{|S|}.\]
+The indices of the two blocks are disjoint. Linear independence follows by considering the jump at the smallest index having a nonzero coefficient in a finite vanishing combination. Hence dimension doubles at each step.
+\textbf{Theorem.} For any increasing exhaustion $S_j$ of the primes, $\RH\iff Q^{\rm lc}(S_j)\to0$.
+\emph{Proof.} Inclusion in the full Báez-Duarte space gives the forward inference from convergence to RH. Conversely, the finite approximants in [13, proof of Theorem 1.1, §2.2 of the arXiv version] under RH have coefficients proportional to $\mu(n)$, so their support is squarefree. Each finite support is contained in some $K_{S_j}$. Nestedness then gives convergence. The O58 construction [7, Theorems 4.2 and 6.2] uses exactly this coverage. The unitary map $Jf(t)=f(1/t)$ identifies its $L^2(dx)$ generators and unit target with those in $H$. For the Pell chain, writing $D_j=\operatorname{rad}(A_j)$ and $K_j=\lfloor\sqrt j\rfloor$, the modular period bound in [7] includes every prime $p\le K_j$. Consequently
+\[Q^{\rm BD}_{D_j}\le Q_j^{\rm O58}\le Q^{\rm sf}_{K_j},\]
+where $Q^{\rm sf}_N$ uses squarefree indices up to $N$. This proves convergence equivalence independently of quantitative L1.
+\textbf{Damped inherited weights.} With $\varepsilon\ge0$,
+\[f_{S,\varepsilon}=-\prod_{p\in S}(I-p^{-\varepsilon}D_p)e_1=-\sum_{d\mid P}\mu(d)d^{-\varepsilon}e_d.\]
+For $\varepsilon=0$ this is $E_S$. On $0<t<1$ it equals $-t\prod_{p\in S}(1-p^{-1-\varepsilon})$. Thus for fixed $\varepsilon>0$,
+\[\|\chi-f_{S,\varepsilon}\|^2\ge\prod_{p\in S}(1-p^{-1-\varepsilon})^2\ge\zeta(1+\varepsilon)^{-2}.\]
+Complete recovery within this prescribed family requires joint control of $S$ and $\varepsilon\downarrow0$. The finite prime product differs from the integer cutoff used in [24]. The optimal projection is governed by the convergence theorem above.
+\textbf{Covolume and redundancy.} Let $G$ be the Gram matrix of the inherited block, $r=2^{|S|}$ and $C=(\langle e_d,e_{pe}\rangle)_{d,e\in K_S}$. Then
+\[G'=\begin{pmatrix}G&C\\C^*&G/p\end{pmatrix},\quad R=\sqrt p\,G^{-1/2}CG^{-1/2},\quad S_p=G/p-C^*G^{-1}C>0.\]
+Schur factorisation yields
+\[\det G'=p^{-r}(\det G)^2\det(I-R^*R),\quad \mathcal K_p=-\tfrac12\log\det(I-R^*R)\ge0.\tag{4.7}\]
+For the Euclidean lattice with integer coefficients in the inherited generators, $v_S=\sqrt{\det G}$ is the covolume, so $\log v_{S\cup\{p\}}=2\log v_S-(r/2)\log p-\mathcal K_p$. The angular term is separate from dilation; arithmetic lattice indices and valuations require an explicit comparison.
+\textbf{Directional gain.} Write $b=(\langle\chi,e_d\rangle)_d$, $b_p=(\langle\chi,e_{pd}\rangle)_d$, $v=b_p-C^*G^{-1}b$, $Q=1-b^*G^{-1}b$. The Schur formula gives $Q'=Q-v^*S_p^{-1}v$ and $\eta_p=v^*S_p^{-1}v/Q$. The rank-one determinant lemma gives
+\[\Delta I_p=\tfrac12\log\frac{\det S_p}{\det(S_p-vv^*/Q)}.\tag{4.8}\]
+All finite reference combinations are periodic; a periodic function agreeing with $\chi$ for $t\ge1$ would agree with 1 on $0<t<1$ as well. Thus $Q,Q'>0$. The redundancy cost depends on the spaces; the directional gain also depends on the query.
+\begin{tabla}\centering\begin{tabular}{@{}rrrrrr@{}}\toprule
+$p$&$|K_S|$&$P$&$Q^{\rm lc}$&$p\eta_p$&$\mathcal K_p$\\\midrule
+2&2&2&.289965&1.3243&.6940\\3&4&6&.077185&2.2014&.7244\\5&8&30&.037263&2.5861&.9391\\7&16&210&.025338&2.2402&1.8823\\11&32&2310&.020608&2.0533&4.2402\\13&64&30030&.018013&1.6373&9.7952\\17&128&510510&.013135&4.6032&22.4366\\\bottomrule\end{tabular}\end{tabla}
+All divisors were included (no index cutoff); values use floating-point evaluations of analytic Gram formulas. Reported Schur gain discrepancy is below $2\cdot10^{-16}$ and log-determinant discrepancy below $2\cdot10^{-13}$. Review [33] reports $Q=0.013135402434$ at $p=17$ versus $0.013135402445$ in the package, using extended-precision Vasyunin sums and 40-digit linear algebra. The observed range $1.3243\le p\eta_p\le4.6032$ and the jump from 13 to 17 are finite data. From $p=5$ to 17 the unweighted prescribed residual increases from .6890 to .8385; damping at .25 gives .7703 to .6151. At 17 the optimum is .013135.
+\begin{center}\small\begin{tabular}{@{}rlrlr@{}}\toprule
+Size&Best set ($n\le100$)&$Q$&Greedy set&$Q$\\\midrule
+2&$\{1,3\}$&.232832&$\{5,1\}$&.276987\\3&$\{1,2,3\}$&.093837&$\{5,1,2\}$&.107613\\\bottomrule\end{tabular}\end{center}
+Exhaustive floating-point search over pairs and triples tests the greedy upper bound. Earlier experiments at cutoff 500 used 238 smooth and 87 squarefree references with $Q=.009721$ and $.010951$, compared with $.008259$ and $.010687$ for full initial segments of equal size. Hereditary economy is therefore examined using construction length, dilation cost, scale, conditioning, and redundancy as well as cardinality.
+\subsection{Gram moments and H7--H8}
+Let $B_i$ be isometries into a Euclidean space of dimension $D$, with source dimensions $d_i$. Put $A=\sum_iB_iB_i^*$ and $s=\operatorname{tr}A=\sum_i d_i>0$. Then
+\[\operatorname{tr}(A^2)=s+\sum_{i\ne j}\|B_i^*B_j\|_{\rm HS}^2,\qquad \delta=\frac{D\operatorname{tr}(A^2)}{s^2}-1\ge0.\]
+Cauchy--Schwarz on nonzero eigenvalues and expansion of the squared Hilbert--Schmidt norm give
+\[\operatorname{rank} A\ge\frac{D}{1+\delta},\qquad \|A-(s/D)I\|_{\rm HS}^2=\frac{s^2}{D}\delta.\tag{4.9}\]
+For the two squarefree blocks $D=s=2r$ and the singular values $\sigma_i$ of $R$ are cosines of principal angles. Hence $\delta=\|R\|_{\rm HS}^2/r$ and
+\[\mathcal K_p=-\tfrac12\sum_i\log(1-\sigma_i^2)\ge(r/2)\delta.\]
+For residualised subspaces $Z_i$, their closed span $Z$, and $A_Z=\sum_i\Pi_{Z_i}$, the directional bound is
+\[\Delta Q=\|\Pi_Zr_\chi\|^2\ge\langle r_\chi,A_Zr_\chi\rangle/\|A_Z\|\quad(A_Z\ne0).\]
+This follows from $0\le A_Z\le\|A_Z\|\Pi_Z$. Rank control alone can leave the target orthogonal to all new directions; the directional bound isolates the additional quantity required by T.
+In the reconstruction [15, III.139, III.329], H7 concerns arithmetic gains, index losses and a bound recorded as $P_u-G_{\rm top}\le L_o$, $I_u\le L_o$, $L_o=c_7|T|mbx^{e_L\varepsilon}$. H8 (III.330, Proposition M4 and III.233) uses mean slopes and moments of the images. These external expressions are comparison targets. The scale balance of [15, I.8, II.4] contains $x/m+m$, minimised at $m=\sqrt x$ with value $2\sqrt x$; the auxiliary terms and uniform inequalities belong to (M). The review seeks a map from these arithmetic quantities to the directional energy and cost of §§4.7--4.8.
+\section{Documentary chronology and provenance}
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{2.2cm}LL@{}}\toprule
+2026 & Relational record & Alpöge--Claude record\\\midrule\endhead
+17 May & Mersenne octaves [1]. & Before the narrated start; public availability to establish.\\
+6 Oct. & MF-86, cited in [7]. & Narrated start; determinants, Iwasawa, Bost.\\
+16 Oct. & CR-6: economy of inheritance [2]. & After several narrated automorphic ideas.\\
+20--23 Oct. & O58 (21 Oct.) [3]; R-01 first version (23 Oct.), cited in [4]. & Selection of the smoothed observable (20 Oct., item 5).\\
+1 Nov. & R-RH-01: dilation, Gram and functional criterion [4]. & Before the narrated iterated theta episode.\\
+15--16 Nov. & --- & Theta, divisibility, cost, congruences and GRH.\\
+17--18 Nov. & R-01/R-02 public version [5]; R-03 [6]. & Before announcement, after the 15--16 Nov. ideas.\\
+20--22 Nov. & Audit [10], HC-03 [11], O58 v2.1 [7], consolidated record [14]. & Announcement (20), formal verification report (21), classical guide v1 (21), v2 (22).\\
+24--26 Nov. & Dossier v1.1--v3.9; reviews [33,34] (26). & Preprint [16] (24), Sutherland record [12] (25).\\\bottomrule\end{xltabular}\end{tabla}
+Dates are inherited from the v3.9 dossier. The Alpöge chronology is retrospective. Item 5's narrated date precedes O58 (21 October) and the reported first R-01 version (23 October). Review E requests the original R-01, hashes, commits and public availability evidence. The provenance of the classical observable, the historical development of a viewpoint, and the novelty of any specific result are separate questions.
+\section{Physical and experimental correspondences}
+\subsection{Dynamical quantum phase transitions (DQPT) \estatuto{Reported}}
+Wei et al. [17,27] describe two quantum models using an average phase factor and a Loschmidt amplitude. In the ideal mathematical model, the dynamical free-energy singularities in $0<\beta<1$ correspond to zeros of $\zeta(\beta+it)$. The paper reports a five-qubit nuclear-spin proof of concept. The designed domain, number of resolved zeros, errors and raw measurements provide the experimental review criteria.
+\subsection{Trapped-ion Floquet engineering \estatuto{Reported}}
+He et al. [18] use a driven ion in a Paul trap to implement a signal linked to zeta on the critical line. The reported identification concerns the first 80 zeros, up to $E\approx201.3$. The measurement domain determines the scope of the correspondence.
+\subsection{Dissipative chaotic circuits \estatuto{Provisional}}
+The secondary record [19], attributed to Liang Wang, describes 11 zeros from SPICE simulation, six via Markov eigenphases and four from a preliminary FPGA test. Review [33] reports mean absolute errors of 0.54 and 1.09 for six and eleven modes respectively, with calibration using $t_1$ and $t_1/t_2$, and comparison over $t_3$--$t_{11}$. Primary identification, calibration and out-of-sample evidence are requested before attributing verified experimental status.
+\subsection{Experimental review question}
+The literature supplies finite implementations of designed observables. Task F asks for a measurable signal associated with $W$ or $\Delta^2T$, with declared scales, errors, controls and out-of-sample data. Testing zeros outside the critical line requires a separate coverage protocol. The band $\pm C_0$ is the mathematical reference under RH.
+\section{Comparative review of Alpöge's twenty items}
+\subsection{Operational criteria}
+An exact interface specifies a common formula, normalisation and domain. Structural comparison specifies spaces and a candidate map. Analogy names objects and a candidate preserved quantity. The initial exploration identifies a counterpart. The comparison levels below are distinct from the evidence statuses in §0.
+\subsection{Comparison scale}
+\begin{tabla}\begin{tabularx}{\linewidth}{@{}rP{4cm}L@{}}\toprule
+Level&Classification&Criterion\\\midrule
+0&Bridge to identify&Specify the relational object.\\
+1&Question to explore&Specify the counterpart in a defined question.\\
+2&Analogy&Compare defined objects or mechanisms.\\
+3&Structural comparison&Name spaces and write a candidate map.\\
+4&Exact interface&Recover the same observable by formula.\\
+5&Established equivalence&Prove the map and preservation of the stated operations or invariants.\\\bottomrule\end{tabularx}\end{tabla}
+An exact interface can coexist with different mechanisms. The level-4 identity does not establish level 5. The levels in the matrix retain the classifications in v3.9 for independent examination.
+\subsection{Source enumeration}
+Items 1--20 below retain the order of [8, pp. 3--4] as recorded in v3.9. The dates are narrated dates, not independently established publication dates. The counterpart, level, and criterion of advance are dossier proposals.
+\subsection{Operational matrix: items 1--10}
+\begin{tabla}\footnotesize\begin{xltabular}{\linewidth}{@{}rP{3.1cm}P{3.5cm}rL@{}}\toprule
+No.&Alpöge object / date&Relational object or candidate&Level&Review target / priority\\\midrule\endhead
+1&Stepanov determinant, 6 Oct.&Gram ratio $Q_N$&2&Map orders of vanishing and multiplicity to distance/determinant (high).\\
+2&CM curve and derivation, 9 Oct.&Object to identify&0&Define curve, derivation and arithmetic hypotheses (low).\\
+3&Quadratic decomposition and automorphy, 19 Oct.+&O58 quadratic unit&2&Identify spaces and relationship between quadratic forms (medium).\\
+4&Weil positivity via determinant, 6 Oct.+&$U_N,Q_N$ in $H$; Mellin map candidate&3&Specify test-function domain and compare quadratic functionals and signs (high).\\
+5&Centred von Mangoldt sum, 20 Oct.&$T,W,\Lambda,C_0$&4&Check formula, normalisation, domain, and transfer of bounds (high).\\
+6&Two indicators and positivity, 8 Oct.&Windows, test functions&2&Match windows, measures and positivity functionals (medium).\\
+7&GGP periods, 14 Oct.&Object to identify&0&Specify groups, measures and period counterpart (low).\\
+8&Iterated theta lifts, 15 Nov.&$D_p$, O58, gain $\Delta I$&2&Problem T: compare multiplicity gain per lift to information gain per block (high).\\
+9&Norms, level, divisibility, 15 Nov.&$T_p$, octaves (candidates)&1&Specify what is counted and how norms and divisibility enter (medium).\\
+10&Iterated divisibility bound, 15 Nov.&Reclosure, Pell&2&Common divisibility order or valuation and transfer bound (medium).\\\bottomrule\end{xltabular}\end{tabla}
+\subsection{Operational matrix: items 11--20}
+\begin{tabla}\footnotesize\begin{xltabular}{\linewidth}{@{}rP{3.1cm}P{3.5cm}rL@{}}\toprule
+No.&Alpöge object / date&Relational object or candidate&Level&Review target / priority\\\midrule\endhead
+11&Iwasawa tower, 6 Oct.&Reference chains&2&Map nested systems and transition operations (low).\\
+12&Seesaw, Bessel, Rallis, 15 Nov.&Object to identify&0&Define periods and comparison of norms (low).\\
+13&Bost slope inequality, 6 Oct.&CR-6; $\kappa$&2&Define comparable quantities and transfer inequality (medium-low).\\
+14&Theta-lift cost, 15 Nov.&$N(\varepsilon),M(\varepsilon)$, R-03&2&Compare scale law and lift cost with units specified (medium).\\
+15&Common integral structure, 15 Nov.&Euclidean lattice and $v_S$&2&Compare with arithmetic modules, norms and characters (medium).\\
+16&Relative trace and orthogonality, 14 Oct.&$\Pi_{V_N}$, $U_N$&2&Define trace operator and compare with projection (medium).\\
+17&Cohomology and Vandiver, 15 Nov.&Object to identify&0&Define cohomological classes (low).\\
+18&Covolumes, indices, congruences, 15 Nov.&Object to identify&0&Identify arithmetic lattice and congruences (low).\\
+19&Tower choice with Behrend, 19 Oct.&Nested chains (candidates)&1&Specify arithmetic tower and transition map (low).\\
+20&GRH, 16 Nov.&R-RH-01, O58, $\Delta^2T_\xi$&2&Extend analytic and functional criteria to $L(s,\xi)$ with the required lemmas (medium).\\\bottomrule\end{xltabular}\end{tabla}
+\subsection{Separate records}
+The Lean archive [9,12], the classical reconstruction [15], and physical reports [17,18] have separate statuses in §§4 and 6; they are not extra items of the twenty-item comparison.
+\subsection{Distribution of levels}
+\begin{center}\small\begin{tabular}{@{}rlrl@{}}\toprule
+Level&Classification&Count&Items\\\midrule
+4&Exact interface&1&5\\3&Structural comparison candidate&1&4\\2&Analogy&11&1,3,6,8,10,11,13,14,15,16,20\\1&Question to explore&2&9,19\\0&Bridge to identify&5&2,7,12,17,18\\\midrule
+&Total&20&\\\bottomrule\end{tabular}\end{center}
+\subsection{Priorities for independent review}
+First examine the thirteen hypotheses of (M), followed by theta gain and cost (items 8 and 14), the arithmetic/physical observable (5), the Weil/Mellin/Gram comparison (4), and the quantitative O58 comparison L1. Subsequent targets are Stepanov/Gram (1), GRH (20), integral structures and traces (15--16), indicators, divisibility and Bost (6,9,10,13), and identifying the remaining objects and maps. This is a suggested order; specialists may select individual questions.
+\section{Scope of evidence}
+The dossier's exact identities and convergence equivalences are presented with proofs or cited classical theorems; the prescribed weights, gain law, economy bound, and covolume and moment formulas give explicit review targets. Numerical results concern finite ranges and are attributed to the verification package and its reviews. The common observable is the classical smoothed sum. The formal proof reports, the classical reconstruction, and the physical literature retain the evidence categories in §0. Problem T and quantitative L1 specify further mathematical work.
+\section{Independent review requested}
+The requested assessment concerns mathematical validity, correspondence with established literature, and the scope of transfer between the two constructions. In particular, a specialist may confirm or correct a single identity or proposed map, give a counterexample, or identify a standard result that subsumes the construction. Findings can be recorded by section and item number. The following questions are organised so that each may be reviewed independently.
+\subsection{Review tasks A--H}
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{3.7cm}L@{}}\toprule
+Task & Requested deliverable / criterion of success\\\midrule\endhead
+A. Operator correspondence & Specify spaces, domains, maps and a commuting diagram, or prove preservation of a common invariant.\\
+B. Gain and cost & Define accumulated multiplicity/divisibility and cost per operation; establish a transfer inequality.\\
+C. Arithmetic and formal interface & Check item 5, $W$, character sums, sign, normalisation, domain and $C_0$. Compare the Lean statement and dependencies, including the questions raised in [16,32]; formalise §§3.9--3.12 before the analytic equivalences.\\
+D. Functional consequence & Confirm the convergence proof in §4.7 and its cited squarefree approximants. Fix the scale for quantitative L1 and distinguish consequences through RH from direct estimates.\\
+E. Provenance & Preserve original records, public availability evidence, commits, SHA-256 and the reported 23 October R-01. Identify precedents in the literature.\\
+F. Physical interface & Specify a measurable observable, tolerances, scales, controls and out-of-sample comparisons.\\
+G. Inequality (M) & Translate each of the thirteen hypotheses in [15] into the defined quantities where possible; identify any new objects needed.\\
+H. Economy and transfer & Extend §4.7; compare §4.8 with [15, III.8] and establish a directional energy bound that accumulates across steps.\\\bottomrule\end{xltabular}\end{tabla}
+\subsection{Testable conditions and formal comparison}
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{2.9cm}LL@{}}\toprule
+Question&Success criterion&Contrast / refutation criterion\\\midrule\endhead
+Prime gain&Prove $p\eta_p\ge a>0$ eventually, or a divergent block bound, for a specified chain.&A certified violation refutes the specified bound on its declared range. $\liminf p\eta_p=0$ rules out every positive eventual constant.\\
+Problem T&Disjoint blocks, explicit gains/costs and $F\ge0$; prove the transfer and $\sum F=\infty$.&A certified violation in a block falsifies the proposed inequality; a convergent sum defeats that certificate of accumulation.\\
+Quantitative L1&Fix $N(j)$ and prove uniform two-sided comparison.&A subsequence with ratio tending to zero or infinity rules out that comparison at the specified scale.\\
+Lean comparison&Define observables independently, verify normalisation, formalise identities and then the analytic and functional criteria.&A domain or normalisation mismatch or counterexample requires statement correction; a build error identifies implementation work.\\\bottomrule\end{xltabular}\end{tabla}
+The finite data test finite instances. Global convergence and uniform inequalities require global arguments. Lean provides a proposed common formal language for comparison, with dependencies and version information recorded for review.
+\section*{Integrity and reproducibility}
+This English review edition is based on Spanish v3.9, its LaTeX source, and the accompanying nine-script package. The reported complete execution is attributed to [33]; [34] records the Parseval check. Numerical results were retained rather than rerun for this edition. The original documentary records and claims of external verification remain attributed to their sources. The original Spanish material is included in the accompanying archive for comparison. The archive manifest identifies the exact files supplied. The original numerical routines and review reports remain in their original language to preserve the evidence trail.
+\clearpage\section*{Appendix A. Presentation and verification files}
+The accompanying English Beamer presentation introduces the mathematical objects and review tasks. The verification scripts require Python 3, NumPy, mpmath and Matplotlib. Run in the listed order from the original verification directory; the original script names and hashes are retained.
+\begin{tabla}\begin{xltabular}{\linewidth}{@{}P{4.0cm}L@{}}\toprule
+File&Purpose\\\midrule\endhead
+\texttt{checks.py}&Identities, residues, 400 zeros and $b_k$.\\
+\texttt{wnum.py}&$W$ from primes up to $10^7$ and comparison with zeros.\\
+\texttt{gram.py}&Piecewise-integral Gram distances.\\
+\texttt{disc.py}&Discrete recovery from the explicit formula.\\
+\texttt{fig.py}&Original figure.\\
+\texttt{vasyunin.py}&Analytic Gram inner products and validation.\\
+\texttt{economia.py}&Distances through $N=320$, gain and greedy selection.\\
+\texttt{minm.py}&Reference-count estimates at selected tolerances.\\
+\texttt{cadena\_lc.py}&Full squarefree chain, Schur identities, redundancy, and exhaustive controls.\\\bottomrule\end{xltabular}\end{tabla}
+\section*{References and documentary records}
+Reference numbers follow Spanish v3.9. English renderings of internal titles are descriptive translations; the original titles are retained in the Spanish source. External bibliographic metadata are carried over from the dossier and are available for independent verification.
+\begin{enumerate}[label={[\arabic*]},leftmargin=2.2em,itemsep=2pt,font=\footnotesize]\footnotesize\sloppy
+\item Orientational uncertainty and relational octaves in the Mersenne spectrum. 17 May 2026, v2.1.
+\item CR-6 --- Economy of inheritance: sufficient interfaces, scale and reclosure cost. 16 October 2026.
+\item O58 --- The trail of scales and the unit that remains pending. 21 October 2026.
+\item R-RH-01 --- Primes, reflection and closure. 1 November 2026.
+\item R-01/R-02 --- Relational scales of the sieve. 17 November 2026. Public version recorded on GitHub.
+\item R-03 --- Spectral inheritance, normalisation and location of zeros. 18 November 2026, v0.2.
+\item From the inherited seed to functional recovery. 22 November 2026, v2.1.
+\item L. Alpöge. \href{https://alpo.ge/remark.pdf}{\emph{Remark}}. 20 November 2026; twenty-item chronology, pp. 3--4.
+\item Lean FRO / Mathlib Initiative. Lean verification of the Riemann Hypothesis. 21 November 2026.
+\item Comparative audit: Alpöge's note and R-RH-01 / R-01--R-03. 20 November 2026.
+\item Generation, inheritance and control of primes. 21 November 2026. Includes HC-03.
+\item A. Sutherland. RH Lean proof: verification files. 25 November 2026 update.
+\item L. Báez-Duarte. A strengthening of the Nyman--Beurling criterion for the Riemann hypothesis. Rend. Lincei Mat. Appl. 14 (2003), 5--11. \href{https://arxiv.org/abs/math/0202141}{arXiv:math/0202141}.
+\item Consolidated reflection--Riemann update. 22 November 2026. Historical index.
+\item M. Rubinstein (working guide). Alpöge/Claude proof of the Generalized Riemann Hypothesis. Waterloo. v1, 21 November; \href{https://math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf}{v2, 22 November}, particularly III.6, III.8 and III.11.
+\item P. Emmerson. Alpöge's Certified Lean Derivation Does Not Prove the Riemann Hypothesis: Granting Every Check, the Hypothesis Follows from a Premise Stronger than Itself. Preprints.org, 24 November 2026. Preprint; \href{https://www.preprints.org/manuscript/202611.2463}{DOI: 10.20944/preprints202611.2463.v1}.
+\item Wei, Zhai, Lu, Yang, Gao, Wei, Song, Nori, Xin and Long. The Riemann Hypothesis manifested in dynamical quantum phase transitions. Nature Communications 17, 8163 (1 July 2026). Metadata from [34]. \href{https://doi.org/10.1038/s41467-026-74935-8}{DOI: 10.1038/s41467-026-74935-8}.
+\item R. He et al. Riemann zeros from Floquet engineering a trapped-ion qubit. npj Quantum Information 7, 109 (2021). \href{https://doi.org/10.1038/s41534-021-00446-7}{DOI: 10.1038/s41534-021-00446-7}.
+\item L. Wang (secondary attribution). Physical Emergence of Riemann Zeros in Dissipative Chaotic Circuits. \href{https://synapsesocial.com/papers/W7151460771}{Secondary index}; supplied record: Zenodo, 2 April 2026. Primary record to identify.
+\item H. Davenport. \emph{Multiplicative Number Theory}, 3rd ed., revised by H. L. Montgomery. GTM 74, Springer, 2000. Chapters 12 and 17.
+\item A. E. Ingham. \emph{The Distribution of Prime Numbers}. Cambridge University Press, 1932.
+\item L. Báez-Duarte, M. Balazard, B. Landreau, É. Saias. Notes sur la fonction $\zeta$ de Riemann, 3. Adv. Math. 149 (2000), 130--144.
+\item J.-F. Burnol. A lower bound in an approximation problem involving the zeros of the Riemann zeta function. Adv. Math. 170 (2002). \href{https://doi.org/10.1006/aima.2001.2066}{DOI: 10.1006/aima.2001.2066}; arXiv:math/0103058.
+\item M. Balazard, A. de Roton. Sur un critère de Báez-Duarte pour l'hypothèse de Riemann. arXiv:0812.1689.
+\item L. Báez-Duarte, M. Balazard, B. Landreau, É. Saias. Étude de l'autocorrélation multiplicative de la fonction «partie fractionnaire». Ramanujan J. 9 (2005), 215--240.
+\item S. Bettin, J. B. Conrey, D. W. Farmer. An optimal choice of Dirichlet polynomials for the Nyman--Beurling criterion. arXiv:1211.5191.
+\item S. Wei et al. The Riemann Hypothesis emerges in dynamical quantum phase transitions. arXiv:2511.11199 (2025).
+\item R. A. DeVore, V. N. Temlyakov. Some remarks on greedy algorithms. Adv. Comput. Math. 5 (1996), 173--187. DOI: 10.1007/BF02124742.
+\item D. Nualart. \emph{The Malliavin Calculus and Related Topics}, 2nd ed., Springer, 2006. §1.1.
+\item T. M. Cover, J. A. Thomas. \emph{Elements of Information Theory}, 2nd ed., Wiley, 2006.
+\item G. H. Hardy, E. M. Wright. \emph{An Introduction to the Theory of Numbers}, 6th ed., Oxford University Press, 2008.
+\item J. L. Nielsen. Invalidity of the Alpoge Proposed Proof of the Riemann Hypothesis. \href{https://philpapers.org/rec/NIEIOT-2}{PhilArchive / PhilPapers}; content to examine.
+\item Review of Technical Note 01 v3.4 --- Riemann--Alpöge--Claude dossier. Supplied report, 26 November 2026; reproduction and independent numerical control.
+\item Review of Technical Note 01 v3.7 --- Riemann--Alpöge--Claude dossier. Supplied report, 26 November 2026; §§3.9, 3.10, 9.2 and numerical Parseval control.
+\end{enumerate}
+\vspace{1ex}\textit{Endless Monkey Project / Relational Geometry Program}
+\end{document}

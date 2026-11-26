@@ -1,0 +1,154 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,mathtools}
+\usepackage{tikz-cd}
+\definecolor{navy}{HTML}{1F3550}
+\definecolor{lightblue}{HTML}{EAF0F7}
+\setbeamercolor{structure}{fg=navy}
+\setbeamercolor{frametitle}{bg=navy,fg=white}
+\setbeamercolor{block title}{bg=navy,fg=white}
+\setbeamercolor{block body}{bg=lightblue,fg=black}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\leavevmode\hbox{\begin{beamercolorbox}[wd=.87\paperwidth,ht=2.6ex,dp=1.1ex,leftskip=1em]{author in head/foot}\scriptsize Endless Monkey Project / Relational Geometry Program\end{beamercolorbox}\begin{beamercolorbox}[wd=.13\paperwidth,ht=2.6ex,dp=1.1ex,center]{date in head/foot}\scriptsize\insertframenumber/\inserttotalframenumber\end{beamercolorbox}}}
+\newcommand{\RH}{\mathrm{RH}}
+\newcommand{\tagline}[1]{\par\smallskip{\footnotesize\color{navy}#1}}
+\title[Independent review]{Functional recovery and the economy of references}
+\subtitle{Request for independent review of mathematical correspondences\\Riemann--Alpöge--Claude dossier · English review edition 3.9}
+\author{Endless Monkey Project / Relational Geometry Program}
+\date{26 November 2026}
+\begin{document}
+\begin{frame}
+\titlepage
+\centering\small Identities, equivalent criteria, proposed transfers and reproducible controls.
+\end{frame}
+\begin{frame}{Purpose and scope of the review}
+\begin{block}{Convergence equivalence}
+\[\RH\iff Q_N\to0\iff Q(S_j)\to0\iff Q^{\rm lc}(S_j)\to0.\]
+\end{block}
+The hereditary chains are instances of the Báez-Duarte criterion. The shared classical observable provides an arithmetic interface:
+\[W_{\rm rel,S}=W=W_{\rm Alp},\qquad W(X)=O(\sqrt X)\iff\RH.\]
+\textbf{Requested examination:} verify the arguments, identify established precedents, and assess candidate maps between the gain, multiplicity, divisibility and cost of successive transformations.
+\tagline{Technical Note 01, §§3.6, 3.9, 4.3--4.8.}
+\end{frame}
+\begin{frame}{Evidence categories and comparison levels}
+\small
+\begin{columns}[T]
+\column{.48\textwidth}
+\textbf{Evidence status}
+\begin{itemize}
+\item Demonstrated: mathematical argument
+\item Calculated: finite reproducible evaluation
+\item Reported: external source
+\item Conditional: explicit hypotheses
+\item Proposed: review criterion
+\item Provisional: record to verify
+\end{itemize}
+\column{.48\textwidth}
+\textbf{Strength of correspondence}
+\begin{itemize}
+\item 0: bridge to identify
+\item 1: question to explore
+\item 2: analogy
+\item 3: candidate structural map
+\item 4: exact observable interface
+\item 5: established equivalence
+\end{itemize}
+\end{columns}
+\tagline{The matrix has twenty items. Its assigned levels are themselves open to review.}
+\end{frame}
+\begin{frame}{Inheritance by dilation: the relational sieve}
+For a finite prime set $S$, $P=\prod_{p\in S}p$ and $\delta_S=\prod_{p\in S}(1-1/p)$:
+\[E_S(x)=C_S(x)-\delta_Sx=-\sum_{d\mid P}\mu(d)\{x/d\}.\]
+\[D_pf(x)=f(x/p),\qquad T_p=I-D_p.\]
+\begin{block}{Exact update for $p\notin S$}
+\[E_{S\cup\{p\}}=T_pE_S,\qquad T_pT_q=T_qT_p.\]
+\end{block}
+Here $\{y\}=y-\lfloor y\rfloor$. For nonempty $S$, the discrepancy is periodic with period $P$ and mean zero.
+\tagline{§3.1: inclusion--exclusion and commuting dilations.}
+\end{frame}
+\begin{frame}{Mellin transform and the arithmetic interface}
+\[P_S(s)=\prod_{p\in S}(1-p^{-s}),\quad F_S(s)=\int_0^\infty E_S(x)x^{-s-1}\,dx.\]
+\begin{block}{For $0<\operatorname{Re}s<1$}
+\[F_S(s)=\frac{\zeta(s)P_S(s)}s.\]
+\end{block}
+Finite Euler factors preserve zeros and orders in the critical strip. Using meromorphic continuation, for $\operatorname{Re}s>1$,
+\[-\frac{F'_S}{F_S}(s)-\frac1s=\sum_{n\ge1}\Lambda_S(n)n^{-s}.\]
+Each incorporation removes exactly the powers of the incorporated prime.
+\tagline{§§3.2--3.3.}
+\end{frame}
+\begin{frame}{Classical smoothed observable and explicit formula}
+\[T(X)=\sum_{n\le X}\Lambda(n)(X/n-1)=X\int_1^X\psi(t)t^{-2}\,dt.\]
+\[W(X)=T(X)-X\log X+(1+\gamma)X.\]
+\begin{block}{Explicit formula}
+\[W(X)=\log2\pi-\sum_\rho\frac{X^\rho}{\rho(\rho-1)}-r(X),\quad r(X)=\sum_{k\ge1}\frac{X^{-2k}}{2k(2k+1)}.\]
+\end{block}
+The sum is absolutely convergent for fixed $X\ge1$. Discrete recovery gives $\Delta^2 T(m)=\Lambda(m)/m$ for integers $m\ge2$.
+\tagline{§§3.4--3.7. Verify the contour argument, weights, domain and centering.}
+\end{frame}
+\begin{frame}{Identifying the shared observable}
+\centering
+\[\begin{array}{ccc}
+\Lambda_S&\xrightarrow{\mathcal R_S}&\Lambda\\[3pt]
+\big\downarrow\mathrlap{\scriptscriptstyle\mathcal C}&&\big\downarrow\mathrlap{\scriptscriptstyle\mathcal C}\\[3pt]
+\mathcal C(\Lambda_S)&\xrightarrow{\mathcal B_S}&W_{\rm Alp}=W_{\rm rel,S}
+\end{array}\]
+\raggedright
+Restitution $\mathcal R_S$ adds the removed prime powers; $\mathcal C$ applies the ramp sum and centering; $\mathcal B_S$ adds the corresponding ramps. The square commutes by linearity of the sum.
+\medskip
+\textbf{Review target:} check the transcription of item 5 in Alpöge, \emph{Remark}, p. 3, and the normalisation. The identity is algebraic; the source transcription is reported.
+\tagline{§3.9; proof transfer is the separate Problem T.}
+\end{frame}
+\begin{frame}{Analytic and functional criteria}
+\[\boxed{W(X)=O(\sqrt X)\iff\RH\iff Q_N\to0}\]
+Under RH,
+\[|W(X)-\log2\pi+r(X)|\le C_0\sqrt X,\quad C_0=2+\gamma-\log4\pi.\]
+Equality at $X=1$. The criterion itself is unconditional. In $H=L^2((0,\infty),dt/t^2)$, $e_n(t)=\{t/n\}$ and $\chi=\mathbf1_{[1,\infty)}$,
+\[Q(K)=\inf_{(a_n)}\frac1{2\pi}\int_{\mathbb R}\frac{|1+\zeta(s)\sum_{n\in K}a_nn^{-s}|^2}{1/4+u^2}\,du,\quad s=1/2+iu.\]
+\tagline{§§3.6, 3.10, 4.3. Check the classical dependencies and squarefree restriction.}
+\end{frame}
+\begin{frame}{Squarefree inheritance and exact gain}
+\[V_{S\cup\{p\}}^{\rm lc}=V_S^{\rm lc}+D_pV_S^{\rm lc},\qquad \dim V_S^{\rm lc}=2^{|S|}.\]
+For an increasing exhaustion of the primes, the finite Möbius-supported approximants of Báez-Duarte give
+\[\RH\iff Q^{\rm lc}(S_j)\to0.\]
+\begin{block}{Directional gain and information}
+For $V'=\overline{V+W}$, $Z=\overline{(I-\Pi_V)W}$ and $r=\chi-\Pi_V\chi$,
+\[Q(V)-Q(V')=\|\Pi_Zr\|^2,\qquad I=\tfrac12\log(1/Q).\]
+\end{block}
+\tagline{§§4.4, 4.7. The information formula uses the isonormal Gaussian model.}
+\end{frame}
+\begin{frame}{Minimum economy and finite controls}
+\[N(\varepsilon)=\min\{\max K:Q(K)\le\varepsilon\},\quad \log N(\varepsilon)\ge(c-o(1))/\varepsilon.\]
+\begin{center}\small\begin{tabular}{@{}rrrr@{}}\toprule
+Prime&References&$Q^{\rm lc}$&$p\eta_p$\\\midrule
+2&2&0.289965&1.3243\\5&8&0.037263&2.5861\\13&64&0.018013&1.6373\\17&128&0.013135&4.6032\\\bottomrule\end{tabular}\end{center}
+All squarefree divisors are included in these finite calculations. Cardinality, generation cost, scale and redundancy are distinct metrics. Greedy selection supplies feasible upper bounds for the optimal cardinality.
+\tagline{§§4.5, 4.7. Finite controls are recorded in the nine-script package and reviews.}
+\end{frame}
+\begin{frame}{Candidate transfer: covolume, moments and theta lifts}
+\small
+\[\det G'=p^{-r}(\det G)^2\det(I-R^*R),\quad \mathcal K_p=-\tfrac12\log\det(I-R^*R).\]
+\[\operatorname{rank} A\ge (\operatorname{tr}A)^2/\operatorname{tr}(A^2),\quad \mathcal K_p\ge(r/2)\delta.\]
+\begin{block}{Problem T}
+Identify disjoint prime blocks $B_k$, automorphic gain $m_k$, cost $c_k$, and a nonnegative explicit function $F$. Seek
+\[\sum_{p\in B_k}\Delta I_p\ge F(m_k,c_k),\qquad \sum_kF(m_k,c_k)=\infty.\]
+\end{block}
+Review H7 and H8 of Rubinstein [15]: compare arithmetic indices and slopes with the directional energy and Gram moments. A certified violating block tests the proposed inequality.
+\tagline{§§4.6--4.8. The requested map must preserve the relevant quantities.}
+\end{frame}
+\begin{frame}{Independent review requested}
+\small
+\begin{tabular}{@{}p{.23\textwidth}p{.71\textwidth}@{}}\toprule
+\textbf{Target}&\textbf{Requested assessment}\\\midrule
+Exact core&Check identities, domains, proof steps and classical references.\\[2pt]
+O58 and economy&Check squarefree convergence, gain, covolume and scale bound; distinguish L1 from convergence.\\[2pt]
+Alpöge--Claude&Compare (M), H7--H8 and Problem T; specify a map, estimate, or obstruction.\\[2pt]
+Formal comparison&Examine statement matching and dependencies; formalise the interfaces in Lean.\\[2pt]
+Provenance&Identify prior literature, original records, commits, hashes and public availability.\\\bottomrule\end{tabular}
+\medskip
+Corrections, counterexamples, alternative formulations and references are welcome. Individual sections may be reviewed separately.
+\tagline{Full review agenda: Technical Note 01, §9 (tasks A--H).}
+\end{frame}
+\end{document}

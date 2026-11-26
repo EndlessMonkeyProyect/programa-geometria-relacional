@@ -1,0 +1,10 @@
+--- a/verificacion_v3_9/checks.py
++++ b/verificacion_v3_9/checks.py
+@@ -53,6 +53,6 @@
+ for q in pr:
+     if q in (2, 3): continue
+-    lq = mp.log(q); pk = mp.mpf(q)
++    lq = mp.log(q); pk = mp.mpf(int(q))
+     while pk <= N:
+         acc += lq / pk**2; pk *= q
+ print("lhs", mp.nstr(lhs, 12), " suma (n<=2e6)", mp.nstr(acc, 12), " cola ~", mp.nstr(1/mp.mpf(N), 2))
