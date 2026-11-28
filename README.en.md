@@ -6,6 +6,8 @@
 
 The [delivery guide](review_requests/2026-11-26_riemann_alpoge_claude_v3_9/README.en.md) links the [review request](review_requests/2026-11-26_riemann_alpoge_claude_v3_9/english/Independent_Review_Request_EN.md), English technical note, and Spanish originals. It presents identities and equivalences for examination and poses Problem T on quantitative transfer. [Guía en español](review_requests/2026-11-26_riemann_alpoge_claude_v3_9/README.md).
 
+The [T.1 v1.4 and T.1.5 supplement](review_requests/2026-11-26_riemann_alpoge_claude_v3_9/t1_integrated_2026-11-28/README.en.md) brings together inheritance, recovery, finite bounds, and their Arb checks. [Guía en español](review_requests/2026-11-26_riemann_alpoge_claude_v3_9/t1_integrated_2026-11-28/README.md).
+
 ## Relational scales and the Riemann hypothesis · November 17, 2026
 
 The [delivery guide](2026-11-17_escalas_relacionales_riemann/README.en.md) introduces a [Spanish sieve formalization](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/FORMALIZACION_R01_R02_ES.pdf)) and the accompanying reflection [“One Number per Zero”](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.md) ([PDF](2026-11-17_escalas_relacionales_riemann/REFLEXION_UN_NUMERO_POR_CERO_ES.pdf)). The papers develop exact discrepancy inheritance across sieve scales, prime counting, and a reading of zeta-zero symmetry. Two verifiers reproduce the finite calculations; the Riemann hypothesis remains open.

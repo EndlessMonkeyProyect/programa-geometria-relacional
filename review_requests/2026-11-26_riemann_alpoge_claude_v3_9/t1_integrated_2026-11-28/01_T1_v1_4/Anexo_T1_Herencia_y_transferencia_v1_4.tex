@@ -1,0 +1,444 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-nodecimaldot,es-noshorthands,es-nolists,es-lcroman]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[a4paper,margin=2.6cm,headheight=14pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{seqsplit}
+\newcommand{\hash}[1]{\texttt{\seqsplit{#1}}}
+
+\definecolor{titulo}{RGB}{52,78,110}
+\definecolor{enlace}{RGB}{52,78,140}
+\hypersetup{colorlinks=true,urlcolor=enlace,linkcolor=black,citecolor=black}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small PROGRAMA DE GEOMETRÍA RELACIONAL}
+\fancyhead[R]{\small ANEXO T.1 / v1.4}
+\fancyfoot[L]{\small Endless Monkey Project}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\theoremstyle{plain}
+\newtheorem{proposicion}{Proposición}
+\newtheorem{teorema}{Teorema}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Jc}{\mathcal{J}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\spn}{\operatorname{span}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\lmin}{\lambda_{\text{mín}}}
+\newcommand{\lmax}{\lambda_{\text{máx}}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\begin{document}
+
+\thispagestyle{fancy}
+{\color{titulo}\large\bfseries NOTA TÉCNICA 01 v3.9 — ANEXO T.1}\par\vspace{4pt}
+{\LARGE\bfseries Herencia por firmas de salto y\\[2pt] transferencia métrica de la recuperación}\par\vspace{4pt}
+Correspondencias Riemann–Alpöge–Claude\par
+\textit{28 de noviembre de 2026 \,·\, versión 1.4 \,·\, solicitud de corroboración independiente}\par\vspace{2pt}
+\textbf{\underline{Endless Monkey Project / Relational Geometry Program}}\par
+\vspace{2pt}\hrule\vspace{8pt}
+
+\textbf{Resumen.} Se construye una representación finita, exacta y multiplicativa de las referencias libres de cuadrados mediante firmas de salto. Cada primo nuevo duplica las referencias con una misma pieza de dos por dos; la métrica de conteo es un producto de Kronecker de esas piezas y su espectro es explícito. La incorporación de un primo admite un producto tensorial y una ley cerrada de redundancia. La ampliación se transporta al espacio funcional de Báez-Duarte por una reconstrucción explícita y una proyección residual. La ganancia de recuperación es la misma para toda métrica de referencia en el espacio de firmas; la referencia fija la lectura de la ganancia. Una cota testigo, medida en la dirección del resto, mejora la cota espectral y da un criterio suficiente de cierre con hipótesis más débil. La caja nueva es la totalidad heredada reflejada a escala $p$ con peso $1/p$; de ahí sale una cota del espejo, sin métrica de firmas: la ganancia es al menos $1/p$ de lo que la totalidad heredada reconoce del resto contraído por $p$. Sobre una cadena de primos que los agote, la llegada del resto a cero equivale a la hipótesis de Riemann, por resultados publicados de Báez-Duarte. Una condición suficiente por etapa es que la totalidad heredada reconozca una proporción de al menos $c_0/p$ del peso del resto contraído. Se demuestra una obstrucción a la identificación directa de las permutaciones de fibras. El puente con los operadores de segundo momento de Alpöge se formula como un enunciado para una dirección fija y se coteja con tres declaraciones de \texttt{SpanningTheorem.lean}. La extensión v1.4 descompone la ganancia en momentos de reflexión no negativos, obtiene una cota direccional mejorada y un criterio equivalente por profundidad finita adaptada (§8). Se reproducen las siete etapas numéricas.
+
+\textbf{Estatuto.} Demostraciones algebraicas y funcionales de este anexo. Cálculos de punto flotante reproducidos con la fórmula de Gram del expediente y con una implementación independiente de la fórmula de Vasyunin, validada contra integración directa. Las estimaciones automorfas se citan como insumos externos. Las declaraciones Lean se cotejaron en el código legible de un commit fijo. La equivalencia del cierre con RH (§7) se apoya en teoremas publicados de Báez-Duarte. El criterio por etapa del §7 es suficiente; su hipótesis permanece abierta. El §8 añade una identidad local y una equivalencia, sin afirmar la divergencia global.
+
+\section{Objetos y convenciones}
+
+Sea $S$ un conjunto finito de primos, $P=\prod_{q\in S}q$, $K_S=\{d: d\mid P\}$ y $r=2^{|S|}$. Sea $p\notin S$ primo y escríbase $S+p=S\cup\{p\}$. En $H=L^2((0,\infty),dt/t^2)$ se usan $e_d(t)=\{t/d\}$, $\chi=\mathbf 1_{[1,\infty)}$ y $V_S=\spn_\R\{e_d: d\in K_S\}$. Se escribe $\Pi_S$ para la proyección ortogonal sobre $V_S$, $u_S=(I-\Pi_S)\chi$, $Q_S=\|u_S\|^2$ y $\Delta Q_S=Q_S-Q_{S+p}$. Estas convenciones siguen [1, §§4.7–4.8].
+
+En $\Jc_P=\R^{\Z/P\Z}$ se usa el producto interno normalizado $\langle x,y\rangle_J=P^{-1}\sum_{k=1}^{P}x(k)y(k)$. La firma $j_d(k)=\mathbf 1_{d\mid k}$ registra la magnitud del salto descendente de $e_d$ en el entero $k$. Sea $J_S=\spn\{j_d: d\in K_S\}$. Para $P=1$ se usa el espacio de una coordenada. Para cada primo $q$ se escribe
+\[
+H_q=\begin{pmatrix}1 & 1/q\\ 1/q & 1/q\end{pmatrix}.
+\]
+Todos los logaritmos son naturales.
+
+\section{Herencia exacta y reconstrucción}
+
+\begin{proposicion}[Factorización de las firmas]\label{prop:fact}
+Bajo el isomorfismo chino del resto $\Z/Pp\Z\simeq\Z/P\Z\times\Z/p\Z$,
+\[
+j^{(Pp)}_d=j^{(P)}_d\otimes 1,\qquad j_{pd}=j^{(P)}_d\otimes j_p,\qquad J_{S+p}=J_S\otimes\spn(1,j_p).
+\]
+La matriz de Gram de las firmas es $H_S=(1/\lcm(d,e))_{d,e\in K_S}$. Ordenando $K_S$ por factores primos, $H_S=\bigotimes_{q\in S}H_q$. En consecuencia
+\[
+\det H_S=\prod_{q\in S}\Bigl(\frac{q-1}{q^2}\Bigr)^{r/2},\qquad \kappa(H_S)=\prod_{q\in S}\kappa_q,
+\]
+donde $\kappa$ es el cociente de condición y $\kappa_q=\kappa(H_q)$, con $\kappa_q\sim q$. La dimensión es $r$ y se duplica al agregar $p$.
+\end{proposicion}
+
+\begin{proof}
+La condición $pd\mid k$ equivale a $d\mid k$ y $p\mid k$. Las medidas uniformes se factorizan, de modo que el producto interno normalizado de $\Jc_{Pp}$ es el producto tensorial de los de $\Jc_P$ y $\Jc_p$. La frecuencia de múltiplos comunes es $1/\lcm(d,e)$. En $\Jc_p$ el Gram de $(1,j_p)$ es $H_p$, de modo que $H_{S+p}=H_S\otimes H_p$; por inducción desde $P=1$ se obtiene el producto de Kronecker, y los factores $1,j_p$ son independientes. El determinante de $A\otimes B$, con $A$ de orden $r$ y $B$ de orden $2$, es $(\det A)^2(\det B)^r$, y los valores propios de un producto de Kronecker de matrices definidas positivas son los productos de los valores propios de los factores.
+\end{proof}
+
+\begin{proposicion}[Mapa de reconstrucción]\label{prop:rec}
+Para $j\in J_S$, sea $\bar j=P^{-1}\sum_{k=1}^{P}j(k)$. El mapa
+\begin{equation}\label{eq:T}
+(T_Sj)(t)=t\bar j-\sum_{1\le k\le t}j(k)
+\end{equation}
+lleva $j_d$ a $e_d$ y es un isomorfismo lineal de $J_S$ sobre $V_S$. Es compatible con las inclusiones por ampliación de período.
+\end{proposicion}
+
+\begin{proof}
+Para $j_d$, $\bar j=1/d$ y la suma vale $\lfloor t/d\rfloor$. Por linealidad \eqref{eq:T} recupera toda combinación. La función es periódica, lineal cerca de cero y acotada en infinito, por lo que pertenece a $H$. Sus saltos recuperan $j$: si la función es nula casi en todas partes, sus límites laterales son nulos y también sus saltos. La media y los valores periódicos son invariantes al ampliar el período.
+\end{proof}
+
+\textbf{Lectura relacional.} Cada primo es una novedad que duplica las referencias: lo heredado permanece como $J_S\otimes 1$ y aparece una dirección nueva por cada referencia heredada. La métrica de conteo repite la misma relación de dos por dos en cada novedad; por eso sus extremos espectrales se multiplican de etapa en etapa. La firma conserva los recierres; la media fija la pendiente entre ellos. La métrica de conteo y la métrica funcional miden objetos asociados por \eqref{eq:T} y son métricas distintas.
+
+\section{Economía exacta en el espacio de firmas}
+
+Sea $h_p=(pj_p-1)/\sqrt{p-1}$. Tiene media cero y norma uno. Por tanto
+\begin{equation}\label{eq:split}
+J_{S+p}=(J_S\otimes 1)\oplus(J_S\otimes h_p).
+\end{equation}
+
+\begin{proposicion}[Costo angular de la ampliación]\label{prop:costo}
+Para los dos bloques originales $J_S\otimes 1$ y $J_S\otimes j_p$, tras normalizarlos, el bloque cruzado es $p^{-1/2}I_r$. El costo de redundancia de Gram es
+\begin{equation}\label{eq:KJ}
+K^J_p=-\tfrac12\log\det\bigl(I_r-p^{-1}I_r\bigr)=\frac r2\log\frac{p}{p-1}.
+\end{equation}
+\end{proposicion}
+
+\begin{proof}
+Se usa una misma base ortonormal de $J_S$ para los dos bloques. El segundo factor $\sqrt p\,j_p$ tiene norma uno y su producto interno con $1$ vale $1/\sqrt p$. Se aplica el complemento de Schur de la matriz normalizada. La cantidad \eqref{eq:KJ} es angular: mide la redundancia entre bloques.
+\end{proof}
+
+\section{Transporte métrico y ganancia direccional}
+
+Sean $G=(\langle e_d,e_e\rangle_H)$, $C=(\langle e_d,e_{pe}\rangle_H)$, $G'=\begin{pmatrix}G&C\\C^*&G/p\end{pmatrix}$ y $S_p=G/p-C^*G^{-1}C$. Sean $b=(\langle e_d,\chi\rangle)_d$, $b_p=(\langle e_{pd},\chi\rangle)_d$ y $v=b_p-C^*G^{-1}b$. Todas las matrices son reales; el asterisco denota adjunto. Como en [1, (4.7)–(4.8)], $S_p$ es definida positiva.
+
+Defínase el transporte residual $B_{S,p}:J_S\to H$ mediante
+\begin{equation}\label{eq:B}
+B_{S,p}x=(I-\Pi_S)\,T_{S+p}(x\otimes h_p).
+\end{equation}
+Su imagen es $Z_{S,p}=V_{S+p}\cap V_S^{\perp}$, de dimensión $r$, y $V_{S+p}=V_S\oplus Z_{S,p}$ es una suma ortogonal.
+
+\begin{proposicion}[Invariancia de la ganancia ante la referencia]\label{prop:inv}
+Sea $\langle\cdot,\cdot\rangle_W$ cualquier producto interno en $J_S$, y sean $M_W=B^{*}_{W}B_{S,p}$ y $c_W=B^{*}_{W}u_S$, con el adjunto tomado respecto de $\langle\cdot,\cdot\rangle_W$ y de $H$. Entonces
+\begin{equation}\label{eq:inv}
+c_W^{*}M_W^{-1}c_W=\|\Pi_{Z_{S,p}}u_S\|^2=v^*S_p^{-1}v=\Delta Q_S .
+\end{equation}
+En particular, la ganancia es la misma al reescalar la referencia de las firmas, por ejemplo al tomar el nuevo período $Pp$ como totalidad.
+\end{proposicion}
+
+\begin{proof}
+$B_{S,p}(M_W)^{-1}B_W^{*}$ es la proyección ortogonal de $H$ sobre la imagen de $B_{S,p}$, que es $Z_{S,p}$ para toda métrica en $J_S$. Como $u_S\perp V_S$ y $V_{S+p}=V_S\oplus Z_{S,p}$, Pitágoras da $Q_{S+p}=Q_S-\|\Pi_{Z_{S,p}}u_S\|^2$. Por \eqref{eq:T}–\eqref{eq:split}, $T_{S+p}(j_d\otimes h_p)=(pe_{pd}-e_d)/\sqrt{p-1}$; al proyectar al complemento de $V_S$ queda $p(I-\Pi_S)e_{pd}/\sqrt{p-1}$. El Gram de estas columnas es $p^2S_p/(p-1)$ y su vector de acoplamientos con $u_S$ es $pv/\sqrt{p-1}$, lo que da la expresión con $S_p$.
+\end{proof}
+
+\textbf{Lectura relacional.} Lo que una novedad le quita al resto depende del espacio nuevo que abre, $Z_{S,p}$, y de nada más. La referencia con que se cuentan las firmas fija la lectura de la ganancia; la ganancia es una sola.
+
+Si $H_S=LL^*$ es la factorización de Cholesky del Gram de firmas, se usan las coordenadas ortonormales de $J_S$ con coeficientes $L^{-*}x$ respecto de $j_d$. En esas coordenadas, $M=B^*_{S,p}B_{S,p}$ y $c=B^*_{S,p}u_S$ satisfacen
+\begin{equation}\label{eq:Mc}
+M=\frac{p^2}{p-1}L^{-1}S_pL^{-*},\qquad c=\frac{p}{\sqrt{p-1}}L^{-1}v.
+\end{equation}
+
+\begin{teorema}[Identidad y cotas espectrales]\label{teo:id}
+Con $a=\lmin(M)>0$ y $b_+=\lmax(M)$,
+\begin{equation}\label{eq:spec}
+\Delta Q_S=c^*M^{-1}c=v^*S_p^{-1}v,\qquad \frac{\|c\|^2}{b_+}\le\Delta Q_S\le\frac{\|c\|^2}{a}.
+\end{equation}
+\end{teorema}
+
+\begin{proof}
+La identidad es \eqref{eq:inv} en las coordenadas de \eqref{eq:Mc}. El mapa es inyectivo por independencia de las referencias. Las cotas se siguen de $b_+^{-1}I\le M^{-1}\le a^{-1}I$.
+\end{proof}
+
+\begin{proposicion}[Cota testigo]\label{prop:testigo}
+Para todo $x\in J_S$ no nulo,
+\begin{equation}\label{eq:testigo}
+\Delta Q_S\ \ge\ \frac{(x^*c)^2}{x^*Mx},
+\end{equation}
+con igualdad para $x$ proporcional a $M^{-1}c$ si $c\ne0$. Si $c=0$, la ganancia es cero. Para $c\ne0$, con $x=c$, el vector testigo $w_S=B_{S,p}\,c=B_{S,p}B^*_{S,p}u_S\in Z_{S,p}$ cumple $\langle w_S,u_S\rangle=\|c\|^2$ y $\|w_S\|^2=c^*Mc$, y
+\begin{equation}\label{eq:gamma}
+\Delta Q_S\ \ge\ \frac{\|c\|^4}{c^*Mc}\ \ge\ \frac{\|c\|^2}{b_+}.
+\end{equation}
+\end{proposicion}
+
+\begin{proof}
+$\|\Pi_{Z}u_S\|^2=\max_{w\in Z\setminus\{0\}}\langle w,u_S\rangle^2/\|w\|^2$. Con $w=B_{S,p}x$ se tiene $\langle w,u_S\rangle=x^*c$ y $\|w\|^2=x^*Mx$. La desigualdad de Cauchy–Schwarz para $\langle x,y\rangle_M=x^*My$ da $(x^*c)^2\le(x^*Mx)(c^*M^{-1}c)$, con igualdad para $x$ proporcional a $M^{-1}c$ si $c\ne0$, y para todo $x\ne0$ si $c=0$. La última desigualdad de \eqref{eq:gamma} sigue de $c^*Mc\le b_+\|c\|^2$.
+\end{proof}
+
+Se definen (con $\gamma_p=0$ si $c=0$)
+\[
+\beta_p=\frac{\|c\|^2}{b_+Q_S},\qquad \gamma_p=\frac{\|c\|^4}{(c^*Mc)\,Q_S},\qquad \eta_p=\frac{\Delta Q_S}{Q_S},\qquad 0\le\beta_p\le\gamma_p\le\eta_p\le 1 .
+\]
+
+\textbf{Lectura relacional.} La cota espectral compara la ganancia con la dirección de mayor valor propio de todo el espacio nuevo. La cota testigo la mide en la dirección hacia donde apunta el resto. En las siete etapas del §6, el cociente $b_+/a$ crece de $1$ a $572$ y la cota testigo conserva entre el 49~\% y el 100~\% de la ganancia: la compresión acumulada pesa poco en la dirección del resto.
+
+\textbf{El espejo.} Sea $D_p$ el dilatador $(D_pf)(t)=f(t/p)$. Entonces $D_pe_d=e_{pd}$ y $\|D_pf\|^2=p^{-1}\|f\|^2$, de modo que el bloque $D_pV_S$ de $V_{S+p}$ tiene Gram $G/p$: es la totalidad heredada reflejada a escala $p$, con peso $1/p$. Sea $g_{S,p}(t)=u_S(pt)$ el resto contraído por $p$. El cambio de variable $s=pt$ da
+\[
+\|g_{S,p}\|^2=p\,Q_S,\qquad \langle f,g_{S,p}\rangle=p\,\langle D_pf,u_S\rangle\quad(f\in H).
+\]
+
+\begin{proposicion}[Cota del espejo]\label{prop:espejo}
+\begin{equation}\label{eq:espejo}
+\Delta Q_S\ \ge\ \frac1p\,\bigl\|\Pi_S\,g_{S,p}\bigr\|^2,\qquad\text{es decir}\qquad \eta_p\ \ge\ \mu_p:=\frac{\|\Pi_S\,g_{S,p}\|^2}{\|g_{S,p}\|^2}.
+\end{equation}
+En coordenadas, $\langle e_d,g_{S,p}\rangle=p\,v_d$ y $\mu_p=p\,v^*G^{-1}v/Q_S$; la cota es la desigualdad $S_p\le G/p$ evaluada en $v$.
+\end{proposicion}
+
+\begin{proof}
+Para $f\in V_S$, el vector $w=(I-\Pi_S)D_pf$ está en $Z_{S,p}$. Como $u_S\perp V_S$, $\langle w,u_S\rangle=\langle D_pf,u_S\rangle=p^{-1}\langle f,g_{S,p}\rangle$, y $\|w\|\le\|D_pf\|=p^{-1/2}\|f\|$. Por la caracterización variacional de la demostración de la Proposición~\ref{prop:testigo}, $\Delta Q_S\ge\langle w,u_S\rangle^2/\|w\|^2\ge p^{-1}\langle f,g_{S,p}\rangle^2/\|f\|^2$. Si el acoplamiento es nulo, la cota es trivial. En otro caso, el máximo sobre $f\in V_S\setminus\{0\}$ es $\|\Pi_Sg_{S,p}\|^2$, alcanzado en $f=\Pi_Sg_{S,p}$. Con $\langle e_d,g_{S,p}\rangle=p\langle e_{pd},u_S\rangle=p\,v_d$ se obtiene $\|\Pi_Sg_{S,p}\|^2=p^2v^*G^{-1}v$.
+\end{proof}
+
+El testigo del espejo es $w_S^{\mathrm{esp}}=(I-\Pi_S)D_p\Pi_S\,g_{S,p}$: se contrae el resto por $p$, se describe con la totalidad heredada, se refleja de vuelta en la caja nueva y se retira lo que la totalidad ya tenía. Las cantidades $\gamma_p$ y $\mu_p$ son dos cotas inferiores de $\eta_p$, obtenidas con testigos distintos.
+
+\textbf{Lectura relacional.} Cuando entra $p$, la caja nueva es la totalidad heredada reflejada a escala $p$, con peso uno sobre $p$: la diferencia mínima. Lo que la novedad le quita al resto es, al menos, uno sobre $p$ de lo que la totalidad heredada reconoce del resto visto a escala $p$. La cota usa solo la métrica funcional. El reconocimiento es colectivo: en el §6, los testigos de un solo elemento de $V_S$ captan menos que la totalidad heredada.
+
+\textbf{Consecuencia.} Para transportar una familia de transformaciones desde otro espacio, las cantidades que deben controlarse son el acoplamiento $\|c\|^2$ y la forma $c^*Mc$ en la dirección del resto, o directamente $c^*M^{-1}c$; en la forma del espejo, el reconocimiento reescalado $\|\Pi_Sg_{S,p}\|^2/Q_S=p\mu_p$. El rango de la familia controla dimensiones.
+
+\section{Obstrucción de simetría y condición de transferencia}
+
+\begin{proposicion}[Permutación de fibras]\label{prop:perm}
+En el espacio completo de $p$ residuos, las permutaciones actúan irreduciblemente en $\mathbf 1^\perp$ y el promedio de las proyecciones sobre las rectas $\R\,gh_p$ es $(p-1)^{-1}I_{\mathbf 1^\perp}$. Para $p>2$, la familia completa mueve $\spn(1,j_p)$ fuera de sí.
+\end{proposicion}
+
+\begin{proof}
+Los vectores $gh_p$ son las $p$ versiones de la función centrada de un solo residuo, de norma uno. La suma de sus proyectores es $p/(p-1)$ veces la identidad sobre $\mathbf 1^\perp$, como se verifica aplicándola a cualquier vector de suma cero. Una permutación que mueve el residuo cero a otro lugar convierte $j_p$ en el indicador de un residuo no nulo; para $p>2$ ese indicador está fuera de $\spn(1,j_p)$.
+\end{proof}
+
+La simetría completa genera direcciones adicionales: las firmas de residuo $a\neq 0$. Por \eqref{eq:T} se reconstruyen en funciones cuya transformada de Mellin lleva el factor $p^{-s}\zeta(s,a/p)$ de Hurwitz, mientras que las referencias del diccionario llevan $d^{-s}\zeta(s)$. La implicación del §7 hacia RH usa ese factor común $\zeta(s)$; el residuo cero es el que lo conserva. Las permutaciones que fijan el cero preservan las firmas y actúan trivialmente en este factor. Para $p=2$ la permutación intercambia los signos de la única dirección nueva. Este contraste delimita una obstrucción exacta al mapa directo de grupos: incorporar al diccionario los demás residuos cambia la función cuyos ceros controla el cierre.
+
+\textbf{Puente con momentos automorfos.} Sean $A\ge0$ un operador de Gram en un espacio objetivo automorfo $E$ de dimensión $D$, $s=\tr A>0$ y $\delta=D\tr(A^2)/s^2-1$. Como en [2],
+\[
+\|A-(s/D)I\|_{HS}^2=(s^2/D)\,\delta,
+\]
+y, como $\|A-(s/D)I\|\le\|A-(s/D)I\|_{HS}$, para todo $y\in E$
+\begin{equation}\label{eq:puente}
+\frac sD\bigl(1-\sqrt{D\delta}\bigr)\|y\|^2\ \le\ \langle y,Ay\rangle\ \le\ \frac sD\bigl(1+\sqrt{D\delta}\bigr)\|y\|^2 .
+\end{equation}
+Sea $U:J_S\to E$ una isometría y $y=Uc$. La transferencia admite dos formas, según el operador de este anexo con que se compare $U^*AU$ en el orden de Loewner:
+\begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt]
+\item \emph{Con la inversa.} Si $U^*AU\le M^{-1}$, entonces $\Delta Q_S\ge\frac sD\bigl(1-\sqrt{D\delta}\bigr)\|c\|^2$. Esta forma usa la cota inferior de \eqref{eq:puente} y requiere $D\delta<1$; como $D\ge r=2^{|S|}$, eso pide $\delta<2^{-|S|}$.
+\item \emph{Con el operador.} Si $M\le U^*AU$, entonces por \eqref{eq:gamma} $\Delta Q_S\ge\frac Ds\,\|c\|^2/\bigl(1+\sqrt{D\delta}\bigr)$. Esta forma usa la cota superior de \eqref{eq:puente} y vale para todo $\delta$.
+\end{enumerate}
+El cierre pide cotas inferiores de $\Delta Q_S$: frente a $M$, una cota superior de $\langle c,Mc\rangle$, como en (ii); frente a $M^{-1}$, una cota inferior, como en (i). La obligación pendiente es un mapa $U$ aritméticamente admisible que cumpla una de las dos desigualdades, con conservación de bloques, normas e índices.
+
+Un criterio más débil usa una distribución $\rho$ de direcciones, positiva de traza uno: si $\|\rho\|\le\kappa/D$ y $P_Z$ tiene corango $\le\epsilon D$, entonces $\tr(\rho P_Z)\ge1-\kappa\epsilon$, porque $\tr(\rho(I-P_Z))\le\|\rho\|\rank(I-P_Z)$. Para la consulta fija con $c\ne0$, $\rho=cc^*/\|c\|^2$ tiene $\|\rho\|=1$, es decir $\kappa=D$, y la cota queda $1-\epsilon D$. Su uso requiere una distribución construida con transformaciones admisibles que reparta la consulta, con costo controlado y relacionada con \eqref{eq:B}.
+
+\textbf{Cotejo con \texttt{SpanningTheorem.lean}.} Se leyeron las declaraciones en el código legible del commit indicado en [3], sin compilar. Con $P$ el mapa de Poincaré escalado, $e_0$ el proyector sobre las formas objetivo, $\bar G$ el grupo finito elegido, $D_X$ la dimensión de la fuente y $b$ el peso de los datos:
+\begin{itemize}[leftmargin=1.5em,itemsep=2pt]
+\item \texttt{isNearIsometry\_\allowbreak{}e0\_\allowbreak{}comp\_\allowbreak{}scaledPoincare}:\\ para todo subespacio $U'$ de la fuente, $\|e_0P\,\mathrm{pr}_{U'}\|_{HS}^2\ge\dim U'-5b^{-4}D_X$.
+\item \texttt{targetDim\_\allowbreak{}mul\_\allowbreak{}sum\_\allowbreak{}hilbertSchmidtNorm\_\allowbreak{}sq\_\allowbreak{}le}:\\ $\dim(\text{objetivo})\cdot\sum_{g\in\bar G}\|P^*gP\|_{HS}^2\le\#\bar G\,(1+9b^{-4})\,D_X^2$.
+\item \texttt{isSpread\_\allowbreak{}goodPoincare}:\\ para todo subespacio $F$ de formas objetivo, con fracción $\alpha$ de la dimensión, existe $g\in\bar G$ tal que la preimagen de $F$ bajo $e_0\,g\,P$ tiene dimensión $\le\frac12(1+\alpha+3\epsilon_0)D_X$, con $\epsilon_0=b^{-2}/8$.
+\end{itemize}
+(El subíndice 0 de $e_0$ se imprime en ASCII.) Las tres se usan aquí como controles agregados de norma, rango o dimensión, cuantificados sobre todo subespacio y algún traslado del grupo. Una casi-isometría en media cuadrática con pérdida aditiva $5b^{-4}D_X$ es compatible con anular un subespacio de esa dimensión. La transferencia de este anexo requiere un enunciado sobre una dirección fija: el resto contraído $g_{S,p}$, en la forma del espejo del §7, o $c$, en la forma testigo. El lema 4.2 de Zhang [4] controla corango tras restringir dominios; la ecuación (III.233) de [5] controla desviación de Gram en norma Hilbert–Schmidt. Se citan como puntos de comparación.
+
+\section{Control numérico reproducible}
+
+Dos implementaciones calculan las siete etapas: los scripts del paquete v3.9 [1] y una implementación independiente de la fórmula analítica de Vasyunin, validada contra integración directa por tramos con diferencia $\le2\cdot10^{-11}$ en nueve pares. Ambas reproducen todos los dígitos impresos. La tabla presenta el costo de firmas $K^J$, el costo funcional $K^H$ de (4.7) de [1], igual a $-\frac12\log\bigl[\det G'/(\det G\,\det(G/p))\bigr]$, los extremos espectrales de \eqref{eq:Mc}, el cociente $b_+/a$ y el cociente de condición de $H_S$. Las dimensiones $r$ corresponden a la etapa antes de incorporar $p$.
+
+\begin{center}
+\small
+\begin{tabular}{rrrrrrrr}
+\toprule
+$p$ & $r$ & $K^J$ & $K^H$ & $a$ & $b_+$ & $b_+/a$ & $\kappa(H_S)$\\
+\midrule
+2 & 1 & 0.3466 & 0.6940 & 0.62928 & 0.62928 & 1.00 & 1.0\\
+3 & 2 & 0.4055 & 0.7244 & 0.48217 & 0.86943 & 1.80 & 6.9\\
+5 & 4 & 0.4463 & 0.9391 & 0.28651 & 1.33101 & 4.65 & 40.0\\
+7 & 8 & 0.6166 & 1.8823 & 0.14765 & 2.11670 & 14.34 & 273.8\\
+11 & 16 & 0.7625 & 4.2402 & 0.08587 & 3.35966 & 39.13 & $2.34\cdot10^{3}$\\
+13 & 32 & 1.2807 & 9.7952 & 0.03712 & 4.13510 & 111.39 & $2.88\cdot10^{4}$\\
+17 & 64 & 1.9400 & 22.4366 & 0.00883 & 5.04921 & 572.13 & $4.11\cdot10^{5}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+La segunda tabla compara las lecturas de la ganancia relativa de \S4: espectral, testigo, del espejo y exacta.
+
+\begin{center}
+\small
+\begin{tabular}{rrrrrrr}
+\toprule
+$p$ & $Q_{S+p}$ & $p\beta_p$ & $p\gamma_p$ & $p\mu_p$ & $p\eta_p$ & $\gamma_p/\eta_p$\\
+\midrule
+2 & 0.289964574 & 1.324259 & 1.32426 & 0.3305 & 1.324259 & 1.000\\
+3 & 0.077184660 & 1.365248 & 2.06753 & 0.5751 & 2.201440 & 0.939\\
+5 & 0.037263227 & 0.586938 & 2.32831 & 0.4531 & 2.586099 & 0.900\\
+7 & 0.025337984 & 0.367221 & 1.09467 & 0.6925 & 2.240190 & 0.489\\
+11 & 0.020608323 & 0.205345 & 1.18593 & 0.5753 & 2.053292 & 0.578\\
+13 & 0.018012852 & 0.114147 & 1.22297 & 0.3598 & 1.637257 & 0.747\\
+17 & 0.013135402 & 0.425956 & 3.92469 & 1.4490 & 4.603194 & 0.853\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+La discrepancia máxima entre las tres expresiones de $\Delta Q_S$ en \eqref{eq:inv} es inferior a $5\cdot10^{-16}$; comprueba la coherencia algebraica del cálculo. La precisión de $Q$ la fija el condicionamiento de $G'$, que llega a $8.2\cdot10^{6}$ en $p=17$; el álgebra lineal repetida con 40 dígitos, sobre entradas calculadas en doble precisión, reproduce $Q_{S+17}=0.0131354024$. El costo \eqref{eq:KJ} coincide con el determinante directo del Gram de firmas y $H_S$ coincide con el producto de Kronecker de la Proposición~\ref{prop:fact} en las siete etapas.
+
+En $p\gamma_p$ la ganancia testigo se mantiene en $[1.09,\,3.93]$, mientras $p\beta_p$ desciende hasta $0.114$ en $p=13$. Con el Gram funcional $G$ como referencia, el cociente espectral llega a $245$ en $p=17$ y la cota testigo conserva entre aproximadamente el 62~\% y el 100~\% de la ganancia. El reconocimiento reescalado del espejo, $p\mu_p=\|\Pi_Sg_{S,p}\|^2/Q_S$, se mantiene entre $0.33$ y $1.45$, con $\mu_p\le\eta_p$ en todas las etapas. Los testigos de un solo elemento de $V_S$ ---el espejo de la unidad, que agrega solo $e_p$; el producto de Euler $\sum_{d\mid P}(-1)^{\omega(d)}e_d$, con $\omega(d)$ el número de factores primos de $d$; y el aproximante $\Pi_S\chi$--- captan menos; el de la unidad, reescalado por $p$, desciende de $0.52$ en $p=3$ a $0.14$ en $p=13$. Los datos describen siete etapas; el comportamiento asintótico es la obligación del §7.
+
+\section{Cierre: equivalencia, criterio y solicitud independiente}
+
+\begin{proposicion}[Equivalencia del cierre]\label{prop:equiv}
+Para toda cadena creciente de conjuntos finitos de primos $S_k$ que los agote, $Q_{S_k}\to0$ si y solo si se cumple RH. Bajo RH, si $S$ es el conjunto de los primos $\le p$, además $Q_S\ll(\log\log p)^{-2/3}$.
+\end{proposicion}
+
+\begin{proof}
+El cambio $t=1/x$ es una isometría de $H$ sobre $L^2(0,\infty)$ que lleva $e_a$ a $\rho_a(x)=\rho\bigl(1/(ax)\bigr)$, con $\rho(x)=x-\lfloor x\rfloor$, y $\chi$ a $\mathbf 1_{(0,1]}$: son los objetos de [6]. Sea $\mathcal B^{\mathrm{nat}}$ la envolvente lineal de $\{\rho_a:a\in\mathbb N\}$. Como $V_{S_k}\subset\mathcal B^{\mathrm{nat}}$, $Q_{S_k}\to0$ pone a $\chi$ en la clausura de $\mathcal B^{\mathrm{nat}}$, lo que implica RH por [6, Teorema 1.1]. Recíprocamente, bajo RH, [6, Corolario 3.1] da la convergencia en $H$, cuando $n\to\infty$, de
+\[
+f_{\epsilon,n}=\sum_{a\le n}\mu(a)\,a^{-\epsilon}\rho_a
+\]
+para todo $\epsilon>0$ pequeño, y su límite $f_\epsilon$ cumple $f_\epsilon\to-\chi$ en $H$ cuando $\epsilon\downarrow0$ [6, §2]. Los $a\le n$ con $\mu(a)\neq0$ son libres de cuadrados con factores primos $\le n$; cuando $S_k$ contiene los primos $\le n$, dividen a $P$ y $f_{\epsilon,n}\in V_{S_k}$. Entonces $\limsup_k Q_{S_k}\le\|\chi+f_{\epsilon,n}\|^2$ para todo $n$, de donde $\limsup_kQ_{S_k}\le\|\chi+f_\epsilon\|^2$ para todo $\epsilon$ pequeño, y $Q_{S_k}\to0$. La cota cuantitativa sigue de [7, Proposición 3.1]: bajo RH, la distancia de $\chi$ al aproximante $-\sum_{a\le n}\mu(a)\,e^{-c\log a/\log\log n}\rho_a$ es $\ll(\log\log n)^{-1/3}$; con $n=p$ ese aproximante está en $V_S$.
+\end{proof}
+
+\textbf{Lectura relacional.} Sobre la cadena de novedades, que el resto llegue a cero y la hipótesis de Riemann son el mismo enunciado. La equivalencia descansa en resultados publicados; el programa aporta la lectura del mismo objeto por herencia, reescala y espejo. El aproximante que sostiene la equivalencia vive en el diccionario libre de cuadrados, el del residuo cero.
+
+
+\begin{teorema}[Criterio suficiente]\label{teo:cierre}
+Para una cadena creciente de primos que los agote, $Q_S\to0$ equivale a $\sum_p\eta_p=\infty$ cuando $\eta_p<1$ en toda etapa. Si $\sum_p\gamma_p=\infty$ o $\sum_p\mu_p=\infty$, entonces $Q_S\to0$; como $\beta_p\le\gamma_p$, la hipótesis $\sum_p\beta_p=\infty$ implica la primera. Por la Proposición~\ref{prop:equiv}, $Q_S\to0$ equivale a RH. En particular basta $\gamma_p\ge c_0/p$ o $\mu_p\ge c_0/p$ eventualmente, con $c_0>0$.
+\end{teorema}
+
+\begin{proof}
+$Q_{S+p}=Q_S(1-\eta_p)$, de modo que $Q_S=Q_\varnothing\prod(1-\eta_p)$, y para $\eta_p\in[0,1)$ el producto tiende a cero exactamente cuando $\sum\eta_p=\infty$. Por \eqref{eq:gamma} y \eqref{eq:espejo}, $Q_{S+p}\le Q_S(1-\theta_p)$ con $\theta_p=\max(\gamma_p,\mu_p)$; iterando y usando $1-x\le e^{-x}$ resulta $Q_S\le Q_\varnothing\exp(-\sum\theta_p)$. La divergencia de la suma de recíprocos de primos da el caso particular. Si alguna etapa tiene $Q=0$, la convergencia es inmediata.
+\end{proof}
+
+\textbf{Reescala hacia la nueva totalidad.} Al incorporar $p$, el período $Pp$ pasa a ser la totalidad y $J_{S+p}$ se lee desde ella; la Proposición~\ref{prop:inv} muestra que esa reescala conserva la ganancia exacta. Del lado funcional, la totalidad heredada se refleja a escala $p$ con peso $1/p$, y la Proposición~\ref{prop:espejo} mide la ganancia con ese reflejo. La equivalencia exacta del cierre es $\sum_p\eta_p=\infty$. Una condición suficiente por etapa es: existe $c_0>0$ tal que, eventualmente,
+\begin{equation}\label{eq:obl}
+\bigl\|\Pi_S\,[u_S(p\,\cdot)]\bigr\|^2\ \ge\ c_0\,\|u_S\|^2 .
+\end{equation}
+Por \eqref{eq:espejo}, \eqref{eq:obl} da $\mu_p\ge c_0/p$, y el Teorema~\ref{teo:cierre} da $Q_S\to0$. En palabras: la totalidad heredada reconoce al menos una proporción $c_0/p$ de la norma cuadrada del resto contraído. En las siete etapas el reconocimiento reescalado $p\mu_p$ está entre $0.33$ y $1.45$; la verdadera fracción es $\mu_p\in[0,1]$. Sobre los primos $\le p$, \eqref{eq:obl} da $Q_S\le Q_\varnothing\exp\bigl(-c_0\sum_{q\le p}1/q\bigr)\asymp(\log p)^{-c_0}$, una cota superior asintóticamente menor que la $(\log\log p)^{-2/3}$ obtenida en [7] bajo RH. Ello no demuestra que la condición por etapa sea estrictamente más fuerte que RH; su necesidad permanece abierta. Una ruta paralela usa $\gamma_p$ con una referencia aritmética $W_S$ por etapa y constantes explícitas para $c_W^*M_Wc_W$ y $\|c_W\|^2$.
+
+\textbf{Estado de la correspondencia.} (1) Estructural, exacta: herencia y métrica de conteo (Proposición~\ref{prop:fact}), reconstrucción entre firmas y funciones (Proposición~\ref{prop:rec}), costo angular (Proposición~\ref{prop:costo}), invariancia ante la referencia (Proposición~\ref{prop:inv}), testigo y espejo (Proposiciones~\ref{prop:testigo}–\ref{prop:espejo}). (2) Cierre, equivalente: sobre toda cadena que agote los primos, $Q_S\to0$, $\sum_p\eta_p=\infty$ y RH son el mismo enunciado (Teorema~\ref{teo:cierre}, Proposición~\ref{prop:equiv}). (3) Transferencia con los insumos automorfos, abierta: las declaraciones cotejadas acotan dimensiones, y el cierre pide una dirección fija (§5).
+
+Se solicita verificar independientemente las siguientes obligaciones, complementadas por §8:
+\begin{enumerate}[leftmargin=2em,itemsep=3pt]
+\item Corroborar las Proposiciones~\ref{prop:fact}–\ref{prop:equiv}, los Teoremas~\ref{teo:id}–\ref{teo:cierre} y las identidades \eqref{eq:T}–\eqref{eq:espejo}. Cotejar el uso de [6, Teorema 1.1 y Corolario 3.1] y [7, Proposición 3.1] en la Proposición~\ref{prop:equiv}. Distinguir los resultados del anexo de las identidades clásicas de CRT, Gram, complemento de Schur, Cauchy–Schwarz y representación estándar de $S_p$ y de los teoremas publicados que los sustentan.
+\item Compilar las declaraciones cotejadas de \texttt{SpanningTheorem.lean} [3] con versiones y hashes fijos, y confirmar la lectura del §5.
+\item Demostrar \eqref{eq:obl}, con los insumos automorfos citados o con otro argumento que preserve el diccionario libre de cuadrados. Alternativas: un testigo $x_S\in J_S$ obtenido de datos aritméticamente admisibles con
+\[
+(x_S^*c)^2\ \ge\ \frac{c_0}{p}\,Q_S\;x_S^*Mx_S ,
+\]
+o un mapa $U$ con una de las desigualdades (i)–(ii) del §5, con conservación de la norma hasta factores explícitos. Una violación certificada refuta el enunciado concreto propuesto; una serie convergente de cotas inferiores deja este camino sin certificar.
+\item Separar el costo angular de \eqref{eq:KJ} de alturas, índices locales e integralidad. La transferencia de estos últimos requiere una estructura de retículos especificada y una demostración adicional. Formalizar y compilar con versiones y hashes fijos.
+\end{enumerate}
+
+\textbf{Pregunta para el revisor.} ¿Puede demostrarse el reconocimiento reescalado uniforme, $\|\Pi_S[u_S(p\,\cdot)]\|^2\ge c_0\|u_S\|^2$, o la condición más débil $\sum_p\mu_p=\infty$, con los insumos automorfos citados o con otro argumento que preserve el diccionario libre de cuadrados con el residuo cero? ¿Qué declaración precisa, en la forma de una dirección fija, permite esa transferencia?
+
+\section{Reflexión iterada: recuperación por momentos}
+\label{sec:iterada}
+
+\textbf{Extensión v1.4.} Se normaliza el espejo funcional para comparar dos totalidades con la misma norma. Sean $V=V_S$, $W=D_pV$, $Q=Q_S$ y $u=u_S$. En esta sección $Q>0$: cada combinación finita de las referencias es periódica de período $P$ y tiende a cero por la derecha de cada múltiplo de $P$; por tanto no puede coincidir casi en todas partes con $\chi$, que vale uno allí. Además $V\cap W=\{0\}$ por la independencia de los saltos (Proposición~\ref{prop:rec}).
+
+Sea $U_p=\sqrt p\,D_p$ el dilatador unitario de $H$, y defínanse los operadores y la dirección normalizada en $V$:
+\[
+ A=\Pi_S U_p|_V,\qquad T=A^*A,\qquad
+ z=\frac{\Pi_S U_p^*u}{\sqrt Q},\qquad q=\|T\|.
+\]
+El adjunto del dilatador normalizado es $U_p^*f(t)=p^{-1/2}f(pt)$. Así $\|z\|^2=\mu_p$. El operador $T$ mide el solapamiento de la caja reflejada con la heredada. Sus valores propios son los cuadrados de los cosenos de los ángulos principales entre $V$ y $W$. Como las dos cajas tienen intersección nula y dimensión finita, $0\le T<I$ y $0\le q<1$ en cada etapa. No se supone una separación uniforme de $q$ respecto de uno.
+
+\begin{proposicion}[Identidad de reflexión iterada]\label{prop:iterada}
+Para $m_j=\langle z,T^jz\rangle$ y $R_{p,k}=\sum_{j=0}^k m_j$, $k\ge0$, se tiene
+\begin{equation}\label{eq:momentos}
+ \eta_p=\langle z,(I-T)^{-1}z\rangle
+       =\sum_{j=0}^{\infty}m_j,\qquad m_j\ge0,\quad m_0=\mu_p.
+\end{equation}
+Además,
+\begin{equation}\label{eq:cola}
+ 0\le\eta_p-R_{p,k}\le q^{k+1}\eta_p,
+ \qquad R_{p,k}\le\eta_p\le\frac{R_{p,k}}{1-q^{k+1}}.
+\end{equation}
+\end{proposicion}
+\begin{proof}
+Sea $B=(I-\Pi_S)U_p|_V$. Su imagen es $Z_{S,p}$; $B^*B=I-A^*A=I-T$ y $B^*u=\sqrt Q\,z$. Por la fórmula de proyección de la Proposición~\ref{prop:inv}, la ganancia relativa es $\langle z,(I-T)^{-1}z\rangle$. La serie de Neumann converge en norma porque $q<1$. La positividad se sigue del cálculo espectral. Para la cola, $T^{k+1}(I-T)^{-1}\le q^{k+1}(I-T)^{-1}$, pues ambos son funciones del mismo operador autoadjunto. Esto da las dos desigualdades.
+\end{proof}
+
+\textbf{Correspondencia con la caja de espejos.} Bajo la isometría $U_p:V\to W$, $T$ se identifica con $\Pi_W\Pi_S\Pi_W|_W$. Así cada iteración alterna las proyecciones sobre la caja heredada y la caja reflejada. Las reflexiones ortogonales genuinas son $2\Pi_S-I$ y $2\Pi_W-I$; las proyecciones son el promedio de cada reflexión con la identidad. El dilatador $U_p$ es unitario, no una involución. La lectura mediante esferas unitarias y ángulos principales describe la misma operación en términos geométricos, sin postular una identificación con un sistema óptico físico. En el lenguaje operativo de ROSI: referencia, transporte, comparación, distinción del resto y nueva recuperación. La conexión matemática aquí es la identidad \eqref{eq:momentos}, basada en proyecciones y la serie de Neumann.
+
+\begin{proposicion}[Cota direccional con dos momentos adicionales]\label{prop:jensen}
+Si $\mu_p>0$, la cota testigo de §4, usando la métrica funcional $G$, es
+\[
+ \gamma_p^{G}=\frac{m_0^2}{m_0-m_1}.
+\]
+Con la convención $0/0=0$ cuando el numerador y el denominador se anulan, se obtiene la mejora
+\begin{equation}\label{eq:jensen}
+ \mu_p\le\gamma_p^G\le L_p:=m_0+\frac{m_1^2}{m_1-m_2}\le\eta_p.
+\end{equation}
+Más generalmente $R_{p,k}+m_{k+1}^2/(m_{k+1}-m_{k+2})\le\eta_p$.
+\end{proposicion}
+\begin{proof}
+La expresión de $\gamma_p^G$ resulta de \eqref{eq:gamma} con $B$ y $B^*B=I-T$; el transporte original difiere de $B$ por un factor escalar que se cancela. Para $y=T^{(k+1)/2}z$, Cauchy--Schwarz en la métrica $I-T$ da $\langle y,(I-T)^{-1}y\rangle\ge\|y\|^4/\langle y,(I-T)y\rangle$. El miembro izquierdo es la cola de \eqref{eq:momentos}. Para $k=0$, esto da $L_p\le\eta_p$. Como $m_1^2\le m_0m_2$ por Cauchy--Schwarz y $m_1-m_2>0$ si $m_1>0$, se deduce $m_1^2/(m_1-m_2)\ge m_0m_1/(m_0-m_1)=\gamma_p^G-m_0$. Si $m_1=0$, $Tz=0$ y todas estas cotas coinciden con $m_0$.
+\end{proof}
+
+\begin{teorema}[Cierre por reflexión de profundidad finita adaptada]\label{teo:profundidad}
+En cada etapa escoja $k_p\ge0$ tal que $q^{k_p+1}\le1/2$. Por ejemplo, si $q>0$, $k_p=\lceil\log(1/2)/\log q\rceil-1$; si $q=0$, $k_p=0$. Sobre una cadena que agota los primos,
+\begin{equation}\label{eq:cierreiter}
+ \mathrm{RH}\ \Longleftrightarrow\ Q_S\to0\ \Longleftrightarrow\
+ \sum_p R_{p,k_p}=\infty.
+\end{equation}
+Para una profundidad fija $k$, basta $\sum_p R_{p,k}=\infty$, o bien $\sum_p L_p=\infty$. En particular cualquiera de las cotas inferiores eventuales $R_{p,k}\ge c/p$ o $L_p\ge c/p$, con $c>0$, certifica el cierre.
+\end{teorema}
+\begin{proof}
+Por \eqref{eq:cola}, $\eta_p/2\le R_{p,k_p}\le\eta_p$. La equivalencia se sigue del Teorema~\ref{teo:cierre} y la Proposición~\ref{prop:equiv}. Las condiciones suficientes se siguen de las cotas inferiores y la divergencia de la suma de inversos de primos.
+\end{proof}
+
+\textbf{Coordenadas reproducibles.} Con $G=LL^*$, en la base funcional ortonormal se usan
+\[
+ A=\sqrt p\,L^{-1}CL^{-*},\quad T=A^*A,\quad
+ z=\sqrt{p/Q_S}\,L^{-1}v.
+\]
+No se necesita invertir $I-T$ para obtener $R_{p,k}$: se inicia $w_0=z$ y se itera $w_{j+1}=Tw_j$, acumulando $z^*w_j$. El coste de profundidad depende de $q$; una garantía por etapa no implica un coste uniforme. El control direccional puede ser más económico que la garantía espectral de peor caso.
+
+
+\textbf{Economía y profundidad.} El coste angular funcional de §6 coincide exactamente con
+\[
+ K_p^H=-\tfrac12\log\det(I-T),\qquad
+ 1-q\ge e^{-2K_p^H}.
+\]
+En efecto, $I-T=pL^{-1}S_pL^{-*}$ y $\det G'=\det G\det S_p$. Como los valores propios de $I-T$ pertenecen a $(0,1]$, su producto es a lo sumo el menor de ellos. En particular, una cantidad de términos $N=k+1\ge\lceil e^{2K_p^H}\log 2\rceil$ garantiza al menos la mitad de la ganancia, por $q^N\le e^{-N(1-q)}$. Esta cota de coste es finita pero puede ser mucho más grande que la obtenida con $q$ directamente.
+
+\textbf{Límite de una explicación puramente angular.} En $\R^3$, con $V=\R e_1$ y $W=\R(\cos\theta\,e_1+\sin\theta\,e_2)$ para $0<\theta<\pi/2$, el coste y $q=\cos^2\theta$ son los mismos para los restos unitarios $e_2$ y $e_3$. La ganancia del primero es uno y la del segundo cero. Así el coste por sí solo no controla la recuperación de una consulta fija. Este ejemplo es abstracto: no es un contraejemplo aritmético a la condición (12).
+
+\begin{center}\small
+\begin{tabular}{rrrrrrr}
+\toprule
+$p$ & $q$ & $R_{p,4}/\eta_p$ & $R_{p,16}/\eta_p$ & $\gamma_p^G/\eta_p$ & $L_p/\eta_p$ & $k_p$\\
+\midrule
+2 & .750418 & .76203 & .99241 & 1.00000 & 1.00000 & 2\\
+3 & .748588 & .76830 & .99282 & .91169 & .99314 & 2\\
+5 & .831592 & .60570 & .95687 & .85089 & .99398 & 3\\
+7 & .923354 & .65894 & .87601 & .62493 & .68511 & 8\\
+11 & .963586 & .73775 & .93465 & .81394 & .85263 & 18\\
+13 & .986810 & .68635 & .96784 & .86976 & .93132 & 52\\
+17 & .995921 & .81377 & .98025 & .90864 & .93097 & 169\\
+\bottomrule
+\end{tabular}
+\end{center}
+\textit{Tabla adicional.} Cocientes de recuperación y profundidad garantizada. El script \texttt{verificar\_\allowbreak{}reflexion\_\allowbreak{}iterada.py} reproduce las siete etapas y coteja Schur, momentos, colas y la cota direccional. Se reutiliza el Gram de Vasyunin; no es una tercera implementación independiente de las integrales ni un certificado por intervalos.
+
+En las siete etapas, $pR_{p,4}$ pertenece a $[1.0091,3.7460]$ y $pL_p$ a $[1.3242,4.2855]$ (intervalos redondeados hacia fuera). Esto sugiere estudiar la condición $R_{p,4}\ge 1/p$ eventualmente, o una cota inferior más débil con suma divergente. Son observaciones numéricas, no cotas asintóticas ni intervalos certificados.
+
+\textbf{Determinante abierto.} El resultado local resuelve la descomposición de la recuperación y proporciona testigos sucesivos exactos. El resultado global queda equivalente a \eqref{eq:cierreiter}. La divergencia de una profundidad fija o de $L_p$ sigue por demostrar. La cercanía de $q$ a uno aconseja evitar una hipótesis de separación angular uniforme. Los datos finitos orientan la búsqueda, pero no determinan el límite. No se ha probado la transferencia de los operadores automorfos ni RH de forma incondicional.
+
+\textbf{Solicitud ampliada.} Corroborar las Proposiciones~\ref{prop:iterada} y \ref{prop:jensen} y el Teorema~\ref{teo:profundidad}; examinar si los segundos momentos automorfos permiten acotar $m_0,m_1,m_2$ en la dirección $z$, o una suma de momentos admisible, con constantes explícitas que produzcan una serie divergente. Mantener el diccionario libre de cuadrados y distinguir los resultados clásicos de proyecciones y Neumann de su aplicación a esta cadena de primos.
+
+\clearpage
+\section*{Referencias y trazabilidad}
+\small
+\begin{enumerate}[label={[\arabic*]},leftmargin=2.2em,itemsep=3pt]
+\item Endless Monkey Project / Relational Geometry Program, \emph{Nota técnica 01}, v3.9, 26 nov. 2026, §§4.7–4.8, ecuaciones (4.7)–(4.9), y paquete \texttt{verificacion\_\allowbreak{}v3\_\allowbreak{}9}. Solicitud de revisión, Issue 16.
+\item Mismo programa, \emph{Problem T — Second-moment transfer and its directional obstruction}, anexo de auditoría, 26 nov. 2026, §§1–4.
+\item Lean community, \href{https://github.com/leanprover-community/riemann-hypothesis/blob/2c2835a388e156b9094725282c03775be9c6b357/src/New/Spanning/SecondMoment/SpanningTheorem.lean}{\texttt{SpanningTheorem.lean}}, repositorio \texttt{riemann-hypothesis}, commit \hash{2c2835a388e156b9094725282c03775be9c6b357}, SHA-256 del archivo \hash{6bb4cf107d50ddec1c2868e2940e62b24a7f1d0cfe357b154f1fa8b9846844d0}, consulta 26 nov. 2026. Código legible, sin grafo compilado.
+\item R. Zhang, \href{https://www.ihes.fr/~rzhang/files/GRH\%20note.pdf}{\emph{A preliminary note on Alpöge's proposed proof of GRH}}, 22 nov. 2026, §4.4, lema 4.2 y proposición 4.3, pp. 43–44. Nota preliminar.
+\item M. O. Rubinstein (iniciativa de reconstrucción), \href{https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf}{\emph{The Alpöge–Claude proof of the Riemann hypothesis explained for the Riemann zeta function}}, v2, 22 nov. 2026, §III.8, (III.233), p. 141. Borrador con trece hipótesis clásicas pendientes.
+\item L. Báez-Duarte, \href{https://arxiv.org/abs/math/0202141}{\emph{A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis}}, Atti Accad. Naz. Lincei Rend. Lincei Mat. Appl. (2003); arXiv:math/0202141, Teorema 1.1, Corolario 3.1, §2.
+\item L. Báez-Duarte, \href{https://arxiv.org/abs/math/0205003}{\emph{A strengthening of the Nyman–Beurling criterion for the Riemann hypothesis, 2}}, arXiv:math/0205003, Proposición 3.1 (M. Balazard).
+\end{enumerate}
+
+\textbf{Material reproducible:} este paquete incluye la fuente \LaTeX, el verificador independiente de v1.3, sus resultados y salida reproducida, el nuevo verificador de reflexión iterada, resultados JSON y manifiesto SHA-256. Los scripts \texttt{verify\_transfer.py} y \texttt{vasyunin.py} del expediente v3.9 son antecedentes externos al paquete recibido; no se han ejecutado en esta revisión. El control con mpmath refina el solucionador lineal, no la precisión de los datos de entrada. Las declaraciones Lean de §5 conservan el estatuto documental de v1.3: no se han compilado ni recotejado en esta revisión. Se mantiene intacto el expediente v3.9 y el antecedente v1.3.
+
+\end{document}
